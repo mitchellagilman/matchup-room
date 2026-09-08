@@ -147,7 +147,7 @@ def main():
     for name, info in accum.items():
         if not info["pos"]:
             continue  # couldn't classify into QB/RB/WR -- skip rather than guess
-        games = sorted(info["by_game"].values(), key=lambda g: g["week"])
+        games = sorted(info["by_game"].values(), key=lambda g: g["week"] if g["week"] is not None else -1)
         for g in games:
             g["date"] = f"{YEAR}-wk{g.pop('week')}"
             g["opp"] = ""

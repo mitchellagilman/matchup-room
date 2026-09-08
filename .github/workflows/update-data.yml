@@ -21,35 +21,43 @@ jobs:
           python-version: '3.12'
 
       - name: Fetch NFL team stats (nflverse, no key needed)
+        continue-on-error: true
         run: python3 scripts/fetch_nfl.py
 
       - name: Fetch NFL schedule + week odds (nflverse, no key needed)
+        continue-on-error: true
         run: python3 scripts/fetch_nfl_schedule.py
 
       - name: Fetch NFL player stats (nflverse, no key needed)
+        continue-on-error: true
         run: python3 scripts/fetch_players_nfl.py
 
       - name: Fetch CFB team stats (CollegeFootballData)
+        continue-on-error: true
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: python3 scripts/fetch_cfb.py
 
       - name: Fetch CFB schedule + rankings (CollegeFootballData)
+        continue-on-error: true
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: python3 scripts/fetch_cfb_schedule.py
 
       - name: Fetch CFB player stats (CollegeFootballData)
+        continue-on-error: true
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: python3 scripts/fetch_players_cfb.py
 
       - name: Fetch odds (The Odds API)
+        continue-on-error: true
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python3 scripts/fetch_odds.py
 
       - name: Commit updated data files
+        if: always()
         run: |
           git config user.name "matchup-room-bot"
           git config user.email "actions@users.noreply.github.com"
