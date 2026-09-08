@@ -53,8 +53,27 @@ def main():
         print("CFBD returned no games; leaving existing files untouched.", file=sys.stderr)
         return
 
-    unplayed_weeks = sorted({g.get("week") for g in all_games if g.get("homePoints") is None and g.get("week") is not None})
-    current_week = unplayed_weeks[0] if unplayed_weeks else max(g.get("week", 0) for g in all_games)
+    # Current week = the most recently STARTED week, by date -- not "the
+    # earliest week with any unscored game". The latter breaks if even one
+    # game in an otherwise-finished week hasn't had its result recorded yet
+    # in CFBD's system (which happens), since it pins the whole week as
+    # "current" forever. Date-based detection self-corrects once the next
+    # week's games kick off, regardless of stale/missing scores.
+    import datetime
+    today = datetime.datetime.now(datetime.timezone.utc).date()
+    week_start_date = {}
+    for g in all_games:
+        wk, start = g.get("week"), g.get("startDate")
+        if wk is None or not start:
+            continue
+        try:
+            d = datetime.datetime.fromisoformat(start.replace("Z", "+00:00")).date()
+        except ValueError:
+            continue
+        if wk not in week_start_date or d < week_start_date[wk]:
+            week_start_date[wk] = d
+    started_weeks = [wk for wk, d in week_start_date.items() if d <= today]
+    current_week = max(started_weeks) if started_weeks else min(week_start_date, default=1)
 
     try:
         rankings_resp = api_get("/rankings", {"year": YEAR, "seasonType": "regular", "week": current_week}, api_key)

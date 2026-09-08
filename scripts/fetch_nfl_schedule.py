@@ -63,8 +63,25 @@ def main():
 
     # Current week = earliest week that still has an unplayed game.
     # If the whole season's played out, fall back to the last week.
-    unplayed_weeks = sorted({int(r["week"]) for r in season_rows if not r.get("home_score")})
-    current_week = unplayed_weeks[0] if unplayed_weeks else max(int(r["week"]) for r in season_rows)
+    # Current week = the most recently STARTED week, by date -- see the
+    # matching comment in fetch_cfb_schedule.py for why this is more
+    # reliable than checking for missing scores.
+    import datetime
+    today = datetime.datetime.now(datetime.timezone.utc).date()
+    week_start_date = {}
+    for r in season_rows:
+        wk, gameday = r.get("week"), r.get("gameday")
+        if not wk or not gameday:
+            continue
+        try:
+            d = datetime.date.fromisoformat(gameday)
+        except ValueError:
+            continue
+        wk = int(wk)
+        if wk not in week_start_date or d < week_start_date[wk]:
+            week_start_date[wk] = d
+    started_weeks = [wk for wk, d in week_start_date.items() if d <= today]
+    current_week = max(started_weeks) if started_weeks else min(week_start_date, default=1)
 
     week_games = [r for r in season_rows if int(r["week"]) == current_week]
 
