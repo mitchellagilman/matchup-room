@@ -97,12 +97,15 @@ def main():
     with open(RANKINGS_PATH, "w") as f:
         json.dump(rankings_out, f, indent=2)
 
+    # Every game involving at least one ranked team -- not just ranked-vs-ranked
+    # (which is rare, especially in early weeks). This matches "every ranked
+    # team's game this week", the same coverage the original hand-built list had.
     week_games = [g for g in all_games if g.get("week") == current_week]
     seen_pairs = set()
     schedule_out = []
     for g in week_games:
         home, away = g.get("homeTeam"), g.get("awayTeam")
-        if home in ranked_teams and away in ranked_teams:
+        if home in ranked_teams or away in ranked_teams:
             pair = tuple(sorted([home, away]))
             if pair in seen_pairs:
                 continue
@@ -113,7 +116,7 @@ def main():
         json.dump(schedule_out, f, indent=2)
 
     print(f"Week {current_week}: wrote {len(rankings_out)} ranked teams to {RANKINGS_PATH} "
-          f"and {len(schedule_out)} ranked matchups to {SCHEDULE_PATH}")
+          f"and {len(schedule_out)} games (involving a ranked team) to {SCHEDULE_PATH}")
 
 
 if __name__ == "__main__":
