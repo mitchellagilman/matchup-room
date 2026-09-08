@@ -1,0 +1,59 @@
+name: Update stats and odds
+
+on:
+  schedule:
+    # Every Tuesday at 09:00 UTC (after Monday Night Football wraps).
+    # Cron is UTC always -- adjust the hour for your timezone if you care.
+    - cron: '0 9 * * 2'
+  workflow_dispatch: {}   # lets you also trigger this manually from the Actions tab
+
+permissions:
+  contents: write   # needed so the workflow can commit the updated data files
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch NFL team stats (nflverse, no key needed)
+        run: python3 scripts/fetch_nfl.py
+
+      - name: Fetch NFL schedule + week odds (nflverse, no key needed)
+        run: python3 scripts/fetch_nfl_schedule.py
+
+      - name: Fetch NFL player stats (nflverse, no key needed)
+        run: python3 scripts/fetch_players_nfl.py
+
+      - name: Fetch CFB team stats (CollegeFootballData)
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb.py
+
+      - name: Fetch CFB schedule + rankings (CollegeFootballData)
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb_schedule.py
+
+      - name: Fetch CFB player stats (CollegeFootballData)
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_players_cfb.py
+
+      - name: Fetch odds (The Odds API)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python3 scripts/fetch_odds.py
+
+      - name: Commit updated data files
+        run: |
+          git config user.name "matchup-room-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/*.json
+          git diff --staged --quiet || git commit -m "Auto-update stats/odds ($(date -u +%Y-%m-%d))"
+          git pull --rebase origin main
+          git push

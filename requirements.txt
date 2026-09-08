@@ -1,0 +1,3 @@
+# The fetch scripts only use Python's standard library (urllib, csv, json)
+# so there's nothing to install -- this file is here in case you want to
+# extend them with something like requests or pandas later.

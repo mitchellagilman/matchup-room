@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Matchup Room — Football Stats & Betting Trends</title>
+<style>
+  :root{
+    --bg:#0a0c10;
+    --card:#141821;
+    --card-2:#1b202b;
+    --ink:#eef0f4;
+    --muted:#8a92a3;
+    --accent:#f0b93d;
+    --accent-ink:#241c04;
+    --good:#33d399;
+    --bad:#f2685a;
+    --line: rgba(255,255,255,0.09);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+    line-height:1.45;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:22px 16px 70px;}
+  h1{font-size:1.6rem;margin:0 0 4px;letter-spacing:-0.01em;font-weight:800;}
+  .sub{color:var(--muted);font-size:0.86rem;margin-bottom:18px;max-width:60ch;}
+  .tabs{display:flex;gap:4px;margin-bottom:16px;overflow-x:auto;padding-bottom:2px;-webkit-overflow-scrolling:touch;}
+  .tabs::-webkit-scrollbar{display:none;}
+  .tabs.toptabs{margin-bottom:18px;}
+  .tab, .subtab{padding:8px 14px;cursor:pointer;color:var(--muted);font-size:0.83rem;font-weight:600;white-space:nowrap;border-radius:999px;background:var(--card);border:1px solid var(--line);}
+  .tab.active, .subtab.active{color:var(--accent-ink);background:var(--accent);border-color:var(--accent);}
+  .subtab{font-size:0.78rem;padding:7px 12px;}
+  .leaguepanel{display:none;}
+  .leaguepanel.active{display:block;}
+  .subpanel{display:none;}
+  .subpanel.active{display:block;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:14px;}
+  .card h2{font-size:0.98rem;margin:0 0 12px;color:var(--ink);font-weight:700;}
+  label{font-size:0.76rem;color:var(--muted);display:block;margin-bottom:3px;font-weight:600;}
+  input, select{width:100%;padding:9px 10px;border-radius:6px;border:1px solid var(--line);background:var(--card-2);color:var(--ink);font-size:0.9rem;}
+  input:focus, select:focus{outline:2px solid var(--accent);outline-offset:1px;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
+  .field{margin-bottom:10px;}
+  button{background:var(--accent);color:var(--accent-ink);border:none;padding:10px 16px;border-radius:7px;font-weight:700;font-size:0.87rem;cursor:pointer;margin-top:6px;}
+  button.secondary{background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:600;}
+  button.danger{background:transparent;color:#f28b7d;border:1px solid rgba(242,139,125,0.4);font-weight:500;padding:5px 10px;font-size:0.76rem;}
+  .team-row{display:flex;justify-content:space-between;align-items:center;padding:9px 4px;border-bottom:1px solid var(--line);font-size:0.88rem;}
+  .team-row:last-child{border-bottom:none;}
+  .team-name{font-weight:700;}
+  .team-meta{color:var(--muted);font-size:0.76rem;}
+  .empty{color:var(--muted);font-size:0.85rem;padding:8px 0;}
+  .matchup-result{margin-top:16px;}
+  .edge-row{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:0.88rem;}
+  .edge-row:last-child{border-bottom:none;}
+  .edge-label{text-align:center;color:var(--muted);font-size:0.72rem;}
+  .edge-val{padding:6px 8px;border-radius:6px;text-align:center;font-variant-numeric:tabular-nums;}
+  .edge-val.win{background:rgba(51,211,153,0.16);color:#5eead4;}
+  .edge-val.lose{background:rgba(242,139,125,0.14);color:#f28b7d;}
+  .proj-score{display:flex;justify-content:space-around;text-align:center;padding:14px 0;}
+  .proj-score .num{font-size:1.9rem;font-weight:800;font-variant-numeric:tabular-nums;}
+  .proj-score .lbl{font-size:0.74rem;color:var(--muted);}
+  .note{font-size:0.78rem;color:var(--muted);margin-top:10px;}
+  .history-item{display:flex;justify-content:space-between;font-size:0.82rem;padding:6px 0;border-bottom:1px solid var(--line);}
+  .history-item:last-child{border-bottom:none;}
+  select option{background:var(--card-2);}
+  .game-row{display:flex;justify-content:space-between;align-items:center;padding:10px 4px;border-bottom:1px solid var(--line);font-size:0.88rem;cursor:pointer;}
+  .game-row:hover{background:rgba(240,185,61,0.06);}
+  .game-row:last-child{border-bottom:none;}
+  .game-date{color:var(--muted);font-size:0.72rem;}
+  .rank-row{display:grid;grid-template-columns:28px 1fr auto auto;gap:8px;align-items:center;padding:8px 4px;border-bottom:1px solid var(--line);font-size:0.85rem;}
+  .rank-row:last-child{border-bottom:none;}
+  .rank-num{color:var(--accent);font-weight:800;font-size:0.8rem;}
+  .rank-record{color:var(--muted);font-size:0.76rem;}
+  .rank-next{color:var(--muted);font-size:0.76rem;text-align:right;}
+  .pill{display:inline-block;font-size:0.68rem;padding:2px 8px;border-radius:999px;background:rgba(240,185,61,0.15);color:var(--accent);margin-left:6px;font-weight:700;}
+  .hitrate-badge{font-size:1.7rem;font-weight:800;font-variant-numeric:tabular-nums;padding:10px 0;text-align:center;border-radius:10px;margin:10px 0;}
+  .hitrate-badge.high{background:rgba(51,211,153,0.14);color:#5eead4;}
+  .hitrate-badge.mid{background:rgba(240,185,61,0.14);color:var(--accent);}
+  .hitrate-badge.low{background:rgba(242,139,125,0.14);color:#f28b7d;}
+  .hitrate-sub{text-align:center;font-size:0.76rem;color:var(--muted);margin-top:-6px;}
+  .glog-row{display:flex;justify-content:space-between;align-items:center;padding:7px 4px;border-bottom:1px solid var(--line);font-size:0.82rem;}
+  .glog-row:last-child{border-bottom:none;}
+  .glog-val{font-weight:700;font-variant-numeric:tabular-nums;}
+  .glog-val.over{color:#5eead4;}
+  .glog-val.under{color:#f28b7d;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Matchup Room</h1>
+  <div class="sub">Team stats, matchup breakdowns, and player prop hit rates. NFL and college football are kept fully separate — pick a league below.</div>
+
+  <div class="tabs toptabs">
+    <div class="tab active" data-tab="nfl">NFL</div>
+    <div class="tab" data-tab="cfb">CFB</div>
+    <div class="tab" data-tab="topbets">Top Bets</div>
+    <div class="tab" data-tab="parlay">Parlay Calc</div>
+  </div>
+
+  <!-- ================= NFL ================= -->
+  <div class="leaguepanel active" id="panel-nfl">
+    <div class="tabs">
+      <div class="subtab active" data-subtab="nfl-week">This Week</div>
+      <div class="subtab" data-subtab="nfl-teams">Teams</div>
+      <div class="subtab" data-subtab="nfl-matchup">Matchup</div>
+      <div class="subtab" data-subtab="nfl-players">Players</div>
+      <div class="subtab" data-subtab="nfl-trends">Trends</div>
+    </div>
+
+    <div class="subpanel active" id="subpanel-nfl-week">
+      <div class="card">
+        <h2>How this works</h2>
+        <div class="note" style="margin-top:0;">Every team here has real per-game stats loaded in — scoring, passing yards, rushing yards, both sides of the ball. Pick a game below (or head to Matchup) and it lines up both teams' offense against the other's defense to show who has the statistical edge and a projected score. It's a data snapshot, not a pick.</div>
+      </div>
+      <div class="card">
+        <h2 id="nfl-week-heading">NFL Week 1 · 2026 season</h2>
+        <div id="nfl-schedule-list"></div>
+        <div class="note">Tap a game to load both teams into Matchup. Games kick off Sept 9-14.</div>
+      </div>
+    </div>
+
+    <div class="subpanel" id="subpanel-nfl-teams">
+      <div class="card">
+        <h2>Add / update a team</h2>
+        <div class="field"><label>Team name</label><input id="nfl-t-name" placeholder="e.g. Green Bay Packers"></div>
+        <div class="grid2">
+          <div class="field"><label>Points per game (off)</label><input id="nfl-t-ppg" type="number" step="0.1"></div>
+          <div class="field"><label>Points allowed per game (def)</label><input id="nfl-t-pa" type="number" step="0.1"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Pass yds/g (offense)</label><input id="nfl-t-passoff" type="number" step="0.1"></div>
+          <div class="field"><label>Pass yds/g allowed (defense)</label><input id="nfl-t-passdef" type="number" step="0.1"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Rush yds/g (offense)</label><input id="nfl-t-rushoff" type="number" step="0.1"></div>
+          <div class="field"><label>Rush yds/g allowed (defense)</label><input id="nfl-t-rushdef" type="number" step="0.1"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Turnover margin (per game)</label><input id="nfl-t-to" type="number" step="0.01"></div>
+          <div class="field"><label>ATS record (e.g. 7-3-1)</label><input id="nfl-t-ats" placeholder="7-3-1"></div>
+        </div>
+        <button id="nfl-save-team">Save team</button>
+        <div class="note">Auto-refreshed weekly from real data once the season is underway. Every save also logs to that team's trend history.</div>
+      </div>
+      <div class="card">
+        <h2>Saved teams</h2>
+        <div id="nfl-team-list" class="empty">Loading...</div>
+      </div>
+    </div>
+
+    <div class="subpanel" id="subpanel-nfl-matchup">
+      <div class="card">
+        <h2>NFL matchup</h2>
+        <div class="grid2">
+          <div class="field"><label>Team A</label><select id="m-teamA-nfl"></select></div>
+          <div class="field"><label>Team B</label><select id="m-teamB-nfl"></select></div>
+        </div>
+        <button id="run-matchup-nfl">Analyze matchup</button>
+      </div>
+      <div id="matchup-output-nfl"></div>
+    </div>
+
+    <div class="subpanel" id="subpanel-nfl-players">
+      <div class="card">
+        <h2>Hit rate checker</h2>
+        <div class="note" style="margin-top:0;">Pick a player, pick a stat, enter the line from your sportsbook — see how often they've actually gone over it recently.</div>
+        <div class="grid2">
+          <div class="field"><label>Player</label><select id="nfl-hr-player"></select></div>
+          <div class="field"><label>Stat</label>
+            <select id="nfl-hr-stat">
+              <option value="passYds">Passing yards</option>
+              <option value="rushYds">Rushing yards</option>
+              <option value="receptions">Receptions</option>
+              <option value="recYds">Receiving yards</option>
+              <option value="tds">Total TDs</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label>Line</label><input id="nfl-hr-line" type="number" step="0.5" placeholder="e.g. 249.5"></div>
+        <button id="nfl-run-hitrate">Check hit rate</button>
+        <div id="nfl-hitrate-output"></div>
+      </div>
+      <div class="card">
+        <h2>Add a player</h2>
+        <div class="grid2">
+          <div class="field"><label>Name</label><input id="nfl-p-name" placeholder="e.g. Josh Allen"></div>
+          <div class="field"><label>Position</label><select id="nfl-p-pos"><option>QB</option><option>RB</option><option>WR</option><option>TE</option></select></div>
+        </div>
+        <div class="field"><label>Team</label><input id="nfl-p-team" placeholder="e.g. Buffalo Bills"></div>
+        <button id="nfl-save-player">Add player</button>
+      </div>
+      <div class="card">
+        <h2>Log a game</h2>
+        <div class="grid2">
+          <div class="field"><label>Player</label><select id="nfl-g-player"></select></div>
+          <div class="field"><label>Opponent</label><input id="nfl-g-opp" placeholder="e.g. vs Jets"></div>
+        </div>
+        <div class="grid3">
+          <div class="field"><label>Pass yds</label><input id="nfl-g-passyds" type="number" value="0"></div>
+          <div class="field"><label>Rush yds</label><input id="nfl-g-rushyds" type="number" value="0"></div>
+          <div class="field"><label>Receptions</label><input id="nfl-g-rec" type="number" value="0"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Rec yds</label><input id="nfl-g-recyds" type="number" value="0"></div>
+          <div class="field"><label>Total TDs</label><input id="nfl-g-tds" type="number" value="0"></div>
+        </div>
+        <button id="nfl-save-game">Log game</button>
+      </div>
+      <div class="card">
+        <h2>Players <span class="pill" id="nfl-player-count"></span></h2>
+        <div id="nfl-players-list" class="empty">Loading...</div>
+      </div>
+    </div>
+
+    <div class="subpanel" id="subpanel-nfl-trends">
+      <div class="card">
+        <h2>View trend history</h2>
+        <div class="field"><label>Team</label><select id="nfl-trend-team"></select></div>
+        <button id="nfl-load-trend" class="secondary">Show history</button>
+      </div>
+      <div id="nfl-trend-output"></div>
+    </div>
+  </div>
+
+  <!-- ================= CFB ================= -->
+  <div class="leaguepanel" id="panel-cfb">
+    <div class="tabs">
+      <div class="subtab active" data-subtab="cfb-week">This Week</div>
+      <div class="subtab" data-subtab="cfb-rankings">Rankings</div>
+      <div class="subtab" data-subtab="cfb-teams">Teams</div>
+      <div class="subtab" data-subtab="cfb-matchup">Matchup</div>
+      <div class="subtab" data-subtab="cfb-players">Players</div>
+      <div class="subtab" data-subtab="cfb-trends">Trends</div>
+    </div>
+
+    <div class="subpanel active" id="subpanel-cfb-week">
+      <div class="card">
+        <h2>Top 25 matchups this week</h2>
+        <div id="cfb-schedule-list"></div>
+        <div class="note">Tap a game to load both teams into Matchup.</div>
+      </div>
+    </div>
+
+    <div class="subpanel" id="subpanel-cfb-rankings">
+      <div class="card">
+        <h2>AP Top 25 <span class="pill">as of Sept 6, 2026</span></h2>
+        <div id="cfb-rankings-list"></div>
+        <div class="note">Records reflect Week 1 results. "Next" shows each team's upcoming Week 2 opponent. All 68 Power 5 teams (SEC, Big Ten, Big 12, ACC) plus Notre Dame are pre-loaded in the Teams tab — not just this Top 25.</div>
+      </div>
+      <div class="card">
+        <h2>Others receiving votes</h2>
+        <div id="cfb-others-list" class="note"></div>
+      </div>
+    </div>
+
+    <div class="subpanel" id="subpanel-cfb-teams">
+      <div class="card">
+        <h2>Add / update a team</h2>
+        <div class="field"><label>Team name</label><input id="cfb-t-name" placeholder="e.g. Ohio State"></div>
+        <div class="grid2">
+          <div class="field"><label>Points per game (off)</label><input id="cfb-t-ppg" type="number" step="0.1"></div>
+          <div class="field"><label>Points allowed per game (def)</label><input id="cfb-t-pa" type="number" step="0.1"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Pass yds/g (offense)</label><input id="cfb-t-passoff" type="number" step="0.1"></div>
+          <div class="field"><label>Pass yds/g allowed (defense)</label><input id="cfb-t-passdef" type="number" step="0.1"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Rush yds/g (offense)</label><input id="cfb-t-rushoff" type="number" step="0.1"></div>
+          <div class="field"><label>Rush yds/g allowed (defense)</label><input id="cfb-t-rushdef" type="number" step="0.1"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Turnover margin (per game)</label><input id="cfb-t-to" type="number" step="0.01"></div>
+          <div class="field"><label>ATS record (e.g. 7-3-1)</label><input id="cfb-t-ats" placeholder="7-3-1"></div>
+        </div>
+        <button id="cfb-save-team">Save team</button>
+        <div class="note">All 68 Power 5 teams + Notre Dame pre-loaded, auto-refreshed weekly. Every save also logs to that team's trend history.</div>
+      </div>
+      <div class="card">
+        <h2>Saved teams</h2>
+        <div id="cfb-team-list" class="empty">Loading...</div>
+      </div>
+    </div>
+
+    <div class="subpanel" id="subpanel-cfb-matchup">
+      <div class="card">
+        <h2>College matchup</h2>
+        <div class="grid2">
+          <div class="field"><label>Team A</label><select id="m-teamA-cfb"></select></div>
+          <div class="field"><label>Team B</label><select id="m-teamB-cfb"></select></div>
+        </div>
+        <button id="run-matchup-cfb">Analyze matchup</button>
+      </div>
+      <div id="matchup-output-cfb"></div>
+    </div>
+
+    <div class="subpanel" id="subpanel-cfb-players">
+      <div class="card">
+        <h2>Hit rate checker</h2>
+        <div class="note" style="margin-top:0;">Pick a player, pick a stat, enter the line from your sportsbook.</div>
+        <div class="grid2">
+          <div class="field"><label>Player</label><select id="cfb-hr-player"></select></div>
+          <div class="field"><label>Stat</label>
+            <select id="cfb-hr-stat">
+              <option value="passYds">Passing yards</option>
+              <option value="rushYds">Rushing yards</option>
+              <option value="receptions">Receptions</option>
+              <option value="recYds">Receiving yards</option>
+              <option value="tds">Total TDs</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label>Line</label><input id="cfb-hr-line" type="number" step="0.5" placeholder="e.g. 249.5"></div>
+        <button id="cfb-run-hitrate">Check hit rate</button>
+        <div id="cfb-hitrate-output"></div>
+      </div>
+      <div class="card">
+        <h2>Add a player</h2>
+        <div class="grid2">
+          <div class="field"><label>Name</label><input id="cfb-p-name" placeholder="e.g. Jayden Maiava"></div>
+          <div class="field"><label>Position</label><select id="cfb-p-pos"><option>QB</option><option>RB</option><option>WR</option><option>TE</option></select></div>
+        </div>
+        <div class="field"><label>Team</label><input id="cfb-p-team" placeholder="e.g. USC"></div>
+        <button id="cfb-save-player">Add player</button>
+      </div>
+      <div class="card">
+        <h2>Log a game</h2>
+        <div class="grid2">
+          <div class="field"><label>Player</label><select id="cfb-g-player"></select></div>
+          <div class="field"><label>Opponent</label><input id="cfb-g-opp" placeholder="e.g. vs Texas"></div>
+        </div>
+        <div class="grid3">
+          <div class="field"><label>Pass yds</label><input id="cfb-g-passyds" type="number" value="0"></div>
+          <div class="field"><label>Rush yds</label><input id="cfb-g-rushyds" type="number" value="0"></div>
+          <div class="field"><label>Receptions</label><input id="cfb-g-rec" type="number" value="0"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Rec yds</label><input id="cfb-g-recyds" type="number" value="0"></div>
+          <div class="field"><label>Total TDs</label><input id="cfb-g-tds" type="number" value="0"></div>
+        </div>
+        <button id="cfb-save-game">Log game</button>
+      </div>
+      <div class="card">
+        <h2>Players <span class="pill" id="cfb-player-count"></span></h2>
+        <div id="cfb-players-list" class="empty">Loading...</div>
+      </div>
+    </div>
+
+    <div class="subpanel" id="subpanel-cfb-trends">
+      <div class="card">
+        <h2>View trend history</h2>
+        <div class="field"><label>Team</label><select id="cfb-trend-team"></select></div>
+        <button id="cfb-load-trend" class="secondary">Show history</button>
+      </div>
+      <div id="cfb-trend-output"></div>
+    </div>
+  </div>
+
+  <!-- ================= TOP BETS ================= -->
+  <div class="leaguepanel" id="panel-topbets">
+    <div class="card">
+      <h2>How this is ranked</h2>
+      <div class="note" style="margin-top:0;">For every matchup this week, the model projects a score (same offense-vs-defense math as Matchup) and compares it to the actual market spread/total from the odds board. These are the games where that gap is biggest — where the model disagrees with the market the most, in either direction. A big gap isn't automatically right; it just means the numbers loaded here see it very differently than the number your book is offering. Needs both team stats and a market line loaded to show up.</div>
+    </div>
+    <div class="card">
+      <h2>NFL — top 10</h2>
+      <div id="nfl-topbets-list" class="empty">Loading...</div>
+    </div>
+    <div class="card">
+      <h2>NCAA — top 10</h2>
+      <div id="cfb-topbets-list" class="empty">Loading...</div>
+    </div>
+  </div>
+
+  <!-- ================= PARLAY ================= -->
+  <div class="leaguepanel" id="panel-parlay">
+    <div class="card">
+      <h2>How this works <span class="pill">real odds, not live</span></h2>
+      <div class="note" style="margin-top:0;">I can't hook this page up to a live odds feed — it's a static page with no server. The lines below refresh weekly via the automated pipeline. Add your own from whatever your book is showing right now for anything not listed.</div>
+    </div>
+    <div class="card">
+      <h2>Odds board <span class="pill" id="odds-board-count"></span></h2>
+      <div class="tabs" id="odds-filter" style="margin-bottom:12px;">
+        <div class="subtab active" data-oddsfilter="ALL">All</div>
+        <div class="subtab" data-oddsfilter="NFL">NFL</div>
+        <div class="subtab" data-oddsfilter="CFB">CFB</div>
+      </div>
+      <div id="odds-board-list"></div>
+      <div class="note">Every matchup with a loaded line, both leagues. Tap any price to add it to your slip below. A greyed-out "—" means that side wasn't available from the source.</div>
+    </div>
+    <div class="card">
+      <h2>Add a custom leg</h2>
+      <div class="grid2">
+        <div class="field"><label>Description</label><input id="cl-label" placeholder="e.g. Mahomes over 249.5 pass yds"></div>
+        <div class="field"><label>Odds (American)</label><input id="cl-odds" type="number" placeholder="-110"></div>
+      </div>
+      <button id="add-custom-leg" class="secondary">Add to slip</button>
+    </div>
+    <div class="card">
+      <h2>Your slip</h2>
+      <div id="parlay-slip" class="empty">No legs added yet — tap odds above or add a custom one.</div>
+      <div class="field" style="margin-top:12px;"><label>Stake ($)</label><input id="parlay-stake" type="number" value="10"></div>
+      <div id="parlay-result"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const STORAGE_KEY = 'teams-db';
+const SEED_FLAG_KEY = 'seeded-v6';
+const PLAYERS_SEED_FLAG_KEY = 'players-seeded-v2';
+
+function fmt(n){ return (Math.round(n*10)/10).toFixed(1); }
+
+const NFL_SEED = {
+"Los Angeles Rams": {league:"NFL", ppg:30.5, pa:20.4, passOff:268.1, rushOff:126.6, passDef:216.7, rushDef:110.8, to:0.65, ats:""},
+"Dallas Cowboys": {league:"NFL", ppg:27.7, pa:30.1, passOff:266.3, rushOff:125.6, passDef:251.5, rushDef:125.5, to:-0.53, ats:""},
+"New England Patriots": {league:"NFL", ppg:28.8, pa:18.8, passOff:250.5, rushOff:128.9, passDef:193.5, rushDef:101.7, to:0.18, ats:""},
+"Buffalo Bills": {league:"NFL", ppg:28.3, pa:21.5, passOff:216.6, rushOff:159.6, passDef:156.9, rushDef:136.2, to:0.06, ats:""},
+"Detroit Lions": {league:"NFL", ppg:28.3, pa:24.3, passOff:253.1, rushOff:120.1, passDef:217.4, rushDef:114.5, to:0.24, ats:""},
+"Chicago Bears": {league:"NFL", ppg:25.9, pa:24.4, passOff:225.1, rushOff:144.2, passDef:227.2, rushDef:134.5, to:1.29, ats:""},
+"San Francisco 49ers": {league:"NFL", ppg:25.7, pa:21.8, passOff:244.5, rushOff:106.9, passDef:232.4, rushDef:107.8, to:-0.35, ats:""},
+"Seattle Seahawks": {league:"NFL", ppg:28.4, pa:17.2, passOff:228.1, rushOff:123.3, passDef:193.9, rushDef:91.9, to:-0.18, ats:""},
+"Indianapolis Colts": {league:"NFL", ppg:27.4, pa:24.2, passOff:227.8, rushOff:118.1, passDef:247.9, rushDef:101.9, to:-0.12, ats:""},
+"Denver Broncos": {league:"NFL", ppg:23.6, pa:18.3, passOff:223.9, rushOff:118.7, passDef:187.2, rushDef:91.1, to:-0.18, ats:""},
+"Jacksonville Jaguars": {league:"NFL", ppg:27.9, pa:19.8, passOff:222.3, rushOff:115.1, passDef:218.1, rushDef:85.6, to:0.76, ats:""},
+"Los Angeles Chargers": {league:"NFL", ppg:21.6, pa:20.0, passOff:212.2, rushOff:121.6, passDef:179.9, rushDef:105.4, to:0.12, ats:""},
+"New York Giants": {league:"NFL", ppg:22.4, pa:25.8, passOff:204.4, rushOff:129.1, passDef:214.2, rushDef:145.3, to:-0.12, ats:""},
+"Atlanta Falcons": {league:"NFL", ppg:20.8, pa:23.6, passOff:207.2, rushOff:125.8, passDef:200.4, rushDef:126.2, to:0.29, ats:""},
+"Green Bay Packers": {league:"NFL", ppg:23.0, pa:21.2, passOff:212.8, rushOff:119.8, passDef:194.1, rushDef:117.7, to:0.06, ats:""},
+"Baltimore Ravens": {league:"NFL", ppg:24.9, pa:23.4, passOff:175.6, rushOff:156.6, passDef:247.9, rushDef:106.6, to:-0.18, ats:""},
+"Cincinnati Bengals": {league:"NFL", ppg:24.4, pa:28.9, passOff:235.6, rushOff:93.6, passDef:233.8, rushDef:147.1, to:-0.18, ats:""},
+"Houston Texans": {league:"NFL", ppg:23.8, pa:17.4, passOff:218.1, rushOff:108.9, passDef:183.5, rushDef:93.7, to:1.00, ats:""},
+"Arizona Cardinals": {league:"NFL", ppg:20.9, pa:28.7, passOff:232.6, rushOff:93.1, passDef:230.8, rushDef:126.9, to:-0.12, ats:""},
+"Kansas City Chiefs": {league:"NFL", ppg:21.3, pa:19.3, passOff:214.1, rushOff:106.6, passDef:195.8, rushDef:105.7, to:-0.06, ats:""},
+"Tampa Bay Buccaneers": {league:"NFL", ppg:22.4, pa:24.2, passOff:205.9, rushOff:114.5, passDef:238.2, rushDef:99.1, to:0.41, ats:""},
+"Washington Commanders": {league:"NFL", ppg:20.9, pa:26.5, passOff:184.1, rushOff:134.7, passDef:242.5, rushDef:141.5, to:-0.76, ats:""},
+"New Orleans Saints": {league:"NFL", ppg:18.0, pa:22.5, passOff:219.3, rushOff:94.3, passDef:179.2, rushDef:120.6, to:-0.24, ats:""},
+"Philadelphia Eagles": {league:"NFL", ppg:22.3, pa:19.1, passOff:194.3, rushOff:116.9, passDef:189.8, rushDef:124.4, to:0.35, ats:""},
+"Pittsburgh Steelers": {league:"NFL", ppg:23.4, pa:22.8, passOff:202.4, rushOff:103.3, passDef:243.9, rushDef:113.1, to:0.71, ats:""},
+"Miami Dolphins": {league:"NFL", ppg:20.4, pa:24.9, passOff:180.5, rushOff:120.2, passDef:216.4, rushDef:132.4, to:-0.24, ats:""},
+"Carolina Panthers": {league:"NFL", ppg:18.3, pa:22.4, passOff:179.3, rushOff:116.3, passDef:203.9, rushDef:123.3, to:-0.12, ats:""},
+"Minnesota Vikings": {league:"NFL", ppg:20.2, pa:19.6, passOff:166.7, rushOff:108.3, passDef:158.5, rushDef:124.1, to:-0.53, ats:""},
+"New York Jets": {league:"NFL", ppg:17.6, pa:29.6, passOff:140.3, rushOff:123.3, passDef:216.1, rushDef:139.5, to:-1.12, ats:""},
+"Cleveland Browns": {league:"NFL", ppg:16.4, pa:22.3, passOff:165.1, rushOff:97.0, passDef:167.2, rushDef:116.4, to:-0.41, ats:""},
+"Tennessee Titans": {league:"NFL", ppg:16.7, pa:28.1, passOff:166.1, rushOff:93.5, passDef:230.5, rushDef:114.6, to:-0.29, ats:""},
+"Las Vegas Raiders": {league:"NFL", ppg:14.2, pa:25.4, passOff:167.7, rushOff:77.5, passDef:201.0, rushDef:116.8, to:-0.41, ats:""}
+};
+
+const CFB_SEED = {
+"Alabama": {league:"CFB", conf:"SEC", ppg:48, pa:14, passOff:263.5, rushOff:104.1, passDef:169.9, rushDef:126.9, to:0, ats:"", wk1:true},
+"Arkansas": {league:"CFB", conf:"SEC", ppg:32.9, pa:33.8, passOff:262.9, rushOff:191.9, passDef:239.2, rushDef:185.9, to:0, ats:""},
+"Auburn": {league:"CFB", conf:"SEC", ppg:26.8, pa:20.7, passOff:197.1, rushOff:176.8, passDef:229.8, rushDef:99.3, to:0, ats:""},
+"Florida": {league:"CFB", conf:"SEC", ppg:21.6, pa:24.0, passOff:204.6, rushOff:139.0, passDef:222.9, rushDef:153.9, to:0, ats:""},
+"Georgia": {league:"CFB", conf:"SEC", ppg:63, pa:3, passOff:220.2, rushOff:182.1, passDef:216.5, rushDef:81.5, to:0, ats:"", wk1:true},
+"Kentucky": {league:"CFB", conf:"SEC", ppg:23.0, pa:26.4, passOff:201.9, rushOff:139.2, passDef:239.9, rushDef:134.2, to:0, ats:""},
+"LSU": {league:"CFB", conf:"SEC", ppg:51, pa:10, passOff:229.5, rushOff:104.0, passDef:204.6, rushDef:124.1, to:0, ats:"", wk1:true},
+"Mississippi State": {league:"CFB", conf:"SEC", ppg:30.4, pa:30.2, passOff:241.2, rushOff:158.0, passDef:223.0, rushDef:186.3, to:0, ats:""},
+"Missouri": {league:"CFB", conf:"SEC", ppg:30.2, pa:18.9, passOff:188.0, rushOff:228.3, passDef:173.5, rushDef:103.8, to:0, ats:""},
+"Oklahoma": {league:"CFB", conf:"SEC", ppg:51, pa:0, passOff:235.8, rushOff:118.5, passDef:195.2, rushDef:77.3, to:0, ats:"", wk1:true},
+"Ole Miss": {league:"CFB", conf:"SEC", ppg:37.6, pa:20.4, passOff:335.7, rushOff:188.9, passDef:213.1, rushDef:159.7, to:0, ats:""},
+"South Carolina": {league:"CFB", conf:"SEC", ppg:22.7, pa:22.1, passOff:225.2, rushOff:111.1, passDef:216.3, rushDef:136.7, to:0, ats:""},
+"Tennessee": {league:"CFB", conf:"SEC", ppg:56, pa:9, passOff:292.8, rushOff:173.5, passDef:244.8, rushDef:152.4, to:0, ats:"", wk1:true},
+"Texas": {league:"CFB", conf:"SEC", ppg:59, pa:7, passOff:250.7, rushOff:137.8, passDef:234.9, rushDef:103.9, to:0, ats:"", wk1:true},
+"Texas A&M": {league:"CFB", conf:"SEC", ppg:50, pa:0, passOff:259.8, rushOff:184.7, passDef:176.6, rushDef:130.8, to:0, ats:"", wk1:true},
+"Vanderbilt": {league:"CFB", conf:"SEC", ppg:38.5, pa:22.8, passOff:287.5, rushOff:175.5, passDef:249.4, rushDef:108.2, to:0, ats:""},
+"Illinois": {league:"CFB", conf:"Big Ten", ppg:29.4, pa:23.6, passOff:235.8, rushOff:138.1, passDef:218.4, rushDef:126.7, to:0, ats:""},
+"Indiana": {league:"CFB", conf:"Big Ten", ppg:52, pa:16, passOff:239.1, rushOff:212.9, passDef:188.8, rushDef:77.2, to:0, ats:"", wk1:true},
+"Iowa": {league:"CFB", conf:"Big Ten", ppg:29.3, pa:16.1, passOff:143.2, rushOff:176.9, passDef:172.7, rushDef:107.7, to:0, ats:""},
+"Maryland": {league:"CFB", conf:"Big Ten", ppg:23.5, pa:26.5, passOff:255.7, rushOff:104.3, passDef:226.5, rushDef:175.6, to:0, ats:""},
+"Michigan": {league:"CFB", conf:"Big Ten", ppg:13, pa:12, passOff:186.8, rushOff:210.2, passDef:211.4, rushDef:111.9, to:0, ats:"", wk1:true},
+"Michigan State": {league:"CFB", conf:"Big Ten", ppg:24.6, pa:29.9, passOff:222.7, rushOff:122.8, passDef:231.3, rushDef:147.3, to:0, ats:""},
+"Minnesota": {league:"CFB", conf:"Big Ten", ppg:23.0, pa:22.9, passOff:189.9, rushOff:103.2, passDef:210.5, rushDef:121.1, to:0, ats:""},
+"Nebraska": {league:"CFB", conf:"Big Ten", ppg:28.7, pa:24.6, passOff:224.6, rushOff:145.9, passDef:154.1, rushDef:175.4, to:0, ats:""},
+"Northwestern": {league:"CFB", conf:"Big Ten", ppg:23.4, pa:19.8, passOff:185.9, rushOff:160.2, passDef:193.5, rushDef:136.2, to:0, ats:""},
+"Ohio State": {league:"CFB", conf:"Big Ten", ppg:56, pa:3, passOff:268.2, rushOff:154.4, passDef:129.7, rushDef:89.4, to:0, ats:"", wk1:true},
+"Oregon": {league:"CFB", conf:"Big Ten", ppg:34, pa:27, passOff:253.6, rushOff:198.6, passDef:157.9, rushDef:115.7, to:0, ats:"", wk1:true},
+"Penn State": {league:"CFB", conf:"Big Ten", ppg:45, pa:0, passOff:187.6, rushOff:174.4, passDef:184.2, rushDef:142.5, to:0, ats:"", wk1:true},
+"Purdue": {league:"CFB", conf:"Big Ten", ppg:18.8, pa:31.8, passOff:217.2, rushOff:126.4, passDef:241.7, rushDef:181.8, to:0, ats:""},
+"Rutgers": {league:"CFB", conf:"Big Ten", ppg:28.7, pa:31.8, passOff:266.1, rushOff:141.0, passDef:222.9, rushDef:209.9, to:0, ats:""},
+"UCLA": {league:"CFB", conf:"Big Ten", ppg:18.2, pa:33.4, passOff:180.2, rushOff:139.7, passDef:196.6, rushDef:190.4, to:0, ats:""},
+"USC": {league:"CFB", conf:"Big Ten", ppg:39, pa:0, passOff:296.0, rushOff:169.5, passDef:207.5, rushDef:143.2, to:0, ats:"", wk1:true},
+"Washington": {league:"CFB", conf:"Big Ten", ppg:34.1, pa:18.7, passOff:244.5, rushOff:165.5, passDef:211.3, rushDef:100.1, to:0, ats:""},
+"Wisconsin": {league:"CFB", conf:"Big Ten", ppg:12.8, pa:21.6, passOff:136.4, rushOff:116.7, passDef:218.2, rushDef:105.2, to:0, ats:""},
+"Arizona": {league:"CFB", conf:"Big 12", ppg:31.5, pa:19.3, passOff:255.2, rushOff:152.4, passDef:165.3, rushDef:143.2, to:0, ats:""},
+"Arizona State": {league:"CFB", conf:"Big 12", ppg:25.8, pa:24.5, passOff:223.7, rushOff:193.6, passDef:233.5, rushDef:124.0, to:0, ats:""},
+"Baylor": {league:"CFB", conf:"Big 12", ppg:31.1, pa:32.6, passOff:309.6, rushOff:141.5, passDef:194.9, rushDef:197.2, to:0, ats:""},
+"BYU": {league:"CFB", conf:"Big 12", ppg:31.4, pa:19.1, passOff:221.4, rushOff:178.1, passDef:209.7, rushDef:122.7, to:0, ats:""},
+"Cincinnati": {league:"CFB", conf:"Big 12", ppg:30.3, pa:25.6, passOff:231.2, rushOff:176.1, passDef:220.5, rushDef:178.8, to:0, ats:""},
+"Colorado": {league:"CFB", conf:"Big 12", ppg:20.9, pa:30.5, passOff:202.8, rushOff:125.6, passDef:203.2, rushDef:222.5, to:0, ats:""},
+"Houston": {league:"CFB", conf:"Big 12", ppg:29.1, pa:22.8, passOff:216.4, rushOff:178.1, passDef:218.8, rushDef:129.0, to:0, ats:""},
+"Iowa State": {league:"CFB", conf:"Big 12", ppg:27.4, pa:20.2, passOff:221.4, rushOff:174.7, passDef:218.5, rushDef:138.0, to:0, ats:""},
+"Kansas": {league:"CFB", conf:"Big 12", ppg:28.1, pa:26.8, passOff:222.2, rushOff:168.2, passDef:214.1, rushDef:173.1, to:0, ats:""},
+"Kansas State": {league:"CFB", conf:"Big 12", ppg:29.4, pa:26.7, passOff:198.8, rushOff:171.3, passDef:222.4, rushDef:163.8, to:0, ats:""},
+"Oklahoma State": {league:"CFB", conf:"Big 12", ppg:14.2, pa:33.3, passOff:174.1, rushOff:118.3, passDef:252.4, rushDef:165.9, to:0, ats:""},
+"TCU": {league:"CFB", conf:"Big 12", ppg:30.7, pa:25.3, passOff:290.1, rushOff:131.4, passDef:245.6, rushDef:133.1, to:0, ats:""},
+"Texas Tech": {league:"CFB", conf:"Big 12", ppg:33, pa:10, passOff:278.5, rushOff:182.9, passDef:190.1, rushDef:68.1, to:0, ats:"", wk1:true},
+"UCF": {league:"CFB", conf:"Big 12", ppg:24.3, pa:23.6, passOff:220.8, rushOff:158.0, passDef:185.1, rushDef:150.7, to:0, ats:""},
+"Utah": {league:"CFB", conf:"Big 12", ppg:41.3, pa:18.9, passOff:216.6, rushOff:266.3, passDef:177.8, rushDef:181.2, to:0, ats:""},
+"West Virginia": {league:"CFB", conf:"Big 12", ppg:21.8, pa:30.8, passOff:188.9, rushOff:160.6, passDef:265.4, rushDef:143.8, to:0, ats:""},
+"Boston College": {league:"CFB", conf:"ACC", ppg:25.4, pa:32.8, passOff:280.2, rushOff:103.9, passDef:255.7, rushDef:177.6, to:0, ats:""},
+"California": {league:"CFB", conf:"ACC", ppg:25.3, pa:27.2, passOff:276.4, rushOff:81.8, passDef:205.2, rushDef:156.6, to:0, ats:""},
+"Clemson": {league:"CFB", conf:"ACC", ppg:27.2, pa:20.5, passOff:267.8, rushOff:124.5, passDef:251.6, rushDef:105.5, to:0, ats:""},
+"Duke": {league:"CFB", conf:"ACC", ppg:34.6, pa:29.4, passOff:285.4, rushOff:138.1, passDef:276.8, rushDef:147.4, to:0, ats:""},
+"Florida State": {league:"CFB", conf:"ACC", ppg:33.0, pa:22.0, passOff:253.4, rushOff:218.7, passDef:190.8, rushDef:138.1, to:0, ats:""},
+"Georgia Tech": {league:"CFB", conf:"ACC", ppg:32.2, pa:25.0, passOff:262.5, rushOff:197.5, passDef:235.2, rushDef:164.0, to:0, ats:""},
+"Louisville": {league:"CFB", conf:"ACC", ppg:29.9, pa:21.2, passOff:220.6, rushOff:163.9, passDef:188.8, rushDef:114.3, to:0, ats:""},
+"Miami (FL)": {league:"CFB", conf:"ACC", ppg:30.9, pa:14.8, passOff:253.2, rushOff:151.8, passDef:204.9, rushDef:89.2, to:0, ats:""},
+"NC State": {league:"CFB", conf:"ACC", ppg:30.2, pa:27.2, passOff:245.7, rushOff:145.5, passDef:273.2, rushDef:138.8, to:0, ats:""},
+"North Carolina": {league:"CFB", conf:"ACC", ppg:19.2, pa:24.5, passOff:183.9, rushOff:105.2, passDef:211.2, rushDef:125.7, to:0, ats:""},
+"Pittsburgh": {league:"CFB", conf:"ACC", ppg:33.7, pa:24.8, passOff:273.3, rushOff:117.2, passDef:235.3, rushDef:95.1, to:0, ats:""},
+"SMU": {league:"CFB", conf:"ACC", ppg:32.2, pa:20.5, passOff:283.1, rushOff:133.9, passDef:283.2, rushDef:111.9, to:0, ats:""},
+"Stanford": {league:"CFB", conf:"ACC", ppg:18.8, pa:29.2, passOff:222.0, rushOff:84.5, passDef:288.9, rushDef:119.2, to:0, ats:""},
+"Syracuse": {league:"CFB", conf:"ACC", ppg:20.2, pa:34.9, passOff:217.2, rushOff:123.2, passDef:252.8, rushDef:175.0, to:0, ats:""},
+"Virginia": {league:"CFB", conf:"ACC", ppg:30.8, pa:19.6, passOff:239.1, rushOff:178.7, passDef:195.6, rushDef:114.5, to:0, ats:""},
+"Virginia Tech": {league:"CFB", conf:"ACC", ppg:21.4, pa:30.2, passOff:166.3, rushOff:182.4, passDef:224.8, rushDef:153.2, to:0, ats:""},
+"Wake Forest": {league:"CFB", conf:"ACC", ppg:28.1, pa:22.1, passOff:237.7, rushOff:156.2, passDef:206.9, rushDef:121.6, to:0, ats:""},
+"Notre Dame": {league:"CFB", conf:"Independent", ppg:42.0, pa:17.6, passOff:255.1, rushOff:203.4, passDef:213.4, rushDef:100.1, to:0, ats:""}
+};
+
+const NFL_WEEK1 = [
+  {a:"New England Patriots", b:"Seattle Seahawks", date:"Wed Sep 9"},
+  {a:"San Francisco 49ers", b:"Los Angeles Rams", date:"Thu Sep 10 (Melbourne)"},
+  {a:"Chicago Bears", b:"Carolina Panthers", date:"Sun Sep 13"},
+  {a:"Tampa Bay Buccaneers", b:"Cincinnati Bengals", date:"Sun Sep 13"},
+  {a:"New Orleans Saints", b:"Detroit Lions", date:"Sun Sep 13"},
+  {a:"Buffalo Bills", b:"Houston Texans", date:"Sun Sep 13"},
+  {a:"Baltimore Ravens", b:"Indianapolis Colts", date:"Sun Sep 13"},
+  {a:"Cleveland Browns", b:"Jacksonville Jaguars", date:"Sun Sep 13"},
+  {a:"Atlanta Falcons", b:"Pittsburgh Steelers", date:"Sun Sep 13"},
+  {a:"New York Jets", b:"Tennessee Titans", date:"Sun Sep 13"},
+  {a:"Arizona Cardinals", b:"Los Angeles Chargers", date:"Sun Sep 13"},
+  {a:"Miami Dolphins", b:"Las Vegas Raiders", date:"Sun Sep 13"},
+  {a:"Green Bay Packers", b:"Minnesota Vikings", date:"Sun Sep 13"},
+  {a:"Washington Commanders", b:"Philadelphia Eagles", date:"Sun Sep 13"},
+  {a:"Dallas Cowboys", b:"New York Giants", date:"Sun Sep 13 (SNF)"},
+  {a:"Denver Broncos", b:"Kansas City Chiefs", date:"Mon Sep 14 (MNF)"}
+];
+
+const CFB_TOP25 = [
+  {rank:1, team:"Ohio State", record:"1-0", next:"@ Texas (Sep 12)"},
+  {rank:2, team:"Oregon", record:"1-0", next:"@ Oklahoma State (Sep 12)"},
+  {rank:3, team:"Georgia", record:"1-0", next:"vs Western Kentucky (Sep 12)"},
+  {rank:4, team:"Notre Dame", record:"0-0", next:"vs Wisconsin (Sep 6)"},
+  {rank:5, team:"Texas", record:"1-0", next:"vs Ohio State (Sep 12)"},
+  {rank:6, team:"Indiana", record:"1-0", next:"vs Howard (Sep 12)"},
+  {rank:7, team:"Miami (FL)", record:"1-0", next:"vs Florida A&M (Sep 10)"},
+  {rank:8, team:"Texas A&M", record:"1-0", next:"vs Arizona State (Sep 12)"},
+  {rank:9, team:"Ole Miss", record:"0-0", next:"vs Louisville (Sep 6)"},
+  {rank:10, team:"Oklahoma", record:"1-0", next:"@ Michigan (Sep 12)"},
+  {rank:11, team:"LSU", record:"1-0", next:"vs Louisiana Tech (Sep 12)"},
+  {rank:12, team:"Texas Tech", record:"1-0", next:"@ Oregon State (Sep 12)"},
+  {rank:13, team:"Alabama", record:"1-0", next:"@ Kentucky (Sep 12)"},
+  {rank:14, team:"BYU", record:"1-0", next:"vs Arizona (Sep 12)"},
+  {rank:14, team:"USC", record:"2-0", next:"vs Louisiana (Sep 12)"},
+  {rank:16, team:"Michigan", record:"1-0", next:"vs Oklahoma (Sep 12)"},
+  {rank:17, team:"Washington", record:"0-0", next:"vs Washington State (Sep 6)"},
+  {rank:18, team:"Penn State", record:"1-0", next:"@ Temple (Sep 12)"},
+  {rank:19, team:"SMU", record:"0-0", next:"@ Florida State (Sep 7)"},
+  {rank:20, team:"Tennessee", record:"1-0", next:"@ Georgia Tech (Sep 12)"},
+  {rank:21, team:"Utah", record:"1-0", next:"vs Arkansas (Sep 12)"},
+  {rank:22, team:"Iowa", record:"1-0", next:"vs Iowa State (Sep 12)"},
+  {rank:23, team:"Houston", record:"1-0", next:"vs Southern U. (Sep 12)"},
+  {rank:24, team:"Louisville", record:"0-0", next:"@ Ole Miss (Sep 6)"},
+  {rank:25, team:"Missouri", record:"1-0", next:"@ Kansas (Sep 11)"}
+];
+const CFB_OTHERS = "Clemson (0-1), Florida (1-0), Boise State (0-1), Arizona (1-0), TCU (0-1), Navy (1-0), South Carolina (1-0), Illinois (1-0), Vanderbilt (1-0), Oklahoma State (0-1), Pittsburgh (1-0), Virginia Tech (1-0), Minnesota (1-0), Louisiana (1-0), Georgia Tech (0-1), UNLV (1-1), New Mexico (1-0), Auburn (1-0), James Madison (1-0), Memphis (2-0), California (0-1), Liberty (0-1), Tulane (0-1), Virginia (1-0), Western Michigan (0-1)";
+
+const CFB_WEEK = [
+  {a:"Ohio State", b:"Texas", date:"Sat Sep 12"},
+  {a:"Oregon", b:"Oklahoma State", date:"Sat Sep 12"},
+  {a:"Georgia", b:"Western Kentucky", date:"Sat Sep 12"},
+  {a:"Notre Dame", b:"Wisconsin", date:"Sun Sep 6"},
+  {a:"Indiana", b:"Howard", date:"Sat Sep 12"},
+  {a:"Miami (FL)", b:"Florida A&M", date:"Thu Sep 10"},
+  {a:"Texas A&M", b:"Arizona State", date:"Sat Sep 12"},
+  {a:"Ole Miss", b:"Louisville", date:"Sun Sep 6"},
+  {a:"LSU", b:"Louisiana Tech", date:"Sat Sep 12"},
+  {a:"Texas Tech", b:"Oregon State", date:"Sat Sep 12"},
+  {a:"Alabama", b:"Kentucky", date:"Sat Sep 12"},
+  {a:"BYU", b:"Arizona", date:"Sat Sep 12"},
+  {a:"USC", b:"Louisiana", date:"Sat Sep 12"},
+  {a:"Oklahoma", b:"Michigan", date:"Sat Sep 12"},
+  {a:"Washington", b:"Washington State", date:"Sun Sep 6"},
+  {a:"Penn State", b:"Temple", date:"Sat Sep 12"},
+  {a:"SMU", b:"Florida State", date:"Mon Sep 7"},
+  {a:"Tennessee", b:"Georgia Tech", date:"Sat Sep 12"},
+  {a:"Utah", b:"Arkansas", date:"Sat Sep 12"},
+  {a:"Iowa", b:"Iowa State", date:"Sat Sep 12"},
+  {a:"Houston", b:"Southern U.", date:"Sat Sep 12"},
+  {a:"Missouri", b:"Kansas", date:"Fri Sep 11"}
+];
+
+const PLAYERS_SEED = {
+"Jayden Maiava": {pos:"QB", team:"USC", league:"CFB", games:[{date:"2026-09-05", opp:"vs Missouri State", passYds:635, rushYds:0, receptions:0, recYds:0, tds:5}]},
+"Nate Sheppard": {pos:"RB", team:"Duke", league:"CFB", games:[{date:"2026-09-05", opp:"Week 1", passYds:0, rushYds:227, receptions:0, recYds:0, tds:2}]},
+"Malachi Toney": {pos:"WR", team:"Miami (FL)", league:"CFB", games:[{date:"2026-09-05", opp:"vs Florida A&M", passYds:0, rushYds:0, receptions:0, recYds:234, tds:2}]}
+};
+
+const ODDS_SEED = [
+  {game:"Dallas Cowboys @ New York Giants", league:"NFL", date:"Sep 13",
+   aTeam:"Dallas Cowboys", aML:-148, aSpread:-2.5, aSpreadOdds:-110,
+   bTeam:"New York Giants", bML:124, bSpread:2.5, bSpreadOdds:-110,
+   total:48.5, overOdds:-110, underOdds:-110},
+  {game:"Denver Broncos @ Kansas City Chiefs", league:"NFL", date:"Sep 14 (MNF)",
+   aTeam:"Denver Broncos", aML:124, aSpread:2.5, aSpreadOdds:-110,
+   bTeam:"Kansas City Chiefs", bML:-144, bSpread:-2.5, bSpreadOdds:-110,
+   total:42.5, overOdds:-110, underOdds:-110},
+  {game:"Ohio State @ Texas", league:"CFB", date:"Sep 12",
+   aTeam:"Ohio State", aML:-104, aSpread:1.5, aSpreadOdds:-110,
+   bTeam:"Texas", bML:-115, bSpread:-1.5, bSpreadOdds:-110,
+   total:47.5, overOdds:-110, underOdds:-110}
+];
+
+const hasStorage = (typeof window.storage !== 'undefined' && window.storage !== null);
+let memTeams = {}, memHistory = {}, memPlayers = {};
+let storageWarned = false;
+
+function warnNoStorage(){
+  if(storageWarned) return;
+  storageWarned = true;
+  const banner = document.createElement('div');
+  banner.className = 'note';
+  banner.style.cssText = 'background:rgba(240,185,61,0.12);padding:8px 10px;border-radius:4px;margin-bottom:14px;';
+  banner.textContent = "Note: your edits won't be saved between visits in this view — everything still works for now, pre-loaded with real stats.";
+  document.querySelector('.wrap').insertBefore(banner, document.querySelector('.toptabs'));
+}
+
+async function fetchJSON(path){
+  try{
+    const res = await fetch(path, {cache:'no-store'});
+    if(!res.ok) return null;
+    return await res.json();
+  }catch(e){ return null; }
+}
+
+async function loadTeams(){
+  if(!hasStorage){ warnNoStorage(); return memTeams; }
+  try{ const res = await window.storage.get(STORAGE_KEY, false); return res ? JSON.parse(res.value) : {}; }catch(e){ return {}; }
+}
+async function saveTeams(teams){
+  if(!hasStorage){ memTeams = teams; return; }
+  try{ await window.storage.set(STORAGE_KEY, JSON.stringify(teams), false); }catch(e){ memTeams = teams; }
+}
+async function loadHistory(name){
+  if(!hasStorage){ return memHistory[name] || []; }
+  try{ const res = await window.storage.get('history:'+name, false); return res ? JSON.parse(res.value) : []; }catch(e){ return []; }
+}
+async function appendHistory(name, entry){
+  const hist = await loadHistory(name);
+  hist.push(entry);
+  if(!hasStorage){ memHistory[name] = hist; return; }
+  try{ await window.storage.set('history:'+name, JSON.stringify(hist), false); }catch(e){ memHistory[name] = hist; }
+}
+async function loadPlayers(){
+  if(!hasStorage){ return memPlayers; }
+  try{ const res = await window.storage.get('players-db', false); return res ? JSON.parse(res.value) : {}; }catch(e){ return {}; }
+}
+async function savePlayers(players){
+  if(!hasStorage){ memPlayers = players; return; }
+  try{ await window.storage.set('players-db', JSON.stringify(players), false); }catch(e){ memPlayers = players; }
+}
+
+let teamsCache = {};
+let playersCache = {};
+
+async function ensureSeeded(){
+  try{
+    teamsCache = await loadTeams();
+    let changed = false;
+    const liveNfl = await fetchJSON('./data/nfl-teams.json');
+    const liveCfb = await fetchJSON('./data/cfb-teams.json');
+    const nflData = liveNfl || NFL_SEED;
+    const cfbData = liveCfb || CFB_SEED;
+    const today = new Date().toISOString().slice(0,10);
+    // Always re-sync every team to whatever's currently live (or the fallback
+    // constants) -- not just on first load. This is what makes Trends
+    // actually accumulate: a history entry is logged whenever the incoming
+    // numbers differ from what's already stored, which happens naturally
+    // whenever the weekly Action pushes fresh stats.
+    async function syncTeam(name, incoming){
+      const existing = teamsCache[name];
+      if(!existing || JSON.stringify(existing) !== JSON.stringify(incoming)){
+        teamsCache[name] = Object.assign({}, incoming);
+        changed = true;
+        await appendHistory(name, Object.assign({date: today}, incoming));
+      }
+    }
+    for(const name in nflData){ await syncTeam(name, nflData[name]); }
+    for(const name in cfbData){ await syncTeam(name, cfbData[name]); }
+    if(changed) await saveTeams(teamsCache);
+  }catch(e){
+    teamsCache = Object.assign({}, NFL_SEED, CFB_SEED);
+  }
+}
+
+async function ensurePlayersSeeded(){
+  try{
+    playersCache = await loadPlayers();
+    let changed = false;
+    const liveNflP = await fetchJSON('./data/nfl-players.json');
+    const liveCfbP = await fetchJSON('./data/cfb-players.json');
+    for(const name in PLAYERS_SEED){
+      if(!playersCache[name]){ playersCache[name] = JSON.parse(JSON.stringify(PLAYERS_SEED[name])); changed = true; }
+    }
+    // Always re-sync from live data on every load, same as teams -- picks
+    // up new games/players each week instead of only on first visit.
+    if(liveNflP){ for(const name in liveNflP){
+      if(JSON.stringify(playersCache[name]) !== JSON.stringify(liveNflP[name])){ playersCache[name] = Object.assign({}, liveNflP[name]); changed = true; }
+    } }
+    if(liveCfbP){ for(const name in liveCfbP){
+      if(JSON.stringify(playersCache[name]) !== JSON.stringify(liveCfbP[name])){ playersCache[name] = Object.assign({}, liveCfbP[name]); changed = true; }
+    } }
+    if(changed) await savePlayers(playersCache);
+  }catch(e){
+    playersCache = JSON.parse(JSON.stringify(PLAYERS_SEED));
+  }
+}
+
+function activateTopTab(tabName){
+  document.querySelectorAll('.tab[data-tab]').forEach(t=>t.classList.toggle('active', t.dataset.tab===tabName));
+  document.querySelectorAll('.leaguepanel').forEach(p=>p.classList.toggle('active', p.id==='panel-'+tabName));
+}
+function activateSubTab(subName){
+  const el = document.querySelector('[data-subtab="'+subName+'"]');
+  if(!el) return;
+  const parent = el.closest('.leaguepanel');
+  parent.querySelectorAll('.subtab').forEach(t=>t.classList.toggle('active', t.dataset.subtab===subName));
+  parent.querySelectorAll('.subpanel').forEach(p=>p.classList.toggle('active', p.id==='subpanel-'+subName));
+}
+document.querySelectorAll('.tab[data-tab]').forEach(tab=>{
+  tab.addEventListener('click', ()=> activateTopTab(tab.dataset.tab));
+});
+document.querySelectorAll('.subtab[data-subtab]').forEach(tab=>{
+  tab.addEventListener('click', ()=> activateSubTab(tab.dataset.subtab));
+});
+
+function renderTeamList(lg){
+  const league = lg.toUpperCase();
+  const list = document.getElementById(lg+'-team-list');
+  const names = Object.keys(teamsCache).filter(n=>teamsCache[n].league===league).sort();
+  if(names.length===0){
+    list.innerHTML = '<div class="empty">No teams yet.</div>';
+  } else {
+    list.innerHTML = names.map(n=>{
+      const t = teamsCache[n];
+      return '<div class="team-row"><div><div class="team-name">'+n+(t.conf?' <span class="pill">'+t.conf+'</span>':'')+(t.wk1?' <span class="pill" style="background:rgba(63,122,153,0.35);color:#8fd39f;">2026 Wk1</span>':'')+'</div><div class="team-meta">'+fmt(t.ppg)+' PPG · '+fmt(t.pa)+' PA · TO '+(t.to>=0?'+':'')+fmt(t.to)+'/g · ATS '+(t.ats||'—')+'</div></div><button class="danger" data-del="'+n+'">Remove</button></div>';
+    }).join('');
+    list.querySelectorAll('[data-del]').forEach(btn=>{
+      btn.addEventListener('click', async ()=>{
+        delete teamsCache[btn.dataset.del];
+        await saveTeams(teamsCache);
+        renderTeamList(lg);
+        populateSelects();
+      });
+    });
+  }
+}
+function refreshTeamLists(){ renderTeamList('nfl'); renderTeamList('cfb'); populateSelects(); }
+
+function populateSelects(){
+  const nflNames = Object.keys(teamsCache).filter(n=>teamsCache[n].league==='NFL').sort();
+  const cfbNames = Object.keys(teamsCache).filter(n=>teamsCache[n].league==='CFB').sort();
+  const nflOpts = nflNames.map(n=>'<option value="'+n+'">'+n+'</option>').join('');
+  const cfbOpts = cfbNames.map(n=>'<option value="'+n+'">'+n+'</option>').join('');
+  ['m-teamA-nfl','m-teamB-nfl','nfl-trend-team'].forEach(id=>{
+    const el = document.getElementById(id); const prev = el.value;
+    el.innerHTML = nflOpts || '<option value="">No NFL teams yet</option>';
+    if(nflNames.includes(prev)) el.value = prev;
+  });
+  ['m-teamA-cfb','m-teamB-cfb','cfb-trend-team'].forEach(id=>{
+    const el = document.getElementById(id); const prev = el.value;
+    el.innerHTML = cfbOpts || '<option value="">No college teams yet</option>';
+    if(cfbNames.includes(prev)) el.value = prev;
+  });
+}
+
+function wireAddTeamForm(lg){
+  const league = lg.toUpperCase();
+  document.getElementById(lg+'-save-team').addEventListener('click', async ()=>{
+    const name = document.getElementById(lg+'-t-name').value.trim();
+    if(!name){ alert('Enter a team name'); return; }
+    const team = {
+      league,
+      ppg: parseFloat(document.getElementById(lg+'-t-ppg').value)||0,
+      pa: parseFloat(document.getElementById(lg+'-t-pa').value)||0,
+      passOff: parseFloat(document.getElementById(lg+'-t-passoff').value)||0,
+      passDef: parseFloat(document.getElementById(lg+'-t-passdef').value)||0,
+      rushOff: parseFloat(document.getElementById(lg+'-t-rushoff').value)||0,
+      rushDef: parseFloat(document.getElementById(lg+'-t-rushdef').value)||0,
+      to: parseFloat(document.getElementById(lg+'-t-to').value)||0,
+      ats: document.getElementById(lg+'-t-ats').value.trim()
+    };
+    teamsCache[name] = team;
+    await saveTeams(teamsCache);
+    await appendHistory(name, Object.assign({date: new Date().toISOString().slice(0,10)}, team));
+    [lg+'-t-name',lg+'-t-ppg',lg+'-t-pa',lg+'-t-passoff',lg+'-t-passdef',lg+'-t-rushoff',lg+'-t-rushdef',lg+'-t-to',lg+'-t-ats'].forEach(id=>document.getElementById(id).value='');
+    renderTeamList(lg);
+    populateSelects();
+  });
+}
+wireAddTeamForm('nfl');
+wireAddTeamForm('cfb');
+
+function wireTrend(lg){
+  document.getElementById(lg+'-load-trend').addEventListener('click', async ()=>{
+    const name = document.getElementById(lg+'-trend-team').value;
+    const out = document.getElementById(lg+'-trend-output');
+    if(!name){ out.innerHTML=''; return; }
+    const hist = await loadHistory(name);
+    if(hist.length===0){ out.innerHTML = '<div class="card"><div class="empty">No history logged yet for this team.</div></div>'; return; }
+    const rows = hist.slice().reverse().map(h=>'<div class="history-item"><span>'+h.date+'</span><span>'+fmt(h.ppg)+' PPG / '+fmt(h.pa)+' PA</span><span>'+fmt(h.passOff)+' pass / '+fmt(h.rushOff)+' rush</span></div>').join('');
+    let trendNote = '';
+    if(hist.length>=2){
+      const delta = hist[hist.length-1].ppg - hist[0].ppg;
+      trendNote = '<div class="note">Scoring trend: '+(delta>=0?'+':'')+fmt(delta)+' PPG from first to most recent logged entry.</div>';
+    }
+    out.innerHTML = '<div class="card"><h2>'+name+' — logged history</h2>'+rows+trendNote+'</div>';
+  });
+}
+wireTrend('nfl');
+wireTrend('cfb');
+
+function statLabel(stat){
+  return {passYds:'passing yards', rushYds:'rushing yards', receptions:'receptions', recYds:'receiving yards', tds:'total TDs'}[stat] || stat;
+}
+function populatePlayerSelects(){
+  const nflNames = Object.keys(playersCache).filter(n=>playersCache[n].league==='NFL').sort();
+  const cfbNames = Object.keys(playersCache).filter(n=>playersCache[n].league==='CFB').sort();
+  const nflOpts = nflNames.map(n=>'<option value="'+n+'">'+n+' ('+playersCache[n].pos+')</option>').join('');
+  const cfbOpts = cfbNames.map(n=>'<option value="'+n+'">'+n+' ('+playersCache[n].pos+')</option>').join('');
+  ['nfl-hr-player','nfl-g-player'].forEach(id=>{
+    const el = document.getElementById(id); const prev = el.value;
+    el.innerHTML = nflOpts || '<option value="">Add a player first</option>';
+    if(nflNames.includes(prev)) el.value = prev;
+  });
+  ['cfb-hr-player','cfb-g-player'].forEach(id=>{
+    const el = document.getElementById(id); const prev = el.value;
+    el.innerHTML = cfbOpts || '<option value="">Add a player first</option>';
+    if(cfbNames.includes(prev)) el.value = prev;
+  });
+  const nflCountEl = document.getElementById('nfl-player-count');
+  if(nflCountEl) nflCountEl.textContent = nflNames.length + ' loaded';
+  const cfbCountEl = document.getElementById('cfb-player-count');
+  if(cfbCountEl) cfbCountEl.textContent = cfbNames.length + ' loaded';
+}
+function renderPlayersList(lg){
+  const league = lg.toUpperCase();
+  const list = document.getElementById(lg+'-players-list');
+  const names = Object.keys(playersCache).filter(n=>playersCache[n].league===league).sort();
+  if(names.length===0){
+    list.innerHTML = '<div class="empty">No players yet.</div>';
+  } else {
+    list.innerHTML = names.map(n=>{
+      const p = playersCache[n];
+      const g = p.games || [];
+      const last5 = g.slice(-5);
+      const avg = function(key){ return last5.length ? (last5.reduce(function(s,x){return s+(x[key]||0);},0)/last5.length) : 0; };
+      let mainStat = 'passYds';
+      if(p.pos==='RB') mainStat='rushYds';
+      if(p.pos==='WR'||p.pos==='TE') mainStat='recYds';
+      return '<div class="team-row"><div><div class="team-name">'+n+' <span class="pill">'+p.pos+'</span></div><div class="team-meta">'+(p.team||'—')+' · '+g.length+' game'+(g.length===1?'':'s')+' logged · L5 avg '+statLabel(mainStat)+': '+fmt(avg(mainStat))+'</div></div><button class="danger" data-delp="'+n+'">Remove</button></div>';
+    }).join('');
+    list.querySelectorAll('[data-delp]').forEach(btn=>{
+      btn.addEventListener('click', async ()=>{
+        delete playersCache[btn.dataset.delp];
+        await savePlayers(playersCache);
+        renderPlayersList(lg);
+        populatePlayerSelects();
+      });
+    });
+  }
+}
+function refreshPlayersLists(){ renderPlayersList('nfl'); renderPlayersList('cfb'); populatePlayerSelects(); }
+
+function wireAddPlayerForm(lg){
+  const league = lg.toUpperCase();
+  document.getElementById(lg+'-save-player').addEventListener('click', async ()=>{
+    const name = document.getElementById(lg+'-p-name').value.trim();
+    if(!name){ alert('Enter a player name'); return; }
+    playersCache[name] = {
+      pos: document.getElementById(lg+'-p-pos').value,
+      team: document.getElementById(lg+'-p-team').value.trim(),
+      league: league,
+      games: (playersCache[name] && playersCache[name].games) || []
+    };
+    await savePlayers(playersCache);
+    [lg+'-p-name', lg+'-p-team'].forEach(id=>document.getElementById(id).value='');
+    renderPlayersList(lg);
+    populatePlayerSelects();
+  });
+}
+wireAddPlayerForm('nfl');
+wireAddPlayerForm('cfb');
+
+function wireLogGameForm(lg){
+  document.getElementById(lg+'-save-game').addEventListener('click', async ()=>{
+    const name = document.getElementById(lg+'-g-player').value;
+    if(!name || !playersCache[name]){ alert('Add a player first'); return; }
+    const entry = {
+      date: new Date().toISOString().slice(0,10),
+      opp: document.getElementById(lg+'-g-opp').value.trim(),
+      passYds: parseFloat(document.getElementById(lg+'-g-passyds').value)||0,
+      rushYds: parseFloat(document.getElementById(lg+'-g-rushyds').value)||0,
+      receptions: parseFloat(document.getElementById(lg+'-g-rec').value)||0,
+      recYds: parseFloat(document.getElementById(lg+'-g-recyds').value)||0,
+      tds: parseFloat(document.getElementById(lg+'-g-tds').value)||0
+    };
+    playersCache[name].games = playersCache[name].games || [];
+    playersCache[name].games.push(entry);
+    await savePlayers(playersCache);
+    const oppId = lg+'-g-opp';
+    [lg+'-g-opp',lg+'-g-passyds',lg+'-g-rushyds',lg+'-g-rec',lg+'-g-recyds',lg+'-g-tds'].forEach(function(id){
+      document.getElementById(id).value = (id===oppId) ? '' : '0';
+    });
+    renderPlayersList(lg);
+  });
+}
+wireLogGameForm('nfl');
+wireLogGameForm('cfb');
+
+function wireHitRate(lg){
+  document.getElementById(lg+'-run-hitrate').addEventListener('click', ()=>{
+    const name = document.getElementById(lg+'-hr-player').value;
+    const stat = document.getElementById(lg+'-hr-stat').value;
+    const line = parseFloat(document.getElementById(lg+'-hr-line').value);
+    const out = document.getElementById(lg+'-hitrate-output');
+    if(!name || !playersCache[name]){ out.innerHTML = '<div class="empty">Add a player and log some games first.</div>'; return; }
+    const games = (playersCache[name].games || []).slice().reverse();
+    if(games.length===0){ out.innerHTML = '<div class="empty">No games logged for this player yet.</div>'; return; }
+    if(isNaN(line)){ out.innerHTML = '<div class="empty">Enter the line to check against.</div>'; return; }
+    const overs = games.filter(g=>(g[stat]||0) > line).length;
+    const pct = Math.round((overs/games.length)*100);
+    const last5 = games.slice(0,5);
+    const last5overs = last5.filter(g=>(g[stat]||0) > line).length;
+    const badgeClass = pct>=60 ? 'high' : (pct>=40 ? 'mid' : 'low');
+    const rows = games.map(function(g){
+      const val = g[stat]||0;
+      const isOver = val > line;
+      return '<div class="glog-row"><span>'+g.date+(g.opp?' · '+g.opp:'')+'</span><span class="glog-val '+(isOver?'over':'under')+'">'+fmt(val)+' '+(isOver?'▲':'▼')+'</span></div>';
+    }).join('');
+    out.innerHTML = '<div class="hitrate-badge '+badgeClass+'">'+overs+'/'+games.length+' · '+pct+'%</div><div class="hitrate-sub">over '+line+' '+statLabel(stat)+' · last 5: '+last5overs+'/'+last5.length+'</div><div style="margin-top:12px;">'+rows+'</div>';
+  });
+}
+wireHitRate('nfl');
+wireHitRate('cfb');
+
+function edgeRow(label, aVal, bVal, higherIsBetterForA){
+  if(higherIsBetterForA===undefined) higherIsBetterForA = true;
+  const aWins = higherIsBetterForA ? aVal>bVal : aVal<bVal;
+  return '<div class="edge-row"><div class="edge-val '+(aWins?'win':'lose')+'">'+fmt(aVal)+'</div><div class="edge-label">'+label+'</div><div class="edge-val '+(!aWins?'win':'lose')+'">'+fmt(bVal)+'</div></div>';
+}
+function runMatchupFor(nameA, nameB, outId){
+  const out = document.getElementById(outId);
+  if(!nameA || !nameB || !teamsCache[nameA] || !teamsCache[nameB] || nameA===nameB){
+    out.innerHTML = '<div class="card"><div class="empty">Both teams need stats saved first — add them in Teams.</div></div>';
+    return;
+  }
+  const A = teamsCache[nameA], B = teamsCache[nameB];
+  const aPassProj = (A.passOff + B.passDef)/2;
+  const bPassProj = (B.passOff + A.passDef)/2;
+  const aRushProj = (A.rushOff + B.rushDef)/2;
+  const bRushProj = (B.rushOff + A.rushDef)/2;
+  const aScore = Math.round((A.ppg + B.pa)/2);
+  const bScore = Math.round((B.ppg + A.pa)/2);
+  const total = aScore + bScore;
+  const spreadVal = aScore - bScore;
+  const spreadLabel = spreadVal===0 ? (nameA+' PK') : (spreadVal>0 ? (nameA+' -'+spreadVal) : (nameB+' -'+Math.abs(spreadVal)));
+
+  out.innerHTML = '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', aPassProj, bPassProj)+edgeRow('Proj. rush yds', aRushProj, bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="mu-add-spread">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="mu-add-total">Add "Total '+total+'" to parlay</button></div><div class="note">Rounded to a realistic final score from offense-vs-defense averaging — not a sportsbook line. The parlay buttons log the model own projected number at a placeholder -110.</div></div>';
+  document.getElementById('mu-add-spread').addEventListener('click', ()=> addLeg(spreadLabel+' (model proj.)', -110));
+  document.getElementById('mu-add-total').addEventListener('click', ()=> addLeg('Total '+total+' (model proj.)', -110));
+}
+document.getElementById('run-matchup-nfl').addEventListener('click', ()=>{
+  runMatchupFor(document.getElementById('m-teamA-nfl').value, document.getElementById('m-teamB-nfl').value, 'matchup-output-nfl');
+});
+document.getElementById('run-matchup-cfb').addEventListener('click', ()=>{
+  runMatchupFor(document.getElementById('m-teamA-cfb').value, document.getElementById('m-teamB-cfb').value, 'matchup-output-cfb');
+});
+
+let CURRENT_NFL_WEEK = null;
+let NFL_WEEK_GAMES = [];
+let CFB_WEEK_GAMES = [];
+async function renderSchedule(){
+  const live = await fetchJSON('./data/nfl-schedule.json');
+  const games = (live && live.games && live.games.length) ? live.games : NFL_WEEK1;
+  NFL_WEEK_GAMES = games;
+  CURRENT_NFL_WEEK = live ? live.week : 1;
+  const list = document.getElementById('nfl-schedule-list');
+  const heading = document.getElementById('nfl-week-heading');
+  if(heading) heading.textContent = 'NFL Week ' + CURRENT_NFL_WEEK + ' · 2026 season';
+  list.innerHTML = games.map(function(g,i){
+    return '<div class="game-row" data-idx="'+i+'"><div>'+g.a+' @ '+g.b+'</div><div class="game-date">'+g.date+'</div></div>';
+  }).join('');
+  list.querySelectorAll('.game-row').forEach(function(row){
+    row.addEventListener('click', function(){
+      const g = games[row.dataset.idx];
+      activateTopTab('nfl');
+      activateSubTab('nfl-matchup');
+      document.getElementById('m-teamA-nfl').value = g.a;
+      document.getElementById('m-teamB-nfl').value = g.b;
+      runMatchupFor(g.a, g.b, 'matchup-output-nfl');
+    });
+  });
+}
+async function renderCfbSchedule(){
+  const live = await fetchJSON('./data/cfb-schedule.json');
+  const games = (live && live.length) ? live : CFB_WEEK;
+  CFB_WEEK_GAMES = games;
+  const list = document.getElementById('cfb-schedule-list');
+  list.innerHTML = games.map(function(g,i){
+    return '<div class="game-row" data-idx="'+i+'"><div>'+g.a+' vs '+g.b+'</div><div class="game-date">'+g.date+'</div></div>';
+  }).join('');
+  list.querySelectorAll('.game-row').forEach(function(row){
+    row.addEventListener('click', function(){
+      const g = games[row.dataset.idx];
+      activateTopTab('cfb');
+      activateSubTab('cfb-matchup');
+      document.getElementById('m-teamA-cfb').value = g.a;
+      document.getElementById('m-teamB-cfb').value = g.b;
+      runMatchupFor(g.a, g.b, 'matchup-output-cfb');
+    });
+  });
+}
+async function renderRankings(){
+  const liveRankings = await fetchJSON('./data/cfb-rankings.json');
+  const ranks = (liveRankings && liveRankings.length) ? liveRankings : CFB_TOP25;
+  const list = document.getElementById('cfb-rankings-list');
+  list.innerHTML = ranks.map(function(r){
+    return '<div class="rank-row"><div class="rank-num">'+r.rank+'</div><div>'+r.team+'</div><div class="rank-record">'+(r.record||'')+'</div><div class="rank-next">'+(r.next||'')+'</div></div>';
+  }).join('');
+  const othersEl = document.getElementById('cfb-others-list');
+  if(!liveRankings) othersEl.textContent = CFB_OTHERS;
+  else othersEl.textContent = '';
+}
+
+// ==================== top bets ====================
+function projectMatchup(nameA, nameB){
+  const A = teamsCache[nameA], B = teamsCache[nameB];
+  if(!A || !B) return null;
+  const aScore = Math.round((A.ppg + B.pa)/2);
+  const bScore = Math.round((B.ppg + A.pa)/2);
+  return {aScore, bScore, total: aScore+bScore, spread: aScore-bScore}; // spread: positive = A favored by that many
+}
+function findMarketLine(nameA, nameB){
+  return ALL_ODDS.find(function(o){
+    return (o.aTeam===nameA && o.bTeam===nameB) || (o.aTeam===nameB && o.bTeam===nameA);
+  });
+}
+function computeTopBets(games){
+  const candidates = [];
+  games.forEach(function(g){
+    const proj = projectMatchup(g.a, g.b);
+    if(!proj) return;
+    const market = findMarketLine(g.a, g.b);
+    if(!market) return;
+    const aIsEntryA = market.aTeam===g.a;
+    const marketFavA = (market.aSpread===null || market.aSpread===undefined) ? null : (aIsEntryA ? -market.aSpread : market.aSpread);
+    if(marketFavA!==null){
+      const spreadEdge = proj.spread - marketFavA;
+      const favoredTeam = spreadEdge>0 ? g.a : g.b;
+      const favoredLine = aIsEntryA ? (spreadEdge>0 ? market.aSpread : market.bSpread) : (spreadEdge>0 ? market.bSpread : market.aSpread);
+      candidates.push({
+        edge: Math.abs(spreadEdge),
+        label: favoredTeam+' '+(favoredLine>0?'+':'')+favoredLine,
+        sub: g.a+' vs '+g.b+' · model has it '+(proj.spread>0?g.a:g.b)+' by '+Math.abs(proj.spread)
+      });
+    }
+    if(market.total!==null && market.total!==undefined){
+      const totalEdge = proj.total - market.total;
+      candidates.push({
+        edge: Math.abs(totalEdge),
+        label: (totalEdge>0?'Over':'Under')+' '+market.total,
+        sub: g.a+' vs '+g.b+' · model projects '+proj.total+' total points'
+      });
+    }
+  });
+  candidates.sort(function(a,b){ return b.edge - a.edge; });
+  return candidates.slice(0, 10);
+}
+function renderTopBetsList(elId, bets){
+  const el = document.getElementById(elId);
+  if(bets.length===0){
+    el.innerHTML = '<div class="empty">No matchups with both team stats and a market line loaded yet this week.</div>';
+    return;
+  }
+  el.innerHTML = bets.map(function(b,i){
+    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.label+'</div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
+  }).join('');
+}
+async function renderTopBets(){
+  await loadAllOdds();
+  renderTopBetsList('nfl-topbets-list', computeTopBets(NFL_WEEK_GAMES));
+  renderTopBetsList('cfb-topbets-list', computeTopBets(CFB_WEEK_GAMES));
+}
+
+let parlaySlip = [];
+function americanToDecimal(odds){ odds = Number(odds); return odds > 0 ? 1 + odds/100 : 1 + 100/Math.abs(odds); }
+function decimalToAmerican(dec){ if(dec >= 2) return '+' + Math.round((dec-1)*100); return Math.round(-100/(dec-1)).toString(); }
+function addLeg(label, odds){ parlaySlip.push({label:label, odds: Number(odds)}); renderParlaySlip(); }
+
+let ALL_ODDS = [];
+let oddsFilter = 'ALL';
+
+async function loadAllOdds(){
+  const liveOdds = await fetchJSON('./data/odds.json');
+  const nflWeekOdds = await fetchJSON('./data/nfl-week-odds.json');
+  const combined = [];
+  const seen = new Set();
+  (nflWeekOdds || []).forEach(function(g){ combined.push(g); seen.add(g.game); });
+  (liveOdds || []).forEach(function(g){ if(!seen.has(g.game)){ combined.push(g); seen.add(g.game); } });
+  ALL_ODDS = combined.length ? combined : ODDS_SEED;
+  return ALL_ODDS;
+}
+
+async function renderOddsBoard(){
+  await loadAllOdds();
+  const list = document.getElementById('odds-board-list');
+  const countEl = document.getElementById('odds-board-count');
+  const odds = oddsFilter==='ALL' ? ALL_ODDS : ALL_ODDS.filter(function(g){ return g.league===oddsFilter; });
+  if(countEl) countEl.textContent = odds.length + ' game' + (odds.length===1?'':'s');
+  list.innerHTML = '';
+  if(odds.length===0){
+    list.innerHTML = '<div class="empty">No odds loaded for this filter yet.</div>';
+    return;
+  }
+  odds.forEach(function(g){
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'border-bottom:1px solid var(--line);padding:10px 0;';
+    const head = document.createElement('div');
+    head.style.cssText = 'font-weight:700;font-size:0.88rem;margin-bottom:6px;';
+    head.innerHTML = g.game+' <span class="pill">'+g.league+'</span> <span class="game-date">'+g.date+'</span>';
+    wrap.appendChild(head);
+
+    function legBtn(label, oddsVal){
+      const b = document.createElement('button');
+      b.className = 'secondary';
+      const shown = (oddsVal===null || oddsVal===undefined) ? '—' : (oddsVal>0?'+':'')+oddsVal;
+      b.textContent = label+' '+shown;
+      b.disabled = (oddsVal===null || oddsVal===undefined);
+      b.addEventListener('click', function(){ if(oddsVal!==null && oddsVal!==undefined) addLeg(label, oddsVal); });
+      return b;
+    }
+    const row1 = document.createElement('div'); row1.className = 'grid3';
+    row1.appendChild(legBtn(g.aTeam+' ML', g.aML));
+    row1.appendChild(legBtn(g.aTeam+' '+(g.aSpread>0?'+':'')+g.aSpread, g.aSpreadOdds));
+    row1.appendChild(legBtn('Over '+g.total, g.overOdds));
+    wrap.appendChild(row1);
+
+    const row2 = document.createElement('div'); row2.className = 'grid3'; row2.style.marginTop = '6px';
+    row2.appendChild(legBtn(g.bTeam+' ML', g.bML));
+    row2.appendChild(legBtn(g.bTeam+' '+(g.bSpread>0?'+':'')+g.bSpread, g.bSpreadOdds));
+    row2.appendChild(legBtn('Under '+g.total, g.underOdds));
+    wrap.appendChild(row2);
+
+    list.appendChild(wrap);
+  });
+}
+document.querySelectorAll('#odds-filter [data-oddsfilter]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    oddsFilter = btn.dataset.oddsfilter;
+    document.querySelectorAll('#odds-filter [data-oddsfilter]').forEach(function(b){ b.classList.toggle('active', b===btn); });
+    renderOddsBoard();
+  });
+});
+function renderParlaySlip(){
+  const slipEl = document.getElementById('parlay-slip');
+  const resultEl = document.getElementById('parlay-result');
+  if(parlaySlip.length===0){
+    slipEl.innerHTML = '<div class="empty">No legs added yet — tap odds above or add a custom one.</div>';
+    resultEl.innerHTML = '';
+    return;
+  }
+  slipEl.innerHTML = parlaySlip.map(function(leg,i){
+    return '<div class="history-item"><span>'+leg.label+'</span><span>'+(leg.odds>0?'+':'')+leg.odds+' <button class="danger" data-rmleg="'+i+'" style="margin-left:8px;">✕</button></span></div>';
+  }).join('');
+  slipEl.querySelectorAll('[data-rmleg]').forEach(function(btn){
+    btn.addEventListener('click', function(){ parlaySlip.splice(Number(btn.dataset.rmleg), 1); renderParlaySlip(); });
+  });
+  const stake = parseFloat(document.getElementById('parlay-stake').value) || 0;
+  const combinedDecimal = parlaySlip.reduce(function(acc,leg){return acc*americanToDecimal(leg.odds);}, 1);
+  const payout = stake * combinedDecimal;
+  const profit = payout - stake;
+  resultEl.innerHTML = '<div class="proj-score" style="padding-top:16px;"><div><div class="num">'+decimalToAmerican(combinedDecimal)+'</div><div class="lbl">combined odds</div></div><div><div class="num">$'+fmt(payout)+'</div><div class="lbl">total payout</div></div><div><div class="num" style="color:#5eead4;">+$'+fmt(profit)+'</div><div class="lbl">profit</div></div></div><div class="note">'+parlaySlip.length+' leg'+(parlaySlip.length===1?'':'s')+' · every leg has to hit for the parlay to pay out.</div>';
+}
+document.getElementById('add-custom-leg').addEventListener('click', ()=>{
+  const label = document.getElementById('cl-label').value.trim();
+  const odds = document.getElementById('cl-odds').value;
+  if(!label || !odds){ alert('Enter a description and odds'); return; }
+  addLeg(label, odds);
+  document.getElementById('cl-label').value = '';
+  document.getElementById('cl-odds').value = '';
+});
+document.getElementById('parlay-stake').addEventListener('input', renderParlaySlip);
+
+(async function init(){
+  try{ await ensureSeeded(); }catch(e){ teamsCache = Object.assign({}, NFL_SEED, CFB_SEED); }
+  await renderSchedule();
+  await renderCfbSchedule();
+  renderRankings();
+  await renderOddsBoard();
+  renderParlaySlip();
+  try{ refreshTeamLists(); }catch(e){ populateSelects(); }
+  try{ await ensurePlayersSeeded(); }catch(e){ playersCache = JSON.parse(JSON.stringify(PLAYERS_SEED)); }
+  try{ refreshPlayersLists(); }catch(e){ populatePlayerSelects(); }
+  try{ await renderTopBets(); }catch(e){}
+})();
+</script>
+</body>
+</html>
