@@ -555,7 +555,7 @@
     ]
   },
   "Drew Mestemaker": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "Oklahoma State",
     "league": "CFB",
     "games": [
@@ -3760,7 +3760,7 @@
     ]
   },
   "Sutton Smith": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Arkansas",
     "league": "CFB",
     "games": [
@@ -3808,7 +3808,7 @@
     ]
   },
   "Jasper Parker": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Arkansas",
     "league": "CFB",
     "games": [
@@ -3840,7 +3840,7 @@
     ]
   },
   "Braylen Russell": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Arkansas",
     "league": "CFB",
     "games": [
@@ -3904,7 +3904,7 @@
     ]
   },
   "Jelani Watkins": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Arkansas",
     "league": "CFB",
     "games": [
@@ -4336,7 +4336,7 @@
     ]
   },
   "Demond Williams Jr.": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Washington",
     "league": "CFB",
     "games": [
@@ -4752,7 +4752,7 @@
     ]
   },
   "Kolin Wilson": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Mississippi State",
     "league": "CFB",
     "games": [
@@ -4768,7 +4768,7 @@
     ]
   },
   "Fluff Bothwell": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Mississippi State",
     "league": "CFB",
     "games": [
@@ -8334,7 +8334,7 @@
     ]
   },
   "Tre Spivey": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Arizona",
     "league": "CFB",
     "games": [
@@ -8350,7 +8350,7 @@
     ]
   },
   "Kedrick Reescano": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Arizona",
     "league": "CFB",
     "games": [
@@ -8398,7 +8398,7 @@
     ]
   },
   "Noah Fifita": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Arizona",
     "league": "CFB",
     "games": [
@@ -8414,7 +8414,7 @@
     ]
   },
   "Quincy Craig": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Arizona",
     "league": "CFB",
     "games": [
@@ -8430,7 +8430,7 @@
     ]
   },
   "Gio Richardson": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Arizona",
     "league": "CFB",
     "games": [
@@ -8446,7 +8446,7 @@
     ]
   },
   "Sawyer Anderson": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Arizona",
     "league": "CFB",
     "games": [
@@ -11591,7 +11591,7 @@
     ]
   },
   "Landen Clark": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "LSU",
     "league": "CFB",
     "games": [
@@ -11607,7 +11607,7 @@
     ]
   },
   "Husan Longstreet": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "LSU",
     "league": "CFB",
     "games": [
@@ -11623,7 +11623,7 @@
     ]
   },
   "Sam Leavitt": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "LSU",
     "league": "CFB",
     "games": [
@@ -13175,7 +13175,7 @@
     ]
   },
   "Steven Angeli": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "Syracuse",
     "league": "CFB",
     "games": [
@@ -13191,7 +13191,7 @@
     ]
   },
   "Amari Odom": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "Syracuse",
     "league": "CFB",
     "games": [
@@ -13409,6 +13409,38 @@
         "receptions": 1.0,
         "recYds": -3.0,
         "tds": 0.0,
+        "date": "2026-wkNone",
+        "opp": ""
+      }
+    ]
+  },
+  "Brandon White": {
+    "pos": "RB",
+    "team": "Kansas State",
+    "league": "CFB",
+    "games": [
+      {
+        "passYds": 0,
+        "rushYds": 7.0,
+        "receptions": 2.0,
+        "recYds": 20.0,
+        "tds": 2.0,
+        "date": "2026-wkNone",
+        "opp": ""
+      }
+    ]
+  },
+  "KJ Jackson": {
+    "pos": "RB",
+    "team": "Arkansas",
+    "league": "CFB",
+    "games": [
+      {
+        "passYds": 267.0,
+        "rushYds": 27.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 3.0,
         "date": "2026-wkNone",
         "opp": ""
       }
