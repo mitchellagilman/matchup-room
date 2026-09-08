@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Pulls per-game stat lines for Power 5 college football QBs/RBs/WRs/TEs
-from collegefootballdata.com (CFBD) and writes data/cfb-players.json.
+Pulls per-game stat lines for every FBS college football team's
+QBs/RBs/WRs/TEs (not just Power 5) from collegefootballdata.com (CFBD)
+and writes data/cfb-players.json.
 
 *** SAME HONESTY NOTE AS fetch_cfb.py ***
 Could not be tested against the live CFBD API from the sandbox that wrote
@@ -27,9 +28,6 @@ import urllib.parse
 YEAR = 2026
 API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-players.json"
-
-POWER5_CONFERENCES = {"SEC", "Big Ten", "Big 12", "ACC"}
-INCLUDE_INDEPENDENTS = {"Notre Dame"}
 
 # CFBD's /games/players groups stats by category ("passing", "rushing",
 # "receiving") each with their own sub-stats (YDS, TD, REC, etc). Exact
@@ -70,12 +68,11 @@ def main():
         print(f"Could not reach CFBD /teams/fbs ({e}); leaving existing file untouched.", file=sys.stderr)
         return
 
-    power5_teams = set()
+    all_teams = set()
     for t in fbs_teams:
-        conf = t.get("conference")
         name = t.get("school")
-        if conf in POWER5_CONFERENCES or name in INCLUDE_INDEPENDENTS:
-            power5_teams.add(name)
+        if name:
+            all_teams.add(name)
 
     all_rows = []
     for week in range(1, 16):
@@ -116,7 +113,7 @@ def main():
         week = game.get("week")
         for team_block in game.get("teams", []):
             team = team_block.get("team") or team_block.get("school")
-            if team not in power5_teams:
+            if team not in all_teams:
                 continue
             for category in team_block.get("categories", []):
                 cat_name = (category.get("name") or "").lower()

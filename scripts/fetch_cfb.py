@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Pulls current-season Power 5 college football team stats -- offense AND
-defense -- from collegefootballdata.com (CFBD) and writes data/cfb-teams.json.
+Pulls current-season stats for every FBS college football team (130+
+teams, not just Power 5) -- offense AND defense -- from
+collegefootballdata.com (CFBD) and writes data/cfb-teams.json.
 
 *** IMPORTANT HONESTY NOTE ***
 Unlike scripts/fetch_nfl.py (which was tested live against real nflverse
@@ -36,9 +37,6 @@ import urllib.parse
 YEAR = 2026
 API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-teams.json"
-
-POWER5_CONFERENCES = {"SEC", "Big Ten", "Big 12", "ACC"}
-INCLUDE_INDEPENDENTS = {"Notre Dame"}
 
 # The two offensive categories CFBD's games/teams stats use that we need.
 # CFBD's documented category strings -- verify against a live response if
@@ -102,11 +100,15 @@ def main():
         print(f"Could not reach CFBD /teams/fbs ({e}); leaving existing file untouched.", file=sys.stderr)
         return
 
+    # All 130+ FBS teams -- not just Power 5 -- so any real matchup (including
+    # a Power 5 team's game against a Group of 5 or independent opponent) can
+    # be picked in the Matchup tab. CFBD's endpoints already cover everyone;
+    # the earlier Power-5-only filter here was an artificial narrowing.
     power5 = {}
     for t in fbs_teams:
         conf = t.get("conference")
         name = t.get("school")
-        if conf in POWER5_CONFERENCES or name in INCLUDE_INDEPENDENTS:
+        if name:
             power5[name] = conf or "Independent"
 
     try:
@@ -206,7 +208,7 @@ def main():
 
     with open(EXISTING_PATH, "w") as f:
         json.dump(teams, f, indent=2)
-    print(f"Updated {updated} of {len(power5)} Power 5 teams in {EXISTING_PATH}")
+    print(f"Updated {updated} of {len(power5)} FBS teams in {EXISTING_PATH}")
 
 
 if __name__ == "__main__":
