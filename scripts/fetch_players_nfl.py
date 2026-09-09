@@ -103,16 +103,27 @@ def main():
         print(f"No player rows found for {YEAR} or the most recent prior season ({fallback_year}) -- leaving existing file untouched.", file=sys.stderr)
         return
 
-    by_player = {}
+    # Group historical rows by player_id (gsis_id) -- NOT by name. nflverse's
+    # own files don't agree on name spelling for the same person ("DJ Moore"
+    # here vs "D.J. Moore" in this file, same gsis_id), so grouping by name
+    # would silently split one person's history across two entries.
+    by_id = {}
     for row in rows:
+        pid = row.get("player_id")
         name = row.get("player_display_name") or row.get("player_name")
-        if not name:
+        if not pid or not name:
             continue
-        by_player.setdefault(name, {"pos": row.get("position"), "rows": []})
-        by_player[name]["rows"].append(row)
+        by_id.setdefault(pid, {"pos": row.get("position"), "name": name, "rows": []})
+        by_id[pid]["rows"].append(row)
+
+    # Existing roster-confirmed entries indexed by their id, so games get
+    # attached to the SAME entry fetch_nfl_rosters.py already created
+    # (using its own name spelling), instead of creating a duplicate under
+    # this file's spelling.
+    id_to_existing_name = {v.get("_id"): k for k, v in players.items() if v.get("_id")}
 
     updated = 0
-    for name, info in by_player.items():
+    for pid, info in by_id.items():
         # Sort oldest-to-newest across both seasons, then keep only the
         # most recent WINDOW games -- this is the whole "rolling 10" trick.
         sorted_rows = sorted(info["rows"], key=lambda r: (int(r.get("season", 0) or 0), int(r.get("week", 0) or 0)))
@@ -131,18 +142,35 @@ def main():
                 "tds": tds,
             })
 
-        # Team: keep whatever's already there (set by fetch_nfl_rosters.py
-        # from the real current roster) if present; only fall back to the
-        # historical data's team for a brand-new player we've never seen.
+        # Which dict key to write under: the roster's own name spelling if
+        # this person is on a current roster (matched by id), else this
+        # file's own name spelling (best-effort for a player who's never
+        # been on any roster this pipeline has seen -- e.g. long retired).
+        name = id_to_existing_name.get(pid, info["name"])
         existing = players.get(name, {})
+
+        # Team: only trust an existing team if it was actually confirmed by
+        # THIS run's roster (teamYear == YEAR) -- not just "something was
+        # there before". A player who's fallen off every active roster
+        # (confirmed live: this happened to Amari Cooper) no longer gets a
+        # confident current team; team_year stays unset so the UI can show
+        # an honest "not on a 2026 active roster" caveat instead of a
+        # silently stale one.
         team_abbr = recent_rows[-1].get("recent_team") if recent_rows else None
-        team = existing.get("team") or TEAM_NAME_MAP.get(team_abbr, team_abbr)
+        if existing.get("teamYear") == YEAR:
+            team = existing["team"]
+            team_year = YEAR
+        else:
+            team = TEAM_NAME_MAP.get(team_abbr, team_abbr)
+            team_year = None
 
         players[name] = {
             "pos": info["pos"],
             "team": team,
             "league": "NFL",
             "games": games,
+            "_id": pid,
+            "teamYear": team_year,
         }
         updated += 1
 
