@@ -94,7 +94,9 @@
         "recYds": 0.0,
         "tds": 4.0
       }
-    ]
+    ],
+    "_id": "00-0023459",
+    "teamYear": 2026
   },
   "Joe Flacco": {
     "pos": "QB",
@@ -164,7 +166,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0026158",
+    "teamYear": 2026
   },
   "Matthew Stafford": {
     "pos": "QB",
@@ -261,7 +265,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0026498",
+    "teamYear": 2026
   },
   "Andy Dalton": {
     "pos": "QB",
@@ -322,7 +328,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0027973",
+    "teamYear": 2026
   },
   "Tyrod Taylor": {
     "pos": "QB",
@@ -347,13 +355,17 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0028118",
+    "teamYear": 2026
   },
   "Case Keenum": {
     "pos": "QB",
     "team": "Chicago Bears",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0028986",
+    "teamYear": 2026
   },
   "Kirk Cousins": {
     "pos": "QB",
@@ -450,13 +462,17 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0029604",
+    "teamYear": 2026
   },
   "Kyle Juszczyk": {
     "pos": "RB",
     "team": "San Francisco 49ers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0029892",
+    "teamYear": 2026
   },
   "Keenan Allen": {
     "pos": "WR",
@@ -553,7 +569,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0030279",
+    "teamYear": 2026
   },
   "Travis Kelce": {
     "pos": "TE",
@@ -650,7 +668,9 @@
         "recYds": 84.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0030506",
+    "teamYear": 2026
   },
   "Geno Smith": {
     "pos": "QB",
@@ -747,13 +767,90 @@
         "recYds": 0.0,
         "tds": 4.0
       }
-    ]
+    ],
+    "_id": "00-0030565",
+    "teamYear": 2026
   },
   "Odell Beckham Jr.": {
     "pos": "WR",
     "team": "New York Giants",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk5",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk7",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 15.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 17.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 1.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0031235",
+    "teamYear": 2026
   },
   "Davante Adams": {
     "pos": "WR",
@@ -850,7 +947,9 @@
         "recYds": 88.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0031381",
+    "teamYear": 2026
   },
   "Mike Evans": {
     "pos": "WR",
@@ -947,7 +1046,9 @@
         "recYds": 89.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031408",
+    "teamYear": 2026
   },
   "Chris Manhertz": {
     "pos": "TE",
@@ -990,7 +1091,9 @@
         "recYds": 16.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031484",
+    "teamYear": 2026
   },
   "Jameis Winston": {
     "pos": "QB",
@@ -1087,7 +1190,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031503",
+    "teamYear": 2026
   },
   "Stefon Diggs": {
     "pos": "WR",
@@ -1166,19 +1271,25 @@
         "recYds": 81.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031588",
+    "teamYear": 2026
   },
   "Michael Burton": {
     "pos": "RB",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0031595",
+    "teamYear": 2026
   },
   "Darren Waller": {
     "pos": "TE",
     "team": "Carolina Panthers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0031610",
+    "teamYear": 2026
   },
   "Ameer Abdullah": {
     "pos": "RB",
@@ -1275,7 +1386,9 @@
         "recYds": 32.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032104",
+    "teamYear": 2026
   },
   "Marcus Mariota": {
     "pos": "QB",
@@ -1309,7 +1422,9 @@
         "recYds": 0.0,
         "tds": 3.0
       }
-    ]
+    ],
+    "_id": "00-0032268",
+    "teamYear": 2026
   },
   "Austin Hooper": {
     "pos": "TE",
@@ -1406,7 +1521,9 @@
         "recYds": 27.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032392",
+    "teamYear": 2026
   },
   "Kalif Raymond": {
     "pos": "WR",
@@ -1503,7 +1620,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032464",
+    "teamYear": 2026
   },
   "Derrick Henry": {
     "pos": "RB",
@@ -1600,7 +1719,9 @@
         "recYds": 23.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0032764",
+    "teamYear": 2026
   },
   "Demarcus Robinson": {
     "pos": "WR",
@@ -1697,7 +1818,9 @@
         "recYds": 72.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032775",
+    "teamYear": 2026
   },
   "Carson Wentz": {
     "pos": "QB",
@@ -1722,13 +1845,17 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032950",
+    "teamYear": 2026
   },
   "Laquon Treadwell": {
     "pos": "WR",
     "team": "Indianapolis Colts",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0032951",
+    "teamYear": 2026
   },
   "Dak Prescott": {
     "pos": "QB",
@@ -1807,7 +1934,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033077",
+    "teamYear": 2026
   },
   "Hunter Henry": {
     "pos": "TE",
@@ -1904,7 +2033,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033090",
+    "teamYear": 2026
   },
   "Jared Goff": {
     "pos": "QB",
@@ -2001,7 +2132,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033106",
+    "teamYear": 2026
   },
   "Tyler Higbee": {
     "pos": "TE",
@@ -2035,7 +2168,9 @@
         "recYds": 46.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033110",
+    "teamYear": 2026
   },
   "Jacoby Brissett": {
     "pos": "QB",
@@ -2105,7 +2240,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033119",
+    "teamYear": 2026
   },
   "Mo Alie-Cox": {
     "pos": "TE",
@@ -2202,7 +2339,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033217",
+    "teamYear": 2026
   },
   "Johnny Mundt": {
     "pos": "TE",
@@ -2299,7 +2438,9 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033246",
+    "teamYear": 2026
   },
   "Christian McCaffrey": {
     "pos": "RB",
@@ -2342,7 +2483,9 @@
         "recYds": 14.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033280",
+    "teamYear": 2026
   },
   "George Kittle": {
     "pos": "TE",
@@ -2439,7 +2582,9 @@
         "recYds": 27.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033288",
+    "teamYear": 2026
   },
   "Aaron Jones": {
     "pos": "RB",
@@ -2536,7 +2681,9 @@
         "recYds": 30.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033293",
+    "teamYear": 2026
   },
   "Kendrick Bourne": {
     "pos": "WR",
@@ -2633,7 +2780,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033307",
+    "teamYear": 2026
   },
   "Tim Patrick": {
     "pos": "WR",
@@ -2730,13 +2879,17 @@
         "recYds": 15.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033375",
+    "teamYear": 2026
   },
   "Patrick Ricard": {
     "pos": "RB",
     "team": "New York Giants",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0033376",
+    "teamYear": 2026
   },
   "Samaje Perine": {
     "pos": "RB",
@@ -2833,7 +2986,9 @@
         "recYds": 13.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033526",
+    "teamYear": 2026
   },
   "Deshaun Watson": {
     "pos": "QB",
@@ -2903,7 +3058,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033537",
+    "teamYear": 2026
   },
   "Mack Hollins": {
     "pos": "WR",
@@ -3000,7 +3157,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033555",
+    "teamYear": 2026
   },
   "Eric Saubert": {
     "pos": "TE",
@@ -3079,7 +3238,9 @@
         "recYds": 17.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033576",
+    "teamYear": 2026
   },
   "Cooper Rush": {
     "pos": "QB",
@@ -3176,13 +3337,17 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033662",
+    "teamYear": 2026
   },
   "Robert Tonyan": {
     "pos": "TE",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0033757",
+    "teamYear": 2026
   },
   "Jonnu Smith": {
     "pos": "TE",
@@ -3279,7 +3444,9 @@
         "recYds": 56.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033858",
+    "teamYear": 2026
   },
   "Mitchell Trubisky": {
     "pos": "QB",
@@ -3358,7 +3525,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033869",
+    "teamYear": 2026
   },
   "Patrick Mahomes": {
     "pos": "QB",
@@ -3455,7 +3624,9 @@
         "recYds": 0.0,
         "tds": 3.0
       }
-    ]
+    ],
+    "_id": "00-0033873",
+    "teamYear": 2026
   },
   "Evan Engram": {
     "pos": "TE",
@@ -3543,7 +3714,9 @@
         "recYds": 33.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033881",
+    "teamYear": 2026
   },
   "David Njoku": {
     "pos": "TE",
@@ -3640,7 +3813,9 @@
         "recYds": 66.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033885",
+    "teamYear": 2026
   },
   "Alvin Kamara": {
     "pos": "RB",
@@ -3737,7 +3912,9 @@
         "recYds": 58.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033906",
+    "teamYear": 2026
   },
   "Cooper Kupp": {
     "pos": "WR",
@@ -3834,13 +4011,81 @@
         "recYds": 29.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033908",
+    "teamYear": 2026
   },
   "Chris Godwin Jr.": {
     "pos": "WR",
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk1",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 8.0,
+        "recYds": 83.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk2",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7.0,
+        "recYds": 117.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk3",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6.0,
+        "recYds": 53.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk4",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6.0,
+        "recYds": 69.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk5",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 2.0,
+        "receptions": 5.0,
+        "recYds": 64.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk6",
+        "opp": "vs NO",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 11.0,
+        "recYds": 125.0,
+        "tds": 2.0
+      },
+      {
+        "date": "2024-wk7",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7.0,
+        "recYds": 65.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0033921",
+    "teamYear": 2026
   },
   "Joshua Dobbs": {
     "pos": "QB",
@@ -3865,7 +4110,9 @@
         "recYds": 0.0,
         "tds": 3.0
       }
-    ]
+    ],
+    "_id": "00-0033949",
+    "teamYear": 2026
   },
   "Tyler Conklin": {
     "pos": "TE",
@@ -3962,7 +4209,9 @@
         "recYds": 16.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034270",
+    "teamYear": 2026
   },
   "Courtland Sutton": {
     "pos": "WR",
@@ -4059,7 +4308,9 @@
         "recYds": 98.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034348",
+    "teamYear": 2026
   },
   "Dallas Goedert": {
     "pos": "TE",
@@ -4156,7 +4407,9 @@
         "recYds": 55.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034351",
+    "teamYear": 2026
   },
   "Ian Thomas": {
     "pos": "TE",
@@ -4190,7 +4443,9 @@
         "recYds": 3.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034365",
+    "teamYear": 2026
   },
   "Dalton Schultz": {
     "pos": "TE",
@@ -4287,7 +4542,9 @@
         "recYds": 29.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034383",
+    "teamYear": 2026
   },
   "Kyle Allen": {
     "pos": "QB",
@@ -4303,7 +4560,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034577",
+    "teamYear": 2026
   },
   "Mark Andrews": {
     "pos": "TE",
@@ -4400,7 +4659,9 @@
         "recYds": 54.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034753",
+    "teamYear": 2026
   },
   "Mason Rudolph": {
     "pos": "QB",
@@ -4479,7 +4740,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034771",
+    "teamYear": 2026
   },
   "Lamar Jackson": {
     "pos": "QB",
@@ -4576,7 +4839,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0034796",
+    "teamYear": 2026
   },
   "Durham Smythe": {
     "pos": "TE",
@@ -4673,13 +4938,108 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034798",
+    "teamYear": 2026
   },
   "DJ Moore": {
     "pos": "WR",
     "team": "Buffalo Bills",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk9",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 33.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 3.0,
+        "receptions": 3.0,
+        "recYds": 24.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 5.0,
+        "receptions": 7.0,
+        "recYds": 62.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 13.0,
+        "receptions": 7.0,
+        "recYds": 106.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 8.0,
+        "recYds": 97.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6.0,
+        "recYds": 49.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 24.0,
+        "receptions": 8.0,
+        "recYds": 46.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 2.0,
+        "receptions": 7.0,
+        "recYds": 68.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 8.0,
+        "receptions": 6.0,
+        "recYds": 54.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 5.0,
+        "receptions": 9.0,
+        "recYds": 86.0,
+        "tds": 1.0
+      }
+    ],
+    "_id": "00-0034827",
+    "teamYear": 2026
   },
   "Mike Gesicki": {
     "pos": "TE",
@@ -4776,7 +5136,9 @@
         "recYds": 68.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034829",
+    "teamYear": 2026
   },
   "Calvin Ridley": {
     "pos": "WR",
@@ -4873,7 +5235,9 @@
         "recYds": 76.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034837",
+    "teamYear": 2026
   },
   "Saquon Barkley": {
     "pos": "RB",
@@ -4970,7 +5334,9 @@
         "recYds": 2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034844",
+    "teamYear": 2026
   },
   "Baker Mayfield": {
     "pos": "QB",
@@ -5067,7 +5433,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0034855",
+    "teamYear": 2026
   },
   "Josh Allen": {
     "pos": "QB",
@@ -5164,7 +5532,9 @@
         "recYds": 0.0,
         "tds": 3.0
       }
-    ]
+    ],
+    "_id": "00-0034857",
+    "teamYear": 2026
   },
   "Sam Darnold": {
     "pos": "QB",
@@ -5261,13 +5631,17 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034869",
+    "teamYear": 2026
   },
   "Andrew Beck": {
     "pos": "RB",
     "team": "New York Jets",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0034959",
+    "teamYear": 2026
   },
   "Jakobi Meyers": {
     "pos": "WR",
@@ -5364,7 +5738,9 @@
         "recYds": 123.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034960",
+    "teamYear": 2026
   },
   "Justice Hill": {
     "pos": "RB",
@@ -5461,7 +5837,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034975",
+    "teamYear": 2026
   },
   "Foster Moreau": {
     "pos": "TE",
@@ -5558,7 +5936,9 @@
         "recYds": 31.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034981",
+    "teamYear": 2026
   },
   "Ashton Dulin": {
     "pos": "WR",
@@ -5646,13 +6026,17 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035021",
+    "teamYear": 2026
   },
   "Alec Ingold": {
     "pos": "RB",
     "team": "Los Angeles Chargers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0035125",
+    "teamYear": 2026
   },
   "Olamide Zaccheaus": {
     "pos": "WR",
@@ -5749,7 +6133,9 @@
         "recYds": 51.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035208",
+    "teamYear": 2026
   },
   "Kyler Murray": {
     "pos": "QB",
@@ -5846,7 +6232,9 @@
         "recYds": 0.0,
         "tds": 4.0
       }
-    ]
+    ],
+    "_id": "00-0035228",
+    "teamYear": 2026
   },
   "T.J. Hockenson": {
     "pos": "TE",
@@ -5943,7 +6331,9 @@
         "recYds": 9.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035229",
+    "teamYear": 2026
   },
   "Josh Oliver": {
     "pos": "TE",
@@ -6040,7 +6430,9 @@
         "recYds": 16.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035249",
+    "teamYear": 2026
   },
   "Devin Singletary": {
     "pos": "RB",
@@ -6137,7 +6529,9 @@
         "recYds": -5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035250",
+    "teamYear": 2026
   },
   "Tony Pollard": {
     "pos": "RB",
@@ -6234,7 +6628,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035261",
+    "teamYear": 2026
   },
   "Jarrett Stidham": {
     "pos": "QB",
@@ -6259,7 +6655,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035264",
+    "teamYear": 2026
   },
   "Gardner Minshew": {
     "pos": "QB",
@@ -6356,7 +6754,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035289",
+    "teamYear": 2026
   },
   "Lil'Jordan Humphrey": {
     "pos": "WR",
@@ -6453,7 +6853,9 @@
         "recYds": 26.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035406",
+    "teamYear": 2026
   },
   "Darius Slayton": {
     "pos": "WR",
@@ -6550,7 +6952,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035535",
+    "teamYear": 2026
   },
   "Ty Johnson": {
     "pos": "RB",
@@ -6647,7 +7051,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035537",
+    "teamYear": 2026
   },
   "Drew Sample": {
     "pos": "TE",
@@ -6744,7 +7150,9 @@
         "recYds": 14.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035631",
+    "teamYear": 2026
   },
   "DK Metcalf": {
     "pos": "WR",
@@ -6841,7 +7249,9 @@
         "recYds": 53.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035640",
+    "teamYear": 2026
   },
   "Noah Fant": {
     "pos": "TE",
@@ -6938,7 +7348,9 @@
         "recYds": 63.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035644",
+    "teamYear": 2026
   },
   "Terry McLaurin": {
     "pos": "WR",
@@ -7035,7 +7447,9 @@
         "recYds": 62.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035659",
+    "teamYear": 2026
   },
   "Marquise Brown": {
     "pos": "WR",
@@ -7060,7 +7474,9 @@
         "recYds": 46.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035662",
+    "teamYear": 2026
   },
   "A.J. Brown": {
     "pos": "WR",
@@ -7157,7 +7573,9 @@
         "recYds": 36.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035676",
+    "teamYear": 2026
   },
   "David Montgomery": {
     "pos": "RB",
@@ -7254,7 +7672,9 @@
         "recYds": 31.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035685",
+    "teamYear": 2026
   },
   "Dawson Knox": {
     "pos": "TE",
@@ -7351,7 +7771,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035689",
+    "teamYear": 2026
   },
   "Drew Lock": {
     "pos": "QB",
@@ -7421,7 +7843,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035704",
+    "teamYear": 2026
   },
   "Daniel Jones": {
     "pos": "QB",
@@ -7518,13 +7942,108 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035710",
+    "teamYear": 2026
   },
   "Deebo Samuel Sr.": {
     "pos": "WR",
     "team": "San Francisco 49ers",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk6",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 15.0,
+        "receptions": 3.0,
+        "recYds": 102.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 15.0,
+        "receptions": 4.0,
+        "recYds": 71.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 14.0,
+        "receptions": 5.0,
+        "recYds": 62.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": -1.0,
+        "receptions": 4.0,
+        "recYds": 22.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 21.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 20.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs CHI",
+        "passYds": 0.0,
+        "rushYds": 13.0,
+        "receptions": 2.0,
+        "recYds": 22.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 3.0,
+        "receptions": 3.0,
+        "recYds": 16.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 25.0,
+        "receptions": 7.0,
+        "recYds": 96.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 16.0,
+        "receptions": 1.0,
+        "recYds": 5.0,
+        "tds": 1.0
+      }
+    ],
+    "_id": "00-0035719",
+    "teamYear": 2026
   },
   "Tyler Huntley": {
     "pos": "QB",
@@ -7576,7 +8095,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035993",
+    "teamYear": 2026
   },
   "Juwan Johnson": {
     "pos": "TE",
@@ -7673,7 +8194,9 @@
         "recYds": 80.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036040",
+    "teamYear": 2026
   },
   "Rico Dowdle": {
     "pos": "RB",
@@ -7770,7 +8293,9 @@
         "recYds": 12.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036139",
+    "teamYear": 2026
   },
   "J.K. Dobbins": {
     "pos": "RB",
@@ -7867,13 +8392,17 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036158",
+    "teamYear": 2026
   },
   "Reggie Gilliam": {
     "pos": "RB",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0036187",
+    "teamYear": 2026
   },
   "Tua Tagovailoa": {
     "pos": "QB",
@@ -7970,7 +8499,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036212",
+    "teamYear": 2026
   },
   "Jonathan Taylor": {
     "pos": "RB",
@@ -8067,7 +8598,9 @@
         "recYds": 3.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036223",
+    "teamYear": 2026
   },
   "Colby Parkinson": {
     "pos": "TE",
@@ -8164,7 +8697,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036244",
+    "teamYear": 2026
   },
   "Michael Pittman": {
     "pos": "WR",
@@ -8261,7 +8796,9 @@
         "recYds": 72.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036252",
+    "teamYear": 2026
   },
   "Jauan Jennings": {
     "pos": "WR",
@@ -8358,7 +8895,9 @@
         "recYds": 52.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036259",
+    "teamYear": 2026
   },
   "Jordan Love": {
     "pos": "QB",
@@ -8455,13 +8994,17 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036264",
+    "teamYear": 2026
   },
   "AJ Dillon": {
     "pos": "RB",
     "team": "Carolina Panthers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0036265",
+    "teamYear": 2026
   },
   "D'Andre Swift": {
     "pos": "RB",
@@ -8558,7 +9101,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036275",
+    "teamYear": 2026
   },
   "Cole Kmet": {
     "pos": "TE",
@@ -8655,7 +9200,9 @@
         "recYds": 3.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036290",
+    "teamYear": 2026
   },
   "Darnell Mooney": {
     "pos": "WR",
@@ -8752,7 +9299,9 @@
         "recYds": 37.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036309",
+    "teamYear": 2026
   },
   "Justin Jefferson": {
     "pos": "WR",
@@ -8849,7 +9398,9 @@
         "recYds": 54.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036322",
+    "teamYear": 2026
   },
   "Devin Duvernay": {
     "pos": "WR",
@@ -8946,7 +9497,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036331",
+    "teamYear": 2026
   },
   "Justin Herbert": {
     "pos": "QB",
@@ -9043,7 +9596,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0036355",
+    "teamYear": 2026
   },
   "CeeDee Lamb": {
     "pos": "WR",
@@ -9140,7 +9695,9 @@
         "recYds": 105.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036358",
+    "teamYear": 2026
   },
   "Jalen Hurts": {
     "pos": "QB",
@@ -9237,7 +9794,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036389",
+    "teamYear": 2026
   },
   "Jerry Jeudy": {
     "pos": "WR",
@@ -9334,7 +9893,9 @@
         "recYds": 63.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036407",
+    "teamYear": 2026
   },
   "Tee Higgins": {
     "pos": "WR",
@@ -9431,7 +9992,9 @@
         "recYds": 53.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036410",
+    "teamYear": 2026
   },
   "Adam Trautman": {
     "pos": "TE",
@@ -9528,7 +10091,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036422",
+    "teamYear": 2026
   },
   "Charlie Woerner": {
     "pos": "TE",
@@ -9607,7 +10172,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036429",
+    "teamYear": 2026
   },
   "Joe Burrow": {
     "pos": "QB",
@@ -9704,7 +10271,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036442",
+    "teamYear": 2026
   },
   "Chris Blair": {
     "pos": "WR",
@@ -9729,7 +10298,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036463",
+    "teamYear": 2026
   },
   "Rashod Bateman": {
     "pos": "WR",
@@ -9826,7 +10397,9 @@
         "recYds": 76.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036550",
+    "teamYear": 2026
   },
   "Nico Collins": {
     "pos": "WR",
@@ -9923,7 +10496,9 @@
         "recYds": 38.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036554",
+    "teamYear": 2026
   },
   "Chuba Hubbard": {
     "pos": "RB",
@@ -10020,7 +10595,9 @@
         "recYds": 13.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0036555",
+    "teamYear": 2026
   },
   "Brevin Jordan": {
     "pos": "TE",
@@ -10045,7 +10622,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036556",
+    "teamYear": 2026
   },
   "Quintin Morris": {
     "pos": "TE",
@@ -10097,7 +10676,9 @@
         "recYds": 20.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036590",
+    "teamYear": 2026
   },
   "Jaylen Waddle": {
     "pos": "WR",
@@ -10194,7 +10775,9 @@
         "recYds": 44.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036613",
+    "teamYear": 2026
   },
   "Dyami Brown": {
     "pos": "WR",
@@ -10291,7 +10874,9 @@
         "recYds": 16.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036626",
+    "teamYear": 2026
   },
   "John Bates": {
     "pos": "TE",
@@ -10388,7 +10973,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036628",
+    "teamYear": 2026
   },
   "Tylan Wallace": {
     "pos": "WR",
@@ -10467,7 +11054,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036630",
+    "teamYear": 2026
   },
   "Noah Gray": {
     "pos": "TE",
@@ -10564,7 +11153,9 @@
         "recYds": 1.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036637",
+    "teamYear": 2026
   },
   "Simi Fehoko": {
     "pos": "WR",
@@ -10616,7 +11207,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036646",
+    "teamYear": 2026
   },
   "Brock Wright": {
     "pos": "TE",
@@ -10713,7 +11306,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036754",
+    "teamYear": 2026
   },
   "Feleipe Franks": {
     "pos": "TE",
@@ -10747,7 +11342,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036825",
+    "teamYear": 2026
   },
   "Kene Nwangwu": {
     "pos": "RB",
@@ -10763,7 +11360,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036842",
+    "teamYear": 2026
   },
   "Tutu Atwell": {
     "pos": "WR",
@@ -10860,7 +11459,9 @@
         "recYds": 37.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036849",
+    "teamYear": 2026
   },
   "Ben Skowronek": {
     "pos": "WR",
@@ -10903,7 +11504,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036862",
+    "teamYear": 2026
   },
   "Rhamondre Stevenson": {
     "pos": "RB",
@@ -11000,7 +11603,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036875",
+    "teamYear": 2026
   },
   "Kylen Granson": {
     "pos": "TE",
@@ -11097,13 +11702,17 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036876",
+    "teamYear": 2026
   },
   "Sam Ehlinger": {
     "pos": "QB",
     "team": "Denver Broncos",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0036879",
+    "teamYear": 2026
   },
   "Luke Farrell": {
     "pos": "TE",
@@ -11200,7 +11809,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036887",
+    "teamYear": 2026
   },
   "Najee Harris": {
     "pos": "RB",
@@ -11297,7 +11908,9 @@
         "recYds": 20.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036893",
+    "teamYear": 2026
   },
   "Pat Freiermuth": {
     "pos": "TE",
@@ -11394,7 +12007,9 @@
         "recYds": 85.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036894",
+    "teamYear": 2026
   },
   "Davis Mills": {
     "pos": "QB",
@@ -11437,7 +12052,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036898",
+    "teamYear": 2026
   },
   "Ja'Marr Chase": {
     "pos": "WR",
@@ -11534,7 +12151,9 @@
         "recYds": 96.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036900",
+    "teamYear": 2026
   },
   "DeVonta Smith": {
     "pos": "WR",
@@ -11631,13 +12250,108 @@
         "recYds": 120.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0036912",
+    "teamYear": 2026
   },
   "Kenny Gainwell": {
     "pos": "RB",
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 19.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 9.0,
+        "receptions": 1.0,
+        "recYds": 1.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 30.0,
+        "receptions": 1.0,
+        "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 43.0,
+        "receptions": 1.0,
+        "recYds": 6.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 22.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs CAR",
+        "passYds": 0.0,
+        "rushYds": 26.0,
+        "receptions": 2.0,
+        "recYds": 7.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 20.0,
+        "receptions": 3.0,
+        "recYds": 40.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 7.0,
+        "receptions": 1.0,
+        "recYds": 6.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 1.0,
+        "recYds": 5.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs NYG",
+        "passYds": 0.0,
+        "rushYds": 14.0,
+        "receptions": 2.0,
+        "recYds": 9.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0036919",
+    "teamYear": 2026
   },
   "Justin Fields": {
     "pos": "QB",
@@ -11734,7 +12448,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036945",
+    "teamYear": 2026
   },
   "Amon-Ra St. Brown": {
     "pos": "WR",
@@ -11831,7 +12547,9 @@
         "recYds": 77.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036963",
+    "teamYear": 2026
   },
   "Kyle Pitts": {
     "pos": "TE",
@@ -11928,7 +12646,9 @@
         "recYds": 15.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036970",
+    "teamYear": 2026
   },
   "Trevor Lawrence": {
     "pos": "QB",
@@ -12025,7 +12745,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036971",
+    "teamYear": 2026
   },
   "Mac Jones": {
     "pos": "QB",
@@ -12122,7 +12844,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036972",
+    "teamYear": 2026
   },
   "Travis Etienne": {
     "pos": "RB",
@@ -12219,7 +12943,9 @@
         "recYds": 29.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036973",
+    "teamYear": 2026
   },
   "Elijah Moore": {
     "pos": "WR",
@@ -12316,7 +13042,9 @@
         "recYds": 36.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036980",
+    "teamYear": 2026
   },
   "Josh Palmer": {
     "pos": "WR",
@@ -12413,7 +13141,9 @@
         "recYds": 41.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036988",
+    "teamYear": 2026
   },
   "Javonte Williams": {
     "pos": "RB",
@@ -12510,7 +13240,9 @@
         "recYds": 50.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036997",
+    "teamYear": 2026
   },
   "Hunter Long": {
     "pos": "TE",
@@ -12580,7 +13312,9 @@
         "recYds": 17.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037004",
+    "teamYear": 2026
   },
   "Tommy Tremble": {
     "pos": "TE",
@@ -12677,7 +13411,9 @@
         "recYds": 30.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0037005",
+    "teamYear": 2026
   },
   "Trey Lance": {
     "pos": "QB",
@@ -12720,13 +13456,17 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037012",
+    "teamYear": 2026
   },
   "Zach Wilson": {
     "pos": "QB",
     "team": "New Orleans Saints",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0037013",
+    "teamYear": 2026
   },
   "Sam Howell": {
     "pos": "QB",
@@ -12742,7 +13482,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037077",
+    "teamYear": 2026
   },
   "Tyler Badie": {
     "pos": "RB",
@@ -12776,7 +13518,9 @@
         "recYds": -4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037085",
+    "teamYear": 2026
   },
   "Bo Melton": {
     "pos": "WR",
@@ -12873,7 +13617,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037091",
+    "teamYear": 2026
   },
   "Dareke Young": {
     "pos": "WR",
@@ -12889,19 +13635,25 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037093",
+    "teamYear": 2026
   },
   "Jake Tonges": {
     "pos": "TE",
     "team": "San Francisco 49ers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0037112",
+    "teamYear": 2026
   },
   "Bam Knight": {
     "pos": "RB",
     "team": "Arizona Cardinals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0037157",
+    "teamYear": 2026
   },
   "Jaylen Warren": {
     "pos": "RB",
@@ -12998,7 +13750,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037228",
+    "teamYear": 2026
   },
   "Drake London": {
     "pos": "WR",
@@ -13095,7 +13849,9 @@
         "recYds": 187.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0037238",
+    "teamYear": 2026
   },
   "Chris Olave": {
     "pos": "WR",
@@ -13174,7 +13930,9 @@
         "recYds": 13.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037239",
+    "teamYear": 2026
   },
   "Jameson Williams": {
     "pos": "WR",
@@ -13271,7 +14029,9 @@
         "recYds": 34.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037240",
+    "teamYear": 2026
   },
   "George Pickens": {
     "pos": "WR",
@@ -13368,7 +14128,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037247",
+    "teamYear": 2026
   },
   "James Cook": {
     "pos": "RB",
@@ -13465,7 +14227,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0037248",
+    "teamYear": 2026
   },
   "Greg Dulcich": {
     "pos": "TE",
@@ -13499,7 +14263,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037252",
+    "teamYear": 2026
   },
   "Rachaad White": {
     "pos": "RB",
@@ -13596,7 +14362,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037256",
+    "teamYear": 2026
   },
   "Khalil Shakir": {
     "pos": "WR",
@@ -13693,7 +14461,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037261",
+    "teamYear": 2026
   },
   "Tyler Allgeier": {
     "pos": "RB",
@@ -13790,7 +14560,9 @@
         "recYds": 17.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037263",
+    "teamYear": 2026
   },
   "Jalen Nailor": {
     "pos": "WR",
@@ -13887,7 +14659,9 @@
         "recYds": 53.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037291",
+    "teamYear": 2026
   },
   "Andrew Ogletree": {
     "pos": "TE",
@@ -13984,7 +14758,9 @@
         "recYds": 21.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037292",
+    "teamYear": 2026
   },
   "Connor Heyward": {
     "pos": "TE",
@@ -14036,13 +14812,17 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037304",
+    "teamYear": 2026
   },
   "Ko Kieft": {
     "pos": "TE",
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0037311",
+    "teamYear": 2026
   },
   "Tay Martin": {
     "pos": "WR",
@@ -14058,7 +14838,9 @@
         "recYds": 49.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0037524",
+    "teamYear": 2026
   },
   "Jordan Mason": {
     "pos": "RB",
@@ -14155,7 +14937,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037525",
+    "teamYear": 2026
   },
   "Rashid Shaheed": {
     "pos": "WR",
@@ -14216,7 +15000,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037545",
+    "teamYear": 2026
   },
   "Ronnie Rivers": {
     "pos": "RB",
@@ -14268,13 +15054,17 @@
         "recYds": 34.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037557",
+    "teamYear": 2026
   },
   "Malik Davis": {
     "pos": "RB",
     "team": "Dallas Cowboys",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0037563",
+    "teamYear": 2026
   },
   "Julius Chestnut": {
     "pos": "RB",
@@ -14344,13 +15134,108 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037594",
+    "teamYear": 2026
   },
   "John Metchie III": {
     "pos": "WR",
     "team": "Carolina Panthers",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk4",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 7.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 29.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5.0,
+        "recYds": 74.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 33.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 6.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 16.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 17.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5.0,
+        "recYds": 48.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 24.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0037614",
+    "teamYear": 2026
   },
   "Alec Pierce": {
     "pos": "WR",
@@ -14447,7 +15332,9 @@
         "recYds": 57.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0037664",
+    "teamYear": 2026
   },
   "Jalen Tolbert": {
     "pos": "WR",
@@ -14544,7 +15431,9 @@
         "recYds": 98.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037666",
+    "teamYear": 2026
   },
   "Garrett Wilson": {
     "pos": "WR",
@@ -14641,7 +15530,9 @@
         "recYds": 51.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037740",
+    "teamYear": 2026
   },
   "Jahan Dotson": {
     "pos": "WR",
@@ -14738,7 +15629,9 @@
         "recYds": 94.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037741",
+    "teamYear": 2026
   },
   "Treylon Burks": {
     "pos": "WR",
@@ -14790,7 +15683,9 @@
         "recYds": 10.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037742",
+    "teamYear": 2026
   },
   "Trey McBride": {
     "pos": "TE",
@@ -14887,7 +15782,9 @@
         "recYds": 65.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0037744",
+    "teamYear": 2026
   },
   "Brian Robinson": {
     "pos": "RB",
@@ -14984,19 +15881,116 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037746",
+    "teamYear": 2026
   },
   "Jelani Woods": {
     "pos": "TE",
     "team": "New York Jets",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0037755",
+    "teamYear": 2026
   },
   "KaVontae Turpin": {
     "pos": "WR",
     "team": "Dallas Cowboys",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 11.0,
+        "receptions": 1.0,
+        "recYds": 16.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 36.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs HOU",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 86.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 8.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs NYG",
+        "passYds": 0.0,
+        "rushYds": 2.0,
+        "receptions": 4.0,
+        "recYds": 53.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 15.0,
+        "receptions": 1.0,
+        "recYds": 16.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs CAR",
+        "passYds": 0.0,
+        "rushYds": 27.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 11.0,
+        "receptions": 1.0,
+        "recYds": 7.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 18.0,
+        "receptions": 1.0,
+        "recYds": 16.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 5.0,
+        "receptions": 3.0,
+        "recYds": 53.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0037801",
+    "teamYear": 2026
   },
   "Jeremy Ruckert": {
     "pos": "TE",
@@ -15093,13 +16087,108 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037805",
+    "teamYear": 2026
   },
   "Chig Okonkwo": {
     "pos": "TE",
     "team": "Washington Commanders",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 14.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 38.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 14.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 19.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs HOU",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 70.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 27.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 8.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 8.0,
+        "recYds": 59.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 9.0,
+        "recYds": 81.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 17.0,
+        "receptions": 5.0,
+        "recYds": 42.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0037809",
+    "teamYear": 2026
   },
   "Romeo Doubs": {
     "pos": "WR",
@@ -15196,7 +16285,9 @@
         "recYds": 58.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037816",
+    "teamYear": 2026
   },
   "Brock Purdy": {
     "pos": "QB",
@@ -15293,7 +16384,9 @@
         "recYds": 0.0,
         "tds": 4.0
       }
-    ]
+    ],
+    "_id": "00-0037834",
+    "teamYear": 2026
   },
   "Isaiah Likely": {
     "pos": "TE",
@@ -15390,7 +16483,9 @@
         "recYds": 38.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037838",
+    "teamYear": 2026
   },
   "Kyren Williams": {
     "pos": "RB",
@@ -15487,7 +16582,9 @@
         "recYds": 16.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0037840",
+    "teamYear": 2026
   },
   "Jake Ferguson": {
     "pos": "TE",
@@ -15584,7 +16681,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038041",
+    "teamYear": 2026
   },
   "Charlie Kolar": {
     "pos": "TE",
@@ -15654,7 +16753,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038046",
+    "teamYear": 2026
   },
   "Skyy Moore": {
     "pos": "WR",
@@ -15679,7 +16780,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038090",
+    "teamYear": 2026
   },
   "Kenny Pickett": {
     "pos": "QB",
@@ -15731,7 +16834,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0038102",
+    "teamYear": 2026
   },
   "Tyquan Thornton": {
     "pos": "WR",
@@ -15774,7 +16879,9 @@
         "recYds": 20.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038104",
+    "teamYear": 2026
   },
   "Daniel Bellinger": {
     "pos": "TE",
@@ -15844,7 +16951,9 @@
         "recYds": 9.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038115",
+    "teamYear": 2026
   },
   "Wan'Dale Robinson": {
     "pos": "WR",
@@ -15941,7 +17050,9 @@
         "recYds": 43.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038117",
+    "teamYear": 2026
   },
   "Breece Hall": {
     "pos": "RB",
@@ -16038,7 +17149,9 @@
         "recYds": 15.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038120",
+    "teamYear": 2026
   },
   "Christian Watson": {
     "pos": "WR",
@@ -16135,7 +17248,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038124",
+    "teamYear": 2026
   },
   "Malik Willis": {
     "pos": "QB",
@@ -16196,7 +17311,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038128",
+    "teamYear": 2026
   },
   "Cade Otton": {
     "pos": "TE",
@@ -16293,13 +17410,108 @@
         "recYds": 24.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038129",
+    "teamYear": 2026
   },
   "Kenneth Walker III": {
     "pos": "RB",
     "team": "Kansas City Chiefs",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk4",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 80.0,
+        "receptions": 4.0,
+        "recYds": 36.0,
+        "tds": 3.0
+      },
+      {
+        "date": "2024-wk5",
+        "opp": "vs NYG",
+        "passYds": 0.0,
+        "rushYds": 19.0,
+        "receptions": 7.0,
+        "recYds": 57.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk6",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 32.0,
+        "receptions": 8.0,
+        "recYds": 37.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk7",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 69.0,
+        "receptions": 2.0,
+        "recYds": 24.0,
+        "tds": 2.0
+      },
+      {
+        "date": "2024-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 12.0,
+        "receptions": 4.0,
+        "recYds": 33.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 83.0,
+        "receptions": 3.0,
+        "recYds": 24.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 54.0,
+        "receptions": 2.0,
+        "recYds": 5.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 41.0,
+        "receptions": 4.0,
+        "recYds": 52.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 49.0,
+        "receptions": 2.0,
+        "recYds": -3.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 31.0,
+        "receptions": 8.0,
+        "recYds": 28.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0038134",
+    "teamYear": 2026
   },
   "Xavier Smith": {
     "pos": "WR",
@@ -16333,7 +17545,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038359",
+    "teamYear": 2026
   },
   "Dontayvion Wicks": {
     "pos": "WR",
@@ -16430,7 +17644,9 @@
         "recYds": 49.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038393",
+    "teamYear": 2026
   },
   "Tanner McKee": {
     "pos": "QB",
@@ -16455,7 +17671,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0038400",
+    "teamYear": 2026
   },
   "Tyson Bagent": {
     "pos": "QB",
@@ -16498,7 +17716,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038416",
+    "teamYear": 2026
   },
   "Keaton Mitchell": {
     "pos": "RB",
@@ -16523,7 +17743,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038454",
+    "teamYear": 2026
   },
   "Tommy DeVito": {
     "pos": "QB",
@@ -16548,13 +17770,17 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038476",
+    "teamYear": 2026
   },
   "Brady Russell": {
     "pos": "RB",
     "team": "Seattle Seahawks",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0038488",
+    "teamYear": 2026
   },
   "E.J. Jenkins": {
     "pos": "TE",
@@ -16579,7 +17805,9 @@
         "recYds": 7.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038498",
+    "teamYear": 2026
   },
   "Nikko Remigio": {
     "pos": "WR",
@@ -16595,7 +17823,9 @@
         "recYds": 48.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038519",
+    "teamYear": 2026
   },
   "Bijan Robinson": {
     "pos": "RB",
@@ -16692,7 +17922,9 @@
         "recYds": 3.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0038542",
+    "teamYear": 2026
   },
   "Jaxon Smith-Njigba": {
     "pos": "WR",
@@ -16789,7 +18021,9 @@
         "recYds": 9.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038543",
+    "teamYear": 2026
   },
   "Quentin Johnston": {
     "pos": "WR",
@@ -16886,7 +18120,9 @@
         "recYds": 186.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038544",
+    "teamYear": 2026
   },
   "Luke Schoonmaker": {
     "pos": "TE",
@@ -16983,7 +18219,9 @@
         "recYds": 16.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038547",
+    "teamYear": 2026
   },
   "Kendre Miller": {
     "pos": "RB",
@@ -17044,7 +18282,9 @@
         "recYds": 16.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038551",
+    "teamYear": 2026
   },
   "Tank Bigsby": {
     "pos": "RB",
@@ -17141,7 +18381,9 @@
         "recYds": 3.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038555",
+    "teamYear": 2026
   },
   "Darnell Washington": {
     "pos": "TE",
@@ -17238,7 +18480,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038558",
+    "teamYear": 2026
   },
   "Michael Wilson": {
     "pos": "WR",
@@ -17335,7 +18579,9 @@
         "recYds": 22.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038559",
+    "teamYear": 2026
   },
   "Tre Tucker": {
     "pos": "WR",
@@ -17432,13 +18678,17 @@
         "recYds": 24.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038563",
+    "teamYear": 2026
   },
   "Cameron Latu": {
     "pos": "TE",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0038564",
+    "teamYear": 2026
   },
   "Derius Davis": {
     "pos": "WR",
@@ -17535,7 +18785,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038573",
+    "teamYear": 2026
   },
   "Aidan O'Connell": {
     "pos": "QB",
@@ -17623,7 +18875,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0038579",
+    "teamYear": 2026
   },
   "Josh Whyle": {
     "pos": "TE",
@@ -17720,7 +18974,9 @@
         "recYds": 29.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038589",
+    "teamYear": 2026
   },
   "Chase Brown": {
     "pos": "RB",
@@ -17817,7 +19073,9 @@
         "recYds": 24.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038597",
+    "teamYear": 2026
   },
   "Parker Washington": {
     "pos": "WR",
@@ -17914,7 +19172,9 @@
         "recYds": 15.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038606",
+    "teamYear": 2026
   },
   "Kayshon Boutte": {
     "pos": "WR",
@@ -18011,13 +19271,72 @@
         "recYds": 117.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038608",
+    "teamYear": 2026
   },
   "Chris Rodriguez Jr.": {
     "pos": "RB",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk9",
+        "opp": "vs NYG",
+        "passYds": 0.0,
+        "rushYds": 52.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 94.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs NO",
+        "passYds": 0.0,
+        "rushYds": 2.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 5.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 16.0,
+        "receptions": 1.0,
+        "recYds": 12.0,
+        "tds": 1.0
+      }
+    ],
+    "_id": "00-0038611",
+    "teamYear": 2026
   },
   "Xavier Hutchinson": {
     "pos": "WR",
@@ -18114,7 +19433,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038618",
+    "teamYear": 2026
   },
   "Andrei Iosivas": {
     "pos": "WR",
@@ -18211,13 +19532,108 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038619",
+    "teamYear": 2026
   },
   "DeMario Douglas": {
     "pos": "WR",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 12.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7.0,
+        "recYds": 35.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs CHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 50.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 59.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 1.0,
+        "receptions": 5.0,
+        "recYds": 62.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 20.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 11.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 6.0,
+        "receptions": 4.0,
+        "recYds": 33.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 46.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 34.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0038621",
+    "teamYear": 2026
   },
   "Jalen Brooks": {
     "pos": "WR",
@@ -18314,13 +19730,108 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038640",
+    "teamYear": 2026
   },
   "Chris Brooks": {
     "pos": "RB",
     "team": "Green Bay Packers",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk6",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 21.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 16.0,
+        "receptions": 1.0,
+        "recYds": 1.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 13.0,
+        "receptions": 3.0,
+        "recYds": 28.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs CHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 11.0,
+        "receptions": 1.0,
+        "recYds": 15.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 28.0,
+        "receptions": 2.0,
+        "recYds": 1.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 3.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 6.0,
+        "receptions": 1.0,
+        "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs NO",
+        "passYds": 0.0,
+        "rushYds": 23.0,
+        "receptions": 1.0,
+        "recYds": 2.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs CHI",
+        "passYds": 0.0,
+        "rushYds": 59.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0038685",
+    "teamYear": 2026
   },
   "Emari Demercado": {
     "pos": "RB",
@@ -18417,7 +19928,9 @@
         "recYds": 15.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038705",
+    "teamYear": 2026
   },
   "Blake Whiteheart": {
     "pos": "TE",
@@ -18487,19 +20000,25 @@
         "recYds": 1.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038710",
+    "teamYear": 2026
   },
   "Jared Wayne": {
     "pos": "WR",
     "team": "Houston Texans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0038728",
+    "teamYear": 2026
   },
   "Hunter Luepke": {
     "pos": "RB",
     "team": "Dallas Cowboys",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0038738",
+    "teamYear": 2026
   },
   "Nate Adkins": {
     "pos": "TE",
@@ -18596,7 +20115,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038783",
+    "teamYear": 2026
   },
   "Emanuel Wilson": {
     "pos": "RB",
@@ -18693,7 +20214,9 @@
         "recYds": -2.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038797",
+    "teamYear": 2026
   },
   "Ryan Miller": {
     "pos": "WR",
@@ -18772,7 +20295,9 @@
         "recYds": 26.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038824",
+    "teamYear": 2026
   },
   "Brycen Tremayne": {
     "pos": "WR",
@@ -18788,13 +20313,17 @@
         "recYds": -2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038840",
+    "teamYear": 2026
   },
   "Jacob Saylors": {
     "pos": "RB",
     "team": "Detroit Lions",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0038896",
+    "teamYear": 2026
   },
   "Dalton Kincaid": {
     "pos": "TE",
@@ -18891,7 +20420,9 @@
         "recYds": 24.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038933",
+    "teamYear": 2026
   },
   "Brenton Strange": {
     "pos": "TE",
@@ -18988,7 +20519,9 @@
         "recYds": 60.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038935",
+    "teamYear": 2026
   },
   "Sean Tucker": {
     "pos": "RB",
@@ -19085,13 +20618,108 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038951",
+    "teamYear": 2026
   },
   "Marvin Mims Jr.": {
     "pos": "WR",
     "team": "Denver Broncos",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs CAR",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 8.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 4.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 17.0,
+        "receptions": 4.0,
+        "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 2.0,
+        "recYds": 49.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": -2.0,
+        "receptions": 3.0,
+        "recYds": 44.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 3.0,
+        "recYds": 105.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 20.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 3.0,
+        "receptions": 3.0,
+        "recYds": 62.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": -1.0,
+        "receptions": 8.0,
+        "recYds": 103.0,
+        "tds": 2.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5.0,
+        "recYds": 51.0,
+        "tds": 2.0
+      }
+    ],
+    "_id": "00-0038976",
+    "teamYear": 2026
   },
   "Jordan Addison": {
     "pos": "WR",
@@ -19188,7 +20816,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038994",
+    "teamYear": 2026
   },
   "Tucker Kraft": {
     "pos": "TE",
@@ -19285,7 +20915,9 @@
         "recYds": 36.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038996",
+    "teamYear": 2026
   },
   "Josh Downs": {
     "pos": "WR",
@@ -19382,7 +21014,9 @@
         "recYds": 94.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038997",
+    "teamYear": 2026
   },
   "Roschon Johnson": {
     "pos": "RB",
@@ -19479,7 +21113,9 @@
         "recYds": 16.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039021",
+    "teamYear": 2026
   },
   "Tyjae Spears": {
     "pos": "RB",
@@ -19576,13 +21212,108 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039032",
+    "teamYear": 2026
   },
   "De'Von Achane": {
     "pos": "RB",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk9",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 63.0,
+        "receptions": 8.0,
+        "recYds": 58.0,
+        "tds": 2.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 37.0,
+        "receptions": 5.0,
+        "recYds": 15.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 73.0,
+        "receptions": 4.0,
+        "recYds": 32.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 32.0,
+        "receptions": 3.0,
+        "recYds": 24.0,
+        "tds": 2.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 14.0,
+        "receptions": 8.0,
+        "recYds": 56.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 24.0,
+        "receptions": 6.0,
+        "recYds": 45.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs HOU",
+        "passYds": 0.0,
+        "rushYds": 41.0,
+        "receptions": 7.0,
+        "recYds": 35.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 120.0,
+        "receptions": 6.0,
+        "recYds": 70.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 25.0,
+        "receptions": 2.0,
+        "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 121.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 1.0
+      }
+    ],
+    "_id": "00-0039040",
+    "teamYear": 2026
   },
   "Elijah Higgins": {
     "pos": "TE",
@@ -19679,7 +21410,9 @@
         "recYds": 23.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039041",
+    "teamYear": 2026
   },
   "Payne Durham": {
     "pos": "TE",
@@ -19731,7 +21464,9 @@
         "recYds": 16.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039050",
+    "teamYear": 2026
   },
   "Jonathan Mingo": {
     "pos": "WR",
@@ -19828,7 +21563,9 @@
         "recYds": 24.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039062",
+    "teamYear": 2026
   },
   "Zay Flowers": {
     "pos": "WR",
@@ -19925,7 +21662,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039064",
+    "teamYear": 2026
   },
   "Sam LaPorta": {
     "pos": "TE",
@@ -20022,7 +21761,9 @@
         "recYds": 63.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039065",
+    "teamYear": 2026
   },
   "Michael Mayer": {
     "pos": "TE",
@@ -20119,7 +21860,9 @@
         "recYds": 21.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039066",
+    "teamYear": 2026
   },
   "Rashee Rice": {
     "pos": "WR",
@@ -20153,7 +21896,9 @@
         "recYds": 110.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039067",
+    "teamYear": 2026
   },
   "Davis Allen": {
     "pos": "TE",
@@ -20214,7 +21959,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039074",
+    "teamYear": 2026
   },
   "Puka Nacua": {
     "pos": "WR",
@@ -20311,13 +22058,17 @@
         "recYds": 129.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039075",
+    "teamYear": 2026
   },
   "Stetson Bennett": {
     "pos": "QB",
     "team": "Los Angeles Rams",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0039107",
+    "teamYear": 2026
   },
   "Jahmyr Gibbs": {
     "pos": "RB",
@@ -20414,7 +22165,9 @@
         "recYds": 31.0,
         "tds": 4.0
       }
-    ]
+    ],
+    "_id": "00-0039139",
+    "teamYear": 2026
   },
   "Jayden Reed": {
     "pos": "WR",
@@ -20511,7 +22264,9 @@
         "recYds": 48.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039146",
+    "teamYear": 2026
   },
   "Bryce Young": {
     "pos": "QB",
@@ -20608,7 +22363,9 @@
         "recYds": 0.0,
         "tds": 5.0
       }
-    ]
+    ],
+    "_id": "00-0039150",
+    "teamYear": 2026
   },
   "C.J. Stroud": {
     "pos": "QB",
@@ -20705,7 +22462,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039163",
+    "teamYear": 2026
   },
   "Anthony Richardson": {
     "pos": "QB",
@@ -20802,7 +22561,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0039164",
+    "teamYear": 2026
   },
   "George Holani": {
     "pos": "RB",
@@ -20827,7 +22588,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039299",
+    "teamYear": 2026
   },
   "Malik Nabers": {
     "pos": "WR",
@@ -20924,7 +22687,9 @@
         "recYds": 64.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039337",
+    "teamYear": 2026
   },
   "Brock Bowers": {
     "pos": "TE",
@@ -21021,7 +22786,9 @@
         "recYds": 50.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039338",
+    "teamYear": 2026
   },
   "Xavier Legette": {
     "pos": "WR",
@@ -21118,7 +22885,9 @@
         "recYds": 30.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039342",
+    "teamYear": 2026
   },
   "Jonathon Brooks": {
     "pos": "RB",
@@ -21152,7 +22921,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039344",
+    "teamYear": 2026
   },
   "Luke McCaffrey": {
     "pos": "WR",
@@ -21249,7 +23020,9 @@
         "recYds": 13.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039355",
+    "teamYear": 2026
   },
   "Ja'Tavion Sanders": {
     "pos": "TE",
@@ -21346,7 +23119,9 @@
         "recYds": 35.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039356",
+    "teamYear": 2026
   },
   "Cade Stover": {
     "pos": "TE",
@@ -21443,7 +23218,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039359",
+    "teamYear": 2026
   },
   "Bucky Irving": {
     "pos": "RB",
@@ -21540,7 +23317,9 @@
         "recYds": -5.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039361",
+    "teamYear": 2026
   },
   "Sione Vaki": {
     "pos": "RB",
@@ -21583,7 +23362,9 @@
         "recYds": 20.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039364",
+    "teamYear": 2026
   },
   "Jacob Cowing": {
     "pos": "WR",
@@ -21617,13 +23398,108 @@
         "recYds": 30.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039365",
+    "teamYear": 2026
   },
   "Audric Estim\u00e9": {
     "pos": "RB",
     "team": "New Orleans Saints",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs CAR",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 35.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 53.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 16.0,
+        "receptions": 3.0,
+        "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 15.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 12.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 13.0,
+        "receptions": 1.0,
+        "recYds": 5.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 48.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 24.0,
+        "receptions": 1.0,
+        "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 34.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 1.0
+      }
+    ],
+    "_id": "00-0039373",
+    "teamYear": 2026
   },
   "Spencer Rattler": {
     "pos": "QB",
@@ -21693,13 +23569,108 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039376",
+    "teamYear": 2026
   },
   "Tyrone Tracy Jr.": {
     "pos": "RB",
     "team": "New York Giants",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 145.0,
+        "receptions": 2.0,
+        "recYds": 5.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 66.0,
+        "receptions": 1.0,
+        "recYds": 3.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs CAR",
+        "passYds": 0.0,
+        "rushYds": 103.0,
+        "receptions": 1.0,
+        "recYds": 1.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 42.0,
+        "receptions": 4.0,
+        "recYds": 28.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 32.0,
+        "receptions": 2.0,
+        "recYds": 33.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs NO",
+        "passYds": 0.0,
+        "rushYds": 45.0,
+        "receptions": 5.0,
+        "recYds": 38.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 31.0,
+        "receptions": 1.0,
+        "recYds": 4.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 26.0,
+        "receptions": 4.0,
+        "recYds": 43.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 59.0,
+        "receptions": 2.0,
+        "recYds": 14.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 59.0,
+        "receptions": 2.0,
+        "recYds": 7.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0039384",
+    "teamYear": 2026
   },
   "Kimani Vidal": {
     "pos": "RB",
@@ -21787,7 +23758,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039391",
+    "teamYear": 2026
   },
   "Dylan Laube": {
     "pos": "RB",
@@ -21803,7 +23776,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039407",
+    "teamYear": 2026
   },
   "Ryan Flournoy": {
     "pos": "WR",
@@ -21873,7 +23848,9 @@
         "recYds": 14.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039410",
+    "teamYear": 2026
   },
   "Devaughn Vele": {
     "pos": "WR",
@@ -21970,7 +23947,9 @@
         "recYds": 50.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039424",
+    "teamYear": 2026
   },
   "Isaiah Williams": {
     "pos": "WR",
@@ -21986,7 +23965,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039451",
+    "teamYear": 2026
   },
   "Jalen Coker": {
     "pos": "WR",
@@ -22083,7 +24064,9 @@
         "recYds": 62.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039491",
+    "teamYear": 2026
   },
   "Brevyn Spann-Ford": {
     "pos": "TE",
@@ -22144,7 +24127,9 @@
         "recYds": 2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039530",
+    "teamYear": 2026
   },
   "Kameron Johnson": {
     "pos": "WR",
@@ -22178,7 +24163,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039589",
+    "teamYear": 2026
   },
   "British Brooks": {
     "pos": "RB",
@@ -22194,7 +24181,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039603",
+    "teamYear": 2026
   },
   "David Martin-Robinson": {
     "pos": "TE",
@@ -22219,13 +24208,17 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039648",
+    "teamYear": 2026
   },
   "Colson Yankoff": {
     "pos": "TE",
     "team": "Washington Commanders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0039686",
+    "teamYear": 2026
   },
   "Bo Nix": {
     "pos": "QB",
@@ -22322,7 +24315,9 @@
         "recYds": 0.0,
         "tds": 4.0
       }
-    ]
+    ],
+    "_id": "00-0039732",
+    "teamYear": 2026
   },
   "Blake Corum": {
     "pos": "RB",
@@ -22419,13 +24414,17 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039738",
+    "teamYear": 2026
   },
   "Roman Wilson": {
     "pos": "WR",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0039739",
+    "teamYear": 2026
   },
   "Will Shipley": {
     "pos": "RB",
@@ -22477,7 +24476,9 @@
         "recYds": 35.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039746",
+    "teamYear": 2026
   },
   "Jordan Whittington": {
     "pos": "WR",
@@ -22538,7 +24539,9 @@
         "recYds": 86.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039751",
+    "teamYear": 2026
   },
   "Devontez Walker": {
     "pos": "WR",
@@ -22563,13 +24566,108 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039792",
+    "teamYear": 2026
   },
   "AJ Barner": {
     "pos": "TE",
     "team": "Seattle Seahawks",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk7",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 5.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 34.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 27.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 15.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 19.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 14.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 5.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 13.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5.0,
+        "recYds": 34.0,
+        "tds": 1.0
+      }
+    ],
+    "_id": "00-0039793",
+    "teamYear": 2026
   },
   "Braelon Allen": {
     "pos": "RB",
@@ -22666,7 +24764,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039794",
+    "teamYear": 2026
   },
   "Rasheen Ali": {
     "pos": "RB",
@@ -22709,7 +24809,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039796",
+    "teamYear": 2026
   },
   "Isaiah Davis": {
     "pos": "RB",
@@ -22797,7 +24899,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039798",
+    "teamYear": 2026
   },
   "MarShawn Lloyd": {
     "pos": "RB",
@@ -22813,7 +24917,9 @@
         "recYds": 3.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039811",
+    "teamYear": 2026
   },
   "Erick All": {
     "pos": "TE",
@@ -22892,7 +24998,9 @@
         "recYds": 24.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039814",
+    "teamYear": 2026
   },
   "Jared Wiley": {
     "pos": "TE",
@@ -22908,7 +25016,9 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039824",
+    "teamYear": 2026
   },
   "Theo Johnson": {
     "pos": "TE",
@@ -23005,13 +25115,108 @@
         "recYds": 54.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039847",
+    "teamYear": 2026
   },
   "Marvin Harrison Jr.": {
     "pos": "WR",
     "team": "Arizona Cardinals",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6.0,
+        "recYds": 111.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs CHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 34.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5.0,
+        "recYds": 54.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk12",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 47.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5.0,
+        "recYds": 60.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 49.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 32.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs CAR",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4.0,
+        "recYds": 39.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6.0,
+        "recYds": 96.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5.0,
+        "recYds": 63.0,
+        "tds": 1.0
+      }
+    ],
+    "_id": "00-0039849",
+    "teamYear": 2026
   },
   "Drake Maye": {
     "pos": "QB",
@@ -23108,7 +25313,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039851",
+    "teamYear": 2026
   },
   "Jalen McMillan": {
     "pos": "WR",
@@ -23205,7 +25412,9 @@
         "recYds": 74.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039855",
+    "teamYear": 2026
   },
   "Troy Franklin": {
     "pos": "WR",
@@ -23302,7 +25511,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039868",
+    "teamYear": 2026
   },
   "Jaylen Wright": {
     "pos": "RB",
@@ -23399,7 +25610,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039874",
+    "teamYear": 2026
   },
   "Ray Davis": {
     "pos": "RB",
@@ -23496,7 +25709,9 @@
         "recYds": 1.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039875",
+    "teamYear": 2026
   },
   "Malik Washington": {
     "pos": "WR",
@@ -23593,7 +25808,9 @@
         "recYds": 48.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039880",
+    "teamYear": 2026
   },
   "Adonai Mitchell": {
     "pos": "WR",
@@ -23690,13 +25907,108 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039890",
+    "teamYear": 2026
   },
   "Brian Thomas Jr.": {
     "pos": "WR",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk8",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3.0,
+        "recYds": 60.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk9",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 22.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk10",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2.0,
+        "recYds": 12.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 5.0,
+        "recYds": 82.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk13",
+        "opp": "vs HOU",
+        "passYds": 0.0,
+        "rushYds": 11.0,
+        "receptions": 4.0,
+        "recYds": 76.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk14",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 8.0,
+        "recYds": 86.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk15",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 10.0,
+        "recYds": 105.0,
+        "tds": 2.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 9.0,
+        "recYds": 132.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 18.0,
+        "receptions": 7.0,
+        "recYds": 91.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7.0,
+        "recYds": 103.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0039893",
+    "teamYear": 2026
   },
   "Xavier Worthy": {
     "pos": "WR",
@@ -23793,7 +26105,9 @@
         "recYds": 79.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039894",
+    "teamYear": 2026
   },
   "Keon Coleman": {
     "pos": "WR",
@@ -23890,7 +26204,9 @@
         "recYds": 31.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039901",
+    "teamYear": 2026
   },
   "Jayden Daniels": {
     "pos": "QB",
@@ -23987,7 +26303,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039910",
+    "teamYear": 2026
   },
   "Ben Sinnott": {
     "pos": "TE",
@@ -24030,7 +26348,9 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039912",
+    "teamYear": 2026
   },
   "Ladd McConkey": {
     "pos": "WR",
@@ -24127,13 +26447,63 @@
         "recYds": 95.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039915",
+    "teamYear": 2026
   },
   "Michael Penix Jr.": {
     "pos": "QB",
     "team": "Atlanta Falcons",
     "league": "NFL",
-    "games": []
+    "games": [
+      {
+        "date": "2024-wk7",
+        "opp": "vs SEA",
+        "passYds": 14.0,
+        "rushYds": 0.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk11",
+        "opp": "vs DEN",
+        "passYds": 24.0,
+        "rushYds": 0.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk16",
+        "opp": "vs NYG",
+        "passYds": 202.0,
+        "rushYds": 3.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2024-wk17",
+        "opp": "vs WAS",
+        "passYds": 223.0,
+        "rushYds": 3.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2024-wk18",
+        "opp": "vs CAR",
+        "passYds": 312.0,
+        "rushYds": 5.0,
+        "receptions": 0.0,
+        "recYds": 0.0,
+        "tds": 3.0
+      }
+    ],
+    "_id": "00-0039917",
+    "teamYear": 2026
   },
   "Caleb Williams": {
     "pos": "QB",
@@ -24230,7 +26600,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039918",
+    "teamYear": 2026
   },
   "Rome Odunze": {
     "pos": "WR",
@@ -24327,7 +26699,9 @@
         "recYds": 18.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039919",
+    "teamYear": 2026
   },
   "Malachi Corley": {
     "pos": "WR",
@@ -24379,973 +26753,1297 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039920",
+    "teamYear": 2026
   },
   "J.J. McCarthy": {
     "pos": "QB",
     "team": "Minnesota Vikings",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0039923",
+    "teamYear": 2026
   },
   "Kyle McCord": {
     "pos": "QB",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040014",
+    "teamYear": 2026
   },
   "Darius Cooper": {
     "pos": "WR",
     "team": "Philadelphia Eagles",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040024",
+    "teamYear": 2026
   },
   "Nick Kallerup": {
     "pos": "TE",
     "team": "Seattle Seahawks",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040058",
+    "teamYear": 2026
   },
   "LaJohntay Wester": {
     "pos": "WR",
     "team": "Baltimore Ravens",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040075",
+    "teamYear": 2026
   },
   "Brashard Smith": {
     "pos": "RB",
     "team": "Kansas City Chiefs",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040078",
+    "teamYear": 2026
   },
   "Jake Briningstool": {
     "pos": "TE",
     "team": "Kansas City Chiefs",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040081",
+    "teamYear": 2026
   },
   "Ashton Jeanty": {
     "pos": "RB",
     "team": "Las Vegas Raiders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040122",
+    "teamYear": 2026
   },
   "Tetairoa McMillan": {
     "pos": "WR",
     "team": "Carolina Panthers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040124",
+    "teamYear": 2026
   },
   "Colston Loveland": {
     "pos": "TE",
     "team": "Chicago Bears",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040126",
+    "teamYear": 2026
   },
   "Tyler Warren": {
     "pos": "TE",
     "team": "Indianapolis Colts",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040128",
+    "teamYear": 2026
   },
   "Emeka Egbuka": {
     "pos": "WR",
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040129",
+    "teamYear": 2026
   },
   "Kyle Williams": {
     "pos": "WR",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040131",
+    "teamYear": 2026
   },
   "Pat Bryant": {
     "pos": "WR",
     "team": "Denver Broncos",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040134",
+    "teamYear": 2026
   },
   "Jaylin Noel": {
     "pos": "WR",
     "team": "Houston Texans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040138",
+    "teamYear": 2026
   },
   "Kaleb Johnson": {
     "pos": "RB",
     "team": "Green Bay Packers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040142",
+    "teamYear": 2026
   },
   "Tai Felton": {
     "pos": "WR",
     "team": "Minnesota Vikings",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040154",
+    "teamYear": 2026
   },
   "Dylan Sampson": {
     "pos": "RB",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040162",
+    "teamYear": 2026
   },
   "Jaylin Lane": {
     "pos": "WR",
     "team": "Washington Commanders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040164",
+    "teamYear": 2026
   },
   "Elic Ayomanor": {
     "pos": "WR",
     "team": "Tennessee Titans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040170",
+    "teamYear": 2026
   },
   "Jordan Watkins": {
     "pos": "WR",
     "team": "San Francisco 49ers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040172",
+    "teamYear": 2026
   },
   "Jordan James": {
     "pos": "RB",
     "team": "San Francisco 49ers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040177",
+    "teamYear": 2026
   },
   "DJ Giddens": {
     "pos": "RB",
     "team": "Indianapolis Colts",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040179",
+    "teamYear": 2026
   },
   "KeAndre Lambert-Smith": {
     "pos": "WR",
     "team": "Los Angeles Chargers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040184",
+    "teamYear": 2026
   },
   "Mitchell Evans": {
     "pos": "TE",
     "team": "Carolina Panthers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040187",
+    "teamYear": 2026
   },
   "Oronde Gadsden II": {
     "pos": "TE",
     "team": "Los Angeles Chargers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040189",
+    "teamYear": 2026
   },
   "Jackson Hawes": {
     "pos": "TE",
     "team": "Buffalo Bills",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040194",
+    "teamYear": 2026
   },
   "Ollie Gordon II": {
     "pos": "RB",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040198",
+    "teamYear": 2026
   },
   "Will Howard": {
     "pos": "QB",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040203",
+    "teamYear": 2026
   },
   "Riley Leonard": {
     "pos": "QB",
     "team": "Indianapolis Colts",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040206",
+    "teamYear": 2026
   },
   "Tahj Brooks": {
     "pos": "RB",
     "team": "Cincinnati Bengals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040208",
+    "teamYear": 2026
   },
   "Gavin Bartholomew": {
     "pos": "TE",
     "team": "Minnesota Vikings",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040215",
+    "teamYear": 2026
   },
   "Jimmy Horn Jr.": {
     "pos": "WR",
     "team": "Carolina Panthers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040218",
+    "teamYear": 2026
   },
   "Thomas Fidone II": {
     "pos": "TE",
     "team": "New York Giants",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040225",
+    "teamYear": 2026
   },
   "Quinn Ewers": {
     "pos": "QB",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040234",
+    "teamYear": 2026
   },
   "Kyle Monangai": {
     "pos": "RB",
     "team": "Chicago Bears",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040236",
+    "teamYear": 2026
   },
   "Tez Johnson": {
     "pos": "WR",
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040237",
+    "teamYear": 2026
   },
   "LeQuint Allen Jr.": {
     "pos": "RB",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040238",
+    "teamYear": 2026
   },
   "Jacory Croskey-Merritt": {
     "pos": "RB",
     "team": "Washington Commanders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040242",
+    "teamYear": 2026
   },
   "Jahdae Walker": {
     "pos": "WR",
     "team": "Chicago Bears",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040277",
+    "teamYear": 2026
   },
   "Keleki Latu": {
     "pos": "TE",
     "team": "Buffalo Bills",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040363",
+    "teamYear": 2026
   },
   "Jackson Meeks": {
     "pos": "TE",
     "team": "Detroit Lions",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040390",
+    "teamYear": 2026
   },
   "Brady Cook": {
     "pos": "QB",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040398",
+    "teamYear": 2026
   },
   "Raheim Sanders": {
     "pos": "RB",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040466",
+    "teamYear": 2026
   },
   "Myles Price": {
     "pos": "WR",
     "team": "Minnesota Vikings",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040506",
+    "teamYear": 2026
   },
   "Ben Yurosek": {
     "pos": "TE",
     "team": "Minnesota Vikings",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040509",
+    "teamYear": 2026
   },
   "Ke'Shawn Williams": {
     "pos": "WR",
     "team": "Cincinnati Bengals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040534",
+    "teamYear": 2026
   },
   "Corey Kiner": {
     "pos": "RB",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040556",
+    "teamYear": 2026
   },
   "Efton Chism III": {
     "pos": "WR",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040563",
+    "teamYear": 2026
   },
   "Arian Smith": {
     "pos": "WR",
     "team": "New York Jets",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040582",
+    "teamYear": 2026
   },
   "Woody Marks": {
     "pos": "RB",
     "team": "Houston Texans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040583",
+    "teamYear": 2026
   },
   "Gunnar Helm": {
     "pos": "TE",
     "team": "Tennessee Titans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040584",
+    "teamYear": 2026
   },
   "Kurtis Rourke": {
     "pos": "QB",
     "team": "San Francisco 49ers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040589",
+    "teamYear": 2026
   },
   "Konata Mumpfield": {
     "pos": "WR",
     "team": "Los Angeles Rams",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040590",
+    "teamYear": 2026
   },
   "Mark Redman": {
     "pos": "TE",
     "team": "Green Bay Packers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040598",
+    "teamYear": 2026
   },
   "Montorie Foster Jr": {
     "pos": "WR",
     "team": "Seattle Seahawks",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040621",
+    "teamYear": 2026
   },
   "Jalen Royals": {
     "pos": "WR",
     "team": "Kansas City Chiefs",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040646",
+    "teamYear": 2026
   },
   "Tory Horton": {
     "pos": "WR",
     "team": "Seattle Seahawks",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040648",
+    "teamYear": 2026
   },
   "Harold Fannin Jr.": {
     "pos": "TE",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040663",
+    "teamYear": 2026
   },
   "Omarion Hampton": {
     "pos": "RB",
     "team": "Los Angeles Chargers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040666",
+    "teamYear": 2026
   },
   "Matthew Golden": {
     "pos": "WR",
     "team": "Green Bay Packers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040667",
+    "teamYear": 2026
   },
   "Shedeur Sanders": {
     "pos": "QB",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040668",
+    "teamYear": 2026
   },
   "Isaac TeSlaa": {
     "pos": "WR",
     "team": "Detroit Lions",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040669",
+    "teamYear": 2026
   },
   "Jalen Milroe": {
     "pos": "QB",
     "team": "Seattle Seahawks",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040673",
+    "teamYear": 2026
   },
   "Cam Ward": {
     "pos": "QB",
     "team": "Tennessee Titans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040676",
+    "teamYear": 2026
   },
   "Jaxson Dart": {
     "pos": "QB",
     "team": "New York Giants",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040691",
+    "teamYear": 2026
   },
   "Chimere Dike": {
     "pos": "WR",
     "team": "Tennessee Titans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040705",
+    "teamYear": 2026
   },
   "Cam Skattebo": {
     "pos": "RB",
     "team": "New York Giants",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040715",
+    "teamYear": 2026
   },
   "Travis Hunter": {
     "pos": "WR",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040718",
+    "teamYear": 2026
   },
   "Bhayshul Tuten": {
     "pos": "RB",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040719",
+    "teamYear": 2026
   },
   "Tre Harris": {
     "pos": "WR",
     "team": "Los Angeles Chargers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040727",
+    "teamYear": 2026
   },
   "Jack Bech": {
     "pos": "WR",
     "team": "Las Vegas Raiders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040729",
+    "teamYear": 2026
   },
   "RJ Harvey": {
     "pos": "RB",
     "team": "Denver Broncos",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040730",
+    "teamYear": 2026
   },
   "TreVeyon Henderson": {
     "pos": "RB",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040734",
+    "teamYear": 2026
   },
   "Luther Burden III": {
     "pos": "WR",
     "team": "Chicago Bears",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040735",
+    "teamYear": 2026
   },
   "Mason Taylor": {
     "pos": "TE",
     "team": "New York Jets",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040736",
+    "teamYear": 2026
   },
   "Terrance Ferguson": {
     "pos": "TE",
     "team": "Los Angeles Rams",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040737",
+    "teamYear": 2026
   },
   "Elijah Arroyo": {
     "pos": "TE",
     "team": "Seattle Seahawks",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040739",
+    "teamYear": 2026
   },
   "Tyler Shough": {
     "pos": "QB",
     "team": "New Orleans Saints",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040743",
+    "teamYear": 2026
   },
   "Isaiah Bond": {
     "pos": "WR",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040782",
+    "teamYear": 2026
   },
   "Quinshon Judkins": {
     "pos": "RB",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040784",
+    "teamYear": 2026
   },
   "Dohnte Meyers": {
     "pos": "WR",
     "team": "Cincinnati Bengals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040785",
+    "teamYear": 2026
   },
   "Makai Lemon": {
     "pos": "WR",
     "team": "Philadelphia Eagles",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040867",
+    "teamYear": 2026
   },
   "Ja'Kobi Lane": {
     "pos": "WR",
     "team": "Baltimore Ravens",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040870",
+    "teamYear": 2026
   },
   "Elijah Sarratt": {
     "pos": "WR",
     "team": "Baltimore Ravens",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040876",
+    "teamYear": 2026
   },
   "Mike Washington Jr.": {
     "pos": "RB",
     "team": "Las Vegas Raiders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040878",
+    "teamYear": 2026
   },
   "Matthew Hibner": {
     "pos": "TE",
     "team": "Baltimore Ravens",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040879",
+    "teamYear": 2026
   },
   "Nicholas Singleton": {
     "pos": "RB",
     "team": "Tennessee Titans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040886",
+    "teamYear": 2026
   },
   "Josh Cuevas": {
     "pos": "TE",
     "team": "Baltimore Ravens",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040887",
+    "teamYear": 2026
   },
   "Cyrus Allen": {
     "pos": "WR",
     "team": "Kansas City Chiefs",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040890",
+    "teamYear": 2026
   },
   "Cole Payton": {
     "pos": "QB",
     "team": "Philadelphia Eagles",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040891",
+    "teamYear": 2026
   },
   "Malik Benson": {
     "pos": "WR",
     "team": "Las Vegas Raiders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040894",
+    "teamYear": 2026
   },
   "Garrett Nussmeier": {
     "pos": "QB",
     "team": "Kansas City Chiefs",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040906",
+    "teamYear": 2026
   },
   "Camden Brown": {
     "pos": "WR",
     "team": "Dallas Cowboys",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040930",
+    "teamYear": 2026
   },
   "J. Michael Sturdivant": {
     "pos": "WR",
     "team": "Green Bay Packers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040948",
+    "teamYear": 2026
   },
   "Joe Fagnano": {
     "pos": "QB",
     "team": "Baltimore Ravens",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0040981",
+    "teamYear": 2026
   },
   "Emmett Johnson": {
     "pos": "RB",
     "team": "Kansas City Chiefs",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041013",
+    "teamYear": 2026
   },
   "Jeremiyah Love": {
     "pos": "RB",
     "team": "Arizona Cardinals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041027",
+    "teamYear": 2026
   },
   "Kenyon Sadiq": {
     "pos": "TE",
     "team": "New York Jets",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041032",
+    "teamYear": 2026
   },
   "De'Zhaun Stribling": {
     "pos": "WR",
     "team": "San Francisco 49ers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041035",
+    "teamYear": 2026
   },
   "Denzel Boston": {
     "pos": "WR",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041037",
+    "teamYear": 2026
   },
   "Antonio Williams": {
     "pos": "WR",
     "team": "Washington Commanders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041040",
+    "teamYear": 2026
   },
   "Oscar Delp": {
     "pos": "TE",
     "team": "New Orleans Saints",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041041",
+    "teamYear": 2026
   },
   "Malachi Fields": {
     "pos": "WR",
     "team": "New York Giants",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041042",
+    "teamYear": 2026
   },
   "Zachariah Branch": {
     "pos": "WR",
     "team": "Atlanta Falcons",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041044",
+    "teamYear": 2026
   },
   "Ted Hurst III": {
     "pos": "WR",
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041048",
+    "teamYear": 2026
   },
   "Zavion Thomas": {
     "pos": "WR",
     "team": "Chicago Bears",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041051",
+    "teamYear": 2026
   },
   "Kaelon Black": {
     "pos": "RB",
     "team": "San Francisco 49ers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041052",
+    "teamYear": 2026
   },
   "Cade Klubnik": {
     "pos": "QB",
     "team": "New York Jets",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041056",
+    "teamYear": 2026
   },
   "Bryce Lance": {
     "pos": "WR",
     "team": "New Orleans Saints",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041067",
+    "teamYear": 2026
   },
   "Colbie Young": {
     "pos": "WR",
     "team": "Cincinnati Bengals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041069",
+    "teamYear": 2026
   },
   "Reggie Virgil": {
     "pos": "WR",
     "team": "Arizona Cardinals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041070",
+    "teamYear": 2026
   },
   "Justin Joly": {
     "pos": "TE",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041077",
+    "teamYear": 2026
   },
   "Max Bredeson": {
     "pos": "RB",
     "team": "Minnesota Vikings",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041081",
+    "teamYear": 2026
   },
   "Tanner Koziol": {
     "pos": "TE",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041084",
+    "teamYear": 2026
   },
   "Taylen Green": {
     "pos": "QB",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041092",
+    "teamYear": 2026
   },
   "Bauer Sharp": {
     "pos": "TE",
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041094",
+    "teamYear": 2026
   },
   "Kaytron Allen": {
     "pos": "RB",
     "team": "Washington Commanders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041096",
+    "teamYear": 2026
   },
   "Barion Brown": {
     "pos": "WR",
     "team": "New Orleans Saints",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041099",
+    "teamYear": 2026
   },
   "Josh Cameron": {
     "pos": "WR",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041100",
+    "teamYear": 2026
   },
   "Demond Claiborne": {
     "pos": "RB",
     "team": "Minnesota Vikings",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041104",
+    "teamYear": 2026
   },
   "C.J. Williams": {
     "pos": "WR",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041106",
+    "teamYear": 2026
   },
   "Jack Endries": {
     "pos": "TE",
     "team": "Cincinnati Bengals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041116",
+    "teamYear": 2026
   },
   "Athan Kaliakmanis": {
     "pos": "QB",
     "team": "Washington Commanders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041117",
+    "teamYear": 2026
   },
   "Behren Morton": {
     "pos": "QB",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041123",
+    "teamYear": 2026
   },
   "Seth McGowan": {
     "pos": "RB",
     "team": "Indianapolis Colts",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041125",
+    "teamYear": 2026
   },
   "Carsen Ryan": {
     "pos": "TE",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041131",
+    "teamYear": 2026
   },
   "Deion Burks": {
     "pos": "WR",
     "team": "Indianapolis Colts",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041132",
+    "teamYear": 2026
   },
   "Dallen Bentley": {
     "pos": "TE",
     "team": "Denver Broncos",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041133",
+    "teamYear": 2026
   },
   "Haynes King": {
     "pos": "QB",
     "team": "Carolina Panthers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041149",
+    "teamYear": 2026
   },
   "Jack Strand": {
     "pos": "QB",
     "team": "Atlanta Falcons",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041194",
+    "teamYear": 2026
   },
   "Jalon Daniels": {
     "pos": "QB",
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041251",
+    "teamYear": 2026
   },
   "Tanner Arkin": {
     "pos": "TE",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041314",
+    "teamYear": 2026
   },
   "Eli Raridon": {
     "pos": "TE",
     "team": "New England Patriots",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041395",
+    "teamYear": 2026
   },
   "Kaden Wetjen": {
     "pos": "WR",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041397",
+    "teamYear": 2026
   },
   "Riley Nowakowski": {
     "pos": "TE",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041398",
+    "teamYear": 2026
   },
   "CJ Daniels": {
     "pos": "WR",
     "team": "Los Angeles Rams",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041399",
+    "teamYear": 2026
   },
   "DJ Herman": {
     "pos": "RB",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041436",
+    "teamYear": 2026
   },
   "Carnell Tate": {
     "pos": "WR",
     "team": "Tennessee Titans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041438",
+    "teamYear": 2026
   },
   "Skyler Bell": {
     "pos": "WR",
     "team": "Buffalo Bills",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041443",
+    "teamYear": 2026
   },
   "Marlin Klein": {
     "pos": "TE",
     "team": "Houston Texans",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041472",
+    "teamYear": 2026
   },
   "Eli Stowers": {
     "pos": "TE",
     "team": "Philadelphia Eagles",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041483",
+    "teamYear": 2026
   },
   "Germie Bernard": {
     "pos": "WR",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041489",
+    "teamYear": 2026
   },
   "Eli Heidenreich": {
     "pos": "RB",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041490",
+    "teamYear": 2026
   },
   "Jonah Coleman": {
     "pos": "RB",
     "team": "Denver Broncos",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041496",
+    "teamYear": 2026
   },
   "Nate Boerkircher": {
     "pos": "TE",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041503",
+    "teamYear": 2026
   },
   "Max Klare": {
     "pos": "TE",
     "team": "Los Angeles Rams",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041510",
+    "teamYear": 2026
   },
   "Omar Cooper Jr.": {
     "pos": "WR",
     "team": "New York Jets",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041511",
+    "teamYear": 2026
   },
   "Jadarian Price": {
     "pos": "RB",
     "team": "Seattle Seahawks",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041512",
+    "teamYear": 2026
   },
   "Caleb Douglas": {
     "pos": "WR",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041523",
+    "teamYear": 2026
   },
   "Will Kacmarek": {
     "pos": "TE",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041524",
+    "teamYear": 2026
   },
   "Chris Bell": {
     "pos": "WR",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041525",
+    "teamYear": 2026
   },
   "Kevin Coleman Jr.": {
     "pos": "WR",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041529",
+    "teamYear": 2026
   },
   "KC Concepcion": {
     "pos": "WR",
     "team": "Cleveland Browns",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041547",
+    "teamYear": 2026
   },
   "Brenen Thompson": {
     "pos": "WR",
     "team": "Los Angeles Chargers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041550",
+    "teamYear": 2026
   },
   "Sam Roush": {
     "pos": "TE",
     "team": "Chicago Bears",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041558",
+    "teamYear": 2026
   },
   "Carson Beck": {
     "pos": "QB",
     "team": "Arizona Cardinals",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041561",
+    "teamYear": 2026
   },
   "Fernando Mendoza": {
     "pos": "QB",
     "team": "Las Vegas Raiders",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041562",
+    "teamYear": 2026
   },
   "Drew Allar": {
     "pos": "QB",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041565",
+    "teamYear": 2026
   },
   "Ty Simpson": {
     "pos": "QB",
     "team": "Los Angeles Rams",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041568",
+    "teamYear": 2026
   },
   "Seydou Traore": {
     "pos": "TE",
     "team": "Miami Dolphins",
     "league": "NFL",
-    "games": []
+    "games": [],
+    "_id": "00-0041579",
+    "teamYear": 2026
   },
   "Marcedes Lewis": {
     "pos": "TE",
@@ -25361,7 +28059,9 @@
         "recYds": 2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0024243",
+    "teamYear": null
   },
   "Josh Johnson": {
     "pos": "QB",
@@ -25404,7 +28104,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0026300",
+    "teamYear": null
   },
   "Russell Wilson": {
     "pos": "QB",
@@ -25501,7 +28203,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0029263",
+    "teamYear": null
   },
   "Adam Thielen": {
     "pos": "WR",
@@ -25598,7 +28302,9 @@
         "recYds": 44.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0030035",
+    "teamYear": null
   },
   "Zach Ertz": {
     "pos": "TE",
@@ -25695,7 +28401,9 @@
         "recYds": 44.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0030061",
+    "teamYear": null
   },
   "Robert Woods": {
     "pos": "WR",
@@ -25792,7 +28500,9 @@
         "recYds": 39.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0030431",
+    "teamYear": null
   },
   "DeAndre Hopkins": {
     "pos": "WR",
@@ -25889,7 +28599,9 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0030564",
+    "teamYear": null
   },
   "Cordarrelle Patterson": {
     "pos": "RB",
@@ -25986,7 +28698,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0030578",
+    "teamYear": null
   },
   "Odell Beckham": {
     "pos": "WR",
@@ -26162,7 +28876,9 @@
         "recYds": 15.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031236",
+    "teamYear": null
   },
   "Derek Carr": {
     "pos": "QB",
@@ -26259,7 +28975,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0031280",
+    "teamYear": null
   },
   "Jordan Matthews": {
     "pos": "TE",
@@ -26275,7 +28993,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031299",
+    "teamYear": null
   },
   "Jimmy Garoppolo": {
     "pos": "QB",
@@ -26291,7 +29011,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0031345",
+    "teamYear": null
   },
   "Allen Robinson": {
     "pos": "WR",
@@ -26352,7 +29074,9 @@
         "recYds": 21.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031428",
+    "teamYear": null
   },
   "Amari Cooper": {
     "pos": "WR",
@@ -26449,7 +29173,9 @@
         "recYds": 56.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0031544",
+    "teamYear": null
   },
   "Nelson Agholor": {
     "pos": "WR",
@@ -26546,7 +29272,9 @@
         "recYds": 26.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031549",
+    "teamYear": null
   },
   "MyCole Pruitt": {
     "pos": "TE",
@@ -26607,7 +29335,9 @@
         "recYds": 1.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0031585",
+    "teamYear": null
   },
   "Raheem Mostert": {
     "pos": "RB",
@@ -26704,7 +29434,9 @@
         "recYds": 16.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031687",
+    "teamYear": null
   },
   "Eric Tomlinson": {
     "pos": "TE",
@@ -26747,7 +29479,9 @@
         "recYds": 2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031690",
+    "teamYear": null
   },
   "DeAndre Carter": {
     "pos": "WR",
@@ -26799,7 +29533,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031763",
+    "teamYear": null
   },
   "Taylor Heinicke": {
     "pos": "QB",
@@ -26842,7 +29578,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031800",
+    "teamYear": null
   },
   "Jamison Crowder": {
     "pos": "WR",
@@ -26885,7 +29623,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0031941",
+    "teamYear": null
   },
   "Chris Conley": {
     "pos": "WR",
@@ -26955,7 +29695,9 @@
         "recYds": 59.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032128",
+    "teamYear": null
   },
   "Geoff Swaim": {
     "pos": "TE",
@@ -26971,7 +29713,9 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032141",
+    "teamYear": null
   },
   "Tyler Lockett": {
     "pos": "WR",
@@ -27068,7 +29812,9 @@
         "recYds": 28.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032211",
+    "teamYear": null
   },
   "Sterling Shepard": {
     "pos": "WR",
@@ -27165,7 +29911,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032385",
+    "teamYear": null
   },
   "Nick Vannett": {
     "pos": "TE",
@@ -27262,7 +30010,9 @@
         "recYds": 26.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032394",
+    "teamYear": null
   },
   "Brandon Allen": {
     "pos": "QB",
@@ -27296,7 +30046,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032434",
+    "teamYear": null
   },
   "Robbie Chosen": {
     "pos": "WR",
@@ -27312,7 +30064,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0032688",
+    "teamYear": null
   },
   "Tyler Boyd": {
     "pos": "WR",
@@ -27409,7 +30163,9 @@
         "recYds": 14.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033009",
+    "teamYear": null
   },
   "Tyreek Hill": {
     "pos": "WR",
@@ -27506,7 +30262,9 @@
         "recYds": 20.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033040",
+    "teamYear": null
   },
   "Ezekiel Elliott": {
     "pos": "RB",
@@ -27603,7 +30361,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033045",
+    "teamYear": null
   },
   "Curtis Samuel": {
     "pos": "WR",
@@ -27700,7 +30460,9 @@
         "recYds": 52.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033282",
+    "teamYear": null
   },
   "Trent Taylor": {
     "pos": "WR",
@@ -27716,7 +30478,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033292",
+    "teamYear": null
   },
   "Nick Mullens": {
     "pos": "QB",
@@ -27759,7 +30523,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033319",
+    "teamYear": null
   },
   "Taysom Hill": {
     "pos": "TE",
@@ -27838,7 +30604,9 @@
         "recYds": 37.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033357",
+    "teamYear": null
   },
   "Pharaoh Brown": {
     "pos": "TE",
@@ -27917,7 +30685,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033439",
+    "teamYear": null
   },
   "John Ross": {
     "pos": "WR",
@@ -27933,7 +30703,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033460",
+    "teamYear": null
   },
   "Mike Williams": {
     "pos": "WR",
@@ -28030,7 +30802,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033536",
+    "teamYear": null
   },
   "James Conner": {
     "pos": "RB",
@@ -28127,7 +30901,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033553",
+    "teamYear": null
   },
   "David Moore": {
     "pos": "WR",
@@ -28224,7 +31000,9 @@
         "recYds": 9.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033589",
+    "teamYear": null
   },
   "Noah Brown": {
     "pos": "WR",
@@ -28321,7 +31099,9 @@
         "recYds": 27.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033591",
+    "teamYear": null
   },
   "Austin Ekeler": {
     "pos": "RB",
@@ -28418,7 +31198,9 @@
         "recYds": 20.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033699",
+    "teamYear": null
   },
   "Dare Ogunbowale": {
     "pos": "RB",
@@ -28515,7 +31297,9 @@
         "recYds": 26.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033854",
+    "teamYear": null
   },
   "JuJu Smith-Schuster": {
     "pos": "WR",
@@ -28612,7 +31396,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033857",
+    "teamYear": null
   },
   "Zay Jones": {
     "pos": "WR",
@@ -28673,7 +31459,9 @@
         "recYds": 46.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033891",
+    "teamYear": null
   },
   "Dalvin Cook": {
     "pos": "RB",
@@ -28698,7 +31486,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033893",
+    "teamYear": null
   },
   "Gerald Everett": {
     "pos": "TE",
@@ -28786,7 +31576,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033895",
+    "teamYear": null
   },
   "Joe Mixon": {
     "pos": "RB",
@@ -28883,7 +31675,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033897",
+    "teamYear": null
   },
   "Chris Godwin": {
     "pos": "WR",
@@ -29050,7 +31844,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0033923",
+    "teamYear": null
   },
   "D'Onta Foreman": {
     "pos": "RB",
@@ -29147,7 +31943,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033925",
+    "teamYear": null
   },
   "Josh Reynolds": {
     "pos": "WR",
@@ -29226,7 +32024,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033943",
+    "teamYear": null
   },
   "Jamaal Williams": {
     "pos": "RB",
@@ -29323,7 +32123,9 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033948",
+    "teamYear": null
   },
   "Jeremy McNichols": {
     "pos": "RB",
@@ -29420,7 +32222,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0033955",
+    "teamYear": null
   },
   "River Cracraft": {
     "pos": "WR",
@@ -29463,7 +32267,9 @@
         "recYds": 38.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034054",
+    "teamYear": null
   },
   "Ross Dwelley": {
     "pos": "TE",
@@ -29479,7 +32285,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034073",
+    "teamYear": null
   },
   "Jeffery Wilson": {
     "pos": "RB",
@@ -29549,7 +32357,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034115",
+    "teamYear": null
   },
   "Will Dissly": {
     "pos": "TE",
@@ -29646,7 +32456,9 @@
         "recYds": 42.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034159",
+    "teamYear": null
   },
   "Tim Boyle": {
     "pos": "QB",
@@ -29680,7 +32492,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034177",
+    "teamYear": null
   },
   "Gus Edwards": {
     "pos": "RB",
@@ -29777,7 +32591,9 @@
         "recYds": 3.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0034184",
+    "teamYear": null
   },
   "Mike Boone": {
     "pos": "RB",
@@ -29829,7 +32645,9 @@
         "recYds": -2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034208",
+    "teamYear": null
   },
   "Marquez Valdes-Scantling": {
     "pos": "WR",
@@ -29926,7 +32744,9 @@
         "recYds": 33.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034272",
+    "teamYear": null
   },
   "Anthony Miller": {
     "pos": "WR",
@@ -29942,7 +32762,9 @@
         "recYds": 16.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034353",
+    "teamYear": null
   },
   "Jordan Akins": {
     "pos": "TE",
@@ -30039,7 +32861,9 @@
         "recYds": 60.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034364",
+    "teamYear": null
   },
   "Justin Watson": {
     "pos": "WR",
@@ -30136,7 +32960,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034386",
+    "teamYear": null
   },
   "Mike White": {
     "pos": "QB",
@@ -30152,7 +32978,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034401",
+    "teamYear": null
   },
   "Ray-Ray McCloud": {
     "pos": "WR",
@@ -30249,7 +33077,9 @@
         "recYds": 66.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034407",
+    "teamYear": null
   },
   "Cedrick Wilson": {
     "pos": "WR",
@@ -30346,7 +33176,9 @@
         "recYds": 22.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034418",
+    "teamYear": null
   },
   "Braxton Berrios": {
     "pos": "WR",
@@ -30380,7 +33212,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034419",
+    "teamYear": null
   },
   "Trent Sherfield": {
     "pos": "WR",
@@ -30459,7 +33293,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034487",
+    "teamYear": null
   },
   "Allen Lazard": {
     "pos": "WR",
@@ -30556,7 +33392,9 @@
         "recYds": 71.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034521",
+    "teamYear": null
   },
   "Tanner Hudson": {
     "pos": "TE",
@@ -30644,7 +33482,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034613",
+    "teamYear": null
   },
   "Brandon Powell": {
     "pos": "WR",
@@ -30714,7 +33554,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034646",
+    "teamYear": null
   },
   "Christian Kirk": {
     "pos": "WR",
@@ -30793,7 +33635,9 @@
         "recYds": 59.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034775",
+    "teamYear": null
   },
   "D.J. Chark": {
     "pos": "WR",
@@ -30836,7 +33680,9 @@
         "recYds": 6.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034777",
+    "teamYear": null
   },
   "Nick Chubb": {
     "pos": "RB",
@@ -30915,7 +33761,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034791",
+    "teamYear": null
   },
   "D.J. Moore": {
     "pos": "WR",
@@ -31082,7 +33930,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034830",
+    "teamYear": null
   },
   "KhaDarel Hodge": {
     "pos": "WR",
@@ -31143,7 +33993,9 @@
         "recYds": 24.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034854",
+    "teamYear": null
   },
   "Dante Pettis": {
     "pos": "WR",
@@ -31222,7 +34074,9 @@
         "recYds": 16.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0034860",
+    "teamYear": null
   },
   "Steven Sims": {
     "pos": "WR",
@@ -31238,7 +34092,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034928",
+    "teamYear": null
   },
   "Alexander Mattison": {
     "pos": "RB",
@@ -31335,7 +34191,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0034972",
+    "teamYear": null
   },
   "Jake Browning": {
     "pos": "QB",
@@ -31360,7 +34218,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035100",
+    "teamYear": null
   },
   "Mecole Hardman": {
     "pos": "WR",
@@ -31430,7 +34290,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035140",
+    "teamYear": null
   },
   "Diontae Johnson": {
     "pos": "WR",
@@ -31527,7 +34389,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035216",
+    "teamYear": null
   },
   "Miles Sanders": {
     "pos": "RB",
@@ -31624,7 +34488,9 @@
         "recYds": 50.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0035243",
+    "teamYear": null
   },
   "Scott Miller": {
     "pos": "WR",
@@ -31667,7 +34533,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035298",
+    "teamYear": null
   },
   "Myles Gaskin": {
     "pos": "RB",
@@ -31692,7 +34560,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035311",
+    "teamYear": null
   },
   "Trenton Irwin": {
     "pos": "WR",
@@ -31735,7 +34605,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035341",
+    "teamYear": null
   },
   "Greg Dortch": {
     "pos": "WR",
@@ -31832,7 +34704,9 @@
         "recYds": 47.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0035500",
+    "teamYear": null
   },
   "Tom Kennedy": {
     "pos": "WR",
@@ -31848,7 +34722,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035544",
+    "teamYear": null
   },
   "Joseph Fortson": {
     "pos": "TE",
@@ -31882,7 +34758,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035547",
+    "teamYear": null
   },
   "Craig Reynolds": {
     "pos": "RB",
@@ -31952,7 +34830,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035567",
+    "teamYear": null
   },
   "Travis Homer": {
     "pos": "RB",
@@ -31995,7 +34875,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035594",
+    "teamYear": null
   },
   "Alex Bachman": {
     "pos": "WR",
@@ -32011,7 +34893,9 @@
         "recYds": 31.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035602",
+    "teamYear": null
   },
   "D'Ernest Johnson": {
     "pos": "RB",
@@ -32108,7 +34992,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035628",
+    "teamYear": null
   },
   "Parris Campbell": {
     "pos": "WR",
@@ -32151,7 +35037,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035639",
+    "teamYear": null
   },
   "Josh Jacobs": {
     "pos": "RB",
@@ -32248,7 +35136,9 @@
         "recYds": 2.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035700",
+    "teamYear": null
   },
   "Deebo Samuel": {
     "pos": "WR",
@@ -32433,7 +35323,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035806",
+    "teamYear": null
   },
   "Tony Jones": {
     "pos": "RB",
@@ -32449,7 +35341,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0035860",
+    "teamYear": null
   },
   "Cody White": {
     "pos": "WR",
@@ -32465,7 +35359,9 @@
         "recYds": 44.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035891",
+    "teamYear": null
   },
   "Jonathan Ward": {
     "pos": "RB",
@@ -32490,7 +35386,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035924",
+    "teamYear": null
   },
   "Patrick Taylor": {
     "pos": "RB",
@@ -32542,7 +35440,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035973",
+    "teamYear": null
   },
   "Dan Chisena": {
     "pos": "WR",
@@ -32576,7 +35476,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0035976",
+    "teamYear": null
   },
   "J.J. Taylor": {
     "pos": "RB",
@@ -32610,7 +35512,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036096",
+    "teamYear": null
   },
   "James Proche": {
     "pos": "WR",
@@ -32635,7 +35539,9 @@
         "recYds": 18.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036133",
+    "teamYear": null
   },
   "Isaiah Hodgins": {
     "pos": "WR",
@@ -32660,7 +35566,9 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036165",
+    "teamYear": null
   },
   "Mason Kinsey": {
     "pos": "WR",
@@ -32685,7 +35593,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036176",
+    "teamYear": null
   },
   "Nick Westbrook-Ikhine": {
     "pos": "WR",
@@ -32782,7 +35692,9 @@
         "recYds": 50.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036182",
+    "teamYear": null
   },
   "Kristian Wilkerson": {
     "pos": "WR",
@@ -32798,7 +35710,9 @@
         "recYds": 18.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036183",
+    "teamYear": null
   },
   "Gabe Davis": {
     "pos": "WR",
@@ -32886,7 +35800,9 @@
         "recYds": 3.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036196",
+    "teamYear": null
   },
   "Harrison Bryant": {
     "pos": "TE",
@@ -32938,7 +35854,9 @@
         "recYds": 22.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036232",
+    "teamYear": null
   },
   "Zack Moss": {
     "pos": "RB",
@@ -33017,7 +35935,9 @@
         "recYds": 28.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036251",
+    "teamYear": null
   },
   "Collin Johnson": {
     "pos": "WR",
@@ -33042,7 +35962,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036254",
+    "teamYear": null
   },
   "Brandon Aiyuk": {
     "pos": "WR",
@@ -33112,7 +36034,9 @@
         "recYds": 23.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036261",
+    "teamYear": null
   },
   "Laviska Shenault Jr.": {
     "pos": "WR",
@@ -33173,7 +36097,9 @@
         "recYds": 10.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036268",
+    "teamYear": null
   },
   "Darrynton Evans": {
     "pos": "RB",
@@ -33189,7 +36115,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036297",
+    "teamYear": null
   },
   "Antonio Gibson": {
     "pos": "RB",
@@ -33286,7 +36214,9 @@
         "recYds": 20.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036328",
+    "teamYear": null
   },
   "Josiah Deguara": {
     "pos": "TE",
@@ -33320,7 +36250,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036332",
+    "teamYear": null
   },
   "K.J. Osborn": {
     "pos": "WR",
@@ -33381,7 +36313,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036345",
+    "teamYear": null
   },
   "Clyde Edwards-Helaire": {
     "pos": "RB",
@@ -33406,7 +36340,9 @@
         "recYds": 14.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036360",
+    "teamYear": null
   },
   "Joshua Kelley": {
     "pos": "RB",
@@ -33422,7 +36358,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036370",
+    "teamYear": null
   },
   "Jalen Reagor": {
     "pos": "WR",
@@ -33492,7 +36430,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036387",
+    "teamYear": null
   },
   "Cam Akers": {
     "pos": "RB",
@@ -33589,7 +36529,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036414",
+    "teamYear": null
   },
   "Van Jefferson": {
     "pos": "WR",
@@ -33686,7 +36628,9 @@
         "recYds": 18.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036415",
+    "teamYear": null
   },
   "DeeJay Dallas": {
     "pos": "RB",
@@ -33756,7 +36700,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036425",
+    "teamYear": null
   },
   "Tyler Johnson": {
     "pos": "WR",
@@ -33853,7 +36799,9 @@
         "recYds": 35.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036427",
+    "teamYear": null
   },
   "Stephen Sullivan": {
     "pos": "TE",
@@ -33869,7 +36817,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036438",
+    "teamYear": null
   },
   "Ke'Shawn Vaughn": {
     "pos": "RB",
@@ -33885,7 +36835,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036450",
+    "teamYear": null
   },
   "Tim Jones": {
     "pos": "WR",
@@ -33919,7 +36871,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036497",
+    "teamYear": null
   },
   "Kenny Yeboah": {
     "pos": "TE",
@@ -33980,7 +36934,9 @@
         "recYds": 20.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036510",
+    "teamYear": null
   },
   "D.J. Turner": {
     "pos": "WR",
@@ -34077,7 +37033,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036527",
+    "teamYear": null
   },
   "Shane Zylstra": {
     "pos": "TE",
@@ -34093,7 +37051,9 @@
         "recYds": 22.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036534",
+    "teamYear": null
   },
   "D'Wayne Eskridge": {
     "pos": "WR",
@@ -34127,7 +37087,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036620",
+    "teamYear": null
   },
   "Ihmir Smith-Marsette": {
     "pos": "WR",
@@ -34143,7 +37105,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036635",
+    "teamYear": null
   },
   "Zach Davidson": {
     "pos": "TE",
@@ -34168,7 +37132,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036640",
+    "teamYear": null
   },
   "Jermar Jefferson": {
     "pos": "RB",
@@ -34193,7 +37159,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036670",
+    "teamYear": null
   },
   "Jack Stoll": {
     "pos": "TE",
@@ -34218,7 +37186,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036741",
+    "teamYear": null
   },
   "Austin Trammell": {
     "pos": "WR",
@@ -34234,7 +37204,9 @@
         "recYds": 40.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036841",
+    "teamYear": null
   },
   "Jaelon Darden": {
     "pos": "WR",
@@ -34250,7 +37222,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036877",
+    "teamYear": null
   },
   "Khalil Herbert": {
     "pos": "RB",
@@ -34329,7 +37303,9 @@
         "recYds": 14.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036906",
+    "teamYear": null
   },
   "Kadarius Toney": {
     "pos": "WR",
@@ -34354,7 +37330,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036913",
+    "teamYear": null
   },
   "Kenneth Gainwell": {
     "pos": "RB",
@@ -34485,7 +37463,9 @@
         "recYds": 16.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0036924",
+    "teamYear": null
   },
   "Kyle Trask": {
     "pos": "QB",
@@ -34519,7 +37499,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036928",
+    "teamYear": null
   },
   "Terrace Marshall": {
     "pos": "WR",
@@ -34571,7 +37553,9 @@
         "recYds": 28.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036955",
+    "teamYear": null
   },
   "Trey Sermon": {
     "pos": "RB",
@@ -34668,7 +37652,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0036984",
+    "teamYear": null
   },
   "Grant Calcaterra": {
     "pos": "TE",
@@ -34765,7 +37751,9 @@
         "recYds": 10.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037086",
+    "teamYear": null
   },
   "Tyler Goodson": {
     "pos": "RB",
@@ -34853,7 +37841,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037120",
+    "teamYear": null
   },
   "Britain Covey": {
     "pos": "WR",
@@ -34887,7 +37877,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037132",
+    "teamYear": null
   },
   "Irvin Charles": {
     "pos": "WR",
@@ -34903,7 +37895,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037156",
+    "teamYear": null
   },
   "Isiah Pacheco": {
     "pos": "RB",
@@ -34973,7 +37967,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037197",
+    "teamYear": null
   },
   "Justyn Ross": {
     "pos": "WR",
@@ -34989,7 +37985,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037216",
+    "teamYear": null
   },
   "Kevin Austin": {
     "pos": "WR",
@@ -35068,7 +38066,9 @@
         "recYds": 13.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037231",
+    "teamYear": null
   },
   "David Bell": {
     "pos": "WR",
@@ -35084,7 +38084,9 @@
         "recYds": 27.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037257",
+    "teamYear": null
   },
   "Dameon Pierce": {
     "pos": "RB",
@@ -35172,7 +38174,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0037258",
+    "teamYear": null
   },
   "Jerome Ford": {
     "pos": "RB",
@@ -35269,7 +38273,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037267",
+    "teamYear": null
   },
   "Ty Chandler": {
     "pos": "RB",
@@ -35366,7 +38372,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037276",
+    "teamYear": null
   },
   "Mike Woods": {
     "pos": "WR",
@@ -35418,7 +38426,9 @@
         "recYds": 3.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037300",
+    "teamYear": null
   },
   "John FitzPatrick": {
     "pos": "TE",
@@ -35434,7 +38444,9 @@
         "recYds": 2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037306",
+    "teamYear": null
   },
   "Chris Oladokun": {
     "pos": "QB",
@@ -35450,7 +38462,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037324",
+    "teamYear": null
   },
   "Skylar Thompson": {
     "pos": "QB",
@@ -35475,7 +38489,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037327",
+    "teamYear": null
   },
   "Tanner Conner": {
     "pos": "WR",
@@ -35500,7 +38516,9 @@
         "recYds": 15.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037348",
+    "teamYear": null
   },
   "Brandon Johnson": {
     "pos": "WR",
@@ -35516,7 +38534,9 @@
         "recYds": 9.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037382",
+    "teamYear": null
   },
   "Kendric Pryor": {
     "pos": "WR",
@@ -35532,7 +38552,9 @@
         "recYds": 9.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037422",
+    "teamYear": null
   },
   "Raheem Blackshear": {
     "pos": "RB",
@@ -35566,7 +38588,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037429",
+    "teamYear": null
   },
   "Tyreik McAllister": {
     "pos": "RB",
@@ -35582,7 +38606,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037450",
+    "teamYear": null
   },
   "Stone Smartt": {
     "pos": "TE",
@@ -35652,7 +38678,9 @@
         "recYds": 23.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037475",
+    "teamYear": null
   },
   "Deven Thompkins": {
     "pos": "WR",
@@ -35695,7 +38723,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037487",
+    "teamYear": null
   },
   "Sincere McCormick": {
     "pos": "RB",
@@ -35738,7 +38768,9 @@
         "recYds": 17.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037509",
+    "teamYear": null
   },
   "Lucas Krull": {
     "pos": "TE",
@@ -35835,7 +38867,9 @@
         "recYds": 3.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037539",
+    "teamYear": null
   },
   "Peyton Hendershot": {
     "pos": "TE",
@@ -35878,7 +38912,9 @@
         "recYds": 25.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037569",
+    "teamYear": null
   },
   "Aaron Shampklin": {
     "pos": "RB",
@@ -35912,7 +38948,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037609",
+    "teamYear": null
   },
   "John Metchie": {
     "pos": "WR",
@@ -36106,7 +39144,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0037617",
+    "teamYear": null
   },
   "Tucker Fisk": {
     "pos": "TE",
@@ -36176,7 +39216,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037654",
+    "teamYear": null
   },
   "Velus Jones": {
     "pos": "RB",
@@ -36201,7 +39243,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037745",
+    "teamYear": null
   },
   "Kavontae Turpin": {
     "pos": "WR",
@@ -36411,7 +39455,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037827",
+    "teamYear": null
   },
   "Calvin Austin": {
     "pos": "WR",
@@ -36508,7 +39554,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0037837",
+    "teamYear": null
   },
   "Zamir White": {
     "pos": "RB",
@@ -36587,7 +39635,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038040",
+    "teamYear": null
   },
   "Erik Ezukanma": {
     "pos": "WR",
@@ -36603,7 +39653,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038092",
+    "teamYear": null
   },
   "Pierre Strong": {
     "pos": "RB",
@@ -36700,7 +39752,9 @@
         "recYds": 15.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038098",
+    "teamYear": null
   },
   "Bailey Zappe": {
     "pos": "QB",
@@ -36716,7 +39770,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038108",
+    "teamYear": null
   },
   "Desmond Ridder": {
     "pos": "QB",
@@ -36768,7 +39824,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038122",
+    "teamYear": null
   },
   "Kenneth Walker": {
     "pos": "RB",
@@ -36935,7 +39993,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038394",
+    "teamYear": null
   },
   "Eric Gray": {
     "pos": "RB",
@@ -37032,7 +40092,9 @@
         "recYds": 4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038396",
+    "teamYear": null
   },
   "Malik Heath": {
     "pos": "WR",
@@ -37084,7 +40146,9 @@
         "recYds": 53.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038465",
+    "teamYear": null
   },
   "Bryce Ford-Wheaton": {
     "pos": "WR",
@@ -37100,7 +40164,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038477",
+    "teamYear": null
   },
   "Xavier Gipson": {
     "pos": "WR",
@@ -37170,7 +40236,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038496",
+    "teamYear": null
   },
   "Grant DuBose": {
     "pos": "WR",
@@ -37195,7 +40263,9 @@
         "recYds": -2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038507",
+    "teamYear": null
   },
   "Hendon Hooker": {
     "pos": "QB",
@@ -37229,7 +40299,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038550",
+    "teamYear": null
   },
   "Charlie Jones": {
     "pos": "WR",
@@ -37254,7 +40326,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038576",
+    "teamYear": null
   },
   "Clayton Tune": {
     "pos": "QB",
@@ -37306,7 +40380,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038582",
+    "teamYear": null
   },
   "Dorian Thompson-Robinson": {
     "pos": "QB",
@@ -37367,7 +40443,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038583",
+    "teamYear": null
   },
   "Chris Rodriguez": {
     "pos": "RB",
@@ -37577,7 +40655,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038622",
+    "teamYear": null
   },
   "Kenny McIntosh": {
     "pos": "RB",
@@ -37647,7 +40727,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038636",
+    "teamYear": null
   },
   "Brayden Willis": {
     "pos": "TE",
@@ -37663,7 +40745,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038643",
+    "teamYear": null
   },
   "Ronnie Bell": {
     "pos": "WR",
@@ -37697,7 +40781,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038647",
+    "teamYear": null
   },
   "Jordan Mims": {
     "pos": "RB",
@@ -37767,7 +40853,9 @@
         "recYds": 13.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038678",
+    "teamYear": null
   },
   "Tyrell Shavers": {
     "pos": "WR",
@@ -37783,7 +40871,9 @@
         "recYds": 69.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038679",
+    "teamYear": null
   },
   "Christopher Brooks": {
     "pos": "RB",
@@ -37977,7 +41067,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038720",
+    "teamYear": null
   },
   "Jake Bobo": {
     "pos": "WR",
@@ -38074,7 +41166,9 @@
         "recYds": 4.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038752",
+    "teamYear": null
   },
   "Jaleel McLaughlin": {
     "pos": "RB",
@@ -38171,7 +41265,9 @@
         "recYds": 9.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038794",
+    "teamYear": null
   },
   "Ben Sims": {
     "pos": "TE",
@@ -38214,7 +41310,9 @@
         "recYds": 2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038809",
+    "teamYear": null
   },
   "Rakim Jarrett": {
     "pos": "WR",
@@ -38275,7 +41373,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038821",
+    "teamYear": null
   },
   "John Samuel Shenker": {
     "pos": "TE",
@@ -38291,7 +41391,9 @@
         "recYds": 7.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038920",
+    "teamYear": null
   },
   "Jalin Hyatt": {
     "pos": "WR",
@@ -38388,7 +41490,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038938",
+    "teamYear": null
   },
   "Tyler Scott": {
     "pos": "WR",
@@ -38404,7 +41508,9 @@
         "recYds": 5.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038941",
+    "teamYear": null
   },
   "Marvin Mims": {
     "pos": "WR",
@@ -38598,7 +41704,9 @@
         "recYds": 98.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0038977",
+    "teamYear": null
   },
   "Cedric Tillman": {
     "pos": "WR",
@@ -38686,7 +41794,9 @@
         "recYds": 28.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038979",
+    "teamYear": null
   },
   "Jake Haener": {
     "pos": "QB",
@@ -38765,7 +41875,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0038998",
+    "teamYear": null
   },
   "Devon Achane": {
     "pos": "RB",
@@ -38959,7 +42071,9 @@
         "recYds": 31.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039052",
+    "teamYear": null
   },
   "Luke Musgrave": {
     "pos": "TE",
@@ -39029,7 +42143,9 @@
         "recYds": 19.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039144",
+    "teamYear": null
   },
   "Will Levis": {
     "pos": "QB",
@@ -39126,7 +42242,9 @@
         "recYds": 0.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039152",
+    "teamYear": null
   },
   "Zach Charbonnet": {
     "pos": "RB",
@@ -39223,7 +42341,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039165",
+    "teamYear": null
   },
   "Johnny Wilson": {
     "pos": "WR",
@@ -39311,7 +42431,9 @@
         "recYds": 24.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039236",
+    "teamYear": null
   },
   "Chris Collier": {
     "pos": "RB",
@@ -39336,7 +42458,9 @@
         "recYds": -4.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039244",
+    "teamYear": null
   },
   "Baylor Cupp": {
     "pos": "TE",
@@ -39352,7 +42476,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039316",
+    "teamYear": null
   },
   "Carson Steele": {
     "pos": "RB",
@@ -39449,7 +42575,9 @@
         "recYds": 2.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039325",
+    "teamYear": null
   },
   "Isaac Guerendo": {
     "pos": "RB",
@@ -39546,7 +42674,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039363",
+    "teamYear": null
   },
   "Audric Estime": {
     "pos": "RB",
@@ -39704,7 +42834,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039379",
+    "teamYear": null
   },
   "Tyrone Tracy": {
     "pos": "RB",
@@ -39844,7 +42976,9 @@
         "recYds": 36.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039386",
+    "teamYear": null
   },
   "Jha'Quan Jackson": {
     "pos": "WR",
@@ -39869,7 +43003,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039392",
+    "teamYear": null
   },
   "Jase McClellan": {
     "pos": "RB",
@@ -39894,7 +43030,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039393",
+    "teamYear": null
   },
   "Casey Washington": {
     "pos": "WR",
@@ -39919,7 +43057,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039394",
+    "teamYear": null
   },
   "Joe Milton": {
     "pos": "QB",
@@ -39935,7 +43075,9 @@
         "recYds": 0.0,
         "tds": 2.0
       }
-    ]
+    ],
+    "_id": "00-0039398",
+    "teamYear": null
   },
   "Jaheim Bell": {
     "pos": "TE",
@@ -39969,7 +43111,9 @@
         "recYds": 19.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039420",
+    "teamYear": null
   },
   "Brenden Bates": {
     "pos": "TE",
@@ -39985,7 +43129,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039458",
+    "teamYear": null
   },
   "Xavier Weaver": {
     "pos": "WR",
@@ -40010,7 +43156,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039521",
+    "teamYear": null
   },
   "Ramel Keyton": {
     "pos": "WR",
@@ -40035,7 +43183,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039543",
+    "teamYear": null
   },
   "Blake Watson": {
     "pos": "RB",
@@ -40051,7 +43201,9 @@
         "recYds": 13.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039573",
+    "teamYear": null
   },
   "Dallin Holker": {
     "pos": "TE",
@@ -40076,7 +43228,9 @@
         "recYds": 11.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039613",
+    "teamYear": null
   },
   "Jermaine Jackson": {
     "pos": "WR",
@@ -40092,7 +43246,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039614",
+    "teamYear": null
   },
   "Jacob Kibodi": {
     "pos": "RB",
@@ -40108,7 +43264,9 @@
         "recYds": 15.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039617",
+    "teamYear": null
   },
   "Mason Tipton": {
     "pos": "WR",
@@ -40196,7 +43354,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039623",
+    "teamYear": null
   },
   "Cam Grandy": {
     "pos": "TE",
@@ -40239,7 +43399,9 @@
         "recYds": 9.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039631",
+    "teamYear": null
   },
   "Bryce Oliver": {
     "pos": "WR",
@@ -40291,7 +43453,9 @@
         "recYds": 15.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039650",
+    "teamYear": null
   },
   "Cody Schrader": {
     "pos": "RB",
@@ -40307,7 +43471,9 @@
         "recYds": 6.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039703",
+    "teamYear": null
   },
   "Tip Reiman": {
     "pos": "TE",
@@ -40359,7 +43525,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039737",
+    "teamYear": null
   },
   "Ainias Smith": {
     "pos": "WR",
@@ -40393,7 +43561,9 @@
         "recYds": 35.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039747",
+    "teamYear": null
   },
   "Devin Culp": {
     "pos": "TE",
@@ -40418,7 +43588,9 @@
         "recYds": 36.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039754",
+    "teamYear": null
   },
   "Terrell Jennings": {
     "pos": "RB",
@@ -40443,7 +43615,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039757",
+    "teamYear": null
   },
   "A.J. Barner": {
     "pos": "TE",
@@ -40583,7 +43757,9 @@
         "recYds": 8.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039810",
+    "teamYear": null
   },
   "Anthony Gould": {
     "pos": "WR",
@@ -40599,7 +43775,9 @@
         "recYds": 23.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039816",
+    "teamYear": null
   },
   "Marvin Harrison": {
     "pos": "WR",
@@ -40739,7 +43917,9 @@
         "recYds": 12.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039853",
+    "teamYear": null
   },
   "Brian Thomas": {
     "pos": "WR",
@@ -40933,7 +44113,9 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039907",
+    "teamYear": null
   },
   "Ricky Pearsall": {
     "pos": "WR",
@@ -41030,7 +44212,9 @@
         "recYds": 69.0,
         "tds": 1.0
       }
-    ]
+    ],
+    "_id": "00-0039916",
+    "teamYear": null
   },
   "Michael Penix": {
     "pos": "QB",
@@ -41179,6 +44363,8 @@
         "recYds": 0.0,
         "tds": 0.0
       }
-    ]
+    ],
+    "_id": "00-0039921",
+    "teamYear": null
   }
 }
