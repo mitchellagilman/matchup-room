@@ -36,7 +36,7 @@ import sys
 import urllib.request
 
 YEAR = 2026
-PREV_YEAR = YEAR - 1
+PREV_YEAR = YEAR - 1  # kept as a docstring/reference value; actual fallback is detected dynamically in main()
 WINDOW = 10
 STATS_URL = "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats.csv"
 EXISTING_PATH = "data/nfl-players.json"
@@ -80,12 +80,27 @@ def main():
         print(f"Could not fetch nflverse player_stats.csv ({e}); leaving existing file untouched.", file=sys.stderr)
         return
 
-    rows = [r for r in csv.DictReader(io.StringIO(raw))
-            if r.get("season") in (str(YEAR), str(PREV_YEAR)) and r.get("season_type") == "REG"
+    all_rows_iter = list(csv.DictReader(io.StringIO(raw)))
+
+    # nflverse's player-level file can lag behind by more than one season
+    # (confirmed live: as of writing this, it stops at 2024 -- 2025 isn't
+    # in there yet even though that season is long over). Rather than
+    # assume "last season" means exactly YEAR-1 and come up empty, find
+    # whichever season is actually the most recent one present that's
+    # still before the current year, and use that as the fallback. This
+    # self-corrects automatically once nflverse catches up their pipeline
+    # -- no code change needed when 2025 (or later) data eventually shows up.
+    available_seasons = {int(r["season"]) for r in all_rows_iter if r.get("season", "").isdigit()}
+    prior_seasons = sorted(s for s in available_seasons if s < YEAR)
+    fallback_year = prior_seasons[-1] if prior_seasons else None
+    seasons_to_use = {str(YEAR)} | ({str(fallback_year)} if fallback_year else set())
+
+    rows = [r for r in all_rows_iter
+            if r.get("season") in seasons_to_use and r.get("season_type") == "REG"
             and r.get("position") in SKILL_POSITIONS]
 
     if not rows:
-        print(f"No {PREV_YEAR}/{YEAR} regular-season player rows found at all -- leaving existing file untouched.", file=sys.stderr)
+        print(f"No player rows found for {YEAR} or the most recent prior season ({fallback_year}) -- leaving existing file untouched.", file=sys.stderr)
         return
 
     by_player = {}
@@ -133,7 +148,7 @@ def main():
 
     with open(EXISTING_PATH, "w") as f:
         json.dump(players, f, indent=2)
-    print(f"Wrote {updated} NFL players (rolling {WINDOW}-game window, {PREV_YEAR}-{YEAR}) to {EXISTING_PATH}")
+    print(f"Wrote {updated} NFL players (rolling {WINDOW}-game window, {fallback_year}-{YEAR}) to {EXISTING_PATH}")
 
 
 if __name__ == "__main__":
