@@ -330,7 +330,7 @@
     <div class="subpanel" id="subpanel-topbets-player">
       <div class="card">
         <h2>How this is ranked</h2>
-        <div class="note" style="margin-top:0;">Scans every loaded player with a game already logged and, for whoever's team is playing this week, finds the biggest mismatches between their production and this week's opponent's relevant defense — same defense-adjustment math as the hit rate checker. This isn't tied to a specific sportsbook line (you set that yourself in the hit rate checker) — it's "best and worst matchups this week," ranked by how far off average the matchup is. A high number means a favorable matchup for going over; a low one means the opposite.</div>
+        <div class="note" style="margin-top:0;">Scans every loaded player with a game already logged and, for whoever's team is playing this week, finds the biggest mismatches between their production and this week's opponent's relevant defense — same defense-adjustment math as the hit rate checker. Each row includes a "projected" number: last-5-game average scaled by how much tougher or easier this opponent's defense is than league average. That's a simple heuristic, not a real sportsbook line — weigh it against whatever number your book is actually offering to decide which side of over/under looks like the better value.</div>
       </div>
       <div class="card">
         <h2>NFL — top matchup targets</h2>
@@ -504,7 +504,7 @@ const CFB_SEED = {
 "Florida State": {league:"CFB", conf:"ACC", ppg:33.0, pa:22.0, passOff:253.4, rushOff:218.7, passDef:190.8, rushDef:138.1, to:0, ats:""},
 "Georgia Tech": {league:"CFB", conf:"ACC", ppg:32.2, pa:25.0, passOff:262.5, rushOff:197.5, passDef:235.2, rushDef:164.0, to:0, ats:""},
 "Louisville": {league:"CFB", conf:"ACC", ppg:29.9, pa:21.2, passOff:220.6, rushOff:163.9, passDef:188.8, rushDef:114.3, to:0, ats:""},
-"Miami (FL)": {league:"CFB", conf:"ACC", ppg:30.9, pa:14.8, passOff:253.2, rushOff:151.8, passDef:204.9, rushDef:89.2, to:0, ats:""},
+"Miami": {league:"CFB", conf:"ACC", ppg:30.9, pa:14.8, passOff:253.2, rushOff:151.8, passDef:204.9, rushDef:89.2, to:0, ats:""},
 "NC State": {league:"CFB", conf:"ACC", ppg:30.2, pa:27.2, passOff:245.7, rushOff:145.5, passDef:273.2, rushDef:138.8, to:0, ats:""},
 "North Carolina": {league:"CFB", conf:"ACC", ppg:19.2, pa:24.5, passOff:183.9, rushOff:105.2, passDef:211.2, rushDef:125.7, to:0, ats:""},
 "Pittsburgh": {league:"CFB", conf:"ACC", ppg:33.7, pa:24.8, passOff:273.3, rushOff:117.2, passDef:235.3, rushDef:95.1, to:0, ats:""},
@@ -543,7 +543,7 @@ const CFB_TOP25 = [
   {rank:4, team:"Notre Dame", record:"0-0", next:"vs Wisconsin (Sep 6)"},
   {rank:5, team:"Texas", record:"1-0", next:"vs Ohio State (Sep 12)"},
   {rank:6, team:"Indiana", record:"1-0", next:"vs Howard (Sep 12)"},
-  {rank:7, team:"Miami (FL)", record:"1-0", next:"vs Florida A&M (Sep 10)"},
+  {rank:7, team:"Miami", record:"1-0", next:"vs Florida A&M (Sep 10)"},
   {rank:8, team:"Texas A&M", record:"1-0", next:"vs Arizona State (Sep 12)"},
   {rank:9, team:"Ole Miss", record:"0-0", next:"vs Louisville (Sep 6)"},
   {rank:10, team:"Oklahoma", record:"1-0", next:"@ Michigan (Sep 12)"},
@@ -571,7 +571,7 @@ const CFB_WEEK = [
   {a:"Georgia", b:"Western Kentucky", date:"Sat Sep 12"},
   {a:"Notre Dame", b:"Wisconsin", date:"Sun Sep 6"},
   {a:"Indiana", b:"Howard", date:"Sat Sep 12"},
-  {a:"Miami (FL)", b:"Florida A&M", date:"Thu Sep 10"},
+  {a:"Miami", b:"Florida A&M", date:"Thu Sep 10"},
   {a:"Texas A&M", b:"Arizona State", date:"Sat Sep 12"},
   {a:"Ole Miss", b:"Louisville", date:"Sun Sep 6"},
   {a:"LSU", b:"Louisiana Tech", date:"Sat Sep 12"},
@@ -593,7 +593,7 @@ const CFB_WEEK = [
 const PLAYERS_SEED = {
 "Jayden Maiava": {pos:"QB", team:"USC", league:"CFB", games:[{date:"2026-09-05", opp:"vs Missouri State", passYds:635, rushYds:0, receptions:0, recYds:0, tds:5}]},
 "Nate Sheppard": {pos:"RB", team:"Duke", league:"CFB", games:[{date:"2026-09-05", opp:"Week 1", passYds:0, rushYds:227, receptions:0, recYds:0, tds:2}]},
-"Malachi Toney": {pos:"WR", team:"Miami (FL)", league:"CFB", games:[{date:"2026-09-05", opp:"vs Florida A&M", passYds:0, rushYds:0, receptions:0, recYds:234, tds:2}]}
+"Malachi Toney": {pos:"WR", team:"Miami", league:"CFB", games:[{date:"2026-09-05", opp:"vs Florida A&M", passYds:0, rushYds:0, receptions:0, recYds:234, tds:2}]}
 };
  
 const ODDS_SEED = [
@@ -1058,7 +1058,8 @@ function computeGameBets(nameA, nameB){
       const ratio = teamsCache[oppName][defKey] / avgVal;
       const last5 = games.slice(-5);
       const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
-      playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough' });
+      const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderGameBets
+      playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough' });
     });
   });
   playerBets.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
@@ -1081,9 +1082,9 @@ function renderGameBets(nameA, nameB){
     const pct = Math.round((b.ratio-1)*100);
     const dirLabel = (b.direction==='favorable' ? 'Over ' : 'Under ')+b.statLabel+' · '+(b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average');
     const cls = b.direction==='favorable' ? 'over' : 'under';
-    rows += '<div class="team-row"><div><div class="team-name">'+idx+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+'</div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
+    rows += '<div class="team-row"><div><div class="team-name">'+idx+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+' · <b>projected '+fmt(b.projected)+'</b></div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
   });
-  return '<div class="card"><h2>Top bets for this game</h2>'+rows+'<div class="note">Team rows compare the model\'s projection to the market line, same math as the main Top Bets tab. Player rows show the best matchup mismatches for either team\'s roster this game, same math as Player Props — not tied to a specific sportsbook prop line.</div></div>';
+  return '<div class="card"><h2>Top bets for this game</h2>'+rows+'<div class="note">Team rows compare the model\'s projection to the market line, same math as the main Top Bets tab. Player rows show the best matchup mismatches for either team\'s roster this game — "projected" is each player\'s last-5-game average scaled by how this opponent\'s defense compares to league average, a simple heuristic (not a sportsbook line) meant to give you a number to weigh your own line against.</div></div>';
 }
  
 function runMatchupFor(nameA, nameB, outId){
@@ -1306,8 +1307,9 @@ function computeTopPlayerBets(league){
     const ratio = teamsCache[opp][defKey] / avgVal;
     const last5 = games.slice(-5);
     const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
+    const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderPlayerBetsList
     candidates.push({
-      name, pos: p.pos, team: p.team, opp, ratio, l5avg, statLabel: statLabel(mainStat),
+      name, pos: p.pos, team: p.team, opp, ratio, l5avg, projected, statLabel: statLabel(mainStat),
       direction: ratio>=1 ? 'favorable' : 'tough'
     });
   });
@@ -1324,7 +1326,7 @@ function renderPlayerBetsList(elId, bets){
     const pct = Math.round((b.ratio-1)*100);
     const dirLabel = (b.direction==='favorable' ? 'Over ' : 'Under ')+b.statLabel+' · '+(b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average');
     const cls = b.direction==='favorable' ? 'over' : 'under';
-    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+'</div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
+    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+' · <b>projected '+fmt(b.projected)+'</b></div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
   }).join('');
 }
  
