@@ -2,16 +2,23 @@
 """
 Pulls per-game stat lines for every FBS college football team's
 QBs/RBs/WRs/TEs (not just Power 5) from collegefootballdata.com (CFBD)
-and writes data/cfb-players.json.
+and writes data/cfb-players.json -- keeping a rolling window of each
+player's most recent 10 games, pulling from last season too if this
+season doesn't have 10 games yet (same idea as fetch_players_nfl.py; see
+that script's docstring for the full explanation of the rolling window
+and why team assignment is protected from being overwritten by
+historical data).
 
 *** SAME HONESTY NOTE AS fetch_cfb.py ***
 Could not be tested against the live CFBD API from the sandbox that wrote
-this (collegefootballdata.com isn't on that sandbox's allowed domain
-list). Uses CFBD's /games/players endpoint, which -- based on what we
+this. Uses CFBD's /games/players endpoint, which -- based on what we
 learned building fetch_cfb.py -- likely rejects a bare year and wants a
-week too, so this goes straight to the per-week loop rather than trying
-the bulk call first. Test locally before trusting the scheduled run; if
-it errors, it'll print a sample raw row to help debug the field names.
+week too, so this goes straight to the per-week loop for both years
+rather than trying a bulk call first. Test locally before trusting the
+scheduled run; if it errors, it'll print a sample raw row to help debug
+the field names. Pulling two full seasons roughly doubles the number of
+requests versus the single-season version -- if this starts timing out
+or hitting rate limits, that's the first thing to look at.
 
 Sign up for a free key at https://collegefootballdata.com/key and set it
 as CFBD_API_KEY.
@@ -26,13 +33,11 @@ import urllib.request
 import urllib.parse
 
 YEAR = 2026
+PREV_YEAR = YEAR - 1
+WINDOW = 10
 API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-players.json"
 
-# CFBD's /games/players groups stats by category ("passing", "rushing",
-# "receiving") each with their own sub-stats (YDS, TD, REC, etc). Exact
-# nesting is the part most likely to need adjusting -- see the shape
-# check in main().
 POSITION_HINT = {
     "passing": "QB",
     "rushing": "RB",
@@ -48,6 +53,20 @@ def api_get(path, params, api_key):
     })
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode("utf-8"))
+
+
+def fetch_year_rows(year, api_key):
+    rows = []
+    for week in range(1, 16):
+        try:
+            batch = api_get("/games/players", {"year": year, "seasonType": "regular", "week": week}, api_key)
+        except Exception:
+            continue  # week hasn't happened yet (or errored) -- skip it
+        if batch:
+            for g in batch:
+                g["_year"] = year  # tag so the merge step can sort across years
+            rows.extend(batch)
+    return rows
 
 
 def main():
@@ -74,43 +93,35 @@ def main():
         if name:
             all_teams.add(name)
 
-    all_rows = []
-    for week in range(1, 16):
-        try:
-            batch = api_get("/games/players", {"year": YEAR, "seasonType": "regular", "week": week}, api_key)
-        except Exception:
-            continue  # week hasn't happened yet, or errored -- skip it
-        if batch:
-            all_rows.extend(batch)
+    all_rows = fetch_year_rows(PREV_YEAR, api_key) + fetch_year_rows(YEAR, api_key)
 
     if not all_rows:
-        print("CFBD returned no games/players data (season may not have started); leaving file untouched.", file=sys.stderr)
+        print("CFBD returned no games/players data for either season; leaving file untouched.", file=sys.stderr)
         return
 
-    # Shape sanity check -- CFBD nests this as [{ id, teams: [{ team, categories: [{name, types:[{name, athletes:[{name, stat}]}]}] }] }]
     sample = all_rows[0]
     if "teams" not in sample:
         print("WARNING: /games/players response shape looks different than expected -- "
               "sample row printed below. Update the parsing loop in main() to match.", file=sys.stderr)
-        print(json.dumps(sample, indent=2)[:1500], file=sys.stderr)
+        print(json.dumps({k: v for k, v in sample.items() if k != "_year"}, indent=2)[:1500], file=sys.stderr)
         return
 
-    # player name -> {pos, team, games: {week: {passYds, rushYds, receptions, recYds, tds}}}
+    # player name -> {pos, by_game: {(year,week): {...stats...}}}
     accum = {}
 
-    def get_entry(name, team, pos, week, gid):
-        key = name
-        if key not in accum:
-            accum[key] = {"pos": pos, "team": team, "by_game": {}}
-        gkey = (gid, week)
-        if gkey not in accum[key]["by_game"]:
-            accum[key]["by_game"][gkey] = {"week": week, "passYds": 0, "rushYds": 0,
-                                            "receptions": 0, "recYds": 0, "tds": 0}
-        return accum[key]["by_game"][gkey]
+    def get_entry(name, pos, year, week, gid):
+        if name not in accum:
+            accum[name] = {"pos": pos, "team": None, "by_game": {}}
+        gkey = (year, week, gid)
+        if gkey not in accum[name]["by_game"]:
+            accum[name]["by_game"][gkey] = {"year": year, "week": week, "passYds": 0, "rushYds": 0,
+                                             "receptions": 0, "recYds": 0, "tds": 0}
+        return accum[name]["by_game"][gkey]
 
     for game in all_rows:
         gid = game.get("id")
         week = game.get("week")
+        year = game.get("_year")
         for team_block in game.get("teams", []):
             team = team_block.get("team") or team_block.get("school")
             if team not in all_teams:
@@ -124,7 +135,8 @@ def main():
                         if not player_name:
                             continue
                         pos = POSITION_HINT.get(cat_name, "")
-                        entry = get_entry(player_name, team, pos, week, gid)
+                        entry = get_entry(player_name, pos, year, week, gid)
+                        accum[player_name]["team"] = team  # most recently seen team wins (rows processed old->new below isn't guaranteed here, but final sort+pick-last handles it)
                         try:
                             val = float(athlete.get("stat", 0))
                         except (TypeError, ValueError):
@@ -144,21 +156,35 @@ def main():
     for name, info in accum.items():
         if not info["pos"]:
             continue  # couldn't classify into QB/RB/WR -- skip rather than guess
-        games = sorted(info["by_game"].values(), key=lambda g: g["week"] if g["week"] is not None else -1)
-        for g in games:
-            g["date"] = f"{YEAR}-wk{g.pop('week')}"
-            g["opp"] = ""
+        sorted_games = sorted(info["by_game"].values(), key=lambda g: (g["year"], g["week"] if g["week"] is not None else -1))
+        recent_games = sorted_games[-WINDOW:]
+
+        games_out = []
+        for g in recent_games:
+            games_out.append({
+                "date": f"{g['year']}-wk{g['week']}",
+                "opp": "",
+                "passYds": g["passYds"], "rushYds": g["rushYds"],
+                "receptions": g["receptions"], "recYds": g["recYds"], "tds": g["tds"],
+            })
+
+        # Team: keep whatever's already there (from fetch_cfb_rosters.py's
+        # current roster) if present; only use this script's own most
+        # recent team as a fallback for a brand-new player.
+        existing = players.get(name, {})
+        team = existing.get("team") or info["team"]
+
         players[name] = {
             "pos": info["pos"],
-            "team": info["team"],
+            "team": team,
             "league": "CFB",
-            "games": games,
+            "games": games_out,
         }
         updated += 1
 
     with open(EXISTING_PATH, "w") as f:
         json.dump(players, f, indent=2)
-    print(f"Wrote {updated} CFB players to {EXISTING_PATH}")
+    print(f"Wrote {updated} CFB players (rolling {WINDOW}-game window, {PREV_YEAR}-{YEAR}) to {EXISTING_PATH}")
 
 
 if __name__ == "__main__":
