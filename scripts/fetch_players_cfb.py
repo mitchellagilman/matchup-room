@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 """
-Pulls per-game stat lines for every FBS college football team's
-QBs/RBs/WRs/TEs (not just Power 5) from collegefootballdata.com (CFBD)
-and writes data/cfb-players.json -- keeping a rolling window of each
-player's most recent 10 games, pulling from last season too if this
-season doesn't have 10 games yet (same idea as fetch_players_nfl.py; see
-that script's docstring for the full explanation of the rolling window
-and why team assignment is protected from being overwritten by
-historical data).
+Pulls per-game stat lines for every FBS AND FCS college football team's
+QBs/RBs/WRs/TEs from collegefootballdata.com (CFBD) and writes
+data/cfb-players.json -- keeping a rolling window of each player's most
+recent 10 games, pulling from last season too if this season doesn't have
+10 games yet (same idea as fetch_players_nfl.py; see that script's
+docstring for the full explanation of the rolling window and why team
+assignment is protected from being overwritten by historical data).
+
+*** FCS SUPPORT ***
+This previously built its "known team names" whitelist from /teams/fbs
+only, which meant a real, currently-rostered FCS player would have their
+per-game stat rows silently skipped -- `if team not in all_teams: continue`
+below -- even though the underlying /games/players data included them.
+Now pulls both classifications' team names from /teams so FCS players
+aren't filtered out. Not verified live (same caveat as fetch_cfb.py) --
+if a run reports far fewer players than expected, check whether the FCS
+half of /teams came back empty in this run's log output.
 
 *** SAME HONESTY NOTE AS fetch_cfb.py ***
 Could not be tested against the live CFBD API from the sandbox that wrote
@@ -17,8 +26,9 @@ week too, so this goes straight to the per-week loop for both years
 rather than trying a bulk call first. Test locally before trusting the
 scheduled run; if it errors, it'll print a sample raw row to help debug
 the field names. Pulling two full seasons roughly doubles the number of
-requests versus the single-season version -- if this starts timing out
-or hitting rate limits, that's the first thing to look at.
+requests versus the single-season version, and now doing that for two
+classifications on top -- if this starts timing out or hitting rate
+limits, that's the first thing to look at.
 
 Sign up for a free key at https://collegefootballdata.com/key and set it
 as CFBD_API_KEY.
@@ -37,6 +47,7 @@ PREV_YEAR = YEAR - 1
 WINDOW = 10
 API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-players.json"
+CLASSIFICATIONS = ["fbs", "fcs"]
 
 POSITION_HINT = {
     "passing": "QB",
@@ -81,17 +92,21 @@ def main():
     except FileNotFoundError:
         players = {}
 
-    try:
-        fbs_teams = api_get("/teams/fbs", {"year": YEAR}, api_key)
-    except Exception as e:
-        print(f"Could not reach CFBD /teams/fbs ({e}); leaving existing file untouched.", file=sys.stderr)
-        return
-
     all_teams = set()
-    for t in fbs_teams:
-        name = t.get("school")
-        if name:
-            all_teams.add(name)
+    for classification in CLASSIFICATIONS:
+        try:
+            resp = api_get("/teams", {"year": YEAR, "classification": classification}, api_key)
+        except Exception as e:
+            print(f"Could not reach CFBD /teams (classification={classification}) ({e}); that classification's players will be skipped.", file=sys.stderr)
+            continue
+        for t in resp:
+            name = t.get("school")
+            if name:
+                all_teams.add(name)
+
+    if not all_teams:
+        print("Could not fetch any team list (FBS or FCS); leaving existing file untouched.", file=sys.stderr)
+        return
 
     all_rows = fetch_year_rows(PREV_YEAR, api_key) + fetch_year_rows(YEAR, api_key)
 
