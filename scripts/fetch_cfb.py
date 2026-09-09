@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Pulls current-season stats for every FBS college football team (130+
-teams, not just Power 5) -- offense AND defense -- from
-collegefootballdata.com (CFBD) and writes data/cfb-teams.json.
+Pulls current-season stats for every FBS AND FCS college football team --
+offense AND defense -- from collegefootballdata.com (CFBD) and writes
+data/cfb-teams.json.
 
 *** IMPORTANT HONESTY NOTE ***
 Unlike scripts/fetch_nfl.py (which was tested live against real nflverse
@@ -22,6 +22,26 @@ same trick used in fetch_nfl.py: CFBD's stats endpoints are offense-only,
 so for team X's defense in a given game, we look up the OTHER team's
 offensive output in that same game and count it as what X allowed.
 
+*** FCS SUPPORT -- ALSO UNVERIFIED LIVE ***
+CFBD's documentation confirms /teams, /games, and /games/teams all accept
+a `classification` param with values "fbs"/"fcs" (confirmed via the
+API's published parameter docs, not a live call). This script now fetches
+both classifications and merges them into one team list with a `division`
+field. If classification=fcs comes back empty or errors for any of these
+three endpoints, that's the first thing to check -- the script will print
+which classification failed and continue with whichever one worked,
+rather than failing the whole run.
+
+Team names are matched between /teams and /games/teams by CFBD's own
+"school" field -- keep it that way rather than inventing an alternate
+spelling (e.g. adding a disambiguating suffix) anywhere in this project.
+A prior version of this project's seed data used "Miami (FL)" to
+disambiguate from Miami (OH), which doesn't match CFBD's real name
+("Miami") and caused two permanently-diverging entries for the same team
+-- see the fix in index.html's CFB_SEED for the full story. The lesson:
+always use the exact string CFBD itself returns, never an invented
+disambiguator, no matter how reasonable it seems.
+
 Sign up for a free key at https://collegefootballdata.com and set it as
 CFBD_API_KEY.
 
@@ -37,6 +57,7 @@ import urllib.parse
 YEAR = 2026
 API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-teams.json"
+CLASSIFICATIONS = ["fbs", "fcs"]
 
 # The two offensive categories CFBD's games/teams stats use that we need.
 # CFBD's documented category strings -- verify against a live response if
@@ -82,6 +103,29 @@ def get_stats_dict(team_obj):
     return out
 
 
+def fetch_games_teams_for(classification, api_key):
+    """Bulk-fetch /games/teams for one classification, falling back to
+    per-week requests if the bulk call rejects a bare year (confirmed live
+    that this happens for at least one classification -- see the
+    fallback comment below)."""
+    try:
+        return api_get("/games/teams", {"year": YEAR, "seasonType": "regular", "classification": classification}, api_key)
+    except Exception as e:
+        # /games/teams appears to reject a bare year (400) and want a week too --
+        # confirmed against the live API after this script was first written.
+        # Fall back to pulling it one week at a time and merging the results.
+        print(f"Bulk /games/teams ({classification}) by year failed ({e}); falling back to per-week requests...", file=sys.stderr)
+        out = []
+        for week in range(1, 16):
+            try:
+                batch = api_get("/games/teams", {"year": YEAR, "seasonType": "regular", "week": week, "classification": classification}, api_key)
+            except Exception:
+                continue  # that week likely hasn't happened yet, or errored -- skip it
+            if batch:
+                out.extend(batch)
+        return out
+
+
 def main():
     api_key = (os.environ.get("CFBD_API_KEY") or "").strip()
     if not api_key:
@@ -94,22 +138,22 @@ def main():
     except FileNotFoundError:
         teams = {}
 
-    try:
-        fbs_teams = api_get("/teams/fbs", {"year": YEAR}, api_key)
-    except Exception as e:
-        print(f"Could not reach CFBD /teams/fbs ({e}); leaving existing file untouched.", file=sys.stderr)
-        return
+    # Team -> (conference, division) for every FBS + FCS team.
+    all_team_meta = {}
+    for classification in CLASSIFICATIONS:
+        try:
+            resp = api_get("/teams", {"year": YEAR, "classification": classification}, api_key)
+        except Exception as e:
+            print(f"Could not reach CFBD /teams (classification={classification}) ({e}); skipping this classification for the team list.", file=sys.stderr)
+            continue
+        for t in resp:
+            name = t.get("school")
+            if name:
+                all_team_meta[name] = (t.get("conference") or "Independent", classification)
 
-    # All 130+ FBS teams -- not just Power 5 -- so any real matchup (including
-    # a Power 5 team's game against a Group of 5 or independent opponent) can
-    # be picked in the Matchup tab. CFBD's endpoints already cover everyone;
-    # the earlier Power-5-only filter here was an artificial narrowing.
-    power5 = {}
-    for t in fbs_teams:
-        conf = t.get("conference")
-        name = t.get("school")
-        if name:
-            power5[name] = conf or "Independent"
+    if not all_team_meta:
+        print("Could not fetch any team list (FBS or FCS); leaving existing file untouched.", file=sys.stderr)
+        return
 
     try:
         games = api_get("/games", {"year": YEAR, "seasonType": "regular"}, api_key)
@@ -117,21 +161,13 @@ def main():
         print(f"Could not fetch /games ({e}); leaving existing file untouched.", file=sys.stderr)
         return
 
-    try:
-        games_teams = api_get("/games/teams", {"year": YEAR, "seasonType": "regular"}, api_key)
-    except Exception as e:
-        # /games/teams appears to reject a bare year (400) and want a week too --
-        # confirmed against the live API after this script was first written.
-        # Fall back to pulling it one week at a time and merging the results.
-        print(f"Bulk /games/teams by year failed ({e}); falling back to per-week requests...", file=sys.stderr)
-        games_teams = []
-        for week in range(1, 16):
-            try:
-                batch = api_get("/games/teams", {"year": YEAR, "seasonType": "regular", "week": week}, api_key)
-            except Exception:
-                continue  # that week likely hasn't happened yet, or errored -- skip it
-            if batch:
-                games_teams.extend(batch)
+    games_teams = []
+    for classification in CLASSIFICATIONS:
+        batch = fetch_games_teams_for(classification, api_key)
+        if batch:
+            games_teams.extend(batch)
+        else:
+            print(f"No /games/teams data came back for classification={classification} -- that classification's teams will be skipped this run.", file=sys.stderr)
 
     if not games_teams:
         print("CFBD returned no games/teams data (season may not have started); leaving file untouched.", file=sys.stderr)
@@ -183,10 +219,12 @@ def main():
             })
 
     updated = 0
-    for team, conf in power5.items():
+    fbs_updated = 0
+    fcs_updated = 0
+    for team, (conf, division) in all_team_meta.items():
         games_list = per_team_games.get(team)
         if not games_list:
-            continue  # team hasn't played yet this season
+            continue  # team hasn't played yet this season (or its games/teams data didn't come through)
         n = len(games_list)
         pts = points_by_team.get(team, [])
         np_ = len(pts) or 1
@@ -194,6 +232,7 @@ def main():
         teams[team] = {
             "league": "CFB",
             "conf": conf,
+            "division": division,  # "fbs" or "fcs" -- lets the UI show a pill if it wants to distinguish
             "ppg": round(sum(p["for"] for p in pts) / np_, 1) if pts else existing.get("ppg", 0),
             "pa": round(sum(p["against"] for p in pts) / np_, 1) if pts else existing.get("pa", 0),
             "passOff": round(sum(g["passOff"] for g in games_list) / n, 1),
@@ -205,10 +244,15 @@ def main():
             "wk1": True,
         }
         updated += 1
+        if division == "fbs":
+            fbs_updated += 1
+        else:
+            fcs_updated += 1
 
     with open(EXISTING_PATH, "w") as f:
         json.dump(teams, f, indent=2)
-    print(f"Updated {updated} of {len(power5)} FBS teams in {EXISTING_PATH}")
+    print(f"Updated {updated} of {len(all_team_meta)} CFB teams in {EXISTING_PATH} "
+          f"({fbs_updated} FBS, {fcs_updated} FCS)")
 
 
 if __name__ == "__main__":
