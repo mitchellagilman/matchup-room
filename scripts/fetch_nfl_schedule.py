@@ -61,27 +61,39 @@ def main():
         print(f"No {YEAR} schedule published yet; leaving existing file untouched.", file=sys.stderr)
         return
 
-    # Current week = earliest week that still has an unplayed game.
-    # If the whole season's played out, fall back to the last week.
-    # Current week = the most recently STARTED week, by date -- see the
-    # matching comment in fetch_cfb_schedule.py for why this is more
-    # reliable than checking for missing scores.
+    # Current week = the earliest week that ISN'T essentially finished --
+    # see the matching (and more detailed) comment in fetch_cfb_schedule.py
+    # for why "most recently started week" isn't enough on its own.
     import datetime
     today = datetime.datetime.now(datetime.timezone.utc).date()
-    week_start_date = {}
+    games_by_week = {}
     for r in season_rows:
-        wk, gameday = r.get("week"), r.get("gameday")
-        if not wk or not gameday:
+        wk = r.get("week")
+        if not wk:
             continue
-        try:
-            d = datetime.date.fromisoformat(gameday)
-        except ValueError:
-            continue
-        wk = int(wk)
-        if wk not in week_start_date or d < week_start_date[wk]:
-            week_start_date[wk] = d
-    started_weeks = [wk for wk, d in week_start_date.items() if d <= today]
-    current_week = max(started_weeks) if started_weeks else min(week_start_date, default=1)
+        games_by_week.setdefault(int(wk), []).append(r)
+
+    current_week = None
+    for wk in sorted(games_by_week.keys()):
+        wk_games = games_by_week[wk]
+        dates = []
+        for r in wk_games:
+            gameday = r.get("gameday")
+            if not gameday:
+                continue
+            try:
+                dates.append(datetime.date.fromisoformat(gameday))
+            except ValueError:
+                pass
+        last_date = max(dates) if dates else None
+        completed = sum(1 for r in wk_games if r.get("home_score"))
+        completion_ratio = (completed / len(wk_games)) if wk_games else 0
+        still_relevant = (last_date is None) or (today <= last_date) or (completion_ratio < 0.8)
+        if still_relevant:
+            current_week = wk
+            break
+    if current_week is None:
+        current_week = max(games_by_week.keys()) if games_by_week else 1
 
     week_games = [r for r in season_rows if int(r["week"]) == current_week]
 
