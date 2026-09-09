@@ -876,6 +876,38 @@ function meetsVolumeThreshold(stat, l5avg){
   const min = MIN_VOLUME_FOR_BET[stat];
   return min===undefined || l5avg >= min;
 }
+// QB is a true one-starter-at-a-time position (unlike RB/WR/TE, where more
+// than one player legitimately splitting real touches is normal) -- but
+// this pipeline has no depth-chart data to say who's QB1 right now. A
+// mid-season benching (or an injury-driven change) leaves the old starter
+// with real, non-trivial games logged that still clear the volume filter,
+// so both players show up as if they're each starting. The best available
+// proxy for "who's actually playing now" is whoever's last logged game is
+// the most recent -- games are stored oldest-to-newest (see
+// fetch_players_nfl.py), so the last array entry is each player's latest game.
+function mostRecentGameKey(player){
+  const games = (player && player.games) || [];
+  if(games.length===0) return -1;
+  const last = games[games.length-1];
+  const m = /^(\d+)-wk(\d+)/.exec(last.date || '');
+  if(!m) return -1;
+  return Number(m[1])*100 + Number(m[2]); // year*100+week -- sorts correctly across week 9 -> week 10
+}
+// Keeps only the most-recently-played QB per team among a list of
+// candidates that already carry {pos, team, _recencyKey}. Non-QB rows pass
+// through untouched -- committees are legitimate at other positions.
+function dedupeStaleQBs(candidates){
+  const bestQBKeyByTeam = {};
+  candidates.forEach(function(c){
+    if(c.pos!=='QB') return;
+    const key = c.team || '';
+    if(!(key in bestQBKeyByTeam) || c._recencyKey > bestQBKeyByTeam[key]) bestQBKeyByTeam[key] = c._recencyKey;
+  });
+  return candidates.filter(function(c){
+    if(c.pos!=='QB') return true;
+    return c._recencyKey === bestQBKeyByTeam[c.team || ''];
+  });
+}
 function normalizeTeamName(s){
   // Strips accents/diacritics and punctuation so e.g. CFBD's "San José State"
   // (from /teams/fbs) matches "San Jose State" (from /games) -- different
@@ -1072,13 +1104,14 @@ function computeGameBets(nameA, nameB){
       if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
       const ratio = teamsCache[oppName][defKey] / avgVal;
       const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderGameBets
-      playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough' });
+      playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough', _recencyKey: mostRecentGameKey(p) });
     });
   });
-  playerBets.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
+  const dedupedPlayerBets = dedupeStaleQBs(playerBets);
+  dedupedPlayerBets.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
  
   const teamSlice = teamBets.slice(0, 5);
-  const playerSlice = playerBets.slice(0, Math.max(0, 5 - teamSlice.length));
+  const playerSlice = dedupedPlayerBets.slice(0, Math.max(0, 5 - teamSlice.length));
   return { teamBets: teamSlice, playerBets: playerSlice };
 }
 function renderGameBets(nameA, nameB){
@@ -1324,11 +1357,12 @@ function computeTopPlayerBets(league){
     const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderPlayerBetsList
     candidates.push({
       name, pos: p.pos, team: p.team, opp, ratio, l5avg, projected, statLabel: statLabel(mainStat),
-      direction: ratio>=1 ? 'favorable' : 'tough'
+      direction: ratio>=1 ? 'favorable' : 'tough', _recencyKey: mostRecentGameKey(p)
     });
   });
-  candidates.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
-  return candidates.slice(0, 10);
+  const deduped = dedupeStaleQBs(candidates);
+  deduped.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
+  return deduped.slice(0, 10);
 }
 function renderPlayerBetsList(elId, bets){
   const el = document.getElementById(elId);
