@@ -2,20 +2,29 @@
 """
 Pulls every NFL QB/RB/WR/TE's per-game stat lines (passing/rushing/
 receiving yards, receptions, TDs) from nflverse and writes
-data/nfl-players.json.
+data/nfl-players.json -- keeping a rolling window of each player's most
+recent 10 REGULAR SEASON games.
 
-Verified against real nflverse data while writing this: the file below
-has one row per skill-position player per game, with position and team
-already attached -- no per-team or per-player lookups needed, unlike the
-team-stats scripts.
+Early in a season (or before it's started at all), there aren't 10 games
+of the current year yet, so this fills the gap with the tail end of last
+season -- e.g. in Week 3, a player's window is their last 7 games of last
+season plus this season's 3. Once the current season has 10+ games
+played, last season drops out entirely on its own (it's just whichever
+10 games are chronologically most recent -- no special "roll off" logic
+needed beyond sorting and slicing).
+
+IMPORTANT: team assignment is NOT taken from this historical data. If the
+player already has a "team" set (from fetch_nfl_rosters.py, which reads
+the actual current roster), that's kept as-is -- a player's team last
+season isn't necessarily their team now (this is exactly the bug that
+had Mack Hollins showing on Buffalo instead of New England). This script
+only touches the games/trend history, never overwrites a known-current
+team with a historical one.
 
 Source: https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats.csv
 This is nflverse's full all-years combined file (~30MB) -- there isn't a
-current-season-only file published yet as of when this was written (their
-player-level pipeline lags behind the team-level one), so we download the
-whole thing and filter to YEAR client-side. If nflverse starts publishing
-a "player_stats_{YEAR}.csv" per-year file again, switch to that instead
-for a much smaller download.
+current-season-only file published as of when this was written, so we
+download the whole thing and filter client-side.
 
 Run: python3 scripts/fetch_players_nfl.py
 Writes: data/nfl-players.json
@@ -27,6 +36,8 @@ import sys
 import urllib.request
 
 YEAR = 2026
+PREV_YEAR = YEAR - 1
+WINDOW = 10
 STATS_URL = "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats.csv"
 EXISTING_PATH = "data/nfl-players.json"
 
@@ -70,12 +81,11 @@ def main():
         return
 
     rows = [r for r in csv.DictReader(io.StringIO(raw))
-            if r.get("season") == str(YEAR) and r.get("season_type") == "REG"
+            if r.get("season") in (str(YEAR), str(PREV_YEAR)) and r.get("season_type") == "REG"
             and r.get("position") in SKILL_POSITIONS]
 
     if not rows:
-        print(f"No {YEAR} regular-season player rows yet (nflverse hasn't published this "
-              f"season's player data) -- leaving existing file untouched.", file=sys.stderr)
+        print(f"No {PREV_YEAR}/{YEAR} regular-season player rows found at all -- leaving existing file untouched.", file=sys.stderr)
         return
 
     by_player = {}
@@ -83,17 +93,21 @@ def main():
         name = row.get("player_display_name") or row.get("player_name")
         if not name:
             continue
-        by_player.setdefault(name, {"pos": row.get("position"), "team": row.get("recent_team"), "rows": []})
+        by_player.setdefault(name, {"pos": row.get("position"), "rows": []})
         by_player[name]["rows"].append(row)
 
     updated = 0
     for name, info in by_player.items():
-        team_abbr = info["team"]
+        # Sort oldest-to-newest across both seasons, then keep only the
+        # most recent WINDOW games -- this is the whole "rolling 10" trick.
+        sorted_rows = sorted(info["rows"], key=lambda r: (int(r.get("season", 0) or 0), int(r.get("week", 0) or 0)))
+        recent_rows = sorted_rows[-WINDOW:]
+
         games = []
-        for row in sorted(info["rows"], key=lambda r: int(r.get("week", 0) or 0)):
+        for row in recent_rows:
             tds = to_num(row, "passing_tds") + to_num(row, "rushing_tds") + to_num(row, "receiving_tds")
             games.append({
-                "date": f"{YEAR}-wk{row.get('week', '')}",
+                "date": f"{row.get('season')}-wk{row.get('week', '')}",
                 "opp": f"vs {row.get('opponent_team', '')}",
                 "passYds": to_num(row, "passing_yards"),
                 "rushYds": to_num(row, "rushing_yards"),
@@ -101,9 +115,17 @@ def main():
                 "recYds": to_num(row, "receiving_yards"),
                 "tds": tds,
             })
+
+        # Team: keep whatever's already there (set by fetch_nfl_rosters.py
+        # from the real current roster) if present; only fall back to the
+        # historical data's team for a brand-new player we've never seen.
+        existing = players.get(name, {})
+        team_abbr = recent_rows[-1].get("recent_team") if recent_rows else None
+        team = existing.get("team") or TEAM_NAME_MAP.get(team_abbr, team_abbr)
+
         players[name] = {
             "pos": info["pos"],
-            "team": TEAM_NAME_MAP.get(team_abbr, team_abbr),
+            "team": team,
             "league": "NFL",
             "games": games,
         }
@@ -111,7 +133,7 @@ def main():
 
     with open(EXISTING_PATH, "w") as f:
         json.dump(players, f, indent=2)
-    print(f"Wrote {updated} NFL players to {EXISTING_PATH}")
+    print(f"Wrote {updated} NFL players (rolling {WINDOW}-game window, {PREV_YEAR}-{YEAR}) to {EXISTING_PATH}")
 
 
 if __name__ == "__main__":
