@@ -1,65 +1,81 @@
 #!/usr/bin/env python3
 """
-Pulls the full current NFL active roster (skill positions) from ESPN's
-roster endpoint and writes data/nfl-players.json.
+Pulls the full current NFL active roster (skill positions) from nflverse's
+roster file and writes data/nfl-players.json -- this is what fixes team
+assignment BEFORE the season starts, since nflverse's game-by-game player
+stats (fetch_players_nfl.py) don't exist yet for 2026.
 
-*** WHY THIS REPLACES THE PREVIOUS nflverse-BASED VERSION ***
-nflverse's roster file and player-stats file didn't always agree on name
-spelling for the same person (confirmed live: "DJ Moore" in one, "D.J.
-Moore" in the other, same actual person), which created duplicate,
-disconnected entries. Switching both this script and fetch_players_nfl.py
-to ESPN's API means they now share the SAME athlete ID scheme (ESPN's own
-numeric "id"), which fixes that whole class of bug rather than patching
-around it.
+*** BACK TO nflverse -- ESPN DOESN'T WORK FROM GITHUB ACTIONS ***
+A version of this script briefly used ESPN's API instead (ESPN's data is
+more current -- see fetch_players_nfl.py's docstring). It was verified
+working when fetched directly, but failed with HTTP 403 Forbidden for
+every single team when actually run from GitHub Actions. That's
+consistent with Cloudflare-style bot protection blocking cloud/datacenter
+IP ranges -- something no amount of header tweaking fixes from a headless
+HTTP client, and not something that could be verified without actually
+deploying and watching it fail live (which is exactly what happened).
+Reverted to nflverse, which has a real track record of working reliably
+from this exact Actions environment.
 
-*** HONESTY NOTE ***
-The team ID -> abbreviation mapping below was directly verified live
-against ESPN's /teams endpoint (Sept 2026) for every team except PIT,
-SF, SEA, TB, TEN, WAS, which use ESPN's long-standing, widely-documented
-ID scheme but weren't in the single API response fetched while writing
-this (it was long enough to get cut off around 26 teams). If any one
-team's roster comes back with 0 players, that team's ID is the first
-thing to double check.
+*** REAL BUG THIS VERSION STILL FIXES ***
+nflverse's own roster file and its historical stats file don't always
+agree on name formatting for the same person -- e.g. the roster file
+spells a player "DJ Moore" while the historical stats file spells the
+same person (same gsis_id, verified) "D.J. Moore". That created two
+disconnected dictionary entries: one with his current team and no games,
+one with his old team and real games. Every entry here also carries
+"_id" (the gsis_id) and "teamYear" (which year's roster last confirmed
+this team) so fetch_players_nfl.py can match by ID first, name only as a
+fallback -- this is what actually fixes the duplicate-entry problem.
 
-Source: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/{TEAM_ID}/roster
+"teamYear" also solves a second real bug: a player who falls off every
+team's active roster (retired, unsigned, etc. -- confirmed live: this
+happened to Amari Cooper) previously kept showing his last known team
+forever, with no way to tell it was stale. Now the team field alone can't
+be trusted as "confirmed current" unless teamYear matches this run's
+YEAR -- the UI uses this to show a "not on a 2026 active roster" caveat.
+
+Verified live while writing this originally: roster_2026.csv correctly
+shows Mack Hollins on NE (Patriots), not BUF -- confirming this file
+reflects current 2026 rosters, unlike box-score data which won't exist
+until real games are played.
+
+Source (verified): https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{YEAR}.csv
 
 Run: python3 scripts/fetch_nfl_rosters.py
 Writes: data/nfl-players.json
 """
+import csv
+import io
 import json
 import sys
 import urllib.request
 
+YEAR = 2026
+ROSTER_URL = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{YEAR}.csv"
 EXISTING_PATH = "data/nfl-players.json"
 SKILL_POSITIONS = {"QB", "RB", "WR", "TE"}
-YEAR = 2026
 
-TEAM_IDS = {
-    "ARI": 22, "ATL": 1, "BAL": 33, "BUF": 2, "CAR": 29, "CHI": 3, "CIN": 4,
-    "CLE": 5, "DAL": 6, "DEN": 7, "DET": 8, "GB": 9, "HOU": 34, "IND": 11,
-    "JAX": 30, "KC": 12, "LV": 13, "LAC": 24, "LAR": 14, "MIA": 15, "MIN": 16,
-    "NE": 17, "NO": 18, "NYG": 19, "NYJ": 20, "PHI": 21, "PIT": 23, "SF": 25,
-    "SEA": 26, "TB": 27, "TEN": 10, "WAS": 28,
-}
-TEAM_NAMES = {
+TEAM_NAME_MAP = {
     "ARI": "Arizona Cardinals", "ATL": "Atlanta Falcons", "BAL": "Baltimore Ravens",
     "BUF": "Buffalo Bills", "CAR": "Carolina Panthers", "CHI": "Chicago Bears",
     "CIN": "Cincinnati Bengals", "CLE": "Cleveland Browns", "DAL": "Dallas Cowboys",
     "DEN": "Denver Broncos", "DET": "Detroit Lions", "GB": "Green Bay Packers",
     "HOU": "Houston Texans", "IND": "Indianapolis Colts", "JAX": "Jacksonville Jaguars",
-    "KC": "Kansas City Chiefs", "LV": "Las Vegas Raiders", "LAC": "Los Angeles Chargers",
-    "LAR": "Los Angeles Rams", "MIA": "Miami Dolphins", "MIN": "Minnesota Vikings",
+    "KC": "Kansas City Chiefs", "LAC": "Los Angeles Chargers", "LA": "Los Angeles Rams",
+    "LV": "Las Vegas Raiders", "MIA": "Miami Dolphins", "MIN": "Minnesota Vikings",
     "NE": "New England Patriots", "NO": "New Orleans Saints", "NYG": "New York Giants",
     "NYJ": "New York Jets", "PHI": "Philadelphia Eagles", "PIT": "Pittsburgh Steelers",
-    "SF": "San Francisco 49ers", "SEA": "Seattle Seahawks", "TB": "Tampa Bay Buccaneers",
+    "SEA": "Seattle Seahawks", "SF": "San Francisco 49ers", "TB": "Tampa Bay Buccaneers",
     "TEN": "Tennessee Titans", "WAS": "Washington Commanders",
 }
 
 
-def api_get(url):
+def fetch_csv(url):
     req = urllib.request.Request(url, headers={"User-Agent": "matchup-room-fetcher"})
     with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+        raw = resp.read().decode("utf-8")
+    return list(csv.DictReader(io.StringIO(raw)))
 
 
 def main():
@@ -69,53 +85,45 @@ def main():
     except FileNotFoundError:
         players = {}
 
-    # Existing entries indexed by ESPN athlete id, so a person keeps the
-    # same dict entry (and any games already attached to it) even if
-    # their display name ever renders slightly differently between runs.
+    try:
+        rows = fetch_csv(ROSTER_URL)
+    except Exception as e:
+        print(f"Could not fetch roster_{YEAR}.csv ({e}); leaving existing file untouched.", file=sys.stderr)
+        return
+
+    # Existing entries indexed by gsis_id, so a name-spelling difference
+    # from a prior run (or from fetch_players_nfl.py) doesn't cause a
+    # second, disconnected entry to get created for the same person.
     existing_by_id = {v.get("_id"): k for k, v in players.items() if v.get("_id")}
 
     updated = 0
-    team_errors = 0
-    for abbr, team_id in TEAM_IDS.items():
-        url = f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/{team_id}/roster"
-        try:
-            data = api_get(url)
-        except Exception as e:
-            print(f"Could not fetch {abbr} (team id {team_id}) roster ({e}); skipping this team.", file=sys.stderr)
-            team_errors += 1
+    for row in rows:
+        if row.get("status") != "ACT":
+            continue
+        if row.get("position") not in SKILL_POSITIONS:
+            continue
+        name = row.get("full_name")
+        gsis_id = row.get("gsis_id")
+        if not name:
             continue
 
-        groups = data.get("athletes", [])
-        if not groups:
-            print(f"WARNING: {abbr} (team id {team_id}) roster came back empty -- double check this team's ID.", file=sys.stderr)
+        key = existing_by_id.get(gsis_id, name) if gsis_id else name
+        existing = players.get(key, {})
 
-        for group in groups:
-            for row in group.get("items", []):
-                pos = (row.get("position") or {}).get("abbreviation")
-                if pos not in SKILL_POSITIONS:
-                    continue
-                if (row.get("status") or {}).get("type") != "active":
-                    continue
-                espn_id = row.get("id")
-                name = row.get("fullName") or row.get("displayName")
-                if not espn_id or not name:
-                    continue
-
-                key = existing_by_id.get(espn_id, name)
-                existing = players.get(key, {})
-                players[key] = {
-                    "pos": pos,
-                    "team": TEAM_NAMES[abbr],
-                    "league": "NFL",
-                    "games": existing.get("games", []),  # preserved by fetch_players_nfl.py, not touched here
-                    "_id": espn_id,
-                    "teamYear": YEAR,
-                }
-                updated += 1
+        team_abbr = row.get("team")
+        players[key] = {
+            "pos": row.get("position"),
+            "team": TEAM_NAME_MAP.get(team_abbr, team_abbr),
+            "league": "NFL",
+            "games": existing.get("games", []),
+            "_id": gsis_id,
+            "teamYear": YEAR,
+        }
+        updated += 1
 
     with open(EXISTING_PATH, "w") as f:
         json.dump(players, f, indent=2)
-    print(f"Wrote/updated {updated} NFL players across {len(TEAM_IDS) - team_errors}/{len(TEAM_IDS)} teams to {EXISTING_PATH}")
+    print(f"Wrote/updated {updated} NFL players (current active roster) to {EXISTING_PATH}")
 
 
 if __name__ == "__main__":
