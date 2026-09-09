@@ -7,8 +7,8 @@
     "aML": 153,
     "aMLBook": "LowVig.ag",
     "aSpread": 3.0,
-    "aSpreadOdds": 105,
-    "aSpreadOddsBook": "BetMGM",
+    "aSpreadOdds": 100,
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Seattle Seahawks",
     "bML": -166,
     "bMLBook": "DraftKings",
@@ -47,8 +47,8 @@
       },
       {
         "book": "FanDuel",
-        "aML": 150,
-        "bML": -178,
+        "aML": 152,
+        "bML": -180,
         "aSpread": 3.5,
         "aSpreadOdds": -120,
         "bSpread": -3.5,
@@ -85,20 +85,20 @@
         "book": "BetRivers",
         "aML": 150,
         "bML": -186,
-        "aSpread": 3.5,
-        "aSpreadOdds": -118,
-        "bSpread": -3.5,
-        "bSpreadOdds": -104,
+        "aSpread": 3.0,
+        "aSpreadOdds": -104,
+        "bSpread": -3.0,
+        "bSpreadOdds": -118,
         "total": 44.5,
-        "overOdds": -110,
-        "underOdds": -110
+        "overOdds": -109,
+        "underOdds": -112
       },
       {
         "book": "BetMGM",
         "aML": 145,
         "bML": -175,
         "aSpread": 3.0,
-        "aSpreadOdds": 105,
+        "aSpreadOdds": 100,
         "bSpread": -3.0,
         "bSpreadOdds": -112,
         "total": 44.5,
@@ -257,7 +257,7 @@
         "aSpreadOdds": -110,
         "bSpread": -4.0,
         "bSpreadOdds": -110,
-        "total": 48.0,
+        "total": 48.5,
         "overOdds": -110,
         "underOdds": -110
       }
@@ -1206,8 +1206,8 @@
     "total": 38.5,
     "overOdds": -107,
     "overOddsBook": "LowVig.ag",
-    "underOdds": -107,
-    "underOddsBook": "LowVig.ag",
+    "underOdds": -105,
+    "underOddsBook": "DraftKings",
     "books": [
       {
         "book": "DraftKings",
@@ -1218,8 +1218,8 @@
         "bSpread": -1.5,
         "bSpreadOdds": -110,
         "total": 38.5,
-        "overOdds": -112,
-        "underOdds": -108
+        "overOdds": -115,
+        "underOdds": -105
       },
       {
         "book": "FanDuel",
@@ -1418,12 +1418,12 @@
         "aML": 400,
         "bML": -525,
         "aSpread": 9.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -115,
         "bSpread": -9.5,
-        "bSpreadOdds": -108,
+        "bSpreadOdds": -115,
         "total": 47.5,
-        "overOdds": -110,
-        "underOdds": -120
+        "overOdds": -108,
+        "underOdds": -110
       },
       {
         "book": "Bovada",
@@ -13441,10 +13441,10 @@
     "bML": -10000,
     "bMLBook": "FanDuel",
     "bSpread": -37.5,
-    "bSpreadOdds": -106,
-    "bSpreadOddsBook": "FanDuel",
+    "bSpreadOdds": -105,
+    "bSpreadOddsBook": "LowVig.ag",
     "total": 56.5,
-    "overOdds": -105,
+    "overOdds": -108,
     "overOddsBook": "DraftKings",
     "underOdds": -110,
     "underOddsBook": "FanDuel",
@@ -13470,17 +13470,17 @@
         "bSpread": -36.5,
         "bSpreadOdds": -115,
         "total": 56.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -108,
+        "underOdds": -112
       },
       {
         "book": "LowVig.ag",
         "aML": null,
         "bML": null,
         "aSpread": 36.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -125,
         "bSpread": -36.5,
-        "bSpreadOdds": -120,
+        "bSpreadOdds": -105,
         "total": 56.5,
         "overOdds": -115,
         "underOdds": -115
@@ -13490,9 +13490,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 36.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -125,
         "bSpread": -36.5,
-        "bSpreadOdds": -120,
+        "bSpreadOdds": -105,
         "total": 56.5,
         "overOdds": -115,
         "underOdds": -115
@@ -13604,7 +13604,7 @@
     "aMLBook": "Bovada",
     "aSpread": 3.5,
     "aSpreadOdds": -105,
-    "aSpreadOddsBook": "BetMGM",
+    "aSpreadOddsBook": "DraftKings",
     "bTeam": "Boston College Eagles",
     "bML": -146,
     "bMLBook": "FanDuel",
@@ -13643,12 +13643,12 @@
       },
       {
         "book": "DraftKings",
-        "aML": 124,
-        "bML": -148,
+        "aML": 136,
+        "bML": -162,
         "aSpread": 3.0,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -105,
         "bSpread": -3.0,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -115,
         "total": 54.5,
         "overOdds": -105,
         "underOdds": -115
@@ -13692,14 +13692,14 @@
       {
         "book": "BetMGM",
         "aML": 130,
-        "bML": -155,
+        "bML": -160,
         "aSpread": 3.0,
         "aSpreadOdds": -105,
         "bSpread": -3.0,
         "bSpreadOdds": -112,
-        "total": 53.5,
-        "overOdds": -120,
-        "underOdds": -110
+        "total": 54.5,
+        "overOdds": -105,
+        "underOdds": -115
       },
       {
         "book": "BetUS",
@@ -15734,12 +15734,12 @@
         "aML": 140,
         "bML": -175,
         "aSpread": 3.5,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -112,
         "bSpread": -3.5,
         "bSpreadOdds": -105,
         "total": 56.5,
-        "overOdds": -110,
-        "underOdds": -108
+        "overOdds": -112,
+        "underOdds": -105
       },
       {
         "book": "BetUS",
@@ -16166,12 +16166,12 @@
         "aML": -475,
         "bML": 360,
         "aSpread": -12.5,
-        "aSpreadOdds": -108,
+        "aSpreadOdds": -110,
         "bSpread": 12.5,
         "bSpreadOdds": -110,
         "total": 52.5,
         "overOdds": -108,
-        "underOdds": -110
+        "underOdds": -112
       },
       {
         "book": "BetRivers",
@@ -16242,8 +16242,8 @@
     "total": 55.5,
     "overOdds": -102,
     "overOddsBook": "FanDuel",
-    "underOdds": 100,
-    "underOddsBook": "BetMGM",
+    "underOdds": -108,
+    "underOddsBook": "LowVig.ag",
     "books": [
       {
         "book": "DraftKings",
@@ -16313,9 +16313,9 @@
         "aSpreadOdds": -112,
         "bSpread": -1.0,
         "bSpreadOdds": -105,
-        "total": 54.5,
-        "overOdds": -120,
-        "underOdds": 100
+        "total": 55.5,
+        "overOdds": -108,
+        "underOdds": -120
       },
       {
         "book": "BetUS",
@@ -16554,8 +16554,8 @@
     "total": 66.5,
     "overOdds": -105,
     "overOddsBook": "DraftKings",
-    "underOdds": -102,
-    "underOddsBook": "BetMGM",
+    "underOdds": -108,
+    "underOddsBook": "LowVig.ag",
     "books": [
       {
         "book": "DraftKings",
@@ -16613,9 +16613,9 @@
         "aSpreadOdds": -108,
         "bSpread": -1.5,
         "bSpreadOdds": -110,
-        "total": 65.5,
-        "overOdds": -118,
-        "underOdds": -102
+        "total": 66.5,
+        "overOdds": -108,
+        "underOdds": -120
       },
       {
         "book": "BetRivers",
@@ -16686,8 +16686,8 @@
     "total": 55.5,
     "overOdds": -106,
     "overOddsBook": "LowVig.ag",
-    "underOdds": -108,
-    "underOddsBook": "BetMGM",
+    "underOdds": -110,
+    "underOddsBook": "FanDuel",
     "books": [
       {
         "book": "FanDuel",
@@ -16742,12 +16742,12 @@
         "aML": 310,
         "bML": -375,
         "aSpread": 10.0,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -108,
         "bSpread": -10.0,
-        "bSpreadOdds": -108,
+        "bSpreadOdds": -110,
         "total": 55.5,
-        "overOdds": -110,
-        "underOdds": -108
+        "overOdds": -108,
+        "underOdds": -112
       },
       {
         "book": "BetRivers",
@@ -16943,7 +16943,7 @@
     "aSpreadOddsBook": "DraftKings",
     "bTeam": "North Texas Mean Green",
     "bML": 155,
-    "bMLBook": "Bovada",
+    "bMLBook": "BetRivers",
     "bSpread": 3.5,
     "bSpreadOdds": -105,
     "bSpreadOddsBook": "Bovada",
@@ -17015,12 +17015,12 @@
       },
       {
         "book": "BetRivers",
-        "aML": -175,
-        "bML": 140,
-        "aSpread": -3.5,
-        "aSpreadOdds": -110,
-        "bSpread": 3.5,
-        "bSpreadOdds": -112,
+        "aML": -195,
+        "bML": 155,
+        "aSpread": -4.5,
+        "aSpreadOdds": -109,
+        "bSpread": 4.5,
+        "bSpreadOdds": -114,
         "total": 56.5,
         "overOdds": -118,
         "underOdds": -108
@@ -17213,7 +17213,7 @@
     "bSpreadOddsBook": "LowVig.ag",
     "total": 54.5,
     "overOdds": -110,
-    "overOddsBook": "BetMGM",
+    "overOddsBook": "BetRivers",
     "underOdds": -103,
     "underOddsBook": "LowVig.ag",
     "books": [
@@ -17274,20 +17274,20 @@
         "bSpread": -20.5,
         "bSpreadOdds": -112,
         "total": 54.5,
-        "overOdds": -110,
-        "underOdds": -108
+        "overOdds": -112,
+        "underOdds": -105
       },
       {
         "book": "BetRivers",
-        "aML": 900,
+        "aML": 850,
         "bML": -2000,
         "aSpread": 20.5,
-        "aSpreadOdds": -112,
+        "aSpreadOdds": -110,
         "bSpread": -20.5,
-        "bSpreadOdds": -112,
-        "total": 53.5,
-        "overOdds": -114,
-        "underOdds": -109
+        "bSpreadOdds": -113,
+        "total": 54.5,
+        "overOdds": -110,
+        "underOdds": -113
       },
       {
         "book": "BetUS",
@@ -17414,7 +17414,7 @@
         "aML": 275,
         "bML": -350,
         "aSpread": 8.5,
-        "aSpreadOdds": -108,
+        "aSpreadOdds": -110,
         "bSpread": -8.5,
         "bSpreadOdds": -110,
         "total": 54.5,
@@ -17533,10 +17533,10 @@
         "book": "BetMGM",
         "aML": 333,
         "bML": -425,
-        "aSpread": 10.5,
-        "aSpreadOdds": -115,
-        "bSpread": -10.5,
-        "bSpreadOdds": -102,
+        "aSpread": 10.0,
+        "aSpreadOdds": -112,
+        "bSpread": -10.0,
+        "bSpreadOdds": -118,
         "total": 47.5,
         "overOdds": -110,
         "underOdds": -108
@@ -17824,31 +17824,31 @@
     "league": "CFB",
     "date": "2026-09-12",
     "aTeam": "Bowling Green Falcons",
-    "aML": 2800,
+    "aML": 3000,
     "aMLBook": "FanDuel",
-    "aSpread": 29.5,
+    "aSpread": 30.5,
     "aSpreadOdds": -101,
     "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Nebraska Cornhuskers",
     "bML": -7692,
     "bMLBook": "MyBookie.ag",
-    "bSpread": -29.5,
-    "bSpreadOdds": -106,
-    "bSpreadOddsBook": "FanDuel",
+    "bSpread": -30.5,
+    "bSpreadOdds": -108,
+    "bSpreadOddsBook": "DraftKings",
     "total": 51.5,
     "overOdds": -105,
     "overOddsBook": "Bovada",
-    "underOdds": -105,
+    "underOdds": -108,
     "underOddsBook": "DraftKings",
     "books": [
       {
         "book": "FanDuel",
-        "aML": 2800,
+        "aML": 3000,
         "bML": -10000,
-        "aSpread": 29.5,
-        "aSpreadOdds": -114,
-        "bSpread": -29.5,
-        "bSpreadOdds": -106,
+        "aSpread": 30.5,
+        "aSpreadOdds": -110,
+        "bSpread": -30.5,
+        "bSpreadOdds": -110,
         "total": 51.5,
         "overOdds": -110,
         "underOdds": -110
@@ -17862,8 +17862,8 @@
         "bSpread": -29.5,
         "bSpreadOdds": -108,
         "total": 51.5,
-        "overOdds": -115,
-        "underOdds": -105
+        "overOdds": -112,
+        "underOdds": -108
       },
       {
         "book": "BetOnline.ag",
@@ -17893,13 +17893,13 @@
         "book": "BetMGM",
         "aML": 2800,
         "bML": -10000,
-        "aSpread": 29.0,
-        "aSpreadOdds": -110,
-        "bSpread": -29.0,
+        "aSpread": 29.5,
+        "aSpreadOdds": -108,
+        "bSpread": -29.5,
         "bSpreadOdds": -110,
         "total": 51.5,
-        "overOdds": -112,
-        "underOdds": -105
+        "overOdds": -110,
+        "underOdds": -108
       },
       {
         "book": "BetRivers",
@@ -18061,10 +18061,10 @@
         "book": "BetMGM",
         "aML": 275,
         "bML": -350,
-        "aSpread": 9.5,
-        "aSpreadOdds": -108,
-        "bSpread": -9.5,
-        "bSpreadOdds": -112,
+        "aSpread": 8.5,
+        "aSpreadOdds": -112,
+        "bSpread": -8.5,
+        "bSpreadOdds": -118,
         "total": 54.5,
         "overOdds": -110,
         "underOdds": -108
@@ -18143,7 +18143,7 @@
     "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Georgia Tech Yellow Jackets",
     "bML": 390,
-    "bMLBook": "DraftKings",
+    "bMLBook": "FanDuel",
     "bSpread": 12.5,
     "bSpreadOdds": -106,
     "bSpreadOddsBook": "LowVig.ag",
@@ -18155,8 +18155,8 @@
     "books": [
       {
         "book": "DraftKings",
-        "aML": -520,
-        "bML": 390,
+        "aML": -500,
+        "bML": 380,
         "aSpread": -12.5,
         "aSpreadOdds": -112,
         "bSpread": 12.5,
@@ -18218,12 +18218,12 @@
         "aML": -500,
         "bML": 380,
         "aSpread": -12.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -108,
         "bSpread": 12.5,
         "bSpreadOdds": -110,
         "total": 55.5,
         "overOdds": -105,
-        "underOdds": -115
+        "underOdds": -112
       },
       {
         "book": "BetUS",
@@ -18697,10 +18697,10 @@
         "book": "BetMGM",
         "aML": 290,
         "bML": -350,
-        "aSpread": 9.0,
-        "aSpreadOdds": -108,
-        "bSpread": -9.0,
-        "bSpreadOdds": -110,
+        "aSpread": 9.5,
+        "aSpreadOdds": -115,
+        "bSpread": -9.5,
+        "bSpreadOdds": -112,
         "total": 49.5,
         "overOdds": -108,
         "underOdds": -110
@@ -19250,9 +19250,9 @@
         "aML": 470,
         "bML": -650,
         "aSpread": 14.0,
-        "aSpreadOdds": -112,
+        "aSpreadOdds": -110,
         "bSpread": -14.0,
-        "bSpreadOdds": -108,
+        "bSpreadOdds": -110,
         "total": 40.5,
         "overOdds": -112,
         "underOdds": -108
@@ -19583,12 +19583,12 @@
       },
       {
         "book": "BetUS",
-        "aML": 105,
-        "bML": -125,
-        "aSpread": 1.5,
-        "aSpreadOdds": -110,
-        "bSpread": -1.5,
-        "bSpreadOdds": -110,
+        "aML": null,
+        "bML": null,
+        "aSpread": null,
+        "aSpreadOdds": null,
+        "bSpread": null,
+        "bSpreadOdds": null,
         "total": 49.0,
         "overOdds": -110,
         "underOdds": -110
@@ -19603,8 +19603,8 @@
     "aML": -3000,
     "aMLBook": "BetMGM",
     "aSpread": -26.5,
-    "aSpreadOdds": -105,
-    "aSpreadOddsBook": "Bovada",
+    "aSpreadOdds": -106,
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Oregon State Beavers",
     "bML": 1900,
     "bMLBook": "BetRivers",
@@ -19612,8 +19612,8 @@
     "bSpreadOdds": -106,
     "bSpreadOddsBook": "LowVig.ag",
     "total": 53.5,
-    "overOdds": -105,
-    "overOddsBook": "Bovada",
+    "overOdds": -110,
+    "overOddsBook": "FanDuel",
     "underOdds": -101,
     "underOddsBook": "LowVig.ag",
     "books": [
@@ -19668,13 +19668,13 @@
       {
         "book": "BetMGM",
         "aML": -3000,
-        "bML": 1700,
+        "bML": 1650,
         "aSpread": -26.5,
         "aSpreadOdds": -108,
         "bSpread": 26.5,
         "bSpreadOdds": -110,
         "total": 53.5,
-        "overOdds": -112,
+        "overOdds": -115,
         "underOdds": -105
       },
       {
@@ -19717,13 +19717,13 @@
         "book": "Bovada",
         "aML": -4000,
         "bML": 1200,
-        "aSpread": -27.0,
-        "aSpreadOdds": -105,
-        "bSpread": 27.0,
-        "bSpreadOdds": -115,
-        "total": 54.0,
-        "overOdds": -105,
-        "underOdds": -115
+        "aSpread": -26.5,
+        "aSpreadOdds": -110,
+        "bSpread": 26.5,
+        "bSpreadOdds": -110,
+        "total": 53.5,
+        "overOdds": -115,
+        "underOdds": -105
       }
     ]
   },
@@ -19744,8 +19744,8 @@
     "bSpreadOdds": -106,
     "bSpreadOddsBook": "LowVig.ag",
     "total": 56.5,
-    "overOdds": -108,
-    "overOddsBook": "BetMGM",
+    "overOdds": -110,
+    "overOddsBook": "LowVig.ag",
     "underOdds": -106,
     "underOddsBook": "LowVig.ag",
     "books": [
@@ -19793,9 +19793,9 @@
         "aSpreadOdds": -110,
         "bSpread": -33.0,
         "bSpreadOdds": -108,
-        "total": 57.5,
-        "overOdds": -108,
-        "underOdds": -112
+        "total": 56.5,
+        "overOdds": -118,
+        "underOdds": -110
       },
       {
         "book": "BetUS",
@@ -20380,7 +20380,7 @@
     "league": "CFB",
     "date": "2026-09-13",
     "aTeam": "Montana State Bobcats",
-    "aML": -188,
+    "aML": -170,
     "aMLBook": "FanDuel",
     "aSpread": -3.5,
     "aSpreadOdds": -108,
@@ -20389,7 +20389,7 @@
     "bML": 164,
     "bMLBook": "DraftKings",
     "bSpread": 3.5,
-    "bSpreadOdds": -102,
+    "bSpreadOdds": -108,
     "bSpreadOddsBook": "FanDuel",
     "total": 50.5,
     "overOdds": -110,
@@ -20399,12 +20399,12 @@
     "books": [
       {
         "book": "FanDuel",
-        "aML": -188,
-        "bML": 155,
+        "aML": -170,
+        "bML": 140,
         "aSpread": -3.5,
-        "aSpreadOdds": -120,
+        "aSpreadOdds": -112,
         "bSpread": 3.5,
-        "bSpreadOdds": -102,
+        "bSpreadOdds": -108,
         "total": 50.5,
         "overOdds": -110,
         "underOdds": -110

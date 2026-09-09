@@ -475,6 +475,40 @@
       "line": 55.5,
       "favored_team": null,
       "direction": "under"
+    },
+    {
+      "id": "CFB|CFB-2026-09-09|Villanova vs Louisville|spread",
+      "league": "CFB",
+      "week": "CFB-2026-09-09",
+      "matchup": "Villanova vs Louisville",
+      "type": "spread",
+      "label": "Villanova +37.5",
+      "edge": 36.5,
+      "date_logged": "2026-09-09",
+      "status": "pending",
+      "graded_date": null,
+      "_away": "Villanova",
+      "_home": "Louisville",
+      "line": 37.5,
+      "favored_team": "Villanova",
+      "direction": null
+    },
+    {
+      "id": "CFB|CFB-2026-09-09|UC Davis vs SMU|spread",
+      "league": "CFB",
+      "week": "CFB-2026-09-09",
+      "matchup": "UC Davis vs SMU",
+      "type": "spread",
+      "label": "UC Davis +25.5",
+      "edge": 31.5,
+      "date_logged": "2026-09-09",
+      "status": "pending",
+      "graded_date": null,
+      "_away": "UC Davis",
+      "_home": "SMU",
+      "line": 25.5,
+      "favored_team": "UC Davis",
+      "direction": null
     }
   ]
 }
