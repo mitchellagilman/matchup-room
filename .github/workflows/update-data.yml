@@ -28,6 +28,10 @@ jobs:
         continue-on-error: true
         run: python3 scripts/fetch_nfl_schedule.py
 
+      - name: Fetch NFL current roster (nflverse, no key needed)
+        continue-on-error: true
+        run: python3 scripts/fetch_nfl_rosters.py
+
       - name: Fetch NFL player stats (nflverse, no key needed)
         continue-on-error: true
         run: python3 scripts/fetch_players_nfl.py
@@ -43,6 +47,12 @@ jobs:
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: python3 scripts/fetch_cfb_schedule.py
+
+      - name: Fetch CFB current roster (CollegeFootballData)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb_rosters.py
 
       - name: Fetch CFB player stats (CollegeFootballData)
         continue-on-error: true
