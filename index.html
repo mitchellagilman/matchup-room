@@ -134,6 +134,7 @@
     <div class="tab" data-tab="cfb">CFB</div>
     <div class="tab" data-tab="topbets">Top Bets</div>
     <div class="tab" data-tab="parlay">Parlay Calc</div>
+    <div class="tab" data-tab="track">Track Record</div>
   </div>
 
   <!-- ================= NFL ================= -->
@@ -149,7 +150,7 @@
     <div class="subpanel active" id="subpanel-nfl-week">
       <div class="card">
         <h2>How this works</h2>
-        <div class="note" style="margin-top:0;">Every team here has real per-game stats loaded in — scoring, passing yards, rushing yards, both sides of the ball. Pick a game below (or head to Matchup) and it lines up both teams' offense against the other's defense to show who has the statistical edge and a projected score. It's a data snapshot, not a pick.</div>
+        <div class="note" style="margin-top:0;">Every team here has real per-game stats loaded in — scoring, passing yards, rushing yards, both sides of the ball. Pick a game below (or head to Matchup) and it lines up both teams' offense against the other's defense, plus home-field advantage and turnover margin, to show who has the statistical edge and a projected score. It's a data snapshot, not a pick.</div>
       </div>
       <div class="card">
         <h2 id="nfl-week-heading">NFL Week 1 · 2026 season</h2>
@@ -306,17 +307,56 @@
 
   <!-- ================= TOP BETS ================= -->
   <div class="leaguepanel" id="panel-topbets">
+    <div class="tabs">
+      <div class="subtab active" data-subtab="topbets-team">Team Bets</div>
+      <div class="subtab" data-subtab="topbets-player">Player Props</div>
+    </div>
+
+    <div class="subpanel active" id="subpanel-topbets-team">
+      <div class="card">
+        <h2>How this is ranked</h2>
+        <div class="note" style="margin-top:0;">For every matchup this week, the model projects a score (same math as Matchup — offense-vs-defense yardage, home-field advantage, turnover margin, and for CFB, a blend with CFBD's opponent-adjusted SP+ rating) and compares it to the actual market spread/total from the odds board. These are the games where that gap is biggest — where the model disagrees with the market the most, in either direction. Confidence tiers reflect edge size, and for CFB, whether SP+ data backed the projection (box-score-only projections are noisier early season). A big gap isn't automatically right; it just means the numbers loaded here see it very differently than the number your book is offering. Needs both team stats and a market line loaded to show up.</div>
+      </div>
+      <div class="card">
+        <h2>NFL — top 10</h2>
+        <div id="nfl-topbets-list" class="empty">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>NCAA — top 10</h2>
+        <div id="cfb-topbets-list" class="empty">Loading...</div>
+      </div>
+    </div>
+
+    <div class="subpanel" id="subpanel-topbets-player">
+      <div class="card">
+        <h2>How this is ranked</h2>
+        <div class="note" style="margin-top:0;">Scans every loaded player with a game already logged and, for whoever's team is playing this week, finds the biggest mismatches between their production and this week's opponent's relevant defense — same defense-adjustment math as the hit rate checker. This isn't tied to a specific sportsbook line (you set that yourself in the hit rate checker) — it's "best and worst matchups this week," ranked by how far off average the matchup is. A high number means a favorable matchup for going over; a low one means the opposite.</div>
+      </div>
+      <div class="card">
+        <h2>NFL — top matchup targets</h2>
+        <div id="nfl-playerbets-list" class="empty">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>NCAA — top matchup targets</h2>
+        <div id="cfb-playerbets-list" class="empty">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TRACK RECORD ================= -->
+  <div class="leaguepanel" id="panel-track">
     <div class="card">
-      <h2>How this is ranked</h2>
-      <div class="note" style="margin-top:0;">For every matchup this week, the model projects a score (same offense-vs-defense math as Matchup) and compares it to the actual market spread/total from the odds board. These are the games where that gap is biggest — where the model disagrees with the market the most, in either direction. A big gap isn't automatically right; it just means the numbers loaded here see it very differently than the number your book is offering. Needs both team stats and a market line loaded to show up.</div>
+      <h2>How this works</h2>
+      <div class="note" style="margin-top:0;">Every week's Top Bets picks get logged automatically, before the games are played — not cherry-picked after the fact. Once a game is final, its picks get graded hit/miss/push against the real result. This is the actual track record, good or bad.</div>
     </div>
     <div class="card">
-      <h2>NFL — top 10</h2>
-      <div id="nfl-topbets-list" class="empty">Loading...</div>
-    </div>
-    <div class="card">
-      <h2>NCAA — top 10</h2>
-      <div id="cfb-topbets-list" class="empty">Loading...</div>
+      <h2>Record <span class="pill" id="track-record-summary"></span></h2>
+      <div class="tabs" id="track-filter" style="margin-bottom:12px;">
+        <div class="subtab active" data-trackfilter="ALL">All</div>
+        <div class="subtab" data-trackfilter="NFL">NFL</div>
+        <div class="subtab" data-trackfilter="CFB">CFB</div>
+      </div>
+      <div id="track-record-list" class="empty">Loading...</div>
     </div>
   </div>
 
@@ -340,7 +380,7 @@
           <div class="subtab" data-oddsfilter="CFB">CFB</div>
         </div>
         <div id="odds-board-list"></div>
-        <div class="note">Grouped by week (NFL) or date (CFB) so it's not one long undifferentiated list. Tap any price to add it to your slip in the Calculator tab. A greyed-out "—" means that side wasn't available from the source.</div>
+        <div class="note">Grouped by week (NFL) or date (CFB) so it's not one long undifferentiated list. Each price shown is the best available across every book The Odds API compares — tap "Compare all books" on a game to see the full breakdown and line-shop yourself. Tap any price to add it to your slip in the Calculator tab. A greyed-out "—" means that side wasn't available from the source.</div>
       </div>
     </div>
 
@@ -358,6 +398,7 @@
         <div id="parlay-slip" class="empty">No legs added yet — tap odds on the Odds Board tab or add a custom one.</div>
         <div class="field" style="margin-top:12px;"><label>Stake ($)</label><input id="parlay-stake" type="number" value="10"></div>
         <div id="parlay-result"></div>
+        <button id="copy-slip-btn" class="secondary" style="margin-top:10px;">Copy slip as text</button>
       </div>
     </div>
   </div>
@@ -892,24 +933,55 @@ function edgeRow(label, aVal, bVal, higherIsBetterForA){
   const aWins = higherIsBetterForA ? aVal>bVal : aVal<bVal;
   return '<div class="edge-row"><div class="edge-val '+(aWins?'win':'lose')+'">'+fmt(aVal)+'</div><div class="edge-label">'+label+'</div><div class="edge-val '+(!aWins?'win':'lose')+'">'+fmt(bVal)+'</div></div>';
 }
+
+const HOME_ADV = {NFL: 2.0, CFB: 2.5};
+const TO_FACTOR = 1.5;
+function computeProjection(nameA, nameB, league){
+  const A = teamsCache[nameA], B = teamsCache[nameB];
+  if(!A || !B) return null;
+  const aPassProj = (A.passOff + B.passDef)/2;
+  const bPassProj = (B.passOff + A.passDef)/2;
+  const aRushProj = (A.rushOff + B.rushDef)/2;
+  const bRushProj = (B.rushOff + A.rushDef)/2;
+
+  const homeAdv = HOME_ADV[league] || 2.0;
+  let aScoreBox = (A.ppg + B.pa)/2 - homeAdv/2 + (A.to||0)*TO_FACTOR;
+  let bScoreBox = (B.ppg + A.pa)/2 + homeAdv/2 + (B.to||0)*TO_FACTOR;
+  const total = aScoreBox + bScoreBox;
+  let spread = aScoreBox - bScoreBox;
+  let usedSP = false;
+
+  if(league==='CFB' && typeof A.spPlus==='number' && typeof B.spPlus==='number'){
+    const spSpread = (A.spPlus - B.spPlus) - homeAdv;
+    spread = spread*0.5 + spSpread*0.5;
+    usedSP = true;
+  }
+
+  const aScore = Math.round((total + spread)/2);
+  const bScore = Math.round((total - spread)/2);
+  return {
+    aScore, bScore, total: aScore+bScore, spread: aScore-bScore,
+    aPassProj, bPassProj, aRushProj, bRushProj, usedSP
+  };
+}
+
 function runMatchupFor(nameA, nameB, outId){
   const out = document.getElementById(outId);
   if(!nameA || !nameB || !teamsCache[nameA] || !teamsCache[nameB] || nameA===nameB){
     out.innerHTML = '<div class="card"><div class="empty">Both teams need stats saved first — add them in Teams.</div></div>';
     return;
   }
+  const league = teamsCache[nameA].league;
+  const proj = computeProjection(nameA, nameB, league);
   const A = teamsCache[nameA], B = teamsCache[nameB];
-  const aPassProj = (A.passOff + B.passDef)/2;
-  const bPassProj = (B.passOff + A.passDef)/2;
-  const aRushProj = (A.rushOff + B.rushDef)/2;
-  const bRushProj = (B.rushOff + A.rushDef)/2;
-  const aScore = Math.round((A.ppg + B.pa)/2);
-  const bScore = Math.round((B.ppg + A.pa)/2);
-  const total = aScore + bScore;
-  const spreadVal = aScore - bScore;
+  const total = proj.total;
+  const spreadVal = proj.aScore - proj.bScore;
   const spreadLabel = spreadVal===0 ? (nameA+' PK') : (spreadVal>0 ? (nameA+' -'+spreadVal) : (nameB+' -'+Math.abs(spreadVal)));
+  const methodNote = proj.usedSP
+    ? 'Blends offense-vs-defense yardage averaging with CFBD\'s opponent-adjusted SP+ ratings, plus home-field advantage (~'+HOME_ADV[league]+' pts to '+nameB+', assumed home) and each team\'s own turnover margin.'
+    : 'Offense-vs-defense yardage averaging, plus home-field advantage (~'+HOME_ADV[league]+' pts to '+nameB+', assumed home) and each team\'s own turnover margin. Not a sportsbook line.';
 
-  out.innerHTML = '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', aPassProj, bPassProj)+edgeRow('Proj. rush yds', aRushProj, bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="mu-add-spread">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="mu-add-total">Add "Total '+total+'" to parlay</button></div><div class="note">Rounded to a realistic final score from offense-vs-defense averaging — not a sportsbook line. The parlay buttons log the model own projected number at a placeholder -110.</div></div>';
+  out.innerHTML = '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+proj.aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+proj.bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', proj.aPassProj, proj.bPassProj)+edgeRow('Proj. rush yds', proj.aRushProj, proj.bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="mu-add-spread">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="mu-add-total">Add "Total '+total+'" to parlay</button></div><div class="note">'+methodNote+'</div></div>';
   document.getElementById('mu-add-spread').addEventListener('click', ()=> addLeg(spreadLabel+' (model proj.)', -110));
   document.getElementById('mu-add-total').addEventListener('click', ()=> addLeg('Total '+total+' (model proj.)', -110));
 }
@@ -981,9 +1053,7 @@ async function renderRankings(){
 function projectMatchup(nameA, nameB){
   const A = teamsCache[nameA], B = teamsCache[nameB];
   if(!A || !B) return null;
-  const aScore = Math.round((A.ppg + B.pa)/2);
-  const bScore = Math.round((B.ppg + A.pa)/2);
-  return {aScore, bScore, total: aScore+bScore, spread: aScore-bScore};
+  return computeProjection(nameA, nameB, A.league);
 }
 function teamNamesMatch(a, b){
   if(!a || !b) return false;
@@ -997,7 +1067,14 @@ function findMarketLine(nameA, nameB){
            (teamNamesMatch(o.aTeam,nameB) && teamNamesMatch(o.bTeam,nameA));
   });
 }
-function computeTopBets(games){
+function confidenceTier(edge, usedSP, league){
+  const dataOk = league!=='CFB' || usedSP;
+  if(edge>=7 && dataOk) return {label:'Strong', cls:'high'};
+  if(edge>=7) return {label:'Strong*', cls:'mid'};
+  if(edge>=3.5) return {label:'Moderate', cls:'mid'};
+  return {label:'Lean', cls:'low'};
+}
+function computeTopBets(games, league){
   const candidates = [];
   games.forEach(function(g){
     const proj = projectMatchup(g.a, g.b);
@@ -1013,7 +1090,8 @@ function computeTopBets(games){
       candidates.push({
         edge: Math.abs(spreadEdge),
         label: favoredTeam+' '+(favoredLine>0?'+':'')+favoredLine,
-        sub: g.a+' vs '+g.b+' · model has it '+(proj.spread>0?g.a:g.b)+' by '+Math.abs(proj.spread)
+        sub: g.a+' vs '+g.b+' · model has it '+(proj.spread>0?g.a:g.b)+' by '+Math.abs(proj.spread),
+        tier: confidenceTier(Math.abs(spreadEdge), proj.usedSP, league)
       });
     }
     if(market.total!==null && market.total!==undefined){
@@ -1021,7 +1099,8 @@ function computeTopBets(games){
       candidates.push({
         edge: Math.abs(totalEdge),
         label: (totalEdge>0?'Over':'Under')+' '+market.total,
-        sub: g.a+' vs '+g.b+' · model projects '+proj.total+' total points'
+        sub: g.a+' vs '+g.b+' · model projects '+proj.total+' total points',
+        tier: confidenceTier(Math.abs(totalEdge), proj.usedSP, league)
       });
     }
   });
@@ -1035,14 +1114,91 @@ function renderTopBetsList(elId, bets){
     return;
   }
   el.innerHTML = bets.map(function(b,i){
-    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.label+'</div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
+    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.label+' <span class="pill" style="background:rgba(240,185,61,0.15);">'+b.tier.label+'</span></div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
   }).join('');
 }
+
+function computeTopPlayerBets(league){
+  const candidates = [];
+  Object.keys(playersCache).forEach(function(name){
+    const p = playersCache[name];
+    if(p.league!==league) return;
+    const games = p.games || [];
+    if(games.length===0) return;
+    const opp = findOpponentThisWeek(league, p.team);
+    if(!opp || !teamsCache[opp]) return;
+    let mainStat = 'passYds';
+    if(p.pos==='RB') mainStat='rushYds';
+    if(p.pos==='WR'||p.pos==='TE') mainStat='recYds';
+    const defKey = defCategoryForStat(mainStat);
+    if(!defKey || !teamsCache[opp][defKey]) return;
+    const avgVal = leagueAvgDefStat(league, defKey);
+    if(!avgVal) return;
+    const ratio = teamsCache[opp][defKey] / avgVal;
+    const last5 = games.slice(-5);
+    const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
+    candidates.push({
+      name, pos: p.pos, team: p.team, opp, ratio, l5avg, statLabel: statLabel(mainStat),
+      direction: ratio>=1 ? 'favorable' : 'tough'
+    });
+  });
+  candidates.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
+  return candidates.slice(0, 10);
+}
+function renderPlayerBetsList(elId, bets){
+  const el = document.getElementById(elId);
+  if(bets.length===0){
+    el.innerHTML = '<div class="empty">No players with logged games and a resolvable opponent this week yet.</div>';
+    return;
+  }
+  el.innerHTML = bets.map(function(b,i){
+    const pct = Math.round((b.ratio-1)*100);
+    const dirLabel = b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average';
+    const cls = b.direction==='favorable' ? 'over' : 'under';
+    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+'</div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
+  }).join('');
+}
+
 async function renderTopBets(){
   await loadAllOdds();
-  renderTopBetsList('nfl-topbets-list', computeTopBets(NFL_WEEK_GAMES));
-  renderTopBetsList('cfb-topbets-list', computeTopBets(CFB_WEEK_GAMES));
+  renderTopBetsList('nfl-topbets-list', computeTopBets(NFL_WEEK_GAMES, 'NFL'));
+  renderTopBetsList('cfb-topbets-list', computeTopBets(CFB_WEEK_GAMES, 'CFB'));
+  renderPlayerBetsList('nfl-playerbets-list', computeTopPlayerBets('NFL'));
+  renderPlayerBetsList('cfb-playerbets-list', computeTopPlayerBets('CFB'));
 }
+
+let trackFilter = 'ALL';
+async function renderTrackRecord(){
+  const data = await fetchJSON('./data/track-record.json');
+  const picks = (data && data.picks) ? data.picks : [];
+  const filtered = trackFilter==='ALL' ? picks : picks.filter(function(p){ return p.league===trackFilter; });
+  const graded = filtered.filter(function(p){ return p.status==='hit' || p.status==='miss' || p.status==='push'; });
+  const hits = graded.filter(function(p){ return p.status==='hit'; }).length;
+  const pushes = graded.filter(function(p){ return p.status==='push'; }).length;
+  const misses = graded.filter(function(p){ return p.status==='miss'; }).length;
+  const summaryEl = document.getElementById('track-record-summary');
+  if(summaryEl){
+    summaryEl.textContent = graded.length ? (hits+'-'+misses+(pushes?'-'+pushes+' push':'')+' ('+Math.round(hits/(hits+misses||1)*100)+'%)') : 'no graded picks yet';
+  }
+  const list = document.getElementById('track-record-list');
+  if(filtered.length===0){
+    list.innerHTML = '<div class="empty">No picks logged yet — these get added automatically each week.</div>';
+    return;
+  }
+  const sorted = filtered.slice().sort(function(a,b){ return (b.date_logged||'').localeCompare(a.date_logged||''); });
+  list.innerHTML = sorted.map(function(p){
+    const statusColor = p.status==='hit' ? '#5eead4' : (p.status==='miss' ? '#f28b7d' : (p.status==='push' ? 'var(--muted)' : 'var(--accent)'));
+    const statusLabel = p.status==='pending' ? 'Pending' : p.status.charAt(0).toUpperCase()+p.status.slice(1);
+    return '<div class="team-row"><div><div class="team-name">'+p.label+' <span class="pill">'+p.league+'</span></div><div class="team-meta">'+p.matchup+' · '+p.week+' · edge '+fmt(p.edge)+' · logged '+p.date_logged+'</div></div><div style="color:'+statusColor+';font-weight:700;font-size:0.85rem;">'+statusLabel+'</div></div>';
+  }).join('');
+}
+document.querySelectorAll('#track-filter [data-trackfilter]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    trackFilter = btn.dataset.trackfilter;
+    document.querySelectorAll('#track-filter [data-trackfilter]').forEach(function(b){ b.classList.toggle('active', b===btn); });
+    renderTrackRecord();
+  });
+});
 
 let parlaySlip = [];
 function americanToDecimal(odds){ odds = Number(odds); return odds > 0 ? 1 + odds/100 : 1 + 100/Math.abs(odds); }
@@ -1104,11 +1260,12 @@ async function loadAllOdds(){
   return ALL_ODDS;
 }
 
-function legBtn(label, oddsVal){
+function legBtn(label, oddsVal, bookName){
   const b = document.createElement('button');
   b.className = 'secondary';
   const shown = (oddsVal===null || oddsVal===undefined) ? '—' : (oddsVal>0?'+':'')+oddsVal;
   b.textContent = label+' '+shown;
+  b.title = bookName ? ('Best price via '+bookName) : '';
   b.disabled = (oddsVal===null || oddsVal===undefined);
   b.addEventListener('click', function(){ if(oddsVal!==null && oddsVal!==undefined) addLeg(label, oddsVal); });
   return b;
@@ -1118,20 +1275,40 @@ function buildGameRow(g){
   wrap.style.cssText = 'border-bottom:1px solid var(--line);padding:10px 0;';
   const head = document.createElement('div');
   head.style.cssText = 'font-weight:700;font-size:0.88rem;margin-bottom:6px;';
-  head.innerHTML = g.game+' <span class="pill">'+g.league+'</span> <span class="game-date">'+g.date+'</span>';
+  const bookCount = (g.books||[]).length;
+  head.innerHTML = g.game+' <span class="pill">'+g.league+'</span> <span class="game-date">'+g.date+'</span>'+(bookCount>1?' <span class="pill" style="background:rgba(51,211,153,0.15);color:#5eead4;">'+bookCount+' books compared</span>':'');
   wrap.appendChild(head);
 
   const row1 = document.createElement('div'); row1.className = 'grid3';
-  row1.appendChild(legBtn(g.aTeam+' ML', g.aML));
-  row1.appendChild(legBtn(g.aTeam+' '+(g.aSpread>0?'+':'')+g.aSpread, g.aSpreadOdds));
-  row1.appendChild(legBtn('Over '+g.total, g.overOdds));
+  row1.appendChild(legBtn(g.aTeam+' ML', g.aML, g.aMLBook));
+  row1.appendChild(legBtn(g.aTeam+' '+(g.aSpread>0?'+':'')+g.aSpread, g.aSpreadOdds, g.aSpreadOddsBook));
+  row1.appendChild(legBtn('Over '+g.total, g.overOdds, g.overOddsBook));
   wrap.appendChild(row1);
 
   const row2 = document.createElement('div'); row2.className = 'grid3'; row2.style.marginTop = '6px';
-  row2.appendChild(legBtn(g.bTeam+' ML', g.bML));
-  row2.appendChild(legBtn(g.bTeam+' '+(g.bSpread>0?'+':'')+g.bSpread, g.bSpreadOdds));
-  row2.appendChild(legBtn('Under '+g.total, g.underOdds));
+  row2.appendChild(legBtn(g.bTeam+' ML', g.bML, g.bMLBook));
+  row2.appendChild(legBtn(g.bTeam+' '+(g.bSpread>0?'+':'')+g.bSpread, g.bSpreadOdds, g.bSpreadOddsBook));
+  row2.appendChild(legBtn('Under '+g.total, g.underOdds, g.underOddsBook));
   wrap.appendChild(row2);
+
+  if(bookCount>1){
+    const toggle = document.createElement('button');
+    toggle.className = 'secondary';
+    toggle.style.cssText = 'margin-top:6px;font-size:0.76rem;padding:5px 10px;';
+    toggle.textContent = 'Compare all '+bookCount+' books';
+    const table = document.createElement('div');
+    table.style.cssText = 'display:none;margin-top:8px;font-size:0.78rem;';
+    table.innerHTML = g.books.map(function(bk){
+      return '<div class="history-item"><span>'+bk.book+'</span><span>'+g.aTeam+' '+(bk.aSpread!=null?((bk.aSpread>0?'+':'')+bk.aSpread+' ('+bk.aSpreadOdds+')'):'—')+' · '+g.bTeam+' '+(bk.bSpread!=null?((bk.bSpread>0?'+':'')+bk.bSpread+' ('+bk.bSpreadOdds+')'):'—')+' · Total '+(bk.total!=null?bk.total:'—')+'</span></div>';
+    }).join('');
+    toggle.addEventListener('click', function(){
+      const showing = table.style.display!=='none';
+      table.style.display = showing ? 'none' : 'block';
+      toggle.textContent = showing ? ('Compare all '+bookCount+' books') : 'Hide comparison';
+    });
+    wrap.appendChild(toggle);
+    wrap.appendChild(table);
+  }
   return wrap;
 }
 
@@ -1191,6 +1368,21 @@ document.getElementById('add-custom-leg').addEventListener('click', ()=>{
   document.getElementById('cl-odds').value = '';
 });
 document.getElementById('parlay-stake').addEventListener('input', renderParlaySlip);
+document.getElementById('copy-slip-btn').addEventListener('click', function(){
+  if(parlaySlip.length===0){ alert('Your slip is empty.'); return; }
+  const stake = parseFloat(document.getElementById('parlay-stake').value) || 0;
+  const combinedDecimal = parlaySlip.reduce(function(acc,leg){return acc*americanToDecimal(leg.odds);}, 1);
+  const payout = stake * combinedDecimal;
+  let text = 'Parlay (' + parlaySlip.length + ' legs):\n';
+  parlaySlip.forEach(function(leg){ text += '- ' + leg.label + ' (' + (leg.odds>0?'+':'') + leg.odds + ')\n'; });
+  text += 'Combined odds: ' + decimalToAmerican(combinedDecimal) + '\n';
+  text += 'Stake: $' + fmt(stake) + ' -> Payout: $' + fmt(payout);
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(function(){ alert('Slip copied to clipboard.'); }).catch(function(){ prompt('Copy this:', text); });
+  } else {
+    prompt('Copy this:', text);
+  }
+});
 
 (async function init(){
   try{ await ensureSeeded(); }catch(e){ teamsCache = Object.assign({}, NFL_SEED, CFB_SEED); }
@@ -1203,6 +1395,7 @@ document.getElementById('parlay-stake').addEventListener('input', renderParlaySl
   try{ await ensurePlayersSeeded(); }catch(e){ playersCache = JSON.parse(JSON.stringify(PLAYERS_SEED)); }
   try{ refreshPlayersLists(); }catch(e){ populatePlayerSelects(); }
   try{ await renderTopBets(); }catch(e){}
+  try{ await renderTrackRecord(); }catch(e){}
 })();
 </script>
 </body>
