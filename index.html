@@ -182,8 +182,9 @@
       <div class="card">
         <h2>Hit rate checker</h2>
         <div class="note" style="margin-top:0;">Pick a player, pick a stat, enter the line from your sportsbook — see how often they've actually gone over it recently, adjusted for how tough this week's opponent's defense actually is.</div>
+        <div class="note">Every active roster player is loaded (position, current team) even before the season starts — game logs and hit rates fill in automatically once real 2026 games are played.</div>
         <div class="grid2">
-          <div class="field"><label>Filter by team</label><select id="nfl-hr-teamfilter"><option value="ALL">All teams</option></select></div>
+          <div class="field"><label>Search team</label><input id="nfl-hr-teamfilter" list="nfl-hr-teamlist" placeholder="Type to search, or leave blank for all" autocomplete="off"><datalist id="nfl-hr-teamlist"></datalist></div>
           <div class="field"><label>Player</label><select id="nfl-hr-player"></select></div>
         </div>
         <div class="field"><label>Stat</label>
@@ -271,7 +272,7 @@
         <h2>Hit rate checker</h2>
         <div class="note" style="margin-top:0;">Pick a player, pick a stat, enter the line from your sportsbook — adjusted for how tough this week's opponent's defense actually is.</div>
         <div class="grid2">
-          <div class="field"><label>Filter by team</label><select id="cfb-hr-teamfilter"><option value="ALL">All teams</option></select></div>
+          <div class="field"><label>Search team</label><input id="cfb-hr-teamfilter" list="cfb-hr-teamlist" placeholder="Type to search, or leave blank for all" autocomplete="off"><datalist id="cfb-hr-teamlist"></datalist></div>
           <div class="field"><label>Player</label><select id="cfb-hr-player"></select></div>
         </div>
         <div class="field"><label>Stat</label>
@@ -745,30 +746,32 @@ function populatePlayerSelects(){
   const nflNames = Object.keys(playersCache).filter(n=>playersCache[n].league==='NFL').sort();
   const cfbNames = Object.keys(playersCache).filter(n=>playersCache[n].league==='CFB').sort();
 
-  function optsFor(names, teamFilter){
+  function optsFor(names, searchText){
+    const q = (searchText||'').trim().toLowerCase();
     return names
-      .filter(n => teamFilter==='ALL' || playersCache[n].team===teamFilter)
+      .filter(n => !q || (playersCache[n].team||'').toLowerCase().indexOf(q) !== -1)
       .map(n=>'<option value="'+n+'">'+n+' ('+playersCache[n].pos+')</option>').join('');
   }
-  function fillSelect(id, names, teamFilter){
+  function fillSelect(id, names, searchText){
     const el = document.getElementById(id); if(!el) return;
     const prev = el.value;
-    const opts = optsFor(names, teamFilter);
-    el.innerHTML = opts || '<option value="">'+(names.length?'No players for this team':'No players loaded yet')+'</option>';
-    if(names.includes(prev) && (teamFilter==='ALL' || playersCache[prev].team===teamFilter)) el.value = prev;
+    const opts = optsFor(names, searchText);
+    el.innerHTML = opts || '<option value="">'+(names.length?'No players match that team':'No players loaded yet')+'</option>';
+    if(names.includes(prev)){
+      const q = (searchText||'').trim().toLowerCase();
+      if(!q || (playersCache[prev].team||'').toLowerCase().indexOf(q) !== -1) el.value = prev;
+    }
   }
-  function fillTeamFilter(id, names){
+  function fillTeamDatalist(id, names){
     const el = document.getElementById(id); if(!el) return;
-    const prev = el.value;
     const teams = Array.from(new Set(names.map(n=>playersCache[n].team).filter(Boolean))).sort();
-    el.innerHTML = '<option value="ALL">All teams</option>' + teams.map(t=>'<option value="'+t+'">'+t+'</option>').join('');
-    if(teams.includes(prev)) el.value = prev;
+    el.innerHTML = teams.map(t=>'<option value="'+t+'">').join('');
   }
 
-  fillTeamFilter('nfl-hr-teamfilter', nflNames);
-  fillTeamFilter('cfb-hr-teamfilter', cfbNames);
-  const nflFilter = document.getElementById('nfl-hr-teamfilter') ? document.getElementById('nfl-hr-teamfilter').value : 'ALL';
-  const cfbFilter = document.getElementById('cfb-hr-teamfilter') ? document.getElementById('cfb-hr-teamfilter').value : 'ALL';
+  fillTeamDatalist('nfl-hr-teamlist', nflNames);
+  fillTeamDatalist('cfb-hr-teamlist', cfbNames);
+  const nflFilter = document.getElementById('nfl-hr-teamfilter') ? document.getElementById('nfl-hr-teamfilter').value : '';
+  const cfbFilter = document.getElementById('cfb-hr-teamfilter') ? document.getElementById('cfb-hr-teamfilter').value : '';
   fillSelect('nfl-hr-player', nflNames, nflFilter);
   fillSelect('cfb-hr-player', cfbNames, cfbFilter);
 
@@ -779,7 +782,7 @@ function populatePlayerSelects(){
 }
 function wireHrTeamFilter(lg){
   const el = document.getElementById(lg+'-hr-teamfilter');
-  if(el) el.addEventListener('change', populatePlayerSelects);
+  if(el) el.addEventListener('input', populatePlayerSelects);
 }
 wireHrTeamFilter('nfl');
 wireHrTeamFilter('cfb');
@@ -811,11 +814,21 @@ function defCategoryForStat(stat){
   if(stat==='receptions' || stat==='recYds') return 'passDef';
   return null;
 }
+function normalizeTeamName(s){
+  return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[.,']/g,'').replace(/\s+/g,' ').trim();
+}
+function resolveTeamName(rawName){
+  if(teamsCache[rawName]) return rawName;
+  const norm = normalizeTeamName(rawName);
+  const match = Object.keys(teamsCache).find(k => normalizeTeamName(k)===norm);
+  return match || rawName;
+}
 function findOpponentThisWeek(league, teamName){
   const games = league==='NFL' ? NFL_WEEK_GAMES : CFB_WEEK_GAMES;
+  const norm = normalizeTeamName(teamName);
   for(const g of (games||[])){
-    if(g.a===teamName) return g.b;
-    if(g.b===teamName) return g.a;
+    if(normalizeTeamName(g.a)===norm) return resolveTeamName(g.b);
+    if(normalizeTeamName(g.b)===norm) return resolveTeamName(g.a);
   }
   return null;
 }
@@ -924,11 +937,12 @@ async function renderSchedule(){
   list.querySelectorAll('.game-row').forEach(function(row){
     row.addEventListener('click', function(){
       const g = games[row.dataset.idx];
+      const a = resolveTeamName(g.a), b = resolveTeamName(g.b);
       activateTopTab('nfl');
       activateSubTab('nfl-matchup');
-      document.getElementById('m-teamA-nfl').value = g.a;
-      document.getElementById('m-teamB-nfl').value = g.b;
-      runMatchupFor(g.a, g.b, 'matchup-output-nfl');
+      document.getElementById('m-teamA-nfl').value = a;
+      document.getElementById('m-teamB-nfl').value = b;
+      runMatchupFor(a, b, 'matchup-output-nfl');
     });
   });
 }
@@ -943,11 +957,12 @@ async function renderCfbSchedule(){
   list.querySelectorAll('.game-row').forEach(function(row){
     row.addEventListener('click', function(){
       const g = games[row.dataset.idx];
+      const a = resolveTeamName(g.a), b = resolveTeamName(g.b);
       activateTopTab('cfb');
       activateSubTab('cfb-matchup');
-      document.getElementById('m-teamA-cfb').value = g.a;
-      document.getElementById('m-teamB-cfb').value = g.b;
-      runMatchupFor(g.a, g.b, 'matchup-output-cfb');
+      document.getElementById('m-teamA-cfb').value = a;
+      document.getElementById('m-teamB-cfb').value = b;
+      runMatchupFor(a, b, 'matchup-output-cfb');
     });
   });
 }
