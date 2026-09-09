@@ -509,6 +509,23 @@
       "line": 25.5,
       "favored_team": "UC Davis",
       "direction": null
+    },
+    {
+      "id": "CFB|CFB-2026-09-09|Oklahoma vs Michigan|spread",
+      "league": "CFB",
+      "week": "CFB-2026-09-09",
+      "matchup": "Oklahoma vs Michigan",
+      "type": "spread",
+      "label": "Oklahoma -5.5",
+      "edge": 16.5,
+      "date_logged": "2026-09-09",
+      "status": "pending",
+      "graded_date": null,
+      "_away": "Oklahoma",
+      "_home": "Michigan",
+      "line": -5.5,
+      "favored_team": "Oklahoma",
+      "direction": null
     }
   ]
 }
