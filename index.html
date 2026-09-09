@@ -672,6 +672,11 @@ async function ensureSeeded(){
     const nflData = liveNfl || NFL_SEED;
     const cfbData = liveCfb || CFB_SEED;
     const today = new Date().toISOString().slice(0,10);
+    // Always re-sync every team to whatever's currently live (or the fallback
+    // constants) -- not just on first load. This is what makes Trends
+    // actually accumulate: a history entry is logged whenever the incoming
+    // numbers differ from what's already stored, which happens naturally
+    // whenever the weekly Action pushes fresh stats.
     async function syncTeam(name, incoming){
       const existing = teamsCache[name];
       if(!existing || JSON.stringify(existing) !== JSON.stringify(incoming)){
@@ -697,6 +702,8 @@ async function ensurePlayersSeeded(){
     for(const name in PLAYERS_SEED){
       if(!playersCache[name]){ playersCache[name] = JSON.parse(JSON.stringify(PLAYERS_SEED[name])); changed = true; }
     }
+    // Always re-sync from live data on every load, same as teams -- picks
+    // up new games/players each week instead of only on first visit.
     if(liveNflP){ for(const name in liveNflP){
       if(JSON.stringify(playersCache[name]) !== JSON.stringify(liveNflP[name])){ playersCache[name] = Object.assign({}, liveNflP[name]); changed = true; }
     } }
@@ -952,6 +959,18 @@ function edgeRow(label, aVal, bVal, higherIsBetterForA){
   return '<div class="edge-row"><div class="edge-val '+(aWins?'win':'lose')+'">'+fmt(aVal)+'</div><div class="edge-label">'+label+'</div><div class="edge-val '+(!aWins?'win':'lose')+'">'+fmt(bVal)+'</div></div>';
 }
 
+// Shared projection model, used by both the Matchup tab and Top Bets so
+// they can never drift out of sync with each other. Convention: nameB is
+// treated as the home team -- this matches how schedule games are always
+// built (a = away, b = home) and how the click-through flow uses it.
+// Beyond the original offense-vs-defense yardage averaging, this adds:
+//  - Home-field advantage (a flat points bump to the home side)
+//  - Turnover margin, applied as an actual point adjustment rather than
+//    just displayed as a reference stat
+//  - For CFB, a blend with CFBD's SP+ rating when available on both teams
+//    -- SP+ is opponent-adjusted (accounts for strength of schedule),
+//    which raw box-score yards/points don't, so blending it in should
+//    meaningfully help accuracy, especially early season.
 const HOME_ADV = {NFL: 2.0, CFB: 2.5};
 const TO_FACTOR = 1.5; // points per turnover-margin-per-game
 function computeProjection(nameA, nameB, league){
@@ -1013,7 +1032,36 @@ document.getElementById('run-matchup-cfb').addEventListener('click', ()=>{
 let CURRENT_NFL_WEEK = null;
 let NFL_WEEK_GAMES = [];
 let CFB_WEEK_GAMES = [];
+// Pulls best-price ML/spread for a specific schedule game out of a market
+// object, resolving which side (a/b) is which by name -- NOT by assuming
+// the odds source's team order matches the schedule's, which is exactly
+// the assumption that caused the CFB spread-sign bug above.
+function oddsForGame(market, g){
+  if(!market) return null;
+  const aMatchesGA = teamNamesMatch(market.aTeam, g.a);
+  return {
+    aML: aMatchesGA ? market.aML : market.bML,
+    aSpread: aMatchesGA ? market.aSpread : market.bSpread,
+    aSpreadOdds: aMatchesGA ? market.aSpreadOdds : market.bSpreadOdds,
+    bML: aMatchesGA ? market.bML : market.aML,
+    bSpread: aMatchesGA ? market.bSpread : market.aSpread,
+    bSpreadOdds: aMatchesGA ? market.bSpreadOdds : market.aSpreadOdds,
+  };
+}
+function fmtOddsNum(n){ return (n===null || n===undefined) ? '—' : (n>0?'+':'')+n; }
+function scheduleOddsLine(nameA, nameB){
+  const market = findMarketLine(nameA, nameB);
+  if(!market) return '<div class="team-meta" style="margin-top:4px;">No odds loaded for this game yet.</div>';
+  const o = oddsForGame(market, {a:nameA, b:nameB});
+  return '<div class="team-meta" style="margin-top:4px;">'
+    + nameA+' ML '+fmtOddsNum(o.aML)+' · '+fmtOddsNum(o.aSpread)+' ('+fmtOddsNum(o.aSpreadOdds)+')'
+    + ' &nbsp;|&nbsp; '
+    + nameB+' ML '+fmtOddsNum(o.bML)+' · '+fmtOddsNum(o.bSpread)+' ('+fmtOddsNum(o.bSpreadOdds)+')'
+    + '</div>';
+}
+
 async function renderSchedule(){
+  await loadAllOdds();
   const live = await fetchJSON('./data/nfl-schedule.json');
   const games = (live && live.games && live.games.length) ? live.games : NFL_WEEK1;
   NFL_WEEK_GAMES = games;
@@ -1022,7 +1070,10 @@ async function renderSchedule(){
   const heading = document.getElementById('nfl-week-heading');
   if(heading) heading.textContent = 'NFL Week ' + CURRENT_NFL_WEEK + ' · 2026 season';
   list.innerHTML = games.map(function(g,i){
-    return '<div class="game-row" data-idx="'+i+'"><div>'+g.a+' @ '+g.b+'</div><div class="game-date">'+g.date+'</div></div>';
+    return '<div class="game-row" data-idx="'+i+'" style="flex-direction:column;align-items:stretch;">'
+      + '<div style="display:flex;justify-content:space-between;width:100%;"><div>'+g.a+' @ '+g.b+'</div><div class="game-date">'+g.date+'</div></div>'
+      + scheduleOddsLine(g.a, g.b)
+      + '</div>';
   }).join('');
   list.querySelectorAll('.game-row').forEach(function(row){
     row.addEventListener('click', function(){
@@ -1037,12 +1088,16 @@ async function renderSchedule(){
   });
 }
 async function renderCfbSchedule(){
+  await loadAllOdds();
   const live = await fetchJSON('./data/cfb-schedule.json');
   const games = (live && live.length) ? live : CFB_WEEK;
   CFB_WEEK_GAMES = games;
   const list = document.getElementById('cfb-schedule-list');
   list.innerHTML = games.map(function(g,i){
-    return '<div class="game-row" data-idx="'+i+'"><div>'+g.a+' vs '+g.b+'</div><div class="game-date">'+g.date+'</div></div>';
+    return '<div class="game-row" data-idx="'+i+'" style="flex-direction:column;align-items:stretch;">'
+      + '<div style="display:flex;justify-content:space-between;width:100%;"><div>'+g.a+' vs '+g.b+'</div><div class="game-date">'+g.date+'</div></div>'
+      + scheduleOddsLine(g.a, g.b)
+      + '</div>';
   }).join('');
   list.querySelectorAll('.game-row').forEach(function(row){
     row.addEventListener('click', function(){
@@ -1068,15 +1123,18 @@ async function renderRankings(){
   else othersEl.textContent = '';
 }
 
+// ==================== top bets ====================
 function projectMatchup(nameA, nameB){
   const A = teamsCache[nameA], B = teamsCache[nameB];
   if(!A || !B) return null;
-  return computeProjection(nameA, nameB, A.league);
+  return computeProjection(nameA, nameB, A.league); // same model as the Matchup tab -- see computeProjection
 }
 function teamNamesMatch(a, b){
   if(!a || !b) return false;
   if(a===b) return true;
   const na = a.toLowerCase(), nb = b.toLowerCase();
+  // Bridges naming convention differences between sources -- e.g. CFBD's
+  // "Ohio State" vs an odds provider's "Ohio State Buckeyes".
   return na.indexOf(nb)===0 || nb.indexOf(na)===0;
 }
 function findMarketLine(nameA, nameB){
@@ -1086,9 +1144,13 @@ function findMarketLine(nameA, nameB){
   });
 }
 function confidenceTier(edge, usedSP, league){
+  // Confidence reflects both edge size and data quality -- a CFB pick
+  // backed by SP+ (opponent-adjusted) is more trustworthy than one from
+  // box-score stats alone, which are noisy early season before teams
+  // have played a representative slate of opponents.
   const dataOk = league!=='CFB' || usedSP;
   if(edge>=7 && dataOk) return {label:'Strong', cls:'high'};
-  if(edge>=7) return {label:'Strong*', cls:'mid'};
+  if(edge>=7) return {label:'Strong*', cls:'mid'}; // starred: box-score only, treat with extra caution
   if(edge>=3.5) return {label:'Moderate', cls:'mid'};
   return {label:'Lean', cls:'low'};
 }
@@ -1099,7 +1161,7 @@ function computeTopBets(games, league){
     if(!proj) return;
     const market = findMarketLine(g.a, g.b);
     if(!market) return;
-    const aIsEntryA = market.aTeam===g.a;
+    const aIsEntryA = teamNamesMatch(market.aTeam, g.a);
     const marketFavA = (market.aSpread===null || market.aSpread===undefined) ? null : (aIsEntryA ? -market.aSpread : market.aSpread);
     if(marketFavA!==null){
       const spreadEdge = proj.spread - marketFavA;
@@ -1136,6 +1198,10 @@ function renderTopBetsList(elId, bets){
   }).join('');
 }
 
+// ---- Player prop matchup targets: same defense-adjustment math as the
+// hit rate checker, but scanning every loaded player instead of one at a
+// time, ranked by how favorable/unfavorable this week's matchup is. Not
+// tied to a specific sportsbook line since none is set for most players.
 function computeTopPlayerBets(league){
   const candidates = [];
   Object.keys(playersCache).forEach(function(name){
@@ -1186,6 +1252,7 @@ async function renderTopBets(){
   renderPlayerBetsList('cfb-playerbets-list', computeTopPlayerBets('CFB'));
 }
 
+// ---- Track record ----
 let trackFilter = 'ALL';
 async function renderTrackRecord(){
   const data = await fetchJSON('./data/track-record.json');
@@ -1227,6 +1294,9 @@ function addLeg(label, odds){ parlaySlip.push({label:label, odds: Number(odds)})
 let ALL_ODDS = [];
 let oddsFilter = 'ALL';
 
+// Real NFL week boundaries for the 2026 season (verified against the live
+// schedule) -- used to label odds-board sections "Week 1", "Week 2", etc.
+// instead of leaving hundreds of games in one flat list.
 const NFL_WEEK_BOUNDARIES = {
   1: ["2026-09-09","2026-09-14"], 2: ["2026-09-17","2026-09-21"], 3: ["2026-09-24","2026-09-28"],
   4: ["2026-10-01","2026-10-05"], 5: ["2026-10-08","2026-10-12"], 6: ["2026-10-15","2026-10-19"],
