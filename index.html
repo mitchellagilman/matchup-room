@@ -842,7 +842,9 @@ function renderPlayersList(lg){
       let mainStat = 'passYds';
       if(p.pos==='RB') mainStat='rushYds';
       if(p.pos==='WR'||p.pos==='TE') mainStat='recYds';
-      return '<div class="team-row"><div><div class="team-name">'+n+' <span class="pill">'+p.pos+'</span></div><div class="team-meta">'+(p.team||'—')+' · '+g.length+' game'+(g.length===1?'':'s')+' logged · L5 avg '+statLabel(mainStat)+': '+fmt(avg(mainStat))+'</div></div></div>';
+      const unconfirmed = league==='NFL' && p.team && (p.teamYear==null);
+      const teamLabel = (p.team||'—') + (unconfirmed ? ' <span class="pill" style="background:rgba(242,139,125,0.15);color:#f28b7d;">not on active roster</span>' : '');
+      return '<div class="team-row"><div><div class="team-name">'+n+' <span class="pill">'+p.pos+'</span></div><div class="team-meta">'+teamLabel+' · '+g.length+' game'+(g.length===1?'':'s')+' logged · L5 avg '+statLabel(mainStat)+': '+fmt(avg(mainStat))+'</div></div></div>';
     }).join('');
   }
 }
@@ -852,10 +854,13 @@ function refreshPlayersLists(){ renderPlayersList('nfl'); renderPlayersList('cfb
 function defCategoryForStat(stat){
   if(stat==='passYds') return 'passDef';
   if(stat==='rushYds') return 'rushDef';
-  if(stat==='receptions' || stat==='recYds') return 'passDef';
-  return null;
+  if(stat==='receptions' || stat==='recYds') return 'passDef'; // receiving production runs against the opponent's pass defense
+  return null; // 'tds' isn't tied to one specific defensive category -- skipped rather than guessed
 }
 function normalizeTeamName(s){
+  // Strips accents/diacritics and punctuation so e.g. CFBD's "San José State"
+  // (from /teams/fbs) matches "San Jose State" (from /games) -- different
+  // endpoints don't always agree on exact spelling for the same team.
   return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[.,']/g,'').replace(/\s+/g,' ').trim();
 }
 function resolveTeamName(rawName){
@@ -887,6 +892,9 @@ function wireHitRate(lg){
     const out = document.getElementById(lg+'-hitrate-output');
     if(!name || !playersCache[name]){ out.innerHTML = '<div class="empty">No games logged for this player yet.</div>'; return; }
     const player = playersCache[name];
+    // Last 10 games, most-recent first -- dips into last season automatically
+    // when the current season doesn't have 10 games yet (handled by the
+    // fetch scripts; this slice(-10) is just a defensive cap in the UI too).
     const games = (player.games || []).slice(-10).reverse();
     if(games.length===0){ out.innerHTML = '<div class="empty">No games logged for this player yet.</div>'; return; }
     if(isNaN(line)){ out.innerHTML = '<div class="empty">Enter the line to check against.</div>'; return; }
@@ -895,15 +903,24 @@ function wireHitRate(lg){
     const last5 = games.slice(0,5);
     const last5overs = last5.filter(g=>(g[stat]||0) > line).length;
 
+    // Defense-adjusted estimate: scale the raw hit rate by how this week's
+    // opponent's relevant defense compares to the league average. This is a
+    // simple multiplicative heuristic, not a statistical model -- it's meant
+    // to show direction and rough size of the matchup effect, not a precise
+    // probability.
     let adjBlock = '';
     const league = lg.toUpperCase();
+    const teamUnconfirmed = league==='NFL' && player.team && (player.teamYear==null);
+    if(teamUnconfirmed){
+      adjBlock = '<div class="note" style="margin-top:14px;color:#f28b7d;">⚠ '+name+' isn\'t on any 2026 active roster in the latest data — "'+player.team+'" is just their last known team, not confirmed current. Skipping the opponent-defense adjustment since it depends on knowing who they\'re actually playing this week.</div>';
+    } else {
     const opp = findOpponentThisWeek(league, player.team);
     const defKey = defCategoryForStat(stat);
     if(opp && teamsCache[opp] && defKey && teamsCache[opp][defKey]){
       const oppVal = teamsCache[opp][defKey];
       const avgVal = leagueAvgDefStat(league, defKey);
       if(avgVal){
-        const ratio = oppVal/avgVal;
+        const ratio = oppVal/avgVal; // >1 = opponent allows more than average (easier matchup)
         const adjPct = Math.max(0, Math.min(100, Math.round(pct*ratio)));
         const adjClass = adjPct>=60 ? 'high' : (adjPct>=40 ? 'mid' : 'low');
         const strength = ratio>=1.08 ? 'a below-average' : (ratio<=0.92 ? 'a tougher-than-average' : 'a roughly average');
@@ -914,6 +931,7 @@ function wireHitRate(lg){
       }
     } else if(defKey){
       adjBlock = '<div class="note" style="margin-top:14px;">No opponent-defense adjustment available — '+(opp ? "couldn't find "+opp+"'s stats" : "couldn't find "+name+"'s game this week")+'.</div>';
+    }
     }
 
     const badgeClass = pct>=60 ? 'high' : (pct>=40 ? 'mid' : 'low');
@@ -935,7 +953,7 @@ function edgeRow(label, aVal, bVal, higherIsBetterForA){
 }
 
 const HOME_ADV = {NFL: 2.0, CFB: 2.5};
-const TO_FACTOR = 1.5;
+const TO_FACTOR = 1.5; // points per turnover-margin-per-game
 function computeProjection(nameA, nameB, league){
   const A = teamsCache[nameA], B = teamsCache[nameB];
   if(!A || !B) return null;
@@ -948,11 +966,11 @@ function computeProjection(nameA, nameB, league){
   let aScoreBox = (A.ppg + B.pa)/2 - homeAdv/2 + (A.to||0)*TO_FACTOR;
   let bScoreBox = (B.ppg + A.pa)/2 + homeAdv/2 + (B.to||0)*TO_FACTOR;
   const total = aScoreBox + bScoreBox;
-  let spread = aScoreBox - bScoreBox;
+  let spread = aScoreBox - bScoreBox; // positive = A favored
   let usedSP = false;
 
   if(league==='CFB' && typeof A.spPlus==='number' && typeof B.spPlus==='number'){
-    const spSpread = (A.spPlus - B.spPlus) - homeAdv;
+    const spSpread = (A.spPlus - B.spPlus) - homeAdv; // SP+ is neutral-field; apply home adv when converting to a game line
     spread = spread*0.5 + spSpread*0.5;
     usedSP = true;
   }
@@ -1123,6 +1141,7 @@ function computeTopPlayerBets(league){
   Object.keys(playersCache).forEach(function(name){
     const p = playersCache[name];
     if(p.league!==league) return;
+    if(league==='NFL' && p.team && p.teamYear==null) return; // not on a confirmed current roster -- team/opponent would be unreliable
     const games = p.games || [];
     if(games.length===0) return;
     const opp = findOpponentThisWeek(league, p.team);
