@@ -796,8 +796,8 @@
     "league": "NFL",
     "date": "2026-09-13",
     "aTeam": "Tampa Bay Buccaneers",
-    "aML": 180,
-    "aMLBook": "Bovada",
+    "aML": 177,
+    "aMLBook": "LowVig.ag",
     "aSpread": 3.5,
     "aSpreadOdds": -105,
     "aSpreadOddsBook": "FanDuel",
@@ -899,8 +899,8 @@
       },
       {
         "book": "Bovada",
-        "aML": 180,
-        "bML": -220,
+        "aML": 175,
+        "bML": -210,
         "aSpread": 4.0,
         "aSpreadOdds": -115,
         "bSpread": -4.0,
@@ -1192,14 +1192,14 @@
     "league": "NFL",
     "date": "2026-09-13",
     "aTeam": "New York Jets",
-    "aML": 105,
-    "aMLBook": "BetMGM",
+    "aML": 104,
+    "aMLBook": "FanDuel",
     "aSpread": 1.5,
     "aSpreadOdds": 101,
     "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Tennessee Titans",
     "bML": -120,
-    "bMLBook": "Bovada",
+    "bMLBook": "BetMGM",
     "bSpread": -1.5,
     "bSpreadOdds": -108,
     "bSpreadOddsBook": "BetMGM",
@@ -1283,14 +1283,14 @@
       },
       {
         "book": "BetMGM",
-        "aML": 105,
-        "bML": -125,
+        "aML": 100,
+        "bML": -120,
         "aSpread": 1.5,
         "aSpreadOdds": -110,
         "bSpread": -1.5,
         "bSpreadOdds": -108,
-        "total": 39.5,
-        "overOdds": -108,
+        "total": 39.0,
+        "overOdds": -118,
         "underOdds": -110
       },
       {
@@ -1835,8 +1835,8 @@
       },
       {
         "book": "MyBookie.ag",
-        "aML": 181,
-        "bML": -238,
+        "aML": 179,
+        "bML": -236,
         "aSpread": 5.0,
         "aSpreadOdds": -110,
         "bSpread": -5.0,
@@ -1943,15 +1943,15 @@
       },
       {
         "book": "Bovada",
-        "aML": -160,
-        "bML": 135,
+        "aML": null,
+        "bML": null,
         "aSpread": -3.0,
         "aSpreadOdds": -105,
         "bSpread": 3.0,
         "bSpreadOdds": -115,
-        "total": 48.0,
-        "overOdds": -110,
-        "underOdds": -110
+        "total": null,
+        "overOdds": null,
+        "underOdds": null
       },
       {
         "book": "BetUS",
@@ -2063,8 +2063,8 @@
       },
       {
         "book": "Bovada",
-        "aML": 125,
-        "bML": -145,
+        "aML": 130,
+        "bML": -150,
         "aSpread": 2.5,
         "aSpreadOdds": 100,
         "bSpread": -2.5,
@@ -13613,7 +13613,7 @@
     "bSpreadOddsBook": "FanDuel",
     "total": 54.5,
     "overOdds": -102,
-    "overOddsBook": "DraftKings",
+    "overOddsBook": "LowVig.ag",
     "underOdds": -110,
     "underOddsBook": "MyBookie.ag",
     "books": [
@@ -13650,8 +13650,8 @@
         "bSpread": -3.0,
         "bSpreadOdds": -115,
         "total": 54.5,
-        "overOdds": -102,
-        "underOdds": -118
+        "overOdds": -108,
+        "underOdds": -112
       },
       {
         "book": "LowVig.ag",
@@ -14322,8 +14322,8 @@
     "total": 48.5,
     "overOdds": -108,
     "overOddsBook": "LowVig.ag",
-    "underOdds": -106,
-    "underOddsBook": "FanDuel",
+    "underOdds": -105,
+    "underOddsBook": "BetMGM",
     "books": [
       {
         "book": "FanDuel",
@@ -14393,9 +14393,9 @@
         "aSpreadOdds": -110,
         "bSpread": -19.0,
         "bSpreadOdds": -108,
-        "total": 49.5,
-        "overOdds": -108,
-        "underOdds": -110
+        "total": 48.5,
+        "overOdds": -112,
+        "underOdds": -105
       },
       {
         "book": "BetRivers",
@@ -16619,15 +16619,15 @@
       },
       {
         "book": "BetRivers",
-        "aML": 100,
-        "bML": -124,
+        "aML": -105,
+        "bML": -120,
         "aSpread": 1.5,
         "aSpreadOdds": -114,
         "bSpread": -1.5,
         "bSpreadOdds": -109,
         "total": 66.5,
-        "overOdds": -109,
-        "underOdds": -113
+        "overOdds": -106,
+        "underOdds": -118
       },
       {
         "book": "BetUS",
@@ -16936,11 +16936,11 @@
     "league": "CFB",
     "date": "2026-09-12",
     "aTeam": "UNLV Rebels",
-    "aML": -159,
-    "aMLBook": "BetRivers",
+    "aML": -172,
+    "aMLBook": "FanDuel",
     "aSpread": -3.5,
-    "aSpreadOdds": 100,
-    "aSpreadOddsBook": "BetRivers",
+    "aSpreadOdds": -105,
+    "aSpreadOddsBook": "DraftKings",
     "bTeam": "North Texas Mean Green",
     "bML": 153,
     "bMLBook": "BetOnline.ag",
@@ -17015,12 +17015,12 @@
       },
       {
         "book": "BetRivers",
-        "aML": -159,
-        "bML": 128,
+        "aML": -175,
+        "bML": 140,
         "aSpread": -3.5,
-        "aSpreadOdds": 100,
+        "aSpreadOdds": -110,
         "bSpread": 3.5,
-        "bSpreadOdds": -122,
+        "bSpreadOdds": -112,
         "total": 57.5,
         "overOdds": -107,
         "underOdds": -117
@@ -18061,10 +18061,10 @@
         "book": "BetMGM",
         "aML": 275,
         "bML": -350,
-        "aSpread": 8.5,
-        "aSpreadOdds": -108,
-        "bSpread": -8.5,
-        "bSpreadOdds": -110,
+        "aSpread": 9.0,
+        "aSpreadOdds": -110,
+        "bSpread": -9.0,
+        "bSpreadOdds": -108,
         "total": 54.5,
         "overOdds": -110,
         "underOdds": -108
@@ -18893,7 +18893,7 @@
     "date": "2026-09-12",
     "aTeam": "Georgia Southern Eagles",
     "aML": 950,
-    "aMLBook": "BetRivers",
+    "aMLBook": "BetMGM",
     "aSpread": 20.5,
     "aSpreadOdds": -105,
     "aSpreadOddsBook": "DraftKings",
@@ -18947,12 +18947,12 @@
       },
       {
         "book": "BetMGM",
-        "aML": 900,
+        "aML": 950,
         "bML": -1400,
         "aSpread": 20.5,
-        "aSpreadOdds": -105,
+        "aSpreadOdds": -108,
         "bSpread": -20.5,
-        "bSpreadOdds": -112,
+        "bSpreadOdds": -110,
         "total": 55.5,
         "overOdds": -110,
         "underOdds": -108
@@ -19483,7 +19483,7 @@
     "overOdds": -105,
     "overOddsBook": "FanDuel",
     "underOdds": -108,
-    "underOddsBook": "LowVig.ag",
+    "underOddsBook": "DraftKings",
     "books": [
       {
         "book": "FanDuel",
@@ -19554,8 +19554,8 @@
         "bSpread": -1.5,
         "bSpreadOdds": -112,
         "total": 49.5,
-        "overOdds": -108,
-        "underOdds": -112
+        "overOdds": -112,
+        "underOdds": -108
       },
       {
         "book": "LowVig.ag",
