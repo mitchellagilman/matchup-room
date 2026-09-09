@@ -1079,7 +1079,7 @@ function renderGameBets(nameA, nameB){
   playerBets.forEach(function(b,i){
     const idx = teamBets.length + i + 1;
     const pct = Math.round((b.ratio-1)*100);
-    const dirLabel = b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average';
+    const dirLabel = (b.direction==='favorable' ? 'Over ' : 'Under ')+b.statLabel+' · '+(b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average');
     const cls = b.direction==='favorable' ? 'over' : 'under';
     rows += '<div class="team-row"><div><div class="team-name">'+idx+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+'</div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
   });
@@ -1322,7 +1322,7 @@ function renderPlayerBetsList(elId, bets){
   }
   el.innerHTML = bets.map(function(b,i){
     const pct = Math.round((b.ratio-1)*100);
-    const dirLabel = b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average';
+    const dirLabel = (b.direction==='favorable' ? 'Over ' : 'Under ')+b.statLabel+' · '+(b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average');
     const cls = b.direction==='favorable' ? 'over' : 'under';
     return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+'</div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
   }).join('');
