@@ -99,7 +99,7 @@ def compute_top_bets(games, teams, odds_list, league):
         market = find_market_line(g["a"], g["b"], odds_list)
         if not market:
             continue
-        a_is_entry_a = market.get("aTeam") == g["a"]
+        a_is_entry_a = team_names_match(market.get("aTeam"), g["a"])
         a_spread_val = market.get("aSpread")
         if a_spread_val is not None:
             market_fav_a = -a_spread_val if a_is_entry_a else a_spread_val
