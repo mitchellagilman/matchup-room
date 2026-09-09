@@ -330,7 +330,7 @@
     <div class="subpanel" id="subpanel-topbets-player">
       <div class="card">
         <h2>How this is ranked</h2>
-        <div class="note" style="margin-top:0;">Scans every loaded player with a game already logged and, for whoever's team is playing this week, finds the biggest mismatches between their production and this week's opponent's relevant defense — same defense-adjustment math as the hit rate checker. Each row includes a "projected" number: last-5-game average scaled by how much tougher or easier this opponent's defense is than league average. That's a simple heuristic, not a real sportsbook line — weigh it against whatever number your book is actually offering to decide which side of over/under looks like the better value.</div>
+        <div class="note" style="margin-top:0;">Scans every loaded player with a game already logged and, for whoever's team is playing this week, finds the biggest mismatches between their production and this week's opponent's relevant defense — same defense-adjustment math as the hit rate checker. Players averaging only a token amount over their last 5 games (e.g. a fullback who rarely touches the ball) are filtered out — there's no depth-chart data in this pipeline to know who's a real starter, so recent production volume is the best available stand-in. Each remaining row includes a "projected" number: last-5-game average scaled by how much tougher or easier this opponent's defense is than league average. That's a simple heuristic, not a real sportsbook line — weigh it against whatever number your book is actually offering to decide which side of over/under looks like the better value.</div>
       </div>
       <div class="card">
         <h2>NFL — top matchup targets</h2>
@@ -864,6 +864,18 @@ function defCategoryForStat(stat){
   if(stat==='receptions' || stat==='recYds') return 'passDef'; // receiving production runs against the opponent's pass defense
   return null; // 'tds' isn't tied to one specific defensive category -- skipped rather than guessed
 }
+// No source in this pipeline has real depth-chart data (starter vs. backup),
+// so player-prop bet lists can't filter on that directly. The best proxy
+// available is recent production volume: a fullback or inactive backup
+// with a 1-2 yard L5 average isn't a real betting signal no matter what
+// position label they carry, so bets below these thresholds are excluded
+// rather than shown as noise. These are heuristic cutoffs, not official
+// snap-count or depth-chart thresholds.
+const MIN_VOLUME_FOR_BET = { passYds: 75, rushYds: 15, recYds: 15 };
+function meetsVolumeThreshold(stat, l5avg){
+  const min = MIN_VOLUME_FOR_BET[stat];
+  return min===undefined || l5avg >= min;
+}
 function normalizeTeamName(s){
   // Strips accents/diacritics and punctuation so e.g. CFBD's "San José State"
   // (from /teams/fbs) matches "San Jose State" (from /games) -- different
@@ -1055,9 +1067,10 @@ function computeGameBets(nameA, nameB){
       if(!defKey || !teamsCache[oppName] || !teamsCache[oppName][defKey]) return;
       const avgVal = leagueAvgDefStat(league, defKey);
       if(!avgVal) return;
-      const ratio = teamsCache[oppName][defKey] / avgVal;
       const last5 = games.slice(-5);
       const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
+      if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
+      const ratio = teamsCache[oppName][defKey] / avgVal;
       const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderGameBets
       playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough' });
     });
@@ -1307,6 +1320,7 @@ function computeTopPlayerBets(league){
     const ratio = teamsCache[opp][defKey] / avgVal;
     const last5 = games.slice(-5);
     const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
+    if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
     const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderPlayerBetsList
     candidates.push({
       name, pos: p.pos, team: p.team, opp, ratio, l5avg, projected, statLabel: statLabel(mainStat),
