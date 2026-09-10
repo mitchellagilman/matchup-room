@@ -51,6 +51,7 @@ import sys
 import urllib.request
 import urllib.parse
 import datetime
+from cfbd_utils import cfbd_get
 
 TRACK_PATH = "data/track-record.json"
 HOME_ADV = {"NFL": 2.0, "CFB": 2.5}
@@ -285,10 +286,7 @@ def fetch_cfb_final_scores(year, api_key):
     if not api_key:
         return {}
     try:
-        url = f"https://api.collegefootballdata.com/games?{urllib.parse.urlencode({'year': year, 'seasonType': 'regular'})}"
-        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {api_key}", "Accept": "application/json"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            games = json.loads(resp.read().decode("utf-8"))
+        games = cfbd_get("/games", {"year": year, "seasonType": "regular"}, api_key)
     except Exception as e:
         print(f"Could not fetch CFB scores for grading ({e}); skipping CFB grading this run.", file=sys.stderr)
         return {}
