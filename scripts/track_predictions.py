@@ -81,6 +81,7 @@ TEAM_NAME_MAP = {
     "TEN": "Tennessee Titans", "WAS": "Washington Commanders",
 }
 STAT_LABELS = {"passYds": "passing yards", "rushYds": "rushing yards", "recYds": "receiving yards"}
+SHRINK_PRIOR_GAMES = 3  # mirrors index.html's SHRINK_PRIOR_GAMES -- keep in sync if it ever changes there
 
 
 def load_json(path, default):
@@ -91,19 +92,53 @@ def load_json(path, default):
         return default
 
 
+def league_avg_team_stat(teams, league, key):
+    vals = [t[key] for t in teams.values() if t.get("league") == league and t.get(key)]
+    if not vals:
+        return None
+    return sum(vals) / len(vals)
+
+
+def shrink_to_league_avg(raw_stat, league_avg, games_played):
+    """Mirrors index.html's shrinkToLeagueAvg() -- see that function's
+    comment for the full reasoning (a 1-2 game sample is extreme-outlier-
+    prone, confirmed live against a real NFL turnover-margin case)."""
+    if not games_played or games_played <= 0 or league_avg is None:
+        return raw_stat
+    return (raw_stat * games_played + league_avg * SHRINK_PRIOR_GAMES) / (games_played + SHRINK_PRIOR_GAMES)
+
+
 def compute_projection(a, b, teams, league, odds_list=None):
     A, B = teams.get(a), teams.get(b)
     if not A or not B:
         return None
     home_adv = HOME_ADV.get(league, 2.0)
-    a_score = (A.get("ppg", 0) + B.get("pa", 0)) / 2 - home_adv / 2 + A.get("to", 0) * TO_FACTOR
-    b_score = (B.get("ppg", 0) + A.get("pa", 0)) / 2 + home_adv / 2 + B.get("to", 0) * TO_FACTOR
+    a_games_played = len(A.get("games") or [])
+    b_games_played = len(B.get("games") or [])
+    league_avg_ppg = league_avg_team_stat(teams, league, "ppg")
+    league_avg_pa = league_avg_team_stat(teams, league, "pa")
+    league_avg_to = league_avg_team_stat(teams, league, "to")
+    a_ppg = shrink_to_league_avg(A.get("ppg", 0), league_avg_ppg, a_games_played)
+    a_pa = shrink_to_league_avg(A.get("pa", 0), league_avg_pa, a_games_played)
+    a_to = shrink_to_league_avg(A.get("to", 0), league_avg_to, a_games_played)
+    b_ppg = shrink_to_league_avg(B.get("ppg", 0), league_avg_ppg, b_games_played)
+    b_pa = shrink_to_league_avg(B.get("pa", 0), league_avg_pa, b_games_played)
+    b_to = shrink_to_league_avg(B.get("to", 0), league_avg_to, b_games_played)
+    a_score = (a_ppg + b_pa) / 2 - home_adv / 2 + a_to * TO_FACTOR
+    b_score = (b_ppg + a_pa) / 2 + home_adv / 2 + b_to * TO_FACTOR
     total = a_score + b_score
     spread = a_score - b_score
     market_anchored = False
     if league == "CFB" and isinstance(A.get("spPlus"), (int, float)) and isinstance(B.get("spPlus"), (int, float)):
+        # SP+ is opponent-adjusted; raw box-score ppg/pa isn't and is a
+        # tiny early-season sample -- see index.html's computeProjection
+        # for the full story (confirmed live: an 80-point blowout inflated
+        # a team's box-score offense while barely moving their real SP+
+        # rating, and a 50/50 blend let that single outlier turn a ~30-point
+        # mismatch into a near-toss-up projection). Weighted toward SP+
+        # rather than split evenly with the noisier box-score signal.
         sp_spread = (A["spPlus"] - B["spPlus"]) - home_adv
-        spread = spread * 0.5 + sp_spread * 0.5
+        spread = spread * 0.25 + sp_spread * 0.75
     elif league == "CFB" and A.get("division") and B.get("division") and A["division"] != B["division"] and odds_list:
         # FBS vs FCS -- see index.html's computeProjection for the full
         # explanation (confirmed live: box-score-only math produced a
