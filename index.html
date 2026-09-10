@@ -30,7 +30,7 @@
     font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
     line-height:1.45;
   }
-  .wrap{max-width:960px;margin:0 auto;padding:14px 16px 112px;}
+  .wrap{max-width:960px;margin:0 auto;padding:14px 16px 138px;}
   .header-row{
     display:flex;
     align-items:flex-start;
@@ -117,7 +117,7 @@
   .glog-val{font-weight:700;font-variant-numeric:tabular-nums;}
   .glog-val.over{color:#5eead4;}
   .glog-val.under{color:#f28b7d;}
- 
+
   /* ---- App shell: sticky search header + fixed bottom nav ---- */
   .app-header{position:sticky;top:0;z-index:50;background:var(--bg);padding:10px 0 10px;margin-bottom:2px;}
   .brand-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
@@ -133,13 +133,13 @@
   .search-result-row:hover{background:rgba(240,185,61,0.08);}
   .search-result-name{font-weight:700;font-size:0.86rem;}
   .search-result-meta{color:var(--muted);font-size:0.72rem;}
- 
-  .bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;justify-content:space-around;align-items:center;background:rgba(17,21,28,0.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:10px 2px calc(10px + env(safe-area-inset-bottom));}
-  .bottom-nav-item{display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--muted);font-size:0.76rem;font-weight:700;cursor:pointer;flex:1;padding:5px 1px;}
+
+  .bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;justify-content:space-around;align-items:center;background:rgba(17,21,28,0.98);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:12px 2px calc(14px + env(safe-area-inset-bottom));}
+  .bottom-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--muted);font-size:0.92rem;font-weight:700;cursor:pointer;flex:1;min-height:52px;padding:6px 2px;}
   .bottom-nav-item.active{color:var(--accent);}
-  .bottom-nav-icon{width:28px;height:28px;line-height:1;}
+  .bottom-nav-icon{width:36px;height:36px;line-height:1;}
   .bottom-nav-icon svg{width:100%;height:100%;}
- 
+
   .home-hero{background:radial-gradient(ellipse 420px 200px at 0% 0%, rgba(106,111,240,0.18), transparent 70%), linear-gradient(160deg, rgba(232,182,74,0.10), transparent 60%);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px;}
   .home-hero-label{color:var(--muted);font-size:0.74rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;}
   .home-hero-title{font-family:var(--font-display);font-size:1.25rem;font-weight:800;margin:4px 0 2px;}
@@ -167,12 +167,12 @@
       <div id="global-search-results" class="search-results"></div>
     </div>
   </div>
- 
+
   <!-- ================= HOME ================= -->
   <div class="leaguepanel active" id="panel-home">
     <div id="home-content"></div>
   </div>
- 
+
   <!-- ================= NFL ================= -->
   <div class="leaguepanel" id="panel-nfl">
     <div class="tabs">
@@ -183,7 +183,7 @@
       <div class="subtab" data-subtab="nfl-trends">Trends</div>
       <div class="subtab" data-subtab="nfl-injuries">Injuries</div>
     </div>
- 
+
     <div class="subpanel active" id="subpanel-nfl-week">
       <div class="card">
         <h2>How this works</h2>
@@ -195,7 +195,7 @@
         <div class="note">Tap a game to load both teams into Matchup. Games kick off Sept 9-14.</div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-nfl-teams">
       <div id="nfl-team-detail"></div>
       <div class="card">
@@ -204,7 +204,7 @@
         <div id="nfl-team-list" class="empty">Loading...</div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-nfl-matchup">
       <div class="card">
         <h2>NFL matchup</h2>
@@ -216,7 +216,7 @@
       </div>
       <div id="matchup-output-nfl"></div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-nfl-players">
       <div id="nfl-player-detail"></div>
       <div class="card">
@@ -245,7 +245,7 @@
         <div id="nfl-players-list" class="empty">Loading...</div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-nfl-trends">
       <div class="card">
         <h2>View trend history</h2>
@@ -254,7 +254,7 @@
       </div>
       <div id="nfl-trend-output"></div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-nfl-injuries">
       <div class="card">
         <h2>Injury report <span class="pill" id="nfl-injury-week"></span></h2>
@@ -263,7 +263,7 @@
       </div>
     </div>
   </div>
- 
+
   <!-- ================= CFB ================= -->
   <div class="leaguepanel" id="panel-cfb">
     <div class="tabs">
@@ -275,7 +275,7 @@
       <div class="subtab" data-subtab="cfb-trends">Trends</div>
       <div class="subtab" data-subtab="cfb-injuries">Injuries</div>
     </div>
- 
+
     <div class="subpanel active" id="subpanel-cfb-week">
       <div class="card">
         <h2>Top 25 matchups this week</h2>
@@ -283,7 +283,7 @@
         <div class="note">Tap a game to load both teams into Matchup.</div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-cfb-rankings">
       <div class="card">
         <h2>AP Top 25 <span class="pill">as of Sept 6, 2026</span></h2>
@@ -295,7 +295,7 @@
         <div id="cfb-others-list" class="note"></div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-cfb-teams">
       <div id="cfb-team-detail"></div>
       <div class="card">
@@ -304,7 +304,7 @@
         <div id="cfb-team-list" class="empty">Loading...</div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-cfb-matchup">
       <div class="card">
         <h2>College matchup</h2>
@@ -316,7 +316,7 @@
       </div>
       <div id="matchup-output-cfb"></div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-cfb-players">
       <div id="cfb-player-detail"></div>
       <div class="card">
@@ -344,7 +344,7 @@
         <div id="cfb-players-list" class="empty">Loading...</div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-cfb-trends">
       <div class="card">
         <h2>View trend history</h2>
@@ -353,7 +353,7 @@
       </div>
       <div id="cfb-trend-output"></div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-cfb-injuries">
       <div class="card">
         <h2>Injury report</h2>
@@ -361,14 +361,14 @@
       </div>
     </div>
   </div>
- 
+
   <!-- ================= TOP BETS ================= -->
   <div class="leaguepanel" id="panel-topbets">
     <div class="tabs">
       <div class="subtab active" data-subtab="topbets-team">Team Bets</div>
       <div class="subtab" data-subtab="topbets-player">Player Props</div>
     </div>
- 
+
     <div class="subpanel active" id="subpanel-topbets-team">
       <div class="card">
         <h2>How this is ranked</h2>
@@ -392,7 +392,7 @@
         <div id="cfb-topparlays-list" class="empty">Loading...</div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-topbets-player">
       <div class="card">
         <h2>How this is ranked</h2>
@@ -408,7 +408,7 @@
       </div>
     </div>
   </div>
- 
+
   <!-- ================= TRACK RECORD ================= -->
   <div class="leaguepanel" id="panel-track">
     <div class="card">
@@ -438,14 +438,14 @@
       <div id="track-record-list" class="empty">Loading...</div>
     </div>
   </div>
- 
+
   <!-- ================= PARLAY ================= -->
   <div class="leaguepanel" id="panel-parlay">
     <div class="tabs">
       <div class="subtab active" data-subtab="odds-board">Odds Board</div>
       <div class="subtab" data-subtab="parlay-calc">Calculator</div>
     </div>
- 
+
     <div class="subpanel active" id="subpanel-odds-board">
       <div class="card">
         <h2>How this works <span class="pill">real odds, not live</span></h2>
@@ -462,7 +462,7 @@
         <div class="note">Grouped by week (NFL) or date (CFB) so it's not one long undifferentiated list. Each price shown is the best available across every book The Odds API compares — tap "Compare all books" on a game to see the full breakdown and line-shop yourself. Tap any price to add it to your slip in the Calculator tab. A greyed-out "—" means that side wasn't available from the source.</div>
       </div>
     </div>
- 
+
     <div class="subpanel" id="subpanel-parlay-calc">
       <div class="card">
         <h2>Add a custom leg</h2>
@@ -482,18 +482,18 @@
     </div>
   </div>
 </div>
- 
+
 <div class="bottom-nav">
   <div class="bottom-nav-item active" data-tab="home">
     <span class="bottom-nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
     <span>Home</span>
   </div>
   <div class="bottom-nav-item" data-tab="nfl">
-    <span class="bottom-nav-icon" style="font-size:1.55rem;">🏈</span>
+    <span class="bottom-nav-icon" style="font-size:2rem;">🏈</span>
     <span>NFL</span>
   </div>
   <div class="bottom-nav-item" data-tab="cfb">
-    <span class="bottom-nav-icon" style="font-size:1.55rem;">🎓</span>
+    <span class="bottom-nav-icon" style="font-size:2rem;">🎓</span>
     <span>CFB</span>
   </div>
   <div class="bottom-nav-item" data-tab="topbets">
@@ -509,12 +509,12 @@
     <span>Track</span>
   </div>
 </div>
- 
+
 <script>
 const STORAGE_KEY = 'teams-db';
 const SEED_FLAG_KEY = 'seeded-v6';
 const PLAYERS_SEED_FLAG_KEY = 'players-seeded-v2';
- 
+
 function fmt(n){ return (Math.round(n*10)/10).toFixed(1); }
 // The model's own projected spread/total (unlike a real market line, which
 // almost never lands on a whole number for exactly this reason) is built
@@ -530,7 +530,7 @@ function tieSafeLine(n){
   if(Number.isInteger(n)) return n>0 ? n+0.5 : n-0.5;
   return n;
 }
- 
+
 const NFL_SEED = {
 "Los Angeles Rams": {league:"NFL", ppg:30.5, pa:20.4, passOff:268.1, rushOff:126.6, passDef:216.7, rushDef:110.8, to:0.65, ats:""},
 "Dallas Cowboys": {league:"NFL", ppg:27.7, pa:30.1, passOff:266.3, rushOff:125.6, passDef:251.5, rushDef:125.5, to:-0.53, ats:""},
@@ -565,7 +565,7 @@ const NFL_SEED = {
 "Tennessee Titans": {league:"NFL", ppg:16.7, pa:28.1, passOff:166.1, rushOff:93.5, passDef:230.5, rushDef:114.6, to:-0.29, ats:""},
 "Las Vegas Raiders": {league:"NFL", ppg:14.2, pa:25.4, passOff:167.7, rushOff:77.5, passDef:201.0, rushDef:116.8, to:-0.41, ats:""}
 };
- 
+
 const CFB_SEED = {
 "Alabama": {league:"CFB", conf:"SEC", ppg:48, pa:14, passOff:263.5, rushOff:104.1, passDef:169.9, rushDef:126.9, to:0, ats:"", wk1:true},
 "Arkansas": {league:"CFB", conf:"SEC", ppg:32.9, pa:33.8, passOff:262.9, rushOff:191.9, passDef:239.2, rushDef:185.9, to:0, ats:""},
@@ -636,7 +636,7 @@ const CFB_SEED = {
 "Wake Forest": {league:"CFB", conf:"ACC", ppg:28.1, pa:22.1, passOff:237.7, rushOff:156.2, passDef:206.9, rushDef:121.6, to:0, ats:""},
 "Notre Dame": {league:"CFB", conf:"Independent", ppg:42.0, pa:17.6, passOff:255.1, rushOff:203.4, passDef:213.4, rushDef:100.1, to:0, ats:""}
 };
- 
+
 const NFL_WEEK1 = [
   {a:"New England Patriots", b:"Seattle Seahawks", date:"Wed Sep 9"},
   {a:"San Francisco 49ers", b:"Los Angeles Rams", date:"Thu Sep 10 (Melbourne)"},
@@ -655,7 +655,7 @@ const NFL_WEEK1 = [
   {a:"Dallas Cowboys", b:"New York Giants", date:"Sun Sep 13 (SNF)"},
   {a:"Denver Broncos", b:"Kansas City Chiefs", date:"Mon Sep 14 (MNF)"}
 ];
- 
+
 const CFB_TOP25 = [
   {rank:1, team:"Ohio State", record:"1-0", next:"@ Texas (Sep 12)"},
   {rank:2, team:"Oregon", record:"1-0", next:"@ Oklahoma State (Sep 12)"},
@@ -684,7 +684,7 @@ const CFB_TOP25 = [
   {rank:25, team:"Missouri", record:"1-0", next:"@ Kansas (Sep 11)"}
 ];
 const CFB_OTHERS = "Clemson (0-1), Florida (1-0), Boise State (0-1), Arizona (1-0), TCU (0-1), Navy (1-0), South Carolina (1-0), Illinois (1-0), Vanderbilt (1-0), Oklahoma State (0-1), Pittsburgh (1-0), Virginia Tech (1-0), Minnesota (1-0), Louisiana (1-0), Georgia Tech (0-1), UNLV (1-1), New Mexico (1-0), Auburn (1-0), James Madison (1-0), Memphis (2-0), California (0-1), Liberty (0-1), Tulane (0-1), Virginia (1-0), Western Michigan (0-1)";
- 
+
 const CFB_WEEK = [
   {a:"Ohio State", b:"Texas", date:"Sat Sep 12"},
   {a:"Oregon", b:"Oklahoma State", date:"Sat Sep 12"},
@@ -709,13 +709,13 @@ const CFB_WEEK = [
   {a:"Houston", b:"Southern U.", date:"Sat Sep 12"},
   {a:"Missouri", b:"Kansas", date:"Fri Sep 11"}
 ];
- 
+
 const PLAYERS_SEED = {
 "Jayden Maiava": {pos:"QB", team:"USC", league:"CFB", games:[{date:"2026-09-05", opp:"vs Missouri State", passYds:635, rushYds:0, receptions:0, recYds:0, tds:5}]},
 "Nate Sheppard": {pos:"RB", team:"Duke", league:"CFB", games:[{date:"2026-09-05", opp:"Week 1", passYds:0, rushYds:227, receptions:0, recYds:0, tds:2}]},
 "Malachi Toney": {pos:"WR", team:"Miami", league:"CFB", games:[{date:"2026-09-05", opp:"vs Florida A&M", passYds:0, rushYds:0, receptions:0, recYds:234, tds:2}]}
 };
- 
+
 const ODDS_SEED = [
   {game:"Dallas Cowboys @ New York Giants", league:"NFL", date:"Sep 13",
    aTeam:"Dallas Cowboys", aML:-148, aSpread:-2.5, aSpreadOdds:-110,
@@ -730,11 +730,11 @@ const ODDS_SEED = [
    bTeam:"Texas", bML:-115, bSpread:-1.5, bSpreadOdds:-110,
    total:47.5, overOdds:-110, underOdds:-110}
 ];
- 
+
 const hasStorage = (typeof window.storage !== 'undefined' && window.storage !== null);
 let memTeams = {}, memHistory = {}, memPlayers = {};
 let storageWarned = false;
- 
+
 function warnNoStorage(){
   if(storageWarned) return;
   storageWarned = true;
@@ -744,7 +744,7 @@ function warnNoStorage(){
   banner.textContent = "Note: your edits won't be saved between visits in this view — everything still works for now, pre-loaded with real stats.";
   document.querySelector('.wrap').insertBefore(banner, document.querySelector('.app-header').nextSibling);
 }
- 
+
 async function fetchJSON(path){
   try{
     const res = await fetch(path, {cache:'no-store'});
@@ -752,7 +752,7 @@ async function fetchJSON(path){
     return await res.json();
   }catch(e){ return null; }
 }
- 
+
 async function loadTeams(){
   if(!hasStorage){ warnNoStorage(); return memTeams; }
   try{ const res = await window.storage.get(STORAGE_KEY, false); return res ? JSON.parse(res.value) : {}; }catch(e){ return {}; }
@@ -779,10 +779,10 @@ async function savePlayers(players){
   if(!hasStorage){ memPlayers = players; return; }
   try{ await window.storage.set('players-db', JSON.stringify(players), false); }catch(e){ memPlayers = players; }
 }
- 
+
 let teamsCache = {};
 let playersCache = {};
- 
+
 async function ensureSeeded(){
   try{
     teamsCache = await loadTeams();
@@ -812,7 +812,27 @@ async function ensureSeeded(){
     teamsCache = Object.assign({}, NFL_SEED, CFB_SEED);
   }
 }
- 
+
+// NFL and CFB players share one flat dictionary keyed by plain name, with
+// no league-scoping -- confirmed live: "Caleb Williams" is both the
+// Bears' real starting QB (NFL) and a CFB running back at New Haven, and
+// since CFB data merges in after NFL, the CFB entry was silently
+// overwriting the NFL one. The Bears' actual QB vanished from every
+// NFL-only view (the Hit Rate Checker's player list, in particular)
+// because his own name pointed at someone else's data entirely. This
+// detects a cross-league name collision at merge time and disambiguates
+// with a league suffix instead of letting one clobber the other, rather
+// than re-keying the whole app (playersCache[name] lookups are used in
+// many places -- this fixes the merge without touching all of them).
+function mergePlayerEntry(cache, name, incoming){
+  const existing = cache[name];
+  const key = (existing && existing.league && existing.league!==incoming.league) ? (name+' ('+incoming.league+')') : name;
+  if(JSON.stringify(cache[key]) !== JSON.stringify(incoming)){
+    cache[key] = Object.assign({}, incoming);
+    return true;
+  }
+  return false;
+}
 async function ensurePlayersSeeded(){
   try{
     playersCache = await loadPlayers();
@@ -824,18 +844,21 @@ async function ensurePlayersSeeded(){
     }
     // Always re-sync from live data on every load, same as teams -- picks
     // up new games/players each week instead of only on first visit.
+    // NFL merges first, so it always keeps the plain name; a CFB player
+    // who collides with an existing NFL name gets the "(CFB)" suffix --
+    // see mergePlayerEntry's comment above for why this exists at all.
     if(liveNflP){ for(const name in liveNflP){
-      if(JSON.stringify(playersCache[name]) !== JSON.stringify(liveNflP[name])){ playersCache[name] = Object.assign({}, liveNflP[name]); changed = true; }
+      if(mergePlayerEntry(playersCache, name, liveNflP[name])) changed = true;
     } }
     if(liveCfbP){ for(const name in liveCfbP){
-      if(JSON.stringify(playersCache[name]) !== JSON.stringify(liveCfbP[name])){ playersCache[name] = Object.assign({}, liveCfbP[name]); changed = true; }
+      if(mergePlayerEntry(playersCache, name, liveCfbP[name])) changed = true;
     } }
     if(changed) await savePlayers(playersCache);
   }catch(e){
     playersCache = JSON.parse(JSON.stringify(PLAYERS_SEED));
   }
 }
- 
+
 function activateTopTab(tabName){
   document.querySelectorAll('.bottom-nav-item[data-tab]').forEach(t=>t.classList.toggle('active', t.dataset.tab===tabName));
   document.querySelectorAll('.leaguepanel').forEach(p=>p.classList.toggle('active', p.id==='panel-'+tabName));
@@ -853,7 +876,7 @@ document.querySelectorAll('.bottom-nav-item[data-tab]').forEach(tab=>{
 document.querySelectorAll('.subtab[data-subtab]').forEach(tab=>{
   tab.addEventListener('click', ()=> activateSubTab(tab.dataset.subtab));
 });
- 
+
 // Ranks a team among every other team in its own league for a given stat.
 // For passOff/rushOff/ppg, higher is better (rank 1 = most). For
 // passDef/rushDef/pa, LOWER is better (rank 1 = fewest allowed) -- flip
@@ -928,7 +951,7 @@ function renderTeamList(lg){
   }
 }
 function refreshTeamLists(){ renderTeamList('nfl'); renderTeamList('cfb'); populateSelects(); }
- 
+
 function populateSelects(){
   const nflNames = Object.keys(teamsCache).filter(n=>teamsCache[n].league==='NFL').sort();
   const cfbNames = Object.keys(teamsCache).filter(n=>teamsCache[n].league==='CFB').sort();
@@ -945,7 +968,7 @@ function populateSelects(){
     if(cfbNames.includes(prev)) el.value = prev;
   });
 }
- 
+
 function wireTrend(lg){
   document.getElementById(lg+'-load-trend').addEventListener('click', async ()=>{
     const name = document.getElementById(lg+'-trend-team').value;
@@ -964,14 +987,14 @@ function wireTrend(lg){
 }
 wireTrend('nfl');
 wireTrend('cfb');
- 
+
 function statLabel(stat){
   return {passYds:'passing yards', rushYds:'rushing yards', receptions:'receptions', recYds:'receiving yards', tds:'total TDs'}[stat] || stat;
 }
 function populatePlayerSelects(){
   const nflNames = Object.keys(playersCache).filter(n=>playersCache[n].league==='NFL').sort();
   const cfbNames = Object.keys(playersCache).filter(n=>playersCache[n].league==='CFB').sort();
- 
+
   function optsFor(names, searchText){
     const q = (searchText||'').trim().toLowerCase();
     return names
@@ -993,14 +1016,14 @@ function populatePlayerSelects(){
     const teams = Array.from(new Set(names.map(n=>playersCache[n].team).filter(Boolean))).sort();
     el.innerHTML = teams.map(t=>'<option value="'+t+'">').join('');
   }
- 
+
   fillTeamDatalist('nfl-hr-teamlist', nflNames);
   fillTeamDatalist('cfb-hr-teamlist', cfbNames);
   const nflFilter = document.getElementById('nfl-hr-teamfilter') ? document.getElementById('nfl-hr-teamfilter').value : '';
   const cfbFilter = document.getElementById('cfb-hr-teamfilter') ? document.getElementById('cfb-hr-teamfilter').value : '';
   fillSelect('nfl-hr-player', nflNames, nflFilter);
   fillSelect('cfb-hr-player', cfbNames, cfbFilter);
- 
+
   const nflCountEl = document.getElementById('nfl-player-count');
   if(nflCountEl) nflCountEl.textContent = nflNames.length + ' loaded';
   const cfbCountEl = document.getElementById('cfb-player-count');
@@ -1044,7 +1067,7 @@ function renderPlayerDetail(lg, name){
   const league = p.league;
   const unconfirmed = league==='NFL' && p.team && (p.teamYear==null);
   const proj = computeSinglePlayerProjection(name);
- 
+
   let projBlock;
   if(!proj || proj.noGames){
     projBlock = '<div class="empty">No games logged yet for this player.</div>';
@@ -1062,12 +1085,12 @@ function renderPlayerDetail(lg, name){
     projBlock = '<div class="hitrate-badge '+badgeCls+'">'+fmt(proj.projected)+' <span style="font-size:0.9rem;font-weight:600;">'+proj.statLabel+'</span></div>'
       + '<div class="hitrate-sub">'+dirLabel+' · vs '+proj.opp+'</div>' + volNote;
   }
- 
+
   const last5 = (p.games||[]).slice(-5).reverse();
   const gamesRows = last5.length ? last5.map(function(g){
     return '<div class="glog-row"><span>'+g.date+(g.opp?' · '+g.opp:'')+'</span><span class="team-meta">pass '+fmt(g.passYds)+' · rush '+fmt(g.rushYds)+' · rec '+(g.receptions||0)+'/'+fmt(g.recYds)+' · TD '+fmt(g.tds)+'</span></div>';
   }).join('') : '<div class="empty">No games logged yet.</div>';
- 
+
   const teamLabel = (p.team||'—') + (unconfirmed ? ' <span class="pill" style="background:rgba(242,139,125,0.15);color:#f28b7d;">not on active roster</span>' : '');
   container.innerHTML = '<div class="card">'
     + '<h2>'+name+' <span class="pill">'+p.pos+'</span></h2>'
@@ -1109,8 +1132,8 @@ function renderPlayersList(lg){
   }
 }
 function refreshPlayersLists(){ renderPlayersList('nfl'); renderPlayersList('cfb'); populatePlayerSelects(); }
- 
- 
+
+
 function defCategoryForStat(stat){
   if(stat==='passYds') return 'passDef';
   if(stat==='rushYds') return 'rushDef';
@@ -1198,7 +1221,7 @@ function leagueAvgDefStat(league, key){
   if(teams.length===0) return null;
   return teams.reduce((s,t)=>s+t[key],0)/teams.length;
 }
- 
+
 function wireHitRate(lg){
   document.getElementById(lg+'-run-hitrate').addEventListener('click', ()=>{
     const name = document.getElementById(lg+'-hr-player').value;
@@ -1217,7 +1240,7 @@ function wireHitRate(lg){
     const pct = Math.round((overs/games.length)*100);
     const last5 = games.slice(0,5);
     const last5overs = last5.filter(g=>(g[stat]||0) > line).length;
- 
+
     // Defense-adjusted estimate: scale the raw hit rate by how this week's
     // opponent's relevant defense compares to the league average. This is a
     // simple multiplicative heuristic, not a statistical model -- it's meant
@@ -1248,7 +1271,7 @@ function wireHitRate(lg){
       adjBlock = '<div class="note" style="margin-top:14px;">No opponent-defense adjustment available — '+(opp ? "couldn't find "+opp+"'s stats" : "couldn't find "+name+"'s game this week")+'.</div>';
     }
     }
- 
+
     const badgeClass = pct>=60 ? 'high' : (pct>=40 ? 'mid' : 'low');
     const rows = games.map(function(g){
       const val = g[stat]||0;
@@ -1260,13 +1283,13 @@ function wireHitRate(lg){
 }
 wireHitRate('nfl');
 wireHitRate('cfb');
- 
+
 function edgeRow(label, aVal, bVal, higherIsBetterForA){
   if(higherIsBetterForA===undefined) higherIsBetterForA = true;
   const aWins = higherIsBetterForA ? aVal>bVal : aVal<bVal;
   return '<div class="edge-row"><div class="edge-val '+(aWins?'win':'lose')+'">'+fmt(aVal)+'</div><div class="edge-label">'+label+'</div><div class="edge-val '+(!aWins?'win':'lose')+'">'+fmt(bVal)+'</div></div>';
 }
- 
+
 // Shared projection model, used by both the Matchup tab and Top Bets so
 // they can never drift out of sync with each other. Convention: nameB is
 // treated as the home team -- this matches how schedule games are always
@@ -1302,7 +1325,7 @@ function computeProjection(nameA, nameB, league){
   const bPassProj = (B.passOff + A.passDef)/2;
   const aRushProj = (A.rushOff + B.rushDef)/2;
   const bRushProj = (B.rushOff + A.rushDef)/2;
- 
+
   const aGamesPlayed = (A.games && A.games.length) || 0;
   const bGamesPlayed = (B.games && B.games.length) || 0;
   const leagueAvgPpg = leagueAvgDefStat(league, 'ppg');
@@ -1314,7 +1337,7 @@ function computeProjection(nameA, nameB, league){
   const bPpg = shrinkToLeagueAvg(B.ppg, leagueAvgPpg, bGamesPlayed);
   const bPa = shrinkToLeagueAvg(B.pa, leagueAvgPa, bGamesPlayed);
   const bTo = shrinkToLeagueAvg(B.to||0, leagueAvgTo, bGamesPlayed);
- 
+
   const homeAdv = HOME_ADV[league] || 2.0;
   let aScoreBox = (aPpg + bPa)/2 - homeAdv/2 + aTo*TO_FACTOR;
   let bScoreBox = (bPpg + aPa)/2 + homeAdv/2 + bTo*TO_FACTOR;
@@ -1322,7 +1345,7 @@ function computeProjection(nameA, nameB, league){
   let spread = aScoreBox - bScoreBox; // positive = A favored
   let usedSP = false;
   let marketAnchored = false;
- 
+
   if(league==='CFB' && typeof A.spPlus==='number' && typeof B.spPlus==='number'){
     // SP+ is opponent-adjusted (accounts for who a team has actually played);
     // raw box-score ppg/pa isn't, and is a single-digit-game sample this
@@ -1368,7 +1391,7 @@ function computeProjection(nameA, nameB, league){
     spread = spread*0.3 + srsSpread*0.7;
     usedSP = true; // treated the same as SP+ for confidence-tier purposes -- both are real opponent-adjusted signals
   }
- 
+
   const aScore = Math.round((total + spread)/2);
   const bScore = Math.round((total - spread)/2);
   return {
@@ -1376,7 +1399,7 @@ function computeProjection(nameA, nameB, league){
     aPassProj, bPassProj, aRushProj, bRushProj, usedSP, marketAnchored
   };
 }
- 
+
 // ---- Per-game "top bets" shown when a specific matchup is opened (from
 // This Week or Matchup tab) -- reuses the exact same team-bet model as the
 // global Top Bets list and the exact same player-matchup logic as Player
@@ -1412,7 +1435,7 @@ function computeGameBets(nameA, nameB){
     }
   }
   teamBets.sort(function(a,b){ return b.edge - a.edge; });
- 
+
   const playerBets = [];
   [[nameA,nameB],[nameB,nameA]].forEach(function(pair){
     const teamName = pair[0], oppName = pair[1];
@@ -1440,7 +1463,7 @@ function computeGameBets(nameA, nameB){
   });
   const dedupedPlayerBets = dedupeStaleQBs(playerBets);
   dedupedPlayerBets.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
- 
+
   const teamSlice = teamBets.slice(0, 5);
   const playerSlice = dedupedPlayerBets.slice(0, Math.max(0, 5 - teamSlice.length));
   return { teamBets: teamSlice, playerBets: playerSlice };
@@ -1463,7 +1486,7 @@ function renderGameBets(nameA, nameB){
   });
   return '<div class="card"><h2>Top bets for this game</h2>'+rows+'<div class="note">Team rows compare the model\'s projection to the market line, same math as the main Top Bets tab. Player rows show the best matchup mismatches for either team\'s roster this game — "projected" is each player\'s last-5-game average scaled by how this opponent\'s defense compares to league average, a simple heuristic (not a sportsbook line) meant to give you a number to weigh your own line against.</div></div>';
 }
- 
+
 // A completed game shouldn't show a hypothetical projection as if it were
 // still upcoming -- this looks up the real result from this week's
 // schedule data (now carries awayScore/homeScore once nflverse/CFBD report
@@ -1496,7 +1519,7 @@ function runMatchupFor(nameA, nameB, outId){
   }
   const proj = computeProjection(nameA, nameB, league);
   const A = teamsCache[nameA], B = teamsCache[nameB];
- 
+
   const finalResult = findFinalScoreForMatchup(league, nameA, nameB);
   if(finalResult){
     const aScore = finalResult.away===nameA ? finalResult.awayScore : finalResult.homeScore;
@@ -1508,7 +1531,7 @@ function runMatchupFor(nameA, nameB, outId){
     wireBackButton();
     return;
   }
- 
+
   const total = proj.total;
   const spreadVal = proj.aScore - proj.bScore;
   const totalLine = tieSafeLine(total);
@@ -1519,7 +1542,7 @@ function runMatchupFor(nameA, nameB, outId){
     : proj.usedSP
     ? 'Blends offense-vs-defense yardage averaging with CFBD\'s opponent-adjusted SP+ ratings, plus home-field advantage (~'+HOME_ADV[league]+' pts to '+nameB+', assumed home) and each team\'s own turnover margin.'
     : 'Offense-vs-defense yardage averaging, plus home-field advantage (~'+HOME_ADV[league]+' pts to '+nameB+', assumed home) and each team\'s own turnover margin. Not a sportsbook line.';
- 
+
   const addSpreadId = 'mu-add-spread-'+lg;
   const addTotalId = 'mu-add-total-'+lg;
   out.innerHTML = backBtnHtml + '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+proj.aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+proj.bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', proj.aPassProj, proj.bPassProj)+edgeRow('Proj. rush yds', proj.aRushProj, proj.bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="'+addSpreadId+'">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="'+addTotalId+'">Add "Total '+totalLine+'" to parlay</button></div><div class="note">'+methodNote+'</div></div>'+renderGameBets(nameA, nameB);
@@ -1533,7 +1556,7 @@ document.getElementById('run-matchup-nfl').addEventListener('click', ()=>{
 document.getElementById('run-matchup-cfb').addEventListener('click', ()=>{
   runMatchupFor(document.getElementById('m-teamA-cfb').value, document.getElementById('m-teamB-cfb').value, 'matchup-output-cfb');
 });
- 
+
 let CURRENT_NFL_WEEK = null;
 let NFL_WEEK_GAMES = [];
 let CFB_WEEK_GAMES = [];
@@ -1578,7 +1601,7 @@ function gameStatusLine(g){
   }
   return scheduleOddsLine(g.a, g.b);
 }
- 
+
 async function renderSchedule(){
   await loadAllOdds();
   const live = await fetchJSON('./data/nfl-schedule.json');
@@ -1663,8 +1686,8 @@ async function renderInjuries(){
     return heading + body;
   }).join('');
 }
- 
- 
+
+
 // ==================== top bets ====================
 function projectMatchup(nameA, nameB){
   const A = teamsCache[nameA], B = teamsCache[nameB];
@@ -1751,13 +1774,13 @@ function buildTopParlays(games, league){
     if(!bestPerGame[c.gameKey] || c.edge > bestPerGame[c.gameKey].edge) bestPerGame[c.gameKey] = c;
   });
   const deduped = Object.values(bestPerGame).sort(function(a,b){ return b.edge - a.edge; });
- 
+
   function buildOne(legs, name, description){
     if(legs.length < 2) return null;
     const decimalOdds = legs.reduce(function(acc,l){ return acc*americanToDecimal(l.oddsPrice); }, 1);
     return { name: name, description: description, legs: legs, combinedAmerican: decimalToAmerican(decimalOdds) };
   }
- 
+
   const strongOnly = deduped.filter(function(c){ return c.tier.label.indexOf('Strong')===0; });
   const parlays = [];
   const safeLegs = (strongOnly.length>=2 ? strongOnly : deduped).slice(0,2);
@@ -1811,7 +1834,7 @@ function renderTopBetsList(elId, bets){
     return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.label+' <span class="pill" style="background:rgba(240,185,61,0.15);">'+b.tier.label+'</span></div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
   }).join('');
 }
- 
+
 // ---- Player prop matchup targets: same defense-adjustment math as the
 // hit rate checker, but scanning every loaded player instead of one at a
 // time, ranked by how favorable/unfavorable this week's matchup is. Not
@@ -1861,7 +1884,7 @@ function renderPlayerBetsList(elId, bets){
     return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+' · <b>projected '+fmt(b.projected)+'</b></div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
   }).join('');
 }
- 
+
 async function renderTopBets(){
   await loadAllOdds();
   renderTopBetsList('nfl-topbets-list', computeTopBets(NFL_WEEK_GAMES, 'NFL'));
@@ -1871,7 +1894,7 @@ async function renderTopBets(){
   renderPlayerBetsList('nfl-playerbets-list', computeTopPlayerBets('NFL'));
   renderPlayerBetsList('cfb-playerbets-list', computeTopPlayerBets('CFB'));
 }
- 
+
 // ---- Track record ----
 let trackFilter = 'ALL';
 let trackTypeFilter = 'ALL';
@@ -1894,7 +1917,7 @@ async function renderTrackRecord(){
   const filtered = trackTypeFilter==='ALL' ? leagueFiltered : leagueFiltered.filter(function(p){
     return trackTypeFilter==='PLAYER' ? p.type==='player_prop' : p.type!=='player_prop';
   });
- 
+
   // Overall summary -- team bets (spread/total) and player props are different
   // kinds of bet with different expected baselines, so they're broken out
   // separately rather than folded into one combined percentage.
@@ -1909,7 +1932,7 @@ async function renderTrackRecord(){
     splitEl.innerHTML = '<div class="history-item"><span>Team bets (spread/total)</span><span>'+summaryLine(summarizePicks(teamPicks))+'</span></div>'+
       '<div class="history-item"><span>Player props</span><span>'+summaryLine(summarizePicks(propPicks))+'</span></div>';
   }
- 
+
   // Weekly breakdown -- grouped by the week label already stored on each
   // pick, sorted most-recent-first using each week's latest date_logged
   // as a stand-in for chronological order (week labels aren't a uniform
@@ -1935,7 +1958,7 @@ async function renderTrackRecord(){
       }).join('');
     }
   }
- 
+
   const list = document.getElementById('track-record-list');
   if(filtered.length===0){
     list.innerHTML = '<div class="empty">No picks logged yet — these get added automatically each week.</div>';
@@ -1966,15 +1989,15 @@ document.querySelectorAll('#track-type-filter [data-tracktypefilter]').forEach(f
     renderTrackRecord();
   });
 });
- 
+
 let parlaySlip = [];
 function americanToDecimal(odds){ odds = Number(odds); return odds > 0 ? 1 + odds/100 : 1 + 100/Math.abs(odds); }
 function decimalToAmerican(dec){ if(dec >= 2) return '+' + Math.round((dec-1)*100); return Math.round(-100/(dec-1)).toString(); }
 function addLeg(label, odds){ parlaySlip.push({label:label, odds: Number(odds)}); renderParlaySlip(); }
- 
+
 let ALL_ODDS = [];
 let oddsFilter = 'ALL';
- 
+
 // Real NFL week boundaries for the 2026 season (verified against the live
 // schedule) -- used to label odds-board sections "Week 1", "Week 2", etc.
 // instead of leaving hundreds of games in one flat list.
@@ -2018,7 +2041,7 @@ function groupOdds(odds){
   });
   return Object.values(groups).sort(function(a,b){ return a.sortKey < b.sortKey ? -1 : (a.sortKey > b.sortKey ? 1 : 0); });
 }
- 
+
 async function loadAllOdds(){
   const liveOdds = await fetchJSON('./data/odds.json');
   const nflWeekOdds = await fetchJSON('./data/nfl-week-odds.json');
@@ -2029,7 +2052,7 @@ async function loadAllOdds(){
   ALL_ODDS = combined.length ? combined : ODDS_SEED;
   return ALL_ODDS;
 }
- 
+
 function legBtn(label, oddsVal, bookName){
   const b = document.createElement('button');
   b.className = 'secondary';
@@ -2048,19 +2071,19 @@ function buildGameRow(g){
   const bookCount = (g.books||[]).length;
   head.innerHTML = g.game+' <span class="pill">'+g.league+'</span> <span class="game-date">'+g.date+'</span>'+(bookCount>1?' <span class="pill" style="background:rgba(51,211,153,0.15);color:#5eead4;">'+bookCount+' books compared</span>':'');
   wrap.appendChild(head);
- 
+
   const row1 = document.createElement('div'); row1.className = 'grid3';
   row1.appendChild(legBtn(g.aTeam+' ML', g.aML, g.aMLBook));
   row1.appendChild(legBtn(g.aTeam+' '+(g.aSpread>0?'+':'')+g.aSpread, g.aSpreadOdds, g.aSpreadOddsBook));
   row1.appendChild(legBtn('Over '+g.total, g.overOdds, g.overOddsBook));
   wrap.appendChild(row1);
- 
+
   const row2 = document.createElement('div'); row2.className = 'grid3'; row2.style.marginTop = '6px';
   row2.appendChild(legBtn(g.bTeam+' ML', g.bML, g.bMLBook));
   row2.appendChild(legBtn(g.bTeam+' '+(g.bSpread>0?'+':'')+g.bSpread, g.bSpreadOdds, g.bSpreadOddsBook));
   row2.appendChild(legBtn('Under '+g.total, g.underOdds, g.underOddsBook));
   wrap.appendChild(row2);
- 
+
   if(bookCount>1){
     const toggle = document.createElement('button');
     toggle.className = 'secondary';
@@ -2081,7 +2104,7 @@ function buildGameRow(g){
   }
   return wrap;
 }
- 
+
 async function renderOddsBoard(){
   await loadAllOdds();
   const list = document.getElementById('odds-board-list');
@@ -2153,14 +2176,14 @@ document.getElementById('copy-slip-btn').addEventListener('click', function(){
     prompt('Copy this:', text);
   }
 });
- 
+
 // ---- Home page ----
 const ICON_CALENDAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
 const ICON_TARGET = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg>';
 const ICON_CHART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>';
 const ICON_HEALTH = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>';
 const ICON_CALC = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8" y2="11.01"/><line x1="12" y1="11" x2="12" y2="11.01"/><line x1="16" y1="11" x2="16" y2="11.01"/><line x1="8" y1="15" x2="8" y2="15.01"/><line x1="12" y1="15" x2="12" y2="15.01"/><line x1="16" y1="15" x2="16" y2="15.01"/></svg>';
- 
+
 function renderHome(){
   const container = document.getElementById('home-content');
   if(!container) return;
@@ -2171,7 +2194,7 @@ function renderHome(){
     const allBets = nflBets.concat(cfbBets).sort(function(a,b){ return b.edge-a.edge; });
     topPick = allBets[0] || null;
   }catch(e){}
- 
+
   let heroHtml = '<div class="home-hero"><div class="home-hero-label">This week\'s top pick</div>';
   if(topPick){
     heroHtml += '<div class="home-hero-title">'+topPick.label+'</div><div class="team-meta">'+topPick.sub+'</div><div style="margin-top:8px;"><span class="pill" style="background:rgba(240,185,61,0.18);">'+topPick.tier.label+'</span> <span class="pill">edge '+fmt(topPick.edge)+'</span></div>';
@@ -2179,7 +2202,7 @@ function renderHome(){
     heroHtml += '<div class="home-hero-title">Loading this week\'s picks...</div><div class="note" style="margin-top:2px;">Check back once team stats and odds have loaded.</div>';
   }
   heroHtml += '</div>';
- 
+
   const cards = [
     { icon: ICON_CALENDAR, title:'NFL This Week', sub: (NFL_WEEK_GAMES||[]).length+' games', tab:'nfl', sub_:'nfl-week' },
     { icon: ICON_CALENDAR, title:'CFB This Week', sub: (CFB_WEEK_GAMES||[]).length+' ranked matchups', tab:'cfb', sub_:'cfb-week' },
@@ -2191,7 +2214,7 @@ function renderHome(){
   const gridHtml = '<div class="home-grid">'+cards.map(function(c,i){
     return '<div class="home-card" data-home-card="'+i+'"><div class="home-card-icon">'+c.icon+'</div><div class="home-card-title">'+c.title+'</div><div class="home-card-sub">'+c.sub+'</div></div>';
   }).join('')+'</div>';
- 
+
   container.innerHTML = heroHtml + gridHtml;
   container.querySelectorAll('[data-home-card]').forEach(function(el){
     el.addEventListener('click', function(){
@@ -2201,7 +2224,7 @@ function renderHome(){
     });
   });
 }
- 
+
 // ---- Global search ----
 function performGlobalSearch(query){
   const q = query.trim().toLowerCase();
@@ -2263,7 +2286,7 @@ if(globalSearchInput){
     }
   });
 }
- 
+
 (async function init(){
   try{ await ensureSeeded(); }catch(e){ teamsCache = Object.assign({}, NFL_SEED, CFB_SEED); }
   await renderSchedule();
