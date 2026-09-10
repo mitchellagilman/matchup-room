@@ -103,7 +103,22 @@ def main():
         away = TEAM_NAME_MAP.get(g["away_team"], g["away_team"])
         home = TEAM_NAME_MAP.get(g["home_team"], g["home_team"])
         date_str = f"{g.get('gameday','')} ({g.get('weekday','')})"
-        schedule.append({"a": away, "b": home, "date": date_str})
+
+        def to_score(key):
+            try:
+                return float(g.get(key))
+            except (TypeError, ValueError):
+                return None
+
+        away_score, home_score = to_score("away_score"), to_score("home_score")
+        game_entry = {"a": away, "b": home, "date": date_str}
+        if away_score is not None and home_score is not None:
+            # Game's already been played -- carry the real result so the UI
+            # can show "FINAL 24-17" instead of a hypothetical model
+            # projection for a game that's already over.
+            game_entry["awayScore"] = away_score
+            game_entry["homeScore"] = home_score
+        schedule.append(game_entry)
 
         def to_f(key):
             try:
