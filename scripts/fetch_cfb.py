@@ -51,11 +51,12 @@ Writes: data/cfb-teams.json
 import json
 import os
 import sys
+import time
 import urllib.request
 import urllib.parse
+from cfbd_utils import cfbd_get
 
 YEAR = 2026
-API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-teams.json"
 CLASSIFICATIONS = ["fbs", "fcs"]
 
@@ -64,16 +65,6 @@ CLASSIFICATIONS = ["fbs", "fcs"]
 # this script comes back empty (print(stats_row) in the loop below to check).
 PASS_YARDS_KEYS = ["netPassingYards", "passingYards"]
 RUSH_YARDS_KEYS = ["rushingYards"]
-
-
-def api_get(path, params, api_key):
-    url = f"{API_BASE}{path}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {api_key}",
-        "Accept": "application/json",
-    })
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
 
 
 def first_present(d, keys, default=0):
@@ -109,7 +100,7 @@ def fetch_games_teams_for(classification, api_key):
     that this happens for at least one classification -- see the
     fallback comment below)."""
     try:
-        return api_get("/games/teams", {"year": YEAR, "seasonType": "regular", "classification": classification}, api_key)
+        return cfbd_get("/games/teams", {"year": YEAR, "seasonType": "regular", "classification": classification}, api_key)
     except Exception as e:
         # /games/teams appears to reject a bare year (400) and want a week too --
         # confirmed against the live API after this script was first written.
@@ -118,11 +109,12 @@ def fetch_games_teams_for(classification, api_key):
         out = []
         for week in range(1, 16):
             try:
-                batch = api_get("/games/teams", {"year": YEAR, "seasonType": "regular", "week": week, "classification": classification}, api_key)
+                batch = cfbd_get("/games/teams", {"year": YEAR, "seasonType": "regular", "week": week, "classification": classification}, api_key)
             except Exception:
                 continue  # that week likely hasn't happened yet, or errored -- skip it
             if batch:
                 out.extend(batch)
+            time.sleep(1)  # spread out requests in this loop -- reduces how often the retry/backoff in cfbd_get even needs to kick in
         return out
 
 
@@ -142,7 +134,7 @@ def main():
     all_team_meta = {}
     for classification in CLASSIFICATIONS:
         try:
-            resp = api_get("/teams", {"year": YEAR, "classification": classification}, api_key)
+            resp = cfbd_get("/teams", {"year": YEAR, "classification": classification}, api_key)
         except Exception as e:
             print(f"Could not reach CFBD /teams (classification={classification}) ({e}); skipping this classification for the team list.", file=sys.stderr)
             continue
@@ -150,13 +142,14 @@ def main():
             name = t.get("school")
             if name:
                 all_team_meta[name] = (t.get("conference") or "Independent", classification)
+        time.sleep(1)
 
     if not all_team_meta:
         print("Could not fetch any team list (FBS or FCS); leaving existing file untouched.", file=sys.stderr)
         return
 
     try:
-        games = api_get("/games", {"year": YEAR, "seasonType": "regular"}, api_key)
+        games = cfbd_get("/games", {"year": YEAR, "seasonType": "regular"}, api_key)
     except Exception as e:
         print(f"Could not fetch /games ({e}); leaving existing file untouched.", file=sys.stderr)
         return
@@ -168,6 +161,7 @@ def main():
             games_teams.extend(batch)
         else:
             print(f"No /games/teams data came back for classification={classification} -- that classification's teams will be skipped this run.", file=sys.stderr)
+        time.sleep(1)
 
     if not games_teams:
         print("CFBD returned no games/teams data (season may not have started); leaving file untouched.", file=sys.stderr)
