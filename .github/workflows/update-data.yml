@@ -2,9 +2,31 @@ name: Update stats and odds
 
 on:
   schedule:
-    # Every Tuesday at 09:00 UTC (after Monday Night Football wraps).
-    # Cron is UTC always -- adjust the hour for your timezone if you care.
-    - cron: '0 9 * * 2'
+    # Thu/Fri/Sat/Sun/Mon at 11:59 PM Central -- covers Thursday Night
+    # Football, Friday/Saturday college games, Sunday NFL, and Monday
+    # Night Football, instead of just once a week.
+    #
+    # Cron is always UTC and has no timezone awareness, so this is
+    # converted by hand: 11:59 PM CDT (UTC-5, current as of Sept 2026) =
+    # 04:59 UTC the next calendar day. That means the cron's day-of-week
+    # values are shifted one day later than the Central-time day they
+    # correspond to (Thu->Fri, Fri->Sat, Sat->Sun, Sun->Mon, Mon->Tue).
+    #
+    # DST CAVEAT: this does NOT auto-adjust when clocks change. Once
+    # Central time switches to CST (UTC-6, early November), these same
+    # cron entries will actually fire at 10:59 PM Central instead of
+    # 11:59 PM -- a real GitHub Actions limitation, not a bug here. If
+    # that hour matters to you, update the hour field (04 -> 05) after
+    # DST ends, or just let it drift; either way the data is still same
+    # day, just an hour earlier.
+    #
+    # MNF NOTE: Monday's run (11:59 PM CT = ~1 hour after most Monday
+    # Night Football games end) should usually catch a final score, but
+    # a game running long (OT, weather delay) could still be in progress.
+    # If a Monday-night pick doesn't get graded until Thursday's run,
+    # that's why -- add a Tuesday-morning run back if you want a
+    # dedicated buffer day for that specific case.
+    - cron: '59 4 * * 5,6,0,1,2'
   workflow_dispatch: {}   # lets you also trigger this manually from the Actions tab
 
 permissions:
@@ -35,6 +57,10 @@ jobs:
       - name: Fetch NFL player stats (nflverse, no key needed)
         continue-on-error: true
         run: python3 scripts/fetch_players_nfl.py
+
+      - name: Fetch NFL injury report (nflverse, no key needed)
+        continue-on-error: true
+        run: python3 scripts/fetch_injuries_nfl.py
 
       - name: Fetch CFB team stats (CollegeFootballData)
         continue-on-error: true
