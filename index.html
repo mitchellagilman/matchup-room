@@ -919,7 +919,11 @@ function renderTeamList(lg){
       return '<div class="team-row" data-team-name="'+n.replace(/"/g,'&quot;')+'" style="cursor:pointer;"><div><div class="team-name">'+n+(t.conf?' <span class="pill">'+t.conf+'</span>':'')+(t.wk1?' <span class="pill" style="background:rgba(63,122,153,0.35);color:#8fd39f;">2026 Wk1</span>':'')+'</div><div class="team-meta">'+(t.record?t.record+' · ':'')+fmt(t.ppg)+' PPG · '+fmt(t.pa)+' PA · TO '+(t.to>=0?'+':'')+fmt(t.to)+'/g · ATS '+(t.ats||'—')+'</div></div></div>';
     }).join('');
     list.querySelectorAll('.team-row').forEach(function(row){
-      row.addEventListener('click', function(){ renderTeamDetail(lg, row.dataset.teamName); });
+      row.addEventListener('click', function(){
+        renderTeamDetail(lg, row.dataset.teamName);
+        const detailEl = document.getElementById(lg+'-team-detail');
+        if(detailEl) detailEl.scrollIntoView({behavior:'smooth', block:'start'});
+      });
     });
   }
 }
@@ -1096,7 +1100,11 @@ function renderPlayersList(lg){
       return '<div class="team-row" data-player-name="'+n.replace(/"/g,'&quot;')+'" style="cursor:pointer;"><div><div class="team-name">'+n+' <span class="pill">'+p.pos+'</span></div><div class="team-meta">'+teamLabel+' · '+g.length+' game'+(g.length===1?'':'s')+' logged · L5 avg '+statLabel(mainStat)+': '+fmt(avg(mainStat))+'</div></div></div>';
     }).join('');
     list.querySelectorAll('.team-row').forEach(function(row){
-      row.addEventListener('click', function(){ renderPlayerDetail(lg, row.dataset.playerName); });
+      row.addEventListener('click', function(){
+        renderPlayerDetail(lg, row.dataset.playerName);
+        const detailEl = document.getElementById(lg+'-player-detail');
+        if(detailEl) detailEl.scrollIntoView({behavior:'smooth', block:'start'});
+      });
     });
   }
 }
@@ -1479,6 +1487,13 @@ function runMatchupFor(nameA, nameB, outId){
     return;
   }
   const league = teamsCache[nameA].league;
+  const lg = league.toLowerCase();
+  const backBtnId = 'mu-back-'+lg;
+  const backBtnHtml = '<button class="secondary" id="'+backBtnId+'" style="margin-bottom:10px;">&larr; Back to This Week</button>';
+  function wireBackButton(){
+    const btn = document.getElementById(backBtnId);
+    if(btn) btn.addEventListener('click', function(){ activateSubTab(lg+'-week'); window.scrollTo({top:0, behavior:'smooth'}); });
+  }
   const proj = computeProjection(nameA, nameB, league);
   const A = teamsCache[nameA], B = teamsCache[nameB];
  
@@ -1486,10 +1501,11 @@ function runMatchupFor(nameA, nameB, outId){
   if(finalResult){
     const aScore = finalResult.away===nameA ? finalResult.awayScore : finalResult.homeScore;
     const bScore = finalResult.away===nameA ? finalResult.homeScore : finalResult.awayScore;
-    out.innerHTML = '<div class="card"><h2>'+nameA+' vs '+nameB+' <span class="pill" style="background:rgba(51,211,153,0.18);color:#5eead4;">FINAL</span></h2>'
+    out.innerHTML = backBtnHtml + '<div class="card"><h2>'+nameA+' vs '+nameB+' <span class="pill" style="background:rgba(51,211,153,0.18);color:#5eead4;">FINAL</span></h2>'
       + '<div class="proj-score"><div><div class="num" style="'+(aScore>bScore?'':'opacity:0.55;')+'">'+fmt(aScore)+'</div><div class="lbl">'+nameA+'</div></div><div><div class="num" style="'+(bScore>aScore?'':'opacity:0.55;')+'">'+fmt(bScore)+'</div><div class="lbl">'+nameB+'</div></div></div>'
       + '<div class="note">This game has already been played, so this is the real final score, not a projection. For reference, the model (using stats as of right now, which already include this game) would project '+nameA+' '+proj.aScore+' – '+nameB+' '+proj.bScore+' if it were still upcoming — early in a season, a single game can swing a team\'s averages a lot, so that comparison number can look strange right after a result like this.</div>'
       + '</div>';
+    wireBackButton();
     return;
   }
  
@@ -1504,9 +1520,12 @@ function runMatchupFor(nameA, nameB, outId){
     ? 'Blends offense-vs-defense yardage averaging with CFBD\'s opponent-adjusted SP+ ratings, plus home-field advantage (~'+HOME_ADV[league]+' pts to '+nameB+', assumed home) and each team\'s own turnover margin.'
     : 'Offense-vs-defense yardage averaging, plus home-field advantage (~'+HOME_ADV[league]+' pts to '+nameB+', assumed home) and each team\'s own turnover margin. Not a sportsbook line.';
  
-  out.innerHTML = '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+proj.aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+proj.bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', proj.aPassProj, proj.bPassProj)+edgeRow('Proj. rush yds', proj.aRushProj, proj.bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="mu-add-spread">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="mu-add-total">Add "Total '+totalLine+'" to parlay</button></div><div class="note">'+methodNote+'</div></div>'+renderGameBets(nameA, nameB);
-  document.getElementById('mu-add-spread').addEventListener('click', ()=> addLeg(spreadLabel+' (model proj.)', -110));
-  document.getElementById('mu-add-total').addEventListener('click', ()=> addLeg('Total '+totalLine+' (model proj.)', -110));
+  const addSpreadId = 'mu-add-spread-'+lg;
+  const addTotalId = 'mu-add-total-'+lg;
+  out.innerHTML = backBtnHtml + '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+proj.aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+proj.bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', proj.aPassProj, proj.bPassProj)+edgeRow('Proj. rush yds', proj.aRushProj, proj.bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="'+addSpreadId+'">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="'+addTotalId+'">Add "Total '+totalLine+'" to parlay</button></div><div class="note">'+methodNote+'</div></div>'+renderGameBets(nameA, nameB);
+  wireBackButton();
+  document.getElementById(addSpreadId).addEventListener('click', ()=> addLeg(spreadLabel+' (model proj.)', -110));
+  document.getElementById(addTotalId).addEventListener('click', ()=> addLeg('Total '+totalLine+' (model proj.)', -110));
 }
 document.getElementById('run-matchup-nfl').addEventListener('click', ()=>{
   runMatchupFor(document.getElementById('m-teamA-nfl').value, document.getElementById('m-teamB-nfl').value, 'matchup-output-nfl');
