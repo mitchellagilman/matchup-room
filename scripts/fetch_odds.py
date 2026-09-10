@@ -111,8 +111,8 @@ def extract_game(event, league):
             if cur_best is None or price > cur_best:
                 best[key] = (price, book_name)
 
-    if best["aML"][0] is None or best["bML"][0] is None:
-        return None
+    if primary_points["aSpread"] is None and primary_points["total"] is None and best["aML"][0] is None:
+        return None  # no useful market data of any kind for this game
 
     return {
         "game": f"{away} @ {home}",
