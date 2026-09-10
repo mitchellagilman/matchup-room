@@ -428,9 +428,19 @@ def main():
     teams.update(load_json("data/cfb-teams.json", {}))
     nfl_players = load_json("data/nfl-players.json", {})
     cfb_players = load_json("data/cfb-players.json", {})
+    # NFL and CFB share one flat dict keyed by plain name -- a cross-league
+    # name collision (confirmed live: "Caleb Williams" is both the Bears'
+    # real QB and a CFB running back at New Haven) would otherwise let the
+    # CFB entry silently overwrite the NFL one, same bug as index.html's
+    # ensurePlayersSeeded -- see that function's comment for the full
+    # story. NFL is added first so it keeps the plain name; a colliding
+    # CFB entry gets a "(CFB)" suffix instead of clobbering it.
     all_players = {}
     all_players.update(nfl_players)
-    all_players.update(cfb_players)
+    for name, p in cfb_players.items():
+        existing = all_players.get(name)
+        key = f"{name} (CFB)" if existing and existing.get("league") != p.get("league") else name
+        all_players[key] = p
 
     nfl_sched = load_json("data/nfl-schedule.json", {"week": None, "games": []})
     cfb_games = load_json("data/cfb-schedule.json", [])
