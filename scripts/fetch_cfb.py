@@ -228,11 +228,16 @@ def main():
         n = len(games_list)
         pts = points_by_team.get(team, [])
         np_ = len(pts) or 1
+        wins = sum(1 for p in pts if p["for"] > p["against"])
+        losses = sum(1 for p in pts if p["for"] < p["against"])
+        ties = sum(1 for p in pts if p["for"] == p["against"])
+        record = f"{wins}-{losses}" + (f"-{ties}" if ties else "")
         existing = teams.get(team, {})
         teams[team] = {
             "league": "CFB",
             "conf": conf,
             "division": division,  # "fbs" or "fcs" -- lets the UI show a pill if it wants to distinguish
+            "record": record if pts else existing.get("record", ""),
             "ppg": round(sum(p["for"] for p in pts) / np_, 1) if pts else existing.get("ppg", 0),
             "pa": round(sum(p["against"] for p in pts) / np_, 1) if pts else existing.get("pa", 0),
             "passOff": round(sum(g["passOff"] for g in games_list) / n, 1),
