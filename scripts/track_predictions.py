@@ -129,6 +129,8 @@ def compute_projection(a, b, teams, league, odds_list=None):
     total = a_score + b_score
     spread = a_score - b_score
     market_anchored = False
+    market = find_market_line(a, b, odds_list) if odds_list else None
+    market_has_spread = market and market.get("aSpread") is not None
     if league == "CFB" and isinstance(A.get("spPlus"), (int, float)) and isinstance(B.get("spPlus"), (int, float)):
         # SP+ is opponent-adjusted; raw box-score ppg/pa isn't and is a
         # tiny early-season sample -- see index.html's computeProjection
@@ -139,18 +141,25 @@ def compute_projection(a, b, teams, league, odds_list=None):
         # rather than split evenly with the noisier box-score signal.
         sp_spread = (A["spPlus"] - B["spPlus"]) - home_adv
         spread = spread * 0.25 + sp_spread * 0.75
-    elif league == "CFB" and A.get("division") and B.get("division") and A["division"] != B["division"] and odds_list:
-        # FBS vs FCS -- see index.html's computeProjection for the full
-        # explanation (confirmed live: box-score-only math produced a
-        # 35-point error on a real matchup). Mirror that fix here so
-        # tracked picks don't diverge from what the site actually shows.
-        market = find_market_line(a, b, odds_list)
-        raw_a_spread = market.get("aSpread") if market else None
-        if market and raw_a_spread is not None:
-            a_is_entry_a = team_names_match(market.get("aTeam"), a)
-            market_fav_a = -raw_a_spread if a_is_entry_a else raw_a_spread
-            spread = spread * 0.25 + market_fav_a * 0.75
-            market_anchored = True
+    elif league == "CFB" and A.get("division") and B.get("division") and A["division"] != B["division"] and market_has_spread:
+        # FBS vs FCS, and a real market line exists for this specific game
+        # -- see index.html's computeProjection for the full explanation
+        # (confirmed live: box-score-only math produced a 35-point error on
+        # a real matchup). Mirror that fix here so tracked picks don't
+        # diverge from what the site actually shows.
+        a_is_entry_a = team_names_match(market.get("aTeam"), a)
+        market_fav_a = -market["aSpread"] if a_is_entry_a else market["aSpread"]
+        spread = spread * 0.25 + market_fav_a * 0.75
+        market_anchored = True
+    elif league == "CFB" and isinstance(A.get("srs"), (int, float)) and isinstance(B.get("srs"), (int, float)):
+        # Neither SP+ nor a usable market line was available for this game
+        # -- see index.html's computeProjection for the full explanation
+        # (confirmed live: a ranked FBS team vs. an FCS opponent with no
+        # market line loaded fell through both safeguards above). SRS
+        # covers FCS teams, unlike SP+, so it fills that gap -- trusted a
+        # bit less than SP+ since it's a simpler methodology.
+        srs_spread = (A["srs"] - B["srs"]) - home_adv
+        spread = spread * 0.3 + srs_spread * 0.7
     a_final = round((total + spread) / 2)
     b_final = round((total - spread) / 2)
     return {"aScore": a_final, "bScore": b_final, "total": a_final + b_final, "spread": a_final - b_final, "marketAnchored": market_anchored}
