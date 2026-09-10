@@ -5066,9 +5066,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 17.0,
-    "pa": 13.5,
+    "record": "0-2",
+    "ppg": 7.0,
+    "pa": 23.5,
     "passOff": 160.0,
     "rushOff": 3.0,
     "passDef": 190.0,
@@ -5087,9 +5087,9 @@
       {
         "week": 1,
         "opp": "Johnson C. Smith",
-        "teamScore": 27,
-        "oppScore": 7,
-        "result": "W"
+        "teamScore": 7,
+        "oppScore": 27,
+        "result": "L"
       }
     ]
   },
@@ -5221,9 +5221,9 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "2-0-1",
-    "ppg": 25.7,
-    "pa": 18.7,
+    "record": "2-0",
+    "ppg": 38.5,
+    "pa": 28.0,
     "passOff": 336.5,
     "rushOff": 184.5,
     "passDef": 349.5,
@@ -5238,13 +5238,6 @@
         "teamScore": 49,
         "oppScore": 37,
         "result": "W"
-      },
-      {
-        "week": 1,
-        "opp": "Western Carolina",
-        "teamScore": 0,
-        "oppScore": 0,
-        "result": "T"
       },
       {
         "week": 1,
@@ -7662,9 +7655,9 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "1-1-1",
-    "ppg": 21.3,
-    "pa": 16.3,
+    "record": "1-1",
+    "ppg": 32.0,
+    "pa": 24.5,
     "passOff": 323.0,
     "rushOff": 94.5,
     "passDef": 317.5,
@@ -7679,13 +7672,6 @@
         "teamScore": 45,
         "oppScore": 21,
         "result": "W"
-      },
-      {
-        "week": 1,
-        "opp": "Campbell",
-        "teamScore": 0,
-        "oppScore": 0,
-        "result": "T"
       },
       {
         "week": 1,
