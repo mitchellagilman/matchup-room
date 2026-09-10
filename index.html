@@ -30,7 +30,7 @@
     font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
     line-height:1.45;
   }
-  .wrap{max-width:960px;margin:0 auto;padding:14px 16px 138px;}
+  .wrap{max-width:960px;margin:0 auto;padding:14px 16px 158px;}
   .header-row{
     display:flex;
     align-items:flex-start;
@@ -134,22 +134,22 @@
   .search-result-name{font-weight:700;font-size:0.86rem;}
   .search-result-meta{color:var(--muted);font-size:0.72rem;}
 
-  .bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;justify-content:space-around;align-items:center;background:rgba(17,21,28,0.98);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:12px 2px calc(14px + env(safe-area-inset-bottom));}
-  .bottom-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--muted);font-size:0.92rem;font-weight:700;cursor:pointer;flex:1;min-height:52px;padding:6px 2px;}
+  .bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;justify-content:space-around;align-items:center;background:rgba(17,21,28,0.98);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:14px 2px calc(16px + env(safe-area-inset-bottom));}
+  .bottom-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:var(--muted);font-size:1.05rem;font-weight:700;cursor:pointer;flex:1;min-height:60px;padding:6px 2px;}
   .bottom-nav-item.active{color:var(--accent);}
-  .bottom-nav-icon{width:36px;height:36px;line-height:1;}
+  .bottom-nav-icon{width:44px;height:44px;line-height:1;}
   .bottom-nav-icon svg{width:100%;height:100%;}
 
-  .home-hero{background:radial-gradient(ellipse 420px 200px at 0% 0%, rgba(106,111,240,0.18), transparent 70%), linear-gradient(160deg, rgba(232,182,74,0.10), transparent 60%);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px;}
-  .home-hero-label{color:var(--muted);font-size:0.74rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;}
-  .home-hero-title{font-family:var(--font-display);font-size:1.25rem;font-weight:800;margin:4px 0 2px;}
-  .home-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
-  .home-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;}
+  .home-hero{background:radial-gradient(ellipse 420px 200px at 0% 0%, rgba(106,111,240,0.18), transparent 70%), linear-gradient(160deg, rgba(232,182,74,0.10), transparent 60%);border:1px solid var(--line);border-radius:16px;padding:28px 24px;margin-bottom:18px;}
+  .home-hero-label{color:var(--muted);font-size:0.9rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;}
+  .home-hero-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;margin:8px 0 6px;}
+  .home-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:18px;}
+  .home-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 22px;cursor:pointer;min-height:110px;display:flex;flex-direction:row;align-items:center;gap:18px;}
   .home-card:hover{border-color:var(--accent);}
-  .home-card-icon{width:22px;height:22px;color:var(--accent);margin-bottom:8px;}
+  .home-card-icon{width:38px;height:38px;color:var(--accent);flex-shrink:0;}
   .home-card-icon svg{width:100%;height:100%;}
-  .home-card-title{font-weight:700;font-size:0.86rem;}
-  .home-card-sub{color:var(--muted);font-size:0.72rem;margin-top:2px;}
+  .home-card-title{font-weight:700;font-size:1.15rem;}
+  .home-card-sub{color:var(--muted);font-size:0.92rem;margin-top:5px;line-height:1.35;}
 </style>
 </head>
 <body>
@@ -489,11 +489,11 @@
     <span>Home</span>
   </div>
   <div class="bottom-nav-item" data-tab="nfl">
-    <span class="bottom-nav-icon" style="font-size:2rem;">🏈</span>
+    <span class="bottom-nav-icon" style="font-size:2.5rem;">🏈</span>
     <span>NFL</span>
   </div>
   <div class="bottom-nav-item" data-tab="cfb">
-    <span class="bottom-nav-icon" style="font-size:2rem;">🎓</span>
+    <span class="bottom-nav-icon" style="font-size:2.5rem;">🎓</span>
     <span>CFB</span>
   </div>
   <div class="bottom-nav-item" data-tab="topbets">
