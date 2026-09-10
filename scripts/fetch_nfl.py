@@ -91,7 +91,7 @@ def main():
     for row in stat_rows:
         offense_by_game_team.setdefault(row["game_id"], {})[row["team"]] = row
 
-    # team -> list of {points_for, points_against}
+    # team -> list of {points_for, points_against, week, opp}
     scores_by_team = {}
     for g in game_rows:
         home, away = g["home_team"], g["away_team"]
@@ -99,8 +99,9 @@ def main():
             hs, as_ = float(g["home_score"]), float(g["away_score"])
         except (TypeError, ValueError):
             continue  # game hasn't been played yet
-        scores_by_team.setdefault(home, []).append({"for": hs, "against": as_})
-        scores_by_team.setdefault(away, []).append({"for": as_, "against": hs})
+        week = g.get("week")
+        scores_by_team.setdefault(home, []).append({"for": hs, "against": as_, "week": week, "opp": away})
+        scores_by_team.setdefault(away, []).append({"for": as_, "against": hs, "week": week, "opp": home})
 
     per_team = {}  # team -> list of per-game dicts
     for game_id, teams_in_game in offense_by_game_team.items():
@@ -130,6 +131,24 @@ def main():
         ties = sum(1 for s in scores if s["for"] == s["against"])
         record = f"{wins}-{losses}" + (f"-{ties}" if ties else "")
         existing = teams.get(full_name, {})
+
+        # Per-game results (opponent, week, score, W/L/T) -- shown in the
+        # Teams tab when a team is clicked, and also gives the frontend a
+        # real games-played count to use for early-season shrinkage (see
+        # index.html's computeProjection -- a team's raw ppg/pa/turnover
+        # margin from just 1-2 games is extreme-outlier-prone, confirmed
+        # live: a team's whole-season turnover margin input was literally
+        # just their one Week 1 game's result).
+        sorted_scores = sorted(scores, key=lambda s: int(s["week"]) if (s.get("week") or "").isdigit() else 0)
+        game_log = []
+        for s in sorted_scores:
+            result = "W" if s["for"] > s["against"] else ("L" if s["for"] < s["against"] else "T")
+            game_log.append({
+                "week": s.get("week"),
+                "opp": TEAM_NAME_MAP.get(s.get("opp"), s.get("opp")),
+                "teamScore": s["for"], "oppScore": s["against"], "result": result,
+            })
+
         teams[full_name] = {
             "league": "NFL",
             "record": record if scores else existing.get("record", ""),
@@ -142,6 +161,7 @@ def main():
             "to": round(sum(g["to"] for g in games) / n, 2),
             "ats": existing.get("ats", ""),
             "wk1": True,
+            "games": game_log if game_log else existing.get("games", []),
         }
 
     with open(EXISTING_PATH, "w") as f:
