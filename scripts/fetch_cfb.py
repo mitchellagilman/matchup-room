@@ -22,18 +22,28 @@ same trick used in fetch_nfl.py: CFBD's stats endpoints are offense-only,
 so for team X's defense in a given game, we look up the OTHER team's
 offensive output in that same game and count it as what X allowed.
 
-*** FCS SUPPORT -- ADDED, THEN REMOVED ***
-This briefly supported FCS teams alongside FBS (fetching both
-classifications from /teams, /games, and /games/teams). Removed: it
-roughly doubled CFBD API call volume, and CFBD's free tier is 1,000 calls
-per calendar month (confirmed via their own published terms) -- a real
-run showed every CFB script hitting that ceiling. FCS support was also
-only ever useful for the handful of early-season "buy games" an FBS team
-schedules against an FCS opponent; by a few weeks into the season those
-are done and FBS teams only play other FBS teams, so the ongoing call
-cost wasn't worth it for what it bought. CLASSIFICATIONS is a list (not
-a single hardcoded string) specifically so this is easy to expand again
-later if wanted -- just add "fcs" back in, same as before.
+*** FCS SUPPORT -- ADDED, REMOVED, THEN RESTORED WITH A FIX ***
+FCS was added, then removed to fit CFBD's free-tier call budget, and is
+now back after upgrading to CFBD's Patreon Tier 1 (5,000 calls/month --
+comfortably covers the ~1,500/month this now costs across all CFB
+scripts combined).
+
+*** WHY DIVISION IS NOT TRUSTED FROM CFBD'S OWN classification PARAM ***
+Confirmed live, real data: querying /teams with classification=fbs
+returned 186 teams, not the real ~138 -- CFBD's own filter let 48
+genuine FCS programs through (Alcorn State, Furman, Maine, Murray
+State, VMI, Youngstown State, and more), plus at least one school
+(UT Rio Grande Valley) that doesn't field a football program at all.
+So this script still queries both classifications (to maximize real
+coverage, since CFBD's split isn't reliable in either direction), but
+determines each team's actual division by checking it against
+KNOWN_FBS_TEAMS below -- a hardcoded list of the real ~138 FBS teams,
+independently verified via web search during this project (not derived
+from a CFBD API response) -- rather than trusting whatever classification
+label CFBD attaches to it. Anything not in that list is treated as FCS.
+This list can go stale as conferences realign (teams do occasionally
+move divisions) -- if a team you know just moved to FBS shows up
+labeled "fcs", that's the first place to check.
 
 Team names are matched between /teams and /games/teams by CFBD's own
 "school" field -- keep it that way rather than inventing an alternate
@@ -61,7 +71,13 @@ from cfbd_utils import cfbd_get
 
 YEAR = 2026
 EXISTING_PATH = "data/cfb-teams.json"
-CLASSIFICATIONS = ["fbs"]  # FCS dropped -- see docstring: by a couple weeks into the season FBS teams aren't playing FCS opponents anyway, and it was roughly doubling CFBD API call volume against a 1,000-call/month free-tier ceiling
+CLASSIFICATIONS = ["fbs", "fcs"]  # queried for coverage only -- division is decided by KNOWN_FBS_TEAMS below, not by which classification a team came back under
+
+# Verified independently (web search, not a CFBD response) during this
+# project -- see the docstring note above for why this exists at all.
+KNOWN_FBS_TEAMS = frozenset([
+    'Air Force', 'Akron', 'Alabama', 'App State', 'Arizona', 'Arizona State', 'Arkansas', 'Arkansas State', 'Army', 'Auburn', 'BYU', 'Ball State', 'Baylor', 'Boise State', 'Boston College', 'Bowling Green', 'Buffalo', 'California', 'Central Michigan', 'Charlotte', 'Cincinnati', 'Clemson', 'Coastal Carolina', 'Colorado', 'Colorado State', 'Delaware', 'Duke', 'East Carolina', 'Eastern Michigan', 'Florida', 'Florida Atlantic', 'Florida International', 'Florida State', 'Fresno State', 'Georgia', 'Georgia Southern', 'Georgia State', 'Georgia Tech', "Hawai'i", 'Houston', 'Illinois', 'Indiana', 'Iowa', 'Iowa State', 'Jacksonville State', 'James Madison', 'Kansas', 'Kansas State', 'Kennesaw State', 'Kent State', 'Kentucky', 'LSU', 'Liberty', 'Louisiana', 'Louisiana Tech', 'Louisville', 'Marshall', 'Maryland', 'Massachusetts', 'Memphis', 'Miami', 'Miami (OH)', 'Michigan', 'Michigan State', 'Middle Tennessee', 'Minnesota', 'Mississippi State', 'Missouri', 'Missouri State', 'NC State', 'Navy', 'Nebraska', 'Nevada', 'New Mexico', 'New Mexico State', 'North Carolina', 'North Dakota State', 'North Texas', 'Northern Illinois', 'Northwestern', 'Notre Dame', 'Ohio', 'Ohio State', 'Oklahoma', 'Oklahoma State', 'Old Dominion', 'Ole Miss', 'Oregon', 'Oregon State', 'Penn State', 'Pittsburgh', 'Purdue', 'Rice', 'Rutgers', 'SMU', 'Sacramento State', 'Sam Houston', 'San Diego State', 'San José State', 'South Alabama', 'South Carolina', 'South Florida', 'Southern Miss', 'Stanford', 'Syracuse', 'TCU', 'Temple', 'Tennessee', 'Texas', 'Texas A&M', 'Texas State', 'Texas Tech', 'Toledo', 'Troy', 'Tulane', 'Tulsa', 'UAB', 'UCF', 'UCLA', 'UConn', 'UL Monroe', 'UNLV', 'USC', 'UTEP', 'UTSA', 'Utah', 'Utah State', 'Vanderbilt', 'Virginia', 'Virginia Tech', 'Wake Forest', 'Washington', 'Washington State', 'West Virginia', 'Western Kentucky', 'Western Michigan', 'Wisconsin', 'Wyoming',
+])
 
 # The two offensive categories CFBD's games/teams stats use that we need.
 # CFBD's documented category strings -- verify against a live response if
@@ -133,7 +149,10 @@ def main():
     except FileNotFoundError:
         teams = {}
 
-    # Team -> (conference, division) for every FBS + FCS team.
+    # Team -> (conference, division) for every FBS + FCS team. "division"
+    # is decided by KNOWN_FBS_TEAMS, NOT by which classification value
+    # this team happened to come back under -- see the docstring note on
+    # why CFBD's own classification split can't be trusted here.
     all_team_meta = {}
     for classification in CLASSIFICATIONS:
         try:
@@ -144,7 +163,8 @@ def main():
         for t in resp:
             name = t.get("school")
             if name:
-                all_team_meta[name] = (t.get("conference") or "Independent", classification)
+                real_division = "fbs" if name in KNOWN_FBS_TEAMS else "fcs"
+                all_team_meta[name] = (t.get("conference") or "Independent", real_division)
         time.sleep(1)
 
     if not all_team_meta:
