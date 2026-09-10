@@ -23,14 +23,16 @@
   },
   "New England Patriots": {
     "league": "NFL",
-    "ppg": 28.8,
-    "pa": 18.8,
-    "passOff": 250.5,
-    "rushOff": 128.9,
-    "passDef": 193.5,
-    "rushDef": 101.7,
-    "to": 0.18,
-    "ats": ""
+    "record": "0-1",
+    "ppg": 10.0,
+    "pa": 13.0,
+    "passOff": 178.0,
+    "rushOff": 109.0,
+    "passDef": 200.0,
+    "rushDef": 97.0,
+    "to": -3.0,
+    "ats": "",
+    "wk1": true
   },
   "Buffalo Bills": {
     "league": "NFL",
@@ -78,14 +80,16 @@
   },
   "Seattle Seahawks": {
     "league": "NFL",
-    "ppg": 28.4,
-    "pa": 17.2,
-    "passOff": 228.1,
-    "rushOff": 123.3,
-    "passDef": 193.9,
-    "rushDef": 91.9,
-    "to": -0.18,
-    "ats": ""
+    "record": "1-0",
+    "ppg": 13.0,
+    "pa": 10.0,
+    "passOff": 200.0,
+    "rushOff": 97.0,
+    "passDef": 178.0,
+    "rushDef": 109.0,
+    "to": 3.0,
+    "ats": "",
+    "wk1": true
   },
   "Indianapolis Colts": {
     "league": "NFL",

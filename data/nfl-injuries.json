@@ -1,0 +1,69 @@
+{
+  "week": 1,
+  "entries": [
+    {
+      "team": "Los Angeles Rams",
+      "name": "Aaron Donald",
+      "pos": "DE",
+      "injury": "Not injury related - resting player",
+      "status": "Out",
+      "_id": "00-0031388"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "Ben Brown",
+      "pos": "C",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0037413"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "TreVeyon Henderson",
+      "pos": "RB",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0040734"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "name": "Ty Okada",
+      "pos": "S",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0038765"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "name": "Tory Horton",
+      "pos": "WR",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0040648"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "name": "Nick Emmanwori",
+      "pos": "S",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0040733"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Alfred Collins",
+      "pos": "DT",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0040721"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "James Thompson Jr.",
+      "pos": "DT",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0041363"
+    }
+  ]
+}
