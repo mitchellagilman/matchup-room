@@ -13,6 +13,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "East Carolina",
+        "teamScore": 48,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": 20.0
   },
   "Arkansas": {
@@ -29,6 +38,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Alabama",
+        "teamScore": 31,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": 3.3
   },
   "Auburn": {
@@ -45,6 +63,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Baylor",
+        "teamScore": 17,
+        "oppScore": 16,
+        "result": "W"
+      }
+    ],
     "spPlus": 7.0
   },
   "Florida": {
@@ -61,6 +88,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Florida Atlantic",
+        "teamScore": 66,
+        "oppScore": 21,
+        "result": "W"
+      }
+    ],
     "spPlus": 18.6
   },
   "Georgia": {
@@ -77,6 +113,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Tennessee State",
+        "teamScore": 63,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": 28.7
   },
   "Kentucky": {
@@ -93,6 +138,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Youngstown State",
+        "teamScore": 45,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ],
     "spPlus": 8.5
   },
   "LSU": {
@@ -109,6 +163,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Clemson",
+        "teamScore": 51,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": 23.3
   },
   "Mississippi State": {
@@ -125,6 +188,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UL Monroe",
+        "teamScore": 62,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ],
     "spPlus": 9.4
   },
   "Missouri": {
@@ -141,6 +213,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Arkansas-Pine Bluff",
+        "teamScore": 54,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": 12.9
   },
   "Oklahoma": {
@@ -157,6 +238,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UTEP",
+        "teamScore": 51,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 21.7
   },
   "Ole Miss": {
@@ -173,6 +263,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Louisville",
+        "teamScore": 41,
+        "oppScore": 38,
+        "result": "W"
+      }
+    ],
     "spPlus": 13.3
   },
   "South Carolina": {
@@ -189,6 +288,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Kent State",
+        "teamScore": 57,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 16.7
   },
   "Tennessee": {
@@ -205,6 +313,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Furman",
+        "teamScore": 56,
+        "oppScore": 9,
+        "result": "W"
+      }
+    ],
     "spPlus": 19.9
   },
   "Texas": {
@@ -221,6 +338,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Texas State",
+        "teamScore": 59,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": 25.4
   },
   "Texas A&M": {
@@ -237,6 +363,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Missouri State",
+        "teamScore": 50,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 23.9
   },
   "Vanderbilt": {
@@ -253,6 +388,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Austin Peay",
+        "teamScore": 28,
+        "oppScore": 9,
+        "result": "W"
+      }
+    ],
     "spPlus": 12.1
   },
   "Illinois": {
@@ -269,6 +413,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UAB",
+        "teamScore": 42,
+        "oppScore": 23,
+        "result": "W"
+      }
+    ],
     "spPlus": 7.5
   },
   "Indiana": {
@@ -285,6 +438,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Texas",
+        "teamScore": 52,
+        "oppScore": 16,
+        "result": "W"
+      }
+    ],
     "spPlus": 24.1
   },
   "Iowa": {
@@ -301,6 +463,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Northern Illinois",
+        "teamScore": 40,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 18.0
   },
   "Maryland": {
@@ -317,6 +488,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Hampton",
+        "teamScore": 62,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 9.1
   },
   "Michigan": {
@@ -333,6 +513,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Western Michigan",
+        "teamScore": 13,
+        "oppScore": 12,
+        "result": "W"
+      }
+    ],
     "spPlus": 12.2
   },
   "Michigan State": {
@@ -349,6 +538,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Toledo",
+        "teamScore": 30,
+        "oppScore": 20,
+        "result": "W"
+      }
+    ],
     "spPlus": 1.0
   },
   "Minnesota": {
@@ -365,6 +563,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Eastern Illinois",
+        "teamScore": 59,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": 9.6
   },
   "Nebraska": {
@@ -381,6 +588,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Ohio",
+        "teamScore": 49,
+        "oppScore": 21,
+        "result": "W"
+      }
+    ],
     "spPlus": 12.1
   },
   "Northwestern": {
@@ -397,6 +613,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "South Dakota State",
+        "teamScore": 34,
+        "oppScore": 18,
+        "result": "W"
+      }
+    ],
     "spPlus": 7.8
   },
   "Ohio State": {
@@ -413,6 +638,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Ball State",
+        "teamScore": 56,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": 30.0
   },
   "Oregon": {
@@ -429,6 +663,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Boise State",
+        "teamScore": 34,
+        "oppScore": 27,
+        "result": "W"
+      }
+    ],
     "spPlus": 23.9
   },
   "Penn State": {
@@ -445,6 +688,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Marshall",
+        "teamScore": 45,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 19.8
   },
   "Purdue": {
@@ -461,6 +713,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Indiana State",
+        "teamScore": 44,
+        "oppScore": 19,
+        "result": "W"
+      }
+    ],
     "spPlus": 1.2
   },
   "Rutgers": {
@@ -477,6 +738,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Massachusetts",
+        "teamScore": 21,
+        "oppScore": 37,
+        "result": "L"
+      }
+    ],
     "spPlus": -3.6
   },
   "UCLA": {
@@ -493,6 +763,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "California",
+        "teamScore": 45,
+        "oppScore": 24,
+        "result": "W"
+      }
+    ],
     "spPlus": 9.2
   },
   "USC": {
@@ -509,6 +788,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "San Jos\u00e9 State",
+        "teamScore": 42,
+        "oppScore": 26,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Fresno State",
+        "teamScore": 39,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 17.7
   },
   "Washington": {
@@ -525,6 +820,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Washington State",
+        "teamScore": 24,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": 12.0
   },
   "Wisconsin": {
@@ -541,6 +845,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Notre Dame",
+        "teamScore": 13,
+        "oppScore": 41,
+        "result": "L"
+      }
+    ],
     "spPlus": -1.5
   },
   "Arizona": {
@@ -557,6 +870,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Northern Arizona",
+        "teamScore": 35,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": 12.6
   },
   "Arizona State": {
@@ -573,6 +895,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Morgan State",
+        "teamScore": 70,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": 8.7
   },
   "Baylor": {
@@ -589,6 +920,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Auburn",
+        "teamScore": 16,
+        "oppScore": 17,
+        "result": "L"
+      }
+    ],
     "spPlus": 4.9
   },
   "BYU": {
@@ -605,6 +945,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Utah Tech",
+        "teamScore": 63,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": 16.8
   },
   "Cincinnati": {
@@ -621,6 +970,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Boston College",
+        "teamScore": 34,
+        "oppScore": 15,
+        "result": "W"
+      }
+    ],
     "spPlus": 5.9
   },
   "Colorado": {
@@ -637,6 +995,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Georgia Tech",
+        "teamScore": 14,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ],
     "spPlus": 2.1
   },
   "Houston": {
@@ -653,6 +1020,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Oregon State",
+        "teamScore": 33,
+        "oppScore": 20,
+        "result": "W"
+      }
+    ],
     "spPlus": 6.5
   },
   "Iowa State": {
@@ -669,6 +1045,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Southeast Missouri State",
+        "teamScore": 38,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": 3.1
   },
   "Kansas": {
@@ -685,6 +1070,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Long Island University",
+        "teamScore": 51,
+        "oppScore": 6,
+        "result": "W"
+      }
+    ],
     "spPlus": 7.5
   },
   "Kansas State": {
@@ -701,6 +1095,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Nicholls",
+        "teamScore": 71,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": 12.7
   },
   "Oklahoma State": {
@@ -717,6 +1120,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Tulsa",
+        "teamScore": 10,
+        "oppScore": 24,
+        "result": "L"
+      }
+    ],
     "spPlus": 1.1
   },
   "TCU": {
@@ -733,6 +1145,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Carolina",
+        "teamScore": 10,
+        "oppScore": 15,
+        "result": "L"
+      }
+    ],
     "spPlus": 3.9
   },
   "Texas Tech": {
@@ -749,6 +1170,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Abilene Christian",
+        "teamScore": 33,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": 18.9
   },
   "UCF": {
@@ -765,6 +1195,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Bethune-Cookman",
+        "teamScore": 73,
+        "oppScore": 6,
+        "result": "W"
+      }
+    ],
     "spPlus": 5.9
   },
   "Utah": {
@@ -781,6 +1220,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Idaho",
+        "teamScore": 66,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": 13.0
   },
   "West Virginia": {
@@ -797,6 +1245,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Coastal Carolina",
+        "teamScore": 31,
+        "oppScore": 24,
+        "result": "W"
+      }
+    ],
     "spPlus": -4.4
   },
   "Boston College": {
@@ -813,6 +1270,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Cincinnati",
+        "teamScore": 15,
+        "oppScore": 34,
+        "result": "L"
+      }
+    ],
     "spPlus": -7.4
   },
   "California": {
@@ -829,6 +1295,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UCLA",
+        "teamScore": 24,
+        "oppScore": 45,
+        "result": "L"
+      }
+    ],
     "spPlus": -3.4
   },
   "Clemson": {
@@ -845,6 +1320,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "LSU",
+        "teamScore": 10,
+        "oppScore": 51,
+        "result": "L"
+      }
+    ],
     "spPlus": 5.2
   },
   "Duke": {
@@ -861,6 +1345,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Tulane",
+        "teamScore": 17,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": 6.6
   },
   "Florida State": {
@@ -877,6 +1370,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "New Mexico State",
+        "teamScore": 34,
+        "oppScore": 17,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "SMU",
+        "teamScore": 24,
+        "oppScore": 27,
+        "result": "L"
+      }
+    ],
     "spPlus": 6.9
   },
   "Georgia Tech": {
@@ -893,6 +1402,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Colorado",
+        "teamScore": 13,
+        "oppScore": 14,
+        "result": "L"
+      }
+    ],
     "spPlus": 1.7
   },
   "Louisville": {
@@ -909,6 +1427,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Ole Miss",
+        "teamScore": 38,
+        "oppScore": 41,
+        "result": "L"
+      }
+    ],
     "spPlus": 10.0
   },
   "NC State": {
@@ -925,6 +1452,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Virginia",
+        "teamScore": 8,
+        "oppScore": 34,
+        "result": "L"
+      }
+    ],
     "spPlus": -0.7
   },
   "North Carolina": {
@@ -941,6 +1477,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "TCU",
+        "teamScore": 15,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": 5.8
   },
   "Pittsburgh": {
@@ -957,6 +1502,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Miami (OH)",
+        "teamScore": 59,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": 10.1
   },
   "SMU": {
@@ -973,6 +1527,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Florida State",
+        "teamScore": 27,
+        "oppScore": 24,
+        "result": "W"
+      }
+    ],
     "spPlus": 11.1
   },
   "Stanford": {
@@ -989,6 +1552,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Hawai'i",
+        "teamScore": 37,
+        "oppScore": 27,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Miami",
+        "teamScore": 6,
+        "oppScore": 45,
+        "result": "L"
+      }
+    ],
     "spPlus": -4.7
   },
   "Syracuse": {
@@ -1005,6 +1584,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "New Hampshire",
+        "teamScore": 66,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": 2.7
   },
   "Virginia": {
@@ -1021,6 +1609,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "NC State",
+        "teamScore": 34,
+        "oppScore": 8,
+        "result": "W"
+      }
+    ],
     "spPlus": 11.5
   },
   "Virginia Tech": {
@@ -1037,6 +1634,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "VMI",
+        "teamScore": 73,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": 12.4
   },
   "Wake Forest": {
@@ -1053,6 +1659,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Akron",
+        "teamScore": 38,
+        "oppScore": 16,
+        "result": "W"
+      }
+    ],
     "spPlus": 1.6
   },
   "Notre Dame": {
@@ -1069,6 +1684,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Wisconsin",
+        "teamScore": 41,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ],
     "spPlus": 26.8
   },
   "Miami": {
@@ -1085,6 +1709,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Stanford",
+        "teamScore": 45,
+        "oppScore": 6,
+        "result": "W"
+      }
+    ],
     "spPlus": 24.7
   },
   "Air Force": {
@@ -1101,6 +1734,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Duquesne",
+        "teamScore": 34,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 1.1
   },
   "Akron": {
@@ -1117,6 +1759,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Wake Forest",
+        "teamScore": 16,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ],
     "spPlus": -21.4
   },
   "App State": {
@@ -1133,6 +1784,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Maine",
+        "teamScore": 55,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": -7.2
   },
   "Arkansas State": {
@@ -1149,6 +1809,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Memphis",
+        "teamScore": 24,
+        "oppScore": 42,
+        "result": "L"
+      }
+    ],
     "spPlus": -15.1
   },
   "Army": {
@@ -1165,6 +1834,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Bryant",
+        "teamScore": 59,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": 2.2
   },
   "Ball State": {
@@ -1181,6 +1859,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Ohio State",
+        "teamScore": 3,
+        "oppScore": 56,
+        "result": "L"
+      }
+    ],
     "spPlus": -25.0
   },
   "Boise State": {
@@ -1197,6 +1884,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Oregon",
+        "teamScore": 27,
+        "oppScore": 34,
+        "result": "L"
+      }
+    ],
     "spPlus": 5.2
   },
   "Bowling Green": {
@@ -1213,6 +1909,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Tarleton State",
+        "teamScore": 13,
+        "oppScore": 20,
+        "result": "L"
+      }
+    ],
     "spPlus": -12.8
   },
   "Buffalo": {
@@ -1229,6 +1934,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UAlbany",
+        "teamScore": 21,
+        "oppScore": 17,
+        "result": "W"
+      }
+    ],
     "spPlus": -11.6
   },
   "Central Michigan": {
@@ -1245,6 +1959,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "New Mexico",
+        "teamScore": 7,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ],
     "spPlus": -20.0
   },
   "Charlotte": {
@@ -1261,6 +1984,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "The Citadel",
+        "teamScore": 41,
+        "oppScore": 43,
+        "result": "L"
+      }
+    ],
     "spPlus": -26.0
   },
   "Coastal Carolina": {
@@ -1277,6 +2009,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "West Virginia",
+        "teamScore": 24,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ],
     "spPlus": -12.1
   },
   "Colorado State": {
@@ -1293,6 +2034,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Wyoming",
+        "teamScore": 35,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ],
     "spPlus": -7.5
   },
   "Delaware": {
@@ -1309,6 +2059,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Merrimack",
+        "teamScore": 42,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": -7.6
   },
   "East Carolina": {
@@ -1325,6 +2084,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Alabama",
+        "teamScore": 10,
+        "oppScore": 48,
+        "result": "L"
+      }
+    ],
     "spPlus": -8.1
   },
   "Eastern Michigan": {
@@ -1341,6 +2109,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Sacramento State",
+        "teamScore": 28,
+        "oppScore": 17,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "San Jos\u00e9 State",
+        "teamScore": 21,
+        "oppScore": 27,
+        "result": "L"
+      }
+    ],
     "spPlus": -15.6
   },
   "Florida Atlantic": {
@@ -1357,6 +2141,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Florida",
+        "teamScore": 21,
+        "oppScore": 66,
+        "result": "L"
+      }
+    ],
     "spPlus": -12.2
   },
   "Florida International": {
@@ -1373,6 +2166,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "South Florida",
+        "teamScore": 9,
+        "oppScore": 19,
+        "result": "L"
+      }
+    ],
     "spPlus": -13.5
   },
   "Fresno State": {
@@ -1389,6 +2191,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "USC",
+        "teamScore": 0,
+        "oppScore": 39,
+        "result": "L"
+      }
+    ],
     "spPlus": -7.6
   },
   "Georgia Southern": {
@@ -1405,6 +2216,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Charleston Southern",
+        "teamScore": 31,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": -5.8
   },
   "Georgia State": {
@@ -1421,6 +2241,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Carolina A&T",
+        "teamScore": 59,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": -22.7
   },
   "Hawai'i": {
@@ -1437,6 +2266,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Stanford",
+        "teamScore": 27,
+        "oppScore": 37,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "UNLV",
+        "teamScore": 6,
+        "oppScore": 21,
+        "result": "L"
+      }
+    ],
     "spPlus": -7.0
   },
   "Jacksonville State": {
@@ -1453,6 +2298,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Dakota State",
+        "teamScore": 7,
+        "oppScore": 33,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Eastern Kentucky",
+        "teamScore": 49,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": -7.0
   },
   "James Madison": {
@@ -1469,6 +2330,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Liberty",
+        "teamScore": 20,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ],
     "spPlus": -0.3
   },
   "Kennesaw State": {
@@ -1485,6 +2355,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "West Georgia",
+        "teamScore": 47,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": -7.4
   },
   "Kent State": {
@@ -1501,6 +2380,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "South Carolina",
+        "teamScore": 0,
+        "oppScore": 57,
+        "result": "L"
+      }
+    ],
     "spPlus": -27.5
   },
   "Liberty": {
@@ -1517,6 +2405,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "James Madison",
+        "teamScore": 13,
+        "oppScore": 20,
+        "result": "L"
+      }
+    ],
     "spPlus": -7.2
   },
   "Louisiana": {
@@ -1533,6 +2430,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Lamar",
+        "teamScore": 38,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": -5.7
   },
   "Louisiana Tech": {
@@ -1549,6 +2455,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Northwestern State",
+        "teamScore": 80,
+        "oppScore": 6,
+        "result": "W"
+      }
+    ],
     "spPlus": -3.8
   },
   "Marshall": {
@@ -1565,6 +2480,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Penn State",
+        "teamScore": 0,
+        "oppScore": 45,
+        "result": "L"
+      }
+    ],
     "spPlus": -14.4
   },
   "Massachusetts": {
@@ -1581,6 +2505,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Rutgers",
+        "teamScore": 37,
+        "oppScore": 21,
+        "result": "W"
+      }
+    ],
     "spPlus": -25.8
   },
   "Memphis": {
@@ -1597,6 +2530,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UNLV",
+        "teamScore": 27,
+        "oppScore": 21,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Arkansas State",
+        "teamScore": 42,
+        "oppScore": 24,
+        "result": "W"
+      }
+    ],
     "spPlus": 2.1
   },
   "Miami (OH)": {
@@ -1613,6 +2562,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Pittsburgh",
+        "teamScore": 14,
+        "oppScore": 59,
+        "result": "L"
+      }
+    ],
     "spPlus": -10.0
   },
   "Middle Tennessee": {
@@ -1629,6 +2587,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Murray State",
+        "teamScore": 38,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": -20.8
   },
   "Missouri State": {
@@ -1645,6 +2612,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Texas A&M",
+        "teamScore": 0,
+        "oppScore": 50,
+        "result": "L"
+      }
+    ],
     "spPlus": -24.3
   },
   "Navy": {
@@ -1661,6 +2637,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Towson",
+        "teamScore": 42,
+        "oppScore": 15,
+        "result": "W"
+      }
+    ],
     "spPlus": 3.6
   },
   "Nevada": {
@@ -1677,6 +2662,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Western Kentucky",
+        "teamScore": 49,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": -6.1
   },
   "New Mexico": {
@@ -1693,6 +2687,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Central Michigan",
+        "teamScore": 38,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": 4.4
   },
   "New Mexico State": {
@@ -1709,6 +2712,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Florida State",
+        "teamScore": 17,
+        "oppScore": 34,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Mercyhurst",
+        "teamScore": 51,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": -15.0
   },
   "North Dakota State": {
@@ -1725,6 +2744,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Jacksonville State",
+        "teamScore": 33,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Fordham",
+        "teamScore": 38,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": 2.6
   },
   "Northern Illinois": {
@@ -1741,6 +2776,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Iowa",
+        "teamScore": 0,
+        "oppScore": 40,
+        "result": "L"
+      }
+    ],
     "spPlus": -22.3
   },
   "North Texas": {
@@ -1757,6 +2801,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Indiana",
+        "teamScore": 16,
+        "oppScore": 52,
+        "result": "L"
+      }
+    ],
     "spPlus": -13.2
   },
   "Ohio": {
@@ -1773,6 +2826,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Nebraska",
+        "teamScore": 21,
+        "oppScore": 49,
+        "result": "L"
+      }
+    ],
     "spPlus": -16.4
   },
   "Old Dominion": {
@@ -1789,6 +2851,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Norfolk State",
+        "teamScore": 31,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": -6.2
   },
   "Oregon State": {
@@ -1805,6 +2876,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Houston",
+        "teamScore": 20,
+        "oppScore": 33,
+        "result": "L"
+      }
+    ],
     "spPlus": -6.8
   },
   "Rice": {
@@ -1821,6 +2901,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Houston Christian",
+        "teamScore": 31,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": -10.4
   },
   "Sacramento State": {
@@ -1837,6 +2926,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Eastern Michigan",
+        "teamScore": 17,
+        "oppScore": 28,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Mississippi Valley State",
+        "teamScore": 52,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ],
     "spPlus": -19.1
   },
   "Sam Houston": {
@@ -1853,6 +2958,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Troy",
+        "teamScore": 21,
+        "oppScore": 24,
+        "result": "L"
+      }
+    ],
     "spPlus": -21.5
   },
   "San Diego State": {
@@ -1869,6 +2983,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Portland State",
+        "teamScore": 53,
+        "oppScore": 20,
+        "result": "W"
+      }
+    ],
     "spPlus": 3.1
   },
   "San Jos\u00e9 State": {
@@ -1885,6 +3008,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "USC",
+        "teamScore": 26,
+        "oppScore": 42,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Eastern Michigan",
+        "teamScore": 27,
+        "oppScore": 21,
+        "result": "W"
+      }
+    ],
     "spPlus": -12.8
   },
   "South Alabama": {
@@ -1901,6 +3040,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "SE Louisiana",
+        "teamScore": 39,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": -11.4
   },
   "Southern Miss": {
@@ -1917,6 +3065,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Alcorn State",
+        "teamScore": 49,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ],
     "spPlus": -14.9
   },
   "South Florida": {
@@ -1933,6 +3090,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Florida International",
+        "teamScore": 19,
+        "oppScore": 9,
+        "result": "W"
+      }
+    ],
     "spPlus": -3.1
   },
   "Temple": {
@@ -1949,6 +3115,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Rhode Island",
+        "teamScore": 38,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ],
     "spPlus": -4.9
   },
   "Texas State": {
@@ -1965,6 +3140,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Texas",
+        "teamScore": 7,
+        "oppScore": 59,
+        "result": "L"
+      }
+    ],
     "spPlus": -7.8
   },
   "Toledo": {
@@ -1981,6 +3165,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Michigan State",
+        "teamScore": 20,
+        "oppScore": 30,
+        "result": "L"
+      }
+    ],
     "spPlus": -9.4
   },
   "Troy": {
@@ -1997,6 +3190,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Sam Houston",
+        "teamScore": 24,
+        "oppScore": 21,
+        "result": "W"
+      }
+    ],
     "spPlus": -11.4
   },
   "Tulane": {
@@ -2013,6 +3215,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Duke",
+        "teamScore": 3,
+        "oppScore": 17,
+        "result": "L"
+      }
+    ],
     "spPlus": -7.4
   },
   "Tulsa": {
@@ -2029,6 +3240,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Oklahoma State",
+        "teamScore": 24,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ],
     "spPlus": -2.3
   },
   "UAB": {
@@ -2045,6 +3265,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Illinois",
+        "teamScore": 23,
+        "oppScore": 42,
+        "result": "L"
+      }
+    ],
     "spPlus": -16.0
   },
   "UConn": {
@@ -2061,6 +3290,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Lafayette",
+        "teamScore": 56,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ],
     "spPlus": -6.3
   },
   "UL Monroe": {
@@ -2077,6 +3315,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Mississippi State",
+        "teamScore": 13,
+        "oppScore": 62,
+        "result": "L"
+      }
+    ],
     "spPlus": -33.2
   },
   "UNLV": {
@@ -2093,6 +3340,22 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Memphis",
+        "teamScore": 21,
+        "oppScore": 27,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Hawai'i",
+        "teamScore": 21,
+        "oppScore": 6,
+        "result": "W"
+      }
+    ],
     "spPlus": 2.3
   },
   "Utah State": {
@@ -2109,6 +3372,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Idaho State",
+        "teamScore": 17,
+        "oppScore": 29,
+        "result": "L"
+      }
+    ],
     "spPlus": -11.5
   },
   "UTEP": {
@@ -2125,6 +3397,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Oklahoma",
+        "teamScore": 0,
+        "oppScore": 51,
+        "result": "L"
+      }
+    ],
     "spPlus": -24.3
   },
   "UTSA": {
@@ -2141,6 +3422,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UT Rio Grande Valley",
+        "teamScore": 45,
+        "oppScore": 16,
+        "result": "W"
+      }
+    ],
     "spPlus": 2.9
   },
   "Washington State": {
@@ -2157,6 +3447,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Washington",
+        "teamScore": 10,
+        "oppScore": 24,
+        "result": "L"
+      }
+    ],
     "spPlus": -3.7
   },
   "Western Kentucky": {
@@ -2173,6 +3472,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Nevada",
+        "teamScore": 14,
+        "oppScore": 49,
+        "result": "L"
+      }
+    ],
     "spPlus": -13.1
   },
   "Western Michigan": {
@@ -2189,6 +3497,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Michigan",
+        "teamScore": 12,
+        "oppScore": 13,
+        "result": "L"
+      }
+    ],
     "spPlus": -4.2
   },
   "Wyoming": {
@@ -2205,6 +3522,15 @@
     "to": 0,
     "ats": "",
     "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Colorado State",
+        "teamScore": 13,
+        "oppScore": 35,
+        "result": "L"
+      }
+    ],
     "spPlus": -15.2
   },
   "Abilene Christian": {
@@ -2220,7 +3546,23 @@
     "rushDef": 134.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Lamar",
+        "teamScore": 14,
+        "oppScore": 21,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Texas Tech",
+        "teamScore": 10,
+        "oppScore": 33,
+        "result": "L"
+      }
+    ]
   },
   "Alcorn State": {
     "league": "CFB",
@@ -2235,7 +3577,23 @@
     "rushDef": 180.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Miles",
+        "teamScore": 56,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Southern Miss",
+        "teamScore": 3,
+        "oppScore": 49,
+        "result": "L"
+      }
+    ]
   },
   "Arkansas-Pine Bluff": {
     "league": "CFB",
@@ -2250,7 +3608,23 @@
     "rushDef": 147.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Morehouse",
+        "teamScore": 35,
+        "oppScore": 15,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Missouri",
+        "teamScore": 14,
+        "oppScore": 54,
+        "result": "L"
+      }
+    ]
   },
   "Austin Peay": {
     "league": "CFB",
@@ -2265,7 +3639,23 @@
     "rushDef": 109.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Gardner-Webb",
+        "teamScore": 35,
+        "oppScore": 17,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Vanderbilt",
+        "teamScore": 9,
+        "oppScore": 28,
+        "result": "L"
+      }
+    ]
   },
   "Bethune-Cookman": {
     "league": "CFB",
@@ -2280,7 +3670,16 @@
     "rushDef": 360.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UCF",
+        "teamScore": 6,
+        "oppScore": 73,
+        "result": "L"
+      }
+    ]
   },
   "Bryant": {
     "league": "CFB",
@@ -2295,7 +3694,23 @@
     "rushDef": 335.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Stonehill",
+        "teamScore": 24,
+        "oppScore": 6,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Army",
+        "teamScore": 3,
+        "oppScore": 59,
+        "result": "L"
+      }
+    ]
   },
   "Charleston Southern": {
     "league": "CFB",
@@ -2310,7 +3725,23 @@
     "rushDef": 166.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Lindenwood",
+        "teamScore": 17,
+        "oppScore": 20,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Georgia Southern",
+        "teamScore": 0,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "Duquesne": {
     "league": "CFB",
@@ -2325,7 +3756,16 @@
     "rushDef": 431.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Air Force",
+        "teamScore": 0,
+        "oppScore": 34,
+        "result": "L"
+      }
+    ]
   },
   "Eastern Illinois": {
     "league": "CFB",
@@ -2340,7 +3780,23 @@
     "rushDef": 105.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Murray State",
+        "teamScore": 28,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Minnesota",
+        "teamScore": 7,
+        "oppScore": 59,
+        "result": "L"
+      }
+    ]
   },
   "Eastern Kentucky": {
     "league": "CFB",
@@ -2355,7 +3811,23 @@
     "rushDef": 181.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Western Carolina",
+        "teamScore": 21,
+        "oppScore": 45,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Jacksonville State",
+        "teamScore": 7,
+        "oppScore": 49,
+        "result": "L"
+      }
+    ]
   },
   "Fordham": {
     "league": "CFB",
@@ -2370,7 +3842,23 @@
     "rushDef": 201.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Colgate",
+        "teamScore": 14,
+        "oppScore": 24,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "North Dakota State",
+        "teamScore": 0,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "Furman": {
     "league": "CFB",
@@ -2385,7 +3873,23 @@
     "rushDef": 167.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Anderson (SC)",
+        "teamScore": 20,
+        "oppScore": 3,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Tennessee",
+        "teamScore": 9,
+        "oppScore": 56,
+        "result": "L"
+      }
+    ]
   },
   "Hampton": {
     "league": "CFB",
@@ -2400,7 +3904,23 @@
     "rushDef": 209.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Virginia Lynchburg",
+        "teamScore": 45,
+        "oppScore": 0,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Maryland",
+        "teamScore": 0,
+        "oppScore": 62,
+        "result": "L"
+      }
+    ]
   },
   "Houston Christian": {
     "league": "CFB",
@@ -2415,7 +3935,23 @@
     "rushDef": 356.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "SE Louisiana",
+        "teamScore": 34,
+        "oppScore": 28,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Rice",
+        "teamScore": 3,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "Idaho": {
     "league": "CFB",
@@ -2430,7 +3966,23 @@
     "rushDef": 280.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Cal Poly",
+        "teamScore": 34,
+        "oppScore": 38,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Utah",
+        "teamScore": 14,
+        "oppScore": 66,
+        "result": "L"
+      }
+    ]
   },
   "Idaho State": {
     "league": "CFB",
@@ -2445,7 +3997,23 @@
     "rushDef": 195.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "VMI",
+        "teamScore": 38,
+        "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Utah State",
+        "teamScore": 29,
+        "oppScore": 17,
+        "result": "W"
+      }
+    ]
   },
   "Indiana State": {
     "league": "CFB",
@@ -2460,7 +4028,23 @@
     "rushDef": 115.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Southeast Missouri State",
+        "teamScore": 21,
+        "oppScore": 23,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Purdue",
+        "teamScore": 19,
+        "oppScore": 44,
+        "result": "L"
+      }
+    ]
   },
   "Lafayette": {
     "league": "CFB",
@@ -2475,7 +4059,16 @@
     "rushDef": 301.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UConn",
+        "teamScore": 7,
+        "oppScore": 56,
+        "result": "L"
+      }
+    ]
   },
   "Lamar": {
     "league": "CFB",
@@ -2490,7 +4083,23 @@
     "rushDef": 197.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Abilene Christian",
+        "teamScore": 21,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Louisiana",
+        "teamScore": 7,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "Long Island University": {
     "league": "CFB",
@@ -2505,7 +4114,23 @@
     "rushDef": 222.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Dakota",
+        "teamScore": 21,
+        "oppScore": 42,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Kansas",
+        "teamScore": 6,
+        "oppScore": 51,
+        "result": "L"
+      }
+    ]
   },
   "Maine": {
     "league": "CFB",
@@ -2520,7 +4145,23 @@
     "rushDef": 205.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Towson",
+        "teamScore": 21,
+        "oppScore": 18,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "App State",
+        "teamScore": 3,
+        "oppScore": 55,
+        "result": "L"
+      }
+    ]
   },
   "Mercyhurst": {
     "league": "CFB",
@@ -2535,7 +4176,23 @@
     "rushDef": 243.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Youngstown State",
+        "teamScore": 10,
+        "oppScore": 43,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "New Mexico State",
+        "teamScore": 14,
+        "oppScore": 51,
+        "result": "L"
+      }
+    ]
   },
   "Merrimack": {
     "league": "CFB",
@@ -2550,7 +4207,23 @@
     "rushDef": 140.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Rhode Island",
+        "teamScore": 7,
+        "oppScore": 34,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Delaware",
+        "teamScore": 7,
+        "oppScore": 42,
+        "result": "L"
+      }
+    ]
   },
   "Mississippi Valley State": {
     "league": "CFB",
@@ -2565,7 +4238,23 @@
     "rushDef": 185.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Nicholls",
+        "teamScore": 10,
+        "oppScore": 44,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Sacramento State",
+        "teamScore": 0,
+        "oppScore": 52,
+        "result": "L"
+      }
+    ]
   },
   "Morgan State": {
     "league": "CFB",
@@ -2580,7 +4269,23 @@
     "rushDef": 168.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Carolina A&T",
+        "teamScore": 17,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Arizona State",
+        "teamScore": 7,
+        "oppScore": 70,
+        "result": "L"
+      }
+    ]
   },
   "Murray State": {
     "league": "CFB",
@@ -2595,7 +4300,23 @@
     "rushDef": 231.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Eastern Illinois",
+        "teamScore": 14,
+        "oppScore": 28,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Middle Tennessee",
+        "teamScore": 14,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "New Hampshire": {
     "league": "CFB",
@@ -2610,7 +4331,23 @@
     "rushDef": 306.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UAlbany",
+        "teamScore": 14,
+        "oppScore": 28,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Syracuse",
+        "teamScore": 3,
+        "oppScore": 66,
+        "result": "L"
+      }
+    ]
   },
   "Nicholls": {
     "league": "CFB",
@@ -2625,7 +4362,23 @@
     "rushDef": 230.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Mississippi Valley State",
+        "teamScore": 44,
+        "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Kansas State",
+        "teamScore": 3,
+        "oppScore": 71,
+        "result": "L"
+      }
+    ]
   },
   "Norfolk State": {
     "league": "CFB",
@@ -2640,7 +4393,23 @@
     "rushDef": 100.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Winston-Salem State",
+        "teamScore": 56,
+        "oppScore": 0,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Old Dominion",
+        "teamScore": 10,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "North Alabama": {
     "league": "CFB",
@@ -2655,7 +4424,23 @@
     "rushDef": 70.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Samford",
+        "teamScore": 22,
+        "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Arkansas",
+        "teamScore": 14,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "North Carolina A&T": {
     "league": "CFB",
@@ -2670,7 +4455,23 @@
     "rushDef": 196.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Morgan State",
+        "teamScore": 7,
+        "oppScore": 17,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Georgia State",
+        "teamScore": 10,
+        "oppScore": 59,
+        "result": "L"
+      }
+    ]
   },
   "Northern Arizona": {
     "league": "CFB",
@@ -2685,7 +4486,23 @@
     "rushDef": 164.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Eastern Washington",
+        "teamScore": 34,
+        "oppScore": 27,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Arizona",
+        "teamScore": 7,
+        "oppScore": 35,
+        "result": "L"
+      }
+    ]
   },
   "Northwestern State": {
     "league": "CFB",
@@ -2700,7 +4517,23 @@
     "rushDef": 193.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Louisiana Christian",
+        "teamScore": 37,
+        "oppScore": 42,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Louisiana Tech",
+        "teamScore": 6,
+        "oppScore": 80,
+        "result": "L"
+      }
+    ]
   },
   "Portland State": {
     "league": "CFB",
@@ -2715,7 +4548,23 @@
     "rushDef": 162.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UC Davis",
+        "teamScore": 24,
+        "oppScore": 31,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "San Diego State",
+        "teamScore": 20,
+        "oppScore": 53,
+        "result": "L"
+      }
+    ]
   },
   "Rhode Island": {
     "league": "CFB",
@@ -2730,7 +4579,23 @@
     "rushDef": 160.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Merrimack",
+        "teamScore": 34,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Temple",
+        "teamScore": 14,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "SE Louisiana": {
     "league": "CFB",
@@ -2745,7 +4610,23 @@
     "rushDef": 201.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Houston Christian",
+        "teamScore": 28,
+        "oppScore": 34,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "South Alabama",
+        "teamScore": 14,
+        "oppScore": 39,
+        "result": "L"
+      }
+    ]
   },
   "South Dakota State": {
     "league": "CFB",
@@ -2760,7 +4641,23 @@
     "rushDef": 166.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Stetson",
+        "teamScore": 70,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Northwestern",
+        "teamScore": 18,
+        "oppScore": 34,
+        "result": "L"
+      }
+    ]
   },
   "Southeast Missouri State": {
     "league": "CFB",
@@ -2775,7 +4672,23 @@
     "rushDef": 83.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Indiana State",
+        "teamScore": 23,
+        "oppScore": 21,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Iowa State",
+        "teamScore": 10,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "Tarleton State": {
     "league": "CFB",
@@ -2790,7 +4703,23 @@
     "rushDef": 146.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Prairie View A&M",
+        "teamScore": 49,
+        "oppScore": 30,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Bowling Green",
+        "teamScore": 20,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ]
   },
   "Tennessee State": {
     "league": "CFB",
@@ -2805,7 +4734,23 @@
     "rushDef": 226.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Jackson State",
+        "teamScore": 24,
+        "oppScore": 26,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Georgia",
+        "teamScore": 3,
+        "oppScore": 63,
+        "result": "L"
+      }
+    ]
   },
   "The Citadel": {
     "league": "CFB",
@@ -2820,7 +4765,23 @@
     "rushDef": 188.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Wofford",
+        "teamScore": 14,
+        "oppScore": 42,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Charlotte",
+        "teamScore": 43,
+        "oppScore": 41,
+        "result": "W"
+      }
+    ]
   },
   "Towson": {
     "league": "CFB",
@@ -2835,7 +4796,23 @@
     "rushDef": 318.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Maine",
+        "teamScore": 18,
+        "oppScore": 21,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Navy",
+        "teamScore": 15,
+        "oppScore": 42,
+        "result": "L"
+      }
+    ]
   },
   "UAlbany": {
     "league": "CFB",
@@ -2850,7 +4827,23 @@
     "rushDef": 106.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "New Hampshire",
+        "teamScore": 28,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Buffalo",
+        "teamScore": 17,
+        "oppScore": 21,
+        "result": "L"
+      }
+    ]
   },
   "Utah Tech": {
     "league": "CFB",
@@ -2865,7 +4858,23 @@
     "rushDef": 224.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Montana State",
+        "teamScore": 0,
+        "oppScore": 54,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "BYU",
+        "teamScore": 7,
+        "oppScore": 63,
+        "result": "L"
+      }
+    ]
   },
   "UT Rio Grande Valley": {
     "league": "CFB",
@@ -2880,7 +4889,23 @@
     "rushDef": 131.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UT Permian Basin",
+        "teamScore": 44,
+        "oppScore": 0,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "UTSA",
+        "teamScore": 16,
+        "oppScore": 45,
+        "result": "L"
+      }
+    ]
   },
   "VMI": {
     "league": "CFB",
@@ -2895,7 +4920,23 @@
     "rushDef": 178.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Idaho State",
+        "teamScore": 10,
+        "oppScore": 38,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Virginia Tech",
+        "teamScore": 3,
+        "oppScore": 73,
+        "result": "L"
+      }
+    ]
   },
   "West Georgia": {
     "league": "CFB",
@@ -2910,7 +4951,23 @@
     "rushDef": 223.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Chattanooga",
+        "teamScore": 10,
+        "oppScore": 24,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Kennesaw State",
+        "teamScore": 0,
+        "oppScore": 47,
+        "result": "L"
+      }
+    ]
   },
   "Youngstown State": {
     "league": "CFB",
@@ -2925,7 +4982,23 @@
     "rushDef": 117.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Mercyhurst",
+        "teamScore": 43,
+        "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Kentucky",
+        "teamScore": 13,
+        "oppScore": 45,
+        "result": "L"
+      }
+    ]
   },
   "Alabama A&M": {
     "league": "CFB",
@@ -2940,7 +5013,23 @@
     "rushDef": 117.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Howard",
+        "teamScore": 24,
+        "oppScore": 31,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Miles",
+        "teamScore": 38,
+        "oppScore": 23,
+        "result": "W"
+      }
+    ]
   },
   "Alabama State": {
     "league": "CFB",
@@ -2955,7 +5044,23 @@
     "rushDef": 125.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Southern",
+        "teamScore": 30,
+        "oppScore": 17,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Lane College",
+        "teamScore": 34,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ]
   },
   "Albany State": {
     "league": "CFB",
@@ -2970,7 +5075,23 @@
     "rushDef": 70.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Florida A&M",
+        "teamScore": 7,
+        "oppScore": 20,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Johnson C. Smith",
+        "teamScore": 27,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ]
   },
   "Anderson (SC)": {
     "league": "CFB",
@@ -2985,7 +5106,23 @@
     "rushDef": 268.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Furman",
+        "teamScore": 3,
+        "oppScore": 20,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Keiser (Fl)",
+        "teamScore": 21,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ]
   },
   "Bucknell": {
     "league": "CFB",
@@ -3000,7 +5137,23 @@
     "rushDef": 140.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Richmond",
+        "teamScore": 14,
+        "oppScore": 35,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Villanova",
+        "teamScore": 16,
+        "oppScore": 17,
+        "result": "L"
+      }
+    ]
   },
   "Butler": {
     "league": "CFB",
@@ -3015,7 +5168,23 @@
     "rushDef": 166.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Georgetown College Kentucky",
+        "teamScore": 27,
+        "oppScore": 23,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Montana State",
+        "teamScore": 24,
+        "oppScore": 51,
+        "result": "L"
+      }
+    ]
   },
   "Cal Poly": {
     "league": "CFB",
@@ -3030,7 +5199,23 @@
     "rushDef": 143.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Idaho",
+        "teamScore": 38,
+        "oppScore": 34,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Central Washington",
+        "teamScore": 24,
+        "oppScore": 17,
+        "result": "W"
+      }
+    ]
   },
   "Campbell": {
     "league": "CFB",
@@ -3045,7 +5230,30 @@
     "rushDef": 78.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "East Tennessee State",
+        "teamScore": 49,
+        "oppScore": 37,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Western Carolina",
+        "teamScore": 0,
+        "oppScore": 0,
+        "result": "T"
+      },
+      {
+        "week": 1,
+        "opp": "Western Carolina",
+        "teamScore": 28,
+        "oppScore": 19,
+        "result": "W"
+      }
+    ]
   },
   "Central Arkansas": {
     "league": "CFB",
@@ -3060,7 +5268,23 @@
     "rushDef": 152.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UT Martin",
+        "teamScore": 36,
+        "oppScore": 24,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "West Florida",
+        "teamScore": 14,
+        "oppScore": 42,
+        "result": "L"
+      }
+    ]
   },
   "Central Connecticut": {
     "league": "CFB",
@@ -3075,7 +5299,16 @@
     "rushDef": 267.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "South Dakota",
+        "teamScore": 20,
+        "oppScore": 59,
+        "result": "L"
+      }
+    ]
   },
   "Central State": {
     "league": "CFB",
@@ -3090,7 +5323,23 @@
     "rushDef": 361.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Kentucky State",
+        "teamScore": 14,
+        "oppScore": 41,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Grambling",
+        "teamScore": 26,
+        "oppScore": 48,
+        "result": "L"
+      }
+    ]
   },
   "Central Washington": {
     "league": "CFB",
@@ -3105,7 +5354,16 @@
     "rushDef": 180.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Cal Poly",
+        "teamScore": 17,
+        "oppScore": 24,
+        "result": "L"
+      }
+    ]
   },
   "Chattanooga": {
     "league": "CFB",
@@ -3120,7 +5378,23 @@
     "rushDef": 57.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "West Georgia",
+        "teamScore": 24,
+        "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Tennessee Tech",
+        "teamScore": 9,
+        "oppScore": 24,
+        "result": "L"
+      }
+    ]
   },
   "Chicago State": {
     "league": "CFB",
@@ -3135,7 +5409,23 @@
     "rushDef": 184.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Roosevelt",
+        "teamScore": 28,
+        "oppScore": 44,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "UT Martin",
+        "teamScore": 7,
+        "oppScore": 42,
+        "result": "L"
+      }
+    ]
   },
   "Clark Atlanta": {
     "league": "CFB",
@@ -3150,7 +5440,23 @@
     "rushDef": 223.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Grambling",
+        "teamScore": 7,
+        "oppScore": 49,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Morehouse",
+        "teamScore": 31,
+        "oppScore": 21,
+        "result": "W"
+      }
+    ]
   },
   "Colgate": {
     "league": "CFB",
@@ -3165,7 +5471,23 @@
     "rushDef": 69.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Fordham",
+        "teamScore": 24,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Holy Cross",
+        "teamScore": 35,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ]
   },
   "Concord": {
     "league": "CFB",
@@ -3180,7 +5502,23 @@
     "rushDef": 100.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Davidson",
+        "teamScore": 41,
+        "oppScore": 35,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Bluefield State",
+        "teamScore": 26,
+        "oppScore": 16,
+        "result": "W"
+      }
+    ]
   },
   "Davidson": {
     "league": "CFB",
@@ -3195,7 +5533,23 @@
     "rushDef": 198.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Concord",
+        "teamScore": 35,
+        "oppScore": 41,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Elon",
+        "teamScore": 0,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "Dayton": {
     "league": "CFB",
@@ -3210,7 +5564,16 @@
     "rushDef": 180.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Fairmont State",
+        "teamScore": 43,
+        "oppScore": 20,
+        "result": "W"
+      }
+    ]
   },
   "Delaware State": {
     "league": "CFB",
@@ -3225,7 +5588,23 @@
     "rushDef": 111.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Stony Brook",
+        "teamScore": 41,
+        "oppScore": 34,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "William & Mary",
+        "teamScore": 15,
+        "oppScore": 22,
+        "result": "L"
+      }
+    ]
   },
   "Drake": {
     "league": "CFB",
@@ -3240,7 +5619,23 @@
     "rushDef": 213.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "South Dakota Mines",
+        "teamScore": 35,
+        "oppScore": 38,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Montana",
+        "teamScore": 10,
+        "oppScore": 45,
+        "result": "L"
+      }
+    ]
   },
   "Eastern Washington": {
     "league": "CFB",
@@ -3255,7 +5650,23 @@
     "rushDef": 132.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Northern Arizona",
+        "teamScore": 27,
+        "oppScore": 34,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Northern Iowa",
+        "teamScore": 34,
+        "oppScore": 24,
+        "result": "W"
+      }
+    ]
   },
   "East Tennessee State": {
     "league": "CFB",
@@ -3270,7 +5681,23 @@
     "rushDef": 191.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Campbell",
+        "teamScore": 37,
+        "oppScore": 49,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Tusculum",
+        "teamScore": 48,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ]
   },
   "East Texas A&M": {
     "league": "CFB",
@@ -3285,7 +5712,23 @@
     "rushDef": 215.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Mercer",
+        "teamScore": 15,
+        "oppScore": 23,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Stephen F. Austin",
+        "teamScore": 7,
+        "oppScore": 44,
+        "result": "L"
+      }
+    ]
   },
   "Edward Waters": {
     "league": "CFB",
@@ -3300,7 +5743,23 @@
     "rushDef": 316.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Florida Memorial University",
+        "teamScore": 42,
+        "oppScore": 28,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Jackson State",
+        "teamScore": 14,
+        "oppScore": 66,
+        "result": "L"
+      }
+    ]
   },
   "Elizabeth City State": {
     "league": "CFB",
@@ -3315,7 +5774,23 @@
     "rushDef": 166.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Fort Valley State",
+        "teamScore": 14,
+        "oppScore": 17,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "North Carolina Central",
+        "teamScore": 6,
+        "oppScore": 27,
+        "result": "L"
+      }
+    ]
   },
   "Elon": {
     "league": "CFB",
@@ -3330,7 +5805,23 @@
     "rushDef": 50.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Glenville State",
+        "teamScore": 42,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Davidson",
+        "teamScore": 38,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ]
   },
   "Fairmont State": {
     "league": "CFB",
@@ -3345,7 +5836,23 @@
     "rushDef": 251.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Dayton",
+        "teamScore": 20,
+        "oppScore": 43,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Bloomsburg",
+        "teamScore": 13,
+        "oppScore": 35,
+        "result": "L"
+      }
+    ]
   },
   "Florida A&M": {
     "league": "CFB",
@@ -3360,7 +5867,23 @@
     "rushDef": 147.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Albany State",
+        "teamScore": 20,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "South Carolina State",
+        "teamScore": 13,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "Franklin Pierce": {
     "league": "CFB",
@@ -3375,7 +5898,16 @@
     "rushDef": 179.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Marist",
+        "teamScore": 18,
+        "oppScore": 27,
+        "result": "L"
+      }
+    ]
   },
   "Gardner-Webb": {
     "league": "CFB",
@@ -3390,7 +5922,23 @@
     "rushDef": 131.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Austin Peay",
+        "teamScore": 17,
+        "oppScore": 35,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Wofford",
+        "teamScore": 13,
+        "oppScore": 17,
+        "result": "L"
+      }
+    ]
   },
   "Georgetown": {
     "league": "CFB",
@@ -3405,7 +5953,16 @@
     "rushDef": 302.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Lehigh",
+        "teamScore": 14,
+        "oppScore": 45,
+        "result": "L"
+      }
+    ]
   },
   "Glenville State": {
     "league": "CFB",
@@ -3420,7 +5977,23 @@
     "rushDef": 168.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Elon",
+        "teamScore": 7,
+        "oppScore": 42,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Millersville",
+        "teamScore": 24,
+        "oppScore": 21,
+        "result": "W"
+      }
+    ]
   },
   "Grambling": {
     "league": "CFB",
@@ -3435,7 +6008,23 @@
     "rushDef": 116.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Clark Atlanta",
+        "teamScore": 49,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Central State",
+        "teamScore": 48,
+        "oppScore": 26,
+        "result": "W"
+      }
+    ]
   },
   "Holy Cross": {
     "league": "CFB",
@@ -3450,7 +6039,23 @@
     "rushDef": 216.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Lehigh",
+        "teamScore": 10,
+        "oppScore": 35,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Colgate",
+        "teamScore": 10,
+        "oppScore": 35,
+        "result": "L"
+      }
+    ]
   },
   "Howard": {
     "league": "CFB",
@@ -3465,7 +6070,23 @@
     "rushDef": 95.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Alabama A&M",
+        "teamScore": 31,
+        "oppScore": 24,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Richmond",
+        "teamScore": 21,
+        "oppScore": 28,
+        "result": "L"
+      }
+    ]
   },
   "Illinois State": {
     "league": "CFB",
@@ -3480,7 +6101,23 @@
     "rushDef": 52.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "St. Francis (IL)",
+        "teamScore": 76,
+        "oppScore": 0,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Western Illinois",
+        "teamScore": 41,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ]
   },
   "Jackson State": {
     "league": "CFB",
@@ -3495,7 +6132,23 @@
     "rushDef": 68.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Tennessee State",
+        "teamScore": 26,
+        "oppScore": 24,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Edward Waters",
+        "teamScore": 66,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ]
   },
   "Kentucky State": {
     "league": "CFB",
@@ -3510,7 +6163,23 @@
     "rushDef": 172.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Central State",
+        "teamScore": 41,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Southern",
+        "teamScore": 15,
+        "oppScore": 34,
+        "result": "L"
+      }
+    ]
   },
   "Lane College": {
     "league": "CFB",
@@ -3525,7 +6194,23 @@
     "rushDef": 150.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Bethel University Tennessee",
+        "teamScore": 3,
+        "oppScore": 16,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Alabama State",
+        "teamScore": 0,
+        "oppScore": 34,
+        "result": "L"
+      }
+    ]
   },
   "Lehigh": {
     "league": "CFB",
@@ -3540,7 +6225,23 @@
     "rushDef": 96.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Holy Cross",
+        "teamScore": 35,
+        "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Georgetown",
+        "teamScore": 45,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ]
   },
   "Lindenwood": {
     "league": "CFB",
@@ -3555,7 +6256,23 @@
     "rushDef": 105.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Charleston Southern",
+        "teamScore": 20,
+        "oppScore": 17,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Stony Brook",
+        "teamScore": 32,
+        "oppScore": 36,
+        "result": "L"
+      }
+    ]
   },
   "Marist": {
     "league": "CFB",
@@ -3570,7 +6287,23 @@
     "rushDef": 119.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "New Haven",
+        "teamScore": 21,
+        "oppScore": 22,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Franklin Pierce",
+        "teamScore": 27,
+        "oppScore": 18,
+        "result": "W"
+      }
+    ]
   },
   "McNeese": {
     "league": "CFB",
@@ -3585,7 +6318,23 @@
     "rushDef": 105.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Stephen F. Austin",
+        "teamScore": 27,
+        "oppScore": 38,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Texas Wesleyan",
+        "teamScore": 52,
+        "oppScore": 0,
+        "result": "W"
+      }
+    ]
   },
   "Mercer": {
     "league": "CFB",
@@ -3600,7 +6349,23 @@
     "rushDef": 128.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "East Texas A&M",
+        "teamScore": 23,
+        "oppScore": 15,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Presbyterian",
+        "teamScore": 62,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ]
   },
   "Miles": {
     "league": "CFB",
@@ -3615,7 +6380,23 @@
     "rushDef": 186.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Alcorn State",
+        "teamScore": 7,
+        "oppScore": 56,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Alabama A&M",
+        "teamScore": 23,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "Monmouth": {
     "league": "CFB",
@@ -3630,7 +6411,23 @@
     "rushDef": 161.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Tennessee Tech",
+        "teamScore": 14,
+        "oppScore": 38,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Sacred Heart",
+        "teamScore": 31,
+        "oppScore": 24,
+        "result": "W"
+      }
+    ]
   },
   "Montana": {
     "league": "CFB",
@@ -3645,7 +6442,23 @@
     "rushDef": 152.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Southern Utah",
+        "teamScore": 28,
+        "oppScore": 21,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Drake",
+        "teamScore": 45,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ]
   },
   "Montana State": {
     "league": "CFB",
@@ -3660,7 +6473,23 @@
     "rushDef": 70.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Utah Tech",
+        "teamScore": 54,
+        "oppScore": 0,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Butler",
+        "teamScore": 51,
+        "oppScore": 24,
+        "result": "W"
+      }
+    ]
   },
   "Morehead State": {
     "league": "CFB",
@@ -3675,7 +6504,23 @@
     "rushDef": 155.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Ohio Dominican",
+        "teamScore": 40,
+        "oppScore": 42,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Kentucky Christian",
+        "teamScore": 75,
+        "oppScore": 24,
+        "result": "W"
+      }
+    ]
   },
   "Morehouse": {
     "league": "CFB",
@@ -3690,7 +6535,23 @@
     "rushDef": 154.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Arkansas-Pine Bluff",
+        "teamScore": 15,
+        "oppScore": 35,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Clark Atlanta",
+        "teamScore": 21,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "New Haven": {
     "league": "CFB",
@@ -3705,7 +6566,23 @@
     "rushDef": 135.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Marist",
+        "teamScore": 22,
+        "oppScore": 21,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Stonehill",
+        "teamScore": 3,
+        "oppScore": 21,
+        "result": "L"
+      }
+    ]
   },
   "North Carolina Central": {
     "league": "CFB",
@@ -3720,7 +6597,23 @@
     "rushDef": 158.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Texas Southern",
+        "teamScore": 30,
+        "oppScore": 42,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Elizabeth City State",
+        "teamScore": 27,
+        "oppScore": 6,
+        "result": "W"
+      }
+    ]
   },
   "North Dakota": {
     "league": "CFB",
@@ -3735,7 +6628,23 @@
     "rushDef": 62.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Long Island University",
+        "teamScore": 42,
+        "oppScore": 21,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "St. Thomas (MN)",
+        "teamScore": 62,
+        "oppScore": 26,
+        "result": "W"
+      }
+    ]
   },
   "Northern Colorado": {
     "league": "CFB",
@@ -3750,7 +6659,23 @@
     "rushDef": 175.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Weber State",
+        "teamScore": 29,
+        "oppScore": 30,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "South Dakota",
+        "teamScore": 23,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "Northern Iowa": {
     "league": "CFB",
@@ -3765,7 +6690,16 @@
     "rushDef": 138.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Eastern Washington",
+        "teamScore": 24,
+        "oppScore": 34,
+        "result": "L"
+      }
+    ]
   },
   "Ohio Dominican": {
     "league": "CFB",
@@ -3780,7 +6714,23 @@
     "rushDef": 126.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Morehead State",
+        "teamScore": 42,
+        "oppScore": 40,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Edinboro",
+        "teamScore": 36,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
   },
   "Prairie View A&M": {
     "league": "CFB",
@@ -3795,7 +6745,23 @@
     "rushDef": 223.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Tarleton State",
+        "teamScore": 30,
+        "oppScore": 49,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Texas Southern",
+        "teamScore": 52,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ]
   },
   "Presbyterian": {
     "league": "CFB",
@@ -3810,7 +6776,23 @@
     "rushDef": 231.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UVA Wise",
+        "teamScore": 47,
+        "oppScore": 37,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Mercer",
+        "teamScore": 3,
+        "oppScore": 62,
+        "result": "L"
+      }
+    ]
   },
   "Richmond": {
     "league": "CFB",
@@ -3825,7 +6807,23 @@
     "rushDef": 81.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Bucknell",
+        "teamScore": 35,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Howard",
+        "teamScore": 28,
+        "oppScore": 21,
+        "result": "W"
+      }
+    ]
   },
   "Robert Morris": {
     "league": "CFB",
@@ -3840,7 +6838,23 @@
     "rushDef": 92.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Wagner",
+        "teamScore": 28,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "West Virginia State",
+        "teamScore": 29,
+        "oppScore": 9,
+        "result": "W"
+      }
+    ]
   },
   "Roosevelt": {
     "league": "CFB",
@@ -3855,7 +6869,23 @@
     "rushDef": 123.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Chicago State",
+        "teamScore": 44,
+        "oppScore": 28,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Quincy",
+        "teamScore": 41,
+        "oppScore": 28,
+        "result": "W"
+      }
+    ]
   },
   "Sacred Heart": {
     "league": "CFB",
@@ -3870,7 +6900,16 @@
     "rushDef": 113.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Monmouth",
+        "teamScore": 24,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "Samford": {
     "league": "CFB",
@@ -3885,7 +6924,23 @@
     "rushDef": 173.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Alabama",
+        "teamScore": 10,
+        "oppScore": 22,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Southern Illinois",
+        "teamScore": 18,
+        "oppScore": 22,
+        "result": "L"
+      }
+    ]
   },
   "San Diego": {
     "league": "CFB",
@@ -3900,7 +6955,16 @@
     "rushDef": 231.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UC Davis",
+        "teamScore": 17,
+        "oppScore": 49,
+        "result": "L"
+      }
+    ]
   },
   "Savannah State": {
     "league": "CFB",
@@ -3915,7 +6979,16 @@
     "rushDef": 423.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "South Carolina State",
+        "teamScore": 0,
+        "oppScore": 87,
+        "result": "L"
+      }
+    ]
   },
   "South Carolina State": {
     "league": "CFB",
@@ -3930,7 +7003,23 @@
     "rushDef": 37.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Savannah State",
+        "teamScore": 87,
+        "oppScore": 0,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Florida A&M",
+        "teamScore": 31,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ]
   },
   "South Dakota": {
     "league": "CFB",
@@ -3945,7 +7034,23 @@
     "rushDef": 123.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Central Connecticut",
+        "teamScore": 59,
+        "oppScore": 20,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Northern Colorado",
+        "teamScore": 38,
+        "oppScore": 23,
+        "result": "W"
+      }
+    ]
   },
   "South Dakota Mines": {
     "league": "CFB",
@@ -3960,7 +7065,23 @@
     "rushDef": 24.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Drake",
+        "teamScore": 38,
+        "oppScore": 35,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Southwest Baptist",
+        "teamScore": 38,
+        "oppScore": 17,
+        "result": "W"
+      }
+    ]
   },
   "Southern": {
     "league": "CFB",
@@ -3975,7 +7096,23 @@
     "rushDef": 146.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Alabama State",
+        "teamScore": 17,
+        "oppScore": 30,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Kentucky State",
+        "teamScore": 34,
+        "oppScore": 15,
+        "result": "W"
+      }
+    ]
   },
   "Southern Connecticut State": {
     "league": "CFB",
@@ -3990,7 +7127,16 @@
     "rushDef": 142.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Wagner",
+        "teamScore": 7,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "Southern Illinois": {
     "league": "CFB",
@@ -4005,7 +7151,23 @@
     "rushDef": 148.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "West Florida",
+        "teamScore": 31,
+        "oppScore": 34,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Samford",
+        "teamScore": 22,
+        "oppScore": 18,
+        "result": "W"
+      }
+    ]
   },
   "Southern Utah": {
     "league": "CFB",
@@ -4020,7 +7182,23 @@
     "rushDef": 127.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Montana",
+        "teamScore": 21,
+        "oppScore": 28,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Weber State",
+        "teamScore": 47,
+        "oppScore": 42,
+        "result": "W"
+      }
+    ]
   },
   "Stephen F. Austin": {
     "league": "CFB",
@@ -4035,7 +7213,23 @@
     "rushDef": 127.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "McNeese",
+        "teamScore": 38,
+        "oppScore": 27,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "East Texas A&M",
+        "teamScore": 44,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ]
   },
   "Stetson": {
     "league": "CFB",
@@ -4050,7 +7244,23 @@
     "rushDef": 393.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "South Dakota State",
+        "teamScore": 7,
+        "oppScore": 70,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Webber International",
+        "teamScore": 45,
+        "oppScore": 10,
+        "result": "W"
+      }
+    ]
   },
   "Stonehill": {
     "league": "CFB",
@@ -4065,7 +7275,23 @@
     "rushDef": 156.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Bryant",
+        "teamScore": 6,
+        "oppScore": 24,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "New Haven",
+        "teamScore": 21,
+        "oppScore": 3,
+        "result": "W"
+      }
+    ]
   },
   "Stony Brook": {
     "league": "CFB",
@@ -4080,7 +7306,23 @@
     "rushDef": 205.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Delaware State",
+        "teamScore": 34,
+        "oppScore": 41,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Lindenwood",
+        "teamScore": 36,
+        "oppScore": 32,
+        "result": "W"
+      }
+    ]
   },
   "St. Thomas (MN)": {
     "league": "CFB",
@@ -4095,7 +7337,23 @@
     "rushDef": 219.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Winona State",
+        "teamScore": 15,
+        "oppScore": 9,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "North Dakota",
+        "teamScore": 26,
+        "oppScore": 62,
+        "result": "L"
+      }
+    ]
   },
   "Tennessee Tech": {
     "league": "CFB",
@@ -4110,7 +7368,23 @@
     "rushDef": 157.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Monmouth",
+        "teamScore": 38,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Chattanooga",
+        "teamScore": 24,
+        "oppScore": 9,
+        "result": "W"
+      }
+    ]
   },
   "Texas Southern": {
     "league": "CFB",
@@ -4125,7 +7399,23 @@
     "rushDef": 175.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Carolina Central",
+        "teamScore": 42,
+        "oppScore": 30,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Prairie View A&M",
+        "teamScore": 14,
+        "oppScore": 52,
+        "result": "L"
+      }
+    ]
   },
   "Tusculum": {
     "league": "CFB",
@@ -4140,7 +7430,23 @@
     "rushDef": 225.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Bluefield State",
+        "teamScore": 42,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "East Tennessee State",
+        "teamScore": 14,
+        "oppScore": 48,
+        "result": "L"
+      }
+    ]
   },
   "UC Davis": {
     "league": "CFB",
@@ -4155,7 +7461,23 @@
     "rushDef": 117.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Portland State",
+        "teamScore": 31,
+        "oppScore": 24,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "San Diego",
+        "teamScore": 49,
+        "oppScore": 17,
+        "result": "W"
+      }
+    ]
   },
   "UT Martin": {
     "league": "CFB",
@@ -4170,7 +7492,23 @@
     "rushDef": 133.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Central Arkansas",
+        "teamScore": 24,
+        "oppScore": 36,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Chicago State",
+        "teamScore": 42,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ]
   },
   "UT Permian Basin": {
     "league": "CFB",
@@ -4185,7 +7523,16 @@
     "rushDef": 271.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "UT Rio Grande Valley",
+        "teamScore": 0,
+        "oppScore": 44,
+        "result": "L"
+      }
+    ]
   },
   "UVA Wise": {
     "league": "CFB",
@@ -4200,7 +7547,23 @@
     "rushDef": 164.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Presbyterian",
+        "teamScore": 37,
+        "oppScore": 47,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Chowan",
+        "teamScore": 20,
+        "oppScore": 24,
+        "result": "L"
+      }
+    ]
   },
   "Villanova": {
     "league": "CFB",
@@ -4215,7 +7578,23 @@
     "rushDef": 95.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "William & Mary",
+        "teamScore": 32,
+        "oppScore": 35,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Bucknell",
+        "teamScore": 17,
+        "oppScore": 16,
+        "result": "W"
+      }
+    ]
   },
   "Wagner": {
     "league": "CFB",
@@ -4230,7 +7609,23 @@
     "rushDef": 53.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Robert Morris",
+        "teamScore": 7,
+        "oppScore": 28,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Southern Connecticut State",
+        "teamScore": 31,
+        "oppScore": 7,
+        "result": "W"
+      }
+    ]
   },
   "Weber State": {
     "league": "CFB",
@@ -4245,7 +7640,23 @@
     "rushDef": 313.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Northern Colorado",
+        "teamScore": 30,
+        "oppScore": 29,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Southern Utah",
+        "teamScore": 42,
+        "oppScore": 47,
+        "result": "L"
+      }
+    ]
   },
   "Western Carolina": {
     "league": "CFB",
@@ -4260,7 +7671,30 @@
     "rushDef": 131.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Eastern Kentucky",
+        "teamScore": 45,
+        "oppScore": 21,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Campbell",
+        "teamScore": 0,
+        "oppScore": 0,
+        "result": "T"
+      },
+      {
+        "week": 1,
+        "opp": "Campbell",
+        "teamScore": 19,
+        "oppScore": 28,
+        "result": "L"
+      }
+    ]
   },
   "Western Illinois": {
     "league": "CFB",
@@ -4275,7 +7709,23 @@
     "rushDef": 122.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Northwestern (IA)",
+        "teamScore": 65,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Illinois State",
+        "teamScore": 10,
+        "oppScore": 41,
+        "result": "L"
+      }
+    ]
   },
   "West Florida": {
     "league": "CFB",
@@ -4290,7 +7740,23 @@
     "rushDef": 183.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Southern Illinois",
+        "teamScore": 34,
+        "oppScore": 31,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Central Arkansas",
+        "teamScore": 42,
+        "oppScore": 14,
+        "result": "W"
+      }
+    ]
   },
   "West Virginia State": {
     "league": "CFB",
@@ -4305,7 +7771,23 @@
     "rushDef": 176.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Chowan",
+        "teamScore": 56,
+        "oppScore": 24,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Robert Morris",
+        "teamScore": 9,
+        "oppScore": 29,
+        "result": "L"
+      }
+    ]
   },
   "William & Mary": {
     "league": "CFB",
@@ -4320,7 +7802,23 @@
     "rushDef": 165.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Villanova",
+        "teamScore": 35,
+        "oppScore": 32,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Delaware State",
+        "teamScore": 22,
+        "oppScore": 15,
+        "result": "W"
+      }
+    ]
   },
   "Winona State": {
     "league": "CFB",
@@ -4335,7 +7833,23 @@
     "rushDef": 156.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "St. Thomas (MN)",
+        "teamScore": 9,
+        "oppScore": 15,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Northern State",
+        "teamScore": 16,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
   },
   "Winston-Salem State": {
     "league": "CFB",
@@ -4350,7 +7864,23 @@
     "rushDef": 306.0,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Norfolk State",
+        "teamScore": 0,
+        "oppScore": 56,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Mars Hill",
+        "teamScore": 0,
+        "oppScore": 17,
+        "result": "L"
+      }
+    ]
   },
   "Wofford": {
     "league": "CFB",
@@ -4365,6 +7895,22 @@
     "rushDef": 143.5,
     "to": 0,
     "ats": "",
-    "wk1": true
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "The Citadel",
+        "teamScore": 42,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Gardner-Webb",
+        "teamScore": 17,
+        "oppScore": 13,
+        "result": "W"
+      }
+    ]
   }
 }
