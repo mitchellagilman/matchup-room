@@ -8,15 +8,13 @@ recent 10 games, pulling from last season too if this season doesn't have
 docstring for the full explanation of the rolling window and why team
 assignment is protected from being overwritten by historical data).
 
-*** FCS SUPPORT ***
-This previously built its "known team names" whitelist from /teams/fbs
-only, which meant a real, currently-rostered FCS player would have their
-per-game stat rows silently skipped -- `if team not in all_teams: continue`
-below -- even though the underlying /games/players data included them.
-Now pulls both classifications' team names from /teams so FCS players
-aren't filtered out. Not verified live (same caveat as fetch_cfb.py) --
-if a run reports far fewer players than expected, check whether the FCS
-half of /teams came back empty in this run's log output.
+*** FCS SUPPORT -- ADDED, THEN REMOVED ***
+This briefly pulled team names for both FBS and FCS so FCS players
+weren't filtered out. Removed for the same reason as fetch_cfb.py: it
+roughly doubled CFBD call volume against a 1,000-call/month free-tier
+ceiling, for a benefit (early-season FBS-vs-FCS buy games) that stops
+mattering a few weeks into the season anyway. CLASSIFICATIONS is still a
+list so FCS is easy to add back later if wanted.
 
 *** SAME HONESTY NOTE AS fetch_cfb.py ***
 Could not be tested against the live CFBD API from the sandbox that wrote
@@ -48,7 +46,7 @@ YEAR = 2026
 PREV_YEAR = YEAR - 1
 WINDOW = 10
 EXISTING_PATH = "data/cfb-players.json"
-CLASSIFICATIONS = ["fbs", "fcs"]
+CLASSIFICATIONS = ["fbs"]  # FCS dropped -- see fetch_cfb.py's docstring for why
 
 POSITION_HINT = {
     "passing": "QB",
@@ -84,18 +82,34 @@ def main():
     except FileNotFoundError:
         players = {}
 
+    # Team names come from data/cfb-teams.json (already written by
+    # fetch_cfb.py, which runs earlier in the workflow) instead of calling
+    # CFBD's /teams endpoint again here -- that was a fully redundant pair
+    # of calls (both classifications) on every run. Falls back to a direct
+    # API call only if that file is missing or empty (e.g. run standalone,
+    # or fetch_cfb.py failed this run), so this script still works on its
+    # own if needed.
     all_teams = set()
-    for classification in CLASSIFICATIONS:
-        try:
-            resp = cfbd_get("/teams", {"year": YEAR, "classification": classification}, api_key)
-        except Exception as e:
-            print(f"Could not reach CFBD /teams (classification={classification}) ({e}); that classification's players will be skipped.", file=sys.stderr)
-            continue
-        for t in resp:
-            name = t.get("school")
-            if name:
-                all_teams.add(name)
-        time.sleep(1)
+    try:
+        with open("data/cfb-teams.json") as f:
+            cfb_teams_file = json.load(f)
+        all_teams = {name for name, t in cfb_teams_file.items() if t.get("league") == "CFB"}
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+
+    if not all_teams:
+        print("data/cfb-teams.json had no usable team list -- falling back to a direct CFBD /teams call.", file=sys.stderr)
+        for classification in CLASSIFICATIONS:
+            try:
+                resp = cfbd_get("/teams", {"year": YEAR, "classification": classification}, api_key)
+            except Exception as e:
+                print(f"Could not reach CFBD /teams (classification={classification}) ({e}); that classification's players will be skipped.", file=sys.stderr)
+                continue
+            for t in resp:
+                name = t.get("school")
+                if name:
+                    all_teams.add(name)
+            time.sleep(1)
 
     if not all_teams:
         print("Could not fetch any team list (FBS or FCS); leaving existing file untouched.", file=sys.stderr)
