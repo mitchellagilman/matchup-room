@@ -125,9 +125,14 @@ def main():
         full_name = TEAM_NAME_MAP.get(abbr, abbr)
         scores = scores_by_team.get(abbr, [])
         ns = len(scores) or 1
+        wins = sum(1 for s in scores if s["for"] > s["against"])
+        losses = sum(1 for s in scores if s["for"] < s["against"])
+        ties = sum(1 for s in scores if s["for"] == s["against"])
+        record = f"{wins}-{losses}" + (f"-{ties}" if ties else "")
         existing = teams.get(full_name, {})
         teams[full_name] = {
             "league": "NFL",
+            "record": record if scores else existing.get("record", ""),
             "ppg": round(sum(s["for"] for s in scores) / ns, 1) if scores else existing.get("ppg", 0),
             "pa": round(sum(s["against"] for s in scores) / ns, 1) if scores else existing.get("pa", 0),
             "passOff": round(sum(g["passOff"] for g in games) / n, 1),
