@@ -22,15 +22,18 @@ same trick used in fetch_nfl.py: CFBD's stats endpoints are offense-only,
 so for team X's defense in a given game, we look up the OTHER team's
 offensive output in that same game and count it as what X allowed.
 
-*** FCS SUPPORT -- ALSO UNVERIFIED LIVE ***
-CFBD's documentation confirms /teams, /games, and /games/teams all accept
-a `classification` param with values "fbs"/"fcs" (confirmed via the
-API's published parameter docs, not a live call). This script now fetches
-both classifications and merges them into one team list with a `division`
-field. If classification=fcs comes back empty or errors for any of these
-three endpoints, that's the first thing to check -- the script will print
-which classification failed and continue with whichever one worked,
-rather than failing the whole run.
+*** FCS SUPPORT -- ADDED, THEN REMOVED ***
+This briefly supported FCS teams alongside FBS (fetching both
+classifications from /teams, /games, and /games/teams). Removed: it
+roughly doubled CFBD API call volume, and CFBD's free tier is 1,000 calls
+per calendar month (confirmed via their own published terms) -- a real
+run showed every CFB script hitting that ceiling. FCS support was also
+only ever useful for the handful of early-season "buy games" an FBS team
+schedules against an FCS opponent; by a few weeks into the season those
+are done and FBS teams only play other FBS teams, so the ongoing call
+cost wasn't worth it for what it bought. CLASSIFICATIONS is a list (not
+a single hardcoded string) specifically so this is easy to expand again
+later if wanted -- just add "fcs" back in, same as before.
 
 Team names are matched between /teams and /games/teams by CFBD's own
 "school" field -- keep it that way rather than inventing an alternate
@@ -58,7 +61,7 @@ from cfbd_utils import cfbd_get
 
 YEAR = 2026
 EXISTING_PATH = "data/cfb-teams.json"
-CLASSIFICATIONS = ["fbs", "fcs"]
+CLASSIFICATIONS = ["fbs"]  # FCS dropped -- see docstring: by a couple weeks into the season FBS teams aren't playing FCS opponents anyway, and it was roughly doubling CFBD API call volume against a 1,000-call/month free-tier ceiling
 
 # The two offensive categories CFBD's games/teams stats use that we need.
 # CFBD's documented category strings -- verify against a live response if
