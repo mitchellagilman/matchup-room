@@ -16,6 +16,16 @@ IMPORTANT: this must run AFTER fetch_cfb.py in the workflow, not before --
 fetch_cfb.py fully overwrites each team's object, which would wipe out
 the spPlus field if this ran first.
 
+*** FCS TEAMS DON'T GET spPlus, AND THAT'S EXPECTED ***
+SP+ is an FBS-only rating (confirmed via CFBD's own published rankings,
+which are explicitly headlined "all N FBS teams" with no FCS equivalent
+metric). This script needs no FCS-specific change: it already skips any
+team not present in the /ratings/sp response, so FCS teams simply never
+get an spPlus field. index.html's computeProjection() already handles a
+missing spPlus by falling back to box-score-only projection -- the same
+path any early-season FBS team without a published rating yet already
+takes.
+
 Sign up for a free key at https://collegefootballdata.com/key and set it
 as CFBD_API_KEY.
 
@@ -27,22 +37,12 @@ import os
 import sys
 import urllib.request
 import urllib.parse
+from cfbd_utils import cfbd_get
 
 YEAR = 2026
-API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-teams.json"
 
 RATING_KEYS = ["rating", "spPlus", "sp_plus"]
-
-
-def api_get(path, params, api_key):
-    url = f"{API_BASE}{path}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {api_key}",
-        "Accept": "application/json",
-    })
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
 
 
 def first_present(d, keys):
@@ -66,7 +66,7 @@ def main():
         return
 
     try:
-        ratings = api_get("/ratings/sp", {"year": YEAR}, api_key)
+        ratings = cfbd_get("/ratings/sp", {"year": YEAR}, api_key)
     except Exception as e:
         print(f"Could not fetch /ratings/sp ({e}); leaving existing file untouched.", file=sys.stderr)
         return
