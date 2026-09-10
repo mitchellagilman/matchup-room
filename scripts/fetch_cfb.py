@@ -1,65 +1,38 @@
 #!/usr/bin/env python3
 """
-Pulls current-season stats for every FBS AND FCS college football team --
-offense AND defense -- from collegefootballdata.com (CFBD) and writes
-data/cfb-teams.json.
+Pulls per-game stat lines for every FBS AND FCS college football team's
+QBs/RBs/WRs/TEs from collegefootballdata.com (CFBD) and writes
+data/cfb-players.json -- keeping a rolling window of each player's most
+recent 10 games, pulling from last season too if this season doesn't have
+10 games yet (same idea as fetch_players_nfl.py; see that script's
+docstring for the full explanation of the rolling window and why team
+assignment is protected from being overwritten by historical data).
 
-*** IMPORTANT HONESTY NOTE ***
-Unlike scripts/fetch_nfl.py (which was tested live against real nflverse
-files while writing it), this script could NOT be tested against the live
-CFBD API from the environment that built it -- that sandbox's network
-policy only allows a fixed list of domains, and collegefootballdata.com
-isn't on it. The endpoint shapes below (/games and /games/teams) reflect
-CFBD's documented API as of when this was written, but field names in
-particular (homeTeam vs home_team, "school" vs "team", etc.) are the part
-most likely to have drifted or been mis-remembered. TEST THIS LOCALLY with
-your own API key before trusting the GitHub Action to run it unattended --
-see the try/except block in main() for what it prints if something's off,
-and check https://api.collegefootballdata.com/api-docs if it errors.
+*** FCS SUPPORT -- ADDED, THEN REMOVED ***
+This briefly pulled team names for both FBS and FCS so FCS players
+weren't filtered out. Removed for the same reason as fetch_cfb.py: it
+roughly doubled CFBD call volume against a 1,000-call/month free-tier
+ceiling, for a benefit (early-season FBS-vs-FCS buy games) that stops
+mattering a few weeks into the season anyway. CLASSIFICATIONS is still a
+list so FCS is easy to add back later if wanted.
 
-The approach itself (independent of exact field names) is solid and is the
-same trick used in fetch_nfl.py: CFBD's stats endpoints are offense-only,
-so for team X's defense in a given game, we look up the OTHER team's
-offensive output in that same game and count it as what X allowed.
+*** SAME HONESTY NOTE AS fetch_cfb.py ***
+Could not be tested against the live CFBD API from the sandbox that wrote
+this. Uses CFBD's /games/players endpoint, which -- based on what we
+learned building fetch_cfb.py -- likely rejects a bare year and wants a
+week too, so this goes straight to the per-week loop for both years
+rather than trying a bulk call first. Test locally before trusting the
+scheduled run; if it errors, it'll print a sample raw row to help debug
+the field names. Pulling two full seasons roughly doubles the number of
+requests versus the single-season version, and now doing that for two
+classifications on top -- if this starts timing out or hitting rate
+limits, that's the first thing to look at.
 
-*** FCS SUPPORT -- ADDED, REMOVED, THEN RESTORED WITH A FIX ***
-FCS was added, then removed to fit CFBD's free-tier call budget, and is
-now back after upgrading to CFBD's Patreon Tier 1 (5,000 calls/month --
-comfortably covers the ~1,500/month this now costs across all CFB
-scripts combined).
+Sign up for a free key at https://collegefootballdata.com/key and set it
+as CFBD_API_KEY.
 
-*** WHY DIVISION IS NOT TRUSTED FROM CFBD'S OWN classification PARAM ***
-Confirmed live, real data: querying /teams with classification=fbs
-returned 186 teams, not the real ~138 -- CFBD's own filter let 48
-genuine FCS programs through (Alcorn State, Furman, Maine, Murray
-State, VMI, Youngstown State, and more), plus at least one school
-(UT Rio Grande Valley) that doesn't field a football program at all.
-So this script still queries both classifications (to maximize real
-coverage, since CFBD's split isn't reliable in either direction), but
-determines each team's actual division by checking it against
-KNOWN_FBS_TEAMS below -- a hardcoded list of the real ~138 FBS teams,
-independently verified via web search during this project (not derived
-from a CFBD API response) -- rather than trusting whatever classification
-label CFBD attaches to it. Anything not in that list is treated as FCS.
-This list can go stale as conferences realign (teams do occasionally
-move divisions) -- if a team you know just moved to FBS shows up
-labeled "fcs", that's the first place to check.
-
-Team names are matched between /teams and /games/teams by CFBD's own
-"school" field -- keep it that way rather than inventing an alternate
-spelling (e.g. adding a disambiguating suffix) anywhere in this project.
-A prior version of this project's seed data used "Miami (FL)" to
-disambiguate from Miami (OH), which doesn't match CFBD's real name
-("Miami") and caused two permanently-diverging entries for the same team
--- see the fix in index.html's CFB_SEED for the full story. The lesson:
-always use the exact string CFBD itself returns, never an invented
-disambiguator, no matter how reasonable it seems.
-
-Sign up for a free key at https://collegefootballdata.com and set it as
-CFBD_API_KEY.
-
-Run: CFBD_API_KEY=xxxx python3 scripts/fetch_cfb.py
-Writes: data/cfb-teams.json
+Run: CFBD_API_KEY=xxxx python3 scripts/fetch_players_cfb.py
+Writes: data/cfb-players.json
 """
 import json
 import os
@@ -70,211 +43,170 @@ import urllib.parse
 from cfbd_utils import cfbd_get
 
 YEAR = 2026
-EXISTING_PATH = "data/cfb-teams.json"
-CLASSIFICATIONS = ["fbs", "fcs"]  # queried for coverage only -- division is decided by KNOWN_FBS_TEAMS below, not by which classification a team came back under
+PREV_YEAR = YEAR - 1
+WINDOW = 10
+EXISTING_PATH = "data/cfb-players.json"
+CLASSIFICATIONS = ["fbs", "fcs"]  # only used by the rare fallback path below (direct API call if data/cfb-teams.json is missing) -- restored alongside fetch_cfb.py
 
-# Verified independently (web search, not a CFBD response) during this
-# project -- see the docstring note above for why this exists at all.
-KNOWN_FBS_TEAMS = frozenset([
-    'Air Force', 'Akron', 'Alabama', 'App State', 'Arizona', 'Arizona State', 'Arkansas', 'Arkansas State', 'Army', 'Auburn', 'BYU', 'Ball State', 'Baylor', 'Boise State', 'Boston College', 'Bowling Green', 'Buffalo', 'California', 'Central Michigan', 'Charlotte', 'Cincinnati', 'Clemson', 'Coastal Carolina', 'Colorado', 'Colorado State', 'Delaware', 'Duke', 'East Carolina', 'Eastern Michigan', 'Florida', 'Florida Atlantic', 'Florida International', 'Florida State', 'Fresno State', 'Georgia', 'Georgia Southern', 'Georgia State', 'Georgia Tech', "Hawai'i", 'Houston', 'Illinois', 'Indiana', 'Iowa', 'Iowa State', 'Jacksonville State', 'James Madison', 'Kansas', 'Kansas State', 'Kennesaw State', 'Kent State', 'Kentucky', 'LSU', 'Liberty', 'Louisiana', 'Louisiana Tech', 'Louisville', 'Marshall', 'Maryland', 'Massachusetts', 'Memphis', 'Miami', 'Miami (OH)', 'Michigan', 'Michigan State', 'Middle Tennessee', 'Minnesota', 'Mississippi State', 'Missouri', 'Missouri State', 'NC State', 'Navy', 'Nebraska', 'Nevada', 'New Mexico', 'New Mexico State', 'North Carolina', 'North Dakota State', 'North Texas', 'Northern Illinois', 'Northwestern', 'Notre Dame', 'Ohio', 'Ohio State', 'Oklahoma', 'Oklahoma State', 'Old Dominion', 'Ole Miss', 'Oregon', 'Oregon State', 'Penn State', 'Pittsburgh', 'Purdue', 'Rice', 'Rutgers', 'SMU', 'Sacramento State', 'Sam Houston', 'San Diego State', 'San José State', 'South Alabama', 'South Carolina', 'South Florida', 'Southern Miss', 'Stanford', 'Syracuse', 'TCU', 'Temple', 'Tennessee', 'Texas', 'Texas A&M', 'Texas State', 'Texas Tech', 'Toledo', 'Troy', 'Tulane', 'Tulsa', 'UAB', 'UCF', 'UCLA', 'UConn', 'UL Monroe', 'UNLV', 'USC', 'UTEP', 'UTSA', 'Utah', 'Utah State', 'Vanderbilt', 'Virginia', 'Virginia Tech', 'Wake Forest', 'Washington', 'Washington State', 'West Virginia', 'Western Kentucky', 'Western Michigan', 'Wisconsin', 'Wyoming',
-])
-
-# The two offensive categories CFBD's games/teams stats use that we need.
-# CFBD's documented category strings -- verify against a live response if
-# this script comes back empty (print(stats_row) in the loop below to check).
-PASS_YARDS_KEYS = ["netPassingYards", "passingYards"]
-RUSH_YARDS_KEYS = ["rushingYards"]
+POSITION_HINT = {
+    "passing": "QB",
+    "rushing": "RB",
+    "receiving": "WR",
+}
 
 
-def first_present(d, keys, default=0):
-    for k in keys:
-        if k in d and d[k] not in (None, ""):
-            try:
-                return float(d[k])
-            except (TypeError, ValueError):
-                continue
-    return default
-
-
-def get_team_name(team_obj):
-    # CFBD has used both "school" and "team" for this field across
-    # endpoint versions -- try both.
-    return team_obj.get("school") or team_obj.get("team")
-
-
-def get_stats_dict(team_obj):
-    """Turn CFBD's [{category, stat}, ...] list into a flat {category: value} dict."""
-    out = {}
-    for row in team_obj.get("stats", []) or []:
-        cat = row.get("category")
-        val = row.get("stat")
-        if cat is not None:
-            out[cat] = val
-    return out
-
-
-def fetch_games_teams_for(classification, api_key):
-    """Bulk-fetch /games/teams for one classification, falling back to
-    per-week requests if the bulk call rejects a bare year (confirmed live
-    that this happens for at least one classification -- see the
-    fallback comment below)."""
-    try:
-        return cfbd_get("/games/teams", {"year": YEAR, "seasonType": "regular", "classification": classification}, api_key)
-    except Exception as e:
-        # /games/teams appears to reject a bare year (400) and want a week too --
-        # confirmed against the live API after this script was first written.
-        # Fall back to pulling it one week at a time and merging the results.
-        print(f"Bulk /games/teams ({classification}) by year failed ({e}); falling back to per-week requests...", file=sys.stderr)
-        out = []
-        for week in range(1, 16):
-            try:
-                batch = cfbd_get("/games/teams", {"year": YEAR, "seasonType": "regular", "week": week, "classification": classification}, api_key)
-            except Exception:
-                continue  # that week likely hasn't happened yet, or errored -- skip it
-            if batch:
-                out.extend(batch)
-            time.sleep(1)  # spread out requests in this loop -- reduces how often the retry/backoff in cfbd_get even needs to kick in
-        return out
+def fetch_year_rows(year, api_key):
+    rows = []
+    for week in range(1, 16):
+        try:
+            batch = cfbd_get("/games/players", {"year": year, "seasonType": "regular", "week": week}, api_key)
+        except Exception:
+            continue  # week hasn't happened yet (or errored) -- skip it
+        if batch:
+            for g in batch:
+                g["_year"] = year  # tag so the merge step can sort across years
+            rows.extend(batch)
+        time.sleep(1)  # spread out requests -- this loop alone can be 15 calls per year
+    return rows
 
 
 def main():
     api_key = (os.environ.get("CFBD_API_KEY") or "").strip()
     if not api_key:
-        print("CFBD_API_KEY is not set -- skipping college stats update.", file=sys.stderr)
+        print("CFBD_API_KEY is not set -- skipping college player stats update.", file=sys.stderr)
         return
 
     try:
         with open(EXISTING_PATH) as f:
-            teams = json.load(f)
+            players = json.load(f)
     except FileNotFoundError:
-        teams = {}
+        players = {}
 
-    # Team -> (conference, division) for every FBS + FCS team. "division"
-    # is decided by KNOWN_FBS_TEAMS, NOT by which classification value
-    # this team happened to come back under -- see the docstring note on
-    # why CFBD's own classification split can't be trusted here.
-    all_team_meta = {}
-    for classification in CLASSIFICATIONS:
-        try:
-            resp = cfbd_get("/teams", {"year": YEAR, "classification": classification}, api_key)
-        except Exception as e:
-            print(f"Could not reach CFBD /teams (classification={classification}) ({e}); skipping this classification for the team list.", file=sys.stderr)
-            continue
-        for t in resp:
-            name = t.get("school")
-            if name:
-                real_division = "fbs" if name in KNOWN_FBS_TEAMS else "fcs"
-                all_team_meta[name] = (t.get("conference") or "Independent", real_division)
-        time.sleep(1)
+    # Team names come from data/cfb-teams.json (already written by
+    # fetch_cfb.py, which runs earlier in the workflow) instead of calling
+    # CFBD's /teams endpoint again here -- that was a fully redundant pair
+    # of calls (both classifications) on every run. Falls back to a direct
+    # API call only if that file is missing or empty (e.g. run standalone,
+    # or fetch_cfb.py failed this run), so this script still works on its
+    # own if needed.
+    all_teams = set()
+    try:
+        with open("data/cfb-teams.json") as f:
+            cfb_teams_file = json.load(f)
+        all_teams = {name for name, t in cfb_teams_file.items() if t.get("league") == "CFB"}
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
 
-    if not all_team_meta:
+    if not all_teams:
+        print("data/cfb-teams.json had no usable team list -- falling back to a direct CFBD /teams call.", file=sys.stderr)
+        for classification in CLASSIFICATIONS:
+            try:
+                resp = cfbd_get("/teams", {"year": YEAR, "classification": classification}, api_key)
+            except Exception as e:
+                print(f"Could not reach CFBD /teams (classification={classification}) ({e}); that classification's players will be skipped.", file=sys.stderr)
+                continue
+            for t in resp:
+                name = t.get("school")
+                if name:
+                    all_teams.add(name)
+            time.sleep(1)
+
+    if not all_teams:
         print("Could not fetch any team list (FBS or FCS); leaving existing file untouched.", file=sys.stderr)
         return
 
-    try:
-        games = cfbd_get("/games", {"year": YEAR, "seasonType": "regular"}, api_key)
-    except Exception as e:
-        print(f"Could not fetch /games ({e}); leaving existing file untouched.", file=sys.stderr)
+    all_rows = fetch_year_rows(PREV_YEAR, api_key) + fetch_year_rows(YEAR, api_key)
+
+    if not all_rows:
+        print("CFBD returned no games/players data for either season; leaving file untouched.", file=sys.stderr)
         return
 
-    games_teams = []
-    for classification in CLASSIFICATIONS:
-        batch = fetch_games_teams_for(classification, api_key)
-        if batch:
-            games_teams.extend(batch)
-        else:
-            print(f"No /games/teams data came back for classification={classification} -- that classification's teams will be skipped this run.", file=sys.stderr)
-        time.sleep(1)
-
-    if not games_teams:
-        print("CFBD returned no games/teams data (season may not have started); leaving file untouched.", file=sys.stderr)
-        return
-    # Sanity check on the shape we got, so a silent field-name mismatch
-    # doesn't quietly write all-zero stats.
-    sample_team = (games_teams[0].get("teams") or [{}])[0]
-    if not get_stats_dict(sample_team):
-        print("WARNING: couldn't find a 'stats' list on the sample game/team row -- "
-              "the API shape may have changed. Sample row printed below; "
-              "update get_stats_dict()/get_team_name() to match.", file=sys.stderr)
-        print(json.dumps(sample_team, indent=2)[:1000], file=sys.stderr)
+    sample = all_rows[0]
+    if "teams" not in sample:
+        print("WARNING: /games/players response shape looks different than expected -- "
+              "sample row printed below. Update the parsing loop in main() to match.", file=sys.stderr)
+        print(json.dumps({k: v for k, v in sample.items() if k != "_year"}, indent=2)[:1500], file=sys.stderr)
         return
 
-    # game id -> team name -> offensive stats dict, for the opponent lookup.
-    offense_by_game_team = {}
-    for g in games_teams:
-        gid = g.get("id")
-        entry = {}
-        for team_obj in g.get("teams", []):
-            name = get_team_name(team_obj)
-            if name:
-                entry[name] = get_stats_dict(team_obj)
-        offense_by_game_team[gid] = entry
+    # player name -> {pos, by_game: {(year,week): {...stats...}}}
+    accum = {}
 
-    # team -> {for: [...], against: [...]} points, from /games directly.
-    points_by_team = {}
-    for g in games:
-        home, away = g.get("homeTeam"), g.get("awayTeam")
-        hp, ap = g.get("homePoints"), g.get("awayPoints")
-        if hp is None or ap is None:
-            continue  # not played yet
-        points_by_team.setdefault(home, []).append({"for": hp, "against": ap})
-        points_by_team.setdefault(away, []).append({"for": ap, "against": hp})
+    def get_entry(name, pos, year, week, gid):
+        if name not in accum:
+            accum[name] = {"pos": pos, "team": None, "by_game": {}}
+        gkey = (year, week, gid)
+        if gkey not in accum[name]["by_game"]:
+            accum[name]["by_game"][gkey] = {"year": year, "week": week, "passYds": 0, "rushYds": 0,
+                                             "receptions": 0, "recYds": 0, "tds": 0}
+        return accum[name]["by_game"][gkey]
 
-    per_team_games = {}  # team -> list of {passOff, rushOff, passDef, rushDef}
-    for gid, teams_in_game in offense_by_game_team.items():
-        names = list(teams_in_game.keys())
-        if len(names) != 2:
-            continue
-        a, b = names
-        for me, opp in [(a, b), (b, a)]:
-            my_stats, opp_stats = teams_in_game[me], teams_in_game[opp]
-            per_team_games.setdefault(me, []).append({
-                "passOff": first_present(my_stats, PASS_YARDS_KEYS),
-                "rushOff": first_present(my_stats, RUSH_YARDS_KEYS),
-                "passDef": first_present(opp_stats, PASS_YARDS_KEYS),
-                "rushDef": first_present(opp_stats, RUSH_YARDS_KEYS),
-            })
+    for game in all_rows:
+        gid = game.get("id")
+        week = game.get("week")
+        year = game.get("_year")
+        for team_block in game.get("teams", []):
+            team = team_block.get("team") or team_block.get("school")
+            if team not in all_teams:
+                continue
+            for category in team_block.get("categories", []):
+                cat_name = (category.get("name") or "").lower()
+                for stat_type in category.get("types", []):
+                    stat_name = (stat_type.get("name") or "").upper()
+                    for athlete in stat_type.get("athletes", []):
+                        player_name = athlete.get("name")
+                        if not player_name:
+                            continue
+                        pos = POSITION_HINT.get(cat_name, "")
+                        entry = get_entry(player_name, pos, year, week, gid)
+                        accum[player_name]["team"] = team  # most recently seen team wins (rows processed old->new below isn't guaranteed here, but final sort+pick-last handles it)
+                        try:
+                            val = float(athlete.get("stat", 0))
+                        except (TypeError, ValueError):
+                            continue
+                        if cat_name == "passing" and stat_name == "YDS":
+                            entry["passYds"] = val
+                        elif cat_name == "rushing" and stat_name == "YDS":
+                            entry["rushYds"] = val
+                        elif cat_name == "receiving" and stat_name == "YDS":
+                            entry["recYds"] = val
+                        elif cat_name == "receiving" and stat_name == "REC":
+                            entry["receptions"] = val
+                        elif stat_name == "TD":
+                            entry["tds"] = entry.get("tds", 0) + val
 
     updated = 0
-    fbs_updated = 0
-    fcs_updated = 0
-    for team, (conf, division) in all_team_meta.items():
-        games_list = per_team_games.get(team)
-        if not games_list:
-            continue  # team hasn't played yet this season (or its games/teams data didn't come through)
-        n = len(games_list)
-        pts = points_by_team.get(team, [])
-        np_ = len(pts) or 1
-        wins = sum(1 for p in pts if p["for"] > p["against"])
-        losses = sum(1 for p in pts if p["for"] < p["against"])
-        ties = sum(1 for p in pts if p["for"] == p["against"])
-        record = f"{wins}-{losses}" + (f"-{ties}" if ties else "")
-        existing = teams.get(team, {})
-        teams[team] = {
+    for name, info in accum.items():
+        if not info["pos"]:
+            continue  # couldn't classify into QB/RB/WR -- skip rather than guess
+        sorted_games = sorted(info["by_game"].values(), key=lambda g: (g["year"], g["week"] if g["week"] is not None else -1))
+        recent_games = sorted_games[-WINDOW:]
+
+        games_out = []
+        for g in recent_games:
+            games_out.append({
+                "date": f"{g['year']}-wk{g['week']}",
+                "opp": "",
+                "passYds": g["passYds"], "rushYds": g["rushYds"],
+                "receptions": g["receptions"], "recYds": g["recYds"], "tds": g["tds"],
+            })
+
+        # Team: keep whatever's already there (from fetch_cfb_rosters.py's
+        # current roster) if present; only use this script's own most
+        # recent team as a fallback for a brand-new player.
+        existing = players.get(name, {})
+        team = existing.get("team") or info["team"]
+
+        players[name] = {
+            "pos": info["pos"],
+            "team": team,
             "league": "CFB",
-            "conf": conf,
-            "division": division,  # "fbs" or "fcs" -- lets the UI show a pill if it wants to distinguish
-            "record": record if pts else existing.get("record", ""),
-            "ppg": round(sum(p["for"] for p in pts) / np_, 1) if pts else existing.get("ppg", 0),
-            "pa": round(sum(p["against"] for p in pts) / np_, 1) if pts else existing.get("pa", 0),
-            "passOff": round(sum(g["passOff"] for g in games_list) / n, 1),
-            "rushOff": round(sum(g["rushOff"] for g in games_list) / n, 1),
-            "passDef": round(sum(g["passDef"] for g in games_list) / n, 1),
-            "rushDef": round(sum(g["rushDef"] for g in games_list) / n, 1),
-            "to": existing.get("to", 0),  # turnover margin needs a separate CFBD endpoint; left as-is for now
-            "ats": existing.get("ats", ""),
-            "wk1": True,
+            "games": games_out,
         }
         updated += 1
-        if division == "fbs":
-            fbs_updated += 1
-        else:
-            fcs_updated += 1
 
     with open(EXISTING_PATH, "w") as f:
-        json.dump(teams, f, indent=2)
-    print(f"Updated {updated} of {len(all_team_meta)} CFB teams in {EXISTING_PATH} "
-          f"({fbs_updated} FBS, {fcs_updated} FCS)")
+        json.dump(players, f, indent=2)
+    print(f"Wrote {updated} CFB players (rolling {WINDOW}-game window, {PREV_YEAR}-{YEAR}) to {EXISTING_PATH}")
 
 
 if __name__ == "__main__":
