@@ -300,7 +300,7 @@
       <div id="cfb-team-detail"></div>
       <div class="card">
         <h2>Teams <span class="pill" id="cfb-team-count"></span></h2>
-        <div class="note" style="margin-top:0;">Every FBS team (130+, not just Power 5) is pre-loaded and auto-refreshed weekly — so a Power 5 team's game against a Group of 5 or independent opponent works in Matchup too. Nothing to add manually. Tap a team for its record and offensive/defensive rankings. FCS opponents (early-season "buy games") aren't tracked — those stop coming up a few weeks into the season anyway.</div>
+        <div class="note" style="margin-top:0;">Every FBS and FCS team is pre-loaded and auto-refreshed weekly — so a Power 5 team's game against a Group of 5, independent, or FCS opponent works in Matchup too. Nothing to add manually. Tap a team for its record and offensive/defensive rankings.</div>
         <div id="cfb-team-list" class="empty">Loading...</div>
       </div>
     </div>
@@ -892,7 +892,7 @@ function renderTeamDetail(lg, name){
     + '<div class="glog-row"><span>Points allowed/g — '+fmt(t.pa)+'</span><span class="glog-val">'+rankLabel(paRank)+'</span></div>'
     + '<div class="glog-row"><span>Pass yds allowed/g — '+fmt(t.passDef)+'</span><span class="glog-val">'+rankLabel(passDefRank)+'</span></div>'
     + '<div class="glog-row"><span>Rush yds allowed/g — '+fmt(t.rushDef)+'</span><span class="glog-val">'+rankLabel(rushDefRank)+'</span></div>'
-    + '<div class="note">Rankings are within '+t.league+' only, based on stats currently loaded.</div>'
+    + '<div class="note">Rankings are within '+t.league+(t.league==='CFB'?' (FBS + FCS combined)':'')+' only, based on stats currently loaded.</div>'
     + '<button class="secondary" id="'+lg+'-team-detail-close" style="margin-top:10px;">Close</button>'
     + '</div>';
   document.getElementById(lg+'-team-detail-close').addEventListener('click', function(){ container.innerHTML=''; });
