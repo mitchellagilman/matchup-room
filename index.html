@@ -1017,7 +1017,7 @@ function computeSinglePlayerProjection(name){
   if(!avgVal) return { statLabel: statLabel(mainStat), opp, noData: true };
   const last5 = games.slice(-5);
   const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
-  const ratio = teamsCache[opp][defKey] / avgVal;
+  const ratio = clampDefenseRatio(teamsCache[opp][defKey] / avgVal);
   const projected = l5avg * ratio;
   return {
     statLabel: statLabel(mainStat), opp, l5avg, ratio, projected,
@@ -1112,6 +1112,17 @@ const MIN_VOLUME_FOR_BET = { passYds: 75, rushYds: 15, recYds: 15 };
 function meetsVolumeThreshold(stat, l5avg){
   const min = MIN_VOLUME_FOR_BET[stat];
   return min===undefined || l5avg >= min;
+}
+// Guards against a small-sample defensive stat swinging a projection to
+// an unrealistic extreme -- confirmed live: a team's rushDef after just
+// ONE game (early season, before stats have any chance to stabilize)
+// was so far below average it alone would have projected a real
+// 106-yard/game back down to single digits. Real defenses regress toward
+// league-average over a full season; this caps how much any one
+// matchup's ratio can move a projection in either direction, regardless
+// of why the underlying defensive stat looks extreme.
+function clampDefenseRatio(ratio){
+  return Math.max(0.6, Math.min(1.6, ratio));
 }
 // QB is a true one-starter-at-a-time position (unlike RB/WR/TE, where more
 // than one player legitimately splitting real touches is normal) -- but
@@ -1208,7 +1219,7 @@ function wireHitRate(lg){
       const oppVal = teamsCache[opp][defKey];
       const avgVal = leagueAvgDefStat(league, defKey);
       if(avgVal){
-        const ratio = oppVal/avgVal; // >1 = opponent allows more than average (easier matchup)
+        const ratio = clampDefenseRatio(oppVal/avgVal); // >1 = opponent allows more than average (easier matchup)
         const adjPct = Math.max(0, Math.min(100, Math.round(pct*ratio)));
         const adjClass = adjPct>=60 ? 'high' : (adjPct>=40 ? 'mid' : 'low');
         const strength = ratio>=1.08 ? 'a below-average' : (ratio<=0.92 ? 'a tougher-than-average' : 'a roughly average');
@@ -1339,7 +1350,7 @@ function computeGameBets(nameA, nameB){
       const last5 = games.slice(-5);
       const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
       if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
-      const ratio = teamsCache[oppName][defKey] / avgVal;
+      const ratio = clampDefenseRatio(teamsCache[oppName][defKey] / avgVal);
       const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderGameBets
       playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough', _recencyKey: mostRecentGameKey(p) });
     });
@@ -1727,7 +1738,7 @@ function computeTopPlayerBets(league){
     if(!defKey || !teamsCache[opp][defKey]) return;
     const avgVal = leagueAvgDefStat(league, defKey);
     if(!avgVal) return;
-    const ratio = teamsCache[opp][defKey] / avgVal;
+    const ratio = clampDefenseRatio(teamsCache[opp][defKey] / avgVal);
     const last5 = games.slice(-5);
     const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
     if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
