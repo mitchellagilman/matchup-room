@@ -1279,18 +1279,39 @@ function computeProjection(nameA, nameB, league){
   const total = aScoreBox + bScoreBox;
   let spread = aScoreBox - bScoreBox; // positive = A favored
   let usedSP = false;
+  let marketAnchored = false;
  
   if(league==='CFB' && typeof A.spPlus==='number' && typeof B.spPlus==='number'){
     const spSpread = (A.spPlus - B.spPlus) - homeAdv; // SP+ is neutral-field; apply home adv when converting to a game line
     spread = spread*0.5 + spSpread*0.5;
     usedSP = true;
+  } else if(league==='CFB' && A.division && B.division && A.division!==B.division){
+    // FBS vs FCS: box-score averaging has no way to know the talent gap --
+    // each team's stats only reflect their own division's competition
+    // level. Confirmed live against a real matchup: box-score-only math
+    // said "Louisville by 1.5" while the real market had Louisville
+    // favored by 36.5 -- a 35-point error, not early-season noise but a
+    // structural blind spot. SP+ can't rescue this either, since FCS teams
+    // never get an SP+ rating. So for these games specifically, lean
+    // heavily on the market's own spread as the talent-gap signal, with a
+    // small remaining weight for our own box-score read -- this shrinks
+    // (rather than eliminates) any edge the model can claim here, instead
+    // of confidently stating a number it has no real basis for.
+    const market = findMarketLine(nameA, nameB);
+    const rawASpread = market ? market.aSpread : null;
+    if(market && rawASpread!==null && rawASpread!==undefined){
+      const aIsEntryA = teamNamesMatch(market.aTeam, nameA);
+      const marketFavA = aIsEntryA ? -rawASpread : rawASpread;
+      spread = spread*0.25 + marketFavA*0.75;
+      marketAnchored = true;
+    }
   }
  
   const aScore = Math.round((total + spread)/2);
   const bScore = Math.round((total - spread)/2);
   return {
     aScore, bScore, total: aScore+bScore, spread: aScore-bScore,
-    aPassProj, bPassProj, aRushProj, bRushProj, usedSP
+    aPassProj, bPassProj, aRushProj, bRushProj, usedSP, marketAnchored
   };
 }
  
@@ -1423,7 +1444,9 @@ function runMatchupFor(nameA, nameB, outId){
   const totalLine = tieSafeLine(total);
   const spreadLine = tieSafeLine(spreadVal);
   const spreadLabel = spreadLine===0 ? (nameA+' PK') : (spreadLine>0 ? (nameA+' -'+spreadLine) : (nameB+' -'+Math.abs(spreadLine)));
-  const methodNote = proj.usedSP
+  const methodNote = proj.marketAnchored
+    ? 'Box-score averaging alone can\'t judge an FBS-vs-FCS talent gap (each team\'s stats only reflect their own division), and FCS teams never get an SP+ rating to correct for it -- confirmed live, that combination once produced a 35-point error. For this matchup, the projection leans heavily on the actual market spread as the talent-gap signal instead, with a smaller weight for our own box-score read.'
+    : proj.usedSP
     ? 'Blends offense-vs-defense yardage averaging with CFBD\'s opponent-adjusted SP+ ratings, plus home-field advantage (~'+HOME_ADV[league]+' pts to '+nameB+', assumed home) and each team\'s own turnover margin.'
     : 'Offense-vs-defense yardage averaging, plus home-field advantage (~'+HOME_ADV[league]+' pts to '+nameB+', assumed home) and each team\'s own turnover margin. Not a sportsbook line.';
  
