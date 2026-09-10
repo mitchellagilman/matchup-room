@@ -20,21 +20,11 @@ import os
 import sys
 import urllib.request
 import urllib.parse
+from cfbd_utils import cfbd_get
 
 YEAR = 2026
-API_BASE = "https://api.collegefootballdata.com"
 SCHEDULE_PATH = "data/cfb-schedule.json"
 RANKINGS_PATH = "data/cfb-rankings.json"
-
-
-def api_get(path, params, api_key):
-    url = f"{API_BASE}{path}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {api_key}",
-        "Accept": "application/json",
-    })
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
 
 
 def main():
@@ -44,7 +34,7 @@ def main():
         return
 
     try:
-        all_games = api_get("/games", {"year": YEAR, "seasonType": "regular"}, api_key)
+        all_games = cfbd_get("/games", {"year": YEAR, "seasonType": "regular"}, api_key)
     except Exception as e:
         print(f"Could not fetch /games ({e}); leaving existing files untouched.", file=sys.stderr)
         return
@@ -93,7 +83,7 @@ def main():
         current_week = max(games_by_week.keys()) if games_by_week else 1
 
     try:
-        rankings_resp = api_get("/rankings", {"year": YEAR, "seasonType": "regular", "week": current_week}, api_key)
+        rankings_resp = cfbd_get("/rankings", {"year": YEAR, "seasonType": "regular", "week": current_week}, api_key)
     except Exception as e:
         print(f"Could not fetch /rankings ({e}); schedule will still be written, but rankings skipped.", file=sys.stderr)
         rankings_resp = []
@@ -146,7 +136,13 @@ def main():
             if pair in seen_pairs:
                 continue
             seen_pairs.add(pair)
-            schedule_out.append({"a": away, "b": home, "date": (g.get("startDate") or "")[:10]})
+            game_entry = {"a": away, "b": home, "date": (g.get("startDate") or "")[:10]}
+            if g.get("homePoints") is not None and g.get("awayPoints") is not None:
+                # Game's already been played -- carry the real result so the
+                # UI can show "FINAL" instead of a hypothetical projection.
+                game_entry["awayScore"] = g.get("awayPoints")
+                game_entry["homeScore"] = g.get("homePoints")
+            schedule_out.append(game_entry)
 
     with open(SCHEDULE_PATH, "w") as f:
         json.dump(schedule_out, f, indent=2)
