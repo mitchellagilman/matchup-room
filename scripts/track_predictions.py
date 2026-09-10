@@ -91,7 +91,7 @@ def load_json(path, default):
         return default
 
 
-def compute_projection(a, b, teams, league):
+def compute_projection(a, b, teams, league, odds_list=None):
     A, B = teams.get(a), teams.get(b)
     if not A or not B:
         return None
@@ -100,12 +100,25 @@ def compute_projection(a, b, teams, league):
     b_score = (B.get("ppg", 0) + A.get("pa", 0)) / 2 + home_adv / 2 + B.get("to", 0) * TO_FACTOR
     total = a_score + b_score
     spread = a_score - b_score
+    market_anchored = False
     if league == "CFB" and isinstance(A.get("spPlus"), (int, float)) and isinstance(B.get("spPlus"), (int, float)):
         sp_spread = (A["spPlus"] - B["spPlus"]) - home_adv
         spread = spread * 0.5 + sp_spread * 0.5
+    elif league == "CFB" and A.get("division") and B.get("division") and A["division"] != B["division"] and odds_list:
+        # FBS vs FCS -- see index.html's computeProjection for the full
+        # explanation (confirmed live: box-score-only math produced a
+        # 35-point error on a real matchup). Mirror that fix here so
+        # tracked picks don't diverge from what the site actually shows.
+        market = find_market_line(a, b, odds_list)
+        raw_a_spread = market.get("aSpread") if market else None
+        if market and raw_a_spread is not None:
+            a_is_entry_a = team_names_match(market.get("aTeam"), a)
+            market_fav_a = -raw_a_spread if a_is_entry_a else raw_a_spread
+            spread = spread * 0.25 + market_fav_a * 0.75
+            market_anchored = True
     a_final = round((total + spread) / 2)
     b_final = round((total - spread) / 2)
-    return {"aScore": a_final, "bScore": b_final, "total": a_final + b_final, "spread": a_final - b_final}
+    return {"aScore": a_final, "bScore": b_final, "total": a_final + b_final, "spread": a_final - b_final, "marketAnchored": market_anchored}
 
 
 def team_names_match(a, b):
@@ -131,7 +144,7 @@ def compute_team_bets(games, teams, odds_list, league):
     slate gets tracked, not just the model's most-confident-looking picks.)"""
     candidates = []
     for g in games:
-        proj = compute_projection(g["a"], g["b"], teams, league)
+        proj = compute_projection(g["a"], g["b"], teams, league, odds_list)
         if not proj:
             continue
         market = find_market_line(g["a"], g["b"], odds_list)
