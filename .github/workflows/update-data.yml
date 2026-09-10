@@ -74,6 +74,12 @@ jobs:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: python3 scripts/fetch_cfb_ratings.py
 
+      - name: Fetch CFB SRS ratings -- covers FCS teams, unlike SP+ (CollegeFootballData)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb_srs.py
+
       - name: Fetch CFB schedule + rankings (CollegeFootballData)
         continue-on-error: true
         env:
