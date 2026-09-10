@@ -217,8 +217,9 @@ def main():
         hp, ap = g.get("homePoints"), g.get("awayPoints")
         if hp is None or ap is None:
             continue  # not played yet
-        points_by_team.setdefault(home, []).append({"for": hp, "against": ap})
-        points_by_team.setdefault(away, []).append({"for": ap, "against": hp})
+        week = g.get("week")
+        points_by_team.setdefault(home, []).append({"for": hp, "against": ap, "week": week, "opp": away})
+        points_by_team.setdefault(away, []).append({"for": ap, "against": hp, "week": week, "opp": home})
 
     per_team_games = {}  # team -> list of {passOff, rushOff, passDef, rushDef}
     for gid, teams_in_game in offense_by_game_team.items():
@@ -250,6 +251,15 @@ def main():
         ties = sum(1 for p in pts if p["for"] == p["against"])
         record = f"{wins}-{losses}" + (f"-{ties}" if ties else "")
         existing = teams.get(team, {})
+
+        # Per-game results -- see fetch_nfl.py's docstring note for the
+        # full reasoning (shown in the Teams tab, and gives the frontend a
+        # real games-played count for early-season shrinkage).
+        sorted_pts = sorted(pts, key=lambda p: p.get("week") or 0)
+        game_log = [{"week": p.get("week"), "opp": p.get("opp"), "teamScore": p["for"], "oppScore": p["against"],
+                     "result": "W" if p["for"] > p["against"] else ("L" if p["for"] < p["against"] else "T")}
+                    for p in sorted_pts]
+
         teams[team] = {
             "league": "CFB",
             "conf": conf,
@@ -264,6 +274,7 @@ def main():
             "to": existing.get("to", 0),  # turnover margin needs a separate CFBD endpoint; left as-is for now
             "ats": existing.get("ats", ""),
             "wk1": True,
+            "games": game_log if game_log else existing.get("games", []),
         }
         updated += 1
         if division == "fbs":
