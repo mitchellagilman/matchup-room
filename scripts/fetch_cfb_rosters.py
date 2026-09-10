@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 """
-Pulls the full current-season FBS roster (skill positions, every team, not
+Pulls the full current-season roster (skill positions, every team, not
 just players who've recorded a stat yet) from collegefootballdata.com
 (CFBD) and writes data/cfb-players.json.
+
+*** ALREADY INCLUDES FCS -- NO CHANGE NEEDED HERE ***
+This calls /roster with only a year param, no team or classification
+filter, so it was never FBS-restricted the way fetch_cfb.py and
+fetch_players_cfb.py were (both of those built their team whitelist from
+/teams/fbs specifically, which did exclude FCS -- see those two scripts'
+docstrings for the fixes). Whatever CFBD's /roster endpoint returns for a
+given year, FBS or FCS, ends up here already.
 
 *** SAME HONESTY NOTE AS THE OTHER CFBD SCRIPTS ***
 Could not be tested against the live CFBD API from the sandbox that wrote
@@ -30,9 +38,9 @@ import os
 import sys
 import urllib.request
 import urllib.parse
+from cfbd_utils import cfbd_get
 
 YEAR = 2026
-API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-players.json"
 SKILL_POSITIONS = {"QB", "RB", "WR", "TE"}
 
@@ -40,16 +48,6 @@ FIRST_NAME_KEYS = ["firstName", "first_name"]
 LAST_NAME_KEYS = ["lastName", "last_name"]
 POSITION_KEYS = ["position"]
 TEAM_KEYS = ["team"]
-
-
-def api_get(path, params, api_key):
-    url = f"{API_BASE}{path}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {api_key}",
-        "Accept": "application/json",
-    })
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        return json.loads(resp.read().decode("utf-8"))
 
 
 def first_present(d, keys):
@@ -72,7 +70,7 @@ def main():
         players = {}
 
     try:
-        roster = api_get("/roster", {"year": YEAR}, api_key)
+        roster = cfbd_get("/roster", {"year": YEAR}, api_key, timeout=60)
     except Exception as e:
         print(f"Could not fetch /roster ({e}); leaving existing file untouched.", file=sys.stderr)
         return
