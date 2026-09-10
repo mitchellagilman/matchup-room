@@ -39,7 +39,16 @@ game" marker at logging time vs. now: if a newer game has been appended
 to their log since the pick was made, that game is graded. This avoids
 needing to reconstruct an exact date string to match against.
 
-Run: CFBD_API_KEY=xxxx python3 scripts/track_predictions.py
+*** TRACK_LEAGUES -- RUNNING NFL AND CFB ON SEPARATE SCHEDULES ***
+Set the TRACK_LEAGUES environment variable to "NFL", "CFB", or
+"NFL,CFB" (the default if unset) to control which league(s) this run
+processes. This exists because CFB moved to its own, less frequent
+workflow schedule (Fri/Sat only, vs. NFL's 5x/week) to fit CFBD's
+1,000-call/month free-tier ceiling -- without this, an NFL-only run
+would still call fetch_cfb_final_scores() every time just to check for
+CFB grading, wasting a CFBD call on days CFB isn't otherwise updating.
+
+Run: CFBD_API_KEY=xxxx TRACK_LEAGUES=NFL,CFB python3 scripts/track_predictions.py
 Writes: data/track-record.json
 """
 import csv
@@ -176,6 +185,14 @@ def league_avg_def_stat(teams, league, key):
 def meets_volume_threshold(stat, l5avg):
     min_val = MIN_VOLUME_FOR_BET.get(stat)
     return min_val is None or l5avg >= min_val
+
+
+def clamp_defense_ratio(ratio):
+    """Mirrors index.html's clampDefenseRatio() -- guards against a
+    small-sample defensive stat (e.g. a team's rushDef after just one
+    game) swinging a projection to an unrealistic extreme. Keep this in
+    sync with the JS version if the bounds ever change there."""
+    return max(0.6, min(1.6, ratio))
 
 
 def most_recent_game_key(player):
@@ -340,6 +357,15 @@ def grade_player_pick(pick, players):
 
 
 def main():
+    # TRACK_LEAGUES controls which league(s) this run processes -- lets the
+    # workflow run NFL tracking on its own (more frequent) schedule and CFB
+    # tracking on a separate, less frequent one, without either accidentally
+    # burning a CFBD call (fetch_cfb_final_scores) on a day CFB isn't
+    # otherwise updating. Defaults to both, so a manual/standalone run still
+    # behaves exactly like before this option existed.
+    leagues_env = (os.environ.get("TRACK_LEAGUES") or "NFL,CFB").strip().upper()
+    active_leagues = {s.strip() for s in leagues_env.split(",") if s.strip()}
+
     teams = {}
     teams.update(load_json("data/nfl-teams.json", {}))
     teams.update(load_json("data/cfb-teams.json", {}))
@@ -364,10 +390,13 @@ def main():
     existing_ids = {p["id"] for p in record["picks"]}
     logged = 0
 
-    for league, week_label, games in [
+    all_league_sources = [
         ("NFL", nfl_week_label, nfl_sched.get("games", [])),
         ("CFB", cfb_week_label, cfb_games),
-    ]:
+    ]
+    for league, week_label, games in all_league_sources:
+        if league not in active_leagues:
+            continue
         team_picks = compute_team_bets(games, teams, all_odds, league)
         matchup_teams = {f"{g['a']} vs {g['b']}": (g["a"], g["b"]) for g in games}
         for p in team_picks:
@@ -402,12 +431,14 @@ def main():
             existing_ids.add(pid)
             logged += 1
 
-    nfl_scores = fetch_nfl_final_scores(2026)
-    cfb_scores = fetch_cfb_final_scores(2026, os.environ.get("CFBD_API_KEY", "").strip())
+    nfl_scores = fetch_nfl_final_scores(2026) if "NFL" in active_leagues else {}
+    cfb_scores = fetch_cfb_final_scores(2026, os.environ.get("CFBD_API_KEY", "").strip()) if "CFB" in active_leagues else {}
     graded = 0
     for p in record["picks"]:
         if p["status"] != "pending":
             continue
+        if p["league"] not in active_leagues:
+            continue  # not this run's job to grade a league it isn't processing
         if p["type"] == "player_prop":
             result = grade_player_pick(p, all_players)
         else:
@@ -420,7 +451,7 @@ def main():
 
     with open(TRACK_PATH, "w") as f:
         json.dump(record, f, indent=2)
-    print(f"Logged {logged} new picks, graded {graded} pending picks. Total tracked: {len(record['picks'])}")
+    print(f"[{'/'.join(sorted(active_leagues))}] Logged {logged} new picks, graded {graded} pending picks. Total tracked: {len(record['picks'])}")
 
 
 if __name__ == "__main__":
