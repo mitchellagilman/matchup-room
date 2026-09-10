@@ -46,7 +46,7 @@ YEAR = 2026
 PREV_YEAR = YEAR - 1
 WINDOW = 10
 EXISTING_PATH = "data/cfb-players.json"
-CLASSIFICATIONS = ["fbs"]  # FCS dropped -- see fetch_cfb.py's docstring for why
+CLASSIFICATIONS = ["fbs", "fcs"]  # only used by the rare fallback path below (direct API call if data/cfb-teams.json is missing) -- restored alongside fetch_cfb.py
 
 POSITION_HINT = {
     "passing": "QB",
