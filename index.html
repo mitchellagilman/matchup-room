@@ -1329,26 +1329,36 @@ function computeProjection(nameA, nameB, league){
     const spSpread = (A.spPlus - B.spPlus) - homeAdv; // SP+ is neutral-field; apply home adv when converting to a game line
     spread = spread*0.25 + spSpread*0.75;
     usedSP = true;
-  } else if(league==='CFB' && A.division && B.division && A.division!==B.division){
-    // FBS vs FCS: box-score averaging has no way to know the talent gap --
-    // each team's stats only reflect their own division's competition
-    // level. Confirmed live against a real matchup: box-score-only math
-    // said "Louisville by 1.5" while the real market had Louisville
-    // favored by 36.5 -- a 35-point error, not early-season noise but a
-    // structural blind spot. SP+ can't rescue this either, since FCS teams
-    // never get an SP+ rating. So for these games specifically, lean
-    // heavily on the market's own spread as the talent-gap signal, with a
-    // small remaining weight for our own box-score read -- this shrinks
-    // (rather than eliminates) any edge the model can claim here, instead
-    // of confidently stating a number it has no real basis for.
+  } else if(league==='CFB' && A.division && B.division && A.division!==B.division && findMarketLine(nameA, nameB) && findMarketLine(nameA, nameB).aSpread!=null){
+    // FBS vs FCS, and a real market line exists for this specific game:
+    // box-score averaging has no way to know the talent gap -- each team's
+    // stats only reflect their own division's competition level.
+    // Confirmed live against a real matchup: box-score-only math said
+    // "Louisville by 1.5" while the real market had Louisville favored by
+    // 36.5 -- a 35-point error, not early-season noise but a structural
+    // blind spot. SP+ can't rescue this either, since FCS teams never get
+    // an SP+ rating. When a real market line exists for this exact game,
+    // it's prioritized over SRS below -- live bookmaker consensus reflects
+    // more current information (injuries, current form, etc.) than any
+    // season-long rating can, so lean heavily on it, with a small
+    // remaining weight for our own box-score read.
     const market = findMarketLine(nameA, nameB);
-    const rawASpread = market ? market.aSpread : null;
-    if(market && rawASpread!==null && rawASpread!==undefined){
-      const aIsEntryA = teamNamesMatch(market.aTeam, nameA);
-      const marketFavA = aIsEntryA ? -rawASpread : rawASpread;
-      spread = spread*0.25 + marketFavA*0.75;
-      marketAnchored = true;
-    }
+    const aIsEntryA = teamNamesMatch(market.aTeam, nameA);
+    const marketFavA = aIsEntryA ? -market.aSpread : market.aSpread;
+    spread = spread*0.25 + marketFavA*0.75;
+    marketAnchored = true;
+  } else if(league==='CFB' && typeof A.srs==='number' && typeof B.srs==='number'){
+    // Neither SP+ nor a usable market line was available for this game --
+    // confirmed live: Indiana (ranked, has SP+) vs. Howard (FCS, no SP+,
+    // and no market line loaded for this specific game) fell through both
+    // safeguards above, landing on raw box-score-only math for a game that
+    // should've been a blowout. SRS (CFBD's simpler, schedule-adjusted
+    // scoring-margin rating) covers FCS teams too, unlike SP+, so it fills
+    // exactly this gap. Trusted a bit less than SP+ (SRS is a simpler
+    // methodology) but still far more than an unprotected box score.
+    const srsSpread = (A.srs - B.srs) - homeAdv; // SRS is also neutral-field
+    spread = spread*0.3 + srsSpread*0.7;
+    usedSP = true; // treated the same as SP+ for confidence-tier purposes -- both are real opponent-adjusted signals
   }
  
   const aScore = Math.round((total + spread)/2);
