@@ -39,13 +39,14 @@ Writes: data/cfb-players.json
 import json
 import os
 import sys
+import time
 import urllib.request
 import urllib.parse
+from cfbd_utils import cfbd_get
 
 YEAR = 2026
 PREV_YEAR = YEAR - 1
 WINDOW = 10
-API_BASE = "https://api.collegefootballdata.com"
 EXISTING_PATH = "data/cfb-players.json"
 CLASSIFICATIONS = ["fbs", "fcs"]
 
@@ -56,27 +57,18 @@ POSITION_HINT = {
 }
 
 
-def api_get(path, params, api_key):
-    url = f"{API_BASE}{path}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {api_key}",
-        "Accept": "application/json",
-    })
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
-
-
 def fetch_year_rows(year, api_key):
     rows = []
     for week in range(1, 16):
         try:
-            batch = api_get("/games/players", {"year": year, "seasonType": "regular", "week": week}, api_key)
+            batch = cfbd_get("/games/players", {"year": year, "seasonType": "regular", "week": week}, api_key)
         except Exception:
             continue  # week hasn't happened yet (or errored) -- skip it
         if batch:
             for g in batch:
                 g["_year"] = year  # tag so the merge step can sort across years
             rows.extend(batch)
+        time.sleep(1)  # spread out requests -- this loop alone can be 15 calls per year
     return rows
 
 
@@ -95,7 +87,7 @@ def main():
     all_teams = set()
     for classification in CLASSIFICATIONS:
         try:
-            resp = api_get("/teams", {"year": YEAR, "classification": classification}, api_key)
+            resp = cfbd_get("/teams", {"year": YEAR, "classification": classification}, api_key)
         except Exception as e:
             print(f"Could not reach CFBD /teams (classification={classification}) ({e}); that classification's players will be skipped.", file=sys.stderr)
             continue
@@ -103,6 +95,7 @@ def main():
             name = t.get("school")
             if name:
                 all_teams.add(name)
+        time.sleep(1)
 
     if not all_teams:
         print("Could not fetch any team list (FBS or FCS); leaving existing file untouched.", file=sys.stderr)
