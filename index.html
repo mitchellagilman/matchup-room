@@ -881,6 +881,12 @@ function renderTeamDetail(lg, name){
   const rushOffRank = rankTeamStat(name, 'rushOff', false);
   const passDefRank = rankTeamStat(name, 'passDef', true);
   const rushDefRank = rankTeamStat(name, 'rushDef', true);
+  const games = (t.games || []).slice().reverse(); // most recent first
+  const gamesHtml = games.length ? games.map(function(g){
+    const won = g.result==='W', lost = g.result==='L';
+    return '<div class="glog-row"><span>Week '+(g.week||'?')+' '+(won?'vs':lost?'@':'vs')+' '+g.opp+'</span>'
+      + '<span class="glog-val '+(won?'over':lost?'under':'')+'">'+g.result+' '+fmt(g.teamScore)+'-'+fmt(g.oppScore)+'</span></div>';
+  }).join('') : '<div class="empty">No games played yet this season.</div>';
   container.innerHTML = '<div class="card">'
     + '<h2>'+name+(t.conf?' <span class="pill">'+t.conf+'</span>':'')+(t.division==='fcs'?' <span class="pill">FCS</span>':'')+'</h2>'
     + '<div class="team-meta">Record: <b>'+(t.record||'—')+'</b> · TO margin '+(t.to>=0?'+':'')+fmt(t.to)+'/g · ATS '+(t.ats||'—')+'</div>'
@@ -893,6 +899,8 @@ function renderTeamDetail(lg, name){
     + '<div class="glog-row"><span>Pass yds allowed/g — '+fmt(t.passDef)+'</span><span class="glog-val">'+rankLabel(passDefRank)+'</span></div>'
     + '<div class="glog-row"><span>Rush yds allowed/g — '+fmt(t.rushDef)+'</span><span class="glog-val">'+rankLabel(rushDefRank)+'</span></div>'
     + '<div class="note">Rankings are within '+t.league+(t.league==='CFB'?' (FBS + FCS combined)':'')+' only, based on stats currently loaded.</div>'
+    + '<div style="margin-top:14px;font-weight:700;font-size:0.85rem;">Results this season</div>'
+    + gamesHtml
     + '<button class="secondary" id="'+lg+'-team-detail-close" style="margin-top:10px;">Close</button>'
     + '</div>';
   document.getElementById(lg+'-team-detail-close').addEventListener('click', function(){ container.innerHTML=''; });
@@ -1265,6 +1273,20 @@ function edgeRow(label, aVal, bVal, higherIsBetterForA){
 //    meaningfully help accuracy, especially early season.
 const HOME_ADV = {NFL: 2.0, CFB: 2.5};
 const TO_FACTOR = 1.5; // points per turnover-margin-per-game
+const SHRINK_PRIOR_GAMES = 3; // "pseudo-games" of league-average weight blended into small samples
+// A team's ppg/pa/turnover-margin from just 1-2 games is an extreme-outlier-
+// prone sample -- confirmed live: an NFL team's turnover margin input was
+// literally just their single Week 1 game's result (+/-3.0, the single most
+// extreme value across the whole league), with nothing to smooth it, and no
+// opponent-adjusted rating exists for NFL the way SP+ does for CFB to help
+// correct it. This blends a raw stat toward the league average, weighted by
+// how many real games it's actually built from -- 1 game gets pulled hard
+// toward average, 8+ games are barely touched. Falls back to the raw stat
+// untouched if games-played data isn't available yet (older cached data).
+function shrinkToLeagueAvg(rawStat, leagueAvg, gamesPlayed){
+  if(!gamesPlayed || gamesPlayed<=0 || leagueAvg===null || leagueAvg===undefined) return rawStat;
+  return (rawStat*gamesPlayed + leagueAvg*SHRINK_PRIOR_GAMES) / (gamesPlayed + SHRINK_PRIOR_GAMES);
+}
 function computeProjection(nameA, nameB, league){
   const A = teamsCache[nameA], B = teamsCache[nameB];
   if(!A || !B) return null;
@@ -1273,17 +1295,39 @@ function computeProjection(nameA, nameB, league){
   const aRushProj = (A.rushOff + B.rushDef)/2;
   const bRushProj = (B.rushOff + A.rushDef)/2;
  
+  const aGamesPlayed = (A.games && A.games.length) || 0;
+  const bGamesPlayed = (B.games && B.games.length) || 0;
+  const leagueAvgPpg = leagueAvgDefStat(league, 'ppg');
+  const leagueAvgPa = leagueAvgDefStat(league, 'pa');
+  const leagueAvgTo = leagueAvgDefStat(league, 'to');
+  const aPpg = shrinkToLeagueAvg(A.ppg, leagueAvgPpg, aGamesPlayed);
+  const aPa = shrinkToLeagueAvg(A.pa, leagueAvgPa, aGamesPlayed);
+  const aTo = shrinkToLeagueAvg(A.to||0, leagueAvgTo, aGamesPlayed);
+  const bPpg = shrinkToLeagueAvg(B.ppg, leagueAvgPpg, bGamesPlayed);
+  const bPa = shrinkToLeagueAvg(B.pa, leagueAvgPa, bGamesPlayed);
+  const bTo = shrinkToLeagueAvg(B.to||0, leagueAvgTo, bGamesPlayed);
+ 
   const homeAdv = HOME_ADV[league] || 2.0;
-  let aScoreBox = (A.ppg + B.pa)/2 - homeAdv/2 + (A.to||0)*TO_FACTOR;
-  let bScoreBox = (B.ppg + A.pa)/2 + homeAdv/2 + (B.to||0)*TO_FACTOR;
+  let aScoreBox = (aPpg + bPa)/2 - homeAdv/2 + aTo*TO_FACTOR;
+  let bScoreBox = (bPpg + aPa)/2 + homeAdv/2 + bTo*TO_FACTOR;
   const total = aScoreBox + bScoreBox;
   let spread = aScoreBox - bScoreBox; // positive = A favored
   let usedSP = false;
   let marketAnchored = false;
  
   if(league==='CFB' && typeof A.spPlus==='number' && typeof B.spPlus==='number'){
+    // SP+ is opponent-adjusted (accounts for who a team has actually played);
+    // raw box-score ppg/pa isn't, and is a single-digit-game sample this
+    // early in the season -- confirmed live: a team that put up 80 points
+    // in one blowout had their box-score offense look elite even though
+    // that same game barely moved their (much more trustworthy) SP+
+    // rating. A 50/50 blend let that one extreme box-score outlier drag a
+    // good, opponent-adjusted signal down to a near-toss-up projection for
+    // a game that was really a ~30-point mismatch. SP+ exists specifically
+    // to correct for this, so it's weighted well above box-score-only here
+    // rather than split evenly with it.
     const spSpread = (A.spPlus - B.spPlus) - homeAdv; // SP+ is neutral-field; apply home adv when converting to a game line
-    spread = spread*0.5 + spSpread*0.5;
+    spread = spread*0.25 + spSpread*0.75;
     usedSP = true;
   } else if(league==='CFB' && A.division && B.division && A.division!==B.division){
     // FBS vs FCS: box-score averaging has no way to know the talent gap --
