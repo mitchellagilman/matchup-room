@@ -22,6 +22,16 @@
     "date": "2026-09-12"
   },
   {
+    "a": "Penn State",
+    "b": "Temple",
+    "date": "2026-09-12"
+  },
+  {
+    "a": "Oklahoma",
+    "b": "Michigan",
+    "date": "2026-09-12"
+  },
+  {
     "a": "Oregon",
     "b": "Oklahoma State",
     "date": "2026-09-12"
@@ -37,23 +47,8 @@
     "date": "2026-09-12"
   },
   {
-    "a": "Penn State",
-    "b": "Temple",
-    "date": "2026-09-12"
-  },
-  {
-    "a": "Oklahoma",
-    "b": "Michigan",
-    "date": "2026-09-12"
-  },
-  {
     "a": "Western Kentucky",
     "b": "Georgia",
-    "date": "2026-09-12"
-  },
-  {
-    "a": "Alabama",
-    "b": "Kentucky",
     "date": "2026-09-12"
   },
   {
@@ -62,8 +57,8 @@
     "date": "2026-09-12"
   },
   {
-    "a": "Utah State",
-    "b": "Washington",
+    "a": "Alabama",
+    "b": "Kentucky",
     "date": "2026-09-12"
   },
   {
@@ -72,13 +67,13 @@
     "date": "2026-09-12"
   },
   {
-    "a": "UC Davis",
-    "b": "SMU",
+    "a": "Utah State",
+    "b": "Washington",
     "date": "2026-09-12"
   },
   {
-    "a": "Tennessee",
-    "b": "Georgia Tech",
+    "a": "UC Davis",
+    "b": "SMU",
     "date": "2026-09-12"
   },
   {
@@ -87,8 +82,8 @@
     "date": "2026-09-12"
   },
   {
-    "a": "Texas Tech",
-    "b": "Oregon State",
+    "a": "Tennessee",
+    "b": "Georgia Tech",
     "date": "2026-09-12"
   },
   {
@@ -104,6 +99,11 @@
   {
     "a": "Louisiana Tech",
     "b": "LSU",
+    "date": "2026-09-12"
+  },
+  {
+    "a": "Texas Tech",
+    "b": "Oregon State",
     "date": "2026-09-12"
   },
   {
