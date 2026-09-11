@@ -110,6 +110,10 @@ jobs:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: python3 scripts/track_predictions.py
 
+      - name: Calibrate confidence thresholds from track record
+        continue-on-error: true
+        run: python3 scripts/calibrate_model.py
+
       - name: Commit updated data files
         if: always()
         run: |
