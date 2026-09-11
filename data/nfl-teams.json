@@ -1,14 +1,25 @@
 {
   "Los Angeles Rams": {
     "league": "NFL",
-    "ppg": 30.5,
-    "pa": 20.4,
-    "passOff": 268.1,
-    "rushOff": 126.6,
-    "passDef": 216.7,
-    "rushDef": 110.8,
-    "to": 0.65,
-    "ats": ""
+    "record": "0-1",
+    "ppg": 7.0,
+    "pa": 27.0,
+    "passOff": 168.0,
+    "rushOff": 122.0,
+    "passDef": 205.0,
+    "rushDef": 174.0,
+    "to": -1.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "San Francisco 49ers",
+        "teamScore": 7.0,
+        "oppScore": 27.0,
+        "result": "L"
+      }
+    ]
   },
   "Dallas Cowboys": {
     "league": "NFL",
@@ -78,14 +89,25 @@
   },
   "San Francisco 49ers": {
     "league": "NFL",
-    "ppg": 25.7,
-    "pa": 21.8,
-    "passOff": 244.5,
-    "rushOff": 106.9,
-    "passDef": 232.4,
-    "rushDef": 107.8,
-    "to": -0.35,
-    "ats": ""
+    "record": "1-0",
+    "ppg": 27.0,
+    "pa": 7.0,
+    "passOff": 205.0,
+    "rushOff": 174.0,
+    "passDef": 168.0,
+    "rushDef": 122.0,
+    "to": 1.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Los Angeles Rams",
+        "teamScore": 27.0,
+        "oppScore": 7.0,
+        "result": "W"
+      }
+    ]
   },
   "Seattle Seahawks": {
     "league": "NFL",
