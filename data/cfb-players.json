@@ -654,15 +654,6 @@
         "date": "2026-wkNone",
         "opp": "",
         "passYds": 0,
-        "rushYds": -2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wkNone",
-        "opp": "",
-        "passYds": 0,
         "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
@@ -736,6 +727,15 @@
         "opp": "",
         "passYds": 0,
         "rushYds": -1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -24877,15 +24877,6 @@
       {
         "date": "2025-wkNone",
         "opp": "",
-        "passYds": 268.0,
-        "rushYds": -22.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wkNone",
-        "opp": "",
         "passYds": 265.0,
         "rushYds": -18.0,
         "receptions": 0,
@@ -24963,6 +24954,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 5.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 252.0,
+        "rushYds": 21.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 3.0
       }
     ]
   },
@@ -24988,6 +24988,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 144.0,
+        "rushYds": 13.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 3.0
       }
     ]
   },
@@ -24996,15 +25005,6 @@
     "team": "Miami",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wkNone",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 86.0,
-        "receptions": 1.0,
-        "recYds": 12.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wkNone",
         "opp": "",
@@ -25085,6 +25085,15 @@
         "receptions": 2.0,
         "recYds": 10.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 105.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 2.0
       }
     ]
   },
@@ -25093,15 +25102,6 @@
     "team": "Miami",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wkNone",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 80.0,
-        "receptions": 4.0,
-        "recYds": 53.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wkNone",
         "opp": "",
@@ -25182,6 +25182,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 25.0,
+        "receptions": 1.0,
+        "recYds": 6.0,
+        "tds": 0.0
       }
     ]
   },
@@ -25206,15 +25215,6 @@
     "team": "Miami",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wkNone",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 72.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wkNone",
         "opp": "",
@@ -25294,6 +25294,15 @@
         "rushYds": 0,
         "receptions": 4.0,
         "recYds": 67.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 16.0,
         "tds": 1.0
       }
     ]
@@ -25381,6 +25390,15 @@
         "receptions": 3.0,
         "recYds": 30.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 7.0,
+        "tds": 0.0
       }
     ]
   },
@@ -25397,6 +25415,15 @@
         "receptions": 2.0,
         "recYds": 27.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 59.0,
+        "tds": 1.0
       }
     ]
   },
@@ -25405,15 +25432,6 @@
     "team": "Miami",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wkNone",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 43.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wkNone",
         "opp": "",
@@ -25494,6 +25512,15 @@
         "receptions": 1.0,
         "recYds": 14.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 9.0,
+        "tds": 0.0
       }
     ]
   },
@@ -25510,6 +25537,15 @@
         "receptions": 1.0,
         "recYds": 4.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 6.0,
+        "tds": 0.0
       }
     ]
   },
@@ -25525,6 +25561,15 @@
         "rushYds": 0,
         "receptions": 1.0,
         "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 19.0,
         "tds": 0.0
       }
     ]
@@ -47007,6 +47052,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 33.0,
+        "rushYds": 24.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -66304,6 +66358,15 @@
         "rushYds": 2.0,
         "receptions": 1.0,
         "recYds": 4.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 7.0,
+        "receptions": 3.0,
+        "recYds": 20.0,
         "tds": 0.0
       }
     ]
@@ -100873,7 +100936,17 @@
     "pos": "RB",
     "team": "Miami",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 25.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      }
+    ]
   },
   "Corey Petty": {
     "pos": "WR",
@@ -100905,6 +100978,15 @@
         "rushYds": 0,
         "receptions": 3.0,
         "recYds": 21.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 20.0,
         "tds": 0.0
       }
     ]
@@ -108471,6 +108553,15 @@
         "rushYds": 0,
         "receptions": 1.0,
         "recYds": 6.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 4.0,
         "tds": 0.0
       }
     ]
@@ -144495,7 +144586,17 @@
     "pos": "QB",
     "team": "Miami",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 30.0,
+        "rushYds": 25.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      }
+    ]
   },
   "Isaiah Ene": {
     "pos": "RB",
@@ -145925,6 +146026,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 17.0,
+        "receptions": 2.0,
+        "recYds": 35.0,
+        "tds": 1.0
       }
     ]
   },
@@ -157574,7 +157684,17 @@
     "pos": "WR",
     "team": "Miami",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 53.0,
+        "tds": 1.0
+      }
+    ]
   },
   "Giulio Banchero": {
     "pos": "WR",
@@ -184149,7 +184269,17 @@
     "pos": "WR",
     "team": "Miami",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 5.0,
+        "tds": 0.0
+      }
+    ]
   },
   "Hunter Carver": {
     "pos": "TE",
@@ -184167,16 +184297,36 @@
     "pos": "WR",
     "team": "Miami",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 14.0,
+        "tds": 0.0
+      }
+    ]
   },
   "Jack Whitehouse": {
     "pos": "RB",
     "team": "Miami",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 47.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      }
+    ]
   },
   "Derrick Gurley": {
-    "pos": "WR",
+    "pos": "QB",
     "team": "William & Mary",
     "league": "CFB",
     "games": [
@@ -184690,6 +184840,15 @@
         "date": "2025-wkNone",
         "opp": "",
         "passYds": 41.0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0.0,
         "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
@@ -196472,10 +196631,20 @@
     "games": []
   },
   "Israel Briggs": {
-    "pos": "TE",
+    "pos": "WR",
     "team": "Miami",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 3.0,
+        "tds": 0.0
+      }
+    ]
   },
   "Evan Hampton": {
     "pos": "RB",
@@ -198513,7 +198682,17 @@
     "pos": "RB",
     "team": "Florida A&M",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 5.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      }
+    ]
   },
   "Damarius Higgs": {
     "pos": "WR",
@@ -229175,6 +229354,15 @@
         "receptions": 4.0,
         "recYds": 69.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 19.0,
+        "tds": 0.0
       }
     ]
   },
@@ -229515,6 +229703,15 @@
         "rushYds": 0,
         "receptions": 1.0,
         "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 9.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       }
     ]
@@ -243575,7 +243772,17 @@
     "pos": "QB",
     "team": "Florida A&M",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 37.0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      }
+    ]
   },
   "Tian Wynche": {
     "pos": "WR",
@@ -296646,6 +296853,15 @@
         "rushYds": 0,
         "receptions": 7.0,
         "recYds": 141.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 38.0,
         "tds": 1.0
       }
     ]
@@ -354618,6 +354834,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -358901,6 +359126,15 @@
         "rushYds": 0,
         "receptions": 1.0,
         "recYds": 8.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       }
     ]
@@ -379594,6 +379828,38 @@
         "receptions": 1.0,
         "recYds": 46.0,
         "tds": 1.0
+      }
+    ]
+  },
+  "Kai Gadson": {
+    "pos": "RB",
+    "team": "Florida A&M",
+    "league": "CFB",
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -8.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      }
+    ]
+  },
+  "Justin Squire": {
+    "pos": "WR",
+    "team": "Florida A&M",
+    "league": "CFB",
+    "games": [
+      {
+        "date": "2026-wkNone",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 7.0,
+        "tds": 0.0
       }
     ]
   }
