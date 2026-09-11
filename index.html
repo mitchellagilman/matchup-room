@@ -1318,7 +1318,7 @@ function edgeRow(label, aVal, bVal, higherIsBetterForA){
 // ---- AI assistant (optional -- calls a Cloudflare Worker backend, see
 // worker.js and its setup instructions. Leave AI_WORKER_URL empty to keep
 // this feature off entirely; nothing else in the app depends on it.) ----
-const AI_WORKER_URL = ''; // paste your deployed Worker's URL here, e.g. 'https://matchup-ai.yoursubdomain.workers.dev'
+const AI_WORKER_URL = 'https://matchup-room-ai.mitchell-a-gilman.workers.dev'; // paste your deployed Worker's URL here, e.g. 'https://matchup-ai.yoursubdomain.workers.dev'
 async function askAI(question, context){
   if(!AI_WORKER_URL) return { error: 'AI assistant isn\'t set up yet -- see worker.js for setup steps.' };
   try{
