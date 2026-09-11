@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Matchup Room — Football Stats &amp; Betting Trends</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e8b64a'/%3E%3Cstop offset='1' stop-color='%236a6ff0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='9' fill='url(%23g)'/%3E%3Ctext x='20' y='27' font-family='Arial,sans-serif' font-weight='800' font-size='17' fill='%2305070c' text-anchor='middle'%3EMG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,7 @@
     font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
     line-height:1.45;
   }
-  .wrap{max-width:960px;margin:0 auto;padding:14px 16px 210px;}
+  .wrap{max-width:960px;margin:0 auto;padding:14px 16px 78px;}
   .header-row{
     display:flex;
     align-items:flex-start;
@@ -134,29 +135,58 @@
   .search-result-name{font-weight:700;font-size:0.86rem;}
   .search-result-meta{color:var(--muted);font-size:0.72rem;}
 
-  .bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;justify-content:space-around;align-items:center;background:rgba(17,21,28,0.98);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:22px 2px calc(22px + env(safe-area-inset-bottom));}
-  .bottom-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:var(--muted);font-size:1.32rem;font-weight:700;cursor:pointer;flex:1;min-height:92px;padding:6px 2px;}
+  /* Desktop/default sizing -- compact, proportioned for a normal browser
+     window. Phones get bigger versions of all of this via the media
+     query at the bottom of this stylesheet; nothing below this point
+     should assume a phone-sized screen. */
+  .bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;justify-content:center;gap:6px;align-items:center;background:rgba(17,21,28,0.98);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:9px 2px calc(9px + env(safe-area-inset-bottom));}
+  .bottom-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--muted);font-size:0.76rem;font-weight:700;cursor:pointer;width:84px;min-height:46px;padding:4px 2px;}
   .bottom-nav-item.active{color:var(--accent);}
-  .bottom-nav-icon{width:64px;height:64px;line-height:1;}
+  .bottom-nav-icon{width:24px;height:24px;line-height:1;}
   .bottom-nav-icon svg{width:100%;height:100%;}
+  .bottom-nav-emoji{font-size:1.5rem;}
 
-  .home-hero{background:radial-gradient(ellipse 420px 200px at 0% 0%, rgba(106,111,240,0.18), transparent 70%), linear-gradient(160deg, rgba(232,182,74,0.10), transparent 60%);border:1px solid var(--line);border-radius:16px;padding:28px 24px;margin-bottom:18px;}
-  .home-hero-label{color:var(--muted);font-size:0.9rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;}
-  .home-hero-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;margin:8px 0 6px;}
-  .home-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:18px;}
-  .home-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 22px;cursor:pointer;min-height:110px;display:flex;flex-direction:row;align-items:center;gap:18px;}
+  .home-hero{background:radial-gradient(ellipse 420px 200px at 0% 0%, rgba(106,111,240,0.18), transparent 70%), linear-gradient(160deg, rgba(232,182,74,0.10), transparent 60%);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px;}
+  .home-hero-label{color:var(--muted);font-size:0.74rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;}
+  .home-hero-title{font-family:var(--font-display);font-size:1.25rem;font-weight:800;margin:4px 0 2px;}
+  .home-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;}
+  .home-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 16px;cursor:pointer;min-height:110px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:0;}
   .home-card:hover{border-color:var(--accent);}
-  .home-card-icon{width:38px;height:38px;color:var(--accent);flex-shrink:0;}
+  .home-card-icon{width:24px;height:24px;color:var(--accent);flex-shrink:0;margin-bottom:8px;}
   .home-card-icon svg{width:100%;height:100%;}
-  .home-card-title{font-weight:700;font-size:1.15rem;}
-  .home-card-sub{color:var(--muted);font-size:0.92rem;margin-top:5px;line-height:1.35;}
-  .home-brand{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 24px 24px;opacity:0.9;}
-  .home-brand-badge{width:96px;height:96px;border-radius:24px;background:linear-gradient(135deg, var(--accent), var(--violet));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:2.1rem;letter-spacing:-0.02em;color:var(--bg);box-shadow:0 10px 30px rgba(106,111,240,0.3);margin-bottom:18px;}
-  .home-brand-title{font-family:var(--font-display);font-weight:800;font-size:1.5rem;letter-spacing:-0.01em;color:var(--ink);}
-  .home-brand-tag{color:var(--muted);max-width:32ch;font-size:0.86rem;margin-top:6px;}
-  .ai-ask-box textarea{width:100%;min-height:64px;padding:11px 13px;border-radius:10px;border:1px solid var(--line);background:var(--card-2);color:var(--ink);font-size:0.92rem;font-family:inherit;resize:vertical;}
-  .ai-answer{background:var(--card-2);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:12px;font-size:0.92rem;line-height:1.5;white-space:pre-wrap;}
-  .ai-answer.error{color:#f28b7d;border-color:rgba(242,139,125,0.3);}
+  .home-card-title{font-weight:700;font-size:0.92rem;}
+  .home-card-sub{color:var(--muted);font-size:0.76rem;margin-top:4px;line-height:1.35;}
+  .home-brand{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px 24px 14px;opacity:0.9;}
+  .home-brand-badge{width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg, var(--accent), var(--violet));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.35rem;letter-spacing:-0.02em;color:var(--bg);box-shadow:0 8px 22px rgba(106,111,240,0.3);margin-bottom:12px;}
+  .home-brand-title{font-family:var(--font-display);font-weight:800;font-size:1.1rem;letter-spacing:-0.01em;color:var(--ink);}
+  .home-brand-tag{color:var(--muted);max-width:32ch;font-size:0.78rem;margin-top:5px;}
+
+/* Phone-sized screens only -- everything above this point is the
+   desktop/default sizing. Confirmed live that without a breakpoint like
+   this, phone-tuned sizing (big touch targets, single-column home cards)
+   looked comically oversized on a real desktop browser window -- this
+   media query is the fix, not a cosmetic nice-to-have. */
+@media (max-width: 767px){
+  .bottom-nav{justify-content:space-around;gap:0;padding:22px 2px calc(22px + env(safe-area-inset-bottom));}
+  .bottom-nav-item{width:auto;flex:1;min-width:0;font-size:1.02rem;gap:7px;min-height:92px;padding:6px 1px;}
+  .bottom-nav-icon{width:64px;height:64px;}
+  .bottom-nav-emoji{font-size:3.6rem;}
+
+  .home-hero{padding:28px 24px;margin-bottom:18px;border-radius:16px;}
+  .home-hero-label{font-size:0.9rem;}
+  .home-hero-title{font-size:1.75rem;margin:8px 0 6px;}
+  .home-grid{grid-template-columns:1fr;gap:14px;margin-bottom:18px;}
+  .home-card{padding:26px 22px;min-height:110px;flex-direction:row;align-items:center;gap:18px;border-radius:14px;}
+  .home-card-icon{width:38px;height:38px;margin-bottom:0;}
+  .home-card-title{font-size:1.15rem;}
+  .home-card-sub{font-size:0.92rem;margin-top:5px;}
+  .home-brand{padding:48px 24px 24px;}
+  .home-brand-badge{width:96px;height:96px;border-radius:24px;font-size:2.1rem;margin-bottom:18px;}
+  .home-brand-title{font-size:1.5rem;}
+  .home-brand-tag{font-size:0.86rem;margin-top:6px;}
+
+  .wrap{padding:14px 16px 210px;}
+}
 </style>
 </head>
 <body>
@@ -502,11 +532,11 @@
     <span>Home</span>
   </div>
   <div class="bottom-nav-item" data-tab="nfl">
-    <span class="bottom-nav-icon" style="font-size:3.6rem;">🏈</span>
+    <span class="bottom-nav-icon bottom-nav-emoji">🏈</span>
     <span>NFL</span>
   </div>
   <div class="bottom-nav-item" data-tab="cfb">
-    <span class="bottom-nav-icon" style="font-size:3.6rem;">🎓</span>
+    <span class="bottom-nav-icon bottom-nav-emoji">🎓</span>
     <span>CFB</span>
   </div>
   <div class="bottom-nav-item" data-tab="topbets">
@@ -1315,25 +1345,6 @@ function edgeRow(label, aVal, bVal, higherIsBetterForA){
 //    -- SP+ is opponent-adjusted (accounts for strength of schedule),
 //    which raw box-score yards/points don't, so blending it in should
 //    meaningfully help accuracy, especially early season.
-// ---- AI assistant (optional -- calls a Cloudflare Worker backend, see
-// worker.js and its setup instructions. Leave AI_WORKER_URL empty to keep
-// this feature off entirely; nothing else in the app depends on it.) ----
-const AI_WORKER_URL = 'https://matchup-room-ai.mitchell-a-gilman.workers.dev'; // paste your deployed Worker's URL here, e.g. 'https://matchup-ai.yoursubdomain.workers.dev'
-async function askAI(question, context){
-  if(!AI_WORKER_URL) return { error: 'AI assistant isn\'t set up yet -- see worker.js for setup steps.' };
-  try{
-    const resp = await fetch(AI_WORKER_URL, {
-      method: 'POST',
-      headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ question, context }),
-    });
-    const data = await resp.json();
-    if(!resp.ok) return { error: data.error || ('Request failed ('+resp.status+')') };
-    return { answer: data.answer };
-  }catch(e){
-    return { error: 'Could not reach the AI assistant. Check AI_WORKER_URL is set correctly.' };
-  }
-}
 const HOME_ADV = {NFL: 2.0, CFB: 2.5};
 const TO_FACTOR = 1.5; // points per turnover-margin-per-game
 const SHRINK_PRIOR_GAMES = 3; // "pseudo-games" of league-average weight blended into small samples
@@ -1577,53 +1588,11 @@ function runMatchupFor(nameA, nameB, outId){
 
   const addSpreadId = 'mu-add-spread-'+lg;
   const addTotalId = 'mu-add-total-'+lg;
-  const aiAskId = 'mu-ai-ask-'+lg;
-  const aiQuestionId = 'mu-ai-question-'+lg;
-  const aiAnswerId = 'mu-ai-answer-'+lg;
-  const aiCardHtml = AI_WORKER_URL ? (
-    '<div class="card ai-ask-box"><h2>Ask about this matchup</h2>'
-    + '<div class="note" style="margin-top:0;">Answers come from an AI reading the real numbers above -- not a separate prediction system, and not a guarantee. Always double check against your own sportsbook.</div>'
-    + '<textarea id="'+aiQuestionId+'" placeholder="e.g. Which bet here looks strongest and why?"></textarea>'
-    + '<button class="secondary" id="'+aiAskId+'" style="margin-top:10px;">Ask</button>'
-    + '<div id="'+aiAnswerId+'"></div>'
-    + '</div>'
-  ) : '';
 
-  out.innerHTML = backBtnHtml + '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+proj.aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+proj.bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', proj.aPassProj, proj.bPassProj)+edgeRow('Proj. rush yds', proj.aRushProj, proj.bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="'+addSpreadId+'">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="'+addTotalId+'">Add "Total '+totalLine+'" to parlay</button></div><div class="note">'+methodNote+'</div></div>'+renderGameBets(nameA, nameB)+aiCardHtml;
+  out.innerHTML = backBtnHtml + '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+proj.aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+proj.bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', proj.aPassProj, proj.bPassProj)+edgeRow('Proj. rush yds', proj.aRushProj, proj.bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="'+addSpreadId+'">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="'+addTotalId+'">Add "Total '+totalLine+'" to parlay</button></div><div class="note">'+methodNote+'</div></div>'+renderGameBets(nameA, nameB);
   wireBackButton();
   document.getElementById(addSpreadId).addEventListener('click', ()=> addLeg(spreadLabel+' (model proj.)', -110));
   document.getElementById(addTotalId).addEventListener('click', ()=> addLeg('Total '+totalLine+' (model proj.)', -110));
-
-  if(AI_WORKER_URL){
-    document.getElementById(aiAskId).addEventListener('click', async function(){
-      const btn = this;
-      const qEl = document.getElementById(aiQuestionId);
-      const ansEl = document.getElementById(aiAnswerId);
-      const question = qEl.value.trim();
-      if(!question){ ansEl.innerHTML = '<div class="ai-answer error">Type a question first.</div>'; return; }
-      btn.disabled = true; btn.textContent = 'Thinking...';
-      ansEl.innerHTML = '';
-      // Build real context from this exact matchup -- same numbers already
-      // shown above, so the AI is grounded in this app's own data rather
-      // than guessing or hallucinating stats.
-      const market = findMarketLine(nameA, nameB);
-      const context = [
-        nameA+' vs '+nameB+' ('+league+')',
-        'Model projection: '+nameA+' '+proj.aScore+' - '+nameB+' '+proj.bScore+' (spread '+spreadLabel+', total '+totalLine+')',
-        market ? 'Market line: '+JSON.stringify({aSpread:market.aSpread, total:market.total, aML:market.aML, bML:market.bML}) : 'No market line loaded for this game.',
-        nameA+' stats: '+JSON.stringify({record:A.record, ppg:A.ppg, pa:A.pa, passOff:A.passOff, rushOff:A.rushOff, passDef:A.passDef, rushDef:A.rushDef, to:A.to}),
-        nameB+' stats: '+JSON.stringify({record:B.record, ppg:B.ppg, pa:B.pa, passOff:B.passOff, rushOff:B.rushOff, passDef:B.passDef, rushDef:B.rushDef, to:B.to}),
-        proj.marketAnchored ? 'Note: this projection leans on the market line since box-score-only math cannot judge a cross-division talent gap.' : '',
-      ].filter(Boolean).join('\n');
-      const result = await askAI(question, context);
-      btn.disabled = false; btn.textContent = 'Ask';
-      if(result.error){
-        ansEl.innerHTML = '<div class="ai-answer error">'+result.error+'</div>';
-      } else {
-        ansEl.innerHTML = '<div class="ai-answer">'+result.answer.replace(/</g,'&lt;')+'</div>';
-      }
-    });
-  }
 }
 document.getElementById('run-matchup-nfl').addEventListener('click', ()=>{
   runMatchupFor(document.getElementById('m-teamA-nfl').value, document.getElementById('m-teamB-nfl').value, 'matchup-output-nfl');
