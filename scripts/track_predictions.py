@@ -18,7 +18,7 @@ Each run:
 *** PORT NOTE ***
 This mirrors index.html's JS model by hand -- computeProjection() for
 team bets, and the Player Props matchup logic (defCategoryForStat,
-meetsVolumeThreshold, dedupeStaleQBs, the L5-average-times-opponent-ratio
+meetsVolumeThreshold, capPlayersPerTeamByPosition, the L5-average-times-opponent-ratio
 projection) for player bets. If any of that changes in index.html, change
 it here too, or the tracked record will quietly diverge from what the app
 actually shows.
@@ -182,12 +182,28 @@ def find_market_line(a, b, odds_list):
     return None
 
 
+def is_cross_division_game(g, teams, league):
+    """True for an FBS-vs-FCS CFB matchup. These get excluded from Track
+    Record entirely (both team bets and player props) -- per-user
+    request: the model's read on these is leaning on a market line or a
+    simpler SRS rating rather than a genuine head-to-head model
+    projection (see computeProjection's marketAnchored/SRS branches), so
+    tracking them as "predictions" and grading their accuracy isn't a
+    fair test of the model itself the way a real FBS-vs-FBS pick is."""
+    if league != "CFB":
+        return False
+    a, b = teams.get(g.get("a")), teams.get(g.get("b"))
+    return bool(a and b and a.get("division") and b.get("division") and a["division"] != b["division"])
+
+
 def compute_team_bets(games, teams, odds_list, league):
     """Every game's spread + total pick -- no top-N cut. (Was capped at 10
     by combined edge; that cap is what's removed here so the whole week's
     slate gets tracked, not just the model's most-confident-looking picks.)"""
     candidates = []
     for g in games:
+        if is_cross_division_game(g, teams, league):
+            continue
         proj = compute_projection(g["a"], g["b"], teams, league, odds_list)
         if not proj:
             continue
@@ -208,6 +224,7 @@ def compute_team_bets(games, teams, odds_list, league):
                 "type": "spread", "edge": abs(spread_edge),
                 "label": f"{favored_team} {'+' if favored_line and favored_line > 0 else ''}{favored_line}",
                 "matchup": f"{g['a']} vs {g['b']}", "favored_team": favored_team, "line": favored_line,
+                "game_date": g.get("date"),
             })
         total_val = market.get("total")
         if total_val is not None:
@@ -216,6 +233,7 @@ def compute_team_bets(games, teams, odds_list, league):
                 "type": "total", "edge": abs(total_edge),
                 "label": f"{'Over' if total_edge > 0 else 'Under'} {total_val}",
                 "matchup": f"{g['a']} vs {g['b']}", "direction": "over" if total_edge > 0 else "under", "line": total_val,
+                "game_date": g.get("date"),
             })
     return candidates
 
@@ -244,6 +262,13 @@ def meets_volume_threshold(stat, l5avg):
     return min_val is None or l5avg >= min_val
 
 
+def round_to_half(n):
+    """Mirrors index.html's roundToHalf() -- real sportsbook player-prop
+    lines always land on a half-point; see that function's comment for
+    the full reasoning."""
+    return round(n * 2) / 2
+
+
 def clamp_defense_ratio(ratio):
     """Mirrors index.html's clampDefenseRatio() -- guards against a
     small-sample defensive stat (e.g. a team's rushDef after just one
@@ -264,19 +289,33 @@ def most_recent_game_key(player):
     return int(m.group(1)) * 100 + int(m.group(2))
 
 
-def dedupe_stale_qbs(candidates):
-    """Only the most-recently-played QB per team stays -- see index.html's
-    dedupeStaleQBs for the full reasoning (no depth-chart data anywhere in
-    this pipeline, so recency is the best available stand-in for "who's
-    actually starting now")."""
-    best = {}
+POSITION_CAPS = {"QB": 1, "RB": 1, "WR": 4, "TE": 2}
+
+
+def cap_players_per_team_by_position(candidates):
+    """Caps how many players per team, per position, are eligible to show
+    up as a "top prop" -- mirrors index.html's capPlayersPerTeamByPosition,
+    see that function's comment for the full reasoning. QB (and RB, same
+    treatment) ranks by recency first then volume as a tie-break; WR/TE
+    rank by volume alone since the goal there is "most featured in the
+    rotation," not finding one true starter."""
+    by_team_pos = {}
     for c in candidates:
-        if c["pos"] != "QB":
+        cap = POSITION_CAPS.get(c["pos"])
+        if cap is None:
             continue
-        key = c["team"] or ""
-        if key not in best or c["_recency_key"] > best[key]:
-            best[key] = c["_recency_key"]
-    return [c for c in candidates if c["pos"] != "QB" or c["_recency_key"] == best.get(c["team"] or "")]
+        by_team_pos.setdefault((c["team"] or "", c["pos"]), []).append(c)
+
+    keep_ids = set()
+    for (team, pos), group in by_team_pos.items():
+        if pos == "QB" or pos == "RB":
+            group.sort(key=lambda c: (c["_recency_key"], c["_l5avg"]), reverse=True)
+        else:
+            group.sort(key=lambda c: c["_l5avg"], reverse=True)
+        for c in group[: POSITION_CAPS[pos]]:
+            keep_ids.add(id(c))
+
+    return [c for c in candidates if POSITION_CAPS.get(c["pos"]) is None or id(c) in keep_ids]
 
 
 def find_game_for_team(games, team_name):
@@ -297,8 +336,12 @@ def compute_player_bets(players, teams, games, league):
         plist = p.get("games") or []
         if not plist:
             continue
+        if len(plist) < 2:
+            continue  # a single game is too thin a sample to recommend a bet on -- confirmed live: a 1-game rookie/backup sample (65 rushing yards in one game) cleared the flat volume threshold easily despite not being an established, ongoing role
         game = find_game_for_team(games, p.get("team") or "")
         if not game:
+            continue
+        if is_cross_division_game(game, teams, league):
             continue
         opp = game["b"] if game["a"].lower() == (p.get("team") or "").lower() else game["a"]
         if opp not in teams:
@@ -319,15 +362,17 @@ def compute_player_bets(players, teams, games, league):
         if not meets_volume_threshold(main_stat, l5avg):
             continue
         ratio = teams[opp][def_key] / avg_val
-        projected = round(l5avg * ratio, 1)
+        projected = round_to_half(l5avg * ratio)
         candidates.append({
             "name": name, "pos": p.get("pos"), "team": p.get("team"), "opp": opp,
             "matchup": f"{game['a']} vs {game['b']}",
             "stat": main_stat, "stat_label": STAT_LABELS.get(main_stat, main_stat),
             "projected": projected, "direction": "over" if ratio >= 1 else "under",
+            "game_date": game.get("date"),
             "_recency_key": most_recent_game_key(p),
+            "_l5avg": l5avg,
         })
-    return dedupe_stale_qbs(candidates)
+    return cap_players_per_team_by_position(candidates)
 
 
 # ---- final scores (team grading) ----
@@ -452,14 +497,23 @@ def main():
 
     today = datetime.date.today().isoformat()
     nfl_week_label = f"NFL-Week{nfl_sched.get('week')}"
-    cfb_week_label = f"CFB-{today}"  # CFB's own week number isn't in cfb-schedule.json; date-based label avoids double-logging within the same day's run
+    # CFB has no stable week-number field to key off (unlike NFL's
+    # nfl_sched['week']), so each pick's own game date is used instead --
+    # a real game's scheduled date never changes between runs, unlike
+    # today's date. Confirmed live: the previous version keyed CFB picks
+    # off today's date, so the exact same real game+bet got logged again
+    # under a brand new ID every single day the workflow ran, duplicating
+    # entries and double (or triple, or more) counting that one game's
+    # result in the accuracy stats. This constant is now only a fallback
+    # for the rare case a game is missing its own date.
+    cfb_week_label_fallback = f"CFB-{today}"
 
     existing_ids = {p["id"] for p in record["picks"]}
     logged = 0
 
     all_league_sources = [
         ("NFL", nfl_week_label, nfl_sched.get("games", [])),
-        ("CFB", cfb_week_label, cfb_games),
+        ("CFB", cfb_week_label_fallback, cfb_games),
     ]
     for league, week_label, games in all_league_sources:
         if league not in active_leagues:
@@ -467,12 +521,13 @@ def main():
         team_picks = compute_team_bets(games, teams, all_odds, league)
         matchup_teams = {f"{g['a']} vs {g['b']}": (g["a"], g["b"]) for g in games}
         for p in team_picks:
-            pid = f"{league}|{week_label}|{p['matchup']}|{p['type']}"
+            pick_week_label = f"CFB-{p['game_date']}" if league == "CFB" and p.get("game_date") else week_label
+            pid = f"{league}|{pick_week_label}|{p['matchup']}|{p['type']}"
             if pid in existing_ids:
                 continue
             away, home = matchup_teams.get(p["matchup"], (None, None))
             record["picks"].append({
-                "id": pid, "league": league, "week": week_label, "matchup": p["matchup"],
+                "id": pid, "league": league, "week": pick_week_label, "matchup": p["matchup"],
                 "type": p["type"], "label": p["label"], "edge": round(p["edge"], 1),
                 "date_logged": today, "status": "pending", "graded_date": None,
                 "_away": away, "_home": home,
@@ -483,12 +538,13 @@ def main():
 
         player_picks = compute_player_bets(all_players, teams, games, league)
         for p in player_picks:
-            pid = f"{league}|{week_label}|{p['name']}|{p['stat']}|player_prop"
+            pick_week_label = f"CFB-{p['game_date']}" if league == "CFB" and p.get("game_date") else week_label
+            pid = f"{league}|{pick_week_label}|{p['name']}|{p['stat']}|player_prop"
             if pid in existing_ids:
                 continue
             dir_label = "Over" if p["direction"] == "over" else "Under"
             record["picks"].append({
-                "id": pid, "league": league, "week": week_label, "matchup": p["matchup"],
+                "id": pid, "league": league, "week": pick_week_label, "matchup": p["matchup"],
                 "type": "player_prop", "label": f"{p['name']} {dir_label} {p['projected']} {p['stat_label']}",
                 "edge": None,
                 "date_logged": today, "status": "pending", "graded_date": None,
