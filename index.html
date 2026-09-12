@@ -1096,7 +1096,7 @@ function computeSinglePlayerProjection(name){
   const last5 = games.slice(-5);
   const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
   const ratio = clampDefenseRatio(teamsCache[opp][defKey] / avgVal);
-  const projected = l5avg * ratio;
+  const projected = roundToHalf(l5avg * ratio);
   return {
     statLabel: statLabel(mainStat), opp, l5avg, ratio, projected,
     direction: ratio>=1 ? 'favorable' : 'tough',
@@ -1206,6 +1206,15 @@ function meetsVolumeThreshold(stat, l5avg){
 function clampDefenseRatio(ratio){
   return Math.max(0.6, Math.min(1.6, ratio));
 }
+// Real sportsbook player-prop lines always land on a half-point (X.5) --
+// confirmed live: this app's raw l5avg*ratio math was instead producing
+// numbers like "362.7" or "94.1", which don't look or feel like a line
+// anyone could actually bet at a real book. Rounding to the nearest 0.5
+// doesn't change what the number means, just how it's presented -- makes
+// it read like a real, usable line instead of a raw statistical output.
+function roundToHalf(n){
+  return Math.round(n*2)/2;
+}
 // QB is a true one-starter-at-a-time position (unlike RB/WR/TE, where more
 // than one player legitimately splitting real touches is normal) -- but
 // this pipeline has no depth-chart data to say who's QB1 right now. A
@@ -1224,19 +1233,59 @@ function mostRecentGameKey(player){
   return Number(m[1])*100 + Number(m[2]); // year*100+week -- sorts correctly across week 9 -> week 10
 }
 // Keeps only the most-recently-played QB per team among a list of
-// candidates that already carry {pos, team, _recencyKey}. Non-QB rows pass
-// through untouched -- committees are legitimate at other positions.
-function dedupeStaleQBs(candidates){
-  const bestQBKeyByTeam = {};
+// candidates that already carry {pos, team, _recencyKey, l5avg}. Non-QB
+// rows pass through untouched -- committees are legitimate at other
+// positions.
+//
+// TIE-BREAKER: confirmed live, two real QBs on the same team can have the
+// exact same "most recent game" week (neither has played yet in a new
+// season, both still showing last season's finale) -- recency alone
+// doesn't distinguish them, and a real backup/insurance QB (barely-there
+// production in his last few appearances) was passing the filter right
+// alongside the actual starter. When recency ties, the higher L5 volume
+// wins -- a real starter's rolling average should be substantially
+// higher than a backup's, even across a tied "last played" week.
+// Caps how many players per team, per position, are eligible to show up
+// as a "top prop" -- no real depth-chart data exists anywhere in this
+// pipeline, so recent volume (L5 average) is the best available stand-in
+// for "how featured is this player in the offense right now." Per-user
+// spec: QB and RB effectively have one real "starter" worth trusting for
+// this purpose; WR rooms run deeper (top 4 game-to-game); TE even more
+// concentrated at the top than WR (top 2).
+//
+// QB specifically also tie-breaks on recency first, then volume -- see
+// the longer comment below on why (two QBs on the same team can share an
+// identical "last played" week, and recency alone doesn't distinguish a
+// real current starter from a backup who barely played in a brief stint).
+// RB/WR/TE are ranked by volume alone, since the goal there isn't finding
+// "the one true starter" the way it is for QB, just the most-featured
+// players in the rotation.
+const POSITION_CAPS = { QB: 1, RB: 1, WR: 4, TE: 2 };
+function capPlayersPerTeamByPosition(candidates){
+  const byTeamPos = {};
   candidates.forEach(function(c){
-    if(c.pos!=='QB') return;
-    const key = c.team || '';
-    if(!(key in bestQBKeyByTeam) || c._recencyKey > bestQBKeyByTeam[key]) bestQBKeyByTeam[key] = c._recencyKey;
+    const cap = POSITION_CAPS[c.pos];
+    if(cap===undefined) return; // positions outside this app's tracked set (shouldn't occur given MIN_VOLUME_FOR_BET only covers QB/RB/WR/TE stats) pass through untouched below
+    const key = (c.team||'')+'|'+c.pos;
+    (byTeamPos[key] = byTeamPos[key] || []).push(c);
   });
-  return candidates.filter(function(c){
-    if(c.pos!=='QB') return true;
-    return c._recencyKey === bestQBKeyByTeam[c.team || ''];
+  const keep = new Set();
+  Object.keys(byTeamPos).forEach(function(key){
+    const pos = key.split('|')[1];
+    const group = byTeamPos[key];
+    if(pos==='QB'){
+      // Recency first (who actually played most recently), then volume as
+      // the tie-breaker -- confirmed live: two real QBs on the same team
+      // can share an identical "last played" week (neither has played yet
+      // this season), and recency alone doesn't distinguish a real
+      // current starter from a backup who barely played in a brief stint.
+      group.sort(function(a,b){ return (b._recencyKey - a._recencyKey) || (b.l5avg - a.l5avg); });
+    } else {
+      group.sort(function(a,b){ return b.l5avg - a.l5avg; });
+    }
+    group.slice(0, POSITION_CAPS[pos]).forEach(function(c){ keep.add(c); });
   });
+  return candidates.filter(function(c){ return POSITION_CAPS[c.pos]===undefined || keep.has(c); });
 }
 function normalizeTeamName(s){
   // Strips accents/diacritics and punctuation so e.g. CFBD's "San José State"
@@ -1489,6 +1538,7 @@ function computeGameBets(nameA, nameB){
       if(league==='NFL' && p.team && p.teamYear==null) return; // not on a confirmed current roster
       const games = p.games || [];
       if(games.length===0) return;
+      if(games.length<2) return; // a single game is too thin a sample to recommend a bet on -- see computeTopPlayerBets for the full reasoning
       let mainStat = 'passYds';
       if(p.pos==='RB') mainStat='rushYds';
       if(p.pos==='WR'||p.pos==='TE') mainStat='recYds';
@@ -1500,11 +1550,11 @@ function computeGameBets(nameA, nameB){
       const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
       if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
       const ratio = clampDefenseRatio(teamsCache[oppName][defKey] / avgVal);
-      const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderGameBets
+      const projected = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderGameBets
       playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough', _recencyKey: mostRecentGameKey(p) });
     });
   });
-  const dedupedPlayerBets = dedupeStaleQBs(playerBets);
+  const dedupedPlayerBets = capPlayersPerTeamByPosition(playerBets);
   dedupedPlayerBets.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
 
   const teamSlice = teamBets.slice(0, 5);
@@ -1900,6 +1950,7 @@ function computeTopPlayerBets(league){
     if(league==='NFL' && p.team && p.teamYear==null) return; // not on a confirmed current roster -- team/opponent would be unreliable
     const games = p.games || [];
     if(games.length===0) return;
+    if(games.length<2) return; // a single game is too thin a sample to recommend a bet on -- confirmed live: a 1-game rookie/backup sample cleared the flat volume threshold easily despite not being an established, ongoing role
     const opp = findOpponentThisWeek(league, p.team);
     if(!opp || !teamsCache[opp]) return;
     if(findFinalScoreForMatchup(league, p.team, opp)) return; // that game's already been played -- nothing left to project
@@ -1914,13 +1965,13 @@ function computeTopPlayerBets(league){
     const last5 = games.slice(-5);
     const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
     if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
-    const projected = l5avg * ratio; // simple matchup-adjusted projection -- see note in renderPlayerBetsList
+    const projected = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderPlayerBetsList
     candidates.push({
       name, pos: p.pos, team: p.team, opp, ratio, l5avg, projected, statLabel: statLabel(mainStat),
       direction: ratio>=1 ? 'favorable' : 'tough', _recencyKey: mostRecentGameKey(p)
     });
   });
-  const deduped = dedupeStaleQBs(candidates);
+  const deduped = capPlayersPerTeamByPosition(candidates);
   deduped.sort(function(a,b){ return Math.abs(b.ratio-1) - Math.abs(a.ratio-1); });
   return deduped.slice(0, 10);
 }
