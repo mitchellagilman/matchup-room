@@ -9,36 +9,27 @@
   {
     "a": "Norfolk State",
     "b": "Virginia",
-    "date": "2026-09-11"
+    "date": "2026-09-11",
+    "awayScore": 3,
+    "homeScore": 59
   },
   {
     "a": "Villanova",
     "b": "Louisville",
-    "date": "2026-09-11"
+    "date": "2026-09-11",
+    "awayScore": 13,
+    "homeScore": 59
   },
   {
     "a": "Missouri",
     "b": "Kansas",
-    "date": "2026-09-12"
-  },
-  {
-    "a": "Penn State",
-    "b": "Temple",
-    "date": "2026-09-12"
+    "date": "2026-09-12",
+    "awayScore": 38,
+    "homeScore": 21
   },
   {
     "a": "Oklahoma",
     "b": "Michigan",
-    "date": "2026-09-12"
-  },
-  {
-    "a": "Oregon",
-    "b": "Oklahoma State",
-    "date": "2026-09-12"
-  },
-  {
-    "a": "Howard",
-    "b": "Indiana",
     "date": "2026-09-12"
   },
   {
@@ -47,13 +38,23 @@
     "date": "2026-09-12"
   },
   {
-    "a": "Western Kentucky",
-    "b": "Georgia",
+    "a": "Howard",
+    "b": "Indiana",
     "date": "2026-09-12"
   },
   {
-    "a": "Arizona",
-    "b": "BYU",
+    "a": "Oregon",
+    "b": "Oklahoma State",
+    "date": "2026-09-12"
+  },
+  {
+    "a": "Penn State",
+    "b": "Temple",
+    "date": "2026-09-12"
+  },
+  {
+    "a": "Western Kentucky",
+    "b": "Georgia",
     "date": "2026-09-12"
   },
   {
@@ -62,13 +63,18 @@
     "date": "2026-09-12"
   },
   {
+    "a": "Utah State",
+    "b": "Washington",
+    "date": "2026-09-12"
+  },
+  {
     "a": "Rice",
     "b": "Notre Dame",
     "date": "2026-09-12"
   },
   {
-    "a": "Utah State",
-    "b": "Washington",
+    "a": "Arizona",
+    "b": "BYU",
     "date": "2026-09-12"
   },
   {
@@ -77,23 +83,23 @@
     "date": "2026-09-12"
   },
   {
-    "a": "Southern",
-    "b": "Houston",
-    "date": "2026-09-12"
-  },
-  {
     "a": "Tennessee",
     "b": "Georgia Tech",
     "date": "2026-09-12"
   },
   {
-    "a": "Ohio State",
-    "b": "Texas",
+    "a": "Southern",
+    "b": "Houston",
     "date": "2026-09-12"
   },
   {
     "a": "Iowa State",
     "b": "Iowa",
+    "date": "2026-09-12"
+  },
+  {
+    "a": "Ohio State",
+    "b": "Texas",
     "date": "2026-09-12"
   },
   {
