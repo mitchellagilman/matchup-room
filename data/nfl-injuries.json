@@ -238,7 +238,7 @@
       "name": "Austin Ajiake",
       "pos": "LB",
       "injury": "Hamstring",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0039178"
     },
     {
@@ -248,6 +248,22 @@
       "injury": "Hip",
       "status": "Questionable",
       "_id": "00-0040238"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "name": "Chamarri Conner",
+      "pos": "S",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0038982"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "name": "Josh Simmons",
+      "pos": "T",
+      "injury": "Back",
+      "status": "Out",
+      "_id": "00-0040116"
     },
     {
       "team": "Los Angeles Rams",
@@ -382,7 +398,7 @@
       "name": "Eli Stowers",
       "pos": "TE",
       "injury": "Hamstring",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0041483"
     },
     {

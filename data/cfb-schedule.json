@@ -7,17 +7,17 @@
     "homeScore": 77
   },
   {
-    "a": "Villanova",
-    "b": "Louisville",
-    "date": "2026-09-11",
-    "awayScore": 13,
-    "homeScore": 59
-  },
-  {
     "a": "Norfolk State",
     "b": "Virginia",
     "date": "2026-09-11",
     "awayScore": 3,
+    "homeScore": 59
+  },
+  {
+    "a": "Villanova",
+    "b": "Louisville",
+    "date": "2026-09-11",
+    "awayScore": 13,
     "homeScore": 59
   },
   {
@@ -28,11 +28,11 @@
     "homeScore": 21
   },
   {
-    "a": "Oregon",
-    "b": "Oklahoma State",
+    "a": "Penn State",
+    "b": "Temple",
     "date": "2026-09-12",
-    "awayScore": 31,
-    "homeScore": 39
+    "awayScore": 27,
+    "homeScore": 9
   },
   {
     "a": "Howard",
@@ -42,20 +42,6 @@
     "homeScore": 55
   },
   {
-    "a": "Oklahoma",
-    "b": "Michigan",
-    "date": "2026-09-12",
-    "awayScore": 10,
-    "homeScore": 17
-  },
-  {
-    "a": "Penn State",
-    "b": "Temple",
-    "date": "2026-09-12",
-    "awayScore": 27,
-    "homeScore": 9
-  },
-  {
     "a": "Arizona State",
     "b": "Texas A&M",
     "date": "2026-09-12",
@@ -63,11 +49,32 @@
     "homeScore": 48
   },
   {
+    "a": "Oklahoma",
+    "b": "Michigan",
+    "date": "2026-09-12",
+    "awayScore": 10,
+    "homeScore": 17
+  },
+  {
+    "a": "Oregon",
+    "b": "Oklahoma State",
+    "date": "2026-09-12",
+    "awayScore": 31,
+    "homeScore": 39
+  },
+  {
     "a": "Western Kentucky",
     "b": "Georgia",
     "date": "2026-09-12",
     "awayScore": 20,
     "homeScore": 70
+  },
+  {
+    "a": "Rice",
+    "b": "Notre Dame",
+    "date": "2026-09-12",
+    "awayScore": 0,
+    "homeScore": 52
   },
   {
     "a": "Arizona",
@@ -82,13 +89,6 @@
     "date": "2026-09-12",
     "awayScore": 14,
     "homeScore": 16
-  },
-  {
-    "a": "Rice",
-    "b": "Notre Dame",
-    "date": "2026-09-12",
-    "awayScore": 0,
-    "homeScore": 52
   },
   {
     "a": "Alabama",
@@ -119,17 +119,24 @@
     "homeScore": 24
   },
   {
-    "a": "Ohio State",
-    "b": "Texas",
-    "date": "2026-09-12",
-    "awayScore": 23,
-    "homeScore": 24
-  },
-  {
     "a": "Texas Tech",
     "b": "Oregon State",
     "date": "2026-09-12",
     "awayScore": 35,
+    "homeScore": 24
+  },
+  {
+    "a": "Louisiana Tech",
+    "b": "LSU",
+    "date": "2026-09-12",
+    "awayScore": 14,
+    "homeScore": 45
+  },
+  {
+    "a": "Ohio State",
+    "b": "Texas",
+    "date": "2026-09-12",
+    "awayScore": 23,
     "homeScore": 24
   },
   {
@@ -138,13 +145,6 @@
     "date": "2026-09-12",
     "awayScore": 13,
     "homeScore": 16
-  },
-  {
-    "a": "Louisiana Tech",
-    "b": "LSU",
-    "date": "2026-09-12",
-    "awayScore": 14,
-    "homeScore": 45
   },
   {
     "a": "Charlotte",
@@ -156,11 +156,15 @@
   {
     "a": "Arkansas",
     "b": "Utah",
-    "date": "2026-09-13"
+    "date": "2026-09-13",
+    "awayScore": 10,
+    "homeScore": 43
   },
   {
     "a": "Louisiana",
     "b": "USC",
-    "date": "2026-09-13"
+    "date": "2026-09-13",
+    "awayScore": 30,
+    "homeScore": 49
   }
 ]
