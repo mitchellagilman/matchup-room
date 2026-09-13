@@ -100,13 +100,27 @@ def league_avg_team_stat(teams, league, key):
     return sum(vals) / len(vals)
 
 
-def shrink_to_league_avg(raw_stat, league_avg, games_played):
-    """Mirrors index.html's shrinkToLeagueAvg() -- see that function's
-    comment for the full reasoning (a 1-2 game sample is extreme-outlier-
-    prone, confirmed live against a real NFL turnover-margin case)."""
-    if not games_played or games_played <= 0 or league_avg is None:
+def shrink_stat(raw_stat, team_prior, league_avg, games_played):
+    """Mirrors index.html's shrinkStat() -- see that function's comment
+    for the full reasoning (prefers each team's own previous-season
+    number as the shrinkage prior over a flat league average, confirmed
+    live this closes a large real gap vs. an actual opening market line;
+    falls back to league average only when a team has no prior-season
+    data at all)."""
+    prior = team_prior if team_prior is not None else league_avg
+    if not games_played or games_played <= 0 or prior is None:
         return raw_stat
-    return (raw_stat * games_played + league_avg * SHRINK_PRIOR_GAMES) / (games_played + SHRINK_PRIOR_GAMES)
+    return (raw_stat * games_played + prior * SHRINK_PRIOR_GAMES) / (games_played + SHRINK_PRIOR_GAMES)
+
+
+def venue_adjusted_stat(venue_stat, venue_games, season_shrunk_stat):
+    """Mirrors index.html's venueAdjustedStat() -- see that function's
+    comment for the full reasoning (nested shrinkage: a team's home/away
+    split, itself usually a tiny sample, shrinks toward their already
+    prior-blended season number rather than being trusted outright)."""
+    if venue_stat is None or not venue_games:
+        return season_shrunk_stat
+    return (venue_stat * venue_games + season_shrunk_stat * SHRINK_PRIOR_GAMES) / (venue_games + SHRINK_PRIOR_GAMES)
 
 
 def compute_projection(a, b, teams, league, odds_list=None):
@@ -119,12 +133,17 @@ def compute_projection(a, b, teams, league, odds_list=None):
     league_avg_ppg = league_avg_team_stat(teams, league, "ppg")
     league_avg_pa = league_avg_team_stat(teams, league, "pa")
     league_avg_to = league_avg_team_stat(teams, league, "to")
-    a_ppg = shrink_to_league_avg(A.get("ppg", 0), league_avg_ppg, a_games_played)
-    a_pa = shrink_to_league_avg(A.get("pa", 0), league_avg_pa, a_games_played)
-    a_to = shrink_to_league_avg(A.get("to", 0), league_avg_to, a_games_played)
-    b_ppg = shrink_to_league_avg(B.get("ppg", 0), league_avg_ppg, b_games_played)
-    b_pa = shrink_to_league_avg(B.get("pa", 0), league_avg_pa, b_games_played)
-    b_to = shrink_to_league_avg(B.get("to", 0), league_avg_to, b_games_played)
+    # A is treated as away, B as home -- same convention as HOME_ADV below.
+    a_ppg_season = shrink_stat(A.get("ppg", 0), A.get("prevPpg"), league_avg_ppg, a_games_played)
+    a_pa_season = shrink_stat(A.get("pa", 0), A.get("prevPa"), league_avg_pa, a_games_played)
+    a_to = shrink_stat(A.get("to", 0), A.get("prevTo"), league_avg_to, a_games_played)
+    b_ppg_season = shrink_stat(B.get("ppg", 0), B.get("prevPpg"), league_avg_ppg, b_games_played)
+    b_pa_season = shrink_stat(B.get("pa", 0), B.get("prevPa"), league_avg_pa, b_games_played)
+    b_to = shrink_stat(B.get("to", 0), B.get("prevTo"), league_avg_to, b_games_played)
+    a_ppg = venue_adjusted_stat(A.get("awayPpg"), A.get("awayGames"), a_ppg_season)
+    a_pa = venue_adjusted_stat(A.get("awayPa"), A.get("awayGames"), a_pa_season)
+    b_ppg = venue_adjusted_stat(B.get("homePpg"), B.get("homeGames"), b_ppg_season)
+    b_pa = venue_adjusted_stat(B.get("homePa"), B.get("homeGames"), b_pa_season)
     a_score = (a_ppg + b_pa) / 2 - home_adv / 2 + a_to * TO_FACTOR
     b_score = (b_ppg + a_pa) / 2 + home_adv / 2 + b_to * TO_FACTOR
     total = a_score + b_score
