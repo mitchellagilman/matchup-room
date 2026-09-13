@@ -65,6 +65,19 @@ def fetch_year_rows(year, api_key):
         if batch:
             for g in batch:
                 g["_year"] = year  # tag so the merge step can sort across years
+                # Tag with the week too -- confirmed live: CFBD's individual
+                # game rows here don't echo back their own "week" field
+                # (it's only the query parameter that specified which
+                # week's batch to fetch), so relying on game.get("week")
+                # downstream always silently returned None. That, in turn,
+                # made every CFB player's game date literally read
+                # "2025-wkNone" -- which broke grading entirely, since the
+                # grading logic requires a real week number to detect
+                # "has a newer game been added since this pick was
+                # logged." Confirmed live: CFB player props were sitting
+                # at 621 pending vs. 1 graded, while NFL (whose dates
+                # parse correctly) had a normal graded/pending ratio.
+                g["_week"] = week
             rows.extend(batch)
         time.sleep(1)  # spread out requests -- this loop alone can be 15 calls per year
     return rows
@@ -142,7 +155,7 @@ def main():
 
     for game in all_rows:
         gid = game.get("id")
-        week = game.get("week")
+        week = game.get("_week")
         year = game.get("_year")
         for team_block in game.get("teams", []):
             team = team_block.get("team") or team_block.get("school")
