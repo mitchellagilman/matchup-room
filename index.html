@@ -516,6 +516,32 @@
 
     <div class="subpanel" id="subpanel-parlay-calc">
       <div class="card">
+        <h2>Check a bet's likelihood</h2>
+        <div class="note" style="margin-top:0;">Pick any two teams and any line -- doesn't have to be one of the app's own recommendations. Uses the trained model if it's ready (see Track Record), otherwise a calibrated estimate from edge size. Either way, this is the model's own read, not a promise -- see this whole app's track record for how reliable that read actually is.</div>
+        <div class="grid2">
+          <div class="field"><label>League</label>
+            <select id="chk-league"><option value="NFL">NFL</option><option value="CFB">CFB</option></select>
+          </div>
+          <div class="field"><label>Bet type</label>
+            <select id="chk-type"><option value="spread">Spread</option><option value="total">Total</option></select>
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label>Team A</label><select id="chk-teamA"></select></div>
+          <div class="field"><label>Team B</label><select id="chk-teamB"></select></div>
+        </div>
+        <div class="grid2" id="chk-spread-fields">
+          <div class="field"><label>Betting on</label><select id="chk-side"></select></div>
+          <div class="field"><label>Line (e.g. -6.5 or +3.5)</label><input id="chk-line" type="number" step="0.5" placeholder="-6.5"></div>
+        </div>
+        <div class="grid2" id="chk-total-fields" style="display:none;">
+          <div class="field"><label>Direction</label><select id="chk-direction"><option value="over">Over</option><option value="under">Under</option></select></div>
+          <div class="field"><label>Total line</label><input id="chk-total-line" type="number" step="0.5" placeholder="47.5"></div>
+        </div>
+        <button id="chk-check-btn" class="secondary">Check likelihood</button>
+        <div id="chk-result"></div>
+      </div>
+      <div class="card">
         <h2>Add a custom leg</h2>
         <div class="grid2">
           <div class="field"><label>Description</label><input id="cl-label" placeholder="e.g. Mahomes over 249.5 pass yds"></div>
@@ -1018,6 +1044,29 @@ function populateSelects(){
     el.innerHTML = cfbOpts || '<option value="">No college teams yet</option>';
     if(cfbNames.includes(prev)) el.value = prev;
   });
+  populateCheckSelects();
+}
+function populateCheckSelects(){
+  const leagueEl = document.getElementById('chk-league');
+  if(!leagueEl) return;
+  const league = leagueEl.value;
+  const names = Object.keys(teamsCache).filter(n=>teamsCache[n].league===league).sort();
+  const opts = names.map(n=>'<option value="'+n+'">'+n+'</option>').join('') || '<option value="">No teams yet</option>';
+  ['chk-teamA','chk-teamB'].forEach(function(id){
+    const el = document.getElementById(id); const prev = el.value;
+    el.innerHTML = opts;
+    if(names.includes(prev)) el.value = prev;
+  });
+  populateCheckSideSelect();
+}
+function populateCheckSideSelect(){
+  const a = document.getElementById('chk-teamA').value;
+  const b = document.getElementById('chk-teamB').value;
+  const sideEl = document.getElementById('chk-side');
+  if(!sideEl) return;
+  const prev = sideEl.value;
+  sideEl.innerHTML = (a?'<option value="A">'+a+'</option>':'')+(b?'<option value="B">'+b+'</option>':'');
+  if(prev==='A'||prev==='B') sideEl.value = prev;
 }
 
 function wireTrend(lg){
@@ -1664,8 +1713,16 @@ function runMatchupFor(nameA, nameB, outId){
 
   out.innerHTML = backBtnHtml + '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+proj.aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+proj.bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', proj.aPassProj, proj.bPassProj)+edgeRow('Proj. rush yds', proj.aRushProj, proj.bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="'+addSpreadId+'">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="'+addTotalId+'">Add "Total '+totalLine+'" to parlay</button></div><div class="note">'+methodNote+'</div></div>'+renderGameBets(nameA, nameB);
   wireBackButton();
-  document.getElementById(addSpreadId).addEventListener('click', ()=> addLeg(spreadLabel+' (model proj.)', -110));
-  document.getElementById(addTotalId).addEventListener('click', ()=> addLeg('Total '+totalLine+' (model proj.)', -110));
+  const muMarket = findMarketLine(nameA, nameB);
+  let muSpreadProb = null, muTotalProb = null;
+  if(muMarket){
+    const muAIsEntryA = teamNamesMatch(muMarket.aTeam, nameA);
+    const muMarketFavA = (muMarket.aSpread===null||muMarket.aSpread===undefined) ? null : (muAIsEntryA ? -muMarket.aSpread : muMarket.aSpread);
+    if(muMarketFavA!==null) muSpreadProb = pickProbability(Math.abs(proj.spread-muMarketFavA), proj.usedSP, league, spreadLine<0);
+    if(muMarket.total!==null && muMarket.total!==undefined) muTotalProb = pickProbability(Math.abs(proj.total-muMarket.total), proj.usedSP, league, false);
+  }
+  document.getElementById(addSpreadId).addEventListener('click', ()=> addLeg(spreadLabel+' (model proj.)', -110, muSpreadProb));
+  document.getElementById(addTotalId).addEventListener('click', ()=> addLeg('Total '+totalLine+' (model proj.)', -110, muTotalProb));
 }
 document.getElementById('run-matchup-nfl').addEventListener('click', ()=>{
   runMatchupFor(document.getElementById('m-teamA-nfl').value, document.getElementById('m-teamB-nfl').value, 'matchup-output-nfl');
@@ -1896,7 +1953,7 @@ function computeAllBetCandidates(games, league){
           sub: g.a+' vs '+g.b+' · model has it '+(proj.spread>0?g.a:g.b)+' by '+Math.abs(tieSafeLine(proj.spread)),
           tier: confidenceTier(Math.abs(spreadEdge), proj.usedSP, league),
           gameKey: gameKey, oddsPrice: (favoredOdds===null||favoredOdds===undefined) ? null : favoredOdds,
-          learnedProb: learnedProb,
+          learnedProb: learnedProb, league: league, usedSP: proj.usedSP, isFavorite: favoredLine<0,
         });
       }
     }
@@ -1916,7 +1973,7 @@ function computeAllBetCandidates(games, league){
           sub: g.a+' vs '+g.b+' · model projects '+tieSafeLine(proj.total)+' total points',
           tier: confidenceTier(Math.abs(totalEdge), proj.usedSP, league),
           gameKey: gameKey, oddsPrice: (totalOdds===null||totalOdds===undefined) ? null : totalOdds,
-          learnedProb: learnedProb,
+          learnedProb: learnedProb, league: league, usedSP: proj.usedSP, isFavorite: false,
         });
       }
     }
@@ -1984,7 +2041,7 @@ function renderParlaysList(elId, parlays){
   }).join('');
   el.querySelectorAll('[data-add-parlay]').forEach(function(btn, i){
     btn.addEventListener('click', function(){
-      parlays[i].legs.forEach(function(l){ addLeg(l.label, l.oddsPrice); });
+      parlays[i].legs.forEach(function(l){ addLeg(l.label, l.oddsPrice, pickProbability(l.edge, l.usedSP, l.league, l.isFavorite, l.learnedProb)); });
       activateTopTab('parlay');
       activateSubTab('parlay-calc');
     });
@@ -2224,7 +2281,35 @@ document.querySelectorAll('#track-status-filter [data-trackstatusfilter]').forEa
 let parlaySlip = [];
 function americanToDecimal(odds){ odds = Number(odds); return odds > 0 ? 1 + odds/100 : 1 + 100/Math.abs(odds); }
 function decimalToAmerican(dec){ if(dec >= 2) return '+' + Math.round((dec-1)*100); return Math.round(-100/(dec-1)).toString(); }
-function addLeg(label, odds){ parlaySlip.push({label:label, odds: Number(odds)}); renderParlaySlip(); }
+// Fallback probability estimate for when the learned model (train_model.py)
+// isn't trained yet -- built from the SAME calibrated thresholds
+// confidenceTier already uses, so it stays consistent with what "Strong"
+// vs "Moderate" already means in this app rather than introducing a
+// second, disconnected scale. Deliberately capped well short of 100% --
+// this whole session's worth of backtesting found real, sometimes severe
+// limits to this model's reliability, and a heuristic guess should never
+// claim more confidence than the trained model itself would.
+function edgeToProbability(edge, usedSP, league){
+  const leagueCal = MODEL_CALIBRATION && MODEL_CALIBRATION[league];
+  const strongThreshold = (leagueCal && leagueCal.calibrated) ? leagueCal.strong_threshold : 7;
+  let prob = 0.5 + edge * (0.12/strongThreshold);
+  if(league==='CFB' && !usedSP) prob = 0.5 + (prob-0.5)*0.6; // same "less trustworthy without SP+/SRS backing" discount confidenceTier already applies via the Strong* star
+  return Math.max(0.5, Math.min(0.75, prob));
+}
+function pickProbability(edge, usedSP, league, isFavorite, learnedProbOverride){
+  if(learnedProbOverride!==null && learnedProbOverride!==undefined) return learnedProbOverride;
+  const learned = predictHitProbability(edge, isFavorite===undefined ? true : isFavorite, league==='CFB');
+  if(learned!==null) return learned;
+  return edgeToProbability(edge, usedSP, league);
+}
+function probabilityCategory(prob){
+  if(prob>=0.70) return {label:'Very Strong', style:'background:rgba(51,211,153,0.18);color:#5eead4;'};
+  if(prob>=0.60) return {label:'Strong', style:'background:rgba(240,185,61,0.18);'};
+  if(prob>=0.50) return {label:'Moderate', style:'background:rgba(136,146,176,0.18);'};
+  if(prob>=0.35) return {label:'Not Likely', style:'background:rgba(242,139,125,0.12);'};
+  return {label:'Very Unlikely', style:'background:rgba(242,139,125,0.2);color:#f28b7d;'};
+}
+function addLeg(label, odds, probability){ parlaySlip.push({label:label, odds: Number(odds), probability: (probability===undefined?null:probability)}); renderParlaySlip(); }
 
 let ALL_ODDS = [];
 let oddsFilter = 'ALL';
@@ -2372,7 +2457,12 @@ function renderParlaySlip(){
     return;
   }
   slipEl.innerHTML = parlaySlip.map(function(leg,i){
-    return '<div class="history-item"><span>'+leg.label+'</span><span>'+(leg.odds>0?'+':'')+leg.odds+' <button class="danger" data-rmleg="'+i+'" style="margin-left:8px;">✕</button></span></div>';
+    const hasProb = leg.probability!==null && leg.probability!==undefined;
+    const cat = hasProb ? probabilityCategory(leg.probability) : null;
+    const probHtml = hasProb
+      ? '<span class="pill" style="margin-left:6px;'+cat.style+'">'+Math.round(leg.probability*100)+'% · '+cat.label+'</span>'
+      : '<span class="team-meta" style="margin-left:6px;">no model read</span>';
+    return '<div class="history-item"><span>'+leg.label+probHtml+'</span><span>'+(leg.odds>0?'+':'')+leg.odds+' <button class="danger" data-rmleg="'+i+'" style="margin-left:8px;">✕</button></span></div>';
   }).join('');
   slipEl.querySelectorAll('[data-rmleg]').forEach(function(btn){
     btn.addEventListener('click', function(){ parlaySlip.splice(Number(btn.dataset.rmleg), 1); renderParlaySlip(); });
@@ -2381,8 +2471,82 @@ function renderParlaySlip(){
   const combinedDecimal = parlaySlip.reduce(function(acc,leg){return acc*americanToDecimal(leg.odds);}, 1);
   const payout = stake * combinedDecimal;
   const profit = payout - stake;
-  resultEl.innerHTML = '<div class="proj-score" style="padding-top:16px;"><div><div class="num">'+decimalToAmerican(combinedDecimal)+'</div><div class="lbl">combined odds</div></div><div><div class="num">$'+fmt(payout)+'</div><div class="lbl">total payout</div></div><div><div class="num" style="color:#5eead4;">+$'+fmt(profit)+'</div><div class="lbl">profit</div></div></div><div class="note">'+parlaySlip.length+' leg'+(parlaySlip.length===1?'':'s')+' · every leg has to hit for the parlay to pay out.</div>';
+  const legsWithProb = parlaySlip.filter(function(l){ return l.probability!==null && l.probability!==undefined; });
+  let combinedProbHtml = '';
+  if(legsWithProb.length>0){
+    // Independence assumption -- multiplying each leg's own probability
+    // is the standard way to combine them, but it's only exactly correct
+    // if the legs don't influence each other. Two legs from the SAME
+    // game (e.g. a team's spread AND that same game's total) are a real
+    // counterexample -- their outcomes are correlated, not independent --
+    // so this is a reasonable estimate, not an exact one, and said so
+    // plainly rather than implying more precision than it has.
+    const combinedProb = legsWithProb.reduce(function(acc,l){ return acc*l.probability; }, 1);
+    const cat = probabilityCategory(combinedProb);
+    const missingNote = legsWithProb.length<parlaySlip.length ? ' ('+(parlaySlip.length-legsWithProb.length)+' leg(s) with no model read excluded from this estimate)' : '';
+    combinedProbHtml = '<div style="text-align:center;margin:10px 0 0;"><span class="pill" style="'+cat.style+'">'+Math.round(combinedProb*100)+'% · '+cat.label+' overall'+'</span></div>'
+      + '<div class="note" style="margin-top:6px;">Assumes each leg is independent -- legs from the same game (e.g. a team\'s spread and that game\'s total) aren\'t really independent, so treat this as a reasonable estimate, not an exact one.'+missingNote+'</div>';
+  }
+  resultEl.innerHTML = '<div class="proj-score" style="padding-top:16px;"><div><div class="num">'+decimalToAmerican(combinedDecimal)+'</div><div class="lbl">combined odds</div></div><div><div class="num">$'+fmt(payout)+'</div><div class="lbl">total payout</div></div><div><div class="num" style="color:#5eead4;">+$'+fmt(profit)+'</div><div class="lbl">profit</div></div></div><div class="note">'+parlaySlip.length+' leg'+(parlaySlip.length===1?'':'s')+' · every leg has to hit for the parlay to pay out.</div>'+combinedProbHtml;
 }
+document.getElementById('chk-league').addEventListener('change', populateCheckSelects);
+document.getElementById('chk-teamA').addEventListener('change', populateCheckSideSelect);
+document.getElementById('chk-teamB').addEventListener('change', populateCheckSideSelect);
+document.getElementById('chk-type').addEventListener('change', function(){
+  const isSpread = this.value==='spread';
+  document.getElementById('chk-spread-fields').style.display = isSpread ? '' : 'none';
+  document.getElementById('chk-total-fields').style.display = isSpread ? 'none' : '';
+});
+document.getElementById('chk-check-btn').addEventListener('click', function(){
+  const league = document.getElementById('chk-league').value;
+  const nameA = document.getElementById('chk-teamA').value;
+  const nameB = document.getElementById('chk-teamB').value;
+  const resultEl = document.getElementById('chk-result');
+  if(!nameA || !nameB || nameA===nameB){ resultEl.innerHTML = '<div class="empty">Pick two different teams first.</div>'; return; }
+  const proj = computeProjection(nameA, nameB, league);
+  if(!proj){ resultEl.innerHTML = '<div class="empty">Missing stats for one of those teams.</div>'; return; }
+  const betType = document.getElementById('chk-type').value;
+  let edge, label, isFavorite, oddsGuess=-110;
+  if(betType==='spread'){
+    const rawLine = parseFloat(document.getElementById('chk-line').value);
+    if(isNaN(rawLine)){ resultEl.innerHTML = '<div class="empty">Enter a line, e.g. -6.5 or +3.5.</div>'; return; }
+    const side = document.getElementById('chk-side').value; // 'A' or 'B'
+    const sideName = side==='A' ? nameA : nameB;
+    // proj.spread convention: positive = nameA favored. Convert the typed
+    // line (as the USER'S chosen side would see it on a real book) into
+    // that same "positive = A favored" convention to diff against.
+    const lineAsAFavored = side==='A' ? -rawLine : rawLine;
+    edge = Math.abs(proj.spread - lineAsAFavored);
+    isFavorite = rawLine<0;
+    label = sideName+' '+(rawLine>0?'+':'')+rawLine;
+  } else {
+    const totalLine = parseFloat(document.getElementById('chk-total-line').value);
+    if(isNaN(totalLine)){ resultEl.innerHTML = '<div class="empty">Enter a total line, e.g. 47.5.</div>'; return; }
+    const direction = document.getElementById('chk-direction').value;
+    const modelSide = proj.total - totalLine; // positive = model leans over
+    edge = Math.abs(proj.total - totalLine);
+    isFavorite = false;
+    label = (direction==='over'?'Over':'Under')+' '+totalLine;
+    // if the user picked the side the model DISAGREES with, the real edge
+    // for THEIR side is negative -- still show it, but the probability
+    // should reflect their chosen direction, not just raw distance.
+    if((direction==='over') !== (modelSide>0)) edge = -edge;
+  }
+  const rawProb = pickProbability(Math.abs(edge), proj.usedSP, league, isFavorite, null);
+  // If the user's chosen side is the one the model's OWN lean disagrees
+  // with (only relevant for totals here, spread already resolved via
+  // lineAsAFavored above), invert back toward 50 rather than claim
+  // confidence in the opposite direction.
+  const finalProb = edge<0 ? (1-rawProb) : rawProb;
+  const cat = probabilityCategory(finalProb);
+  resultEl.innerHTML = '<div class="proj-score" style="padding-top:12px;"><div><div class="num">'+Math.round(finalProb*100)+'%</div><div class="lbl">estimated likelihood</div></div></div>'
+    + '<div style="text-align:center;margin:6px 0 10px;"><span class="pill" style="'+cat.style+'">'+cat.label+'</span></div>'
+    + '<div class="note" style="margin-top:0;">'+label+' · '+nameA+' vs '+nameB+(MODEL_WEIGHTS && MODEL_WEIGHTS.trained ? ' · from the trained model' : ' · calibrated estimate (learned model not trained yet -- see Track Record)')+'</div>'
+    + '<button class="secondary" id="chk-add-btn" style="margin-top:8px;">Add to slip</button>';
+  document.getElementById('chk-add-btn').addEventListener('click', function(){
+    addLeg(label+' ('+nameA+' vs '+nameB+')', oddsGuess, finalProb);
+  });
+});
 document.getElementById('add-custom-leg').addEventListener('click', ()=>{
   const label = document.getElementById('cl-label').value.trim();
   const odds = document.getElementById('cl-odds').value;
