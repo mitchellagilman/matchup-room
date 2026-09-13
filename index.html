@@ -411,6 +411,7 @@
         <h2>How this is ranked</h2>
         <div class="note" style="margin-top:0;">For every matchup this week, the model projects a score (same math as Matchup — offense-vs-defense yardage, home-field advantage, turnover margin, and for CFB, a blend with CFBD's opponent-adjusted SP+ rating) and compares it to the actual market spread/total from the odds board. These are the games where that gap is biggest — where the model disagrees with the market the most, in either direction. Confidence tiers reflect edge size, and for CFB, whether SP+ data backed the projection (box-score-only projections are noisier early season). A big gap isn't automatically right; it just means the numbers loaded here see it very differently than the number your book is offering. Needs both team stats and a market line loaded to show up.</div>
         <div class="note" id="calibration-note"></div>
+        <div class="note" id="learned-model-note"></div>
       </div>
       <div class="card">
         <h2>NFL — top 10</h2>
@@ -1825,6 +1826,21 @@ function findMarketLine(nameA, nameB){
   });
 }
 let MODEL_CALIBRATION = null; // loaded at startup from data/calibration.json -- null until enough graded picks exist to calibrate from (see calibrate_model.py). Keyed by league (NFL/CFB calibrate independently -- see that script's docstring for why)
+let MODEL_WEIGHTS = null; // loaded at startup from data/model_weights.json -- null (or .trained===false) until enough graded team bets exist for train_model.py to trust a fit (see that script's docstring)
+// Applies the logistic regression trained in train_model.py to a single
+// candidate pick, mirroring that script's sigmoid(bias + w.edge*edge +
+// w.is_favorite*isFavorite + w.league_is_cfb*isCfb) exactly, including
+// standardizing edge the same way training did (edge_mean/edge_std are
+// written into model_weights.json specifically so this side can replay
+// the same transform). Returns null if the model isn't trained yet --
+// callers must treat null as "no opinion," not "predicts a miss."
+function predictHitProbability(edge, isFavorite, isCfb){
+  if(!MODEL_WEIGHTS || !MODEL_WEIGHTS.trained) return null;
+  const w = MODEL_WEIGHTS.weights;
+  const scaledEdge = (edge - MODEL_WEIGHTS.edge_mean) / MODEL_WEIGHTS.edge_std;
+  const z = MODEL_WEIGHTS.bias + w[0]*scaledEdge + w[1]*(isFavorite?1:0) + w[2]*(isCfb?1:0);
+  return 1/(1+Math.exp(-z));
+}
 function confidenceTier(edge, usedSP, league){
   // Confidence reflects both edge size and data quality -- a CFB pick
   // backed by SP+ (opponent-adjusted) is more trustworthy than one from
@@ -1849,6 +1865,7 @@ function confidenceTier(edge, usedSP, league){
 }
 function computeAllBetCandidates(games, league){
   const candidates = [];
+  const MIN_LEARNED_PROB = 0.55; // modest bar above a coinflip -- once the model is trained, a pick clearing the edge threshold but predicted below this gets filtered out rather than shown anyway
   games.forEach(function(g){
     if(g.awayScore!=null && g.homeScore!=null) return; // game's already been played -- nothing left to bet on
     const proj = projectMatchup(g.a, g.b);
@@ -1856,6 +1873,7 @@ function computeAllBetCandidates(games, league){
     const market = findMarketLine(g.a, g.b);
     if(!market) return;
     const gameKey = g.a+' vs '+g.b;
+    const isCfb = league==='CFB';
     const aIsEntryA = teamNamesMatch(market.aTeam, g.a);
     const marketFavA = (market.aSpread===null || market.aSpread===undefined) ? null : (aIsEntryA ? -market.aSpread : market.aSpread);
     if(marketFavA!==null){
@@ -1863,24 +1881,44 @@ function computeAllBetCandidates(games, league){
       const favoredTeam = spreadEdge>0 ? g.a : g.b;
       const favoredLine = aIsEntryA ? (spreadEdge>0 ? market.aSpread : market.bSpread) : (spreadEdge>0 ? market.bSpread : market.aSpread);
       const favoredOdds = aIsEntryA ? (spreadEdge>0 ? market.aSpreadOdds : market.bSpreadOdds) : (spreadEdge>0 ? market.bSpreadOdds : market.aSpreadOdds);
-      candidates.push({
-        edge: Math.abs(spreadEdge),
-        label: favoredTeam+' '+(favoredLine>0?'+':'')+favoredLine,
-        sub: g.a+' vs '+g.b+' · model has it '+(proj.spread>0?g.a:g.b)+' by '+Math.abs(tieSafeLine(proj.spread)),
-        tier: confidenceTier(Math.abs(spreadEdge), proj.usedSP, league),
-        gameKey: gameKey, oddsPrice: (favoredOdds===null||favoredOdds===undefined) ? null : favoredOdds
-      });
+      // Real learning, not just a threshold nudge: once train_model.py has
+      // enough graded history to trust a fit, this is an actual second
+      // opinion from a model fit on real outcomes -- a pick that clears
+      // the edge bar but that the learned model doesn't like gets held
+      // back here, rather than shown anyway just because the edge alone
+      // looked big. Falls through untouched (learnedProb stays null) if
+      // the model isn't trained yet -- see predictHitProbability's comment.
+      const learnedProb = predictHitProbability(Math.abs(spreadEdge), favoredLine<0, isCfb);
+      if(learnedProb===null || learnedProb>=MIN_LEARNED_PROB){
+        candidates.push({
+          edge: Math.abs(spreadEdge),
+          label: favoredTeam+' '+(favoredLine>0?'+':'')+favoredLine,
+          sub: g.a+' vs '+g.b+' · model has it '+(proj.spread>0?g.a:g.b)+' by '+Math.abs(tieSafeLine(proj.spread)),
+          tier: confidenceTier(Math.abs(spreadEdge), proj.usedSP, league),
+          gameKey: gameKey, oddsPrice: (favoredOdds===null||favoredOdds===undefined) ? null : favoredOdds,
+          learnedProb: learnedProb,
+        });
+      }
     }
     if(market.total!==null && market.total!==undefined){
       const totalEdge = proj.total - market.total;
       const totalOdds = totalEdge>0 ? market.overOdds : market.underOdds;
-      candidates.push({
-        edge: Math.abs(totalEdge),
-        label: (totalEdge>0?'Over':'Under')+' '+market.total,
-        sub: g.a+' vs '+g.b+' · model projects '+tieSafeLine(proj.total)+' total points',
-        tier: confidenceTier(Math.abs(totalEdge), proj.usedSP, league),
-        gameKey: gameKey, oddsPrice: (totalOdds===null||totalOdds===undefined) ? null : totalOdds
-      });
+      // Totals don't have a clean "favorite" side the way spreads do, so
+      // is_favorite is passed as false (the model was trained without a
+      // meaningful signal either way for totals -- this is a reasonable
+      // default, not a claim that totals and dog-side spreads behave the
+      // same).
+      const learnedProb = predictHitProbability(Math.abs(totalEdge), false, isCfb);
+      if(learnedProb===null || learnedProb>=MIN_LEARNED_PROB){
+        candidates.push({
+          edge: Math.abs(totalEdge),
+          label: (totalEdge>0?'Over':'Under')+' '+market.total,
+          sub: g.a+' vs '+g.b+' · model projects '+tieSafeLine(proj.total)+' total points',
+          tier: confidenceTier(Math.abs(totalEdge), proj.usedSP, league),
+          gameKey: gameKey, oddsPrice: (totalOdds===null||totalOdds===undefined) ? null : totalOdds,
+          learnedProb: learnedProb,
+        });
+      }
     }
   });
   candidates.sort(function(a,b){ return b.edge - a.edge; });
@@ -2483,6 +2521,7 @@ if(globalSearchInput){
 
 (async function init(){
   try{ MODEL_CALIBRATION = await fetchJSON('./data/calibration.json'); }catch(e){ MODEL_CALIBRATION = null; }
+  try{ MODEL_WEIGHTS = await fetchJSON('./data/model_weights.json'); }catch(e){ MODEL_WEIGHTS = null; }
   const calNote = document.getElementById('calibration-note');
   if(calNote && MODEL_CALIBRATION){
     const parts = ['NFL','CFB'].map(function(lg){
@@ -2493,6 +2532,12 @@ if(globalSearchInput){
         : lg+': still the original fixed 7 / 3.5 — only '+c.sample_size+' of '+c.min_sample_size+' graded picks needed exist so far';
     }).filter(Boolean);
     calNote.textContent = parts.join('. ')+ (parts.length ? '.' : '');
+  }
+  const learnedNote = document.getElementById('learned-model-note');
+  if(learnedNote && MODEL_WEIGHTS){
+    learnedNote.textContent = MODEL_WEIGHTS.trained
+      ? 'A learned model (trained on '+MODEL_WEIGHTS.sample_size+' real graded picks) is now also filtering Top Bets -- a pick clearing the edge threshold but predicted below a 55% hit probability gets held back. Training accuracy '+Math.round(MODEL_WEIGHTS.train_accuracy*100)+'% (on the data it was trained on, not a held-out test -- take that number with real caution at this sample size).'
+      : 'Real learned model: not active yet -- only '+MODEL_WEIGHTS.sample_size+' of the '+MODEL_WEIGHTS.min_sample_size+' graded team bets needed exist so far. Falls back to the calibrated thresholds above until then.';
   }
   try{ await ensureSeeded(); }catch(e){ teamsCache = Object.assign({}, NFL_SEED, CFB_SEED); }
   await renderSchedule();
