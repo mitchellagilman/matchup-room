@@ -2506,7 +2506,7 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
   const proj = computeProjection(nameA, nameB, league);
   if(!proj){ resultEl.innerHTML = '<div class="empty">Missing stats for one of those teams.</div>'; return; }
   const betType = document.getElementById('chk-type').value;
-  let edge, label, isFavorite, oddsGuess=-110;
+  let signedEdge, label, isFavorite, oddsGuess=-110;
   if(betType==='spread'){
     const rawLine = parseFloat(document.getElementById('chk-line').value);
     if(isNaN(rawLine)){ resultEl.innerHTML = '<div class="empty">Enter a line, e.g. -6.5 or +3.5.</div>'; return; }
@@ -2515,29 +2515,40 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
     // proj.spread convention: positive = nameA favored. Convert the typed
     // line (as the USER'S chosen side would see it on a real book) into
     // that same "positive = A favored" convention to diff against.
+    //
+    // BUG FIX, confirmed live: this used to take Math.abs() of this
+    // difference immediately, which throws away the sign -- and
+    // confirmed, checking the same side at +4.5 vs +5.5 (a strictly more
+    // favorable line) produced a LOWER probability, not higher, because
+    // the absolute distance to the model's point estimate happened to
+    // shrink as the line moved past it. Keeping the sign here and only
+    // taking the magnitude at the very end (after picking which side of
+    // it wins) keeps this monotonic in the line, the way it always should
+    // have been -- more points for the same side can only ever raise the
+    // probability, never lower it.
     const lineAsAFavored = side==='A' ? -rawLine : rawLine;
-    edge = Math.abs(proj.spread - lineAsAFavored);
+    signedEdge = proj.spread - lineAsAFavored;
     isFavorite = rawLine<0;
     label = sideName+' '+(rawLine>0?'+':'')+rawLine;
   } else {
     const totalLine = parseFloat(document.getElementById('chk-total-line').value);
     if(isNaN(totalLine)){ resultEl.innerHTML = '<div class="empty">Enter a total line, e.g. 47.5.</div>'; return; }
     const direction = document.getElementById('chk-direction').value;
-    const modelSide = proj.total - totalLine; // positive = model leans over
-    edge = Math.abs(proj.total - totalLine);
+    const rawTotalEdge = proj.total - totalLine; // positive = model leans over
     isFavorite = false;
     label = (direction==='over'?'Over':'Under')+' '+totalLine;
-    // if the user picked the side the model DISAGREES with, the real edge
-    // for THEIR side is negative -- still show it, but the probability
-    // should reflect their chosen direction, not just raw distance.
-    if((direction==='over') !== (modelSide>0)) edge = -edge;
+    // Same signed convention as spread above: positive signedEdge always
+    // means "this chosen side," negative always means "the other side,"
+    // regardless of over/under -- so the SAME inversion logic below
+    // handles both bet types identically instead of needing special-cased
+    // total-only handling.
+    signedEdge = direction==='over' ? rawTotalEdge : -rawTotalEdge;
   }
-  const rawProb = pickProbability(Math.abs(edge), proj.usedSP, league, isFavorite, null);
-  // If the user's chosen side is the one the model's OWN lean disagrees
-  // with (only relevant for totals here, spread already resolved via
-  // lineAsAFavored above), invert back toward 50 rather than claim
-  // confidence in the opposite direction.
-  const finalProb = edge<0 ? (1-rawProb) : rawProb;
+  const rawProb = pickProbability(Math.abs(signedEdge), proj.usedSP, league, isFavorite, null);
+  // Negative signedEdge means the model actually favors the OTHER side of
+  // this exact bet -- invert back toward (and potentially below) 50%
+  // rather than claim confidence in a direction the model disagrees with.
+  const finalProb = signedEdge<0 ? (1-rawProb) : rawProb;
   const cat = probabilityCategory(finalProb);
   resultEl.innerHTML = '<div class="proj-score" style="padding-top:12px;"><div><div class="num">'+Math.round(finalProb*100)+'%</div><div class="lbl">estimated likelihood</div></div></div>'
     + '<div style="text-align:center;margin:6px 0 10px;"><span class="pill" style="'+cat.style+'">'+cat.label+'</span></div>'
