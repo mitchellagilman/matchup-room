@@ -19,7 +19,13 @@
         "oppScore": 27.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 30.5,
+    "prevPa": 20.4,
+    "prevTo": 0.7,
+    "homePpg": 7.0,
+    "homePa": 27.0,
+    "homeGames": 1
   },
   "Dallas Cowboys": {
     "league": "NFL",
@@ -52,7 +58,13 @@
         "oppScore": 13.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 28.8,
+    "prevPa": 18.8,
+    "prevTo": 0.14,
+    "awayPpg": 10.0,
+    "awayPa": 13.0,
+    "awayGames": 1
   },
   "Buffalo Bills": {
     "league": "NFL",
@@ -74,7 +86,13 @@
         "oppScore": 31.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 28.3,
+    "prevPa": 21.5,
+    "prevTo": 0.0,
+    "awayPpg": 36.0,
+    "awayPa": 31.0,
+    "awayGames": 1
   },
   "Detroit Lions": {
     "league": "NFL",
@@ -96,7 +114,13 @@
         "oppScore": 30.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 28.3,
+    "prevPa": 24.3,
+    "prevTo": 0.24,
+    "homePpg": 31.0,
+    "homePa": 30.0,
+    "homeGames": 1
   },
   "Chicago Bears": {
     "league": "NFL",
@@ -118,7 +142,13 @@
         "oppScore": 37.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 25.9,
+    "prevPa": 24.4,
+    "prevTo": 0.95,
+    "awayPpg": 59.0,
+    "awayPa": 37.0,
+    "awayGames": 1
   },
   "San Francisco 49ers": {
     "league": "NFL",
@@ -140,7 +170,13 @@
         "oppScore": 7.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 25.7,
+    "prevPa": 21.8,
+    "prevTo": -0.58,
+    "awayPpg": 27.0,
+    "awayPa": 7.0,
+    "awayGames": 1
   },
   "Seattle Seahawks": {
     "league": "NFL",
@@ -162,7 +198,13 @@
         "oppScore": 10.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 28.4,
+    "prevPa": 17.2,
+    "prevTo": 0.3,
+    "homePpg": 13.0,
+    "homePa": 10.0,
+    "homeGames": 1
   },
   "Indianapolis Colts": {
     "league": "NFL",
@@ -184,7 +226,13 @@
         "oppScore": 41.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 27.4,
+    "prevPa": 24.2,
+    "prevTo": 0.06,
+    "homePpg": 23.0,
+    "homePa": 41.0,
+    "homeGames": 1
   },
   "Denver Broncos": {
     "league": "NFL",
@@ -217,7 +265,13 @@
         "oppScore": 10.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 27.9,
+    "prevPa": 19.8,
+    "prevTo": 0.67,
+    "homePpg": 34.0,
+    "homePa": 10.0,
+    "homeGames": 1
   },
   "Los Angeles Chargers": {
     "league": "NFL",
@@ -261,7 +315,13 @@
         "oppScore": 20.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 20.8,
+    "prevPa": 23.6,
+    "prevTo": 0.41,
+    "awayPpg": 13.0,
+    "awayPa": 20.0,
+    "awayGames": 1
   },
   "Green Bay Packers": {
     "league": "NFL",
@@ -294,7 +354,13 @@
         "oppScore": 23.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 24.9,
+    "prevPa": 23.4,
+    "prevTo": -0.12,
+    "awayPpg": 41.0,
+    "awayPa": 23.0,
+    "awayGames": 1
   },
   "Cincinnati Bengals": {
     "league": "NFL",
@@ -316,7 +382,13 @@
         "oppScore": 27.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 24.4,
+    "prevPa": 28.9,
+    "prevTo": -0.24,
+    "homePpg": 33.0,
+    "homePa": 27.0,
+    "homeGames": 1
   },
   "Houston Texans": {
     "league": "NFL",
@@ -338,7 +410,13 @@
         "oppScore": 36.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 23.8,
+    "prevPa": 17.4,
+    "prevTo": 0.79,
+    "homePpg": 31.0,
+    "homePa": 36.0,
+    "homeGames": 1
   },
   "Arizona Cardinals": {
     "league": "NFL",
@@ -382,7 +460,13 @@
         "oppScore": 33.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 22.4,
+    "prevPa": 24.2,
+    "prevTo": 0.41,
+    "awayPpg": 27.0,
+    "awayPa": 33.0,
+    "awayGames": 1
   },
   "Washington Commanders": {
     "league": "NFL",
@@ -415,7 +499,13 @@
         "oppScore": 31.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 18.0,
+    "prevPa": 22.5,
+    "prevTo": -0.18,
+    "awayPpg": 30.0,
+    "awayPa": 31.0,
+    "awayGames": 1
   },
   "Philadelphia Eagles": {
     "league": "NFL",
@@ -448,7 +538,13 @@
         "oppScore": 13.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 23.4,
+    "prevPa": 22.8,
+    "prevTo": 0.78,
+    "homePpg": 20.0,
+    "homePa": 13.0,
+    "homeGames": 1
   },
   "Miami Dolphins": {
     "league": "NFL",
@@ -481,7 +577,13 @@
         "oppScore": 59.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 18.3,
+    "prevPa": 22.4,
+    "prevTo": 0.0,
+    "homePpg": 37.0,
+    "homePa": 59.0,
+    "homeGames": 1
   },
   "Minnesota Vikings": {
     "league": "NFL",
@@ -514,7 +616,13 @@
         "oppScore": 10.0,
         "result": "W"
       }
-    ]
+    ],
+    "prevPpg": 17.6,
+    "prevPa": 29.6,
+    "prevTo": -1.0,
+    "awayPpg": 23.0,
+    "awayPa": 10.0,
+    "awayGames": 1
   },
   "Cleveland Browns": {
     "league": "NFL",
@@ -536,7 +644,13 @@
         "oppScore": 34.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 16.4,
+    "prevPa": 22.3,
+    "prevTo": -0.35,
+    "awayPpg": 10.0,
+    "awayPa": 34.0,
+    "awayGames": 1
   },
   "Tennessee Titans": {
     "league": "NFL",
@@ -558,7 +672,13 @@
         "oppScore": 23.0,
         "result": "L"
       }
-    ]
+    ],
+    "prevPpg": 16.7,
+    "prevPa": 28.1,
+    "prevTo": -0.29,
+    "homePpg": 10.0,
+    "homePa": 23.0,
+    "homeGames": 1
   },
   "Las Vegas Raiders": {
     "league": "NFL",

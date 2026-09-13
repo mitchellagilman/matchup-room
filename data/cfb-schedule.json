@@ -7,17 +7,17 @@
     "homeScore": 77
   },
   {
-    "a": "Norfolk State",
-    "b": "Virginia",
-    "date": "2026-09-11",
-    "awayScore": 3,
-    "homeScore": 59
-  },
-  {
     "a": "Villanova",
     "b": "Louisville",
     "date": "2026-09-11",
     "awayScore": 13,
+    "homeScore": 59
+  },
+  {
+    "a": "Norfolk State",
+    "b": "Virginia",
+    "date": "2026-09-11",
+    "awayScore": 3,
     "homeScore": 59
   },
   {
@@ -28,18 +28,11 @@
     "homeScore": 21
   },
   {
-    "a": "Arizona State",
-    "b": "Texas A&M",
+    "a": "Howard",
+    "b": "Indiana",
     "date": "2026-09-12",
-    "awayScore": 20,
-    "homeScore": 48
-  },
-  {
-    "a": "Penn State",
-    "b": "Temple",
-    "date": "2026-09-12",
-    "awayScore": 27,
-    "homeScore": 9
+    "awayScore": 0,
+    "homeScore": 55
   },
   {
     "a": "Oregon",
@@ -49,18 +42,25 @@
     "homeScore": 39
   },
   {
-    "a": "Howard",
-    "b": "Indiana",
-    "date": "2026-09-12",
-    "awayScore": 0,
-    "homeScore": 55
-  },
-  {
     "a": "Oklahoma",
     "b": "Michigan",
     "date": "2026-09-12",
     "awayScore": 10,
     "homeScore": 17
+  },
+  {
+    "a": "Penn State",
+    "b": "Temple",
+    "date": "2026-09-12",
+    "awayScore": 27,
+    "homeScore": 9
+  },
+  {
+    "a": "Arizona State",
+    "b": "Texas A&M",
+    "date": "2026-09-12",
+    "awayScore": 20,
+    "homeScore": 48
   },
   {
     "a": "Western Kentucky",
@@ -70,11 +70,11 @@
     "homeScore": 70
   },
   {
-    "a": "Utah State",
-    "b": "Washington",
+    "a": "Rice",
+    "b": "Notre Dame",
     "date": "2026-09-12",
-    "awayScore": 14,
-    "homeScore": 16
+    "awayScore": 0,
+    "homeScore": 52
   },
   {
     "a": "Arizona",
@@ -84,18 +84,18 @@
     "homeScore": 28
   },
   {
+    "a": "Utah State",
+    "b": "Washington",
+    "date": "2026-09-12",
+    "awayScore": 14,
+    "homeScore": 16
+  },
+  {
     "a": "Alabama",
     "b": "Kentucky",
     "date": "2026-09-12",
     "awayScore": 45,
     "homeScore": 17
-  },
-  {
-    "a": "Rice",
-    "b": "Notre Dame",
-    "date": "2026-09-12",
-    "awayScore": 0,
-    "homeScore": 52
   },
   {
     "a": "UC Davis",
@@ -133,18 +133,18 @@
     "homeScore": 24
   },
   {
-    "a": "Louisiana Tech",
-    "b": "LSU",
-    "date": "2026-09-12",
-    "awayScore": 14,
-    "homeScore": 45
-  },
-  {
     "a": "Ohio State",
     "b": "Texas",
     "date": "2026-09-12",
     "awayScore": 23,
     "homeScore": 24
+  },
+  {
+    "a": "Louisiana Tech",
+    "b": "LSU",
+    "date": "2026-09-12",
+    "awayScore": 14,
+    "homeScore": 45
   },
   {
     "a": "Charlotte",
