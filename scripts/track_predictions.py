@@ -196,6 +196,24 @@ def is_cross_division_game(g, teams, league):
     return bool(a and b and a.get("division") and b.get("division") and a["division"] != b["division"])
 
 
+EXTREME_MISMATCH_SPREAD = 24  # points -- confirmed live: the user's own named examples (Rice/Notre Dame 44.5, Charlotte/Ole Miss 44.5, Western Kentucky/Georgia 39.5, Utah State/Washington 27.5) run from 27.5 up; 24 sits comfortably below all of them with some margin, without excluding more ordinary lopsided-but-still-competitive games
+
+
+def is_extreme_mismatch(market):
+    """True when the real market spread for this game is so large it's
+    effectively a foregone conclusion -- confirmed live via user-named
+    examples: a real spread of 27.5+ between two FBS teams (not even
+    FBS-vs-FCS) still means one side has nowhere near enough real
+    competitive data/quality to make tracking the model's read on it a
+    fair test. Only checks the real market line (not the model's own
+    projected margin), since the market number is the actual ground
+    truth for "how lopsided is this matchup really.\""""
+    if not market:
+        return False
+    a_spread = market.get("aSpread")
+    return a_spread is not None and abs(a_spread) > EXTREME_MISMATCH_SPREAD
+
+
 def compute_team_bets(games, teams, odds_list, league):
     """Every game's spread + total pick -- no top-N cut. (Was capped at 10
     by combined edge; that cap is what's removed here so the whole week's
@@ -209,6 +227,8 @@ def compute_team_bets(games, teams, odds_list, league):
             continue
         market = find_market_line(g["a"], g["b"], odds_list)
         if not market:
+            continue
+        if is_extreme_mismatch(market):
             continue
         a_is_entry_a = team_names_match(market.get("aTeam"), g["a"])
         a_spread_val = market.get("aSpread")
@@ -326,7 +346,7 @@ def find_game_for_team(games, team_name):
     return None
 
 
-def compute_player_bets(players, teams, games, league):
+def compute_player_bets(players, teams, games, league, odds_list=None):
     candidates = []
     for name, p in players.items():
         if p.get("league") != league:
@@ -342,6 +362,8 @@ def compute_player_bets(players, teams, games, league):
         if not game:
             continue
         if is_cross_division_game(game, teams, league):
+            continue
+        if odds_list and is_extreme_mismatch(find_market_line(game["a"], game["b"], odds_list)):
             continue
         opp = game["b"] if game["a"].lower() == (p.get("team") or "").lower() else game["a"]
         if opp not in teams:
@@ -536,7 +558,7 @@ def main():
             existing_ids.add(pid)
             logged += 1
 
-        player_picks = compute_player_bets(all_players, teams, games, league)
+        player_picks = compute_player_bets(all_players, teams, games, league, all_odds)
         for p in player_picks:
             pick_week_label = f"CFB-{p['game_date']}" if league == "CFB" and p.get("game_date") else week_label
             pid = f"{league}|{pick_week_label}|{p['name']}|{p['stat']}|player_prop"
