@@ -1094,7 +1094,7 @@ function computeSinglePlayerProjection(name){
   const avgVal = leagueAvgDefStat(league, defKey);
   if(!avgVal) return { statLabel: statLabel(mainStat), opp, noData: true };
   const last5 = games.slice(-5);
-  const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
+  const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
   const ratio = clampDefenseRatio(teamsCache[opp][defKey] / avgVal);
   const projected = roundToHalf(l5avg * ratio);
   return {
@@ -1157,7 +1157,7 @@ function renderPlayersList(lg){
       const p = playersCache[n];
       const g = p.games || [];
       const last5 = g.slice(-5);
-      const avg = function(key){ return last5.length ? (last5.reduce(function(s,x){return s+(x[key]||0);},0)/last5.length) : 0; };
+      const avg = function(key){ return median(last5.map(function(x){ return x[key]||0; })); };
       let mainStat = 'passYds';
       if(p.pos==='RB') mainStat='rushYds';
       if(p.pos==='WR'||p.pos==='TE') mainStat='recYds';
@@ -1214,6 +1214,21 @@ function clampDefenseRatio(ratio){
 // it read like a real, usable line instead of a raw statistical output.
 function roundToHalf(n){
   return Math.round(n*2)/2;
+}
+// Median instead of mean for a player's "recent form" window -- confirmed
+// live: a single extreme outlier game (a QB's real 457-yard passing game
+// sitting in an otherwise-normal 5-game window) pulled the mean up to
+// 301.6, well above what the player's other 4 games actually looked like
+// (median: 269.0). A mean has no resistance to one freak game; a median
+// of 5 values is resistant to up to 2 extreme values (the very highest
+// and lowest) without needing an arbitrary trim threshold -- a standard,
+// well-established technique for exactly this kind of high-variance,
+// single-game-outlier-prone data, not an invented hack.
+function median(nums){
+  if(!nums.length) return 0;
+  const sorted = nums.slice().sort(function(a,b){ return a-b; });
+  const mid = Math.floor(sorted.length/2);
+  return sorted.length%2 ? sorted[mid] : (sorted[mid-1]+sorted[mid])/2;
 }
 // QB is a true one-starter-at-a-time position (unlike RB/WR/TE, where more
 // than one player legitimately splitting real touches is normal) -- but
@@ -1547,7 +1562,7 @@ function computeGameBets(nameA, nameB){
       const avgVal = leagueAvgDefStat(league, defKey);
       if(!avgVal) return;
       const last5 = games.slice(-5);
-      const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
+      const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
       if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
       const ratio = clampDefenseRatio(teamsCache[oppName][defKey] / avgVal);
       const projected = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderGameBets
@@ -1966,7 +1981,7 @@ function computeTopPlayerBets(league){
     if(!avgVal) return;
     const ratio = clampDefenseRatio(teamsCache[opp][defKey] / avgVal);
     const last5 = games.slice(-5);
-    const l5avg = last5.reduce(function(s,g){ return s+(g[mainStat]||0); },0) / last5.length;
+    const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
     if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
     const projected = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderPlayerBetsList
     candidates.push({
