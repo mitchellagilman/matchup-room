@@ -42,13 +42,6 @@
     "homeScore": 9
   },
   {
-    "a": "Oregon",
-    "b": "Oklahoma State",
-    "date": "2026-09-12",
-    "awayScore": 31,
-    "homeScore": 39
-  },
-  {
     "a": "Howard",
     "b": "Indiana",
     "date": "2026-09-12",
@@ -63,11 +56,25 @@
     "homeScore": 48
   },
   {
+    "a": "Oregon",
+    "b": "Oklahoma State",
+    "date": "2026-09-12",
+    "awayScore": 31,
+    "homeScore": 39
+  },
+  {
     "a": "Western Kentucky",
     "b": "Georgia",
     "date": "2026-09-12",
     "awayScore": 20,
     "homeScore": 70
+  },
+  {
+    "a": "Alabama",
+    "b": "Kentucky",
+    "date": "2026-09-12",
+    "awayScore": 45,
+    "homeScore": 17
   },
   {
     "a": "Rice",
@@ -77,13 +84,6 @@
     "homeScore": 52
   },
   {
-    "a": "Utah State",
-    "b": "Washington",
-    "date": "2026-09-12",
-    "awayScore": 14,
-    "homeScore": 16
-  },
-  {
     "a": "Arizona",
     "b": "BYU",
     "date": "2026-09-12",
@@ -91,11 +91,11 @@
     "homeScore": 28
   },
   {
-    "a": "Alabama",
-    "b": "Kentucky",
+    "a": "Utah State",
+    "b": "Washington",
     "date": "2026-09-12",
-    "awayScore": 45,
-    "homeScore": 17
+    "awayScore": 14,
+    "homeScore": 16
   },
   {
     "a": "UC Davis",
