@@ -54,6 +54,7 @@ Writes: data/track-record.json
 import csv
 import io
 import json
+import math
 import os
 import re
 import sys
@@ -214,10 +215,31 @@ def is_extreme_mismatch(market):
     return a_spread is not None and abs(a_spread) > EXTREME_MISMATCH_SPREAD
 
 
+MIN_LEARNED_PROB = 0.55  # mirrors index.html's MIN_LEARNED_PROB -- keep in sync
+
+
+def load_model_weights():
+    return load_json("data/model_weights.json", None)
+
+
+def predict_hit_probability(model_weights, edge, is_favorite, is_cfb):
+    """Mirrors index.html's predictHitProbability() -- see that
+    function's comment for the full reasoning. Returns None (not a
+    number) if the model isn't trained yet; callers must treat that as
+    "no opinion," not "predicts a miss.\""""
+    if not model_weights or not model_weights.get("trained"):
+        return None
+    w = model_weights["weights"]
+    scaled_edge = (edge - model_weights["edge_mean"]) / model_weights["edge_std"]
+    z = model_weights["bias"] + w[0] * scaled_edge + w[1] * (1 if is_favorite else 0) + w[2] * (1 if is_cfb else 0)
+    return 1 / (1 + math.exp(-z))
+
+
 def compute_team_bets(games, teams, odds_list, league):
     """Every game's spread + total pick -- no top-N cut. (Was capped at 10
     by combined edge; that cap is what's removed here so the whole week's
     slate gets tracked, not just the model's most-confident-looking picks.)"""
+    model_weights = load_model_weights()
     candidates = []
     for g in games:
         if is_cross_division_game(g, teams, league):
@@ -230,6 +252,7 @@ def compute_team_bets(games, teams, odds_list, league):
             continue
         if is_extreme_mismatch(market):
             continue
+        is_cfb = league == "CFB"
         a_is_entry_a = team_names_match(market.get("aTeam"), g["a"])
         a_spread_val = market.get("aSpread")
         if a_spread_val is not None:
@@ -240,21 +263,29 @@ def compute_team_bets(games, teams, odds_list, league):
                 favored_line = market.get("aSpread") if spread_edge > 0 else market.get("bSpread")
             else:
                 favored_line = market.get("bSpread") if spread_edge > 0 else market.get("aSpread")
-            candidates.append({
-                "type": "spread", "edge": abs(spread_edge),
-                "label": f"{favored_team} {'+' if favored_line and favored_line > 0 else ''}{favored_line}",
-                "matchup": f"{g['a']} vs {g['b']}", "favored_team": favored_team, "line": favored_line,
-                "game_date": g.get("date"),
-            })
+            learned_prob = predict_hit_probability(model_weights, abs(spread_edge), (favored_line or 0) < 0, is_cfb)
+            if learned_prob is None or learned_prob >= MIN_LEARNED_PROB:
+                candidates.append({
+                    "type": "spread", "edge": abs(spread_edge),
+                    "label": f"{favored_team} {'+' if favored_line and favored_line > 0 else ''}{favored_line}",
+                    "matchup": f"{g['a']} vs {g['b']}", "favored_team": favored_team, "line": favored_line,
+                    "game_date": g.get("date"),
+                })
         total_val = market.get("total")
         if total_val is not None:
             total_edge = proj["total"] - total_val
-            candidates.append({
-                "type": "total", "edge": abs(total_edge),
-                "label": f"{'Over' if total_edge > 0 else 'Under'} {total_val}",
-                "matchup": f"{g['a']} vs {g['b']}", "direction": "over" if total_edge > 0 else "under", "line": total_val,
-                "game_date": g.get("date"),
-            })
+            # Totals have no clean "favorite" side the way spreads do, so
+            # is_favorite is passed as False -- same reasoning as
+            # index.html's mirror of this (see that comment for the
+            # honest caveat about totals vs. dog-side spreads).
+            learned_prob = predict_hit_probability(model_weights, abs(total_edge), False, is_cfb)
+            if learned_prob is None or learned_prob >= MIN_LEARNED_PROB:
+                candidates.append({
+                    "type": "total", "edge": abs(total_edge),
+                    "label": f"{'Over' if total_edge > 0 else 'Under'} {total_val}",
+                    "matchup": f"{g['a']} vs {g['b']}", "direction": "over" if total_edge > 0 else "under", "line": total_val,
+                    "game_date": g.get("date"),
+                })
     return candidates
 
 
