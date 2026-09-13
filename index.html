@@ -2527,7 +2527,17 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
     // have been -- more points for the same side can only ever raise the
     // probability, never lower it.
     const lineAsAFavored = side==='A' ? -rawLine : rawLine;
-    signedEdge = proj.spread - lineAsAFavored;
+    // BUG FIX, confirmed live: Bears vs Bills, checking EITHER team at
+    // -0.5 both came back under 50% -- impossible, since one of them has
+    // to be the more likely winner. Root cause: a bet on side B needs the
+    // OPPOSITE condition on A's margin that a bet on side A does (A's
+    // margin needs to be ABOVE a threshold for an A-side bet to hit, but
+    // BELOW that same threshold for a B-side bet to hit) -- computing
+    // proj.spread minus the line the same way for both sides silently
+    // used A's winning condition even when checking B. Flipping the sign
+    // specifically for side B corrects this.
+    const rawSignedEdge = proj.spread - lineAsAFavored;
+    signedEdge = side==='A' ? rawSignedEdge : -rawSignedEdge;
     isFavorite = rawLine<0;
     label = sideName+' '+(rawLine>0?'+':'')+rawLine;
   } else {
