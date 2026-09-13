@@ -454,6 +454,13 @@
       <div class="note" style="margin-top:0;">Every week's bets get logged automatically before the games are played — every game's spread and total, not just a curated top 10, plus a player prop projection for every player who clears a minimum recent-volume bar. Once a game (or a player's next game) is final, its pick gets graded hit/miss/push against the real result. Team bets grade against the real market line. Player props have no real sportsbook line in this pipeline, so they grade against the model's own projected number — that measures whether the projection itself is well-calibrated, not whether a real bet would have won.</div>
     </div>
     <div class="card">
+      <div class="tabs" id="track-season-filter" style="margin-bottom:0;">
+        <div class="subtab active" data-trackseasonfilter="MAIN">This Season</div>
+        <div class="subtab" data-trackseasonfilter="TEST">Test Weeks (Wk 1-3)</div>
+      </div>
+      <div class="note" id="track-season-note" style="margin-top:10px;"></div>
+    </div>
+    <div class="card">
       <h2>All-time record <span class="pill" id="track-record-summary"></span></h2>
       <div class="tabs" id="track-filter" style="margin-bottom:8px;">
         <div class="subtab active" data-trackfilter="ALL">All</div>
@@ -2021,6 +2028,33 @@ async function renderTopBets(){
 let trackFilter = 'ALL';
 let trackTypeFilter = 'ALL';
 let trackStatusFilter = 'FINISHED'; // defaults to Finished -- with hundreds of new pending picks logged every week, "All" sorted by date_logged buries every finished bet under the current week's fresh pending ones
+let trackSeasonFilter = 'MAIN'; // MAIN = everything after the test-week cutoff (the "real" record); TEST = the first TEST_WEEKS_CUTOFF weeks only
+
+// Confirmed-anchored to this season's real Week 1 kickoff (the New
+// England @ Seattle game on 2026-09-09, the earliest real game seen in
+// this app's own data). Used only to bucket CFB picks into a week number
+// comparable to NFL's native week field, since CFB has no equivalent
+// stored anywhere in this pipeline (see track_predictions.py's cfb week
+// labeling for the full story on why CFB uses a date-based label at
+// all). If a future season's real Week 1 start date differs, update this.
+const SEASON_START_DATE = '2026-09-05';
+const TEST_WEEKS_CUTOFF = 3; // picks in weeks 1-3 (either league) are quarantined into "Test Weeks" -- the model is still calibrating on a tiny sample that early (see calibrate_model.py's own 30-pick minimum), so folding those results into the "real" all-time record would let early noise permanently drag down a number meant to reflect the calibrated system
+function pickWeekNumber(p){
+  if(p.league==='NFL'){
+    const m = /NFL-Week(\d+)/.exec(p.week||'');
+    return m ? parseInt(m[1],10) : null;
+  }
+  const m = /CFB-(\d{4}-\d{2}-\d{2})/.exec(p.week||'');
+  if(!m) return null;
+  const gameDate = new Date(m[1]+'T00:00:00Z');
+  const start = new Date(SEASON_START_DATE+'T00:00:00Z');
+  const days = Math.floor((gameDate-start)/(1000*60*60*24));
+  return days>=0 ? Math.floor(days/7)+1 : null;
+}
+function isTestWeekPick(p){
+  const wk = pickWeekNumber(p);
+  return wk!==null && wk>=1 && wk<=TEST_WEEKS_CUTOFF;
+}
 function summarizePicks(picks){
   const graded = picks.filter(function(p){ return p.status==='hit' || p.status==='miss' || p.status==='push'; });
   const hits = graded.filter(function(p){ return p.status==='hit'; }).length;
@@ -2035,7 +2069,16 @@ function summaryLine(s){
 }
 async function renderTrackRecord(){
   const data = await fetchJSON('./data/track-record.json');
-  const allPicks = (data && data.picks) ? data.picks : [];
+  const rawPicks = (data && data.picks) ? data.picks : [];
+  const allPicks = rawPicks.filter(function(p){ return trackSeasonFilter==='TEST' ? isTestWeekPick(p) : !isTestWeekPick(p); });
+
+  const seasonNote = document.getElementById('track-season-note');
+  if(seasonNote){
+    seasonNote.textContent = trackSeasonFilter==='TEST'
+      ? 'Weeks 1-'+TEST_WEEKS_CUTOFF+' only, kept separate from the main record below. Confidence thresholds are still calibrating this early (needs 30+ graded picks per league -- see the note on Top Bets), so these results shouldn\'t count against -- or for -- the "real" number yet.'
+      : 'Weeks '+(TEST_WEEKS_CUTOFF+1)+'+ only -- once the model has enough real results to calibrate from. Check the Test Weeks tab above to see how the first '+TEST_WEEKS_CUTOFF+' weeks went while it was still finding its footing.';
+  }
+
   const leagueFiltered = trackFilter==='ALL' ? allPicks : allPicks.filter(function(p){ return p.league===trackFilter; });
   const typeFiltered = trackTypeFilter==='ALL' ? leagueFiltered : leagueFiltered.filter(function(p){
     return trackTypeFilter==='PLAYER' ? p.type==='player_prop' : p.type!=='player_prop';
@@ -2115,6 +2158,13 @@ document.querySelectorAll('#track-filter [data-trackfilter]').forEach(function(b
   btn.addEventListener('click', function(){
     trackFilter = btn.dataset.trackfilter;
     document.querySelectorAll('#track-filter [data-trackfilter]').forEach(function(b){ b.classList.toggle('active', b===btn); });
+    renderTrackRecord();
+  });
+});
+document.querySelectorAll('#track-season-filter [data-trackseasonfilter]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    trackSeasonFilter = btn.dataset.trackseasonfilter;
+    document.querySelectorAll('#track-season-filter [data-trackseasonfilter]').forEach(function(b){ b.classList.toggle('active', b===btn); });
     renderTrackRecord();
   });
 });
