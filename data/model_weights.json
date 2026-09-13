@@ -1,0 +1,11 @@
+{
+  "last_updated": "2026-09-13",
+  "sample_size": 26,
+  "min_sample_size": 150,
+  "trained": false,
+  "features": [
+    "edge",
+    "is_favorite",
+    "league_is_cfb"
+  ]
+}
