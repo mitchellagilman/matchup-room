@@ -80,10 +80,53 @@ def main():
         return
 
     try:
-        game_rows = [g for g in fetch_csv(GAMES_URL) if g.get("season") == str(YEAR) and g.get("game_type") == "REG"]
+        all_game_rows = fetch_csv(GAMES_URL)  # multi-season historical file -- reused below for last season's final stats too, no second fetch needed for this part
     except Exception as e:
         print(f"Could not fetch games.csv ({e}); leaving existing file untouched.", file=sys.stderr)
         return
+    game_rows = [g for g in all_game_rows if g.get("season") == str(YEAR) and g.get("game_type") == "REG"]
+
+    # Previous season's final team stats -- used as the shrinkage PRIOR
+    # instead of a flat league average (see the "prev_*" fields below and
+    # index.html's shrinkToLeagueAvg for how these get used). Confirmed
+    # live: shrinking early-season stats toward a generic league-average
+    # target meant a team with a real, multi-year track record of being
+    # bad (or good) got treated as a coin-flip-average team for the first
+    # few weeks of a new season, which doesn't reflect reality -- a real
+    # sportsbook's opening line (e.g. a real Bills-Jets line) already
+    # prices in exactly that kind of history, which this pipeline
+    # previously had no way to. This isn't a perfect substitute for that
+    # (a team can genuinely improve/decline between seasons), but it's a
+    # much more informed prior than "assume average" for the handful of
+    # weeks before this season's own sample size takes over.
+    prev_game_rows = [g for g in all_game_rows if g.get("season") == str(YEAR - 1) and g.get("game_type") == "REG"]
+    prev_scores_by_team = {}
+    for g in prev_game_rows:
+        home, away = g.get("home_team"), g.get("away_team")
+        try:
+            hs, as_ = float(g["home_score"]), float(g["away_score"])
+        except (TypeError, ValueError, KeyError):
+            continue
+        prev_scores_by_team.setdefault(home, []).append({"for": hs, "against": as_})
+        prev_scores_by_team.setdefault(away, []).append({"for": as_, "against": hs})
+
+    prev_to_by_team = {}
+    try:
+        prev_stat_rows = fetch_csv(STATS_URL.replace(str(YEAR), str(YEAR - 1)))
+        prev_offense_by_game_team = {}
+        for row in prev_stat_rows:
+            prev_offense_by_game_team.setdefault(row["game_id"], {})[row["team"]] = row
+        prev_to_sum, prev_to_count = {}, {}
+        for game_id, teams_in_game in prev_offense_by_game_team.items():
+            for team, row in teams_in_game.items():
+                takeaways = to_num(row, "def_interceptions") + to_num(row, "fumble_recovery_opp")
+                giveaways = (to_num(row, "passing_interceptions") + to_num(row, "sack_fumbles_lost")
+                             + to_num(row, "rushing_fumbles_lost") + to_num(row, "receiving_fumbles_lost"))
+                prev_to_sum[team] = prev_to_sum.get(team, 0) + (takeaways - giveaways)
+                prev_to_count[team] = prev_to_count.get(team, 0) + 1
+        prev_to_by_team = {team: prev_to_sum[team] / prev_to_count[team] for team in prev_to_sum}
+    except Exception as e:
+        print(f"Could not fetch previous season's turnover stats ({e}); prevTo will be omitted, not guessed.", file=sys.stderr)
 
     # game_id -> team -> row, so we can look up "what did my opponent do in
     # this game" (= what I allowed).
@@ -100,8 +143,8 @@ def main():
         except (TypeError, ValueError):
             continue  # game hasn't been played yet
         week = g.get("week")
-        scores_by_team.setdefault(home, []).append({"for": hs, "against": as_, "week": week, "opp": away})
-        scores_by_team.setdefault(away, []).append({"for": as_, "against": hs, "week": week, "opp": home})
+        scores_by_team.setdefault(home, []).append({"for": hs, "against": as_, "week": week, "opp": away, "venue": "home"})
+        scores_by_team.setdefault(away, []).append({"for": as_, "against": hs, "week": week, "opp": home, "venue": "away"})
 
     per_team = {}  # team -> list of per-game dicts
     for game_id, teams_in_game in offense_by_game_team.items():
@@ -163,6 +206,32 @@ def main():
             "wk1": True,
             "games": game_log if game_log else existing.get("games", []),
         }
+        prev_scores = prev_scores_by_team.get(abbr)
+        if prev_scores:
+            teams[full_name]["prevPpg"] = round(sum(s["for"] for s in prev_scores) / len(prev_scores), 1)
+            teams[full_name]["prevPa"] = round(sum(s["against"] for s in prev_scores) / len(prev_scores), 1)
+        if abbr in prev_to_by_team:
+            teams[full_name]["prevTo"] = round(prev_to_by_team[abbr], 2)
+
+        # Home/away splits -- confirmed live this was a real gap: every
+        # team previously got one blended ppg/pa average regardless of
+        # venue, plus the same flat home-field-advantage constant applied
+        # to everyone equally. A team that's genuinely much stronger at
+        # home than on the road (or vice versa) wasn't reflected at all.
+        # Stored here; index.html/track_predictions.py decide how much to
+        # trust these vs. the season-wide number based on how many home
+        # (or away) games actually exist yet -- early season, that's often
+        # just 1-2, so this needs its own shrinkage, not blind trust.
+        home_scores = [s for s in scores if s["venue"] == "home"]
+        away_scores = [s for s in scores if s["venue"] == "away"]
+        if home_scores:
+            teams[full_name]["homePpg"] = round(sum(s["for"] for s in home_scores) / len(home_scores), 1)
+            teams[full_name]["homePa"] = round(sum(s["against"] for s in home_scores) / len(home_scores), 1)
+            teams[full_name]["homeGames"] = len(home_scores)
+        if away_scores:
+            teams[full_name]["awayPpg"] = round(sum(s["for"] for s in away_scores) / len(away_scores), 1)
+            teams[full_name]["awayPa"] = round(sum(s["against"] for s in away_scores) / len(away_scores), 1)
+            teams[full_name]["awayGames"] = len(away_scores)
 
     with open(EXISTING_PATH, "w") as f:
         json.dump(teams, f, indent=2)
