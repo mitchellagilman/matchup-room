@@ -1468,19 +1468,46 @@ function edgeRow(label, aVal, bVal, higherIsBetterForA){
 //    meaningfully help accuracy, especially early season.
 const HOME_ADV = {NFL: 2.0, CFB: 2.5};
 const TO_FACTOR = 1.5; // points per turnover-margin-per-game
-const SHRINK_PRIOR_GAMES = 3; // "pseudo-games" of league-average weight blended into small samples
+const SHRINK_PRIOR_GAMES = 3; // "pseudo-games" of prior weight blended into small samples
 // A team's ppg/pa/turnover-margin from just 1-2 games is an extreme-outlier-
 // prone sample -- confirmed live: an NFL team's turnover margin input was
 // literally just their single Week 1 game's result (+/-3.0, the single most
 // extreme value across the whole league), with nothing to smooth it, and no
 // opponent-adjusted rating exists for NFL the way SP+ does for CFB to help
-// correct it. This blends a raw stat toward the league average, weighted by
-// how many real games it's actually built from -- 1 game gets pulled hard
-// toward average, 8+ games are barely touched. Falls back to the raw stat
-// untouched if games-played data isn't available yet (older cached data).
-function shrinkToLeagueAvg(rawStat, leagueAvg, gamesPlayed){
-  if(!gamesPlayed || gamesPlayed<=0 || leagueAvg===null || leagueAvg===undefined) return rawStat;
-  return (rawStat*gamesPlayed + leagueAvg*SHRINK_PRIOR_GAMES) / (gamesPlayed + SHRINK_PRIOR_GAMES);
+// correct it. This blends a raw stat toward a PRIOR, weighted by how many
+// real games the current-season number is actually built from -- 1 game
+// gets pulled hard toward the prior, 8+ games are barely touched.
+//
+// PRIOR CHOICE, confirmed live this matters a lot: a flat LEAGUE AVERAGE
+// was the only prior available at first, which meant a team with a real,
+// multi-year track record of being bad (or good) got treated as a
+// coin-flip-average team for the first few weeks of every new season --
+// e.g. Bills vs Jets projecting near a pick'em when a real opening market
+// line had Bills favored by 9.5. Falls back to league average only when a
+// team has no previous-season data at all (fetch_nfl.py/fetch_cfb.py
+// couldn't find a prior year, e.g. a new/relocated team) -- not a claim
+// that a team can't improve or decline between seasons, just a more
+// informed starting point than "assume average" for the early weeks
+// before this season's own sample size takes over.
+function shrinkStat(rawStat, teamPrior, leagueAvg, gamesPlayed){
+  const prior = (teamPrior!==null && teamPrior!==undefined) ? teamPrior : leagueAvg;
+  if(!gamesPlayed || gamesPlayed<=0 || prior===null || prior===undefined) return rawStat;
+  return (rawStat*gamesPlayed + prior*SHRINK_PRIOR_GAMES) / (gamesPlayed + SHRINK_PRIOR_GAMES);
+}
+// Nested shrinkage for home/away splits, confirmed live this was a real
+// gap: every team previously got one blended ppg/pa average regardless of
+// venue, plus the same flat HOME_ADV constant applied to every team
+// equally, with no way to reflect a team that's genuinely stronger at
+// home (or on the road) than average. venueGames is naturally small
+// (often 1-2 games apiece, even deep into a season) -- shrinking the
+// venue-specific number toward the ALREADY-shrunk season-wide number
+// (rather than toward a flat league average directly) keeps this
+// properly conservative: a team's one road game so far gets pulled hard
+// toward their overall (already prior-blended) level, not treated as a
+// reliable "this is their road identity" signal on its own.
+function venueAdjustedStat(venueStat, venueGames, seasonShrunkStat){
+  if(venueStat===null || venueStat===undefined || !venueGames) return seasonShrunkStat;
+  return (venueStat*venueGames + seasonShrunkStat*SHRINK_PRIOR_GAMES) / (venueGames + SHRINK_PRIOR_GAMES);
 }
 function computeProjection(nameA, nameB, league){
   const A = teamsCache[nameA], B = teamsCache[nameB];
@@ -1495,12 +1522,19 @@ function computeProjection(nameA, nameB, league){
   const leagueAvgPpg = leagueAvgDefStat(league, 'ppg');
   const leagueAvgPa = leagueAvgDefStat(league, 'pa');
   const leagueAvgTo = leagueAvgDefStat(league, 'to');
-  const aPpg = shrinkToLeagueAvg(A.ppg, leagueAvgPpg, aGamesPlayed);
-  const aPa = shrinkToLeagueAvg(A.pa, leagueAvgPa, aGamesPlayed);
-  const aTo = shrinkToLeagueAvg(A.to||0, leagueAvgTo, aGamesPlayed);
-  const bPpg = shrinkToLeagueAvg(B.ppg, leagueAvgPpg, bGamesPlayed);
-  const bPa = shrinkToLeagueAvg(B.pa, leagueAvgPa, bGamesPlayed);
-  const bTo = shrinkToLeagueAvg(B.to||0, leagueAvgTo, bGamesPlayed);
+  // A is treated as the away team, B as home -- same convention this
+  // whole app already uses for HOME_ADV below, so away-specific stats
+  // apply to A and home-specific stats to B.
+  const aPpgSeason = shrinkStat(A.ppg, A.prevPpg, leagueAvgPpg, aGamesPlayed);
+  const aPaSeason = shrinkStat(A.pa, A.prevPa, leagueAvgPa, aGamesPlayed);
+  const aTo = shrinkStat(A.to||0, A.prevTo, leagueAvgTo, aGamesPlayed);
+  const bPpgSeason = shrinkStat(B.ppg, B.prevPpg, leagueAvgPpg, bGamesPlayed);
+  const bPaSeason = shrinkStat(B.pa, B.prevPa, leagueAvgPa, bGamesPlayed);
+  const bTo = shrinkStat(B.to||0, B.prevTo, leagueAvgTo, bGamesPlayed);
+  const aPpg = venueAdjustedStat(A.awayPpg, A.awayGames, aPpgSeason);
+  const aPa = venueAdjustedStat(A.awayPa, A.awayGames, aPaSeason);
+  const bPpg = venueAdjustedStat(B.homePpg, B.homeGames, bPpgSeason);
+  const bPa = venueAdjustedStat(B.homePa, B.homeGames, bPaSeason);
 
   const homeAdv = HOME_ADV[league] || 2.0;
   let aScoreBox = (aPpg + bPa)/2 - homeAdv/2 + aTo*TO_FACTOR;
