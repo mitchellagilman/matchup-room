@@ -177,6 +177,32 @@ def main():
         print(f"Could not fetch /games ({e}); leaving existing file untouched.", file=sys.stderr)
         return
 
+    # Previous season's final points -- used as the shrinkage PRIOR instead
+    # of a flat league average (see index.html's shrinkStat and
+    # fetch_nfl.py's matching comment for the full reasoning: a team with a
+    # real multi-year track record of being strong or weak was otherwise
+    # getting treated as a coin-flip-average team for the first few weeks
+    # of a new season). Just one extra CFBD call regardless of how many
+    # games are in the season -- negligible against the monthly budget.
+    prev_points_by_team = {}
+    try:
+        prev_games = cfbd_get("/games", {"year": YEAR - 1, "seasonType": "regular"}, api_key)
+        prev_sum, prev_count = {}, {}
+        for g in prev_games:
+            home, away = g.get("homeTeam"), g.get("awayTeam")
+            hp, ap = g.get("homePoints"), g.get("awayPoints")
+            if hp is None or ap is None or not home or not away:
+                continue
+            for team, pf, pa in ((home, hp, ap), (away, ap, hp)):
+                prev_sum.setdefault(team, {"for": 0, "against": 0})
+                prev_sum[team]["for"] += pf
+                prev_sum[team]["against"] += pa
+                prev_count[team] = prev_count.get(team, 0) + 1
+        for team, n in prev_count.items():
+            prev_points_by_team[team] = {"ppg": prev_sum[team]["for"] / n, "pa": prev_sum[team]["against"] / n}
+    except Exception as e:
+        print(f"Could not fetch previous season's games for shrinkage priors ({e}); prevPpg/prevPa will be omitted, not guessed.", file=sys.stderr)
+
     games_teams = []
     for classification in CLASSIFICATIONS:
         batch = fetch_games_teams_for(classification, api_key)
@@ -218,8 +244,8 @@ def main():
         if hp is None or ap is None:
             continue  # not played yet
         week = g.get("week")
-        points_by_team.setdefault(home, []).append({"for": hp, "against": ap, "week": week, "opp": away})
-        points_by_team.setdefault(away, []).append({"for": ap, "against": hp, "week": week, "opp": home})
+        points_by_team.setdefault(home, []).append({"for": hp, "against": ap, "week": week, "opp": away, "venue": "home"})
+        points_by_team.setdefault(away, []).append({"for": ap, "against": hp, "week": week, "opp": home, "venue": "away"})
 
     per_team_games = {}  # team -> list of {passOff, rushOff, passDef, rushDef}
     for gid, teams_in_game in offense_by_game_team.items():
@@ -276,6 +302,21 @@ def main():
             "wk1": True,
             "games": game_log if game_log else existing.get("games", []),
         }
+        prev = prev_points_by_team.get(team)
+        if prev:
+            teams[team]["prevPpg"] = round(prev["ppg"], 1)
+            teams[team]["prevPa"] = round(prev["pa"], 1)
+
+        home_pts = [p for p in pts if p["venue"] == "home"]
+        away_pts = [p for p in pts if p["venue"] == "away"]
+        if home_pts:
+            teams[team]["homePpg"] = round(sum(p["for"] for p in home_pts) / len(home_pts), 1)
+            teams[team]["homePa"] = round(sum(p["against"] for p in home_pts) / len(home_pts), 1)
+            teams[team]["homeGames"] = len(home_pts)
+        if away_pts:
+            teams[team]["awayPpg"] = round(sum(p["for"] for p in away_pts) / len(away_pts), 1)
+            teams[team]["awayPa"] = round(sum(p["against"] for p in away_pts) / len(away_pts), 1)
+            teams[team]["awayGames"] = len(away_pts)
         updated += 1
         if division == "fbs":
             fbs_updated += 1
