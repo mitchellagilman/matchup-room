@@ -3,13 +3,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 48.0,
-    "pa": 10.0,
-    "passOff": 260.0,
-    "rushOff": 227.0,
-    "passDef": 160.0,
-    "rushDef": 2.0,
+    "record": "2-0",
+    "ppg": 46.5,
+    "pa": 13.5,
+    "passOff": 224.0,
+    "rushOff": 191.0,
+    "passDef": 153.0,
+    "rushDef": 32.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -19,6 +19,13 @@
         "opp": "East Carolina",
         "teamScore": 48,
         "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Kentucky",
+        "teamScore": 45,
+        "oppScore": 17,
         "result": "W"
       }
     ],
@@ -53,13 +60,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 17.0,
-    "pa": 16.0,
-    "passOff": 259.0,
-    "rushOff": 130.0,
-    "passDef": 333.0,
-    "rushDef": 103.0,
+    "record": "2-0",
+    "ppg": 30.0,
+    "pa": 12.0,
+    "passOff": 263.0,
+    "rushOff": 236.5,
+    "passDef": 252.0,
+    "rushDef": 76.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -70,6 +77,13 @@
         "teamScore": 17,
         "oppScore": 16,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Southern Miss",
+        "teamScore": 43,
+        "oppScore": 8,
+        "result": "W"
       }
     ],
     "spPlus": 7.0
@@ -78,13 +92,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 66.0,
-    "pa": 21.0,
-    "passOff": 343.0,
-    "rushOff": 281.0,
-    "passDef": 276.0,
-    "rushDef": 120.0,
+    "record": "2-0",
+    "ppg": 59.0,
+    "pa": 12.0,
+    "passOff": 321.5,
+    "rushOff": 247.5,
+    "passDef": 212.0,
+    "rushDef": 91.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -95,6 +109,13 @@
         "teamScore": 66,
         "oppScore": 21,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Campbell",
+        "teamScore": 52,
+        "oppScore": 3,
+        "result": "W"
       }
     ],
     "spPlus": 18.6
@@ -103,13 +124,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 63.0,
-    "pa": 3.0,
-    "passOff": 388.0,
-    "rushOff": 272.0,
-    "passDef": 99.0,
-    "rushDef": 10.0,
+    "record": "2-0",
+    "ppg": 66.5,
+    "pa": 11.5,
+    "passOff": 323.5,
+    "rushOff": 253.0,
+    "passDef": 107.0,
+    "rushDef": 60.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -120,6 +141,13 @@
         "teamScore": 63,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Western Kentucky",
+        "teamScore": 70,
+        "oppScore": 20,
+        "result": "W"
       }
     ],
     "spPlus": 28.7
@@ -128,13 +156,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 45.0,
-    "pa": 13.0,
-    "passOff": 301.0,
-    "rushOff": 205.0,
-    "passDef": 246.0,
-    "rushDef": 59.0,
+    "record": "1-1",
+    "ppg": 31.0,
+    "pa": 29.0,
+    "passOff": 223.5,
+    "rushOff": 134.0,
+    "passDef": 217.0,
+    "rushDef": 107.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -145,6 +173,13 @@
         "teamScore": 45,
         "oppScore": 13,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Alabama",
+        "teamScore": 17,
+        "oppScore": 45,
+        "result": "L"
       }
     ],
     "spPlus": 8.5
@@ -153,13 +188,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 51.0,
-    "pa": 10.0,
-    "passOff": 335.0,
-    "rushOff": 309.0,
-    "passDef": 105.0,
-    "rushDef": 40.0,
+    "record": "2-0",
+    "ppg": 48.0,
+    "pa": 12.0,
+    "passOff": 358.0,
+    "rushOff": 228.0,
+    "passDef": 124.0,
+    "rushDef": 18.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -170,6 +205,13 @@
         "teamScore": 51,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Louisiana Tech",
+        "teamScore": 45,
+        "oppScore": 14,
+        "result": "W"
       }
     ],
     "spPlus": 23.3
@@ -178,13 +220,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 62.0,
+    "record": "2-0",
+    "ppg": 50.0,
     "pa": 13.0,
-    "passOff": 417.0,
-    "rushOff": 345.0,
-    "passDef": 140.0,
-    "rushDef": 138.0,
+    "passOff": 322.0,
+    "rushOff": 298.5,
+    "passDef": 209.5,
+    "rushDef": 75.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -193,6 +235,13 @@
         "week": 1,
         "opp": "UL Monroe",
         "teamScore": 62,
+        "oppScore": 13,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Minnesota",
+        "teamScore": 38,
         "oppScore": 13,
         "result": "W"
       }
@@ -235,13 +284,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 51.0,
-    "pa": 0.0,
-    "passOff": 231.0,
-    "rushOff": 170.0,
-    "passDef": 86.0,
-    "rushDef": 112.0,
+    "record": "1-1",
+    "ppg": 30.5,
+    "pa": 8.5,
+    "passOff": 210.0,
+    "rushOff": 135.0,
+    "passDef": 98.5,
+    "rushDef": 132.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -252,6 +301,13 @@
         "teamScore": 51,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Michigan",
+        "teamScore": 10,
+        "oppScore": 17,
+        "result": "L"
       }
     ],
     "spPlus": 21.7
@@ -260,13 +316,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
+    "record": "2-0",
     "ppg": 41.0,
-    "pa": 38.0,
-    "passOff": 336.0,
-    "rushOff": 152.0,
-    "passDef": 307.0,
-    "rushDef": 162.0,
+    "pa": 23.5,
+    "passOff": 314.5,
+    "rushOff": 139.5,
+    "passDef": 243.0,
+    "rushDef": 152.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -277,6 +333,13 @@
         "teamScore": 41,
         "oppScore": 38,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Charlotte",
+        "teamScore": 41,
+        "oppScore": 9,
+        "result": "W"
       }
     ],
     "spPlus": 13.3
@@ -285,13 +348,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 57.0,
-    "pa": 0.0,
-    "passOff": 367.0,
-    "rushOff": 278.0,
-    "passDef": 79.0,
-    "rushDef": 100.0,
+    "record": "2-0",
+    "ppg": 51.0,
+    "pa": 4.5,
+    "passOff": 232.0,
+    "rushOff": 341.5,
+    "passDef": 130.5,
+    "rushDef": 60.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -302,6 +365,13 @@
         "teamScore": 57,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Towson",
+        "teamScore": 45,
+        "oppScore": 9,
+        "result": "W"
       }
     ],
     "spPlus": 16.7
@@ -310,13 +380,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 56.0,
-    "pa": 9.0,
-    "passOff": 309.0,
-    "rushOff": 329.0,
-    "passDef": 43.0,
-    "rushDef": 178.0,
+    "record": "2-0",
+    "ppg": 50.5,
+    "pa": 16.5,
+    "passOff": 228.5,
+    "rushOff": 314.0,
+    "passDef": 132.0,
+    "rushDef": 156.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -327,6 +397,13 @@
         "teamScore": 56,
         "oppScore": 9,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Georgia Tech",
+        "teamScore": 45,
+        "oppScore": 24,
+        "result": "W"
       }
     ],
     "spPlus": 19.9
@@ -335,13 +412,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 59.0,
-    "pa": 7.0,
-    "passOff": 360.0,
-    "rushOff": 156.0,
-    "passDef": 188.0,
-    "rushDef": 161.0,
+    "record": "2-0",
+    "ppg": 41.5,
+    "pa": 15.0,
+    "passOff": 278.0,
+    "rushOff": 148.0,
+    "passDef": 233.0,
+    "rushDef": 127.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -352,6 +429,13 @@
         "teamScore": 59,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Ohio State",
+        "teamScore": 24,
+        "oppScore": 23,
+        "result": "W"
       }
     ],
     "spPlus": 25.4
@@ -360,13 +444,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 50.0,
-    "pa": 0.0,
-    "passOff": 269.0,
-    "rushOff": 236.0,
-    "passDef": 30.0,
-    "rushDef": 37.0,
+    "record": "2-0",
+    "ppg": 49.0,
+    "pa": 10.0,
+    "passOff": 216.0,
+    "rushOff": 164.0,
+    "passDef": 142.0,
+    "rushDef": 76.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -377,6 +461,13 @@
         "teamScore": 50,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Arizona State",
+        "teamScore": 48,
+        "oppScore": 20,
+        "result": "W"
       }
     ],
     "spPlus": 23.9
@@ -385,13 +476,13 @@
     "league": "CFB",
     "conf": "SEC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 28.0,
-    "pa": 9.0,
-    "passOff": 209.0,
-    "rushOff": 187.0,
-    "passDef": 116.0,
-    "rushDef": 62.0,
+    "record": "2-0",
+    "ppg": 31.5,
+    "pa": 17.5,
+    "passOff": 224.0,
+    "rushOff": 143.5,
+    "passDef": 178.0,
+    "rushDef": 80.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -402,6 +493,13 @@
         "teamScore": 28,
         "oppScore": 9,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Delaware",
+        "teamScore": 35,
+        "oppScore": 26,
+        "result": "W"
       }
     ],
     "spPlus": 12.1
@@ -410,13 +508,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 42.0,
-    "pa": 23.0,
-    "passOff": 182.0,
-    "rushOff": 150.0,
-    "passDef": 219.0,
-    "rushDef": 194.0,
+    "record": "1-1",
+    "ppg": 34.5,
+    "pa": 27.0,
+    "passOff": 226.5,
+    "rushOff": 130.5,
+    "passDef": 212.5,
+    "rushDef": 182.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -427,6 +525,13 @@
         "teamScore": 42,
         "oppScore": 23,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Duke",
+        "teamScore": 27,
+        "oppScore": 31,
+        "result": "L"
       }
     ],
     "spPlus": 7.5
@@ -435,13 +540,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 52.0,
-    "pa": 16.0,
-    "passOff": 231.0,
-    "rushOff": 134.0,
-    "passDef": 215.0,
-    "rushDef": 152.0,
+    "record": "2-0",
+    "ppg": 53.5,
+    "pa": 8.0,
+    "passOff": 220.0,
+    "rushOff": 217.5,
+    "passDef": 129.5,
+    "rushDef": 82.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -452,6 +557,13 @@
         "teamScore": 52,
         "oppScore": 16,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Howard",
+        "teamScore": 55,
+        "oppScore": 0,
+        "result": "W"
       }
     ],
     "spPlus": 24.1
@@ -460,13 +572,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 40.0,
-    "pa": 0.0,
-    "passOff": 218.0,
-    "rushOff": 289.0,
-    "passDef": 113.0,
-    "rushDef": 7.0,
+    "record": "2-0",
+    "ppg": 28.0,
+    "pa": 6.5,
+    "passOff": 204.5,
+    "rushOff": 191.0,
+    "passDef": 115.0,
+    "rushDef": 72.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -477,6 +589,13 @@
         "teamScore": 40,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Iowa State",
+        "teamScore": 16,
+        "oppScore": 13,
+        "result": "W"
       }
     ],
     "spPlus": 18.0
@@ -485,13 +604,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 62.0,
-    "pa": 0.0,
-    "passOff": 281.0,
-    "rushOff": 365.0,
-    "passDef": 75.0,
-    "rushDef": 10.0,
+    "record": "2-0",
+    "ppg": 50.0,
+    "pa": 7.0,
+    "passOff": 315.5,
+    "rushOff": 245.0,
+    "passDef": 115.5,
+    "rushDef": 38.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -502,6 +621,13 @@
         "teamScore": 62,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "UConn",
+        "teamScore": 38,
+        "oppScore": 14,
+        "result": "W"
       }
     ],
     "spPlus": 9.1
@@ -510,13 +636,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 13.0,
-    "pa": 12.0,
-    "passOff": 170.0,
-    "rushOff": 106.0,
-    "passDef": 89.0,
-    "rushDef": 132.0,
+    "record": "2-0",
+    "ppg": 15.0,
+    "pa": 11.0,
+    "passOff": 140.5,
+    "rushOff": 129.0,
+    "passDef": 139.0,
+    "rushDef": 116.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -527,6 +653,13 @@
         "teamScore": 13,
         "oppScore": 12,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Oklahoma",
+        "teamScore": 17,
+        "oppScore": 10,
+        "result": "W"
       }
     ],
     "spPlus": 12.2
@@ -535,13 +668,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 30.0,
-    "pa": 20.0,
-    "passOff": 247.0,
-    "rushOff": 150.0,
-    "passDef": 196.0,
-    "rushDef": 77.0,
+    "record": "2-0",
+    "ppg": 32.5,
+    "pa": 13.5,
+    "passOff": 230.5,
+    "rushOff": 204.0,
+    "passDef": 157.0,
+    "rushDef": 89.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -552,6 +685,13 @@
         "teamScore": 30,
         "oppScore": 20,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Eastern Michigan",
+        "teamScore": 35,
+        "oppScore": 7,
+        "result": "W"
       }
     ],
     "spPlus": 1.0
@@ -560,13 +700,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 59.0,
-    "pa": 7.0,
-    "passOff": 348.0,
-    "rushOff": 147.0,
-    "passDef": 59.0,
-    "rushDef": 51.0,
+    "record": "1-1",
+    "ppg": 36.0,
+    "pa": 22.5,
+    "passOff": 313.5,
+    "rushOff": 80.0,
+    "passDef": 143.0,
+    "rushDef": 151.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -577,6 +717,13 @@
         "teamScore": 59,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Mississippi State",
+        "teamScore": 13,
+        "oppScore": 38,
+        "result": "L"
       }
     ],
     "spPlus": 9.6
@@ -585,13 +732,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 49.0,
-    "pa": 21.0,
-    "passOff": 275.0,
-    "rushOff": 248.0,
-    "passDef": 164.0,
-    "rushDef": 139.0,
+    "record": "2-0",
+    "ppg": 52.5,
+    "pa": 14.0,
+    "passOff": 278.5,
+    "rushOff": 256.0,
+    "passDef": 124.0,
+    "rushDef": 112.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -601,6 +748,13 @@
         "opp": "Ohio",
         "teamScore": 49,
         "oppScore": 21,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Bowling Green",
+        "teamScore": 56,
+        "oppScore": 7,
         "result": "W"
       }
     ],
@@ -635,13 +789,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 56.0,
-    "pa": 3.0,
-    "passOff": 434.0,
-    "rushOff": 237.0,
-    "passDef": 120.0,
-    "rushDef": 45.0,
+    "record": "1-1",
+    "ppg": 39.5,
+    "pa": 13.5,
+    "passOff": 356.0,
+    "rushOff": 165.5,
+    "passDef": 158.0,
+    "rushDef": 92.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -652,6 +806,13 @@
         "teamScore": 56,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Texas",
+        "teamScore": 23,
+        "oppScore": 24,
+        "result": "L"
       }
     ],
     "spPlus": 30.0
@@ -660,13 +821,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 34.0,
-    "pa": 27.0,
-    "passOff": 378.0,
-    "rushOff": 119.0,
-    "passDef": 181.0,
-    "rushDef": 93.0,
+    "record": "1-1",
+    "ppg": 32.5,
+    "pa": 33.0,
+    "passOff": 284.5,
+    "rushOff": 104.5,
+    "passDef": 249.0,
+    "rushDef": 165.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -677,6 +838,13 @@
         "teamScore": 34,
         "oppScore": 27,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Oklahoma State",
+        "teamScore": 31,
+        "oppScore": 39,
+        "result": "L"
       }
     ],
     "spPlus": 23.9
@@ -685,13 +853,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 45.0,
-    "pa": 0.0,
-    "passOff": 324.0,
-    "rushOff": 163.0,
-    "passDef": 103.0,
-    "rushDef": 44.0,
+    "record": "2-0",
+    "ppg": 36.0,
+    "pa": 4.5,
+    "passOff": 296.0,
+    "rushOff": 125.5,
+    "passDef": 105.0,
+    "rushDef": 110.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -702,6 +870,13 @@
         "teamScore": 45,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Temple",
+        "teamScore": 27,
+        "oppScore": 9,
+        "result": "W"
       }
     ],
     "spPlus": 19.8
@@ -710,13 +885,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 44.0,
-    "pa": 19.0,
-    "passOff": 346.0,
-    "rushOff": 177.0,
-    "passDef": 218.0,
-    "rushDef": 66.0,
+    "record": "1-1",
+    "ppg": 40.0,
+    "pa": 28.5,
+    "passOff": 337.5,
+    "rushOff": 151.5,
+    "passDef": 221.5,
+    "rushDef": 126.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -727,6 +902,13 @@
         "teamScore": 44,
         "oppScore": 19,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Wake Forest",
+        "teamScore": 36,
+        "oppScore": 38,
+        "result": "L"
       }
     ],
     "spPlus": 1.2
@@ -767,13 +949,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 45.0,
-    "pa": 24.0,
-    "passOff": 184.0,
-    "rushOff": 277.0,
-    "passDef": 291.0,
-    "rushDef": 119.0,
+    "record": "2-0",
+    "ppg": 36.5,
+    "pa": 17.0,
+    "passOff": 167.5,
+    "rushOff": 245.5,
+    "passDef": 168.0,
+    "rushDef": 131.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -783,6 +965,13 @@
         "opp": "California",
         "teamScore": 45,
         "oppScore": 24,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "San Diego State",
+        "teamScore": 28,
+        "oppScore": 10,
         "result": "W"
       }
     ],
@@ -824,13 +1013,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 24.0,
-    "pa": 10.0,
-    "passOff": 268.0,
-    "rushOff": 134.0,
-    "passDef": 142.0,
-    "rushDef": 100.0,
+    "record": "2-0",
+    "ppg": 20.0,
+    "pa": 12.0,
+    "passOff": 258.5,
+    "rushOff": 120.5,
+    "passDef": 169.0,
+    "rushDef": 87.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -841,6 +1030,13 @@
         "teamScore": 24,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Utah State",
+        "teamScore": 16,
+        "oppScore": 14,
+        "result": "W"
       }
     ],
     "spPlus": 12.0
@@ -849,13 +1045,13 @@
     "league": "CFB",
     "conf": "Big Ten",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 13.0,
-    "pa": 41.0,
-    "passOff": 217.0,
-    "rushOff": 67.0,
-    "passDef": 239.0,
-    "rushDef": 111.0,
+    "record": "1-1",
+    "ppg": 24.5,
+    "pa": 25.0,
+    "passOff": 195.0,
+    "rushOff": 149.5,
+    "passDef": 193.5,
+    "rushDef": 132.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -866,6 +1062,13 @@
         "teamScore": 13,
         "oppScore": 41,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Western Illinois",
+        "teamScore": 36,
+        "oppScore": 9,
+        "result": "W"
       }
     ],
     "spPlus": -1.5
@@ -874,13 +1077,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 35.0,
-    "pa": 7.0,
-    "passOff": 314.0,
-    "rushOff": 206.0,
-    "passDef": 200.0,
-    "rushDef": -7.0,
+    "record": "1-1",
+    "ppg": 26.0,
+    "pa": 17.5,
+    "passOff": 272.0,
+    "rushOff": 151.5,
+    "passDef": 208.5,
+    "rushDef": 70.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -891,6 +1094,13 @@
         "teamScore": 35,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "BYU",
+        "teamScore": 17,
+        "oppScore": 28,
+        "result": "L"
       }
     ],
     "spPlus": 12.6
@@ -899,13 +1109,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 70.0,
-    "pa": 7.0,
-    "passOff": 432.0,
-    "rushOff": 249.0,
-    "passDef": 86.0,
-    "rushDef": 102.0,
+    "record": "1-1",
+    "ppg": 45.0,
+    "pa": 27.5,
+    "passOff": 343.0,
+    "rushOff": 182.0,
+    "passDef": 124.5,
+    "rushDef": 97.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -916,6 +1126,13 @@
         "teamScore": 70,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Texas A&M",
+        "teamScore": 20,
+        "oppScore": 48,
+        "result": "L"
       }
     ],
     "spPlus": 8.7
@@ -924,13 +1141,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 16.0,
-    "pa": 17.0,
-    "passOff": 333.0,
-    "rushOff": 103.0,
-    "passDef": 259.0,
-    "rushDef": 130.0,
+    "record": "1-1",
+    "ppg": 30.0,
+    "pa": 10.0,
+    "passOff": 320.5,
+    "rushOff": 167.5,
+    "passDef": 166.5,
+    "rushDef": 83.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -941,6 +1158,13 @@
         "teamScore": 16,
         "oppScore": 17,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Prairie View A&M",
+        "teamScore": 44,
+        "oppScore": 3,
+        "result": "W"
       }
     ],
     "spPlus": 4.9
@@ -949,13 +1173,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 63.0,
-    "pa": 7.0,
-    "passOff": 213.0,
-    "rushOff": 308.0,
-    "passDef": 135.0,
-    "rushDef": 49.0,
+    "record": "2-0",
+    "ppg": 45.5,
+    "pa": 12.0,
+    "passOff": 215.0,
+    "rushOff": 228.0,
+    "passDef": 182.5,
+    "rushDef": 73.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -966,6 +1190,13 @@
         "teamScore": 63,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Arizona",
+        "teamScore": 28,
+        "oppScore": 17,
+        "result": "W"
       }
     ],
     "spPlus": 16.8
@@ -974,13 +1205,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 34.0,
-    "pa": 15.0,
-    "passOff": 85.0,
-    "rushOff": 254.0,
-    "passDef": 223.0,
-    "rushDef": 165.0,
+    "record": "2-0",
+    "ppg": 48.0,
+    "pa": 12.5,
+    "passOff": 178.5,
+    "rushOff": 336.0,
+    "passDef": 195.0,
+    "rushDef": 119.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -991,6 +1222,13 @@
         "teamScore": 34,
         "oppScore": 15,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Western Carolina",
+        "teamScore": 62,
+        "oppScore": 10,
+        "result": "W"
       }
     ],
     "spPlus": 5.9
@@ -999,13 +1237,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 14.0,
-    "pa": 13.0,
-    "passOff": 124.0,
-    "rushOff": 183.0,
-    "passDef": 237.0,
-    "rushDef": 51.0,
+    "record": "2-0",
+    "ppg": 33.0,
+    "pa": 17.0,
+    "passOff": 261.0,
+    "rushOff": 181.5,
+    "passDef": 241.0,
+    "rushDef": 89.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1016,6 +1254,13 @@
         "teamScore": 14,
         "oppScore": 13,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Weber State",
+        "teamScore": 52,
+        "oppScore": 21,
+        "result": "W"
       }
     ],
     "spPlus": 2.1
@@ -1024,13 +1269,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 33.0,
-    "pa": 20.0,
-    "passOff": 305.0,
-    "rushOff": 228.0,
-    "passDef": 376.0,
-    "rushDef": 26.0,
+    "record": "2-0",
+    "ppg": 55.0,
+    "pa": 13.0,
+    "passOff": 254.0,
+    "rushOff": 308.0,
+    "passDef": 251.5,
+    "rushDef": 10.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1041,6 +1286,13 @@
         "teamScore": 33,
         "oppScore": 20,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Southern",
+        "teamScore": 77,
+        "oppScore": 6,
+        "result": "W"
       }
     ],
     "spPlus": 6.5
@@ -1049,13 +1301,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 38.0,
-    "pa": 10.0,
-    "passOff": 195.0,
-    "rushOff": 108.0,
-    "passDef": 142.0,
-    "rushDef": 67.0,
+    "record": "1-1",
+    "ppg": 25.5,
+    "pa": 13.0,
+    "passOff": 156.0,
+    "rushOff": 123.0,
+    "passDef": 166.5,
+    "rushDef": 80.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1066,6 +1318,13 @@
         "teamScore": 38,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Iowa",
+        "teamScore": 13,
+        "oppScore": 16,
+        "result": "L"
       }
     ],
     "spPlus": 3.1
@@ -1106,13 +1365,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 71.0,
-    "pa": 3.0,
-    "passOff": 247.0,
-    "rushOff": 312.0,
-    "passDef": 30.0,
-    "rushDef": 92.0,
+    "record": "2-0",
+    "ppg": 52.5,
+    "pa": 5.0,
+    "passOff": 219.5,
+    "rushOff": 303.5,
+    "passDef": 47.5,
+    "rushDef": 96.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1123,6 +1382,13 @@
         "teamScore": 71,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Washington State",
+        "teamScore": 34,
+        "oppScore": 7,
+        "result": "W"
       }
     ],
     "spPlus": 12.7
@@ -1131,13 +1397,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 10.0,
-    "pa": 24.0,
-    "passOff": 241.0,
-    "rushOff": 127.0,
-    "passDef": 227.0,
-    "rushDef": 134.0,
+    "record": "1-1",
+    "ppg": 24.5,
+    "pa": 27.5,
+    "passOff": 279.0,
+    "rushOff": 182.0,
+    "passDef": 209.0,
+    "rushDef": 112.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1148,6 +1414,13 @@
         "teamScore": 10,
         "oppScore": 24,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Oregon",
+        "teamScore": 39,
+        "oppScore": 31,
+        "result": "W"
       }
     ],
     "spPlus": 1.1
@@ -1156,13 +1429,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 10.0,
-    "pa": 15.0,
-    "passOff": 175.0,
-    "rushOff": 106.0,
-    "passDef": 232.0,
-    "rushDef": 90.0,
+    "record": "1-1",
+    "ppg": 36.5,
+    "pa": 11.0,
+    "passOff": 283.0,
+    "rushOff": 195.5,
+    "passDef": 211.0,
+    "rushDef": 55.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1173,6 +1446,13 @@
         "teamScore": 10,
         "oppScore": 15,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Grambling",
+        "teamScore": 63,
+        "oppScore": 7,
+        "result": "W"
       }
     ],
     "spPlus": 3.9
@@ -1181,13 +1461,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 33.0,
-    "pa": 10.0,
-    "passOff": 298.0,
-    "rushOff": 173.0,
-    "passDef": 119.0,
-    "rushDef": 75.0,
+    "record": "2-0",
+    "ppg": 34.0,
+    "pa": 17.0,
+    "passOff": 247.5,
+    "rushOff": 164.0,
+    "passDef": 261.0,
+    "rushDef": 72.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1198,6 +1478,13 @@
         "teamScore": 33,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Oregon State",
+        "teamScore": 35,
+        "oppScore": 24,
+        "result": "W"
       }
     ],
     "spPlus": 18.9
@@ -1206,13 +1493,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 73.0,
-    "pa": 6.0,
-    "passOff": 200.0,
-    "rushOff": 360.0,
-    "passDef": 74.0,
-    "rushDef": 107.0,
+    "record": "1-1",
+    "ppg": 40.0,
+    "pa": 9.0,
+    "passOff": 193.0,
+    "rushOff": 190.0,
+    "passDef": 143.0,
+    "rushDef": 105.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1223,6 +1510,13 @@
         "teamScore": 73,
         "oppScore": 6,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Pittsburgh",
+        "teamScore": 7,
+        "oppScore": 12,
+        "result": "L"
       }
     ],
     "spPlus": 5.9
@@ -1256,13 +1550,13 @@
     "league": "CFB",
     "conf": "Big 12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 31.0,
-    "pa": 24.0,
-    "passOff": 132.0,
-    "rushOff": 281.0,
-    "passDef": 373.0,
-    "rushDef": 52.0,
+    "record": "2-0",
+    "ppg": 41.5,
+    "pa": 15.5,
+    "passOff": 170.5,
+    "rushOff": 298.5,
+    "passDef": 271.5,
+    "rushDef": 100.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1272,6 +1566,13 @@
         "opp": "Coastal Carolina",
         "teamScore": 31,
         "oppScore": 24,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "UT Martin",
+        "teamScore": 52,
+        "oppScore": 7,
         "result": "W"
       }
     ],
@@ -1313,13 +1614,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 24.0,
-    "pa": 45.0,
-    "passOff": 291.0,
-    "rushOff": 119.0,
-    "passDef": 184.0,
-    "rushDef": 277.0,
+    "record": "1-1",
+    "ppg": 22.5,
+    "pa": 31.5,
+    "passOff": 236.5,
+    "rushOff": 93.0,
+    "passDef": 251.0,
+    "rushDef": 197.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1330,6 +1631,13 @@
         "teamScore": 24,
         "oppScore": 45,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Syracuse",
+        "teamScore": 21,
+        "oppScore": 18,
+        "result": "W"
       }
     ],
     "spPlus": -3.4
@@ -1363,13 +1671,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 17.0,
-    "pa": 3.0,
-    "passOff": 131.0,
-    "rushOff": 250.0,
-    "passDef": 204.0,
-    "rushDef": 54.0,
+    "record": "2-0",
+    "ppg": 24.0,
+    "pa": 15.0,
+    "passOff": 168.5,
+    "rushOff": 210.0,
+    "passDef": 237.5,
+    "rushDef": 82.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1379,6 +1687,13 @@
         "opp": "Tulane",
         "teamScore": 17,
         "oppScore": 3,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Illinois",
+        "teamScore": 31,
+        "oppScore": 27,
         "result": "W"
       }
     ],
@@ -1420,13 +1735,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 13.0,
-    "pa": 14.0,
-    "passOff": 237.0,
-    "rushOff": 51.0,
-    "passDef": 124.0,
-    "rushDef": 183.0,
+    "record": "0-2",
+    "ppg": 18.5,
+    "pa": 29.5,
+    "passOff": 229.0,
+    "rushOff": 93.0,
+    "passDef": 136.0,
+    "rushDef": 241.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1436,6 +1751,13 @@
         "opp": "Colorado",
         "teamScore": 13,
         "oppScore": 14,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Tennessee",
+        "teamScore": 24,
+        "oppScore": 45,
         "result": "L"
       }
     ],
@@ -1509,13 +1831,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 15.0,
-    "pa": 10.0,
-    "passOff": 232.0,
-    "rushOff": 90.0,
-    "passDef": 175.0,
-    "rushDef": 106.0,
+    "record": "2-0",
+    "ppg": 25.0,
+    "pa": 6.5,
+    "passOff": 249.0,
+    "rushOff": 125.5,
+    "passDef": 176.5,
+    "rushDef": 91.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1526,6 +1848,13 @@
         "teamScore": 15,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "East Tennessee State",
+        "teamScore": 35,
+        "oppScore": 3,
+        "result": "W"
       }
     ],
     "spPlus": 5.8
@@ -1534,13 +1863,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 59.0,
-    "pa": 14.0,
-    "passOff": 480.0,
-    "rushOff": 166.0,
-    "passDef": 261.0,
-    "rushDef": 28.0,
+    "record": "2-0",
+    "ppg": 35.5,
+    "pa": 10.5,
+    "passOff": 346.0,
+    "rushOff": 134.5,
+    "passDef": 223.5,
+    "rushDef": 24.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1551,6 +1880,13 @@
         "teamScore": 59,
         "oppScore": 14,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "UCF",
+        "teamScore": 12,
+        "oppScore": 7,
+        "result": "W"
       }
     ],
     "spPlus": 10.1
@@ -1559,13 +1895,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 27.0,
-    "pa": 24.0,
-    "passOff": 430.0,
-    "rushOff": 155.0,
-    "passDef": 125.0,
-    "rushDef": 199.0,
+    "record": "2-0",
+    "ppg": 41.5,
+    "pa": 17.0,
+    "passOff": 442.0,
+    "rushOff": 124.0,
+    "passDef": 148.0,
+    "rushDef": 130.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1575,6 +1911,13 @@
         "opp": "Florida State",
         "teamScore": 27,
         "oppScore": 24,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "UC Davis",
+        "teamScore": 56,
+        "oppScore": 10,
         "result": "W"
       }
     ],
@@ -1616,13 +1959,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 66.0,
-    "pa": 3.0,
-    "passOff": 275.0,
-    "rushOff": 238.0,
-    "passDef": 99.0,
-    "rushDef": 60.0,
+    "record": "1-1",
+    "ppg": 42.0,
+    "pa": 12.0,
+    "passOff": 296.5,
+    "rushOff": 178.0,
+    "passDef": 140.5,
+    "rushDef": 63.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1633,6 +1976,13 @@
         "teamScore": 66,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "California",
+        "teamScore": 18,
+        "oppScore": 21,
+        "result": "L"
       }
     ],
     "spPlus": 2.7
@@ -1673,13 +2023,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 73.0,
-    "pa": 3.0,
-    "passOff": 351.0,
-    "rushOff": 268.0,
-    "passDef": 87.0,
-    "rushDef": -4.0,
+    "record": "2-0",
+    "ppg": 58.5,
+    "pa": 12.0,
+    "passOff": 339.0,
+    "rushOff": 178.5,
+    "passDef": 137.0,
+    "rushDef": 59.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1690,6 +2040,13 @@
         "teamScore": 73,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Old Dominion",
+        "teamScore": 44,
+        "oppScore": 21,
+        "result": "W"
       }
     ],
     "spPlus": 12.4
@@ -1698,13 +2055,13 @@
     "league": "CFB",
     "conf": "ACC",
     "division": "fbs",
-    "record": "1-0",
+    "record": "2-0",
     "ppg": 38.0,
-    "pa": 16.0,
-    "passOff": 356.0,
-    "rushOff": 203.0,
-    "passDef": 156.0,
-    "rushDef": 149.0,
+    "pa": 26.0,
+    "passOff": 290.5,
+    "rushOff": 194.5,
+    "passDef": 242.5,
+    "rushDef": 137.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1715,6 +2072,13 @@
         "teamScore": 38,
         "oppScore": 16,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Purdue",
+        "teamScore": 38,
+        "oppScore": 36,
+        "result": "W"
       }
     ],
     "spPlus": 1.6
@@ -1723,13 +2087,13 @@
     "league": "CFB",
     "conf": "FBS Independents",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 41.0,
-    "pa": 13.0,
-    "passOff": 239.0,
-    "rushOff": 111.0,
-    "passDef": 217.0,
-    "rushDef": 67.0,
+    "record": "2-0",
+    "ppg": 46.5,
+    "pa": 6.5,
+    "passOff": 299.5,
+    "rushOff": 114.5,
+    "passDef": 140.5,
+    "rushDef": 65.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1739,6 +2103,13 @@
         "opp": "Wisconsin",
         "teamScore": 41,
         "oppScore": 13,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Rice",
+        "teamScore": 52,
+        "oppScore": 0,
         "result": "W"
       }
     ],
@@ -1805,13 +2176,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 16.0,
-    "pa": 38.0,
-    "passOff": 156.0,
-    "rushOff": 149.0,
-    "passDef": 356.0,
-    "rushDef": 203.0,
+    "record": "1-1",
+    "ppg": 30.5,
+    "pa": 24.0,
+    "passOff": 219.0,
+    "rushOff": 195.0,
+    "passDef": 268.0,
+    "rushDef": 108.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1822,6 +2193,13 @@
         "teamScore": 16,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Robert Morris",
+        "teamScore": 45,
+        "oppScore": 10,
+        "result": "W"
       }
     ],
     "spPlus": -21.4
@@ -1830,13 +2208,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 55.0,
-    "pa": 3.0,
-    "passOff": 348.0,
-    "rushOff": 299.0,
-    "passDef": 198.0,
-    "rushDef": 52.0,
+    "record": "2-0",
+    "ppg": 41.0,
+    "pa": 13.5,
+    "passOff": 307.5,
+    "rushOff": 213.5,
+    "passDef": 214.0,
+    "rushDef": 119.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1847,6 +2225,13 @@
         "teamScore": 55,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "East Carolina",
+        "teamScore": 27,
+        "oppScore": 24,
+        "result": "W"
       }
     ],
     "spPlus": -7.2
@@ -1855,13 +2240,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 24.0,
-    "pa": 42.0,
-    "passOff": 325.0,
-    "rushOff": 109.0,
-    "passDef": 188.0,
-    "rushDef": 335.0,
+    "record": "1-1",
+    "ppg": 38.0,
+    "pa": 24.5,
+    "passOff": 230.0,
+    "rushOff": 182.5,
+    "passDef": 181.0,
+    "rushDef": 203.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1872,6 +2257,13 @@
         "teamScore": 24,
         "oppScore": 42,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "West Georgia",
+        "teamScore": 52,
+        "oppScore": 7,
+        "result": "W"
       }
     ],
     "spPlus": -15.1
@@ -1880,13 +2272,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 59.0,
-    "pa": 3.0,
-    "passOff": 79.0,
-    "rushOff": 569.0,
-    "passDef": 98.0,
-    "rushDef": 67.0,
+    "record": "1-1",
+    "ppg": 41.5,
+    "pa": 15.5,
+    "passOff": 103.5,
+    "rushOff": 394.0,
+    "passDef": 168.5,
+    "rushDef": 98.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1897,6 +2289,13 @@
         "teamScore": 59,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "South Florida",
+        "teamScore": 24,
+        "oppScore": 28,
+        "result": "L"
       }
     ],
     "spPlus": 2.2
@@ -1905,13 +2304,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 3.0,
-    "pa": 56.0,
-    "passOff": 120.0,
-    "rushOff": 45.0,
-    "passDef": 434.0,
-    "rushDef": 237.0,
+    "record": "1-1",
+    "ppg": 22.0,
+    "pa": 36.5,
+    "passOff": 188.0,
+    "rushOff": 135.5,
+    "passDef": 290.5,
+    "rushDef": 210.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1922,6 +2321,13 @@
         "teamScore": 3,
         "oppScore": 56,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Stony Brook",
+        "teamScore": 41,
+        "oppScore": 17,
+        "result": "W"
       }
     ],
     "spPlus": -25.0
@@ -1930,13 +2336,13 @@
     "league": "CFB",
     "conf": "Pac-12",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 27.0,
-    "pa": 34.0,
-    "passOff": 181.0,
-    "rushOff": 93.0,
-    "passDef": 378.0,
-    "rushDef": 119.0,
+    "record": "1-1",
+    "ppg": 32.5,
+    "pa": 27.0,
+    "passOff": 201.0,
+    "rushOff": 225.0,
+    "passDef": 381.0,
+    "rushDef": 127.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1947,6 +2353,13 @@
         "teamScore": 27,
         "oppScore": 34,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Memphis",
+        "teamScore": 38,
+        "oppScore": 20,
+        "result": "W"
       }
     ],
     "spPlus": 5.2
@@ -1955,13 +2368,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 13.0,
-    "pa": 20.0,
-    "passOff": 262.0,
-    "rushOff": 104.0,
-    "passDef": 206.0,
-    "rushDef": 258.0,
+    "record": "0-2",
+    "ppg": 10.0,
+    "pa": 38.0,
+    "passOff": 173.0,
+    "rushOff": 94.5,
+    "passDef": 244.0,
+    "rushDef": 261.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1972,6 +2385,13 @@
         "teamScore": 13,
         "oppScore": 20,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Nebraska",
+        "teamScore": 7,
+        "oppScore": 56,
+        "result": "L"
       }
     ],
     "spPlus": -12.8
@@ -1980,13 +2400,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 21.0,
-    "pa": 17.0,
-    "passOff": 189.0,
-    "rushOff": 151.0,
-    "passDef": 204.0,
-    "rushDef": 72.0,
+    "record": "1-1",
+    "ppg": 20.5,
+    "pa": 25.0,
+    "passOff": 219.0,
+    "rushOff": 102.0,
+    "passDef": 295.0,
+    "rushDef": 113.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -1997,6 +2417,13 @@
         "teamScore": 21,
         "oppScore": 17,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Florida International",
+        "teamScore": 20,
+        "oppScore": 33,
+        "result": "L"
       }
     ],
     "spPlus": -11.6
@@ -2005,13 +2432,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 7.0,
-    "pa": 38.0,
-    "passOff": 30.0,
-    "rushOff": 119.0,
-    "passDef": 159.0,
-    "rushDef": 205.0,
+    "record": "1-1",
+    "ppg": 10.0,
+    "pa": 24.0,
+    "passOff": 53.0,
+    "rushOff": 159.5,
+    "passDef": 141.5,
+    "rushDef": 150.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2022,6 +2449,13 @@
         "teamScore": 7,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Colgate",
+        "teamScore": 13,
+        "oppScore": 10,
+        "result": "W"
       }
     ],
     "spPlus": -20.0
@@ -2030,13 +2464,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 41.0,
-    "pa": 43.0,
-    "passOff": 322.0,
-    "rushOff": 216.0,
-    "passDef": 132.0,
-    "rushDef": 268.0,
+    "record": "0-2",
+    "ppg": 25.0,
+    "pa": 42.0,
+    "passOff": 250.5,
+    "rushOff": 179.5,
+    "passDef": 212.5,
+    "rushDef": 197.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2047,6 +2481,13 @@
         "teamScore": 41,
         "oppScore": 43,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Ole Miss",
+        "teamScore": 9,
+        "oppScore": 41,
+        "result": "L"
       }
     ],
     "spPlus": -26.0
@@ -2055,13 +2496,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 24.0,
-    "pa": 31.0,
-    "passOff": 373.0,
-    "rushOff": 52.0,
-    "passDef": 132.0,
-    "rushDef": 281.0,
+    "record": "1-1",
+    "ppg": 34.5,
+    "pa": 19.0,
+    "passOff": 291.0,
+    "rushOff": 151.5,
+    "passDef": 116.5,
+    "rushDef": 197.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2072,6 +2513,13 @@
         "teamScore": 24,
         "oppScore": 31,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Fordham",
+        "teamScore": 45,
+        "oppScore": 7,
+        "result": "W"
       }
     ],
     "spPlus": -12.1
@@ -2080,13 +2528,13 @@
     "league": "CFB",
     "conf": "Pac-12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 35.0,
-    "pa": 13.0,
-    "passOff": 242.0,
-    "rushOff": 154.0,
-    "passDef": 130.0,
-    "rushDef": 143.0,
+    "record": "2-0",
+    "ppg": 46.5,
+    "pa": 18.5,
+    "passOff": 312.0,
+    "rushOff": 225.0,
+    "passDef": 183.0,
+    "rushDef": 174.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2097,6 +2545,13 @@
         "teamScore": 35,
         "oppScore": 13,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Southern Utah",
+        "teamScore": 58,
+        "oppScore": 24,
+        "result": "W"
       }
     ],
     "spPlus": -7.5
@@ -2105,13 +2560,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 42.0,
-    "pa": 7.0,
-    "passOff": 435.0,
-    "rushOff": 112.0,
-    "passDef": 196.0,
-    "rushDef": 48.0,
+    "record": "1-1",
+    "ppg": 34.0,
+    "pa": 21.0,
+    "passOff": 337.5,
+    "rushOff": 105.0,
+    "passDef": 217.5,
+    "rushDef": 74.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2122,6 +2577,13 @@
         "teamScore": 42,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Vanderbilt",
+        "teamScore": 26,
+        "oppScore": 35,
+        "result": "L"
       }
     ],
     "spPlus": -7.6
@@ -2130,13 +2592,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 10.0,
-    "pa": 48.0,
-    "passOff": 160.0,
-    "rushOff": 2.0,
-    "passDef": 260.0,
-    "rushDef": 227.0,
+    "record": "0-2",
+    "ppg": 17.0,
+    "pa": 37.5,
+    "passOff": 195.0,
+    "rushOff": 94.5,
+    "passDef": 263.5,
+    "rushDef": 177.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2147,6 +2609,13 @@
         "teamScore": 10,
         "oppScore": 48,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "App State",
+        "teamScore": 24,
+        "oppScore": 27,
+        "result": "L"
       }
     ],
     "spPlus": -8.1
@@ -2155,13 +2624,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "1-1",
-    "ppg": 24.5,
-    "pa": 22.0,
-    "passOff": 226.5,
-    "rushOff": 88.0,
-    "passDef": 267.5,
-    "rushDef": 93.0,
+    "record": "1-2",
+    "ppg": 18.7,
+    "pa": 26.3,
+    "passOff": 190.3,
+    "rushOff": 92.3,
+    "passDef": 249.7,
+    "rushDef": 148.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2179,6 +2648,13 @@
         "teamScore": 21,
         "oppScore": 27,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Michigan State",
+        "teamScore": 7,
+        "oppScore": 35,
+        "result": "L"
       }
     ],
     "spPlus": -15.6
@@ -2187,13 +2663,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 21.0,
-    "pa": 66.0,
-    "passOff": 276.0,
-    "rushOff": 120.0,
-    "passDef": 343.0,
-    "rushDef": 281.0,
+    "record": "1-1",
+    "ppg": 29.5,
+    "pa": 48.0,
+    "passOff": 331.0,
+    "rushOff": 81.0,
+    "passDef": 245.0,
+    "rushDef": 263.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2204,6 +2680,13 @@
         "teamScore": 21,
         "oppScore": 66,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Navy",
+        "teamScore": 38,
+        "oppScore": 30,
+        "result": "W"
       }
     ],
     "spPlus": -12.2
@@ -2212,13 +2695,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 9.0,
-    "pa": 19.0,
-    "passOff": 301.0,
-    "rushOff": 80.0,
-    "passDef": 100.0,
-    "rushDef": 108.0,
+    "record": "1-1",
+    "ppg": 21.0,
+    "pa": 19.5,
+    "passOff": 343.5,
+    "rushOff": 117.0,
+    "passDef": 174.5,
+    "rushDef": 80.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2229,6 +2712,13 @@
         "teamScore": 9,
         "oppScore": 19,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Buffalo",
+        "teamScore": 33,
+        "oppScore": 20,
+        "result": "W"
       }
     ],
     "spPlus": -13.5
@@ -2287,13 +2777,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 59.0,
-    "pa": 10.0,
-    "passOff": 279.0,
-    "rushOff": 284.0,
-    "passDef": 125.0,
-    "rushDef": 84.0,
+    "record": "2-0",
+    "ppg": 45.0,
+    "pa": 13.5,
+    "passOff": 266.0,
+    "rushOff": 257.0,
+    "passDef": 192.5,
+    "rushDef": 78.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2303,6 +2793,13 @@
         "opp": "North Carolina A&T",
         "teamScore": 59,
         "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Kennesaw State",
+        "teamScore": 31,
+        "oppScore": 17,
         "result": "W"
       }
     ],
@@ -2344,13 +2841,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "1-1",
-    "ppg": 28.0,
-    "pa": 20.0,
-    "passOff": 218.5,
-    "rushOff": 129.5,
-    "passDef": 127.0,
-    "rushDef": 202.0,
+    "record": "1-2",
+    "ppg": 27.7,
+    "pa": 23.0,
+    "passOff": 241.0,
+    "rushOff": 140.0,
+    "passDef": 117.0,
+    "rushDef": 189.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2368,6 +2865,13 @@
         "teamScore": 49,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Ohio",
+        "teamScore": 27,
+        "oppScore": 29,
+        "result": "L"
       }
     ],
     "spPlus": -7.0
@@ -2376,13 +2880,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 20.0,
-    "pa": 13.0,
-    "passOff": 118.0,
-    "rushOff": 173.0,
-    "passDef": 230.0,
-    "rushDef": 91.0,
+    "record": "2-0",
+    "ppg": 53.5,
+    "pa": 8.0,
+    "passOff": 208.0,
+    "rushOff": 231.5,
+    "passDef": 174.0,
+    "rushDef": 88.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2393,6 +2897,13 @@
         "teamScore": 20,
         "oppScore": 13,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Wagner",
+        "teamScore": 87,
+        "oppScore": 3,
+        "result": "W"
       }
     ],
     "spPlus": -0.3
@@ -2401,13 +2912,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 47.0,
-    "pa": 0.0,
-    "passOff": 211.0,
-    "rushOff": 297.0,
-    "passDef": 111.0,
-    "rushDef": 49.0,
+    "record": "1-1",
+    "ppg": 32.0,
+    "pa": 15.5,
+    "passOff": 235.5,
+    "rushOff": 184.5,
+    "passDef": 182.0,
+    "rushDef": 139.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2418,6 +2929,13 @@
         "teamScore": 47,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Georgia State",
+        "teamScore": 17,
+        "oppScore": 31,
+        "result": "L"
       }
     ],
     "spPlus": -7.4
@@ -2426,13 +2944,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 0.0,
-    "pa": 57.0,
-    "passOff": 79.0,
-    "rushOff": 100.0,
-    "passDef": 367.0,
-    "rushDef": 278.0,
+    "record": "1-1",
+    "ppg": 18.0,
+    "pa": 36.0,
+    "passOff": 166.0,
+    "rushOff": 147.5,
+    "passDef": 241.0,
+    "rushDef": 168.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2443,6 +2961,13 @@
         "teamScore": 0,
         "oppScore": 57,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Wofford",
+        "teamScore": 36,
+        "oppScore": 15,
+        "result": "W"
       }
     ],
     "spPlus": -27.5
@@ -2451,13 +2976,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 13.0,
-    "pa": 20.0,
-    "passOff": 230.0,
-    "rushOff": 91.0,
-    "passDef": 118.0,
-    "rushDef": 173.0,
+    "record": "1-1",
+    "ppg": 18.5,
+    "pa": 21.5,
+    "passOff": 208.0,
+    "rushOff": 142.0,
+    "passDef": 152.0,
+    "rushDef": 145.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2468,6 +2993,13 @@
         "teamScore": 13,
         "oppScore": 20,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Gardner-Webb",
+        "teamScore": 24,
+        "oppScore": 23,
+        "result": "W"
       }
     ],
     "spPlus": -7.2
@@ -2501,13 +3033,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 80.0,
-    "pa": 6.0,
-    "passOff": 296.0,
-    "rushOff": 232.0,
-    "passDef": 43.0,
-    "rushDef": 86.0,
+    "record": "1-1",
+    "ppg": 47.0,
+    "pa": 25.5,
+    "passOff": 219.5,
+    "rushOff": 114.5,
+    "passDef": 212.0,
+    "rushDef": 116.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2518,6 +3050,13 @@
         "teamScore": 80,
         "oppScore": 6,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "LSU",
+        "teamScore": 14,
+        "oppScore": 45,
+        "result": "L"
       }
     ],
     "spPlus": -3.8
@@ -2526,13 +3065,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 0.0,
-    "pa": 45.0,
-    "passOff": 103.0,
-    "rushOff": 44.0,
-    "passDef": 324.0,
-    "rushDef": 163.0,
+    "record": "1-1",
+    "ppg": 14.0,
+    "pa": 35.5,
+    "passOff": 142.0,
+    "rushOff": 87.0,
+    "passDef": 283.5,
+    "rushDef": 136.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2543,6 +3082,13 @@
         "teamScore": 0,
         "oppScore": 45,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Middle Tennessee",
+        "teamScore": 28,
+        "oppScore": 26,
+        "result": "W"
       }
     ],
     "spPlus": -14.4
@@ -2551,13 +3097,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "1-0",
+    "record": "2-0",
     "ppg": 37.0,
-    "pa": 21.0,
-    "passOff": 197.0,
-    "rushOff": 200.0,
-    "passDef": 319.0,
-    "rushDef": 30.0,
+    "pa": 15.5,
+    "passOff": 180.0,
+    "rushOff": 176.0,
+    "passDef": 239.5,
+    "rushDef": 86.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2568,6 +3114,13 @@
         "teamScore": 37,
         "oppScore": 21,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Sacred Heart",
+        "teamScore": 37,
+        "oppScore": 10,
+        "result": "W"
       }
     ],
     "spPlus": -25.8
@@ -2576,13 +3129,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "2-0",
-    "ppg": 34.5,
-    "pa": 22.5,
-    "passOff": 205.5,
-    "rushOff": 265.0,
-    "passDef": 308.0,
-    "rushDef": 139.0,
+    "record": "2-1",
+    "ppg": 29.7,
+    "pa": 27.7,
+    "passOff": 265.0,
+    "rushOff": 221.7,
+    "passDef": 279.0,
+    "rushDef": 211.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2600,6 +3153,13 @@
         "teamScore": 42,
         "oppScore": 24,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Boise State",
+        "teamScore": 20,
+        "oppScore": 38,
+        "result": "L"
       }
     ],
     "spPlus": 2.1
@@ -2608,13 +3168,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 14.0,
-    "pa": 59.0,
-    "passOff": 261.0,
-    "rushOff": 28.0,
-    "passDef": 480.0,
-    "rushDef": 166.0,
+    "record": "1-1",
+    "ppg": 29.5,
+    "pa": 33.0,
+    "passOff": 248.5,
+    "rushOff": 114.5,
+    "passDef": 310.5,
+    "rushDef": 103.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2625,6 +3185,13 @@
         "teamScore": 14,
         "oppScore": 59,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Holy Cross",
+        "teamScore": 45,
+        "oppScore": 7,
+        "result": "W"
       }
     ],
     "spPlus": -10.0
@@ -2633,13 +3200,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 38.0,
-    "pa": 14.0,
-    "passOff": 200.0,
-    "rushOff": 196.0,
-    "passDef": 145.0,
-    "rushDef": 145.0,
+    "record": "1-1",
+    "ppg": 32.0,
+    "pa": 21.0,
+    "passOff": 221.5,
+    "rushOff": 152.5,
+    "passDef": 163.0,
+    "rushDef": 137.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2650,6 +3217,13 @@
         "teamScore": 38,
         "oppScore": 14,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Marshall",
+        "teamScore": 26,
+        "oppScore": 28,
+        "result": "L"
       }
     ],
     "spPlus": -20.8
@@ -2658,13 +3232,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 0.0,
-    "pa": 50.0,
-    "passOff": 30.0,
-    "rushOff": 37.0,
-    "passDef": 269.0,
-    "rushDef": 236.0,
+    "record": "1-1",
+    "ppg": 24.0,
+    "pa": 32.0,
+    "passOff": 175.0,
+    "rushOff": 150.5,
+    "passDef": 187.0,
+    "rushDef": 177.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2675,6 +3249,13 @@
         "teamScore": 0,
         "oppScore": 50,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Lindenwood",
+        "teamScore": 48,
+        "oppScore": 14,
+        "result": "W"
       }
     ],
     "spPlus": -24.3
@@ -2683,13 +3264,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 42.0,
-    "pa": 15.0,
-    "passOff": 21.0,
-    "rushOff": 506.0,
-    "passDef": 207.0,
-    "rushDef": 39.0,
+    "record": "1-1",
+    "ppg": 36.0,
+    "pa": 26.5,
+    "passOff": 84.0,
+    "rushOff": 376.0,
+    "passDef": 296.5,
+    "rushDef": 40.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2700,6 +3281,13 @@
         "teamScore": 42,
         "oppScore": 15,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Florida Atlantic",
+        "teamScore": 30,
+        "oppScore": 38,
+        "result": "L"
       }
     ],
     "spPlus": 3.6
@@ -2733,13 +3321,13 @@
     "league": "CFB",
     "conf": "Mountain West",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 38.0,
+    "record": "2-0",
+    "ppg": 54.0,
     "pa": 7.0,
-    "passOff": 159.0,
-    "rushOff": 205.0,
-    "passDef": 30.0,
-    "rushDef": 119.0,
+    "passOff": 166.0,
+    "rushOff": 246.0,
+    "passDef": 83.5,
+    "rushDef": 68.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2748,6 +3336,13 @@
         "week": 1,
         "opp": "Central Michigan",
         "teamScore": 38,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Mercyhurst",
+        "teamScore": 70,
         "oppScore": 7,
         "result": "W"
       }
@@ -2822,13 +3417,13 @@
     "league": "CFB",
     "conf": "Mountain West",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 0.0,
-    "pa": 40.0,
-    "passOff": 113.0,
-    "rushOff": 7.0,
-    "passDef": 218.0,
-    "rushDef": 289.0,
+    "record": "0-2",
+    "ppg": 12.0,
+    "pa": 34.0,
+    "passOff": 154.5,
+    "rushOff": 59.5,
+    "passDef": 185.5,
+    "rushDef": 195.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2839,6 +3434,13 @@
         "teamScore": 0,
         "oppScore": 40,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Illinois State",
+        "teamScore": 24,
+        "oppScore": 28,
+        "result": "L"
       }
     ],
     "spPlus": -22.3
@@ -2847,13 +3449,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 16.0,
-    "pa": 52.0,
-    "passOff": 215.0,
-    "rushOff": 152.0,
-    "passDef": 231.0,
-    "rushDef": 134.0,
+    "record": "1-1",
+    "ppg": 30.0,
+    "pa": 29.0,
+    "passOff": 238.0,
+    "rushOff": 168.5,
+    "passDef": 217.0,
+    "rushDef": 116.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2864,6 +3466,13 @@
         "teamScore": 16,
         "oppScore": 52,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "UNLV",
+        "teamScore": 44,
+        "oppScore": 6,
+        "result": "W"
       }
     ],
     "spPlus": -13.2
@@ -2872,13 +3481,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 21.0,
-    "pa": 49.0,
-    "passOff": 164.0,
-    "rushOff": 139.0,
-    "passDef": 275.0,
-    "rushDef": 248.0,
+    "record": "1-1",
+    "ppg": 25.0,
+    "pa": 38.0,
+    "passOff": 130.5,
+    "rushOff": 152.0,
+    "passDef": 280.5,
+    "rushDef": 204.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2889,6 +3498,13 @@
         "teamScore": 21,
         "oppScore": 49,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Jacksonville State",
+        "teamScore": 29,
+        "oppScore": 27,
+        "result": "W"
       }
     ],
     "spPlus": -16.4
@@ -2897,13 +3513,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 31.0,
-    "pa": 10.0,
-    "passOff": 137.0,
-    "rushOff": 182.0,
-    "passDef": 94.0,
-    "rushDef": 126.0,
+    "record": "1-1",
+    "ppg": 26.0,
+    "pa": 27.0,
+    "passOff": 162.0,
+    "rushOff": 152.5,
+    "passDef": 210.5,
+    "rushDef": 107.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2914,6 +3530,13 @@
         "teamScore": 31,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Virginia Tech",
+        "teamScore": 21,
+        "oppScore": 44,
+        "result": "L"
       }
     ],
     "spPlus": -6.2
@@ -2922,13 +3545,13 @@
     "league": "CFB",
     "conf": "Pac-12",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 20.0,
-    "pa": 33.0,
-    "passOff": 376.0,
-    "rushOff": 26.0,
-    "passDef": 305.0,
-    "rushDef": 228.0,
+    "record": "0-2",
+    "ppg": 22.0,
+    "pa": 34.0,
+    "passOff": 389.5,
+    "rushOff": 47.5,
+    "passDef": 251.0,
+    "rushDef": 191.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2939,6 +3562,13 @@
         "teamScore": 20,
         "oppScore": 33,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Texas Tech",
+        "teamScore": 24,
+        "oppScore": 35,
+        "result": "L"
       }
     ],
     "spPlus": -6.8
@@ -2947,13 +3577,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 31.0,
-    "pa": 3.0,
-    "passOff": 28.0,
-    "rushOff": 465.0,
-    "passDef": 96.0,
-    "rushDef": 148.0,
+    "record": "1-1",
+    "ppg": 15.5,
+    "pa": 27.5,
+    "passOff": 46.0,
+    "rushOff": 264.5,
+    "passDef": 228.0,
+    "rushDef": 133.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -2964,6 +3594,13 @@
         "teamScore": 31,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Notre Dame",
+        "teamScore": 0,
+        "oppScore": 52,
+        "result": "L"
       }
     ],
     "spPlus": -10.4
@@ -3004,13 +3641,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 21.0,
-    "pa": 24.0,
-    "passOff": 335.0,
-    "rushOff": 38.0,
-    "passDef": 165.0,
-    "rushDef": 177.0,
+    "record": "0-2",
+    "ppg": 19.0,
+    "pa": 23.5,
+    "passOff": 325.5,
+    "rushOff": 46.5,
+    "passDef": 145.5,
+    "rushDef": 209.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3021,6 +3658,13 @@
         "teamScore": 21,
         "oppScore": 24,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Tulsa",
+        "teamScore": 17,
+        "oppScore": 23,
+        "result": "L"
       }
     ],
     "spPlus": -21.5
@@ -3029,13 +3673,13 @@
     "league": "CFB",
     "conf": "Pac-12",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 53.0,
-    "pa": 20.0,
-    "passOff": 157.0,
-    "rushOff": 237.0,
-    "passDef": 280.0,
-    "rushDef": 95.0,
+    "record": "1-1",
+    "ppg": 31.5,
+    "pa": 24.0,
+    "passOff": 101.0,
+    "rushOff": 190.5,
+    "passDef": 215.5,
+    "rushDef": 154.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3046,6 +3690,13 @@
         "teamScore": 53,
         "oppScore": 20,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "UCLA",
+        "teamScore": 10,
+        "oppScore": 28,
+        "result": "L"
       }
     ],
     "spPlus": 3.1
@@ -3054,13 +3705,13 @@
     "league": "CFB",
     "conf": "Mountain West",
     "division": "fbs",
-    "record": "1-1",
-    "ppg": 26.5,
-    "pa": 31.5,
-    "passOff": 275.0,
-    "rushOff": 119.5,
-    "passDef": 257.5,
-    "rushDef": 135.5,
+    "record": "2-1",
+    "ppg": 27.7,
+    "pa": 27.7,
+    "passOff": 262.7,
+    "rushOff": 164.7,
+    "passDef": 254.7,
+    "rushDef": 120.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3078,6 +3729,13 @@
         "teamScore": 27,
         "oppScore": 21,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Cal Poly",
+        "teamScore": 30,
+        "oppScore": 20,
+        "result": "W"
       }
     ],
     "spPlus": -12.8
@@ -3086,13 +3744,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 39.0,
-    "pa": 14.0,
-    "passOff": 154.0,
-    "rushOff": 241.0,
-    "passDef": 186.0,
-    "rushDef": 45.0,
+    "record": "1-1",
+    "ppg": 31.5,
+    "pa": 21.0,
+    "passOff": 225.0,
+    "rushOff": 211.5,
+    "passDef": 199.0,
+    "rushDef": 128.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3103,6 +3761,13 @@
         "teamScore": 39,
         "oppScore": 14,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Tulane",
+        "teamScore": 24,
+        "oppScore": 28,
+        "result": "L"
       }
     ],
     "spPlus": -11.4
@@ -3111,13 +3776,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 49.0,
-    "pa": 3.0,
-    "passOff": 226.0,
-    "rushOff": 317.0,
-    "passDef": 119.0,
-    "rushDef": 104.0,
+    "record": "1-1",
+    "ppg": 28.5,
+    "pa": 23.0,
+    "passOff": 198.5,
+    "rushOff": 183.5,
+    "passDef": 193.0,
+    "rushDef": 223.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3128,6 +3793,13 @@
         "teamScore": 49,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Auburn",
+        "teamScore": 8,
+        "oppScore": 43,
+        "result": "L"
       }
     ],
     "spPlus": -14.9
@@ -3136,13 +3808,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 19.0,
-    "pa": 9.0,
-    "passOff": 100.0,
-    "rushOff": 108.0,
-    "passDef": 301.0,
-    "rushDef": 80.0,
+    "record": "2-0",
+    "ppg": 23.5,
+    "pa": 16.5,
+    "passOff": 169.5,
+    "rushOff": 119.0,
+    "passDef": 214.5,
+    "rushDef": 149.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3153,6 +3825,13 @@
         "teamScore": 19,
         "oppScore": 9,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Army",
+        "teamScore": 28,
+        "oppScore": 24,
+        "result": "W"
       }
     ],
     "spPlus": -3.1
@@ -3161,13 +3840,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 38.0,
-    "pa": 14.0,
-    "passOff": 142.0,
-    "rushOff": 227.0,
-    "passDef": 195.0,
-    "rushDef": 97.0,
+    "record": "1-1",
+    "ppg": 23.5,
+    "pa": 20.5,
+    "passOff": 124.5,
+    "rushOff": 201.5,
+    "passDef": 231.5,
+    "rushDef": 92.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3178,6 +3857,13 @@
         "teamScore": 38,
         "oppScore": 14,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Penn State",
+        "teamScore": 9,
+        "oppScore": 27,
+        "result": "L"
       }
     ],
     "spPlus": -4.9
@@ -3186,13 +3872,13 @@
     "league": "CFB",
     "conf": "Pac-12",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 7.0,
-    "pa": 59.0,
-    "passOff": 188.0,
-    "rushOff": 161.0,
-    "passDef": 360.0,
-    "rushDef": 156.0,
+    "record": "0-2",
+    "ppg": 16.5,
+    "pa": 45.0,
+    "passOff": 190.0,
+    "rushOff": 225.0,
+    "passDef": 309.0,
+    "rushDef": 148.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3203,6 +3889,13 @@
         "teamScore": 7,
         "oppScore": 59,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "UTSA",
+        "teamScore": 26,
+        "oppScore": 31,
+        "result": "L"
       }
     ],
     "spPlus": -7.8
@@ -3211,13 +3904,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 20.0,
-    "pa": 30.0,
-    "passOff": 196.0,
-    "rushOff": 77.0,
-    "passDef": 247.0,
-    "rushDef": 150.0,
+    "record": "1-1",
+    "ppg": 41.5,
+    "pa": 20.0,
+    "passOff": 254.5,
+    "rushOff": 166.5,
+    "passDef": 156.5,
+    "rushDef": 111.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3228,6 +3921,13 @@
         "teamScore": 20,
         "oppScore": 30,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Central Connecticut",
+        "teamScore": 63,
+        "oppScore": 10,
+        "result": "W"
       }
     ],
     "spPlus": -9.4
@@ -3236,13 +3936,13 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 24.0,
-    "pa": 21.0,
-    "passOff": 165.0,
-    "rushOff": 177.0,
-    "passDef": 335.0,
-    "rushDef": 38.0,
+    "record": "2-0",
+    "ppg": 29.0,
+    "pa": 19.0,
+    "passOff": 183.0,
+    "rushOff": 202.0,
+    "passDef": 220.0,
+    "rushDef": 68.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3253,6 +3953,13 @@
         "teamScore": 24,
         "oppScore": 21,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Alabama State",
+        "teamScore": 34,
+        "oppScore": 17,
+        "result": "W"
       }
     ],
     "spPlus": -11.4
@@ -3261,13 +3968,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 3.0,
-    "pa": 17.0,
-    "passOff": 204.0,
-    "rushOff": 54.0,
-    "passDef": 131.0,
-    "rushDef": 250.0,
+    "record": "1-1",
+    "ppg": 15.5,
+    "pa": 20.5,
+    "passOff": 208.0,
+    "rushOff": 133.0,
+    "passDef": 213.5,
+    "rushDef": 216.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3278,6 +3985,13 @@
         "teamScore": 3,
         "oppScore": 17,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "South Alabama",
+        "teamScore": 28,
+        "oppScore": 24,
+        "result": "W"
       }
     ],
     "spPlus": -7.4
@@ -3286,13 +4000,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 24.0,
-    "pa": 10.0,
-    "passOff": 227.0,
-    "rushOff": 134.0,
-    "passDef": 241.0,
-    "rushDef": 127.0,
+    "record": "2-0",
+    "ppg": 23.5,
+    "pa": 13.5,
+    "passOff": 176.5,
+    "rushOff": 187.5,
+    "passDef": 278.5,
+    "rushDef": 91.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3303,6 +4017,13 @@
         "teamScore": 24,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Sam Houston",
+        "teamScore": 23,
+        "oppScore": 17,
+        "result": "W"
       }
     ],
     "spPlus": -2.3
@@ -3311,9 +4032,9 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 23.0,
-    "pa": 42.0,
+    "record": "1-1",
+    "ppg": 24.5,
+    "pa": 31.0,
     "passOff": 219.0,
     "rushOff": 194.0,
     "passDef": 182.0,
@@ -3328,6 +4049,13 @@
         "teamScore": 23,
         "oppScore": 42,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "UL Monroe",
+        "teamScore": 26,
+        "oppScore": 20,
+        "result": "W"
       }
     ],
     "spPlus": -16.0
@@ -3336,13 +4064,13 @@
     "league": "CFB",
     "conf": "FBS Independents",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 56.0,
-    "pa": 7.0,
-    "passOff": 370.0,
-    "rushOff": 301.0,
-    "passDef": 145.0,
-    "rushDef": 64.0,
+    "record": "1-1",
+    "ppg": 35.0,
+    "pa": 22.5,
+    "passOff": 263.0,
+    "rushOff": 184.0,
+    "passDef": 247.5,
+    "rushDef": 94.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3353,6 +4081,13 @@
         "teamScore": 56,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Maryland",
+        "teamScore": 14,
+        "oppScore": 38,
+        "result": "L"
       }
     ],
     "spPlus": -6.3
@@ -3361,9 +4096,9 @@
     "league": "CFB",
     "conf": "Sun Belt",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 13.0,
-    "pa": 62.0,
+    "record": "0-2",
+    "ppg": 16.5,
+    "pa": 44.0,
     "passOff": 140.0,
     "rushOff": 138.0,
     "passDef": 417.0,
@@ -3378,6 +4113,13 @@
         "teamScore": 13,
         "oppScore": 62,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "UAB",
+        "teamScore": 20,
+        "oppScore": 26,
+        "result": "L"
       }
     ],
     "spPlus": -33.2
@@ -3386,13 +4128,13 @@
     "league": "CFB",
     "conf": "Mountain West",
     "division": "fbs",
-    "record": "1-1",
-    "ppg": 21.0,
-    "pa": 16.5,
-    "passOff": 203.5,
-    "rushOff": 208.5,
-    "passDef": 199.5,
-    "rushDef": 156.5,
+    "record": "1-2",
+    "ppg": 16.0,
+    "pa": 25.7,
+    "passOff": 203.3,
+    "rushOff": 171.7,
+    "passDef": 220.0,
+    "rushDef": 166.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3410,6 +4152,13 @@
         "teamScore": 21,
         "oppScore": 6,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "North Texas",
+        "teamScore": 6,
+        "oppScore": 44,
+        "result": "L"
       }
     ],
     "spPlus": 2.3
@@ -3418,13 +4167,13 @@
     "league": "CFB",
     "conf": "Pac-12",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 17.0,
-    "pa": 29.0,
-    "passOff": 245.0,
-    "rushOff": 162.0,
-    "passDef": 152.0,
-    "rushDef": 89.0,
+    "record": "0-2",
+    "ppg": 15.5,
+    "pa": 22.5,
+    "passOff": 220.5,
+    "rushOff": 118.5,
+    "passDef": 200.5,
+    "rushDef": 98.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3435,6 +4184,13 @@
         "teamScore": 17,
         "oppScore": 29,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Washington",
+        "teamScore": 14,
+        "oppScore": 16,
+        "result": "L"
       }
     ],
     "spPlus": -11.5
@@ -3443,13 +4199,13 @@
     "league": "CFB",
     "conf": "Mountain West",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 0.0,
-    "pa": 51.0,
-    "passOff": 86.0,
-    "rushOff": 112.0,
-    "passDef": 231.0,
-    "rushDef": 170.0,
+    "record": "1-1",
+    "ppg": 25.5,
+    "pa": 30.5,
+    "passOff": 162.5,
+    "rushOff": 182.0,
+    "passDef": 165.0,
+    "rushDef": 141.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3460,6 +4216,13 @@
         "teamScore": 0,
         "oppScore": 51,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Texas Southern",
+        "teamScore": 51,
+        "oppScore": 10,
+        "result": "W"
       }
     ],
     "spPlus": -24.3
@@ -3468,13 +4231,13 @@
     "league": "CFB",
     "conf": "American Athletic",
     "division": "fbs",
-    "record": "1-0",
-    "ppg": 45.0,
-    "pa": 16.0,
-    "passOff": 275.0,
-    "rushOff": 250.0,
-    "passDef": 245.0,
-    "rushDef": 177.0,
+    "record": "2-0",
+    "ppg": 38.0,
+    "pa": 21.0,
+    "passOff": 266.5,
+    "rushOff": 195.0,
+    "passDef": 218.5,
+    "rushDef": 233.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3485,6 +4248,13 @@
         "teamScore": 45,
         "oppScore": 16,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Texas State",
+        "teamScore": 31,
+        "oppScore": 26,
+        "result": "W"
       }
     ],
     "spPlus": 2.9
@@ -3493,13 +4263,13 @@
     "league": "CFB",
     "conf": "Pac-12",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 10.0,
-    "pa": 24.0,
-    "passOff": 142.0,
-    "rushOff": 100.0,
-    "passDef": 268.0,
-    "rushDef": 134.0,
+    "record": "0-2",
+    "ppg": 8.5,
+    "pa": 29.0,
+    "passOff": 103.5,
+    "rushOff": 100.5,
+    "passDef": 230.0,
+    "rushDef": 214.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3510,6 +4280,13 @@
         "teamScore": 10,
         "oppScore": 24,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Kansas State",
+        "teamScore": 7,
+        "oppScore": 34,
+        "result": "L"
       }
     ],
     "spPlus": -3.7
@@ -3518,13 +4295,13 @@
     "league": "CFB",
     "conf": "Conference USA",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 14.0,
-    "pa": 49.0,
-    "passOff": 203.0,
-    "rushOff": 164.0,
-    "passDef": 163.0,
-    "rushDef": 323.0,
+    "record": "0-2",
+    "ppg": 17.0,
+    "pa": 59.5,
+    "passOff": 159.0,
+    "rushOff": 137.0,
+    "passDef": 211.0,
+    "rushDef": 278.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3535,6 +4312,13 @@
         "teamScore": 14,
         "oppScore": 49,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Georgia",
+        "teamScore": 20,
+        "oppScore": 70,
+        "result": "L"
       }
     ],
     "spPlus": -13.1
@@ -3543,13 +4327,13 @@
     "league": "CFB",
     "conf": "Mid-American",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 12.0,
-    "pa": 13.0,
-    "passOff": 89.0,
-    "rushOff": 132.0,
-    "passDef": 170.0,
-    "rushDef": 106.0,
+    "record": "1-1",
+    "ppg": 30.5,
+    "pa": 13.5,
+    "passOff": 177.5,
+    "rushOff": 140.0,
+    "passDef": 221.5,
+    "rushDef": 132.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3560,6 +4344,13 @@
         "teamScore": 12,
         "oppScore": 13,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Monmouth",
+        "teamScore": 49,
+        "oppScore": 14,
+        "result": "W"
       }
     ],
     "spPlus": -4.2
@@ -3568,13 +4359,13 @@
     "league": "CFB",
     "conf": "Mountain West",
     "division": "fbs",
-    "record": "0-1",
-    "ppg": 13.0,
-    "pa": 35.0,
-    "passOff": 130.0,
-    "rushOff": 143.0,
-    "passDef": 242.0,
-    "rushDef": 154.0,
+    "record": "1-1",
+    "ppg": 17.0,
+    "pa": 24.0,
+    "passOff": 139.5,
+    "rushOff": 149.0,
+    "passDef": 224.0,
+    "rushDef": 146.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3585,6 +4376,13 @@
         "teamScore": 13,
         "oppScore": 35,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Northern Colorado",
+        "teamScore": 21,
+        "oppScore": 13,
+        "result": "W"
       }
     ],
     "spPlus": -15.2
@@ -3593,13 +4391,13 @@
     "league": "CFB",
     "conf": "UAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 12.0,
-    "pa": 27.0,
-    "passOff": 163.0,
-    "rushOff": 113.0,
-    "passDef": 240.5,
-    "rushDef": 134.0,
+    "record": "0-3",
+    "ppg": 10.3,
+    "pa": 26.7,
+    "passOff": 197.7,
+    "rushOff": 86.3,
+    "passDef": 241.3,
+    "rushDef": 155.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3617,6 +4415,13 @@
         "teamScore": 10,
         "oppScore": 33,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Stephen F. Austin",
+        "teamScore": 7,
+        "oppScore": 26,
+        "result": "L"
       }
     ]
   },
@@ -3624,13 +4429,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 29.5,
-    "pa": 28.0,
-    "passOff": 217.5,
-    "rushOff": 99.0,
-    "passDef": 207.0,
-    "rushDef": 180.5,
+    "record": "2-1",
+    "ppg": 37.3,
+    "pa": 35.7,
+    "passOff": 307.7,
+    "rushOff": 137.3,
+    "passDef": 193.7,
+    "rushDef": 206.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3648,6 +4453,13 @@
         "teamScore": 3,
         "oppScore": 49,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Arkansas-Pine Bluff",
+        "teamScore": 53,
+        "oppScore": 51,
+        "result": "W"
       }
     ]
   },
@@ -3655,13 +4467,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 24.5,
-    "pa": 34.5,
-    "passOff": 170.5,
-    "rushOff": 121.5,
-    "passDef": 321.5,
-    "rushDef": 147.5,
+    "record": "1-2",
+    "ppg": 33.3,
+    "pa": 40.7,
+    "passOff": 169.3,
+    "rushOff": 167.0,
+    "passDef": 377.0,
+    "rushDef": 169.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3679,6 +4491,13 @@
         "teamScore": 14,
         "oppScore": 54,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Alcorn State",
+        "teamScore": 51,
+        "oppScore": 53,
+        "result": "L"
       }
     ]
   },
@@ -3686,13 +4505,13 @@
     "league": "CFB",
     "conf": "UAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 22.0,
-    "pa": 22.5,
-    "passOff": 212.0,
-    "rushOff": 118.5,
-    "passDef": 260.5,
-    "rushDef": 109.5,
+    "record": "2-1",
+    "ppg": 35.7,
+    "pa": 17.3,
+    "passOff": 247.0,
+    "rushOff": 204.3,
+    "passDef": 219.3,
+    "rushDef": 96.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3710,6 +4529,13 @@
         "teamScore": 9,
         "oppScore": 28,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Morehead State",
+        "teamScore": 63,
+        "oppScore": 7,
+        "result": "W"
       }
     ]
   },
@@ -3717,13 +4543,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 6.0,
-    "pa": 73.0,
-    "passOff": 74.0,
-    "rushOff": 107.0,
-    "passDef": 200.0,
-    "rushDef": 360.0,
+    "record": "1-1",
+    "ppg": 24.5,
+    "pa": 45.5,
+    "passOff": 122.5,
+    "rushOff": 128.5,
+    "passDef": 196.0,
+    "rushDef": 241.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3734,6 +4560,13 @@
         "teamScore": 6,
         "oppScore": 73,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Stetson",
+        "teamScore": 43,
+        "oppScore": 18,
+        "result": "W"
       }
     ]
   },
@@ -3741,13 +4574,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 13.5,
-    "pa": 32.5,
-    "passOff": 103.0,
-    "rushOff": 129.0,
-    "passDef": 140.5,
-    "rushDef": 335.5,
+    "record": "2-1",
+    "ppg": 19.3,
+    "pa": 22.7,
+    "passOff": 140.7,
+    "rushOff": 131.3,
+    "passDef": 152.7,
+    "rushDef": 274.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3765,6 +4598,13 @@
         "teamScore": 3,
         "oppScore": 59,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Hampton",
+        "teamScore": 31,
+        "oppScore": 3,
+        "result": "W"
       }
     ]
   },
@@ -3772,13 +4612,13 @@
     "league": "CFB",
     "conf": "OVC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 8.5,
-    "pa": 25.5,
-    "passOff": 158.5,
-    "rushOff": 57.5,
-    "passDef": 246.5,
-    "rushDef": 166.0,
+    "record": "1-2",
+    "ppg": 14.3,
+    "pa": 23.7,
+    "passOff": 133.7,
+    "rushOff": 73.0,
+    "passDef": 188.7,
+    "rushDef": 189.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3796,6 +4636,13 @@
         "teamScore": 0,
         "oppScore": 31,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "The Citadel",
+        "teamScore": 26,
+        "oppScore": 20,
+        "result": "W"
       }
     ]
   },
@@ -3803,13 +4650,13 @@
     "league": "CFB",
     "conf": "NEC",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 0.0,
-    "pa": 34.0,
-    "passOff": 53.0,
-    "rushOff": 54.0,
-    "passDef": 19.0,
-    "rushDef": 431.0,
+    "record": "0-2",
+    "ppg": 6.5,
+    "pa": 52.0,
+    "passOff": 71.0,
+    "rushOff": 104.5,
+    "passDef": 213.0,
+    "rushDef": 313.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3820,6 +4667,13 @@
         "teamScore": 0,
         "oppScore": 34,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Youngstown State",
+        "teamScore": 13,
+        "oppScore": 70,
+        "result": "L"
       }
     ]
   },
@@ -3827,13 +4681,13 @@
     "league": "CFB",
     "conf": "OVC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 17.5,
-    "pa": 36.5,
-    "passOff": 80.0,
-    "rushOff": 159.0,
-    "passDef": 302.5,
-    "rushDef": 105.0,
+    "record": "1-2",
+    "ppg": 23.3,
+    "pa": 38.3,
+    "passOff": 142.3,
+    "rushOff": 167.3,
+    "passDef": 296.3,
+    "rushDef": 142.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3851,6 +4705,13 @@
         "teamScore": 7,
         "oppScore": 59,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Indiana State",
+        "teamScore": 35,
+        "oppScore": 42,
+        "result": "L"
       }
     ]
   },
@@ -3858,13 +4719,13 @@
     "league": "CFB",
     "conf": "UAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 14.0,
-    "pa": 47.0,
-    "passOff": 197.5,
-    "rushOff": 130.0,
-    "passDef": 336.0,
-    "rushDef": 181.0,
+    "record": "1-2",
+    "ppg": 16.7,
+    "pa": 37.0,
+    "passOff": 171.7,
+    "rushOff": 178.0,
+    "passDef": 269.0,
+    "rushDef": 160.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3882,6 +4743,13 @@
         "teamScore": 7,
         "oppScore": 49,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Chattanooga",
+        "teamScore": 22,
+        "oppScore": 17,
+        "result": "W"
       }
     ]
   },
@@ -3889,13 +4757,13 @@
     "league": "CFB",
     "conf": "Patriot",
     "division": "fcs",
-    "record": "0-2",
+    "record": "0-3",
     "ppg": 7.0,
-    "pa": 31.0,
-    "passOff": 116.0,
-    "rushOff": 46.0,
-    "passDef": 202.0,
-    "rushDef": 201.5,
+    "pa": 35.7,
+    "passOff": 111.0,
+    "rushOff": 68.7,
+    "passDef": 204.3,
+    "rushDef": 218.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3913,6 +4781,13 @@
         "teamScore": 0,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Coastal Carolina",
+        "teamScore": 7,
+        "oppScore": 45,
+        "result": "L"
       }
     ]
   },
@@ -3920,13 +4795,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 14.5,
-    "pa": 29.5,
-    "passOff": 113.0,
-    "rushOff": 223.0,
-    "passDef": 231.5,
-    "rushDef": 167.5,
+    "record": "2-1",
+    "ppg": 16.3,
+    "pa": 24.0,
+    "passOff": 128.0,
+    "rushOff": 198.3,
+    "passDef": 220.0,
+    "rushDef": 166.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3944,6 +4819,13 @@
         "teamScore": 9,
         "oppScore": 56,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Mercer",
+        "teamScore": 20,
+        "oppScore": 13,
+        "result": "W"
       }
     ]
   },
@@ -3951,13 +4833,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 22.5,
+    "record": "1-2",
+    "ppg": 16.0,
     "pa": 31.0,
-    "passOff": 144.0,
-    "rushOff": 136.5,
-    "passDef": 223.5,
-    "rushDef": 209.5,
+    "passOff": 155.0,
+    "rushOff": 142.0,
+    "passDef": 221.0,
+    "rushDef": 185.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -3975,6 +4857,13 @@
         "teamScore": 0,
         "oppScore": 62,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Bryant",
+        "teamScore": 3,
+        "oppScore": 31,
+        "result": "L"
       }
     ]
   },
@@ -3982,13 +4871,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 18.5,
-    "pa": 29.5,
-    "passOff": 148.0,
-    "rushOff": 154.5,
-    "passDef": 89.0,
-    "rushDef": 356.5,
+    "record": "2-1",
+    "ppg": 41.7,
+    "pa": 19.7,
+    "passOff": 177.0,
+    "rushOff": 194.7,
+    "passDef": 92.3,
+    "rushDef": 240.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4006,6 +4895,13 @@
         "teamScore": 3,
         "oppScore": 31,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Arkansas Baptist",
+        "teamScore": 88,
+        "oppScore": 0,
+        "result": "W"
       }
     ]
   },
@@ -4013,13 +4909,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 24.0,
-    "pa": 52.0,
-    "passOff": 241.0,
-    "rushOff": 112.5,
-    "passDef": 294.0,
-    "rushDef": 280.5,
+    "record": "0-3",
+    "ppg": 21.7,
+    "pa": 42.3,
+    "passOff": 229.0,
+    "rushOff": 105.3,
+    "passDef": 249.0,
+    "rushDef": 235.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4037,6 +4933,13 @@
         "teamScore": 14,
         "oppScore": 66,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Lamar",
+        "teamScore": 17,
+        "oppScore": 23,
+        "result": "L"
       }
     ]
   },
@@ -4044,13 +4947,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 33.5,
-    "pa": 13.5,
-    "passOff": 259.0,
-    "rushOff": 88.5,
-    "passDef": 128.0,
-    "rushDef": 195.5,
+    "record": "3-0",
+    "ppg": 42.0,
+    "pa": 14.7,
+    "passOff": 326.7,
+    "rushOff": 118.3,
+    "passDef": 126.0,
+    "rushDef": 208.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4068,6 +4971,13 @@
         "teamScore": 29,
         "oppScore": 17,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "San Diego",
+        "teamScore": 59,
+        "oppScore": 17,
+        "result": "W"
       }
     ]
   },
@@ -4075,13 +4985,13 @@
     "league": "CFB",
     "conf": "MVFC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 20.0,
-    "pa": 33.5,
-    "passOff": 253.0,
-    "rushOff": 62.0,
-    "passDef": 310.0,
-    "rushDef": 115.0,
+    "record": "1-2",
+    "ppg": 27.3,
+    "pa": 34.0,
+    "passOff": 263.3,
+    "rushOff": 114.0,
+    "passDef": 295.7,
+    "rushDef": 138.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4099,6 +5009,13 @@
         "teamScore": 19,
         "oppScore": 44,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Eastern Illinois",
+        "teamScore": 42,
+        "oppScore": 35,
+        "result": "W"
       }
     ]
   },
@@ -4106,13 +5023,13 @@
     "league": "CFB",
     "conf": "Patriot",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 7.0,
-    "pa": 56.0,
-    "passOff": 145.0,
-    "rushOff": 64.0,
-    "passDef": 370.0,
-    "rushDef": 301.0,
+    "record": "1-1",
+    "ppg": 10.0,
+    "pa": 32.5,
+    "passOff": 143.0,
+    "rushOff": 121.5,
+    "passDef": 330.5,
+    "rushDef": 184.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4123,6 +5040,13 @@
         "teamScore": 7,
         "oppScore": 56,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Marist",
+        "teamScore": 13,
+        "oppScore": 9,
+        "result": "W"
       }
     ]
   },
@@ -4130,13 +5054,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 14.0,
-    "pa": 26.0,
-    "passOff": 166.0,
-    "rushOff": 75.5,
-    "passDef": 219.0,
-    "rushDef": 197.0,
+    "record": "2-1",
+    "ppg": 17.0,
+    "pa": 23.0,
+    "passOff": 163.7,
+    "rushOff": 98.3,
+    "passDef": 214.3,
+    "rushDef": 161.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4154,6 +5078,13 @@
         "teamScore": 7,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Idaho",
+        "teamScore": 23,
+        "oppScore": 17,
+        "result": "W"
       }
     ]
   },
@@ -4161,13 +5092,13 @@
     "league": "CFB",
     "conf": "NEC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 13.5,
-    "pa": 46.5,
-    "passOff": 147.5,
-    "rushOff": 53.0,
-    "passDef": 316.5,
-    "rushDef": 222.5,
+    "record": "0-3",
+    "ppg": 13.3,
+    "pa": 42.7,
+    "passOff": 124.3,
+    "rushOff": 83.0,
+    "passDef": 290.0,
+    "rushDef": 183.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4185,6 +5116,13 @@
         "teamScore": 6,
         "oppScore": 51,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "UAlbany",
+        "teamScore": 13,
+        "oppScore": 35,
+        "result": "L"
       }
     ]
   },
@@ -4192,13 +5130,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 12.0,
-    "pa": 36.5,
-    "passOff": 198.5,
-    "rushOff": 91.0,
-    "passDef": 307.5,
-    "rushDef": 205.5,
+    "record": "1-2",
+    "ppg": 12.7,
+    "pa": 32.0,
+    "passOff": 181.0,
+    "rushOff": 78.3,
+    "passDef": 231.3,
+    "rushDef": 207.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4216,6 +5154,13 @@
         "teamScore": 3,
         "oppScore": 55,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Merrimack",
+        "teamScore": 14,
+        "oppScore": 23,
+        "result": "L"
       }
     ]
   },
@@ -4223,13 +5168,13 @@
     "league": "CFB",
     "conf": "NEC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 12.0,
-    "pa": 47.0,
-    "passOff": 189.5,
-    "rushOff": 49.5,
-    "passDef": 263.5,
-    "rushDef": 243.5,
+    "record": "0-3",
+    "ppg": 10.3,
+    "pa": 54.7,
+    "passOff": 172.0,
+    "rushOff": 39.0,
+    "passDef": 233.3,
+    "rushDef": 258.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4247,6 +5192,13 @@
         "teamScore": 14,
         "oppScore": 51,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "New Mexico",
+        "teamScore": 7,
+        "oppScore": 70,
+        "result": "L"
       }
     ]
   },
@@ -4254,13 +5206,13 @@
     "league": "CFB",
     "conf": "FCS Independents",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 7.0,
-    "pa": 38.0,
-    "passOff": 228.5,
-    "rushOff": 71.0,
-    "passDef": 281.5,
-    "rushDef": 140.5,
+    "record": "1-2",
+    "ppg": 12.3,
+    "pa": 30.0,
+    "passOff": 178.7,
+    "rushOff": 117.7,
+    "passDef": 236.3,
+    "rushDef": 111.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4278,6 +5230,13 @@
         "teamScore": 7,
         "oppScore": 42,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Maine",
+        "teamScore": 23,
+        "oppScore": 14,
+        "result": "W"
       }
     ]
   },
@@ -4285,13 +5244,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 5.0,
-    "pa": 48.0,
-    "passOff": 61.0,
-    "rushOff": 126.5,
-    "passDef": 298.5,
-    "rushDef": 185.5,
+    "record": "1-2",
+    "ppg": 13.7,
+    "pa": 38.7,
+    "passOff": 127.3,
+    "rushOff": 133.3,
+    "passDef": 270.0,
+    "rushDef": 167.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4309,6 +5268,13 @@
         "teamScore": 0,
         "oppScore": 52,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Lincoln (PA)",
+        "teamScore": 31,
+        "oppScore": 20,
+        "result": "W"
       }
     ]
   },
@@ -4316,13 +5282,13 @@
     "league": "CFB",
     "conf": "MEAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 12.0,
-    "pa": 38.5,
-    "passOff": 126.5,
-    "rushOff": 105.5,
-    "passDef": 336.0,
-    "rushDef": 168.5,
+    "record": "2-1",
+    "ppg": 26.3,
+    "pa": 25.7,
+    "passOff": 213.3,
+    "rushOff": 115.3,
+    "passDef": 301.7,
+    "rushDef": 144.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4340,6 +5306,13 @@
         "teamScore": 7,
         "oppScore": 70,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Virginia Lynchburg",
+        "teamScore": 55,
+        "oppScore": 0,
+        "result": "W"
       }
     ]
   },
@@ -4347,13 +5320,13 @@
     "league": "CFB",
     "conf": "MVFC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 14.0,
-    "pa": 33.0,
-    "passOff": 201.0,
-    "rushOff": 104.0,
-    "passDef": 150.5,
-    "rushDef": 231.5,
+    "record": "1-2",
+    "ppg": 18.3,
+    "pa": 28.0,
+    "passOff": 198.7,
+    "rushOff": 134.0,
+    "passDef": 183.3,
+    "rushDef": 180.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4371,6 +5344,13 @@
         "teamScore": 14,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Valparaiso",
+        "teamScore": 27,
+        "oppScore": 18,
+        "result": "W"
       }
     ]
   },
@@ -4378,13 +5358,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 8.5,
-    "pa": 47.0,
-    "passOff": 167.0,
-    "rushOff": 61.0,
-    "passDef": 166.0,
-    "rushDef": 306.0,
+    "record": "1-2",
+    "ppg": 19.7,
+    "pa": 43.0,
+    "passOff": 176.3,
+    "rushOff": 91.7,
+    "passDef": 237.3,
+    "rushDef": 248.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4402,6 +5382,13 @@
         "teamScore": 3,
         "oppScore": 66,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Stonehill",
+        "teamScore": 42,
+        "oppScore": 35,
+        "result": "W"
       }
     ]
   },
@@ -4409,13 +5396,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 23.5,
-    "pa": 40.5,
-    "passOff": 188.5,
-    "rushOff": 130.0,
-    "passDef": 163.0,
-    "rushDef": 230.5,
+    "record": "2-1",
+    "ppg": 26.0,
+    "pa": 36.3,
+    "passOff": 204.0,
+    "rushOff": 115.7,
+    "passDef": 196.7,
+    "rushDef": 174.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4433,6 +5420,13 @@
         "teamScore": 3,
         "oppScore": 71,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "UT Rio Grande Valley",
+        "teamScore": 31,
+        "oppScore": 28,
+        "result": "W"
       }
     ]
   },
@@ -4478,13 +5472,13 @@
     "league": "CFB",
     "conf": "UAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 18.0,
-    "pa": 20.5,
-    "passOff": 171.0,
-    "rushOff": 102.5,
-    "passDef": 256.0,
-    "rushDef": 70.0,
+    "record": "1-2",
+    "ppg": 20.3,
+    "pa": 23.7,
+    "passOff": 202.3,
+    "rushOff": 118.0,
+    "passDef": 250.0,
+    "rushDef": 92.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4502,6 +5496,13 @@
         "teamScore": 14,
         "oppScore": 31,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "SE Louisiana",
+        "teamScore": 25,
+        "oppScore": 30,
+        "result": "L"
       }
     ]
   },
@@ -4509,13 +5510,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 8.5,
-    "pa": 38.0,
-    "passOff": 182.5,
-    "rushOff": 86.0,
-    "passDef": 223.0,
-    "rushDef": 196.5,
+    "record": "0-3",
+    "ppg": 13.0,
+    "pa": 35.3,
+    "passOff": 208.0,
+    "rushOff": 91.3,
+    "passDef": 197.3,
+    "rushDef": 205.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4533,6 +5534,13 @@
         "teamScore": 10,
         "oppScore": 59,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "North Carolina Central",
+        "teamScore": 22,
+        "oppScore": 30,
+        "result": "L"
       }
     ]
   },
@@ -4540,13 +5548,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 20.5,
-    "pa": 31.0,
-    "passOff": 182.0,
-    "rushOff": 97.0,
-    "passDef": 310.5,
-    "rushDef": 164.0,
+    "record": "2-1",
+    "ppg": 26.3,
+    "pa": 30.0,
+    "passOff": 172.3,
+    "rushOff": 124.7,
+    "passDef": 350.3,
+    "rushDef": 168.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4564,6 +5572,13 @@
         "teamScore": 7,
         "oppScore": 35,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Incarnate Word",
+        "teamScore": 38,
+        "oppScore": 28,
+        "result": "W"
       }
     ]
   },
@@ -4571,13 +5586,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 21.5,
-    "pa": 61.0,
-    "passOff": 192.0,
-    "rushOff": 135.0,
-    "passDef": 239.5,
-    "rushDef": 193.0,
+    "record": "0-3",
+    "ppg": 19.0,
+    "pa": 53.3,
+    "passOff": 164.0,
+    "rushOff": 116.3,
+    "passDef": 214.7,
+    "rushDef": 213.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4594,6 +5609,13 @@
         "opp": "Louisiana Tech",
         "teamScore": 6,
         "oppScore": 80,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "East Texas A&M",
+        "teamScore": 14,
+        "oppScore": 38,
         "result": "L"
       }
     ]
@@ -4633,13 +5655,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 24.0,
-    "pa": 22.5,
-    "passOff": 161.5,
-    "rushOff": 133.0,
-    "passDef": 201.5,
-    "rushDef": 160.5,
+    "record": "2-1",
+    "ppg": 26.3,
+    "pa": 18.3,
+    "passOff": 167.0,
+    "rushOff": 124.7,
+    "passDef": 195.3,
+    "rushDef": 147.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4657,6 +5679,13 @@
         "teamScore": 14,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Elon",
+        "teamScore": 31,
+        "oppScore": 10,
+        "result": "W"
       }
     ]
   },
@@ -4664,13 +5693,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 21.0,
-    "pa": 36.5,
-    "passOff": 168.0,
-    "rushOff": 146.5,
-    "passDef": 177.0,
-    "rushDef": 201.0,
+    "record": "1-2",
+    "ppg": 24.0,
+    "pa": 32.7,
+    "passOff": 191.3,
+    "rushOff": 143.7,
+    "passDef": 206.3,
+    "rushDef": 183.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4688,6 +5717,13 @@
         "teamScore": 14,
         "oppScore": 39,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "North Alabama",
+        "teamScore": 30,
+        "oppScore": 25,
+        "result": "W"
       }
     ]
   },
@@ -4695,13 +5731,13 @@
     "league": "CFB",
     "conf": "MVFC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 44.0,
-    "pa": 20.5,
-    "passOff": 260.0,
-    "rushOff": 270.0,
-    "passDef": 215.0,
-    "rushDef": 166.0,
+    "record": "2-1",
+    "ppg": 48.3,
+    "pa": 18.3,
+    "passOff": 258.7,
+    "rushOff": 265.3,
+    "passDef": 172.0,
+    "rushDef": 160.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4719,6 +5755,13 @@
         "teamScore": 18,
         "oppScore": 34,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "New Haven",
+        "teamScore": 57,
+        "oppScore": 14,
+        "result": "W"
       }
     ]
   },
@@ -4726,13 +5769,13 @@
     "league": "CFB",
     "conf": "OVC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 16.5,
-    "pa": 29.5,
-    "passOff": 208.0,
-    "rushOff": 60.0,
-    "passDef": 241.5,
-    "rushDef": 83.0,
+    "record": "1-2",
+    "ppg": 17.7,
+    "pa": 31.0,
+    "passOff": 244.0,
+    "rushOff": 54.7,
+    "passDef": 256.3,
+    "rushDef": 113.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4750,6 +5793,13 @@
         "teamScore": 10,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Southern Illinois",
+        "teamScore": 20,
+        "oppScore": 34,
+        "result": "L"
       }
     ]
   },
@@ -4757,13 +5807,13 @@
     "league": "CFB",
     "conf": "UAC",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 34.5,
-    "pa": 21.5,
-    "passOff": 240.0,
-    "rushOff": 244.5,
-    "passDef": 296.5,
-    "rushDef": 146.0,
+    "record": "3-0",
+    "ppg": 32.0,
+    "pa": 22.3,
+    "passOff": 281.0,
+    "rushOff": 211.7,
+    "passDef": 293.0,
+    "rushDef": 167.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4781,6 +5831,13 @@
         "teamScore": 20,
         "oppScore": 13,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "McNeese",
+        "teamScore": 27,
+        "oppScore": 24,
+        "result": "W"
       }
     ]
   },
@@ -4788,13 +5845,13 @@
     "league": "CFB",
     "conf": "OVC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 13.5,
-    "pa": 44.5,
-    "passOff": 182.0,
-    "rushOff": 49.5,
-    "passDef": 305.0,
-    "rushDef": 226.0,
+    "record": "0-3",
+    "ppg": 10.0,
+    "pa": 39.7,
+    "passOff": 183.7,
+    "rushOff": 54.3,
+    "passDef": 312.0,
+    "rushDef": 192.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4812,6 +5869,13 @@
         "teamScore": 3,
         "oppScore": 63,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Alabama A&M",
+        "teamScore": 3,
+        "oppScore": 30,
+        "result": "L"
       }
     ]
   },
@@ -4819,13 +5883,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 28.5,
-    "pa": 41.5,
-    "passOff": 128.0,
-    "rushOff": 247.5,
-    "passDef": 251.5,
-    "rushDef": 188.0,
+    "record": "1-2",
+    "ppg": 25.7,
+    "pa": 36.3,
+    "passOff": 109.7,
+    "rushOff": 243.3,
+    "passDef": 195.7,
+    "rushDef": 160.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4843,6 +5907,13 @@
         "teamScore": 43,
         "oppScore": 41,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Charleston Southern",
+        "teamScore": 20,
+        "oppScore": 26,
+        "result": "L"
       }
     ]
   },
@@ -4850,13 +5921,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 16.5,
-    "pa": 31.5,
-    "passOff": 237.0,
-    "rushOff": 75.5,
-    "passDef": 110.0,
-    "rushDef": 318.0,
+    "record": "0-3",
+    "ppg": 14.0,
+    "pa": 36.0,
+    "passOff": 218.7,
+    "rushOff": 57.3,
+    "passDef": 105.7,
+    "rushDef": 347.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4874,6 +5945,13 @@
         "teamScore": 15,
         "oppScore": 42,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "South Carolina",
+        "teamScore": 9,
+        "oppScore": 45,
+        "result": "L"
       }
     ]
   },
@@ -4881,13 +5959,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 22.5,
-    "pa": 17.5,
-    "passOff": 130.5,
-    "rushOff": 223.0,
-    "passDef": 212.0,
-    "rushDef": 106.5,
+    "record": "2-1",
+    "ppg": 26.7,
+    "pa": 16.0,
+    "passOff": 166.0,
+    "rushOff": 184.0,
+    "passDef": 167.3,
+    "rushDef": 118.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4905,6 +5983,13 @@
         "teamScore": 17,
         "oppScore": 21,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Long Island University",
+        "teamScore": 35,
+        "oppScore": 13,
+        "result": "W"
       }
     ]
   },
@@ -4912,13 +5997,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 3.5,
-    "pa": 58.5,
-    "passOff": 152.0,
-    "rushOff": 53.5,
-    "passDef": 260.0,
-    "rushDef": 224.0,
+    "record": "0-3",
+    "ppg": 7.0,
+    "pa": 50.7,
+    "passOff": 201.7,
+    "rushOff": 70.3,
+    "passDef": 255.3,
+    "rushDef": 221.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4936,6 +6021,13 @@
         "teamScore": 7,
         "oppScore": 63,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Montana",
+        "teamScore": 14,
+        "oppScore": 35,
+        "result": "L"
       }
     ]
   },
@@ -4943,13 +6035,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 30.0,
-    "pa": 22.5,
-    "passOff": 324.5,
-    "rushOff": 224.0,
-    "passDef": 213.5,
-    "rushDef": 131.5,
+    "record": "1-2",
+    "ppg": 29.3,
+    "pa": 25.3,
+    "passOff": 304.3,
+    "rushOff": 170.3,
+    "passDef": 220.7,
+    "rushDef": 116.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4967,6 +6059,13 @@
         "teamScore": 16,
         "oppScore": 45,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Nicholls",
+        "teamScore": 28,
+        "oppScore": 31,
+        "result": "L"
       }
     ]
   },
@@ -4974,13 +6073,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 6.5,
-    "pa": 55.5,
-    "passOff": 49.0,
-    "rushOff": 112.5,
-    "passDef": 358.5,
-    "rushDef": 178.0,
+    "record": "0-3",
+    "ppg": 5.3,
+    "pa": 41.7,
+    "passOff": 84.3,
+    "rushOff": 109.7,
+    "passDef": 312.7,
+    "rushDef": 159.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -4998,6 +6097,13 @@
         "teamScore": 3,
         "oppScore": 73,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Bucknell",
+        "teamScore": 3,
+        "oppScore": 14,
+        "result": "L"
       }
     ]
   },
@@ -5005,13 +6111,13 @@
     "league": "CFB",
     "conf": "UAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 5.0,
-    "pa": 35.5,
-    "passOff": 146.0,
-    "rushOff": 43.5,
-    "passDef": 195.5,
-    "rushDef": 223.0,
+    "record": "0-3",
+    "ppg": 5.7,
+    "pa": 41.0,
+    "passOff": 155.3,
+    "rushOff": 53.0,
+    "passDef": 175.3,
+    "rushDef": 234.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5029,6 +6135,13 @@
         "teamScore": 0,
         "oppScore": 47,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Arkansas State",
+        "teamScore": 7,
+        "oppScore": 52,
+        "result": "L"
       }
     ]
   },
@@ -5036,13 +6149,13 @@
     "league": "CFB",
     "conf": "MVFC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 28.0,
-    "pa": 27.5,
-    "passOff": 239.0,
-    "rushOff": 155.5,
-    "passDef": 256.5,
-    "rushDef": 117.0,
+    "record": "2-1",
+    "ppg": 42.0,
+    "pa": 22.7,
+    "passOff": 295.0,
+    "rushOff": 169.0,
+    "passDef": 200.7,
+    "rushDef": 129.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5060,6 +6173,13 @@
         "teamScore": 13,
         "oppScore": 45,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Duquesne",
+        "teamScore": 70,
+        "oppScore": 13,
+        "result": "W"
       }
     ]
   },
@@ -5067,13 +6187,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 31.0,
-    "pa": 27.0,
-    "passOff": 223.0,
-    "rushOff": 215.0,
-    "passDef": 265.0,
-    "rushDef": 117.5,
+    "record": "2-1",
+    "ppg": 30.7,
+    "pa": 19.0,
+    "passOff": 257.3,
+    "rushOff": 185.3,
+    "passDef": 239.0,
+    "rushDef": 99.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5091,6 +6211,13 @@
         "teamScore": 38,
         "oppScore": 23,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Tennessee State",
+        "teamScore": 30,
+        "oppScore": 3,
+        "result": "W"
       }
     ]
   },
@@ -5098,13 +6225,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 32.0,
-    "pa": 8.5,
-    "passOff": 160.0,
-    "rushOff": 154.5,
-    "passDef": 133.5,
-    "rushDef": 125.0,
+    "record": "2-1",
+    "ppg": 27.0,
+    "pa": 17.0,
+    "passOff": 141.7,
+    "rushOff": 135.7,
+    "passDef": 156.0,
+    "rushDef": 159.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5122,6 +6249,13 @@
         "teamScore": 34,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Troy",
+        "teamScore": 17,
+        "oppScore": 34,
+        "result": "L"
       }
     ]
   },
@@ -5129,9 +6263,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 7.0,
-    "pa": 23.5,
+    "record": "1-2",
+    "ppg": 21.0,
+    "pa": 21.3,
     "passOff": 160.0,
     "rushOff": 3.0,
     "passDef": 190.0,
@@ -5153,6 +6287,13 @@
         "teamScore": 7,
         "oppScore": 27,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Savannah State",
+        "teamScore": 49,
+        "oppScore": 17,
+        "result": "W"
       }
     ]
   },
@@ -5160,9 +6301,9 @@
     "league": "CFB",
     "conf": "South Atlantic",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 12.0,
-    "pa": 17.0,
+    "record": "2-1",
+    "ppg": 21.0,
+    "pa": 18.3,
     "passOff": 154.0,
     "rushOff": 6.0,
     "passDef": 183.0,
@@ -5184,6 +6325,13 @@
         "teamScore": 21,
         "oppScore": 14,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "UVA Wise",
+        "teamScore": 39,
+        "oppScore": 21,
+        "result": "W"
       }
     ]
   },
@@ -5191,13 +6339,13 @@
     "league": "CFB",
     "conf": "Patriot",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 15.0,
-    "pa": 26.0,
-    "passOff": 200.0,
-    "rushOff": 46.0,
-    "passDef": 208.5,
-    "rushDef": 140.5,
+    "record": "1-2",
+    "ppg": 14.7,
+    "pa": 18.3,
+    "passOff": 207.0,
+    "rushOff": 71.0,
+    "passDef": 190.7,
+    "rushDef": 128.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5215,6 +6363,13 @@
         "teamScore": 16,
         "oppScore": 17,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "VMI",
+        "teamScore": 14,
+        "oppScore": 3,
+        "result": "W"
       }
     ]
   },
@@ -5222,13 +6377,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 25.5,
-    "pa": 37.0,
-    "passOff": 190.0,
-    "rushOff": 83.0,
-    "passDef": 332.0,
-    "rushDef": 166.0,
+    "record": "2-1",
+    "ppg": 34.3,
+    "pa": 24.7,
+    "passOff": 165.5,
+    "rushOff": 227.0,
+    "passDef": 243.0,
+    "rushDef": 123.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5246,6 +6401,13 @@
         "teamScore": 24,
         "oppScore": 51,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Franklin",
+        "teamScore": 52,
+        "oppScore": 0,
+        "result": "W"
       }
     ]
   },
@@ -5253,13 +6415,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 31.0,
-    "pa": 25.5,
-    "passOff": 261.5,
-    "rushOff": 188.5,
-    "passDef": 312.5,
-    "rushDef": 143.5,
+    "record": "2-1",
+    "ppg": 27.3,
+    "pa": 27.0,
+    "passOff": 257.3,
+    "rushOff": 156.0,
+    "passDef": 287.7,
+    "rushDef": 180.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5277,6 +6439,13 @@
         "teamScore": 24,
         "oppScore": 17,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "San Jos\u00e9 State",
+        "teamScore": 20,
+        "oppScore": 30,
+        "result": "L"
       }
     ]
   },
@@ -5284,13 +6453,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 38.5,
-    "pa": 28.0,
-    "passOff": 336.5,
-    "rushOff": 184.5,
-    "passDef": 349.5,
-    "rushDef": 78.0,
+    "record": "2-1",
+    "ppg": 26.7,
+    "pa": 36.0,
+    "passOff": 273.7,
+    "rushOff": 143.7,
+    "passDef": 333.0,
+    "rushDef": 123.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5308,6 +6477,13 @@
         "teamScore": 28,
         "oppScore": 19,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Florida",
+        "teamScore": 3,
+        "oppScore": 52,
+        "result": "L"
       }
     ]
   },
@@ -5315,13 +6491,13 @@
     "league": "CFB",
     "conf": "UAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 25.0,
-    "pa": 33.0,
-    "passOff": 220.0,
-    "rushOff": 189.0,
-    "passDef": 197.5,
-    "rushDef": 152.5,
+    "record": "2-1",
+    "ppg": 36.3,
+    "pa": 28.7,
+    "passOff": 192.3,
+    "rushOff": 261.7,
+    "passDef": 227.7,
+    "rushDef": 112.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5339,6 +6515,13 @@
         "teamScore": 14,
         "oppScore": 42,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Central Oklahoma",
+        "teamScore": 59,
+        "oppScore": 20,
+        "result": "W"
       }
     ]
   },
@@ -5346,13 +6529,13 @@
     "league": "CFB",
     "conf": "NEC",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 20.0,
-    "pa": 59.0,
-    "passOff": 115.0,
-    "rushOff": 135.0,
-    "passDef": 327.0,
-    "rushDef": 267.0,
+    "record": "0-2",
+    "ppg": 15.0,
+    "pa": 61.0,
+    "passOff": 90.5,
+    "rushOff": 104.0,
+    "passDef": 320.0,
+    "rushDef": 261.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5363,6 +6546,13 @@
         "teamScore": 20,
         "oppScore": 59,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Toledo",
+        "teamScore": 10,
+        "oppScore": 63,
+        "result": "L"
       }
     ]
   },
@@ -5370,9 +6560,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 20.0,
-    "pa": 44.5,
+    "record": "1-2",
+    "ppg": 29.7,
+    "pa": 36.7,
     "passOff": 248.0,
     "rushOff": 138.0,
     "passDef": 283.0,
@@ -5394,6 +6584,13 @@
         "teamScore": 26,
         "oppScore": 48,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Morehouse",
+        "teamScore": 49,
+        "oppScore": 21,
+        "result": "W"
       }
     ]
   },
@@ -5401,9 +6598,9 @@
     "league": "CFB",
     "conf": "Lone Star",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 17.0,
-    "pa": 24.0,
+    "record": "0-2",
+    "ppg": 15.5,
+    "pa": 26.0,
     "passOff": 262.0,
     "rushOff": 168.0,
     "passDef": 204.0,
@@ -5418,6 +6615,13 @@
         "teamScore": 17,
         "oppScore": 24,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Ferris State",
+        "teamScore": 14,
+        "oppScore": 28,
+        "result": "L"
       }
     ]
   },
@@ -5425,13 +6629,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 16.5,
-    "pa": 17.0,
-    "passOff": 108.5,
-    "rushOff": 169.5,
-    "passDef": 171.0,
-    "rushDef": 57.0,
+    "record": "1-2",
+    "ppg": 16.7,
+    "pa": 18.7,
+    "passOff": 117.3,
+    "rushOff": 152.7,
+    "passDef": 154.0,
+    "rushDef": 129.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5449,6 +6653,13 @@
         "teamScore": 9,
         "oppScore": 24,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Eastern Kentucky",
+        "teamScore": 17,
+        "oppScore": 22,
+        "result": "L"
       }
     ]
   },
@@ -5456,13 +6667,13 @@
     "league": "CFB",
     "conf": "FCS Independents",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 17.5,
-    "pa": 43.0,
-    "passOff": 208.5,
-    "rushOff": 80.5,
-    "passDef": 248.5,
-    "rushDef": 184.5,
+    "record": "1-2",
+    "ppg": 37.7,
+    "pa": 31.0,
+    "passOff": 274.3,
+    "rushOff": 111.7,
+    "passDef": 221.3,
+    "rushDef": 147.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5480,6 +6691,13 @@
         "teamScore": 7,
         "oppScore": 42,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Kentucky Christian",
+        "teamScore": 78,
+        "oppScore": 7,
+        "result": "W"
       }
     ]
   },
@@ -5487,9 +6705,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 19.0,
-    "pa": 35.0,
+    "record": "1-2",
+    "ppg": 13.7,
+    "pa": 33.3,
     "passOff": 130.0,
     "rushOff": 94.0,
     "passDef": 264.0,
@@ -5511,6 +6729,13 @@
         "teamScore": 31,
         "oppScore": 21,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Kentucky State",
+        "teamScore": 3,
+        "oppScore": 30,
+        "result": "L"
       }
     ]
   },
@@ -5518,13 +6743,13 @@
     "league": "CFB",
     "conf": "Patriot",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 29.5,
-    "pa": 12.0,
-    "passOff": 224.5,
-    "rushOff": 213.5,
-    "passDef": 190.0,
-    "rushDef": 69.5,
+    "record": "2-1",
+    "ppg": 23.0,
+    "pa": 12.3,
+    "passOff": 191.0,
+    "rushOff": 174.0,
+    "passDef": 152.0,
+    "rushDef": 113.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5542,6 +6767,13 @@
         "teamScore": 35,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Central Michigan",
+        "teamScore": 10,
+        "oppScore": 13,
+        "result": "L"
       }
     ]
   },
@@ -5580,13 +6812,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 17.5,
-    "pa": 39.5,
-    "passOff": 222.5,
-    "rushOff": 74.5,
-    "passDef": 208.0,
-    "rushDef": 198.0,
+    "record": "1-2",
+    "ppg": 21.0,
+    "pa": 31.0,
+    "passOff": 246.0,
+    "rushOff": 103.0,
+    "passDef": 185.3,
+    "rushDef": 173.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5604,6 +6836,13 @@
         "teamScore": 0,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Dickinson",
+        "teamScore": 28,
+        "oppScore": 14,
+        "result": "W"
       }
     ]
   },
@@ -5611,13 +6850,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "1-0",
-    "ppg": 43.0,
-    "pa": 20.0,
-    "passOff": 186.0,
-    "rushOff": 251.0,
-    "passDef": 164.0,
-    "rushDef": 180.0,
+    "record": "2-0",
+    "ppg": 36.5,
+    "pa": 13.5,
+    "passOff": 198.5,
+    "rushOff": 228.0,
+    "passDef": 153.5,
+    "rushDef": 131.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5628,6 +6867,13 @@
         "teamScore": 43,
         "oppScore": 20,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Thomas More",
+        "teamScore": 30,
+        "oppScore": 7,
+        "result": "W"
       }
     ]
   },
@@ -5635,13 +6881,13 @@
     "league": "CFB",
     "conf": "MEAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 28.0,
-    "pa": 28.0,
-    "passOff": 225.5,
-    "rushOff": 214.5,
-    "passDef": 210.5,
-    "rushDef": 111.0,
+    "record": "2-1",
+    "ppg": 25.7,
+    "pa": 20.7,
+    "passOff": 206.0,
+    "rushOff": 217.7,
+    "passDef": 193.7,
+    "rushDef": 116.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5659,6 +6905,13 @@
         "teamScore": 15,
         "oppScore": 22,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Bowie State",
+        "teamScore": 21,
+        "oppScore": 6,
+        "result": "W"
       }
     ]
   },
@@ -5666,13 +6919,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 22.5,
-    "pa": 41.5,
-    "passOff": 393.5,
-    "rushOff": 34.5,
-    "passDef": 294.0,
-    "rushDef": 213.5,
+    "record": "0-3",
+    "ppg": 19.7,
+    "pa": 46.3,
+    "passOff": 361.0,
+    "rushOff": 26.7,
+    "passDef": 276.7,
+    "rushDef": 209.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5690,6 +6943,13 @@
         "teamScore": 10,
         "oppScore": 45,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Northern Iowa",
+        "teamScore": 14,
+        "oppScore": 56,
+        "result": "L"
       }
     ]
   },
@@ -5697,13 +6957,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 30.5,
-    "pa": 29.0,
-    "passOff": 282.0,
-    "rushOff": 130.0,
-    "passDef": 225.5,
-    "rushDef": 132.0,
+    "record": "1-2",
+    "ppg": 28.0,
+    "pa": 33.0,
+    "passOff": 260.3,
+    "rushOff": 128.3,
+    "passDef": 232.0,
+    "rushDef": 178.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5721,6 +6981,13 @@
         "teamScore": 34,
         "oppScore": 24,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "South Dakota",
+        "teamScore": 23,
+        "oppScore": 41,
+        "result": "L"
       }
     ]
   },
@@ -5728,13 +6995,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 42.5,
-    "pa": 31.5,
-    "passOff": 316.0,
-    "rushOff": 190.0,
-    "passDef": 226.0,
-    "rushDef": 191.5,
+    "record": "1-2",
+    "ppg": 29.3,
+    "pa": 32.7,
+    "passOff": 270.0,
+    "rushOff": 152.3,
+    "passDef": 239.3,
+    "rushDef": 181.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5752,6 +7019,13 @@
         "teamScore": 48,
         "oppScore": 14,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "North Carolina",
+        "teamScore": 3,
+        "oppScore": 35,
+        "result": "L"
       }
     ]
   },
@@ -5759,13 +7033,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 11.0,
-    "pa": 33.5,
-    "passOff": 181.5,
-    "rushOff": 103.5,
-    "passDef": 177.5,
-    "rushDef": 215.5,
+    "record": "1-2",
+    "ppg": 20.0,
+    "pa": 27.0,
+    "passOff": 176.0,
+    "rushOff": 153.7,
+    "passDef": 154.3,
+    "rushDef": 170.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5783,6 +7057,13 @@
         "teamScore": 7,
         "oppScore": 44,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Northwestern State",
+        "teamScore": 38,
+        "oppScore": 14,
+        "result": "W"
       }
     ]
   },
@@ -5790,9 +7071,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 28.0,
-    "pa": 47.0,
+    "record": "2-1",
+    "ppg": 30.7,
+    "pa": 38.0,
     "passOff": 183.0,
     "rushOff": 48.0,
     "passDef": 388.0,
@@ -5814,6 +7095,13 @@
         "teamScore": 14,
         "oppScore": 66,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Miles",
+        "teamScore": 36,
+        "oppScore": 20,
+        "result": "W"
       }
     ]
   },
@@ -5852,13 +7140,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 40.0,
-    "pa": 3.5,
-    "passOff": 234.5,
-    "rushOff": 161.0,
-    "passDef": 138.0,
-    "rushDef": 50.0,
+    "record": "2-1",
+    "ppg": 30.0,
+    "pa": 12.7,
+    "passOff": 217.3,
+    "rushOff": 147.7,
+    "passDef": 151.3,
+    "rushDef": 69.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5876,6 +7164,13 @@
         "teamScore": 38,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Rhode Island",
+        "teamScore": 10,
+        "oppScore": 31,
+        "result": "L"
       }
     ]
   },
@@ -5883,9 +7178,9 @@
     "league": "CFB",
     "conf": "Mountain East",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 16.5,
-    "pa": 39.0,
+    "record": "0-3",
+    "ppg": 16.7,
+    "pa": 38.3,
     "passOff": 164.0,
     "rushOff": 180.0,
     "passDef": 186.0,
@@ -5906,6 +7201,13 @@
         "opp": "Bloomsburg",
         "teamScore": 13,
         "oppScore": 35,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Findlay",
+        "teamScore": 17,
+        "oppScore": 37,
         "result": "L"
       }
     ]
@@ -5976,13 +7278,13 @@
     "league": "CFB",
     "conf": "OVC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 15.0,
-    "pa": 26.0,
-    "passOff": 345.0,
-    "rushOff": 46.0,
-    "passDef": 214.0,
-    "rushDef": 131.5,
+    "record": "0-3",
+    "ppg": 17.7,
+    "pa": 25.3,
+    "passOff": 292.0,
+    "rushOff": 70.0,
+    "passDef": 204.7,
+    "rushDef": 152.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -5999,6 +7301,13 @@
         "opp": "Wofford",
         "teamScore": 13,
         "oppScore": 17,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Liberty",
+        "teamScore": 23,
+        "oppScore": 24,
         "result": "L"
       }
     ]
@@ -6062,13 +7371,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 48.5,
-    "pa": 16.5,
-    "passOff": 273.5,
-    "rushOff": 292.0,
-    "passDef": 189.0,
-    "rushDef": 116.0,
+    "record": "2-1",
+    "ppg": 34.7,
+    "pa": 32.0,
+    "passOff": 245.7,
+    "rushOff": 201.3,
+    "passDef": 256.3,
+    "rushDef": 172.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6086,6 +7395,13 @@
         "teamScore": 48,
         "oppScore": 26,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "TCU",
+        "teamScore": 7,
+        "oppScore": 63,
+        "result": "L"
       }
     ]
   },
@@ -6093,13 +7409,13 @@
     "league": "CFB",
     "conf": "Patriot",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 10.0,
-    "pa": 35.0,
-    "passOff": 288.5,
-    "rushOff": 72.0,
-    "passDef": 203.5,
-    "rushDef": 216.5,
+    "record": "0-3",
+    "ppg": 9.0,
+    "pa": 38.3,
+    "passOff": 239.3,
+    "rushOff": 61.3,
+    "passDef": 214.3,
+    "rushDef": 211.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6117,6 +7433,13 @@
         "teamScore": 10,
         "oppScore": 35,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Miami (OH)",
+        "teamScore": 7,
+        "oppScore": 45,
+        "result": "L"
       }
     ]
   },
@@ -6124,13 +7447,13 @@
     "league": "CFB",
     "conf": "MEAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 26.0,
-    "pa": 26.0,
-    "passOff": 215.5,
-    "rushOff": 122.5,
-    "passDef": 257.5,
-    "rushDef": 95.0,
+    "record": "1-2",
+    "ppg": 17.3,
+    "pa": 35.7,
+    "passOff": 158.3,
+    "rushOff": 86.0,
+    "passDef": 241.3,
+    "rushDef": 163.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6148,6 +7471,13 @@
         "teamScore": 21,
         "oppScore": 28,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Indiana",
+        "teamScore": 0,
+        "oppScore": 55,
+        "result": "L"
       }
     ]
   },
@@ -6155,13 +7485,13 @@
     "league": "CFB",
     "conf": "MVFC",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 58.5,
-    "pa": 5.0,
-    "passOff": 257.0,
-    "rushOff": 239.0,
-    "passDef": 263.0,
-    "rushDef": 52.0,
+    "record": "3-0",
+    "ppg": 48.3,
+    "pa": 11.3,
+    "passOff": 205.0,
+    "rushOff": 170.0,
+    "passDef": 229.5,
+    "rushDef": 82.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6178,6 +7508,13 @@
         "opp": "Western Illinois",
         "teamScore": 41,
         "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Northern Illinois",
+        "teamScore": 28,
+        "oppScore": 24,
         "result": "W"
       }
     ]
@@ -6217,9 +7554,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 28.0,
-    "pa": 24.0,
+    "record": "2-1",
+    "ppg": 28.7,
+    "pa": 17.0,
     "passOff": 245.0,
     "rushOff": 133.0,
     "passDef": 200.0,
@@ -6241,6 +7578,13 @@
         "teamScore": 15,
         "oppScore": 34,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Clark Atlanta",
+        "teamScore": 30,
+        "oppScore": 3,
+        "result": "W"
       }
     ]
   },
@@ -6248,9 +7592,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 1.5,
-    "pa": 25.0,
+    "record": "0-3",
+    "ppg": 3.3,
+    "pa": 31.0,
     "passOff": 93.0,
     "rushOff": 89.0,
     "passDef": 128.0,
@@ -6272,6 +7616,13 @@
         "teamScore": 0,
         "oppScore": 34,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Allen",
+        "teamScore": 7,
+        "oppScore": 43,
+        "result": "L"
       }
     ]
   },
@@ -6279,13 +7630,13 @@
     "league": "CFB",
     "conf": "Patriot",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 40.0,
-    "pa": 12.0,
-    "passOff": 194.0,
-    "rushOff": 291.5,
-    "passDef": 218.5,
-    "rushDef": 96.5,
+    "record": "3-0",
+    "ppg": 41.3,
+    "pa": 14.7,
+    "passOff": 169.3,
+    "rushOff": 316.3,
+    "passDef": 211.7,
+    "rushDef": 112.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6303,6 +7654,13 @@
         "teamScore": 45,
         "oppScore": 14,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "William & Mary",
+        "teamScore": 44,
+        "oppScore": 20,
+        "result": "W"
       }
     ]
   },
@@ -6310,13 +7668,13 @@
     "league": "CFB",
     "conf": "OVC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 26.0,
-    "pa": 26.5,
-    "passOff": 175.5,
-    "rushOff": 162.5,
-    "passDef": 253.0,
-    "rushDef": 105.5,
+    "record": "1-2",
+    "ppg": 22.0,
+    "pa": 33.7,
+    "passOff": 152.0,
+    "rushOff": 147.7,
+    "passDef": 275.3,
+    "rushDef": 158.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6334,6 +7692,13 @@
         "teamScore": 32,
         "oppScore": 36,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Missouri State",
+        "teamScore": 14,
+        "oppScore": 48,
+        "result": "L"
       }
     ]
   },
@@ -6341,13 +7706,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 24.0,
-    "pa": 20.0,
-    "passOff": 136.5,
-    "rushOff": 134.5,
-    "passDef": 224.5,
-    "rushDef": 119.5,
+    "record": "1-2",
+    "ppg": 19.0,
+    "pa": 17.7,
+    "passOff": 188.0,
+    "rushOff": 112.3,
+    "passDef": 196.7,
+    "rushDef": 139.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6365,6 +7730,13 @@
         "teamScore": 27,
         "oppScore": 18,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Lafayette",
+        "teamScore": 9,
+        "oppScore": 13,
+        "result": "L"
       }
     ]
   },
@@ -6372,13 +7744,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 39.5,
-    "pa": 19.0,
-    "passOff": 244.0,
-    "rushOff": 209.5,
-    "passDef": 207.5,
-    "rushDef": 105.5,
+    "record": "1-2",
+    "ppg": 34.3,
+    "pa": 21.7,
+    "passOff": 258.0,
+    "rushOff": 209.3,
+    "passDef": 259.3,
+    "rushDef": 119.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6396,6 +7768,13 @@
         "teamScore": 52,
         "oppScore": 0,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Tarleton State",
+        "teamScore": 24,
+        "oppScore": 27,
+        "result": "L"
       }
     ]
   },
@@ -6403,13 +7782,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 42.5,
-    "pa": 9.0,
-    "passOff": 224.0,
-    "rushOff": 252.0,
-    "passDef": 224.0,
-    "rushDef": 128.0,
+    "record": "2-1",
+    "ppg": 32.7,
+    "pa": 12.7,
+    "passOff": 215.0,
+    "rushOff": 222.7,
+    "passDef": 202.0,
+    "rushDef": 135.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6427,6 +7806,13 @@
         "teamScore": 62,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Furman",
+        "teamScore": 13,
+        "oppScore": 20,
+        "result": "L"
       }
     ]
   },
@@ -6434,9 +7820,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 15.0,
-    "pa": 47.0,
+    "record": "0-3",
+    "ppg": 16.7,
+    "pa": 43.3,
     "passOff": 198.0,
     "rushOff": 82.5,
     "passDef": 254.0,
@@ -6458,6 +7844,13 @@
         "teamScore": 23,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Edward Waters",
+        "teamScore": 20,
+        "oppScore": 36,
+        "result": "L"
       }
     ]
   },
@@ -6465,13 +7858,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 22.5,
-    "pa": 31.0,
-    "passOff": 208.0,
-    "rushOff": 119.0,
-    "passDef": 240.0,
-    "rushDef": 161.5,
+    "record": "1-2",
+    "ppg": 19.7,
+    "pa": 37.0,
+    "passOff": 229.7,
+    "rushOff": 132.0,
+    "passDef": 248.7,
+    "rushDef": 157.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6489,6 +7882,13 @@
         "teamScore": 31,
         "oppScore": 24,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Western Michigan",
+        "teamScore": 14,
+        "oppScore": 49,
+        "result": "L"
       }
     ]
   },
@@ -6496,13 +7896,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 36.5,
-    "pa": 15.5,
-    "passOff": 273.0,
-    "rushOff": 139.5,
-    "passDef": 251.5,
-    "rushDef": 152.0,
+    "record": "3-0",
+    "ppg": 36.0,
+    "pa": 15.0,
+    "passOff": 264.0,
+    "rushOff": 165.0,
+    "passDef": 268.0,
+    "rushDef": 136.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6519,6 +7919,13 @@
         "opp": "Drake",
         "teamScore": 45,
         "oppScore": 10,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Utah Tech",
+        "teamScore": 35,
+        "oppScore": 14,
         "result": "W"
       }
     ]
@@ -6558,13 +7965,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 57.5,
-    "pa": 33.0,
-    "passOff": 434.5,
-    "rushOff": 162.0,
-    "passDef": 260.5,
-    "rushDef": 155.5,
+    "record": "1-2",
+    "ppg": 40.7,
+    "pa": 43.0,
+    "passOff": 335.3,
+    "rushOff": 131.0,
+    "passDef": 279.3,
+    "rushDef": 229.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6582,6 +7989,13 @@
         "teamScore": 75,
         "oppScore": 24,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Austin Peay",
+        "teamScore": 7,
+        "oppScore": 63,
+        "result": "L"
       }
     ]
   },
@@ -6589,9 +8003,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 18.0,
-    "pa": 33.0,
+    "record": "0-3",
+    "ppg": 19.0,
+    "pa": 38.3,
     "passOff": 286.0,
     "rushOff": 90.0,
     "passDef": 232.0,
@@ -6613,6 +8027,13 @@
         "teamScore": 21,
         "oppScore": 31,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Central State",
+        "teamScore": 21,
+        "oppScore": 49,
+        "result": "L"
       }
     ]
   },
@@ -6620,13 +8041,13 @@
     "league": "CFB",
     "conf": "NEC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 12.5,
-    "pa": 21.0,
-    "passOff": 242.0,
-    "rushOff": 114.5,
-    "passDef": 131.0,
-    "rushDef": 135.5,
+    "record": "1-2",
+    "ppg": 13.0,
+    "pa": 33.0,
+    "passOff": 190.0,
+    "rushOff": 126.3,
+    "passDef": 172.7,
+    "rushDef": 175.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6644,6 +8065,13 @@
         "teamScore": 3,
         "oppScore": 21,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "South Dakota State",
+        "teamScore": 14,
+        "oppScore": 57,
+        "result": "L"
       }
     ]
   },
@@ -6651,13 +8079,13 @@
     "league": "CFB",
     "conf": "MEAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 28.5,
-    "pa": 24.0,
-    "passOff": 145.5,
-    "rushOff": 178.0,
-    "passDef": 145.5,
-    "rushDef": 158.0,
+    "record": "2-1",
+    "ppg": 29.0,
+    "pa": 23.3,
+    "passOff": 145.7,
+    "rushOff": 193.0,
+    "passDef": 183.3,
+    "rushDef": 139.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6674,6 +8102,13 @@
         "opp": "Elizabeth City State",
         "teamScore": 27,
         "oppScore": 6,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "North Carolina A&T",
+        "teamScore": 30,
+        "oppScore": 22,
         "result": "W"
       }
     ]
@@ -6713,13 +8148,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 26.0,
-    "pa": 34.0,
-    "passOff": 246.0,
-    "rushOff": 185.0,
-    "passDef": 205.5,
-    "rushDef": 175.5,
+    "record": "0-3",
+    "ppg": 21.7,
+    "pa": 29.7,
+    "passOff": 232.7,
+    "rushOff": 169.7,
+    "passDef": 186.7,
+    "rushDef": 168.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6737,6 +8172,13 @@
         "teamScore": 23,
         "oppScore": 38,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Wyoming",
+        "teamScore": 13,
+        "oppScore": 21,
+        "result": "L"
       }
     ]
   },
@@ -6744,13 +8186,13 @@
     "league": "CFB",
     "conf": "MVFC",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 24.0,
-    "pa": 34.0,
-    "passOff": 287.0,
-    "rushOff": 63.0,
-    "passDef": 257.0,
-    "rushDef": 138.0,
+    "record": "1-1",
+    "ppg": 40.0,
+    "pa": 24.0,
+    "passOff": 264.5,
+    "rushOff": 132.0,
+    "passDef": 276.5,
+    "rushDef": 74.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6761,6 +8203,13 @@
         "teamScore": 24,
         "oppScore": 34,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Drake",
+        "teamScore": 56,
+        "oppScore": 14,
+        "result": "W"
       }
     ]
   },
@@ -6799,13 +8248,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 41.0,
-    "pa": 31.5,
-    "passOff": 284.5,
-    "rushOff": 174.0,
-    "passDef": 188.0,
-    "rushDef": 223.5,
+    "record": "1-2",
+    "ppg": 28.3,
+    "pa": 35.7,
+    "passOff": 214.3,
+    "rushOff": 128.0,
+    "passDef": 228.0,
+    "rushDef": 226.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6823,6 +8272,13 @@
         "teamScore": 52,
         "oppScore": 14,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Baylor",
+        "teamScore": 3,
+        "oppScore": 44,
+        "result": "L"
       }
     ]
   },
@@ -6899,13 +8355,13 @@
     "league": "CFB",
     "conf": "NEC",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 28.5,
-    "pa": 8.0,
-    "passOff": 228.5,
-    "rushOff": 127.5,
-    "passDef": 111.5,
-    "rushDef": 92.0,
+    "record": "2-1",
+    "ppg": 22.3,
+    "pa": 20.3,
+    "passOff": 212.3,
+    "rushOff": 89.7,
+    "passDef": 168.3,
+    "rushDef": 141.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6923,6 +8379,13 @@
         "teamScore": 29,
         "oppScore": 9,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Akron",
+        "teamScore": 10,
+        "oppScore": 45,
+        "result": "L"
       }
     ]
   },
@@ -6930,9 +8393,9 @@
     "league": "CFB",
     "conf": "GLIAC",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 42.5,
-    "pa": 28.0,
+    "record": "3-0",
+    "ppg": 48.0,
+    "pa": 37.3,
     "passOff": 236.0,
     "rushOff": 153.0,
     "passDef": 264.0,
@@ -6954,6 +8417,13 @@
         "teamScore": 41,
         "oppScore": 28,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Southwest Baptist",
+        "teamScore": 59,
+        "oppScore": 56,
+        "result": "W"
       }
     ]
   },
@@ -6961,13 +8431,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 24.0,
-    "pa": 31.0,
-    "passOff": 191.0,
-    "rushOff": 217.0,
-    "passDef": 237.0,
-    "rushDef": 113.0,
+    "record": "0-2",
+    "ppg": 17.0,
+    "pa": 34.0,
+    "passOff": 175.5,
+    "rushOff": 180.0,
+    "passDef": 200.0,
+    "rushDef": 132.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -6978,6 +8448,13 @@
         "teamScore": 24,
         "oppScore": 31,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Massachusetts",
+        "teamScore": 10,
+        "oppScore": 37,
+        "result": "L"
       }
     ]
   },
@@ -6985,13 +8462,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 14.0,
-    "pa": 22.0,
-    "passOff": 223.5,
-    "rushOff": 31.0,
-    "passDef": 191.0,
-    "rushDef": 173.0,
+    "record": "0-3",
+    "ppg": 15.7,
+    "pa": 29.7,
+    "passOff": 242.7,
+    "rushOff": 33.7,
+    "passDef": 203.7,
+    "rushDef": 175.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7009,6 +8486,13 @@
         "teamScore": 18,
         "oppScore": 22,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Tennessee Tech",
+        "teamScore": 19,
+        "oppScore": 45,
+        "result": "L"
       }
     ]
   },
@@ -7016,13 +8500,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "0-1",
+    "record": "0-2",
     "ppg": 17.0,
-    "pa": 49.0,
-    "passOff": 182.0,
-    "rushOff": 146.0,
-    "passDef": 306.0,
-    "rushDef": 231.0,
+    "pa": 54.0,
+    "passOff": 152.0,
+    "rushOff": 190.5,
+    "passDef": 384.0,
+    "rushDef": 204.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7033,6 +8517,13 @@
         "teamScore": 17,
         "oppScore": 49,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Idaho State",
+        "teamScore": 17,
+        "oppScore": 59,
+        "result": "L"
       }
     ]
   },
@@ -7040,9 +8531,9 @@
     "league": "CFB",
     "conf": "SIAC",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 0.0,
-    "pa": 87.0,
+    "record": "0-2",
+    "ppg": 8.5,
+    "pa": 68.0,
     "passOff": 42.0,
     "rushOff": 75.0,
     "passDef": 204.0,
@@ -7057,6 +8548,13 @@
         "teamScore": 0,
         "oppScore": 87,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Albany State",
+        "teamScore": 17,
+        "oppScore": 49,
+        "result": "L"
       }
     ]
   },
@@ -7064,13 +8562,13 @@
     "league": "CFB",
     "conf": "MEAC",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 59.0,
-    "pa": 6.5,
-    "passOff": 195.5,
-    "rushOff": 357.5,
-    "passDef": 102.0,
-    "rushDef": 37.0,
+    "record": "3-0",
+    "ppg": 61.3,
+    "pa": 4.3,
+    "passOff": 196.3,
+    "rushOff": 332.3,
+    "passDef": 87.7,
+    "rushDef": 43.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7088,6 +8586,13 @@
         "teamScore": 31,
         "oppScore": 13,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Virginia State",
+        "teamScore": 66,
+        "oppScore": 0,
+        "result": "W"
       }
     ]
   },
@@ -7095,13 +8600,13 @@
     "league": "CFB",
     "conf": "MVFC",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 48.5,
-    "pa": 21.5,
-    "passOff": 252.5,
-    "rushOff": 240.5,
-    "passDef": 190.5,
-    "rushDef": 123.0,
+    "record": "3-0",
+    "ppg": 46.0,
+    "pa": 22.0,
+    "passOff": 250.0,
+    "rushOff": 251.0,
+    "passDef": 199.3,
+    "rushDef": 123.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7119,6 +8624,13 @@
         "teamScore": 38,
         "oppScore": 23,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Eastern Washington",
+        "teamScore": 41,
+        "oppScore": 23,
+        "result": "W"
       }
     ]
   },
@@ -7126,9 +8638,9 @@
     "league": "CFB",
     "conf": "Rocky Mountain",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 38.0,
-    "pa": 26.0,
+    "record": "2-1",
+    "ppg": 33.3,
+    "pa": 27.3,
     "passOff": 306.0,
     "rushOff": 221.0,
     "passDef": 535.0,
@@ -7150,6 +8662,13 @@
         "teamScore": 38,
         "oppScore": 17,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Colorado Mesa",
+        "teamScore": 24,
+        "oppScore": 30,
+        "result": "L"
       }
     ]
   },
@@ -7157,13 +8676,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 25.5,
-    "pa": 22.5,
-    "passOff": 187.0,
-    "rushOff": 166.5,
-    "passDef": 218.5,
-    "rushDef": 146.0,
+    "record": "1-2",
+    "ppg": 19.0,
+    "pa": 40.7,
+    "passOff": 167.0,
+    "rushOff": 109.0,
+    "passDef": 213.3,
+    "rushDef": 226.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7181,6 +8700,13 @@
         "teamScore": 34,
         "oppScore": 15,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Houston",
+        "teamScore": 6,
+        "oppScore": 77,
+        "result": "L"
       }
     ]
   },
@@ -7212,13 +8738,13 @@
     "league": "CFB",
     "conf": "MVFC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 26.5,
-    "pa": 26.0,
-    "passOff": 170.0,
-    "rushOff": 198.5,
-    "passDef": 155.5,
-    "rushDef": 148.0,
+    "record": "2-1",
+    "ppg": 29.0,
+    "pa": 24.0,
+    "passOff": 208.7,
+    "rushOff": 190.3,
+    "passDef": 209.0,
+    "rushDef": 113.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7236,6 +8762,13 @@
         "teamScore": 22,
         "oppScore": 18,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Southeast Missouri State",
+        "teamScore": 34,
+        "oppScore": 20,
+        "result": "W"
       }
     ]
   },
@@ -7243,13 +8776,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 34.0,
-    "pa": 35.0,
-    "passOff": 198.5,
-    "rushOff": 313.5,
-    "passDef": 273.0,
-    "rushDef": 127.5,
+    "record": "1-2",
+    "ppg": 30.7,
+    "pa": 42.7,
+    "passOff": 211.0,
+    "rushOff": 277.7,
+    "passDef": 309.3,
+    "rushDef": 183.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7267,6 +8800,13 @@
         "teamScore": 47,
         "oppScore": 42,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Colorado State",
+        "teamScore": 24,
+        "oppScore": 58,
+        "result": "L"
       }
     ]
   },
@@ -7274,13 +8814,13 @@
     "league": "CFB",
     "conf": "Southland",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 41.0,
-    "pa": 17.0,
-    "passOff": 240.0,
-    "rushOff": 196.5,
-    "passDef": 169.5,
-    "rushDef": 127.5,
+    "record": "3-0",
+    "ppg": 36.0,
+    "pa": 13.7,
+    "passOff": 241.0,
+    "rushOff": 197.3,
+    "passDef": 202.0,
+    "rushDef": 96.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7298,6 +8838,13 @@
         "teamScore": 44,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Abilene Christian",
+        "teamScore": 26,
+        "oppScore": 7,
+        "result": "W"
       }
     ]
   },
@@ -7305,13 +8852,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 26.0,
-    "pa": 40.0,
-    "passOff": 157.0,
-    "rushOff": 108.0,
-    "passDef": 235.0,
-    "rushDef": 393.0,
+    "record": "1-2",
+    "ppg": 23.3,
+    "pa": 41.0,
+    "passOff": 174.5,
+    "rushOff": 115.5,
+    "passDef": 203.0,
+    "rushDef": 271.5,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7329,6 +8876,13 @@
         "teamScore": 45,
         "oppScore": 10,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Bethune-Cookman",
+        "teamScore": 18,
+        "oppScore": 43,
+        "result": "L"
       }
     ]
   },
@@ -7336,13 +8890,13 @@
     "league": "CFB",
     "conf": "NEC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 13.5,
-    "pa": 13.5,
-    "passOff": 197.0,
-    "rushOff": 141.5,
-    "passDef": 140.5,
-    "rushDef": 156.5,
+    "record": "1-2",
+    "ppg": 20.7,
+    "pa": 23.0,
+    "passOff": 258.0,
+    "rushOff": 139.0,
+    "passDef": 158.7,
+    "rushDef": 155.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7360,6 +8914,13 @@
         "teamScore": 21,
         "oppScore": 3,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "New Hampshire",
+        "teamScore": 35,
+        "oppScore": 42,
+        "result": "L"
       }
     ]
   },
@@ -7367,13 +8928,13 @@
     "league": "CFB",
     "conf": "Coastal Athletic",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 35.0,
-    "pa": 36.5,
-    "passOff": 310.5,
-    "rushOff": 118.5,
-    "passDef": 234.0,
-    "rushDef": 205.0,
+    "record": "1-2",
+    "ppg": 29.0,
+    "pa": 38.0,
+    "passOff": 256.0,
+    "rushOff": 140.0,
+    "passDef": 241.3,
+    "rushDef": 212.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7391,6 +8952,13 @@
         "teamScore": 36,
         "oppScore": 32,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Ball State",
+        "teamScore": 17,
+        "oppScore": 41,
+        "result": "L"
       }
     ]
   },
@@ -7398,13 +8966,13 @@
     "league": "CFB",
     "conf": "Pioneer",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 20.5,
-    "pa": 35.5,
-    "passOff": 202.5,
-    "rushOff": 105.0,
-    "passDef": 174.5,
-    "rushDef": 219.5,
+    "record": "2-1",
+    "ppg": 32.3,
+    "pa": 28.3,
+    "passOff": 238.7,
+    "rushOff": 131.7,
+    "passDef": 174.3,
+    "rushDef": 202.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7422,6 +8990,13 @@
         "teamScore": 26,
         "oppScore": 62,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Northern Michigan",
+        "teamScore": 56,
+        "oppScore": 14,
+        "result": "W"
       }
     ]
   },
@@ -7429,13 +9004,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 31.0,
-    "pa": 11.5,
-    "passOff": 225.0,
-    "rushOff": 91.0,
-    "passDef": 108.0,
-    "rushDef": 157.5,
+    "record": "3-0",
+    "ppg": 35.7,
+    "pa": 14.0,
+    "passOff": 226.3,
+    "rushOff": 120.7,
+    "passDef": 165.7,
+    "rushDef": 118.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7453,6 +9028,13 @@
         "teamScore": 24,
         "oppScore": 9,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Samford",
+        "teamScore": 45,
+        "oppScore": 19,
+        "result": "W"
       }
     ]
   },
@@ -7460,13 +9042,13 @@
     "league": "CFB",
     "conf": "SWAC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 28.0,
-    "pa": 41.0,
-    "passOff": 143.5,
-    "rushOff": 246.5,
-    "passDef": 184.5,
-    "rushDef": 175.0,
+    "record": "1-2",
+    "ppg": 22.0,
+    "pa": 44.3,
+    "passOff": 128.7,
+    "rushOff": 201.7,
+    "passDef": 202.7,
+    "rushDef": 200.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7484,6 +9066,13 @@
         "teamScore": 14,
         "oppScore": 52,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "UTEP",
+        "teamScore": 10,
+        "oppScore": 51,
+        "result": "L"
       }
     ]
   },
@@ -7491,9 +9080,9 @@
     "league": "CFB",
     "conf": "South Atlantic",
     "division": "fcs",
-    "record": "1-1",
+    "record": "2-1",
     "ppg": 28.0,
-    "pa": 27.5,
+    "pa": 27.0,
     "passOff": 109.0,
     "rushOff": 212.0,
     "passDef": 259.0,
@@ -7515,6 +9104,13 @@
         "teamScore": 14,
         "oppScore": 48,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Emory & Henry",
+        "teamScore": 28,
+        "oppScore": 26,
+        "result": "W"
       }
     ]
   },
@@ -7522,13 +9118,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 40.0,
-    "pa": 20.5,
-    "passOff": 296.5,
-    "rushOff": 159.0,
-    "passDef": 225.0,
-    "rushDef": 117.5,
+    "record": "2-1",
+    "ppg": 30.0,
+    "pa": 32.3,
+    "passOff": 254.7,
+    "rushOff": 126.7,
+    "passDef": 301.3,
+    "rushDef": 109.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7546,6 +9142,13 @@
         "teamScore": 49,
         "oppScore": 17,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "SMU",
+        "teamScore": 10,
+        "oppScore": 56,
+        "result": "L"
       }
     ]
   },
@@ -7553,13 +9156,13 @@
     "league": "CFB",
     "conf": "OVC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 33.0,
-    "pa": 21.5,
-    "passOff": 204.0,
-    "rushOff": 182.5,
-    "passDef": 198.0,
-    "rushDef": 133.0,
+    "record": "1-2",
+    "ppg": 24.3,
+    "pa": 31.7,
+    "passOff": 192.7,
+    "rushOff": 171.0,
+    "passDef": 201.7,
+    "rushDef": 194.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7577,6 +9180,13 @@
         "teamScore": 42,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "West Virginia",
+        "teamScore": 7,
+        "oppScore": 52,
+        "result": "L"
       }
     ]
   },
@@ -7584,9 +9194,9 @@
     "league": "CFB",
     "conf": "Lone Star",
     "division": "fcs",
-    "record": "0-1",
-    "ppg": 0.0,
-    "pa": 44.0,
+    "record": "1-1",
+    "ppg": 34.5,
+    "pa": 29.0,
     "passOff": 152.0,
     "rushOff": 13.0,
     "passDef": 404.0,
@@ -7601,6 +9211,13 @@
         "teamScore": 0,
         "oppScore": 44,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Western New Mexico",
+        "teamScore": 69,
+        "oppScore": 14,
+        "result": "W"
       }
     ]
   },
@@ -7608,9 +9225,9 @@
     "league": "CFB",
     "conf": "South Atlantic",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 28.5,
-    "pa": 35.5,
+    "record": "0-3",
+    "ppg": 26.0,
+    "pa": 36.7,
     "passOff": 338.0,
     "rushOff": 134.0,
     "passDef": 407.0,
@@ -7631,6 +9248,13 @@
         "opp": "Chowan",
         "teamScore": 20,
         "oppScore": 24,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Anderson (SC)",
+        "teamScore": 21,
+        "oppScore": 39,
         "result": "L"
       }
     ]
@@ -7677,13 +9301,13 @@
     "league": "CFB",
     "conf": "NEC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 19.0,
-    "pa": 17.5,
-    "passOff": 171.0,
-    "rushOff": 82.0,
-    "passDef": 162.0,
-    "rushDef": 53.5,
+    "record": "1-2",
+    "ppg": 13.7,
+    "pa": 40.7,
+    "passOff": 153.3,
+    "rushOff": 83.3,
+    "passDef": 207.3,
+    "rushDef": 132.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7701,6 +9325,13 @@
         "teamScore": 31,
         "oppScore": 7,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "James Madison",
+        "teamScore": 3,
+        "oppScore": 87,
+        "result": "L"
       }
     ]
   },
@@ -7708,13 +9339,13 @@
     "league": "CFB",
     "conf": "Big Sky",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 36.0,
-    "pa": 38.0,
-    "passOff": 257.5,
-    "rushOff": 159.5,
-    "passDef": 186.0,
-    "rushDef": 313.5,
+    "record": "1-2",
+    "ppg": 31.0,
+    "pa": 42.7,
+    "passOff": 253.3,
+    "rushOff": 149.0,
+    "passDef": 256.7,
+    "rushDef": 269.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7732,6 +9363,13 @@
         "teamScore": 42,
         "oppScore": 47,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Colorado",
+        "teamScore": 21,
+        "oppScore": 52,
+        "result": "L"
       }
     ]
   },
@@ -7739,13 +9377,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 32.0,
-    "pa": 24.5,
-    "passOff": 323.0,
-    "rushOff": 94.5,
-    "passDef": 317.5,
-    "rushDef": 131.5,
+    "record": "1-2",
+    "ppg": 24.7,
+    "pa": 37.0,
+    "passOff": 271.0,
+    "rushOff": 87.7,
+    "passDef": 302.3,
+    "rushDef": 227.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7763,6 +9401,13 @@
         "teamScore": 19,
         "oppScore": 28,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Cincinnati",
+        "teamScore": 10,
+        "oppScore": 62,
+        "result": "L"
       }
     ]
   },
@@ -7770,13 +9415,13 @@
     "league": "CFB",
     "conf": "OVC",
     "division": "fcs",
-    "record": "1-1",
-    "ppg": 37.5,
-    "pa": 27.5,
-    "passOff": 240.5,
-    "rushOff": 186.5,
-    "passDef": 208.0,
-    "rushDef": 122.0,
+    "record": "1-2",
+    "ppg": 28.0,
+    "pa": 30.3,
+    "passOff": 209.7,
+    "rushOff": 175.7,
+    "passDef": 196.3,
+    "rushDef": 158.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7793,6 +9438,13 @@
         "opp": "Illinois State",
         "teamScore": 10,
         "oppScore": 41,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Wisconsin",
+        "teamScore": 9,
+        "oppScore": 36,
         "result": "L"
       }
     ]
@@ -7863,13 +9515,13 @@
     "league": "CFB",
     "conf": "Patriot",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 28.5,
-    "pa": 23.5,
-    "passOff": 180.5,
-    "rushOff": 109.5,
-    "passDef": 231.0,
-    "rushDef": 165.5,
+    "record": "2-1",
+    "ppg": 25.7,
+    "pa": 30.3,
+    "passOff": 186.3,
+    "rushOff": 121.0,
+    "passDef": 194.0,
+    "rushDef": 232.3,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7887,6 +9539,13 @@
         "teamScore": 22,
         "oppScore": 15,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Lehigh",
+        "teamScore": 20,
+        "oppScore": 44,
+        "result": "L"
       }
     ]
   },
@@ -7894,9 +9553,9 @@
     "league": "CFB",
     "conf": "Northern Sun",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 12.5,
-    "pa": 23.0,
+    "record": "1-2",
+    "ppg": 17.7,
+    "pa": 15.3,
     "passOff": 116.0,
     "rushOff": 144.0,
     "passDef": 166.0,
@@ -7918,6 +9577,13 @@
         "teamScore": 16,
         "oppScore": 31,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Jamestown",
+        "teamScore": 28,
+        "oppScore": 0,
+        "result": "W"
       }
     ]
   },
@@ -7925,9 +9591,9 @@
     "league": "CFB",
     "conf": "CIAA",
     "division": "fcs",
-    "record": "0-2",
-    "ppg": 0.0,
-    "pa": 36.5,
+    "record": "0-3",
+    "ppg": 2.0,
+    "pa": 34.7,
     "passOff": 88.0,
     "rushOff": 18.0,
     "passDef": 151.0,
@@ -7949,6 +9615,13 @@
         "teamScore": 0,
         "oppScore": 17,
         "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Johnson C. Smith",
+        "teamScore": 6,
+        "oppScore": 31,
+        "result": "L"
       }
     ]
   },
@@ -7956,13 +9629,13 @@
     "league": "CFB",
     "conf": "Southern",
     "division": "fcs",
-    "record": "2-0",
-    "ppg": 29.5,
-    "pa": 13.5,
-    "passOff": 150.5,
-    "rushOff": 124.0,
-    "passDef": 251.0,
-    "rushDef": 143.5,
+    "record": "2-1",
+    "ppg": 24.7,
+    "pa": 21.0,
+    "passOff": 138.7,
+    "rushOff": 102.0,
+    "passDef": 251.7,
+    "rushDef": 160.7,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -7980,6 +9653,337 @@
         "teamScore": 17,
         "oppScore": 13,
         "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Kent State",
+        "teamScore": 15,
+        "oppScore": 36,
+        "result": "L"
+      }
+    ]
+  },
+  "Bowie State": {
+    "league": "CFB",
+    "conf": "CIAA",
+    "division": "fcs",
+    "record": "0-2",
+    "ppg": 9.5,
+    "pa": 31.5,
+    "passOff": 160.0,
+    "rushOff": 127.0,
+    "passDef": 167.0,
+    "rushDef": 224.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Virginia State",
+        "teamScore": 13,
+        "oppScore": 42,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Delaware State",
+        "teamScore": 6,
+        "oppScore": 21,
+        "result": "L"
+      }
+    ]
+  },
+  "Central Oklahoma": {
+    "league": "CFB",
+    "conf": "Mid America",
+    "division": "fcs",
+    "record": "1-1",
+    "ppg": 39.5,
+    "pa": 33.0,
+    "passOff": 288.0,
+    "rushOff": 32.0,
+    "passDef": 137.0,
+    "rushDef": 407.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Texas Wesleyan",
+        "teamScore": 59,
+        "oppScore": 7,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Central Arkansas",
+        "teamScore": 20,
+        "oppScore": 59,
+        "result": "L"
+      }
+    ]
+  },
+  "Dickinson": {
+    "league": "CFB",
+    "conf": "Centennial",
+    "division": "fcs",
+    "record": "1-1",
+    "ppg": 20.5,
+    "pa": 21.0,
+    "passOff": 140.0,
+    "rushOff": 125.0,
+    "passDef": 293.0,
+    "rushDef": 160.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Randolph Macon",
+        "teamScore": 27,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Davidson",
+        "teamScore": 14,
+        "oppScore": 28,
+        "result": "L"
+      }
+    ]
+  },
+  "Franklin": {
+    "league": "CFB",
+    "conf": "Heartland",
+    "division": "fcs",
+    "record": "1-1",
+    "ppg": 17.0,
+    "pa": 41.5,
+    "passOff": 154.0,
+    "rushOff": 81.0,
+    "passDef": 141.0,
+    "rushDef": 371.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "North Park",
+        "teamScore": 34,
+        "oppScore": 31,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Butler",
+        "teamScore": 0,
+        "oppScore": 52,
+        "result": "L"
+      }
+    ]
+  },
+  "Incarnate Word": {
+    "league": "CFB",
+    "conf": "Southland",
+    "division": "fcs",
+    "record": "1-1",
+    "ppg": 52.0,
+    "pa": 26.0,
+    "passOff": 430.0,
+    "rushOff": 176.0,
+    "passDef": 153.0,
+    "rushDef": 180.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Oklahoma Panhandle",
+        "teamScore": 76,
+        "oppScore": 14,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Northern Arizona",
+        "teamScore": 28,
+        "oppScore": 38,
+        "result": "L"
+      }
+    ]
+  },
+  "Lincoln (PA)": {
+    "league": "CFB",
+    "conf": "CIAA",
+    "division": "fcs",
+    "record": "0-2",
+    "ppg": 16.5,
+    "pa": 26.0,
+    "passOff": 213.0,
+    "rushOff": 132.0,
+    "passDef": 260.0,
+    "rushDef": 147.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "West Chester",
+        "teamScore": 13,
+        "oppScore": 21,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Mississippi Valley State",
+        "teamScore": 20,
+        "oppScore": 31,
+        "result": "L"
+      }
+    ]
+  },
+  "Northern Michigan": {
+    "league": "CFB",
+    "conf": "GLIAC",
+    "division": "fcs",
+    "record": "0-3",
+    "ppg": 13.3,
+    "pa": 44.0,
+    "passOff": 174.0,
+    "rushOff": 169.0,
+    "passDef": 311.0,
+    "rushDef": 185.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Minnesota St Moorhead",
+        "teamScore": 19,
+        "oppScore": 41,
+        "result": "L"
+      },
+      {
+        "week": 1,
+        "opp": "Tiffin",
+        "teamScore": 7,
+        "oppScore": 35,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "St. Thomas (MN)",
+        "teamScore": 14,
+        "oppScore": 56,
+        "result": "L"
+      }
+    ]
+  },
+  "Thomas More": {
+    "league": "CFB",
+    "conf": "Great Midwest Athletic",
+    "division": "fcs",
+    "record": "0-2",
+    "ppg": 8.5,
+    "pa": 28.5,
+    "passOff": 143.0,
+    "rushOff": 82.0,
+    "passDef": 211.0,
+    "rushDef": 205.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Wheeling",
+        "teamScore": 10,
+        "oppScore": 27,
+        "result": "L"
+      },
+      {
+        "week": 2,
+        "opp": "Dayton",
+        "teamScore": 7,
+        "oppScore": 30,
+        "result": "L"
+      }
+    ]
+  },
+  "Valparaiso": {
+    "league": "CFB",
+    "conf": "Pioneer",
+    "division": "fcs",
+    "record": "1-1",
+    "ppg": 38.5,
+    "pa": 20.0,
+    "passOff": 249.0,
+    "rushOff": 78.0,
+    "passDef": 194.0,
+    "rushDef": 194.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Lawrence Tech",
+        "teamScore": 59,
+        "oppScore": 13,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "Murray State",
+        "teamScore": 18,
+        "oppScore": 27,
+        "result": "L"
+      }
+    ]
+  },
+  "Virginia State": {
+    "league": "CFB",
+    "conf": "CIAA",
+    "division": "fcs",
+    "record": "2-1",
+    "ppg": 28.7,
+    "pa": 32.0,
+    "passOff": 59.0,
+    "rushOff": 55.0,
+    "passDef": 198.0,
+    "rushDef": 282.0,
+    "to": 0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": 1,
+        "opp": "Barton",
+        "teamScore": 44,
+        "oppScore": 17,
+        "result": "W"
+      },
+      {
+        "week": 1,
+        "opp": "Bowie State",
+        "teamScore": 42,
+        "oppScore": 13,
+        "result": "W"
+      },
+      {
+        "week": 2,
+        "opp": "South Carolina State",
+        "teamScore": 0,
+        "oppScore": 66,
+        "result": "L"
       }
     ]
   }
