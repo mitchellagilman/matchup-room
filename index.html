@@ -1802,7 +1802,7 @@ function findMarketLine(nameA, nameB){
            (teamNamesMatch(o.aTeam,nameB) && teamNamesMatch(o.bTeam,nameA));
   });
 }
-let MODEL_CALIBRATION = null; // loaded at startup from data/calibration.json -- null until enough graded picks exist to calibrate from (see calibrate_model.py)
+let MODEL_CALIBRATION = null; // loaded at startup from data/calibration.json -- null until enough graded picks exist to calibrate from (see calibrate_model.py). Keyed by league (NFL/CFB calibrate independently -- see that script's docstring for why)
 function confidenceTier(edge, usedSP, league){
   // Confidence reflects both edge size and data quality -- a CFB pick
   // backed by SP+ (opponent-adjusted) is more trustworthy than one from
@@ -1813,9 +1813,12 @@ function confidenceTier(edge, usedSP, league){
   // record when enough graded picks exist (see calibrate_model.py) --
   // real self-improvement grounded in actual hit/miss history, not a
   // static guess held forever. Falls back to the original defaults
-  // (7 / 3.5) until there's a real sample to calibrate from.
-  const strongThreshold = (MODEL_CALIBRATION && MODEL_CALIBRATION.calibrated) ? MODEL_CALIBRATION.strong_threshold : 7;
-  const moderateThreshold = (MODEL_CALIBRATION && MODEL_CALIBRATION.calibrated) ? MODEL_CALIBRATION.moderate_threshold : 3.5;
+  // (7 / 3.5) until there's a real sample to calibrate from. Each league
+  // calibrates independently -- CFB struggling doesn't get diluted by
+  // pooling with NFL's numbers, or vice versa.
+  const leagueCal = MODEL_CALIBRATION && MODEL_CALIBRATION[league];
+  const strongThreshold = (leagueCal && leagueCal.calibrated) ? leagueCal.strong_threshold : 7;
+  const moderateThreshold = (leagueCal && leagueCal.calibrated) ? leagueCal.moderate_threshold : 3.5;
   const dataOk = league!=='CFB' || usedSP;
   if(edge>=strongThreshold && dataOk) return {label:'Strong', cls:'high'};
   if(edge>=strongThreshold) return {label:'Strong*', cls:'mid'}; // starred: box-score only, treat with extra caution
@@ -2416,12 +2419,15 @@ if(globalSearchInput){
 (async function init(){
   try{ MODEL_CALIBRATION = await fetchJSON('./data/calibration.json'); }catch(e){ MODEL_CALIBRATION = null; }
   const calNote = document.getElementById('calibration-note');
-  if(calNote){
-    if(MODEL_CALIBRATION && MODEL_CALIBRATION.calibrated){
-      calNote.textContent = 'Confidence thresholds are calibrated from '+MODEL_CALIBRATION.sample_size+' actual graded picks (hit rate '+Math.round(MODEL_CALIBRATION.hit_rate*100)+'%) — Strong now starts at edge '+MODEL_CALIBRATION.strong_threshold+', Moderate at '+MODEL_CALIBRATION.moderate_threshold+', instead of the original fixed 7 / 3.5.';
-    } else if(MODEL_CALIBRATION){
-      calNote.textContent = 'Confidence thresholds are still the original fixed 7 / 3.5 — only '+MODEL_CALIBRATION.sample_size+' of the '+MODEL_CALIBRATION.min_sample_size+' graded picks needed to start calibrating from real results exist so far.';
-    }
+  if(calNote && MODEL_CALIBRATION){
+    const parts = ['NFL','CFB'].map(function(lg){
+      const c = MODEL_CALIBRATION[lg];
+      if(!c) return null;
+      return c.calibrated
+        ? lg+': calibrated from '+c.sample_size+' graded picks (hit rate '+Math.round(c.hit_rate*100)+'%) — Strong at edge '+c.strong_threshold+', Moderate at '+c.moderate_threshold
+        : lg+': still the original fixed 7 / 3.5 — only '+c.sample_size+' of '+c.min_sample_size+' graded picks needed exist so far';
+    }).filter(Boolean);
+    calNote.textContent = parts.join('. ')+ (parts.length ? '.' : '');
   }
   try{ await ensureSeeded(); }catch(e){ teamsCache = Object.assign({}, NFL_SEED, CFB_SEED); }
   await renderSchedule();
