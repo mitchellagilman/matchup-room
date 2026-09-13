@@ -289,6 +289,17 @@ def round_to_half(n):
     return round(n * 2) / 2
 
 
+def median(nums):
+    """Mirrors index.html's median() -- see that function's comment for
+    the full reasoning (resistant to single-game outliers in a way a
+    plain mean isn't, confirmed against a real 457-yard outlier game)."""
+    if not nums:
+        return 0
+    s = sorted(nums)
+    mid = len(s) // 2
+    return s[mid] if len(s) % 2 else (s[mid - 1] + s[mid]) / 2
+
+
 def clamp_defense_ratio(ratio):
     """Mirrors index.html's clampDefenseRatio() -- guards against a
     small-sample defensive stat (e.g. a team's rushDef after just one
@@ -380,7 +391,7 @@ def compute_player_bets(players, teams, games, league, odds_list=None):
         if not avg_val:
             continue
         last5 = plist[-5:]
-        l5avg = sum((g.get(main_stat, 0) or 0) for g in last5) / len(last5)
+        l5avg = median([(g.get(main_stat, 0) or 0) for g in last5])
         if not meets_volume_threshold(main_stat, l5avg):
             continue
         ratio = teams[opp][def_key] / avg_val
@@ -454,10 +465,23 @@ def grade_team_pick(pick, final_scores):
         return "hit" if actual_total < line else "miss"
     elif pick["type"] == "spread":
         margin = (ascore - hscore) if pick["favored_team"] == pick.get("_away") else (hscore - ascore)
-        needed = abs(pick["line"] or 0)
-        if margin == needed:
+        # BUG FIX, confirmed live: this used to do `needed = abs(line);
+        # hit if margin > needed` -- correct ONLY when the recommended
+        # side was the market favorite (negative line), but completely
+        # wrong for an underdog pick (positive line). An underdog getting
+        # +23.5 covers by losing by LESS than 23.5, or winning outright
+        # (margin > -23.5) -- the old formula instead required them to
+        # WIN BY MORE than 23.5, an almost-impossible bar for a real
+        # underdog. Confirmed against real graded picks: underdog-side
+        # picks were hitting at ~11%, favorite-side at ~25% -- both far
+        # below a healthy rate, with the underdog side dragged down hard
+        # by this exact bug. The signed line already encodes favorite
+        # (negative) vs. underdog (positive) correctly, so `-line` is the
+        # single right threshold for both cases -- no need to special-case.
+        line = pick["line"] or 0
+        if margin == -line:
             return "push"
-        return "hit" if margin > needed else "miss"
+        return "hit" if margin > -line else "miss"
     return None
 
 
