@@ -29,14 +29,31 @@
   },
   "Dallas Cowboys": {
     "league": "NFL",
-    "ppg": 27.7,
-    "pa": 30.1,
-    "passOff": 266.3,
-    "rushOff": 125.6,
-    "passDef": 251.5,
-    "rushDef": 125.5,
-    "to": -0.53,
-    "ats": ""
+    "record": "0-1",
+    "ppg": 20.0,
+    "pa": 28.0,
+    "passOff": 175.0,
+    "rushOff": 69.0,
+    "passDef": 230.0,
+    "rushDef": 165.0,
+    "to": 0.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "New York Giants",
+        "teamScore": 20.0,
+        "oppScore": 28.0,
+        "result": "L"
+      }
+    ],
+    "prevPpg": 27.7,
+    "prevPa": 30.1,
+    "prevTo": -0.53,
+    "awayPpg": 20.0,
+    "awayPa": 28.0,
+    "awayGames": 1
   },
   "New England Patriots": {
     "league": "NFL",
@@ -275,25 +292,59 @@
   },
   "Los Angeles Chargers": {
     "league": "NFL",
-    "ppg": 21.6,
-    "pa": 20,
-    "passOff": 212.2,
-    "rushOff": 121.6,
-    "passDef": 179.9,
-    "rushDef": 105.4,
-    "to": 0.12,
-    "ats": ""
+    "record": "0-1",
+    "ppg": 14.0,
+    "pa": 26.0,
+    "passOff": 209.0,
+    "rushOff": 81.0,
+    "passDef": 277.0,
+    "rushDef": 116.0,
+    "to": -2.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Arizona Cardinals",
+        "teamScore": 14.0,
+        "oppScore": 26.0,
+        "result": "L"
+      }
+    ],
+    "prevPpg": 21.6,
+    "prevPa": 20.0,
+    "prevTo": 0.28,
+    "homePpg": 14.0,
+    "homePa": 26.0,
+    "homeGames": 1
   },
   "New York Giants": {
     "league": "NFL",
-    "ppg": 22.4,
-    "pa": 25.8,
-    "passOff": 204.4,
-    "rushOff": 129.1,
-    "passDef": 214.2,
-    "rushDef": 145.3,
-    "to": -0.12,
-    "ats": ""
+    "record": "1-0",
+    "ppg": 28.0,
+    "pa": 20.0,
+    "passOff": 230.0,
+    "rushOff": 165.0,
+    "passDef": 175.0,
+    "rushDef": 69.0,
+    "to": 0.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Dallas Cowboys",
+        "teamScore": 28.0,
+        "oppScore": 20.0,
+        "result": "W"
+      }
+    ],
+    "prevPpg": 22.4,
+    "prevPa": 25.8,
+    "prevTo": -0.06,
+    "homePpg": 28.0,
+    "homePa": 20.0,
+    "homeGames": 1
   },
   "Atlanta Falcons": {
     "league": "NFL",
@@ -325,14 +376,31 @@
   },
   "Green Bay Packers": {
     "league": "NFL",
-    "ppg": 23,
-    "pa": 21.2,
-    "passOff": 212.8,
-    "rushOff": 119.8,
-    "passDef": 194.1,
-    "rushDef": 117.7,
-    "to": 0.06,
-    "ats": ""
+    "record": "0-1",
+    "ppg": 22.0,
+    "pa": 39.0,
+    "passOff": 387.0,
+    "rushOff": 66.0,
+    "passDef": 151.0,
+    "rushDef": 107.0,
+    "to": -1.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Minnesota Vikings",
+        "teamScore": 22.0,
+        "oppScore": 39.0,
+        "result": "L"
+      }
+    ],
+    "prevPpg": 23.0,
+    "prevPa": 21.2,
+    "prevTo": 0.17,
+    "awayPpg": 22.0,
+    "awayPa": 39.0,
+    "awayGames": 1
   },
   "Baltimore Ravens": {
     "league": "NFL",
@@ -420,14 +488,31 @@
   },
   "Arizona Cardinals": {
     "league": "NFL",
-    "ppg": 20.9,
-    "pa": 28.7,
-    "passOff": 232.6,
-    "rushOff": 93.1,
-    "passDef": 230.8,
-    "rushDef": 126.9,
-    "to": -0.12,
-    "ats": ""
+    "record": "1-0",
+    "ppg": 26.0,
+    "pa": 14.0,
+    "passOff": 277.0,
+    "rushOff": 116.0,
+    "passDef": 209.0,
+    "rushDef": 81.0,
+    "to": 2.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Los Angeles Chargers",
+        "teamScore": 26.0,
+        "oppScore": 14.0,
+        "result": "W"
+      }
+    ],
+    "prevPpg": 20.9,
+    "prevPa": 28.7,
+    "prevTo": 0.0,
+    "awayPpg": 26.0,
+    "awayPa": 14.0,
+    "awayGames": 1
   },
   "Kansas City Chiefs": {
     "league": "NFL",
@@ -470,14 +555,31 @@
   },
   "Washington Commanders": {
     "league": "NFL",
-    "ppg": 20.9,
-    "pa": 26.5,
-    "passOff": 184.1,
-    "rushOff": 134.7,
-    "passDef": 242.5,
-    "rushDef": 141.5,
-    "to": -0.76,
-    "ats": ""
+    "record": "0-1",
+    "ppg": 22.0,
+    "pa": 24.0,
+    "passOff": 164.0,
+    "rushOff": 132.0,
+    "passDef": 203.0,
+    "rushDef": 136.0,
+    "to": 0.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Philadelphia Eagles",
+        "teamScore": 22.0,
+        "oppScore": 24.0,
+        "result": "L"
+      }
+    ],
+    "prevPpg": 20.9,
+    "prevPa": 26.5,
+    "prevTo": -0.65,
+    "awayPpg": 22.0,
+    "awayPa": 24.0,
+    "awayGames": 1
   },
   "New Orleans Saints": {
     "league": "NFL",
@@ -509,14 +611,31 @@
   },
   "Philadelphia Eagles": {
     "league": "NFL",
-    "ppg": 22.3,
-    "pa": 19.1,
-    "passOff": 194.3,
-    "rushOff": 116.9,
-    "passDef": 189.8,
-    "rushDef": 124.4,
-    "to": 0.35,
-    "ats": ""
+    "record": "1-0",
+    "ppg": 24.0,
+    "pa": 22.0,
+    "passOff": 203.0,
+    "rushOff": 136.0,
+    "passDef": 164.0,
+    "rushDef": 132.0,
+    "to": 0.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Washington Commanders",
+        "teamScore": 24.0,
+        "oppScore": 22.0,
+        "result": "W"
+      }
+    ],
+    "prevPpg": 22.3,
+    "prevPa": 19.1,
+    "prevTo": 0.61,
+    "homePpg": 24.0,
+    "homePa": 22.0,
+    "homeGames": 1
   },
   "Pittsburgh Steelers": {
     "league": "NFL",
@@ -548,14 +667,31 @@
   },
   "Miami Dolphins": {
     "league": "NFL",
-    "ppg": 20.4,
-    "pa": 24.9,
-    "passOff": 180.5,
-    "rushOff": 120.2,
-    "passDef": 216.4,
-    "rushDef": 132.4,
-    "to": -0.24,
-    "ats": ""
+    "record": "0-1",
+    "ppg": 13.0,
+    "pa": 27.0,
+    "passOff": 220.0,
+    "rushOff": 74.0,
+    "passDef": 160.0,
+    "rushDef": 130.0,
+    "to": 0.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Las Vegas Raiders",
+        "teamScore": 13.0,
+        "oppScore": 27.0,
+        "result": "L"
+      }
+    ],
+    "prevPpg": 20.4,
+    "prevPa": 24.9,
+    "prevTo": -0.18,
+    "awayPpg": 13.0,
+    "awayPa": 27.0,
+    "awayGames": 1
   },
   "Carolina Panthers": {
     "league": "NFL",
@@ -587,14 +723,31 @@
   },
   "Minnesota Vikings": {
     "league": "NFL",
-    "ppg": 20.2,
-    "pa": 19.6,
-    "passOff": 166.7,
-    "rushOff": 108.3,
-    "passDef": 158.5,
-    "rushDef": 124.1,
-    "to": -0.53,
-    "ats": ""
+    "record": "1-0",
+    "ppg": 39.0,
+    "pa": 22.0,
+    "passOff": 151.0,
+    "rushOff": 107.0,
+    "passDef": 387.0,
+    "rushDef": 66.0,
+    "to": 1.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Green Bay Packers",
+        "teamScore": 39.0,
+        "oppScore": 22.0,
+        "result": "W"
+      }
+    ],
+    "prevPpg": 20.2,
+    "prevPa": 19.6,
+    "prevTo": -0.35,
+    "homePpg": 39.0,
+    "homePa": 22.0,
+    "homeGames": 1
   },
   "New York Jets": {
     "league": "NFL",
@@ -682,13 +835,30 @@
   },
   "Las Vegas Raiders": {
     "league": "NFL",
-    "ppg": 14.2,
-    "pa": 25.4,
-    "passOff": 167.7,
-    "rushOff": 77.5,
-    "passDef": 201,
-    "rushDef": 116.8,
-    "to": -0.41,
-    "ats": ""
+    "record": "1-0",
+    "ppg": 27.0,
+    "pa": 13.0,
+    "passOff": 160.0,
+    "rushOff": 130.0,
+    "passDef": 220.0,
+    "rushDef": 74.0,
+    "to": 0.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Miami Dolphins",
+        "teamScore": 27.0,
+        "oppScore": 13.0,
+        "result": "W"
+      }
+    ],
+    "prevPpg": 14.2,
+    "prevPa": 25.4,
+    "prevTo": -0.35,
+    "homePpg": 27.0,
+    "homePa": 13.0,
+    "homeGames": 1
   }
 }
