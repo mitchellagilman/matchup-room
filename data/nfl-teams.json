@@ -253,14 +253,31 @@
   },
   "Denver Broncos": {
     "league": "NFL",
-    "ppg": 23.6,
-    "pa": 18.3,
-    "passOff": 223.9,
-    "rushOff": 118.7,
-    "passDef": 187.2,
-    "rushDef": 91.1,
-    "to": -0.18,
-    "ats": ""
+    "record": "0-1",
+    "ppg": 10.0,
+    "pa": 31.0,
+    "passOff": 131.0,
+    "rushOff": 61.0,
+    "passDef": 184.0,
+    "rushDef": 220.0,
+    "to": -1.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Kansas City Chiefs",
+        "teamScore": 10.0,
+        "oppScore": 31.0,
+        "result": "L"
+      }
+    ],
+    "prevPpg": 23.6,
+    "prevPa": 18.3,
+    "prevTo": 0.05,
+    "awayPpg": 10.0,
+    "awayPa": 31.0,
+    "awayGames": 1
   },
   "Jacksonville Jaguars": {
     "league": "NFL",
@@ -516,14 +533,31 @@
   },
   "Kansas City Chiefs": {
     "league": "NFL",
-    "ppg": 21.3,
-    "pa": 19.3,
-    "passOff": 214.1,
-    "rushOff": 106.6,
-    "passDef": 195.8,
-    "rushDef": 105.7,
-    "to": -0.06,
-    "ats": ""
+    "record": "1-0",
+    "ppg": 31.0,
+    "pa": 10.0,
+    "passOff": 184.0,
+    "rushOff": 220.0,
+    "passDef": 131.0,
+    "rushDef": 61.0,
+    "to": 1.0,
+    "ats": "",
+    "wk1": true,
+    "games": [
+      {
+        "week": "1",
+        "opp": "Denver Broncos",
+        "teamScore": 31.0,
+        "oppScore": 10.0,
+        "result": "W"
+      }
+    ],
+    "prevPpg": 21.3,
+    "prevPa": 19.3,
+    "prevTo": -0.06,
+    "homePpg": 31.0,
+    "homePa": 10.0,
+    "homeGames": 1
   },
   "Tampa Bay Buccaneers": {
     "league": "NFL",
