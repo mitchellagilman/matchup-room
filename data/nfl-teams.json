@@ -85,14 +85,14 @@
   },
   "Buffalo Bills": {
     "league": "NFL",
-    "record": "1-0",
-    "ppg": 36.0,
+    "record": "2-0",
+    "ppg": 38.5,
     "pa": 31.0,
-    "passOff": 334.0,
-    "rushOff": 86.0,
-    "passDef": 274.0,
-    "rushDef": 124.0,
-    "to": 2.0,
+    "passOff": 291.0,
+    "rushOff": 144.5,
+    "passDef": 300.5,
+    "rushDef": 95.0,
+    "to": 1.0,
     "ats": "",
     "wk1": true,
     "games": [
@@ -102,25 +102,35 @@
         "teamScore": 36.0,
         "oppScore": 31.0,
         "result": "W"
+      },
+      {
+        "week": "2",
+        "opp": "Detroit Lions",
+        "teamScore": 41.0,
+        "oppScore": 31.0,
+        "result": "W"
       }
     ],
     "prevPpg": 28.3,
     "prevPa": 21.5,
     "prevTo": 0.0,
+    "homePpg": 41.0,
+    "homePa": 31.0,
+    "homeGames": 1,
     "awayPpg": 36.0,
     "awayPa": 31.0,
     "awayGames": 1
   },
   "Detroit Lions": {
     "league": "NFL",
-    "record": "1-0",
+    "record": "1-1",
     "ppg": 31.0,
-    "pa": 30.0,
-    "passOff": 206.0,
-    "rushOff": 165.0,
-    "passDef": 410.0,
-    "rushDef": 91.0,
-    "to": 2.0,
+    "pa": 35.5,
+    "passOff": 266.5,
+    "rushOff": 115.5,
+    "passDef": 329.0,
+    "rushDef": 147.0,
+    "to": 1.0,
     "ats": "",
     "wk1": true,
     "games": [
@@ -130,6 +140,13 @@
         "teamScore": 31.0,
         "oppScore": 30.0,
         "result": "W"
+      },
+      {
+        "week": "2",
+        "opp": "Buffalo Bills",
+        "teamScore": 31.0,
+        "oppScore": 41.0,
+        "result": "L"
       }
     ],
     "prevPpg": 28.3,
@@ -137,7 +154,10 @@
     "prevTo": 0.24,
     "homePpg": 31.0,
     "homePa": 30.0,
-    "homeGames": 1
+    "homeGames": 1,
+    "awayPpg": 31.0,
+    "awayPa": 41.0,
+    "awayGames": 1
   },
   "Chicago Bears": {
     "league": "NFL",
