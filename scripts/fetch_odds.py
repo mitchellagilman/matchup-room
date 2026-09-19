@@ -115,6 +115,7 @@ def extract_game(event, league):
         return None  # no useful market data of any kind for this game
 
     return {
+        "eventId": event.get("id"),  # needed by fetch_player_props_odds.py's per-event calls -- The Odds API's player-prop markets aren't in this bulk endpoint, only accessible one event at a time
         "game": f"{away} @ {home}",
         "league": league,
         "date": event.get("commence_time", "")[:10],
