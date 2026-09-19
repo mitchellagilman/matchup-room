@@ -187,15 +187,53 @@ def main():
         except Exception as e:
             print(f"Could not fetch /stats/season for {year} ({e}); turnover margin for that year will be omitted, not guessed.", file=sys.stderr)
             return {}
+        if not rows:
+            print(f"/stats/season for {year} returned no rows.", file=sys.stderr)
+            return {}
+
+        # DIAGNOSTIC, confirmed live this was needed: the first attempt at
+        # this silently computed 0 for every team -- no exception was
+        # raised, but the assumed wide-format field names
+        # (passesIntercepted/fumblesRecovered/interceptions/fumblesLost)
+        # didn't match anything in the real response, so every .get()
+        # quietly returned None and takeaways-giveaways came out 0-0
+        # everywhere. This print shows the actual shape of one real row so
+        # a second guess isn't needed -- check the workflow log if
+        # to/prevTo are still 0 after this runs.
+        print(f"/stats/season {year} sample row: {json.dumps(rows[0])[:500]}", file=sys.stderr)
+
+        # Handles BOTH plausible shapes defensively: a long/pivoted format
+        # (one row per team+statName+statValue) and a wide format (one row
+        # per team with stat names as columns), since which one the raw
+        # API actually returns couldn't be confirmed without a live key.
+        is_long_format = "statName" in rows[0] and "statValue" in rows[0]
         result = {}
-        for row in rows:
-            team = row.get("team")
-            g = row.get("games")
-            if not team or not g:
-                continue
-            takeaways = (row.get("passesIntercepted") or 0) + (row.get("fumblesRecovered") or 0)
-            giveaways = (row.get("interceptions") or 0) + (row.get("fumblesLost") or 0)
-            result[team] = (takeaways - giveaways) / g
+        if is_long_format:
+            by_team = {}
+            for row in rows:
+                team = row.get("team")
+                if not team:
+                    continue
+                by_team.setdefault(team, {})[row.get("statName")] = row.get("statValue")
+            for team, stats in by_team.items():
+                g = stats.get("games")
+                if not g:
+                    continue
+                takeaways = (stats.get("passesIntercepted") or 0) + (stats.get("fumblesRecovered") or 0)
+                giveaways = (stats.get("interceptions") or 0) + (stats.get("fumblesLost") or 0)
+                result[team] = (takeaways - giveaways) / g
+        else:
+            for row in rows:
+                team = row.get("team")
+                g = row.get("games")
+                if not team or not g:
+                    continue
+                takeaways = (row.get("passesIntercepted") or 0) + (row.get("fumblesRecovered") or 0)
+                giveaways = (row.get("interceptions") or 0) + (row.get("fumblesLost") or 0)
+                result[team] = (takeaways - giveaways) / g
+
+        nonzero = sum(1 for v in result.values() if v != 0)
+        print(f"/stats/season {year}: computed turnover margin for {len(result)} teams ({nonzero} non-zero)", file=sys.stderr)
         return result
 
     to_by_team = turnover_margin_by_team(YEAR)
