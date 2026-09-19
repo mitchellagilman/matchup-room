@@ -119,6 +119,15 @@ def main():
             event = api_get(sport_key, g["eventId"], api_key)
         except Exception as e:
             errored += 1
+            # DIAGNOSTIC, same lesson as fetch_cfb.py's turnover-margin fix
+            # and this script's own sample-response print below: confirmed
+            # live this was needed -- a run that failed on every single
+            # event previously gave no indication why (rate limit? auth?
+            # bad event id?), just a bare error count. Printing the first
+            # real exception message means the next failure is diagnosable
+            # from the log directly instead of requiring another guess.
+            if errored == 1:
+                print(f"First event-odds call failed (of {len(games)} attempted): {e}", file=sys.stderr)
             continue
         fetched += 1
 
@@ -166,6 +175,17 @@ def main():
             lines = sorted(e["line"] for e in entries)
             median_line = lines[len(lines) // 2] if len(lines) % 2 else (lines[len(lines) // 2 - 1] + lines[len(lines) // 2]) / 2
             summary[player][stat] = {"line": median_line, "books": entries}
+
+    # SAFETY CHECK, confirmed live this was needed: a run where every
+    # single event call failed (rate limit, transient API issue, etc.)
+    # would otherwise silently overwrite a previous GOOD file with an
+    # empty one -- the exact opposite of what should happen when a run
+    # goes badly. If fewer than half the attempted events actually
+    # succeeded, treat this as a failed run and leave the existing file
+    # untouched rather than erase real data with nothing.
+    if games and fetched < len(games) / 2:
+        print(f"Only {fetched}/{len(games)} events succeeded -- treating this as a failed run and leaving the existing {OUT_PATH} untouched rather than overwrite it with incomplete data.", file=sys.stderr)
+        return
 
     with open(OUT_PATH, "w") as f:
         json.dump(summary, f, indent=2)
