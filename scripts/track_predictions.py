@@ -123,6 +123,23 @@ def venue_adjusted_stat(venue_stat, venue_games, season_shrunk_stat):
     return (venue_stat * venue_games + season_shrunk_stat * SHRINK_PRIOR_GAMES) / (venue_games + SHRINK_PRIOR_GAMES)
 
 
+def shrunk_team_stat(team, stat_key, teams, league):
+    """Mirrors index.html's shrunkTeamStat() -- see that function's
+    comment for the full reasoning (extends the same small-sample
+    shrinkage protection to passOff/rushOff/passDef/rushDef, confirmed
+    live these were still being read completely raw everywhere,
+    including feeding directly into every player prop's opponent-matchup
+    ratio)."""
+    if not team:
+        return None
+    raw = team.get(stat_key)
+    if raw is None:
+        return None
+    games_played = len(team.get("games") or [])
+    league_avg = league_avg_team_stat(teams, league, stat_key)
+    return shrink_stat(raw, None, league_avg, games_played)
+
+
 def compute_projection(a, b, teams, league, odds_list=None):
     A, B = teams.get(a), teams.get(b)
     if not A or not B:
@@ -444,7 +461,7 @@ def compute_player_bets(players, teams, games, league, odds_list=None):
         l5avg = median([(g.get(main_stat, 0) or 0) for g in last5])
         if not meets_volume_threshold(main_stat, l5avg):
             continue
-        ratio = teams[opp][def_key] / avg_val
+        ratio = shrunk_team_stat(teams[opp], def_key, teams, league) / avg_val
         projected = round_to_half(l5avg * ratio)
         candidates.append({
             "name": name, "pos": p.get("pos"), "team": p.get("team"), "opp": opp,
