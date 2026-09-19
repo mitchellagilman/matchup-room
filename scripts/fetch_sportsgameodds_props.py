@@ -50,6 +50,7 @@ import sys
 import time
 import urllib.request
 import urllib.parse
+import urllib.error
 
 API_BASE = "https://api.sportsgameodds.com/v2/events"
 OUT_PATH = "data/player-props-odds.json"
@@ -115,6 +116,20 @@ def main():
     while events_used < MAX_EVENTS_PER_RUN:
         try:
             resp = api_get(api_key, cursor)
+        except urllib.error.HTTPError as e:
+            # Confirmed live this was needed: the bare exception string only
+            # ever showed "HTTP Error 403: Forbidden" -- the status line, not
+            # the actual reason. APIs commonly put the real explanation
+            # ("plan doesn't include this endpoint", "invalid key format",
+            # etc.) in the response BODY, which a plain str(e) never
+            # surfaces. Reading it directly here means the next failure is
+            # diagnosable from the log instead of requiring another guess.
+            try:
+                body = e.read().decode("utf-8", errors="replace")[:500]
+            except Exception:
+                body = "(could not read response body)"
+            print(f"SportsGameOdds /events call failed: HTTP {e.code} {e.reason} -- response body: {body}", file=sys.stderr)
+            break
         except Exception as e:
             print(f"SportsGameOdds /events call failed: {e}", file=sys.stderr)
             break
