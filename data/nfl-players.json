@@ -30907,105 +30907,6 @@
     "_id": "00-0033906",
     "teamYear": 2026
   },
-  "Ty Johnson": {
-    "pos": "RB",
-    "team": "Buffalo Bills",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk9",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 8.0,
-        "receptions": 2,
-        "recYds": 12.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk10",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 2.0,
-        "receptions": 2,
-        "recYds": 24.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk11",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 2,
-        "recYds": 61.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk12",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 7.0,
-        "receptions": 3,
-        "recYds": 45.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 5.0,
-        "receptions": 3,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 25.0,
-        "receptions": 2,
-        "recYds": 14.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 13.0,
-        "receptions": 3,
-        "recYds": 15.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 15.0,
-        "receptions": 3,
-        "recYds": 12.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 36.0,
-        "receptions": 2,
-        "recYds": 20.0,
-        "tds": 2.0
-      }
-    ],
-    "_id": "00-0035537",
-    "teamYear": 2026
-  },
   "Gary Jennings": {
     "pos": "WR",
     "team": "Los Angeles Chargers",
@@ -33158,14 +33059,6 @@
     "_id": "00-0041399",
     "teamYear": 2026
   },
-  "Skyler Bell": {
-    "pos": "WR",
-    "team": "Buffalo Bills",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041443",
-    "teamYear": 2026
-  },
   "Max Klare": {
     "pos": "TE",
     "team": "Los Angeles Rams",
@@ -33196,6 +33089,123 @@
     "league": "NFL",
     "games": [],
     "_id": "00-0041568",
+    "teamYear": 2026
+  },
+  "Greg Dortch": {
+    "pos": "WR",
+    "team": "Buffalo Bills",
+    "league": "NFL",
+    "games": [
+      {
+        "date": "2025-wk3",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 5.0,
+        "receptions": 2,
+        "recYds": 3.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk4",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 4,
+        "recYds": 35.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk5",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 12.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk6",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 9.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk7",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 5.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk9",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 9.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk10",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 2.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk11",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6,
+        "recYds": 66.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk12",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": -5.0,
+        "receptions": 6,
+        "recYds": 53.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk13",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 14.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0035500",
+    "teamYear": 2026
+  },
+  "Frank Gore Jr.": {
+    "pos": "RB",
+    "team": "Buffalo Bills",
+    "league": "NFL",
+    "games": [
+      {
+        "date": "2026-wk1",
+        "opp": "vs HOU",
+        "passYds": 0.0,
+        "rushYds": 3.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0039471",
     "teamYear": 2026
   }
 }
