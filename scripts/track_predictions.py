@@ -424,7 +424,7 @@ def find_game_for_team(games, team_name):
     return None
 
 
-def compute_player_bets(players, teams, games, league, odds_list=None):
+def compute_player_bets(players, teams, games, league, odds_list=None, player_props_odds=None):
     candidates = []
     for name, p in players.items():
         if p.get("league") != league:
@@ -462,12 +462,33 @@ def compute_player_bets(players, teams, games, league, odds_list=None):
         if not meets_volume_threshold(main_stat, l5avg):
             continue
         ratio = shrunk_team_stat(teams[opp], def_key, teams, league) / avg_val
-        projected = round_to_half(l5avg * ratio)
+        model_projection = round_to_half(l5avg * ratio)
+
+        # Real market line when one exists (see fetch_player_props_odds.py)
+        # -- genuine edge against a real sportsbook, the same way team
+        # bets already work, instead of grading against the model's own
+        # number. Falls back to the model's own projection, unchanged
+        # from before, for any player/stat a real book hasn't priced.
+        real_prop = (player_props_odds or {}).get(name, {}).get(main_stat)
+        if real_prop and real_prop.get("line") is not None:
+            line = real_prop["line"]
+            direction = "over" if model_projection > line else "under"
+            edge = round(abs(model_projection - line), 1)
+            used_real_line = True
+            books = real_prop.get("books")
+        else:
+            line = model_projection
+            direction = "over" if ratio >= 1 else "under"
+            edge = None
+            used_real_line = False
+            books = None
+
         candidates.append({
             "name": name, "pos": p.get("pos"), "team": p.get("team"), "opp": opp,
             "matchup": f"{game['a']} vs {game['b']}",
             "stat": main_stat, "stat_label": STAT_LABELS.get(main_stat, main_stat),
-            "projected": projected, "direction": "over" if ratio >= 1 else "under",
+            "projected": line, "model_projection": model_projection, "direction": direction,
+            "edge": edge, "used_real_line": used_real_line, "books": books,
             "game_date": game.get("date"),
             "_recency_key": most_recent_game_key(p),
             "_l5avg": l5avg,
@@ -605,6 +626,7 @@ def main():
     odds = load_json("data/odds.json", [])
     nfl_week_odds = load_json("data/nfl-week-odds.json", [])
     all_odds = nfl_week_odds + odds
+    player_props_odds = load_json("data/player-props-odds.json", {})
 
     record = load_json(TRACK_PATH, {"picks": []})
 
@@ -649,20 +671,21 @@ def main():
             existing_ids.add(pid)
             logged += 1
 
-        player_picks = compute_player_bets(all_players, teams, games, league, all_odds)
+        player_picks = compute_player_bets(all_players, teams, games, league, all_odds, player_props_odds)
         for p in player_picks:
             pick_week_label = f"CFB-{p['game_date']}" if league == "CFB" and p.get("game_date") else week_label
             pid = f"{league}|{pick_week_label}|{p['name']}|{p['stat']}|player_prop"
             if pid in existing_ids:
                 continue
             dir_label = "Over" if p["direction"] == "over" else "Under"
+            line_source = " (real line)" if p.get("used_real_line") else " (model proj.)"
             record["picks"].append({
                 "id": pid, "league": league, "week": pick_week_label, "matchup": p["matchup"],
-                "type": "player_prop", "label": f"{p['name']} {dir_label} {p['projected']} {p['stat_label']}",
-                "edge": None,
+                "type": "player_prop", "label": f"{p['name']} {dir_label} {p['projected']} {p['stat_label']}{line_source}",
+                "edge": p.get("edge"),
                 "date_logged": today, "status": "pending", "graded_date": None,
                 "_player_name": p["name"], "_stat": p["stat"], "_logged_recency_key": p["_recency_key"],
-                "line": p["projected"], "direction": p["direction"],
+                "line": p["projected"], "direction": p["direction"], "used_real_line": p.get("used_real_line", False),
             })
             existing_ids.add(pid)
             logged += 1
