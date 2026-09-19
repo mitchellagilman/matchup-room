@@ -737,7 +737,7 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 8.0,
+        "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -746,7 +746,7 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 0,
+        "rushYds": 8.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -780,6 +780,42 @@
         "date": "2026-wk2",
         "opp": "",
         "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0
+      },
+      {
+        "date": "2026-wk2",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -5.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk2",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0
+      },
+      {
+        "date": "2026-wk2",
+        "opp": "",
+        "passYds": 0.0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk2",
+        "opp": "",
+        "passYds": 0,
         "rushYds": -1.0,
         "receptions": 0,
         "recYds": 0,
@@ -790,42 +826,6 @@
         "opp": "",
         "passYds": 0.0,
         "rushYds": -2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": -1.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": -3.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -24614,7 +24614,7 @@
     ]
   },
   "London Montgomery": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Florida",
     "league": "CFB",
     "games": [
@@ -26661,19 +26661,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 56.0,
-        "receptions": 3.0,
-        "recYds": 31.0,
-        "tds": 3.0
+        "rushYds": 22.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 22.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
+        "rushYds": 56.0,
+        "receptions": 3.0,
+        "recYds": 31.0,
+        "tds": 3.0
       },
       {
         "date": "2026-wk2",
@@ -27339,19 +27339,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 99.0,
+        "rushYds": 27.0,
         "receptions": 1.0,
-        "recYds": 1.0,
-        "tds": 3.0
+        "recYds": 8.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 27.0,
+        "rushYds": 99.0,
         "receptions": 1.0,
-        "recYds": 8.0,
-        "tds": 0.0
+        "recYds": 1.0,
+        "tds": 3.0
       }
     ]
   },
@@ -27408,8 +27408,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 81.0,
+        "receptions": 1.0,
+        "recYds": 6.0,
         "tds": 0.0
       },
       {
@@ -27417,8 +27417,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 6.0,
+        "receptions": 2.0,
+        "recYds": 81.0,
         "tds": 0.0
       }
     ]
@@ -27609,8 +27609,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 5.0,
-        "recYds": 49.0,
+        "receptions": 7.0,
+        "recYds": 52.0,
         "tds": 0.0
       },
       {
@@ -27618,8 +27618,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 7.0,
-        "recYds": 52.0,
+        "receptions": 5.0,
+        "recYds": 49.0,
         "tds": 0.0
       }
     ]
@@ -27653,7 +27653,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 3.0,
-        "recYds": 12.0,
+        "recYds": 24.0,
         "tds": 0.0
       },
       {
@@ -27662,7 +27662,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 3.0,
-        "recYds": 24.0,
+        "recYds": 12.0,
         "tds": 0.0
       }
     ]
@@ -27677,8 +27677,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 57.0,
+        "receptions": 1.0,
+        "recYds": 22.0,
         "tds": 0.0
       },
       {
@@ -27686,8 +27686,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 22.0,
+        "receptions": 2.0,
+        "recYds": 57.0,
         "tds": 0.0
       }
     ]
@@ -27700,20 +27700,20 @@
       {
         "date": "2026-wk1",
         "opp": "",
-        "passYds": 310.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "",
         "passYds": 214.0,
         "rushYds": -5.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk1",
+        "opp": "",
+        "passYds": 310.0,
+        "rushYds": 16.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       }
     ]
   },
@@ -27814,18 +27814,18 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 43.0,
-        "receptions": 1.0,
-        "recYds": 5.0,
+        "rushYds": 41.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 41.0,
-        "receptions": 0,
-        "recYds": 0,
+        "rushYds": 43.0,
+        "receptions": 1.0,
+        "recYds": 5.0,
         "tds": 0.0
       }
     ]
@@ -30012,7 +30012,7 @@
     ]
   },
   "Semaj Morgan": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "UCLA",
     "league": "CFB",
     "games": [
@@ -32863,7 +32863,7 @@
     ]
   },
   "Justice Haynes": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Georgia Tech",
     "league": "CFB",
     "games": [
@@ -34948,7 +34948,7 @@
     ]
   },
   "Jordan Marshall": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Michigan",
     "league": "CFB",
     "games": [
@@ -35045,7 +35045,7 @@
     ]
   },
   "Savion Hiter": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Michigan",
     "league": "CFB",
     "games": [
@@ -35850,7 +35850,7 @@
     ]
   },
   "Brady Palmer": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "Minnesota",
     "league": "CFB",
     "games": [
@@ -36169,7 +36169,7 @@
     ]
   },
   "Isaiah Mozee": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Nebraska",
     "league": "CFB",
     "games": [
@@ -38346,7 +38346,7 @@
     ]
   },
   "Kedren Young": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Notre Dame",
     "league": "CFB",
     "games": [
@@ -38859,7 +38859,7 @@
     ]
   },
   "Evans Chuba": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "Purdue",
     "league": "CFB",
     "games": [
@@ -49454,7 +49454,7 @@
     ]
   },
   "Xavier Brown": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Virginia",
     "league": "CFB",
     "games": [
@@ -53771,19 +53771,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 27.0,
+        "rushYds": 20.0,
         "receptions": 0,
         "recYds": 0,
-        "tds": 1.0
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 20.0,
+        "rushYds": 27.0,
         "receptions": 0,
         "recYds": 0,
-        "tds": 0.0
+        "tds": 1.0
       },
       {
         "date": "2026-wk2",
@@ -55525,7 +55525,7 @@
     ]
   },
   "Janiran Bonner": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Nebraska",
     "league": "CFB",
     "games": [
@@ -59068,20 +59068,20 @@
       {
         "date": "2026-wk1",
         "opp": "",
-        "passYds": 279.0,
-        "rushYds": -13.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 3.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "",
         "passYds": 174.0,
         "rushYds": 10.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk1",
+        "opp": "",
+        "passYds": 279.0,
+        "rushYds": -13.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 3.0
       },
       {
         "date": "2026-wk2",
@@ -60164,19 +60164,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 76.0,
+        "rushYds": 3.0,
         "receptions": 1.0,
-        "recYds": -2.0,
-        "tds": 1.0
+        "recYds": -6.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 3.0,
+        "rushYds": 76.0,
         "receptions": 1.0,
-        "recYds": -6.0,
-        "tds": 0.0
+        "recYds": -2.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk2",
@@ -66202,18 +66202,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 36.0,
-        "tds": 0.0
+        "receptions": 6.0,
+        "recYds": 149.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 6.0,
-        "recYds": 149.0,
-        "tds": 1.0
+        "receptions": 4.0,
+        "recYds": 36.0,
+        "tds": 0.0
       }
     ]
   },
@@ -68560,7 +68560,7 @@
     ]
   },
   "Caden Veltkamp": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Florida Atlantic",
     "league": "CFB",
     "games": [
@@ -69541,20 +69541,20 @@
       {
         "date": "2026-wk1",
         "opp": "",
-        "passYds": 54.0,
-        "rushYds": 1.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "",
         "passYds": 167.0,
         "rushYds": 4.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk1",
+        "opp": "",
+        "passYds": 54.0,
+        "rushYds": 1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk2",
@@ -71114,7 +71114,7 @@
     ]
   },
   "Jaquaize Pettaway": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "East Carolina",
     "league": "CFB",
     "games": [
@@ -73443,7 +73443,7 @@
     ]
   },
   "Zeke Lewis": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Eastern Illinois",
     "league": "CFB",
     "games": [
@@ -80898,7 +80898,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 1.0,
-        "recYds": 10.0,
+        "recYds": 8.0,
         "tds": 0.0
       },
       {
@@ -80907,7 +80907,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 1.0,
-        "recYds": 8.0,
+        "recYds": 10.0,
         "tds": 0.0
       }
     ]
@@ -87372,18 +87372,18 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 13.0,
-        "receptions": 2.0,
-        "recYds": 0.0,
+        "rushYds": 1.0,
+        "receptions": 1.0,
+        "recYds": -8.0,
         "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 1.0,
-        "receptions": 1.0,
-        "recYds": -8.0,
+        "rushYds": 13.0,
+        "receptions": 2.0,
+        "recYds": 0.0,
         "tds": 0.0
       },
       {
@@ -93671,7 +93671,7 @@
     "games": []
   },
   "Jack Layne": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -93862,18 +93862,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 6.0,
-        "recYds": 73.0,
-        "tds": 1.0
+        "receptions": 3.0,
+        "recYds": 24.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 24.0,
-        "tds": 0.0
+        "receptions": 6.0,
+        "recYds": 73.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk2",
@@ -95542,7 +95542,7 @@
     "games": []
   },
   "Cam Thompson": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Northern Illinois",
     "league": "CFB",
     "games": [
@@ -99098,7 +99098,7 @@
     ]
   },
   "Taco Dowler": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Montana State",
     "league": "CFB",
     "games": [
@@ -104523,19 +104523,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 105.0,
+        "rushYds": 76.0,
         "receptions": 2.0,
-        "recYds": 6.0,
-        "tds": 4.0
+        "recYds": 93.0,
+        "tds": 2.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 76.0,
+        "rushYds": 105.0,
         "receptions": 2.0,
-        "recYds": 93.0,
-        "tds": 2.0
+        "recYds": 6.0,
+        "tds": 4.0
       },
       {
         "date": "2026-wk2",
@@ -104585,8 +104585,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 9.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       },
       {
@@ -104594,8 +104594,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
+        "receptions": 1.0,
+        "recYds": 9.0,
         "tds": 0.0
       }
     ]
@@ -118392,18 +118392,18 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 8.0,
-        "receptions": 1.0,
-        "recYds": -1.0,
+        "rushYds": 10.0,
+        "receptions": 4.0,
+        "recYds": 19.0,
         "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 10.0,
-        "receptions": 4.0,
-        "recYds": 19.0,
+        "rushYds": 8.0,
+        "receptions": 1.0,
+        "recYds": -1.0,
         "tds": 0.0
       },
       {
@@ -129742,20 +129742,20 @@
       {
         "date": "2026-wk1",
         "opp": "",
-        "passYds": 138.0,
-        "rushYds": 21.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "",
         "passYds": 259.0,
         "rushYds": 82.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk1",
+        "opp": "",
+        "passYds": 138.0,
+        "rushYds": 21.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk2",
@@ -131652,8 +131652,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 5.0,
-        "recYds": 101.0,
+        "receptions": 2.0,
+        "recYds": 14.0,
         "tds": 0.0
       },
       {
@@ -131661,8 +131661,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 14.0,
+        "receptions": 5.0,
+        "recYds": 101.0,
         "tds": 0.0
       },
       {
@@ -138937,20 +138937,20 @@
       {
         "date": "2026-wk1",
         "opp": "",
-        "passYds": 282.0,
-        "rushYds": 8.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 2.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "",
         "passYds": 264.0,
         "rushYds": -5.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk1",
+        "opp": "",
+        "passYds": 282.0,
+        "rushYds": 8.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 2.0
       },
       {
         "date": "2026-wk2",
@@ -143667,7 +143667,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 3.0,
-        "recYds": 39.0,
+        "recYds": 40.0,
         "tds": 0.0
       },
       {
@@ -143676,7 +143676,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 3.0,
-        "recYds": 40.0,
+        "recYds": 39.0,
         "tds": 0.0
       }
     ]
@@ -162963,7 +162963,7 @@
     ]
   },
   "Deshaun Buchanan": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -164501,7 +164501,7 @@
     "games": []
   },
   "Scottre Humphrey": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -167314,7 +167314,7 @@
     "games": []
   },
   "Legend Bey": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Ohio State",
     "league": "CFB",
     "games": [
@@ -169597,7 +169597,7 @@
     ]
   },
   "Jaden Allen-Hendrix": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Coastal Carolina",
     "league": "CFB",
     "games": [
@@ -174732,18 +174732,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 14.0,
-        "tds": 0.0
+        "receptions": 7.0,
+        "recYds": 72.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 7.0,
-        "recYds": 72.0,
-        "tds": 1.0
+        "receptions": 2.0,
+        "recYds": 14.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk2",
@@ -180068,7 +180068,7 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 2.0,
+        "rushYds": -2.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -180077,7 +180077,7 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": -2.0,
+        "rushYds": 2.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -180461,20 +180461,20 @@
       {
         "date": "2026-wk1",
         "opp": "",
-        "passYds": 319.0,
-        "rushYds": 62.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 5.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "",
         "passYds": 204.0,
         "rushYds": 34.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk1",
+        "opp": "",
+        "passYds": 319.0,
+        "rushYds": 62.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 5.0
       },
       {
         "date": "2026-wk2",
@@ -184780,19 +184780,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 55.0,
-        "receptions": 2.0,
-        "recYds": 22.0,
-        "tds": 0.0
+        "rushYds": 81.0,
+        "receptions": 3.0,
+        "recYds": 12.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 81.0,
-        "receptions": 3.0,
-        "recYds": 12.0,
-        "tds": 1.0
+        "rushYds": 55.0,
+        "receptions": 2.0,
+        "recYds": 22.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk2",
@@ -186425,19 +186425,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 48.0,
-        "receptions": 3.0,
-        "recYds": 9.0,
-        "tds": 1.0
+        "rushYds": 49.0,
+        "receptions": 2.0,
+        "recYds": 4.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 49.0,
-        "receptions": 2.0,
-        "recYds": 4.0,
-        "tds": 0.0
+        "rushYds": 48.0,
+        "receptions": 3.0,
+        "recYds": 9.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk2",
@@ -187050,18 +187050,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0
+        "receptions": 5.0,
+        "recYds": 72.0,
+        "tds": 0.0
       },
       {
         "date": "2025-wk10",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 5.0,
-        "recYds": 72.0,
-        "tds": 0.0
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0
       },
       {
         "date": "2025-wk11",
@@ -192696,18 +192696,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 8.0,
-        "recYds": 95.0,
-        "tds": 1.0
+        "receptions": 4.0,
+        "recYds": 59.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 59.0,
-        "tds": 0.0
+        "receptions": 8.0,
+        "recYds": 95.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk2",
@@ -192816,18 +192816,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 19.0,
-        "tds": 0.0
+        "receptions": 5.0,
+        "recYds": 91.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 5.0,
-        "recYds": 91.0,
-        "tds": 1.0
+        "receptions": 3.0,
+        "recYds": 19.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk2",
@@ -197552,18 +197552,18 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 71.0,
-        "receptions": 2.0,
-        "recYds": 29.0,
+        "rushYds": 94.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 94.0,
-        "receptions": 0,
-        "recYds": 0,
+        "rushYds": 71.0,
+        "receptions": 2.0,
+        "recYds": 29.0,
         "tds": 0.0
       },
       {
@@ -198921,8 +198921,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 39.0,
+        "receptions": 1.0,
+        "recYds": 13.0,
         "tds": 0.0
       },
       {
@@ -198930,8 +198930,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 13.0,
+        "receptions": 4.0,
+        "recYds": 39.0,
         "tds": 0.0
       },
       {
@@ -215916,7 +215916,7 @@
     ]
   },
   "Triston Morgan": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Kennesaw State",
     "league": "CFB",
     "games": [
@@ -224076,8 +224076,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 6.0,
-        "recYds": 44.0,
+        "receptions": 5.0,
+        "recYds": 34.0,
         "tds": 0.0
       },
       {
@@ -224085,8 +224085,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 5.0,
-        "recYds": 34.0,
+        "receptions": 6.0,
+        "recYds": 44.0,
         "tds": 0.0
       },
       {
@@ -239301,19 +239301,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 113.0,
-        "receptions": 1.0,
-        "recYds": 3.0,
-        "tds": 1.0
+        "rushYds": 13.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 13.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
+        "rushYds": 113.0,
+        "receptions": 1.0,
+        "recYds": 3.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk1",
@@ -242750,7 +242750,7 @@
     ]
   },
   "Chandler Chapman": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Southern Illinois",
     "league": "CFB",
     "games": [
@@ -248822,8 +248822,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 21.0,
+        "receptions": 4.0,
+        "recYds": 45.0,
         "tds": 0.0
       },
       {
@@ -248831,8 +248831,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 45.0,
+        "receptions": 3.0,
+        "recYds": 21.0,
         "tds": 0.0
       },
       {
@@ -249879,7 +249879,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 3.0,
-        "recYds": 42.0,
+        "recYds": 40.0,
         "tds": 0.0
       },
       {
@@ -249888,7 +249888,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 3.0,
-        "recYds": 40.0,
+        "recYds": 42.0,
         "tds": 0.0
       },
       {
@@ -256170,7 +256170,7 @@
     "games": []
   },
   "Curtis Kimmons IV": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Massachusetts",
     "league": "CFB",
     "games": [
@@ -259295,7 +259295,7 @@
     "games": []
   },
   "Riley Warzynski": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Drake",
     "league": "CFB",
     "games": [
@@ -259631,19 +259631,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 18.0,
-        "receptions": 10.0,
-        "recYds": 170.0,
-        "tds": 1.0
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 14.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 14.0,
-        "tds": 0.0
+        "rushYds": 18.0,
+        "receptions": 10.0,
+        "recYds": 170.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk2",
@@ -260211,7 +260211,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 1.0,
-        "recYds": 12.0,
+        "recYds": 39.0,
         "tds": 0.0
       },
       {
@@ -260220,7 +260220,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 1.0,
-        "recYds": 39.0,
+        "recYds": 12.0,
         "tds": 0.0
       }
     ]
@@ -260451,7 +260451,7 @@
     "games": []
   },
   "Corey Rideout": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Maine",
     "league": "CFB",
     "games": [
@@ -261458,7 +261458,7 @@
     "games": []
   },
   "Carter Dahlke": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Montana State",
     "league": "CFB",
     "games": [
@@ -263058,18 +263058,18 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 3.0,
-        "receptions": 1.0,
-        "recYds": 8.0,
+        "rushYds": 114.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 1.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 114.0,
-        "receptions": 0,
-        "recYds": 0,
+        "rushYds": 3.0,
+        "receptions": 1.0,
+        "recYds": 8.0,
         "tds": 1.0
       },
       {
@@ -264931,18 +264931,18 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 36.0,
+        "rushYds": 49.0,
         "receptions": 1.0,
-        "recYds": 8.0,
+        "recYds": 3.0,
         "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 49.0,
+        "rushYds": 36.0,
         "receptions": 1.0,
-        "recYds": 3.0,
+        "recYds": 8.0,
         "tds": 0.0
       },
       {
@@ -266289,7 +266289,7 @@
     "games": []
   },
   "Marquez Spells": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Morgan State",
     "league": "CFB",
     "games": [
@@ -266297,18 +266297,18 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 39.0,
-        "receptions": 0,
-        "recYds": 0,
+        "rushYds": 0.0,
+        "receptions": 1.0,
+        "recYds": 0.0,
         "tds": 0.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 0.0,
-        "receptions": 1.0,
-        "recYds": 0.0,
+        "rushYds": 39.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       }
     ]
@@ -267849,7 +267849,7 @@
     "games": []
   },
   "Aaron Frye": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "Alabama State",
     "league": "CFB",
     "games": [
@@ -271717,7 +271717,7 @@
     ]
   },
   "DJ McKinney": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Tulsa",
     "league": "CFB",
     "games": [
@@ -272350,8 +272350,8 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 1.0,
-        "recYds": 40.0,
-        "tds": 1.0
+        "recYds": 5.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk1",
@@ -272359,8 +272359,8 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 1.0,
-        "recYds": 5.0,
-        "tds": 0.0
+        "recYds": 40.0,
+        "tds": 1.0
       }
     ]
   },
@@ -275566,7 +275566,7 @@
     ]
   },
   "Alan Woods III": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Kennesaw State",
     "league": "CFB",
     "games": [
@@ -279416,7 +279416,7 @@
     ]
   },
   "Leshon Williams": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Kansas",
     "league": "CFB",
     "games": [
@@ -284999,7 +284999,7 @@
     ]
   },
   "Demarcus Lacey": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Marshall",
     "league": "CFB",
     "games": [
@@ -288093,7 +288093,7 @@
     ]
   },
   "J'mari Taylor": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Virginia",
     "league": "CFB",
     "games": [
@@ -297436,7 +297436,7 @@
     ]
   },
   "Emmett Johnson": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Nebraska",
     "league": "CFB",
     "games": [
@@ -306920,7 +306920,7 @@
     ]
   },
   "Damon Bankston": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -307017,7 +307017,7 @@
     ]
   },
   "Keagan Johnson": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -332954,7 +332954,7 @@
     ]
   },
   "Griffin Scalf": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Thomas More",
     "league": "CFB",
     "games": [
@@ -332995,7 +332995,7 @@
     ]
   },
   "Demetrick Welch Jr.": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Thomas More",
     "league": "CFB",
     "games": [
@@ -333286,7 +333286,7 @@
     ]
   },
   "Vinson Davis": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Southern Illinois",
     "league": "CFB",
     "games": [
@@ -333408,7 +333408,7 @@
     ]
   },
   "Lashaun Lester": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Southern Illinois",
     "league": "CFB",
     "games": [
@@ -342476,7 +342476,7 @@
     ]
   },
   "Ryan Morrow": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Alabama A&M",
     "league": "CFB",
     "games": [
@@ -342573,7 +342573,7 @@
     ]
   },
   "Isaiah Nwokenkwo": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Alabama A&M",
     "league": "CFB",
     "games": [
@@ -343927,7 +343927,7 @@
     ]
   },
   "Tre Bradford": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Grambling",
     "league": "CFB",
     "games": [
@@ -347393,7 +347393,7 @@
     ]
   },
   "Arthur Rodgers": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "North Carolina Central",
     "league": "CFB",
     "games": [
@@ -352850,7 +352850,7 @@
     ]
   },
   "Brady Olson": {
-    "pos": "QB",
+    "pos": "RB",
     "team": "Central Connecticut",
     "league": "CFB",
     "games": [
@@ -369094,7 +369094,7 @@
     ]
   },
   "Julius Davis": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Houston Christian",
     "league": "CFB",
     "games": [
@@ -369191,7 +369191,7 @@
     ]
   },
   "Chris Long": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Montana State",
     "league": "CFB",
     "games": [
@@ -374653,7 +374653,7 @@
     ]
   },
   "Coleby Hamm": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "McNeese",
     "league": "CFB",
     "games": [
@@ -374750,7 +374750,7 @@
     ]
   },
   "Trevonte' Citizen": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "McNeese",
     "league": "CFB",
     "games": [
@@ -375093,7 +375093,7 @@
     ]
   },
   "Bryce Strong": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "McNeese",
     "league": "CFB",
     "games": [
@@ -379103,19 +379103,19 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 38.0,
+        "rushYds": 70.0,
         "receptions": 1.0,
-        "recYds": 1.0,
-        "tds": 0.0
+        "recYds": -1.0,
+        "tds": 1.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 70.0,
+        "rushYds": 38.0,
         "receptions": 1.0,
-        "recYds": -1.0,
-        "tds": 1.0
+        "recYds": 1.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk2",
@@ -387810,8 +387810,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 5.0,
-        "recYds": 70.0,
+        "receptions": 4.0,
+        "recYds": 39.0,
         "tds": 1.0
       },
       {
@@ -387819,8 +387819,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 39.0,
+        "receptions": 5.0,
+        "recYds": 70.0,
         "tds": 1.0
       },
       {
@@ -404177,18 +404177,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 8.0,
-        "tds": 0.0
+        "receptions": 5.0,
+        "recYds": 125.0,
+        "tds": 2.0
       },
       {
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 5.0,
-        "recYds": 125.0,
-        "tds": 2.0
+        "receptions": 1.0,
+        "recYds": 8.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk2",
@@ -412674,7 +412674,7 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wkNone",
+        "date": "2025-wk1",
         "opp": "",
         "passYds": 0,
         "rushYds": -3.0,
