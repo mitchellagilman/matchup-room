@@ -171,6 +171,36 @@ def main():
         print("Could not fetch any team list (FBS or FCS); leaving existing file untouched.", file=sys.stderr)
         return
 
+    # Real turnover-margin data -- confirmed live this was a genuine gap:
+    # CFB's "to" field had literally never had a real source (every single
+    # team was stuck at exactly 0), unlike NFL where this is real and
+    # actively used. CFBD's /stats/season returns one row per team with
+    # turnovers/interceptions/fumblesRecovered/fumblesLost/games as season
+    # totals (confirmed against CFBD's own documented column list, though
+    # not against a live response in this environment -- verify the field
+    # names below still match once this runs for real). Takeaways -
+    # giveaways, divided by games played, mirrors exactly how NFL's
+    # turnover margin is computed in fetch_nfl.py.
+    def turnover_margin_by_team(year):
+        try:
+            rows = cfbd_get("/stats/season", {"year": year}, api_key)
+        except Exception as e:
+            print(f"Could not fetch /stats/season for {year} ({e}); turnover margin for that year will be omitted, not guessed.", file=sys.stderr)
+            return {}
+        result = {}
+        for row in rows:
+            team = row.get("team")
+            g = row.get("games")
+            if not team or not g:
+                continue
+            takeaways = (row.get("passesIntercepted") or 0) + (row.get("fumblesRecovered") or 0)
+            giveaways = (row.get("interceptions") or 0) + (row.get("fumblesLost") or 0)
+            result[team] = (takeaways - giveaways) / g
+        return result
+
+    to_by_team = turnover_margin_by_team(YEAR)
+    prev_to_by_team = turnover_margin_by_team(YEAR - 1)
+
     try:
         games = cfbd_get("/games", {"year": YEAR, "seasonType": "regular"}, api_key)
     except Exception as e:
@@ -297,7 +327,7 @@ def main():
             "rushOff": round(sum(g["rushOff"] for g in games_list) / n, 1),
             "passDef": round(sum(g["passDef"] for g in games_list) / n, 1),
             "rushDef": round(sum(g["rushDef"] for g in games_list) / n, 1),
-            "to": existing.get("to", 0),  # turnover margin needs a separate CFBD endpoint; left as-is for now
+            "to": round(to_by_team.get(team, existing.get("to", 0)), 2),
             "ats": existing.get("ats", ""),
             "wk1": True,
             "games": game_log if game_log else existing.get("games", []),
@@ -306,6 +336,8 @@ def main():
         if prev:
             teams[team]["prevPpg"] = round(prev["ppg"], 1)
             teams[team]["prevPa"] = round(prev["pa"], 1)
+        if team in prev_to_by_team:
+            teams[team]["prevTo"] = round(prev_to_by_team[team], 2)
 
         home_pts = [p for p in pts if p["venue"] == "home"]
         away_pts = [p for p in pts if p["venue"] == "away"]
