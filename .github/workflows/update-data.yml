@@ -110,6 +110,12 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python3 scripts/fetch_player_props_odds.py
 
+      - name: Fetch real player-prop odds (SportsGameOdds)
+        continue-on-error: true
+        env:
+          SPORTSGAMEODDS_API_KEY: ${{ secrets.SPORTSGAMEODDS_API_KEY }}
+        run: python3 scripts/fetch_sportsgameodds_props.py
+
       - name: Track predictions (log + grade Top Bets picks)
         continue-on-error: true
         env:
