@@ -1,5 +1,6 @@
 [
   {
+    "eventId": "aee7eae1849ebb103b9bf233e9741392",
     "game": "Carolina Panthers @ Atlanta Falcons",
     "league": "NFL",
     "date": "2026-09-20",
@@ -7,8 +8,8 @@
     "aML": -143,
     "aMLBook": "BetRivers",
     "aSpread": -2.5,
-    "aSpreadOdds": -104,
-    "aSpreadOddsBook": "BetRivers",
+    "aSpreadOdds": 100,
+    "aSpreadOddsBook": "Bovada",
     "bTeam": "Atlanta Falcons",
     "bML": 130,
     "bMLBook": "DraftKings",
@@ -100,19 +101,19 @@
         "aSpread": -2.5,
         "aSpreadOdds": -115,
         "bSpread": 2.5,
-        "bSpreadOdds": -102,
+        "bSpreadOdds": -105,
         "total": 43.5,
-        "overOdds": -110,
-        "underOdds": -108
+        "overOdds": -108,
+        "underOdds": -110
       },
       {
         "book": "Bovada",
         "aML": -150,
         "bML": 130,
-        "aSpread": -2.5,
-        "aSpreadOdds": -120,
-        "bSpread": 2.5,
-        "bSpreadOdds": 100,
+        "aSpread": -3.0,
+        "aSpreadOdds": 100,
+        "bSpread": 3.0,
+        "bSpreadOdds": -120,
         "total": 43.5,
         "overOdds": -110,
         "underOdds": -110
@@ -120,6 +121,7 @@
     ]
   },
   {
+    "eventId": "2143ade9684fd876b68a4e8cbf451f05",
     "game": "New Orleans Saints @ Baltimore Ravens",
     "league": "NFL",
     "date": "2026-09-20",
@@ -136,7 +138,7 @@
     "bSpreadOdds": 106,
     "bSpreadOddsBook": "LowVig.ag",
     "total": 46.5,
-    "overOdds": -102,
+    "overOdds": 102,
     "overOddsBook": "DraftKings",
     "underOdds": -107,
     "underOddsBook": "LowVig.ag",
@@ -150,8 +152,8 @@
         "bSpread": -8.5,
         "bSpreadOdds": -108,
         "total": 46.5,
-        "overOdds": -102,
-        "underOdds": -118
+        "overOdds": 102,
+        "underOdds": -122
       },
       {
         "book": "BetUS",
@@ -229,10 +231,10 @@
         "book": "Bovada",
         "aML": 325,
         "bML": -435,
-        "aSpread": 8.5,
-        "aSpreadOdds": -115,
-        "bSpread": -8.5,
-        "bSpreadOdds": -105,
+        "aSpread": 8.0,
+        "aSpreadOdds": -110,
+        "bSpread": -8.0,
+        "bSpreadOdds": -110,
         "total": 46.0,
         "overOdds": -110,
         "underOdds": -110
@@ -240,12 +242,13 @@
     ]
   },
   {
+    "eventId": "0283a29e1b38ef78b29b904fd56a16dd",
     "game": "Minnesota Vikings @ Chicago Bears",
     "league": "NFL",
     "date": "2026-09-20",
     "aTeam": "Minnesota Vikings",
-    "aML": 188,
-    "aMLBook": "FanDuel",
+    "aML": 185,
+    "aMLBook": "BetRivers",
     "aSpread": 4.5,
     "aSpreadOdds": -107,
     "aSpreadOddsBook": "LowVig.ag",
@@ -311,8 +314,8 @@
       },
       {
         "book": "FanDuel",
-        "aML": 188,
-        "bML": -225,
+        "aML": 184,
+        "bML": -220,
         "aSpread": 4.5,
         "aSpreadOdds": -110,
         "bSpread": -4.5,
@@ -338,9 +341,9 @@
         "aML": 180,
         "bML": -220,
         "aSpread": 4.5,
-        "aSpreadOdds": -108,
+        "aSpreadOdds": -110,
         "bSpread": -4.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -108,
         "total": 48.5,
         "overOdds": -108,
         "underOdds": -110
@@ -360,12 +363,13 @@
     ]
   },
   {
+    "eventId": "36ad2fa722f4915ef23d2c81351261de",
     "game": "Cincinnati Bengals @ Houston Texans",
     "league": "NFL",
     "date": "2026-09-20",
     "aTeam": "Cincinnati Bengals",
-    "aML": 130,
-    "aMLBook": "LowVig.ag",
+    "aML": 135,
+    "aMLBook": "Bovada",
     "aSpread": 2.5,
     "aSpreadOdds": 100,
     "aSpreadOddsBook": "BetUS",
@@ -458,21 +462,21 @@
         "aML": 120,
         "bML": -145,
         "aSpread": 2.5,
-        "aSpreadOdds": -108,
+        "aSpreadOdds": -105,
         "bSpread": -2.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -112,
         "total": 45.5,
         "overOdds": -110,
         "underOdds": -108
       },
       {
         "book": "Bovada",
-        "aML": 130,
-        "bML": -150,
+        "aML": 135,
+        "bML": -160,
         "aSpread": 2.5,
-        "aSpreadOdds": -105,
+        "aSpreadOdds": 100,
         "bSpread": -2.5,
-        "bSpreadOdds": -115,
+        "bSpreadOdds": -120,
         "total": 45.5,
         "overOdds": -115,
         "underOdds": -105
@@ -480,6 +484,7 @@
     ]
   },
   {
+    "eventId": "0636ebff776d43f8c829a36713c80b22",
     "game": "Cleveland Browns @ Tampa Bay Buccaneers",
     "league": "NFL",
     "date": "2026-09-20",
@@ -600,15 +605,16 @@
     ]
   },
   {
+    "eventId": "4aeee070bb6ec60bdfae4dede61b9014",
     "game": "Green Bay Packers @ New York Jets",
     "league": "NFL",
     "date": "2026-09-20",
     "aTeam": "Green Bay Packers",
-    "aML": -170,
-    "aMLBook": "BetUS",
+    "aML": -165,
+    "aMLBook": "Bovada",
     "aSpread": -3.5,
-    "aSpreadOdds": -108,
-    "aSpreadOddsBook": "LowVig.ag",
+    "aSpreadOdds": -102,
+    "aSpreadOddsBook": "BetMGM",
     "bTeam": "New York Jets",
     "bML": 170,
     "bMLBook": "DraftKings",
@@ -683,36 +689,36 @@
       },
       {
         "book": "BetRivers",
-        "aML": -200,
-        "bML": 163,
+        "aML": -195,
+        "bML": 160,
         "aSpread": -3.5,
-        "aSpreadOdds": -109,
+        "aSpreadOdds": -104,
         "bSpread": 3.5,
-        "bSpreadOdds": -112,
+        "bSpreadOdds": -118,
         "total": 44.5,
         "overOdds": -113,
         "underOdds": -108
       },
       {
         "book": "BetMGM",
-        "aML": -190,
-        "bML": 155,
+        "aML": -185,
+        "bML": 150,
         "aSpread": -3.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -102,
         "bSpread": 3.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -118,
         "total": 44.5,
         "overOdds": -110,
         "underOdds": -108
       },
       {
         "book": "Bovada",
-        "aML": -175,
-        "bML": 150,
+        "aML": -165,
+        "bML": 140,
         "aSpread": -3.0,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -110,
         "bSpread": 3.0,
-        "bSpreadOdds": -105,
+        "bSpreadOdds": -110,
         "total": 44.5,
         "overOdds": -110,
         "underOdds": -110
@@ -720,6 +726,7 @@
     ]
   },
   {
+    "eventId": "9d14f87600f6edc74dbcb5c74edf6246",
     "game": "Pittsburgh Steelers @ New England Patriots",
     "league": "NFL",
     "date": "2026-09-20",
@@ -840,6 +847,7 @@
     ]
   },
   {
+    "eventId": "fafc649c455e32a0f2ba1bd06e2039bc",
     "game": "Philadelphia Eagles @ Tennessee Titans",
     "league": "NFL",
     "date": "2026-09-20",
@@ -853,7 +861,7 @@
     "bML": 280,
     "bMLBook": "FanDuel",
     "bSpread": 7.0,
-    "bSpreadOdds": -102,
+    "bSpreadOdds": -105,
     "bSpreadOddsBook": "BetMGM",
     "total": 39.5,
     "overOdds": -107,
@@ -935,20 +943,20 @@
       },
       {
         "book": "BetMGM",
-        "aML": -350,
-        "bML": 275,
+        "aML": -325,
+        "bML": 270,
         "aSpread": -7.0,
         "aSpreadOdds": -115,
         "bSpread": 7.0,
-        "bSpreadOdds": -102,
+        "bSpreadOdds": -105,
         "total": 39.5,
-        "overOdds": -110,
-        "underOdds": -108
+        "overOdds": -108,
+        "underOdds": -110
       },
       {
         "book": "Bovada",
-        "aML": -350,
-        "bML": 275,
+        "aML": -330,
+        "bML": 265,
         "aSpread": -7.0,
         "aSpreadOdds": -110,
         "bSpread": 7.0,
@@ -960,6 +968,7 @@
     ]
   },
   {
+    "eventId": "1fd6628c781f556a7a19638e97d7107f",
     "game": "Jacksonville Jaguars @ Denver Broncos",
     "league": "NFL",
     "date": "2026-09-20",
@@ -1080,6 +1089,7 @@
     ]
   },
   {
+    "eventId": "71b3b83747589efdc5baef2c5cf811bf",
     "game": "Las Vegas Raiders @ Los Angeles Chargers",
     "league": "NFL",
     "date": "2026-09-20",
@@ -1200,12 +1210,13 @@
     ]
   },
   {
+    "eventId": "4dd8020192a544385db42374e5555303",
     "game": "Seattle Seahawks @ Arizona Cardinals",
     "league": "NFL",
     "date": "2026-09-20",
     "aTeam": "Seattle Seahawks",
-    "aML": -200,
-    "aMLBook": "BetUS",
+    "aML": -195,
+    "aMLBook": "Bovada",
     "aSpread": -3.5,
     "aSpreadOdds": 102,
     "aSpreadOddsBook": "LowVig.ag",
@@ -1307,12 +1318,12 @@
       },
       {
         "book": "Bovada",
-        "aML": -200,
-        "bML": 170,
-        "aSpread": -4.0,
-        "aSpreadOdds": -105,
-        "bSpread": 4.0,
-        "bSpreadOdds": -115,
+        "aML": -195,
+        "bML": 165,
+        "aSpread": -3.5,
+        "aSpreadOdds": -110,
+        "bSpread": 3.5,
+        "bSpreadOdds": -110,
         "total": 41.0,
         "overOdds": -110,
         "underOdds": -110
@@ -1320,6 +1331,7 @@
     ]
   },
   {
+    "eventId": "85ef85098ddd22fe4ecf45e7e3c0a9c0",
     "game": "Washington Commanders @ Dallas Cowboys",
     "league": "NFL",
     "date": "2026-09-20",
@@ -1418,9 +1430,9 @@
         "aML": 175,
         "bML": -210,
         "aSpread": 4.0,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -108,
         "bSpread": -4.0,
-        "bSpreadOdds": -108,
+        "bSpreadOdds": -110,
         "total": 50.5,
         "overOdds": -110,
         "underOdds": -108
@@ -1440,6 +1452,7 @@
     ]
   },
   {
+    "eventId": "68bc55903f50af4af4766adcc89fcc61",
     "game": "Miami Dolphins @ San Francisco 49ers",
     "league": "NFL",
     "date": "2026-09-20",
@@ -1451,7 +1464,7 @@
     "aSpreadOddsBook": "BetUS",
     "bTeam": "San Francisco 49ers",
     "bML": -900,
-    "bMLBook": "DraftKings",
+    "bMLBook": "BetMGM",
     "bSpread": -13.5,
     "bSpreadOdds": -105,
     "bSpreadOddsBook": "DraftKings",
@@ -1463,8 +1476,8 @@
     "books": [
       {
         "book": "DraftKings",
-        "aML": 600,
-        "bML": -900,
+        "aML": 625,
+        "bML": -950,
         "aSpread": 13.5,
         "aSpreadOdds": -115,
         "bSpread": -13.5,
@@ -1560,19 +1573,20 @@
     ]
   },
   {
+    "eventId": "50bc247030707d823b9c3581d7eb5760",
     "game": "Indianapolis Colts @ Kansas City Chiefs",
     "league": "NFL",
     "date": "2026-09-21",
     "aTeam": "Indianapolis Colts",
     "aML": 260,
     "aMLBook": "FanDuel",
-    "aSpread": 6.5,
+    "aSpread": 6.0,
     "aSpreadOdds": -105,
-    "aSpreadOddsBook": "DraftKings",
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Kansas City Chiefs",
-    "bML": -280,
+    "bML": -275,
     "bMLBook": "Bovada",
-    "bSpread": -6.5,
+    "bSpread": -6.0,
     "bSpreadOdds": -105,
     "bSpreadOddsBook": "LowVig.ag",
     "total": 46.5,
@@ -1583,20 +1597,20 @@
     "books": [
       {
         "book": "DraftKings",
-        "aML": 230,
-        "bML": -285,
-        "aSpread": 6.5,
-        "aSpreadOdds": -105,
-        "bSpread": -6.5,
-        "bSpreadOdds": -115,
+        "aML": 225,
+        "bML": -278,
+        "aSpread": 6.0,
+        "aSpreadOdds": -108,
+        "bSpread": -6.0,
+        "bSpreadOdds": -112,
         "total": 46.5,
         "overOdds": -105,
         "underOdds": -115
       },
       {
         "book": "BetUS",
-        "aML": 250,
-        "bML": -300,
+        "aML": 240,
+        "bML": -290,
         "aSpread": 6.5,
         "aSpreadOdds": -110,
         "bSpread": -6.5,
@@ -1645,18 +1659,18 @@
         "book": "BetRivers",
         "aML": 260,
         "bML": -335,
-        "aSpread": 6.5,
-        "aSpreadOdds": -107,
-        "bSpread": -6.5,
-        "bSpreadOdds": -114,
+        "aSpread": 6.0,
+        "aSpreadOdds": -106,
+        "bSpread": -6.0,
+        "bSpreadOdds": -115,
         "total": 46.5,
-        "overOdds": -109,
-        "underOdds": -112
+        "overOdds": -110,
+        "underOdds": -110
       },
       {
         "book": "BetMGM",
         "aML": 240,
-        "bML": -300,
+        "bML": -295,
         "aSpread": null,
         "aSpreadOdds": null,
         "bSpread": null,
@@ -1667,12 +1681,12 @@
       },
       {
         "book": "Bovada",
-        "aML": 230,
-        "bML": -280,
+        "aML": 225,
+        "bML": -275,
         "aSpread": 6.0,
-        "aSpreadOdds": -105,
+        "aSpreadOdds": -110,
         "bSpread": -6.0,
-        "bSpreadOdds": -115,
+        "bSpreadOdds": -110,
         "total": 46.5,
         "overOdds": 105,
         "underOdds": -125
@@ -1680,11 +1694,12 @@
     ]
   },
   {
+    "eventId": "32367f882fac1a0c20a6335619922025",
     "game": "New York Giants @ Los Angeles Rams",
     "league": "NFL",
     "date": "2026-09-22",
     "aTeam": "New York Giants",
-    "aML": 285,
+    "aML": 280,
     "aMLBook": "DraftKings",
     "aSpread": 7.0,
     "aSpreadOdds": -101,
@@ -1703,12 +1718,12 @@
     "books": [
       {
         "book": "DraftKings",
-        "aML": 285,
-        "bML": -360,
+        "aML": 280,
+        "bML": -355,
         "aSpread": 7.0,
-        "aSpreadOdds": -102,
+        "aSpreadOdds": -105,
         "bSpread": -7.0,
-        "bSpreadOdds": -118,
+        "bSpreadOdds": -115,
         "total": 48.5,
         "overOdds": -105,
         "underOdds": -115
@@ -1775,20 +1790,8 @@
       },
       {
         "book": "BetMGM",
-        "aML": 260,
+        "aML": 270,
         "bML": -325,
-        "aSpread": 7.5,
-        "aSpreadOdds": -120,
-        "bSpread": -7.5,
-        "bSpreadOdds": -108,
-        "total": 48.0,
-        "overOdds": -108,
-        "underOdds": -110
-      },
-      {
-        "book": "Bovada",
-        "aML": 275,
-        "bML": -350,
         "aSpread": 7.0,
         "aSpreadOdds": -105,
         "bSpread": -7.0,
@@ -1796,10 +1799,23 @@
         "total": 48.0,
         "overOdds": -110,
         "underOdds": -110
+      },
+      {
+        "book": "Bovada",
+        "aML": 270,
+        "bML": -340,
+        "aSpread": 7.0,
+        "aSpreadOdds": -110,
+        "bSpread": -7.0,
+        "bSpreadOdds": -110,
+        "total": 48.0,
+        "overOdds": -110,
+        "underOdds": -110
       }
     ]
   },
   {
+    "eventId": "e5fbd3b3953b896b1bf897ddadb3cc4b",
     "game": "Atlanta Falcons @ Green Bay Packers",
     "league": "NFL",
     "date": "2026-09-25",
@@ -1860,6 +1876,7 @@
     ]
   },
   {
+    "eventId": "613b8cd3a5fab58f7be4e3fd6f76223e",
     "game": "Carolina Panthers @ Cleveland Browns",
     "league": "NFL",
     "date": "2026-09-27",
@@ -1956,6 +1973,7 @@
     ]
   },
   {
+    "eventId": "71123be049587b6facce3a20c53e5d09",
     "game": "Cincinnati Bengals @ Pittsburgh Steelers",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2052,6 +2070,7 @@
     ]
   },
   {
+    "eventId": "17a730b7d399feeab6a78c30767c29d2",
     "game": "Houston Texans @ Indianapolis Colts",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2148,6 +2167,7 @@
     ]
   },
   {
+    "eventId": "1f3cfd315a24d1a7dd5859a8e6b88e18",
     "game": "New England Patriots @ Jacksonville Jaguars",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2244,6 +2264,7 @@
     ]
   },
   {
+    "eventId": "0339a0e41bcee12820eb3e64bb5fadb4",
     "game": "Kansas City Chiefs @ Miami Dolphins",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2340,6 +2361,7 @@
     ]
   },
   {
+    "eventId": "555afd4a27aaa392662881cffa8f2eef",
     "game": "Tennessee Titans @ New York Giants",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2436,6 +2458,7 @@
     ]
   },
   {
+    "eventId": "2a529c108305ffa049d8b6cfdbaa4d36",
     "game": "Seattle Seahawks @ Washington Commanders",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2532,6 +2555,7 @@
     ]
   },
   {
+    "eventId": "9d2b09e0f9b6dd5ce0d985894f4f98fa",
     "game": "Arizona Cardinals @ San Francisco 49ers",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2628,6 +2652,7 @@
     ]
   },
   {
+    "eventId": "f1724dead3eab61546033032fc782375",
     "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2724,6 +2749,7 @@
     ]
   },
   {
+    "eventId": "84cfca14efc21363fd605508404cf1ff",
     "game": "Baltimore Ravens @ Dallas Cowboys",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2820,6 +2846,7 @@
     ]
   },
   {
+    "eventId": "2e523fcb0497aa689473e290eb2b97de",
     "game": "Las Vegas Raiders @ New Orleans Saints",
     "league": "NFL",
     "date": "2026-09-27",
@@ -2916,6 +2943,7 @@
     ]
   },
   {
+    "eventId": "3bfd8bfb4b8e9a365a0877879b73b16b",
     "game": "Los Angeles Rams @ Denver Broncos",
     "league": "NFL",
     "date": "2026-09-28",
@@ -3012,6 +3040,7 @@
     ]
   },
   {
+    "eventId": "47dc7baa254659f3beb2ed2b38c207b6",
     "game": "Philadelphia Eagles @ Chicago Bears",
     "league": "NFL",
     "date": "2026-09-29",
@@ -3108,21 +3137,22 @@
     ]
   },
   {
+    "eventId": "529a333381665c34d05b290d2c9eb5b9",
     "game": "Coastal Carolina Chanticleers @ Delaware Blue Hens",
     "league": "CFB",
     "date": "2026-09-19",
     "aTeam": "Coastal Carolina Chanticleers",
-    "aML": 175,
-    "aMLBook": "Bovada",
+    "aML": 177,
+    "aMLBook": "BetOnline.ag",
     "aSpread": 4.5,
-    "aSpreadOdds": -101,
-    "aSpreadOddsBook": "BetOnline.ag",
+    "aSpreadOdds": -103,
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Delaware Blue Hens",
     "bML": -200,
-    "bMLBook": "BetOnline.ag",
+    "bMLBook": "BetUS",
     "bSpread": -4.5,
-    "bSpreadOdds": -106,
-    "bSpreadOddsBook": "LowVig.ag",
+    "bSpreadOdds": -108,
+    "bSpreadOddsBook": "DraftKings",
     "total": 56.5,
     "overOdds": -108,
     "overOddsBook": "LowVig.ag",
@@ -3167,24 +3197,24 @@
       },
       {
         "book": "BetOnline.ag",
-        "aML": 174,
-        "bML": -200,
-        "aSpread": 5.0,
-        "aSpreadOdds": -101,
-        "bSpread": -5.0,
-        "bSpreadOdds": -119,
+        "aML": 177,
+        "bML": -205,
+        "aSpread": 5.5,
+        "aSpreadOdds": -107,
+        "bSpread": -5.5,
+        "bSpreadOdds": -113,
         "total": 56.0,
         "overOdds": -110,
         "underOdds": -110
       },
       {
         "book": "LowVig.ag",
-        "aML": 174,
-        "bML": -200,
+        "aML": 177,
+        "bML": -205,
         "aSpread": 5.0,
-        "aSpreadOdds": -106,
+        "aSpreadOdds": -103,
         "bSpread": -5.0,
-        "bSpreadOdds": -106,
+        "bSpreadOdds": -109,
         "total": 56.0,
         "overOdds": -108,
         "underOdds": -108
@@ -3194,20 +3224,20 @@
         "aML": 170,
         "bML": -210,
         "aSpread": 5.0,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -108,
         "bSpread": -5.0,
-        "bSpreadOdds": -108,
+        "bSpreadOdds": -110,
         "total": 56.5,
-        "overOdds": -108,
-        "underOdds": -110
+        "overOdds": -110,
+        "underOdds": -108
       },
       {
         "book": "BetUS",
         "aML": 170,
         "bML": -200,
-        "aSpread": 5.0,
+        "aSpread": 5.5,
         "aSpreadOdds": -110,
-        "bSpread": -5.0,
+        "bSpread": -5.5,
         "bSpreadOdds": -110,
         "total": 56.0,
         "overOdds": -110,
@@ -3228,6 +3258,7 @@
     ]
   },
   {
+    "eventId": "01e9c4d460a55375a75d025e2b1ddbf5",
     "game": "Georgia Bulldogs @ Arkansas Razorbacks",
     "league": "CFB",
     "date": "2026-09-19",
@@ -3235,11 +3266,11 @@
     "aML": -2800,
     "aMLBook": "DraftKings",
     "aSpread": -24.5,
-    "aSpreadOdds": -110,
-    "aSpreadOddsBook": "BetMGM",
+    "aSpreadOdds": -111,
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Arkansas Razorbacks",
-    "bML": 1550,
-    "bMLBook": "BetMGM",
+    "bML": 1500,
+    "bMLBook": "FanDuel",
     "bSpread": 24.5,
     "bSpreadOdds": -101,
     "bSpreadOddsBook": "LowVig.ag",
@@ -3312,13 +3343,13 @@
       {
         "book": "BetMGM",
         "aML": -3000,
-        "bML": 1550,
+        "bML": 1500,
         "aSpread": -24.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -120,
         "bSpread": 24.5,
-        "bSpreadOdds": -108,
+        "bSpreadOdds": -110,
         "total": 54.5,
-        "overOdds": -112,
+        "overOdds": -115,
         "underOdds": -105
       },
       {
@@ -3338,9 +3369,9 @@
         "aML": -3300,
         "bML": 1100,
         "aSpread": -24.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -115,
         "bSpread": 24.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -105,
         "total": 55.0,
         "overOdds": -105,
         "underOdds": -115
@@ -3348,6 +3379,7 @@
     ]
   },
   {
+    "eventId": "5bc9efd5f27827a26c1cf8744bb8c2b1",
     "game": "Akron Zips @ Minnesota Golden Gophers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -3398,12 +3430,12 @@
         "aML": 1400,
         "bML": -10000,
         "aSpread": 23.5,
-        "aSpreadOdds": -108,
+        "aSpreadOdds": -113,
         "bSpread": -23.5,
-        "bSpreadOdds": -114,
+        "bSpreadOdds": -110,
         "total": 49.5,
         "overOdds": -115,
-        "underOdds": -110
+        "underOdds": -112
       },
       {
         "book": "LowVig.ag",
@@ -3468,6 +3500,7 @@
     ]
   },
   {
+    "eventId": "a317e3ffe5919c8bff3b9b303054f1b3",
     "game": "Kansas Jayhawks @ Arizona State Sun Devils",
     "league": "CFB",
     "date": "2026-09-19",
@@ -3588,6 +3621,7 @@
     ]
   },
   {
+    "eventId": "9a69dbd474c6181a4c51f397b9b25d38",
     "game": "Bowling Green Falcons @ Iowa State Cyclones",
     "league": "CFB",
     "date": "2026-09-19",
@@ -3685,11 +3719,11 @@
         "book": "BetUS",
         "aML": 1150,
         "bML": -2400,
-        "aSpread": 24.0,
-        "aSpreadOdds": -110,
-        "bSpread": -24.0,
-        "bSpreadOdds": -110,
-        "total": 43.0,
+        "aSpread": 23.5,
+        "aSpreadOdds": -105,
+        "bSpread": -23.5,
+        "bSpreadOdds": -115,
+        "total": 43.5,
         "overOdds": -110,
         "underOdds": -110
       },
@@ -3708,6 +3742,7 @@
     ]
   },
   {
+    "eventId": "36baf28c66c363255bb0cd88b6aaf914",
     "game": "Buffalo Bulls @ Penn State Nittany Lions",
     "league": "CFB",
     "date": "2026-09-19",
@@ -3721,8 +3756,8 @@
     "bML": null,
     "bMLBook": null,
     "bSpread": -40.5,
-    "bSpreadOdds": -102,
-    "bSpreadOddsBook": "DraftKings",
+    "bSpreadOdds": -103,
+    "bSpreadOddsBook": "LowVig.ag",
     "total": 49.5,
     "overOdds": -105,
     "overOddsBook": "BetMGM",
@@ -3745,10 +3780,10 @@
         "book": "DraftKings",
         "aML": null,
         "bML": null,
-        "aSpread": 41.5,
-        "aSpreadOdds": -118,
-        "bSpread": -41.5,
-        "bSpreadOdds": -102,
+        "aSpread": 40.5,
+        "aSpreadOdds": -105,
+        "bSpread": -40.5,
+        "bSpreadOdds": -115,
         "total": 49.5,
         "overOdds": -110,
         "underOdds": -110
@@ -3799,7 +3834,7 @@
         "bSpreadOdds": -110,
         "total": 49.5,
         "overOdds": -105,
-        "underOdds": -112
+        "underOdds": -115
       },
       {
         "book": "BetUS",
@@ -3828,6 +3863,7 @@
     ]
   },
   {
+    "eventId": "3fe3d77e009a7f205cce737523609a86",
     "game": "North Carolina Tar Heels @ Clemson Tigers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -3929,7 +3965,7 @@
         "aSpreadOdds": -110,
         "bSpread": -3.0,
         "bSpreadOdds": -110,
-        "total": 44.5,
+        "total": 44.0,
         "overOdds": -110,
         "underOdds": -110
       },
@@ -3948,6 +3984,7 @@
     ]
   },
   {
+    "eventId": "3514404f321e9cf55f11222c8e36233b",
     "game": "Mercer Bears @ Georgia Tech Yellow Jackets",
     "league": "CFB",
     "date": "2026-09-19",
@@ -3963,8 +4000,8 @@
     "bSpread": -38.5,
     "bSpreadOdds": -110,
     "bSpreadOddsBook": "BetOnline.ag",
-    "total": 59.5,
-    "overOdds": -102,
+    "total": 60.5,
+    "overOdds": -105,
     "overOddsBook": "DraftKings",
     "underOdds": -105,
     "underOddsBook": "Bovada",
@@ -3977,9 +4014,9 @@
         "aSpreadOdds": -108,
         "bSpread": -38.5,
         "bSpreadOdds": -112,
-        "total": 59.5,
-        "overOdds": -106,
-        "underOdds": -114
+        "total": 60.5,
+        "overOdds": -112,
+        "underOdds": -108
       },
       {
         "book": "BetRivers",
@@ -4002,8 +4039,8 @@
         "bSpread": -38.5,
         "bSpreadOdds": -118,
         "total": 59.5,
-        "overOdds": -102,
-        "underOdds": -118
+        "overOdds": -105,
+        "underOdds": -115
       },
       {
         "book": "BetOnline.ag",
@@ -4014,8 +4051,8 @@
         "bSpread": -39.0,
         "bSpreadOdds": -110,
         "total": 59.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -110,
+        "underOdds": -110
       },
       {
         "book": "LowVig.ag",
@@ -4026,36 +4063,37 @@
         "bSpread": -39.0,
         "bSpreadOdds": -110,
         "total": 59.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -110,
+        "underOdds": -110
       },
       {
         "book": "BetMGM",
         "aML": null,
         "bML": null,
-        "aSpread": 38.5,
-        "aSpreadOdds": -110,
-        "bSpread": -38.5,
+        "aSpread": 39.0,
+        "aSpreadOdds": -108,
+        "bSpread": -39.0,
         "bSpreadOdds": -110,
         "total": 59.5,
-        "overOdds": -105,
-        "underOdds": -112
+        "overOdds": -108,
+        "underOdds": -110
       },
       {
         "book": "Bovada",
         "aML": null,
         "bML": null,
-        "aSpread": 38.5,
-        "aSpreadOdds": -105,
-        "bSpread": -38.5,
-        "bSpreadOdds": -115,
-        "total": 59.5,
+        "aSpread": 39.0,
+        "aSpreadOdds": -110,
+        "bSpread": -39.0,
+        "bSpreadOdds": -110,
+        "total": 60.0,
         "overOdds": -115,
         "underOdds": -105
       }
     ]
   },
   {
+    "eventId": "72215c37435df22c87999aa675c675ca",
     "game": "Tulane Green Wave @ Kansas State Wildcats",
     "league": "CFB",
     "date": "2026-09-19",
@@ -4144,7 +4182,7 @@
         "aSpread": 20.5,
         "aSpreadOdds": -110,
         "bSpread": -20.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -108,
         "total": 49.5,
         "overOdds": -110,
         "underOdds": -108
@@ -4176,19 +4214,20 @@
     ]
   },
   {
+    "eventId": "6eee31d7778965a3e617f10146619c1d",
     "game": "Kent State Golden Flashes @ Ohio State Buckeyes",
     "league": "CFB",
     "date": "2026-09-19",
     "aTeam": "Kent State Golden Flashes",
     "aML": null,
     "aMLBook": null,
-    "aSpread": 52.5,
-    "aSpreadOdds": -105,
-    "aSpreadOddsBook": "BetMGM",
+    "aSpread": 51.5,
+    "aSpreadOdds": 100,
+    "aSpreadOddsBook": "DraftKings",
     "bTeam": "Ohio State Buckeyes",
     "bML": null,
     "bMLBook": null,
-    "bSpread": -52.5,
+    "bSpread": -51.5,
     "bSpreadOdds": 100,
     "bSpreadOddsBook": "Bovada",
     "total": 59.5,
@@ -4201,10 +4240,10 @@
         "book": "DraftKings",
         "aML": null,
         "bML": null,
-        "aSpread": 52.5,
-        "aSpreadOdds": -115,
-        "bSpread": -52.5,
-        "bSpreadOdds": -105,
+        "aSpread": 51.5,
+        "aSpreadOdds": 100,
+        "bSpread": -51.5,
+        "bSpreadOdds": -120,
         "total": 59.5,
         "overOdds": -102,
         "underOdds": -118
@@ -4238,21 +4277,21 @@
         "aML": null,
         "bML": null,
         "aSpread": 52.5,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -112,
         "bSpread": -52.5,
-        "bSpreadOdds": -108,
-        "total": 59.0,
-        "overOdds": -114,
-        "underOdds": -109
+        "bSpreadOdds": -112,
+        "total": 59.5,
+        "overOdds": -109,
+        "underOdds": -114
       },
       {
         "book": "BetMGM",
         "aML": null,
         "bML": null,
-        "aSpread": 52.0,
-        "aSpreadOdds": -105,
-        "bSpread": -52.0,
-        "bSpreadOdds": -115,
+        "aSpread": 51.5,
+        "aSpreadOdds": -108,
+        "bSpread": -51.5,
+        "bSpreadOdds": -110,
         "total": 59.5,
         "overOdds": -102,
         "underOdds": -118
@@ -4296,6 +4335,7 @@
     ]
   },
   {
+    "eventId": "b0cd2e8beaf0dc333daa592a0d3d5c3a",
     "game": "North Texas Mean Green @ Texas State Bobcats",
     "league": "CFB",
     "date": "2026-09-19",
@@ -4416,6 +4456,7 @@
     ]
   },
   {
+    "eventId": "bd7ae9e585a6595f7d308d45e1bf35e3",
     "game": "Eastern Michigan Eagles @ Wisconsin Badgers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -4432,8 +4473,8 @@
     "bSpreadOdds": -110,
     "bSpreadOddsBook": "BetMGM",
     "total": 44.5,
-    "overOdds": -105,
-    "overOddsBook": "Bovada",
+    "overOdds": -107,
+    "overOddsBook": "BetRivers",
     "underOdds": -105,
     "underOddsBook": "FanDuel",
     "books": [
@@ -4499,7 +4540,7 @@
       },
       {
         "book": "BetMGM",
-        "aML": 1400,
+        "aML": 1350,
         "bML": -2500,
         "aSpread": 23.5,
         "aSpreadOdds": -108,
@@ -4526,16 +4567,17 @@
         "aML": 1000,
         "bML": -2500,
         "aSpread": 23.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -105,
         "bSpread": -23.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -115,
         "total": 44.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -110,
+        "underOdds": -110
       }
     ]
   },
   {
+    "eventId": "2e9835b129f8b8055d4a24f736547363",
     "game": "NC State Wolfpack @ Vanderbilt Commodores",
     "league": "CFB",
     "date": "2026-09-19",
@@ -4552,7 +4594,7 @@
     "bSpreadOdds": 100,
     "bSpreadOddsBook": "Bovada",
     "total": 50.5,
-    "overOdds": -106,
+    "overOdds": -108,
     "overOddsBook": "LowVig.ag",
     "underOdds": -108,
     "underOddsBook": "DraftKings",
@@ -4585,10 +4627,10 @@
         "book": "DraftKings",
         "aML": 136,
         "bML": -162,
-        "aSpread": 3.0,
-        "aSpreadOdds": -102,
-        "bSpread": -3.0,
-        "bSpreadOdds": -118,
+        "aSpread": 3.5,
+        "aSpreadOdds": -118,
+        "bSpread": -3.5,
+        "bSpreadOdds": -102,
         "total": 50.5,
         "overOdds": -112,
         "underOdds": -108
@@ -4602,8 +4644,8 @@
         "bSpread": -3.0,
         "bSpreadOdds": -115,
         "total": 50.0,
-        "overOdds": -108,
-        "underOdds": -112
+        "overOdds": -110,
+        "underOdds": -110
       },
       {
         "book": "LowVig.ag",
@@ -4614,8 +4656,8 @@
         "bSpread": -3.0,
         "bSpreadOdds": -111,
         "total": 50.0,
-        "overOdds": -106,
-        "underOdds": -110
+        "overOdds": -108,
+        "underOdds": -108
       },
       {
         "book": "BetMGM",
@@ -4656,6 +4698,7 @@
     ]
   },
   {
+    "eventId": "26a76b78050ad3953d2d41dbeecd5a07",
     "game": "Wyoming Cowboys @ Central Michigan Chippewas",
     "league": "CFB",
     "date": "2026-09-19",
@@ -4776,6 +4819,7 @@
     ]
   },
   {
+    "eventId": "08a2eb7afbd58ee7a8fb47bb4142eded",
     "game": "Maine Black Bears @ Boston College Eagles",
     "league": "CFB",
     "date": "2026-09-19",
@@ -4793,7 +4837,7 @@
     "bSpreadOddsBook": "DraftKings",
     "total": 53.5,
     "overOdds": -105,
-    "overOddsBook": "DraftKings",
+    "overOddsBook": "BetOnline.ag",
     "underOdds": -106,
     "underOddsBook": "FanDuel",
     "books": [
@@ -4830,8 +4874,8 @@
         "bSpread": -38.5,
         "bSpreadOdds": -102,
         "total": 54.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -112,
+        "underOdds": -108
       },
       {
         "book": "BetOnline.ag",
@@ -4884,6 +4928,7 @@
     ]
   },
   {
+    "eventId": "578e82a8bc67101e9eba884729ffcc69",
     "game": "Southern Illinois Salukis @ Illinois Fighting Illini",
     "league": "CFB",
     "date": "2026-09-19",
@@ -4891,28 +4936,28 @@
     "aML": null,
     "aMLBook": null,
     "aSpread": 38.5,
-    "aSpreadOdds": -106,
-    "aSpreadOddsBook": "FanDuel",
+    "aSpreadOdds": -110,
+    "aSpreadOddsBook": "BetRivers",
     "bTeam": "Illinois Fighting Illini",
     "bML": null,
     "bMLBook": null,
     "bSpread": -38.5,
     "bSpreadOdds": -105,
-    "bSpreadOddsBook": "LowVig.ag",
+    "bSpreadOddsBook": "DraftKings",
     "total": 55.5,
     "overOdds": -102,
     "overOddsBook": "LowVig.ag",
-    "underOdds": -108,
-    "underOddsBook": "BetMGM",
+    "underOdds": -105,
+    "underOddsBook": "DraftKings",
     "books": [
       {
         "book": "FanDuel",
         "aML": null,
         "bML": null,
         "aSpread": 38.5,
-        "aSpreadOdds": -106,
+        "aSpreadOdds": -114,
         "bSpread": -38.5,
-        "bSpreadOdds": -114,
+        "bSpreadOdds": -106,
         "total": 55.5,
         "overOdds": -106,
         "underOdds": -114
@@ -4934,12 +4979,12 @@
         "aML": null,
         "bML": null,
         "aSpread": 38.5,
-        "aSpreadOdds": -112,
+        "aSpreadOdds": -115,
         "bSpread": -38.5,
-        "bSpreadOdds": -108,
+        "bSpreadOdds": -105,
         "total": 55.5,
-        "overOdds": -110,
-        "underOdds": -110
+        "overOdds": -115,
+        "underOdds": -105
       },
       {
         "book": "LowVig.ag",
@@ -4982,9 +5027,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 38.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -115,
         "bSpread": -38.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -105,
         "total": 55.5,
         "overOdds": -110,
         "underOdds": -110
@@ -4992,6 +5037,7 @@
     ]
   },
   {
+    "eventId": "ea8b0414ff464255eef426fd61427030",
     "game": "Temple Owls @ Toledo Rockets",
     "league": "CFB",
     "date": "2026-09-19",
@@ -5112,6 +5158,7 @@
     ]
   },
   {
+    "eventId": "a85cea77fbd44d9135461815777f6a9c",
     "game": "Florida State Seminoles @ Alabama Crimson Tide",
     "league": "CFB",
     "date": "2026-09-19",
@@ -5232,6 +5279,7 @@
     ]
   },
   {
+    "eventId": "da8ba06d8ff130fdd0e8944b7a1ddff5",
     "game": "Wagner Seahawks @ California Golden Bears",
     "league": "CFB",
     "date": "2026-09-19",
@@ -5248,8 +5296,8 @@
     "bSpreadOdds": -105,
     "bSpreadOddsBook": "FanDuel",
     "total": 65.5,
-    "overOdds": -105,
-    "overOddsBook": "FanDuel",
+    "overOdds": -102,
+    "overOddsBook": "BetMGM",
     "underOdds": -105,
     "underOddsBook": "LowVig.ag",
     "books": [
@@ -5278,6 +5326,18 @@
         "underOdds": -110
       },
       {
+        "book": "BetMGM",
+        "aML": null,
+        "bML": null,
+        "aSpread": 58.5,
+        "aSpreadOdds": -110,
+        "bSpread": -58.5,
+        "bSpreadOdds": -108,
+        "total": 65.5,
+        "overOdds": -102,
+        "underOdds": -115
+      },
+      {
         "book": "LowVig.ag",
         "aML": null,
         "bML": null,
@@ -5285,7 +5345,7 @@
         "aSpreadOdds": -110,
         "bSpread": -58.5,
         "bSpreadOdds": -110,
-        "total": 64.5,
+        "total": 65.0,
         "overOdds": -115,
         "underOdds": -105
       },
@@ -5297,13 +5357,14 @@
         "aSpreadOdds": -110,
         "bSpread": -58.5,
         "bSpreadOdds": -110,
-        "total": 64.5,
+        "total": 65.0,
         "overOdds": -115,
         "underOdds": -105
       }
     ]
   },
   {
+    "eventId": "15ebe2df1d91e584d091d509e70a1a71",
     "game": "Miami (OH) RedHawks @ Cincinnati Bearcats",
     "league": "CFB",
     "date": "2026-09-19",
@@ -5424,6 +5485,7 @@
     ]
   },
   {
+    "eventId": "8bdb9d65119df877f2e2ec632d28fef1",
     "game": "Duquesne Dukes @ Washington State Cougars",
     "league": "CFB",
     "date": "2026-09-19",
@@ -5432,18 +5494,18 @@
     "aMLBook": null,
     "aSpread": 38.5,
     "aSpreadOdds": -105,
-    "aSpreadOddsBook": "DraftKings",
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Washington State Cougars",
     "bML": null,
     "bMLBook": null,
     "bSpread": -38.5,
-    "bSpreadOdds": -108,
-    "bSpreadOddsBook": "BetRivers",
-    "total": 53.5,
-    "overOdds": -105,
-    "overOddsBook": "BetMGM",
+    "bSpreadOdds": -105,
+    "bSpreadOddsBook": "DraftKings",
+    "total": 52.5,
+    "overOdds": -110,
+    "overOddsBook": "DraftKings",
     "underOdds": -105,
-    "underOddsBook": "DraftKings",
+    "underOddsBook": "FanDuel",
     "books": [
       {
         "book": "FanDuel",
@@ -5453,21 +5515,21 @@
         "aSpreadOdds": -110,
         "bSpread": -38.5,
         "bSpreadOdds": -110,
-        "total": 53.5,
-        "overOdds": -114,
-        "underOdds": -106
+        "total": 52.5,
+        "overOdds": -115,
+        "underOdds": -105
       },
       {
         "book": "DraftKings",
         "aML": null,
         "bML": null,
-        "aSpread": 38.5,
-        "aSpreadOdds": -105,
-        "bSpread": -38.5,
-        "bSpreadOdds": -115,
+        "aSpread": 39.5,
+        "aSpreadOdds": -115,
+        "bSpread": -39.5,
+        "bSpreadOdds": -105,
         "total": 53.5,
-        "overOdds": -115,
-        "underOdds": -105
+        "overOdds": -110,
+        "underOdds": -110
       },
       {
         "book": "BetRivers",
@@ -5489,7 +5551,7 @@
         "aSpreadOdds": -105,
         "bSpread": -38.5,
         "bSpreadOdds": -115,
-        "total": 54.5,
+        "total": 54.0,
         "overOdds": -110,
         "underOdds": -110
       },
@@ -5501,7 +5563,7 @@
         "aSpreadOdds": -105,
         "bSpread": -38.5,
         "bSpreadOdds": -115,
-        "total": 54.5,
+        "total": 54.0,
         "overOdds": -110,
         "underOdds": -110
       },
@@ -5510,12 +5572,12 @@
         "aML": null,
         "bML": null,
         "aSpread": 39.0,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -112,
         "bSpread": -39.0,
-        "bSpreadOdds": -108,
-        "total": 54.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "bSpreadOdds": -105,
+        "total": 52.5,
+        "overOdds": -110,
+        "underOdds": -108
       },
       {
         "book": "Bovada",
@@ -5526,12 +5588,13 @@
         "bSpread": -39.0,
         "bSpreadOdds": -115,
         "total": 53.5,
-        "overOdds": -110,
-        "underOdds": -110
+        "overOdds": -115,
+        "underOdds": -105
       }
     ]
   },
   {
+    "eventId": "d2da9e958e6f4800929ff9411b697a4b",
     "game": "Kentucky Wildcats @ Texas A&M Aggies",
     "league": "CFB",
     "date": "2026-09-19",
@@ -5652,6 +5715,7 @@
     ]
   },
   {
+    "eventId": "dbcfc3184e20d1ea45e910b89585071f",
     "game": "SMU Mustangs @ Louisville Cardinals",
     "league": "CFB",
     "date": "2026-09-19",
@@ -5772,15 +5836,16 @@
     ]
   },
   {
+    "eventId": "f9b0ff34657875b54ee16b8254168159",
     "game": "UTEP Miners @ Michigan Wolverines",
     "league": "CFB",
     "date": "2026-09-19",
     "aTeam": "UTEP Miners",
-    "aML": 5000,
+    "aML": 4500,
     "aMLBook": "BetMGM",
     "aSpread": 34.5,
-    "aSpreadOdds": 100,
-    "aSpreadOddsBook": "Bovada",
+    "aSpreadOdds": -101,
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Michigan Wolverines",
     "bML": -35000,
     "bMLBook": "BetMGM",
@@ -5790,8 +5855,8 @@
     "total": 48.5,
     "overOdds": -103,
     "overOddsBook": "LowVig.ag",
-    "underOdds": -109,
-    "underOddsBook": "BetRivers",
+    "underOdds": -108,
+    "underOddsBook": "BetMGM",
     "books": [
       {
         "book": "FanDuel",
@@ -5810,9 +5875,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 34.5,
-        "aSpreadOdds": -102,
+        "aSpreadOdds": -108,
         "bSpread": -34.5,
-        "bSpreadOdds": -118,
+        "bSpreadOdds": -112,
         "total": 48.5,
         "overOdds": -110,
         "underOdds": -110
@@ -5855,15 +5920,15 @@
       },
       {
         "book": "BetMGM",
-        "aML": 5000,
+        "aML": 4500,
         "bML": -35000,
         "aSpread": 34.5,
         "aSpreadOdds": -108,
         "bSpread": -34.5,
         "bSpreadOdds": -110,
         "total": 48.5,
-        "overOdds": -108,
-        "underOdds": -110
+        "overOdds": -110,
+        "underOdds": -108
       },
       {
         "book": "BetUS",
@@ -5882,9 +5947,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 34.5,
-        "aSpreadOdds": 100,
+        "aSpreadOdds": -110,
         "bSpread": -34.5,
-        "bSpreadOdds": -120,
+        "bSpreadOdds": -110,
         "total": 48.5,
         "overOdds": -105,
         "underOdds": -115
@@ -5892,6 +5957,7 @@
     ]
   },
   {
+    "eventId": "8b31d45a11a98ec8e6a9a9a5368a1bf4",
     "game": "USC Trojans @ Rutgers Scarlet Knights",
     "league": "CFB",
     "date": "2026-09-19",
@@ -6012,6 +6078,7 @@
     ]
   },
   {
+    "eventId": "a25ab1dfd8fdb11a06a6a4b5c707d266",
     "game": "Stonehill Skyhawks @ UMass Minutemen",
     "league": "CFB",
     "date": "2026-09-19",
@@ -6020,7 +6087,7 @@
     "aMLBook": "FanDuel",
     "aSpread": 31.5,
     "aSpreadOdds": -110,
-    "aSpreadOddsBook": "BetMGM",
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "UMass Minutemen",
     "bML": -15000,
     "bMLBook": "BetMGM",
@@ -6074,9 +6141,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 31.0,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -110,
         "bSpread": -31.0,
-        "bSpreadOdds": -105,
+        "bSpreadOdds": -110,
         "total": 50.0,
         "overOdds": -115,
         "underOdds": -105
@@ -6086,9 +6153,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 31.0,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -110,
         "bSpread": -31.0,
-        "bSpreadOdds": -105,
+        "bSpreadOdds": -110,
         "total": 50.0,
         "overOdds": -115,
         "underOdds": -105
@@ -6120,6 +6187,7 @@
     ]
   },
   {
+    "eventId": "9a94b95365b9c78fbfb612ce4c859eda",
     "game": "Utah State Aggies @ Utah Utes",
     "league": "CFB",
     "date": "2026-09-19",
@@ -6127,8 +6195,8 @@
     "aML": 2200,
     "aMLBook": "BetMGM",
     "aSpread": 27.5,
-    "aSpreadOdds": -108,
-    "aSpreadOddsBook": "DraftKings",
+    "aSpreadOdds": -109,
+    "aSpreadOddsBook": "BetRivers",
     "bTeam": "Utah Utes",
     "bML": -5000,
     "bMLBook": "DraftKings",
@@ -6170,9 +6238,9 @@
         "aML": 1800,
         "bML": -5000,
         "aSpread": 27.5,
-        "aSpreadOdds": -108,
+        "aSpreadOdds": -112,
         "bSpread": -27.5,
-        "bSpreadOdds": -112,
+        "bSpreadOdds": -108,
         "total": 56.5,
         "overOdds": -112,
         "underOdds": -108
@@ -6198,7 +6266,7 @@
         "bSpread": -27.5,
         "bSpreadOdds": -108,
         "total": 56.5,
-        "overOdds": -110,
+        "overOdds": -108,
         "underOdds": -110
       },
       {
@@ -6228,6 +6296,7 @@
     ]
   },
   {
+    "eventId": "089e1a60578160dd6828794656461ba5",
     "game": "Ball State Cardinals @ Liberty Flames",
     "league": "CFB",
     "date": "2026-09-19",
@@ -6348,38 +6417,39 @@
     ]
   },
   {
+    "eventId": "790266884d07b6c2aeed8efc216ba610",
     "game": "Louisiana Tech Bulldogs @ Baylor Bears",
     "league": "CFB",
     "date": "2026-09-19",
     "aTeam": "Louisiana Tech Bulldogs",
-    "aML": 890,
+    "aML": 860,
     "aMLBook": "FanDuel",
     "aSpread": 20.5,
     "aSpreadOdds": -105,
     "aSpreadOddsBook": "DraftKings",
     "bTeam": "Baylor Bears",
-    "bML": -1100,
-    "bMLBook": "Bovada",
+    "bML": -1200,
+    "bMLBook": "BetMGM",
     "bSpread": -20.5,
     "bSpreadOdds": -105,
     "bSpreadOddsBook": "FanDuel",
     "total": 49.5,
     "overOdds": -105,
-    "overOddsBook": "FanDuel",
-    "underOdds": -103,
-    "underOddsBook": "LowVig.ag",
+    "overOddsBook": "DraftKings",
+    "underOdds": -105,
+    "underOddsBook": "FanDuel",
     "books": [
       {
         "book": "FanDuel",
-        "aML": 890,
-        "bML": -1700,
+        "aML": 860,
+        "bML": -1600,
         "aSpread": 20.5,
         "aSpreadOdds": -115,
         "bSpread": -20.5,
         "bSpreadOdds": -105,
         "total": 49.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -115,
+        "underOdds": -105
       },
       {
         "book": "DraftKings",
@@ -6389,9 +6459,9 @@
         "aSpreadOdds": -105,
         "bSpread": -19.5,
         "bSpreadOdds": -115,
-        "total": 49.5,
-        "overOdds": -108,
-        "underOdds": -112
+        "total": 50.5,
+        "overOdds": -105,
+        "underOdds": -115
       },
       {
         "book": "LowVig.ag",
@@ -6401,9 +6471,9 @@
         "aSpreadOdds": -106,
         "bSpread": -19.5,
         "bSpreadOdds": -106,
-        "total": 48.5,
-        "overOdds": -114,
-        "underOdds": -103
+        "total": 50.5,
+        "overOdds": -108,
+        "underOdds": -108
       },
       {
         "book": "BetOnline.ag",
@@ -6413,9 +6483,9 @@
         "aSpreadOdds": -110,
         "bSpread": -19.5,
         "bSpreadOdds": -110,
-        "total": 48.5,
-        "overOdds": -115,
-        "underOdds": -105
+        "total": 50.5,
+        "overOdds": -110,
+        "underOdds": -110
       },
       {
         "book": "BetMGM",
@@ -6425,9 +6495,9 @@
         "aSpreadOdds": -110,
         "bSpread": -20.0,
         "bSpreadOdds": -108,
-        "total": 49.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "total": 50.5,
+        "overOdds": -110,
+        "underOdds": -120
       },
       {
         "book": "BetRivers",
@@ -6449,25 +6519,26 @@
         "aSpreadOdds": -110,
         "bSpread": -20.0,
         "bSpreadOdds": -110,
-        "total": 49.0,
+        "total": 50.5,
         "overOdds": -110,
         "underOdds": -110
       },
       {
         "book": "Bovada",
-        "aML": 650,
-        "bML": -1100,
+        "aML": 700,
+        "bML": -1200,
         "aSpread": 20.0,
         "aSpreadOdds": -110,
         "bSpread": -20.0,
         "bSpreadOdds": -110,
-        "total": 48.5,
+        "total": 50.5,
         "overOdds": -110,
         "underOdds": -110
       }
     ]
   },
   {
+    "eventId": "3c742aa7dc1c1da030846964a72de370",
     "game": "Stanford Cardinal @ Duke Blue Devils",
     "league": "CFB",
     "date": "2026-09-19",
@@ -6588,6 +6659,7 @@
     ]
   },
   {
+    "eventId": "f459decff5e212a417df01fead33b180",
     "game": "Western Kentucky Hilltoppers @ Indiana Hoosiers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -6708,6 +6780,7 @@
     ]
   },
   {
+    "eventId": "1d773c6e9934d12970ba222e96ec4c80",
     "game": "Northern Iowa Panthers @ Iowa Hawkeyes",
     "league": "CFB",
     "date": "2026-09-19",
@@ -6721,11 +6794,11 @@
     "bML": null,
     "bMLBook": null,
     "bSpread": -38.5,
-    "bSpreadOdds": -105,
+    "bSpreadOdds": -108,
     "bSpreadOddsBook": "BetMGM",
-    "total": 48.5,
-    "overOdds": -108,
-    "overOddsBook": "DraftKings",
+    "total": 49.5,
+    "overOdds": -106,
+    "overOddsBook": "FanDuel",
     "underOdds": -105,
     "underOddsBook": "LowVig.ag",
     "books": [
@@ -6737,9 +6810,9 @@
         "aSpreadOdds": -110,
         "bSpread": -38.5,
         "bSpreadOdds": -110,
-        "total": 48.5,
-        "overOdds": -110,
-        "underOdds": -110
+        "total": 49.5,
+        "overOdds": -106,
+        "underOdds": -114
       },
       {
         "book": "BetRivers",
@@ -6794,9 +6867,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 38.5,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -110,
         "bSpread": -38.5,
-        "bSpreadOdds": -105,
+        "bSpreadOdds": -108,
         "total": 49.5,
         "overOdds": -108,
         "underOdds": -110
@@ -6806,29 +6879,30 @@
         "aML": null,
         "bML": null,
         "aSpread": 39.5,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -110,
         "bSpread": -39.5,
-        "bSpreadOdds": -105,
+        "bSpreadOdds": -110,
         "total": 49.5,
-        "overOdds": -110,
-        "underOdds": -110
+        "overOdds": -115,
+        "underOdds": -105
       }
     ]
   },
   {
+    "eventId": "a4e7771497976db67e6a81bc3700b32f",
     "game": "Mississippi State Bulldogs @ South Carolina Gamecocks",
     "league": "CFB",
     "date": "2026-09-19",
     "aTeam": "Mississippi State Bulldogs",
     "aML": 155,
     "aMLBook": "Bovada",
-    "aSpread": 4.0,
+    "aSpread": 3.5,
     "aSpreadOdds": -101,
     "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "South Carolina Gamecocks",
     "bML": -175,
     "bMLBook": "LowVig.ag",
-    "bSpread": -4.0,
+    "bSpread": -3.5,
     "bSpreadOdds": -105,
     "bSpreadOddsBook": "Bovada",
     "total": 58.5,
@@ -6841,10 +6915,10 @@
         "book": "DraftKings",
         "aML": 150,
         "bML": -180,
-        "aSpread": 4.0,
-        "aSpreadOdds": -112,
-        "bSpread": -4.0,
-        "bSpreadOdds": -108,
+        "aSpread": 3.5,
+        "aSpreadOdds": -108,
+        "bSpread": -3.5,
+        "bSpreadOdds": -112,
         "total": 58.5,
         "overOdds": -112,
         "underOdds": -108
@@ -6901,10 +6975,10 @@
         "book": "BetMGM",
         "aML": 150,
         "bML": -185,
-        "aSpread": 4.0,
-        "aSpreadOdds": -110,
-        "bSpread": -4.0,
-        "bSpreadOdds": -108,
+        "aSpread": 3.5,
+        "aSpreadOdds": -108,
+        "bSpread": -3.5,
+        "bSpreadOdds": -112,
         "total": 58.5,
         "overOdds": -110,
         "underOdds": -108
@@ -6936,6 +7010,7 @@
     ]
   },
   {
+    "eventId": "09e86b2dd47d075b2fddb3174d21b1ac",
     "game": "Southeastern Louisiana Lions @ UL Monroe Warhawks",
     "league": "CFB",
     "date": "2026-09-19",
@@ -6946,10 +7021,10 @@
     "aSpreadOdds": -105,
     "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "UL Monroe Warhawks",
-    "bML": -440,
+    "bML": -430,
     "bMLBook": "Bovada",
     "bSpread": -11.5,
-    "bSpreadOdds": -105,
+    "bSpreadOdds": 100,
     "bSpreadOddsBook": "Bovada",
     "total": 48.5,
     "overOdds": -105,
@@ -7031,12 +7106,12 @@
       },
       {
         "book": "Bovada",
-        "aML": 330,
-        "bML": -440,
+        "aML": 320,
+        "bML": -430,
         "aSpread": 10.5,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -120,
         "bSpread": -10.5,
-        "bSpreadOdds": -105,
+        "bSpreadOdds": 100,
         "total": 48.0,
         "overOdds": -110,
         "underOdds": -110
@@ -7044,6 +7119,7 @@
     ]
   },
   {
+    "eventId": "3db3de2fb9101f01f676c1f319837667",
     "game": "Charlotte 49ers @ Appalachian State Mountaineers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -7164,6 +7240,7 @@
     ]
   },
   {
+    "eventId": "436d9422da324c807b9d2fb50a2ef62a",
     "game": "East Carolina Pirates @ Old Dominion Monarchs",
     "league": "CFB",
     "date": "2026-09-19",
@@ -7284,6 +7361,7 @@
     ]
   },
   {
+    "eventId": "da4cee8b35281f4528d3dd939d42814d",
     "game": "Florida International Panthers @ Florida Atlantic Owls",
     "league": "CFB",
     "date": "2026-09-19",
@@ -7300,8 +7378,8 @@
     "bSpreadOdds": -107,
     "bSpreadOddsBook": "LowVig.ag",
     "total": 62.5,
-    "overOdds": -108,
-    "overOddsBook": "DraftKings",
+    "overOdds": -105,
+    "overOddsBook": "BetMGM",
     "underOdds": -108,
     "underOddsBook": "LowVig.ag",
     "books": [
@@ -7310,9 +7388,9 @@
         "aML": 195,
         "bML": -240,
         "aSpread": 6.5,
-        "aSpreadOdds": -106,
+        "aSpreadOdds": -108,
         "bSpread": -6.5,
-        "bSpreadOdds": -114,
+        "bSpreadOdds": -112,
         "total": 62.5,
         "overOdds": -110,
         "underOdds": -110
@@ -7358,12 +7436,12 @@
         "aML": 200,
         "bML": -235,
         "aSpread": 6.5,
-        "aSpreadOdds": -108,
+        "aSpreadOdds": -110,
         "bSpread": -6.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -108,
         "total": 62.5,
-        "overOdds": -108,
-        "underOdds": -110
+        "overOdds": -105,
+        "underOdds": -112
       },
       {
         "book": "BetRivers",
@@ -7391,12 +7469,12 @@
       },
       {
         "book": "Bovada",
-        "aML": 205,
-        "bML": -245,
+        "aML": 195,
+        "bML": -235,
         "aSpread": 6.5,
-        "aSpreadOdds": -105,
+        "aSpreadOdds": -110,
         "bSpread": -6.5,
-        "bSpreadOdds": -115,
+        "bSpreadOdds": -110,
         "total": 62.0,
         "overOdds": -110,
         "underOdds": -110
@@ -7404,6 +7482,7 @@
     ]
   },
   {
+    "eventId": "fa9113ed354c9a40e487f5b923b4238f",
     "game": "Marshall Thundering Herd @ Missouri State Bears",
     "league": "CFB",
     "date": "2026-09-19",
@@ -7524,6 +7603,7 @@
     ]
   },
   {
+    "eventId": "7ef3b27d15de635a3e05324f2b0c56cb",
     "game": "Florida Gators @ Auburn Tigers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -7644,6 +7724,7 @@
     ]
   },
   {
+    "eventId": "d72de7a6a2387f86edc530bbe90a7664",
     "game": "Delaware State Hornets @ South Florida Bulls",
     "league": "CFB",
     "date": "2026-09-19",
@@ -7752,6 +7833,7 @@
     ]
   },
   {
+    "eventId": "60c8d1fde1467bde9f2a20b5d4cb7c90",
     "game": "Georgia Southern Eagles @ Jacksonville State Gamecocks",
     "league": "CFB",
     "date": "2026-09-19",
@@ -7872,6 +7954,7 @@
     ]
   },
   {
+    "eventId": "4a9e833f32775e201ee648c51840df85",
     "game": "Georgia State Panthers @ UCF Knights",
     "league": "CFB",
     "date": "2026-09-19",
@@ -7890,8 +7973,8 @@
     "total": 50.5,
     "overOdds": -105,
     "overOddsBook": "FanDuel",
-    "underOdds": -105,
-    "underOddsBook": "BetMGM",
+    "underOdds": -108,
+    "underOddsBook": "LowVig.ag",
     "books": [
       {
         "book": "FanDuel",
@@ -7949,9 +8032,9 @@
         "aSpreadOdds": -105,
         "bSpread": -17.0,
         "bSpreadOdds": -112,
-        "total": 49.5,
-        "overOdds": -112,
-        "underOdds": -105
+        "total": 50.5,
+        "overOdds": -110,
+        "underOdds": -120
       },
       {
         "book": "BetRivers",
@@ -7992,6 +8075,7 @@
     ]
   },
   {
+    "eventId": "36bb6ea150432c9958bd533c49b06f23",
     "game": "UT Martin Skyhawks @ Memphis Tigers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -8002,16 +8086,16 @@
     "aSpreadOdds": -105,
     "aSpreadOddsBook": "FanDuel",
     "bTeam": "Memphis Tigers",
-    "bML": -50000,
-    "bMLBook": "DraftKings",
+    "bML": -35000,
+    "bMLBook": "BetMGM",
     "bSpread": -34.5,
-    "bSpreadOdds": -108,
-    "bSpreadOddsBook": "BetRivers",
+    "bSpreadOdds": -110,
+    "bSpreadOddsBook": "DraftKings",
     "total": 57.5,
-    "overOdds": -105,
-    "overOddsBook": "DraftKings",
+    "overOdds": -110,
+    "overOddsBook": "FanDuel",
     "underOdds": -105,
-    "underOddsBook": "BetMGM",
+    "underOddsBook": "Bovada",
     "books": [
       {
         "book": "FanDuel",
@@ -8030,12 +8114,12 @@
         "aML": null,
         "bML": null,
         "aSpread": 35.0,
-        "aSpreadOdds": -115,
+        "aSpreadOdds": -112,
         "bSpread": -35.0,
-        "bSpreadOdds": -108,
-        "total": 56.5,
-        "overOdds": -110,
-        "underOdds": -113
+        "bSpreadOdds": -112,
+        "total": 57.0,
+        "overOdds": -114,
+        "underOdds": -109
       },
       {
         "book": "DraftKings",
@@ -8046,8 +8130,8 @@
         "bSpread": -34.5,
         "bSpreadOdds": -110,
         "total": 57.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -110,
+        "underOdds": -110
       },
       {
         "book": "BetOnline.ag",
@@ -8076,14 +8160,14 @@
       {
         "book": "BetMGM",
         "aML": 5000,
-        "bML": -50000,
+        "bML": -35000,
         "aSpread": 34.5,
         "aSpreadOdds": -108,
         "bSpread": -34.5,
         "bSpreadOdds": -110,
-        "total": 56.5,
-        "overOdds": -112,
-        "underOdds": -105
+        "total": 57.5,
+        "overOdds": -110,
+        "underOdds": -108
       },
       {
         "book": "Bovada",
@@ -8100,6 +8184,7 @@
     ]
   },
   {
+    "eventId": "b8810f15896c1fbe1ca25054585612f0",
     "game": "Nevada Wolf Pack @ Middle Tennessee Blue Raiders",
     "league": "CFB",
     "date": "2026-09-19",
@@ -8220,6 +8305,7 @@
     ]
   },
   {
+    "eventId": "69164d1b806f25a76cdb6268e19d4365",
     "game": "Troy Trojans @ Missouri Tigers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -8340,6 +8426,7 @@
     ]
   },
   {
+    "eventId": "6c41bd5edc806bb66ae3038c8bfa3df0",
     "game": "Murray State Racers @ Oklahoma State Cowboys",
     "league": "CFB",
     "date": "2026-09-19",
@@ -8448,21 +8535,22 @@
     ]
   },
   {
+    "eventId": "0ce2e66203e1c66f3f2687fdccd37408",
     "game": "Nicholls State Colonels @ Sam Houston State Bearkats",
     "league": "CFB",
     "date": "2026-09-19",
     "aTeam": "Nicholls State Colonels",
-    "aML": 890,
+    "aML": 980,
     "aMLBook": "FanDuel",
-    "aSpread": 18.5,
-    "aSpreadOdds": 100,
-    "aSpreadOddsBook": "Bovada",
+    "aSpread": 19.5,
+    "aSpreadOdds": -105,
+    "aSpreadOddsBook": "BetOnline.ag",
     "bTeam": "Sam Houston State Bearkats",
     "bML": -1200,
     "bMLBook": "BetMGM",
-    "bSpread": -18.5,
-    "bSpreadOdds": -110,
-    "bSpreadOddsBook": "DraftKings",
+    "bSpread": -19.5,
+    "bSpreadOdds": -108,
+    "bSpreadOddsBook": "BetMGM",
     "total": 49.5,
     "overOdds": -110,
     "overOddsBook": "DraftKings",
@@ -8471,12 +8559,12 @@
     "books": [
       {
         "book": "FanDuel",
-        "aML": 890,
-        "bML": -1700,
-        "aSpread": 18.5,
-        "aSpreadOdds": -108,
-        "bSpread": -18.5,
-        "bSpreadOdds": -112,
+        "aML": 980,
+        "bML": -2000,
+        "aSpread": 19.5,
+        "aSpreadOdds": -106,
+        "bSpread": -19.5,
+        "bSpreadOdds": -114,
         "total": 49.5,
         "overOdds": -114,
         "underOdds": -106
@@ -8510,9 +8598,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 19.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -105,
         "bSpread": -19.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -115,
         "total": 49.5,
         "overOdds": -110,
         "underOdds": -110
@@ -8522,9 +8610,9 @@
         "aML": null,
         "bML": null,
         "aSpread": 19.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -105,
         "bSpread": -19.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -115,
         "total": 49.5,
         "overOdds": -110,
         "underOdds": -110
@@ -8533,22 +8621,22 @@
         "book": "BetMGM",
         "aML": 850,
         "bML": -1200,
-        "aSpread": 18.5,
+        "aSpread": 20.0,
         "aSpreadOdds": -110,
-        "bSpread": -18.5,
-        "bSpreadOdds": -110,
+        "bSpread": -20.0,
+        "bSpreadOdds": -108,
         "total": 49.5,
-        "overOdds": -110,
+        "overOdds": -112,
         "underOdds": -108
       },
       {
         "book": "Bovada",
         "aML": 700,
         "bML": -1200,
-        "aSpread": 19.0,
-        "aSpreadOdds": 100,
-        "bSpread": -19.0,
-        "bSpreadOdds": -120,
+        "aSpread": 20.0,
+        "aSpreadOdds": -110,
+        "bSpread": -20.0,
+        "bSpreadOdds": -110,
         "total": 50.5,
         "overOdds": -110,
         "underOdds": -110
@@ -8556,6 +8644,7 @@
     ]
   },
   {
+    "eventId": "bcc250cd218a520bcd287c120644ba05",
     "game": "Ohio Bobcats @ South Alabama Jaguars",
     "league": "CFB",
     "date": "2026-09-19",
@@ -8676,6 +8765,7 @@
     ]
   },
   {
+    "eventId": "be8b2e012b50c86775a87bb633e330e6",
     "game": "Western Michigan Broncos @ Rice Owls",
     "league": "CFB",
     "date": "2026-09-19",
@@ -8796,6 +8886,7 @@
     ]
   },
   {
+    "eventId": "1088ecb8a4c34880f9fb0b9274a8d3e4",
     "game": "UConn Huskies @ Southern Mississippi Golden Eagles",
     "league": "CFB",
     "date": "2026-09-19",
@@ -8916,6 +9007,7 @@
     ]
   },
   {
+    "eventId": "e68b359be33a1855ff582d9dde87faac",
     "game": "Eastern Washington Eagles @ Washington Huskies",
     "league": "CFB",
     "date": "2026-09-19",
@@ -8929,11 +9021,11 @@
     "bML": null,
     "bMLBook": null,
     "bSpread": -42.5,
-    "bSpreadOdds": -110,
-    "bSpreadOddsBook": "FanDuel",
+    "bSpreadOdds": -108,
+    "bSpreadOddsBook": "BetMGM",
     "total": 57.5,
-    "overOdds": -105,
-    "overOddsBook": "Bovada",
+    "overOdds": -110,
+    "overOddsBook": "FanDuel",
     "underOdds": -105,
     "underOddsBook": "LowVig.ag",
     "books": [
@@ -9001,10 +9093,10 @@
         "book": "BetMGM",
         "aML": null,
         "bML": null,
-        "aSpread": 42.5,
-        "aSpreadOdds": -108,
-        "bSpread": -42.5,
-        "bSpreadOdds": -110,
+        "aSpread": 43.0,
+        "aSpreadOdds": -110,
+        "bSpread": -43.0,
+        "bSpreadOdds": -108,
         "total": 57.5,
         "overOdds": -110,
         "underOdds": -108
@@ -9014,16 +9106,17 @@
         "aML": null,
         "bML": null,
         "aSpread": 42.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -105,
         "bSpread": -42.5,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -115,
         "total": 58.0,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -110,
+        "underOdds": -110
       }
     ]
   },
   {
+    "eventId": "55699549855efd1bed7b9d6ae1c7aded",
     "game": "North Dakota Fighting Hawks @ Nebraska Cornhuskers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -9031,19 +9124,19 @@
     "aML": 1600,
     "aMLBook": "FanDuel",
     "aSpread": 25.5,
-    "aSpreadOdds": 100,
-    "aSpreadOddsBook": "Bovada",
+    "aSpreadOdds": -105,
+    "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "Nebraska Cornhuskers",
     "bML": -2400,
     "bMLBook": "DraftKings",
     "bSpread": -25.5,
-    "bSpreadOdds": -110,
-    "bSpreadOddsBook": "FanDuel",
+    "bSpreadOdds": -108,
+    "bSpreadOddsBook": "DraftKings",
     "total": 54.5,
-    "overOdds": -108,
-    "overOddsBook": "FanDuel",
-    "underOdds": -105,
-    "underOddsBook": "BetMGM",
+    "overOdds": -102,
+    "overOddsBook": "DraftKings",
+    "underOdds": -104,
+    "underOddsBook": "FanDuel",
     "books": [
       {
         "book": "FanDuel",
@@ -9054,8 +9147,8 @@
         "bSpread": -25.5,
         "bSpreadOdds": -110,
         "total": 54.5,
-        "overOdds": -108,
-        "underOdds": -112
+        "overOdds": -118,
+        "underOdds": -104
       },
       {
         "book": "BetRivers",
@@ -9064,22 +9157,22 @@
         "aSpread": 26.0,
         "aSpreadOdds": -112,
         "bSpread": -26.0,
-        "bSpreadOdds": -113,
-        "total": 53.5,
-        "overOdds": -114,
-        "underOdds": -109
+        "bSpreadOdds": -110,
+        "total": 55.0,
+        "overOdds": -113,
+        "underOdds": -110
       },
       {
         "book": "DraftKings",
         "aML": 1200,
         "bML": -2400,
-        "aSpread": 25.5,
-        "aSpreadOdds": -108,
-        "bSpread": -25.5,
-        "bSpreadOdds": -112,
-        "total": 53.5,
-        "overOdds": -112,
-        "underOdds": -108
+        "aSpread": 26.5,
+        "aSpreadOdds": -112,
+        "bSpread": -26.5,
+        "bSpreadOdds": -108,
+        "total": 55.5,
+        "overOdds": -102,
+        "underOdds": -118
       },
       {
         "book": "LowVig.ag",
@@ -9089,9 +9182,9 @@
         "aSpreadOdds": -105,
         "bSpread": -25.0,
         "bSpreadOdds": -115,
-        "total": 53.5,
-        "overOdds": -110,
-        "underOdds": -110
+        "total": 55.5,
+        "overOdds": -105,
+        "underOdds": -115
       },
       {
         "book": "BetOnline.ag",
@@ -9101,37 +9194,38 @@
         "aSpreadOdds": -105,
         "bSpread": -25.0,
         "bSpreadOdds": -115,
-        "total": 53.5,
-        "overOdds": -110,
-        "underOdds": -110
+        "total": 55.5,
+        "overOdds": -105,
+        "underOdds": -115
       },
       {
         "book": "BetMGM",
-        "aML": 1550,
+        "aML": 1500,
         "bML": -3000,
-        "aSpread": 25.5,
-        "aSpreadOdds": -108,
-        "bSpread": -25.5,
-        "bSpreadOdds": -110,
-        "total": 53.5,
-        "overOdds": -115,
-        "underOdds": -105
+        "aSpread": null,
+        "aSpreadOdds": null,
+        "bSpread": null,
+        "bSpreadOdds": null,
+        "total": 55.5,
+        "overOdds": -102,
+        "underOdds": -118
       },
       {
         "book": "Bovada",
-        "aML": 1100,
-        "bML": -3500,
-        "aSpread": 25.5,
-        "aSpreadOdds": 100,
-        "bSpread": -25.5,
-        "bSpreadOdds": -120,
-        "total": 54.0,
+        "aML": 1200,
+        "bML": -4000,
+        "aSpread": 27.0,
+        "aSpreadOdds": -110,
+        "bSpread": -27.0,
+        "bSpreadOdds": -110,
+        "total": 55.5,
         "overOdds": -110,
         "underOdds": -110
       }
     ]
   },
   {
+    "eventId": "d3b7a8be0f6c9e50f7afd4005990228b",
     "game": "BYU Cougars @ Colorado State Rams",
     "league": "CFB",
     "date": "2026-09-19",
@@ -9220,10 +9314,10 @@
         "aSpread": -17.5,
         "aSpreadOdds": -112,
         "bSpread": 17.5,
-        "bSpreadOdds": -112,
-        "total": 52.5,
-        "overOdds": -110,
-        "underOdds": -113
+        "bSpreadOdds": -110,
+        "total": 53.0,
+        "overOdds": -109,
+        "underOdds": -114
       },
       {
         "book": "BetUS",
@@ -9252,6 +9346,7 @@
     ]
   },
   {
+    "eventId": "03297aa8a399c223aa1cc6aa923d9bc6",
     "game": "Colorado Buffaloes @ Northwestern Wildcats",
     "league": "CFB",
     "date": "2026-09-19",
@@ -9330,7 +9425,7 @@
         "bSpread": -3.5,
         "bSpreadOdds": -108,
         "total": 47.5,
-        "overOdds": -112,
+        "overOdds": -115,
         "underOdds": -105
       },
       {
@@ -9372,6 +9467,7 @@
     ]
   },
   {
+    "eventId": "65571f1cab1a260aae4a220e38dbbc1d",
     "game": "LSU Tigers @ Ole Miss Rebels",
     "league": "CFB",
     "date": "2026-09-19",
@@ -9480,6 +9576,7 @@
     ]
   },
   {
+    "eventId": "b7cdc05f280bede1f19b996cc9b95753",
     "game": "Virginia Tech Hokies @ Maryland Terrapins",
     "league": "CFB",
     "date": "2026-09-19",
@@ -9600,6 +9697,7 @@
     ]
   },
   {
+    "eventId": "7e3b8cd721f0817d0a6c3111221e8a91",
     "game": "Michigan State Spartans @ Notre Dame Fighting Irish",
     "league": "CFB",
     "date": "2026-09-19",
@@ -9618,7 +9716,7 @@
     "total": 52.5,
     "overOdds": 100,
     "overOddsBook": "BetMGM",
-    "underOdds": -105,
+    "underOdds": -108,
     "underOddsBook": "DraftKings",
     "books": [
       {
@@ -9642,8 +9740,8 @@
         "bSpread": -28.5,
         "bSpreadOdds": -110,
         "total": 51.5,
-        "overOdds": -115,
-        "underOdds": -105
+        "overOdds": -112,
+        "underOdds": -108
       },
       {
         "book": "BetMGM",
@@ -9697,9 +9795,9 @@
         "book": "BetUS",
         "aML": null,
         "bML": null,
-        "aSpread": 29.0,
+        "aSpread": 28.5,
         "aSpreadOdds": -110,
-        "bSpread": -29.0,
+        "bSpread": -28.5,
         "bSpreadOdds": -110,
         "total": 52.0,
         "overOdds": -110,
@@ -9720,6 +9818,7 @@
     ]
   },
   {
+    "eventId": "47892b65c28a830d83bbe465b070ce01",
     "game": "New Mexico Lobos @ Oklahoma Sooners",
     "league": "CFB",
     "date": "2026-09-19",
@@ -9727,8 +9826,8 @@
     "aML": 1300,
     "aMLBook": "BetRivers",
     "aSpread": 21.5,
-    "aSpreadOdds": -110,
-    "aSpreadOddsBook": "BetRivers",
+    "aSpreadOdds": -105,
+    "aSpreadOddsBook": "BetMGM",
     "bTeam": "Oklahoma Sooners",
     "bML": -2000,
     "bMLBook": "BetMGM",
@@ -9738,8 +9837,8 @@
     "total": 45.5,
     "overOdds": -105,
     "overOddsBook": "FanDuel",
-    "underOdds": 105,
-    "underOddsBook": "BetOnline.ag",
+    "underOdds": 109,
+    "underOddsBook": "LowVig.ag",
     "books": [
       {
         "book": "FanDuel",
@@ -9762,8 +9861,8 @@
         "bSpread": -21.5,
         "bSpreadOdds": -102,
         "total": 45.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -112,
+        "underOdds": -108
       },
       {
         "book": "LowVig.ag",
@@ -9774,8 +9873,8 @@
         "bSpread": -21.5,
         "bSpreadOdds": -101,
         "total": 44.5,
-        "overOdds": -114,
-        "underOdds": -103
+        "overOdds": -128,
+        "underOdds": 109
       },
       {
         "book": "BetOnline.ag",
@@ -9786,20 +9885,20 @@
         "bSpread": -21.5,
         "bSpreadOdds": -105,
         "total": 44.5,
-        "overOdds": -125,
-        "underOdds": 105
+        "overOdds": -128,
+        "underOdds": 108
       },
       {
         "book": "BetMGM",
-        "aML": 1200,
+        "aML": 1150,
         "bML": -2000,
-        "aSpread": 21.5,
-        "aSpreadOdds": -120,
-        "bSpread": -21.5,
-        "bSpreadOdds": -110,
+        "aSpread": 21.0,
+        "aSpreadOdds": -105,
+        "bSpread": -21.0,
+        "bSpreadOdds": -115,
         "total": 45.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -110,
+        "underOdds": -108
       },
       {
         "book": "BetRivers",
@@ -9821,7 +9920,7 @@
         "aSpreadOdds": -110,
         "bSpread": -21.5,
         "bSpreadOdds": -110,
-        "total": 45.0,
+        "total": 46.0,
         "overOdds": -110,
         "underOdds": -110
       },
@@ -9840,6 +9939,7 @@
     ]
   },
   {
+    "eventId": "eda972dc55ded05916deafa37efab9c3",
     "game": "Virginia Cavaliers @ West Virginia Mountaineers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -9960,6 +10060,7 @@
     ]
   },
   {
+    "eventId": "cc6953f45fe5acfc853fdf5e5e28a0e7",
     "game": "Kennesaw State Owls @ Tennessee Volunteers",
     "league": "CFB",
     "date": "2026-09-19",
@@ -10080,6 +10181,7 @@
     ]
   },
   {
+    "eventId": "a64b980a572375c0cc1adba3c3fc2811",
     "game": "Arkansas State Red Wolves @ TCU Horned Frogs",
     "league": "CFB",
     "date": "2026-09-20",
@@ -10200,6 +10302,7 @@
     ]
   },
   {
+    "eventId": "0fff6569a000494c8821a53d886df670",
     "game": "East Texas A&M Lions @ Tulsa Golden Hurricane",
     "league": "CFB",
     "date": "2026-09-20",
@@ -10284,6 +10387,7 @@
     ]
   },
   {
+    "eventId": "828ceb39d7fd7da80c98174ae5f02dcd",
     "game": "UAB Blazers @ Louisiana Ragin Cajuns",
     "league": "CFB",
     "date": "2026-09-20",
@@ -10404,6 +10508,7 @@
     ]
   },
   {
+    "eventId": "6059b05ef23d08d9033bd7b5fe38e5d0",
     "game": "UTSA Roadrunners @ Texas Longhorns",
     "league": "CFB",
     "date": "2026-09-20",
@@ -10524,6 +10629,7 @@
     ]
   },
   {
+    "eventId": "6d109b8538a3588ad21a393896d32efc",
     "game": "South Dakota Coyotes @ Boise State Broncos",
     "league": "CFB",
     "date": "2026-09-20",
@@ -10540,10 +10646,10 @@
     "bSpreadOdds": -110,
     "bSpreadOddsBook": "FanDuel",
     "total": 58.5,
-    "overOdds": -105,
+    "overOdds": -106,
     "overOddsBook": "FanDuel",
     "underOdds": -105,
-    "underOddsBook": "Bovada",
+    "underOddsBook": "BetOnline.ag",
     "books": [
       {
         "book": "FanDuel",
@@ -10554,20 +10660,20 @@
         "bSpread": -26.5,
         "bSpreadOdds": -110,
         "total": 58.5,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -106,
+        "underOdds": -114
       },
       {
         "book": "BetRivers",
         "aML": 1400,
         "bML": -10000,
-        "aSpread": 26.0,
-        "aSpreadOdds": -112,
-        "bSpread": -26.0,
-        "bSpreadOdds": -115,
-        "total": 56.5,
-        "overOdds": -113,
-        "underOdds": -110
+        "aSpread": 27.5,
+        "aSpreadOdds": -113,
+        "bSpread": -27.5,
+        "bSpreadOdds": -110,
+        "total": 58.5,
+        "overOdds": -108,
+        "underOdds": -115
       },
       {
         "book": "DraftKings",
@@ -10577,9 +10683,9 @@
         "aSpreadOdds": -110,
         "bSpread": -26.5,
         "bSpreadOdds": -110,
-        "total": 56.5,
-        "overOdds": -112,
-        "underOdds": -108
+        "total": 57.5,
+        "overOdds": -108,
+        "underOdds": -112
       },
       {
         "book": "BetOnline.ag",
@@ -10590,8 +10696,8 @@
         "bSpread": -25.5,
         "bSpreadOdds": -115,
         "total": 57.0,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -115,
+        "underOdds": -105
       },
       {
         "book": "BetMGM",
@@ -10602,20 +10708,20 @@
         "bSpread": -26.5,
         "bSpreadOdds": -110,
         "total": 57.5,
-        "overOdds": -108,
-        "underOdds": -110
+        "overOdds": -110,
+        "underOdds": -108
       },
       {
         "book": "Bovada",
-        "aML": 1100,
-        "bML": -3500,
-        "aSpread": 26.0,
-        "aSpreadOdds": -105,
-        "bSpread": -26.0,
-        "bSpreadOdds": -115,
-        "total": 57.0,
-        "overOdds": -115,
-        "underOdds": -105
+        "aML": 1200,
+        "bML": -4000,
+        "aSpread": 27.0,
+        "aSpreadOdds": -110,
+        "bSpread": -27.0,
+        "bSpreadOdds": -110,
+        "total": 58.0,
+        "overOdds": -110,
+        "underOdds": -110
       },
       {
         "book": "LowVig.ag",
@@ -10626,27 +10732,28 @@
         "bSpread": -25.5,
         "bSpreadOdds": -115,
         "total": 57.0,
-        "overOdds": -105,
-        "underOdds": -115
+        "overOdds": -115,
+        "underOdds": -105
       }
     ]
   },
   {
+    "eventId": "0cdf27f150204b8512bca1e2d7cce051",
     "game": "James Madison Dukes @ San Diego State Aztecs",
     "league": "CFB",
     "date": "2026-09-20",
     "aTeam": "James Madison Dukes",
     "aML": 110,
-    "aMLBook": "BetUS",
-    "aSpread": 1.5,
+    "aMLBook": "DraftKings",
+    "aSpread": 2.5,
     "aSpreadOdds": -104,
     "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "San Diego State Aztecs",
     "bML": -122,
     "bMLBook": "BetRivers",
-    "bSpread": -1.5,
-    "bSpreadOdds": -108,
-    "bSpreadOddsBook": "LowVig.ag",
+    "bSpread": -2.5,
+    "bSpreadOdds": -105,
+    "bSpreadOddsBook": "DraftKings",
     "total": 46.5,
     "overOdds": -103,
     "overOddsBook": "LowVig.ag",
@@ -10655,12 +10762,12 @@
     "books": [
       {
         "book": "DraftKings",
-        "aML": 105,
-        "bML": -125,
-        "aSpread": 1.5,
-        "aSpreadOdds": -105,
-        "bSpread": -1.5,
-        "bSpreadOdds": -115,
+        "aML": 110,
+        "bML": -130,
+        "aSpread": 2.5,
+        "aSpreadOdds": -115,
+        "bSpread": -2.5,
+        "bSpreadOdds": -105,
         "total": 46.5,
         "overOdds": -110,
         "underOdds": -110
@@ -10692,11 +10799,11 @@
       {
         "book": "BetMGM",
         "aML": 105,
-        "bML": -125,
+        "bML": -130,
         "aSpread": 2.0,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -108,
         "bSpread": -2.0,
-        "bSpreadOdds": -108,
+        "bSpreadOdds": -110,
         "total": 46.5,
         "overOdds": -108,
         "underOdds": -110
@@ -10752,6 +10859,7 @@
     ]
   },
   {
+    "eventId": "93de8127b5d37170dff2b88deca0b95e",
     "game": "Northern Illinois Huskies @ Arizona Wildcats",
     "league": "CFB",
     "date": "2026-09-20",
@@ -10872,6 +10980,7 @@
     ]
   },
   {
+    "eventId": "0c7583234f964dbb7d9803a27d6b6dae",
     "game": "North Dakota State Bison @ Sacramento State Hornets",
     "league": "CFB",
     "date": "2026-09-20",
@@ -10992,6 +11101,7 @@
     ]
   },
   {
+    "eventId": "f6db4e789ff9341a9c94befc751c5f53",
     "game": "Fresno State Bulldogs @ San Jose State Spartans",
     "league": "CFB",
     "date": "2026-09-20",
@@ -11002,7 +11112,7 @@
     "aSpreadOdds": -101,
     "aSpreadOddsBook": "LowVig.ag",
     "bTeam": "San Jose State Spartans",
-    "bML": 210,
+    "bML": 205,
     "bMLBook": "BetRivers",
     "bSpread": 5.5,
     "bSpreadOdds": -105,
@@ -11075,15 +11185,15 @@
       },
       {
         "book": "BetRivers",
-        "aML": -278,
-        "bML": 210,
+        "aML": -265,
+        "bML": 205,
         "aSpread": -6.5,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -109,
         "bSpread": 6.5,
-        "bSpreadOdds": -113,
-        "total": 49.5,
-        "overOdds": -120,
-        "underOdds": -107
+        "bSpreadOdds": -114,
+        "total": 50.5,
+        "overOdds": -109,
+        "underOdds": -117
       },
       {
         "book": "BetUS",
@@ -11112,6 +11222,7 @@
     ]
   },
   {
+    "eventId": "381e5c97af94a83e03eae0ac6f11ed38",
     "game": "Montana Grizzlies @ Oregon State Beavers",
     "league": "CFB",
     "date": "2026-09-20",
@@ -11119,11 +11230,11 @@
     "aML": 600,
     "aMLBook": "DraftKings",
     "aSpread": 16.5,
-    "aSpreadOdds": -108,
-    "aSpreadOddsBook": "BetMGM",
+    "aSpreadOdds": -110,
+    "aSpreadOddsBook": "FanDuel",
     "bTeam": "Oregon State Beavers",
-    "bML": -780,
-    "bMLBook": "FanDuel",
+    "bML": -750,
+    "bMLBook": "BetMGM",
     "bSpread": -16.5,
     "bSpreadOdds": -105,
     "bSpreadOddsBook": "DraftKings",
@@ -11131,7 +11242,7 @@
     "overOdds": -105,
     "overOddsBook": "LowVig.ag",
     "underOdds": -105,
-    "underOddsBook": "DraftKings",
+    "underOddsBook": "FanDuel",
     "books": [
       {
         "book": "FanDuel",
@@ -11142,20 +11253,20 @@
         "bSpread": -16.5,
         "bSpreadOdds": -110,
         "total": 54.5,
-        "overOdds": -110,
-        "underOdds": -110
+        "overOdds": -115,
+        "underOdds": -105
       },
       {
         "book": "BetRivers",
-        "aML": 575,
+        "aML": 550,
         "bML": -1000,
         "aSpread": 17.0,
-        "aSpreadOdds": -113,
+        "aSpreadOdds": -114,
         "bSpread": -17.0,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -109,
         "total": 54.5,
-        "overOdds": -110,
-        "underOdds": -113
+        "overOdds": -113,
+        "underOdds": -110
       },
       {
         "book": "DraftKings",
@@ -11195,24 +11306,24 @@
       },
       {
         "book": "BetMGM",
-        "aML": 600,
-        "bML": -800,
+        "aML": 575,
+        "bML": -750,
         "aSpread": 16.5,
-        "aSpreadOdds": -108,
+        "aSpreadOdds": -110,
         "bSpread": -16.5,
-        "bSpreadOdds": -110,
-        "total": 53.5,
-        "overOdds": -115,
-        "underOdds": -105
+        "bSpreadOdds": -108,
+        "total": 54.5,
+        "overOdds": -108,
+        "underOdds": -110
       },
       {
         "book": "Bovada",
-        "aML": 600,
-        "bML": -950,
+        "aML": 575,
+        "bML": -900,
         "aSpread": 17.0,
-        "aSpreadOdds": -110,
+        "aSpreadOdds": -115,
         "bSpread": -17.0,
-        "bSpreadOdds": -110,
+        "bSpreadOdds": -105,
         "total": 54.5,
         "overOdds": -105,
         "underOdds": -115
@@ -11220,6 +11331,7 @@
     ]
   },
   {
+    "eventId": "7a6a2035bf5d7abd30d6cc8b76d59e3e",
     "game": "Purdue Boilermakers @ UCLA Bruins",
     "league": "CFB",
     "date": "2026-09-20",
@@ -11340,6 +11452,7 @@
     ]
   },
   {
+    "eventId": "f0985218c2ed146bb0295c4e9c4a0dd7",
     "game": "Boise State Broncos @ Western Michigan Broncos",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11388,6 +11501,7 @@
     ]
   },
   {
+    "eventId": "6de44361bd6b6afc20b9bbefcc219f2a",
     "game": "Illinois Fighting Illini @ Ohio State Buckeyes",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11436,6 +11550,7 @@
     ]
   },
   {
+    "eventId": "69b1a0ff5fb2c67c6627b5c8cf8368cb",
     "game": "Texas Longhorns @ Tennessee Volunteers",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11496,6 +11611,7 @@
     ]
   },
   {
+    "eventId": "c48f042c91328d4d0c6351fc82286879",
     "game": "UCLA Bruins @ Maryland Terrapins",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11532,6 +11648,7 @@
     ]
   },
   {
+    "eventId": "886538e98f0884df3d655d9d2d2ca567",
     "game": "Ole Miss Rebels @ Florida Gators",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11580,6 +11697,7 @@
     ]
   },
   {
+    "eventId": "3848eaee7484034f3604aed922649c4e",
     "game": "Oklahoma Sooners @ Georgia Bulldogs",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11640,6 +11758,7 @@
     ]
   },
   {
+    "eventId": "39a3d3075172036a2b3f7d47913779b8",
     "game": "Iowa Hawkeyes @ Michigan Wolverines",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11688,6 +11807,7 @@
     ]
   },
   {
+    "eventId": "e497e36c59bded468da11878568e7c80",
     "game": "Minnesota Golden Gophers @ Washington Huskies",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11724,6 +11844,7 @@
     ]
   },
   {
+    "eventId": "edf8d3e3699aa5cb34c50ac7de992d37",
     "game": "Vanderbilt Commodores @ Auburn Tigers",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11760,6 +11881,7 @@
     ]
   },
   {
+    "eventId": "023386f1b92db2259c7d52b2f244182f",
     "game": "Nebraska Cornhuskers @ Michigan State Spartans",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11796,6 +11918,7 @@
     ]
   },
   {
+    "eventId": "9c5cf55e5371dd6178da97dcaef2bff5",
     "game": "Wisconsin Badgers @ Penn State Nittany Lions",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11844,6 +11967,7 @@
     ]
   },
   {
+    "eventId": "c843a3f97a410eedafcfbad440774ad2",
     "game": "South Carolina Gamecocks @ Alabama Crimson Tide",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11892,6 +12016,7 @@
     ]
   },
   {
+    "eventId": "6c95114d806556a04a0d719e62c042d7",
     "game": "Oklahoma State Cowboys @ West Virginia Mountaineers",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11928,6 +12053,7 @@
     ]
   },
   {
+    "eventId": "83516ad7ba3e8ef9f90498cfcaf10eb5",
     "game": "Oregon Ducks @ USC Trojans",
     "league": "CFB",
     "date": "2026-09-26",
@@ -11976,6 +12102,7 @@
     ]
   },
   {
+    "eventId": "0c71c3230f930f30ac34160b38dbbaf0",
     "game": "Texas A&M Aggies @ LSU Tigers",
     "league": "CFB",
     "date": "2026-09-26",
@@ -12012,6 +12139,7 @@
     ]
   },
   {
+    "eventId": "f154381c89953d3b0bd409a6bc4e28a6",
     "game": "Missouri Tigers @ Mississippi State Bulldogs",
     "league": "CFB",
     "date": "2026-09-26",
