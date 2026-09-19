@@ -16,11 +16,18 @@
   {
     "a": "Portland State",
     "b": "Oregon",
-    "date": "2026-09-19"
+    "date": "2026-09-19",
+    "awayScore": 0,
+    "homeScore": 84
   },
   {
     "a": "Georgia",
     "b": "Arkansas",
+    "date": "2026-09-19"
+  },
+  {
+    "a": "Kent State",
+    "b": "Ohio State",
     "date": "2026-09-19"
   },
   {
@@ -29,8 +36,23 @@
     "date": "2026-09-19"
   },
   {
-    "a": "Kent State",
-    "b": "Ohio State",
+    "a": "USC",
+    "b": "Rutgers",
+    "date": "2026-09-19"
+  },
+  {
+    "a": "Kentucky",
+    "b": "Texas A&M",
+    "date": "2026-09-19"
+  },
+  {
+    "a": "Utah State",
+    "b": "Utah",
+    "date": "2026-09-19"
+  },
+  {
+    "a": "Florida State",
+    "b": "Alabama",
     "date": "2026-09-19"
   },
   {
@@ -41,26 +63,6 @@
   {
     "a": "SMU",
     "b": "Louisville",
-    "date": "2026-09-19"
-  },
-  {
-    "a": "Kentucky",
-    "b": "Texas A&M",
-    "date": "2026-09-19"
-  },
-  {
-    "a": "USC",
-    "b": "Rutgers",
-    "date": "2026-09-19"
-  },
-  {
-    "a": "Florida State",
-    "b": "Alabama",
-    "date": "2026-09-19"
-  },
-  {
-    "a": "Utah State",
-    "b": "Utah",
     "date": "2026-09-19"
   },
   {
@@ -79,18 +81,13 @@
     "date": "2026-09-19"
   },
   {
+    "a": "LSU",
+    "b": "Ole Miss",
+    "date": "2026-09-19"
+  },
+  {
     "a": "New Mexico",
     "b": "Oklahoma",
-    "date": "2026-09-19"
-  },
-  {
-    "a": "Michigan State",
-    "b": "Notre Dame",
-    "date": "2026-09-19"
-  },
-  {
-    "a": "West Virginia",
-    "b": "Virginia",
     "date": "2026-09-19"
   },
   {
@@ -99,8 +96,13 @@
     "date": "2026-09-19"
   },
   {
-    "a": "LSU",
-    "b": "Ole Miss",
+    "a": "West Virginia",
+    "b": "Virginia",
+    "date": "2026-09-19"
+  },
+  {
+    "a": "Michigan State",
+    "b": "Notre Dame",
     "date": "2026-09-19"
   },
   {
