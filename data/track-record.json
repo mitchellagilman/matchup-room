@@ -21742,6 +21742,24 @@
       "_logged_recency_key": 202515,
       "line": 33.0,
       "direction": "over"
+    },
+    {
+      "id": "CFB|CFB-2026-09-19|Bear Bachmeier|passYds|player_prop",
+      "league": "CFB",
+      "week": "CFB-2026-09-19",
+      "matchup": "BYU vs Colorado State",
+      "type": "player_prop",
+      "label": "Bear Bachmeier Under 186.0 passing yards (model proj.)",
+      "edge": null,
+      "date_logged": "2026-09-19",
+      "status": "pending",
+      "graded_date": null,
+      "_player_name": "Bear Bachmeier",
+      "_stat": "passYds",
+      "_logged_recency_key": 202602,
+      "line": 186.0,
+      "direction": "under",
+      "used_real_line": false
     }
   ]
 }
