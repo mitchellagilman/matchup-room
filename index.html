@@ -1153,10 +1153,13 @@ function computeSinglePlayerProjection(name){
   const last5 = games.slice(-5);
   const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
   const ratio = clampDefenseRatio(shrunkTeamStat(teamsCache[opp], defKey, league) / avgVal);
-  const projected = roundToHalf(l5avg * ratio);
+  const modelProjection = roundToHalf(l5avg * ratio);
+  const realProp = getRealPropLine(name, mainStat);
+  const projected = realProp ? realProp.line : modelProjection;
+  const direction = realProp ? (modelProjection > realProp.line ? 'over' : 'under') : (ratio>=1 ? 'favorable' : 'tough');
   return {
-    statLabel: statLabel(mainStat), opp, l5avg, ratio, projected,
-    direction: ratio>=1 ? 'favorable' : 'tough',
+    statLabel: statLabel(mainStat), opp, l5avg, ratio, projected, modelProjection,
+    direction, usedRealLine: !!realProp, books: realProp ? realProp.books : null,
     meetsVolume: meetsVolumeThreshold(mainStat, l5avg),
   };
 }
@@ -1271,6 +1274,14 @@ function clampDefenseRatio(ratio){
 // it read like a real, usable line instead of a raw statistical output.
 function roundToHalf(n){
   return Math.round(n*2)/2;
+}
+// Real market line for a player prop, when one exists -- see
+// fetch_player_props_odds.py for how this gets populated. Returns null
+// (not a number) when unavailable, so callers can fall back to the
+// model's own projection exactly like before this existed.
+function getRealPropLine(playerName, stat){
+  const entry = PLAYER_PROPS_ODDS && PLAYER_PROPS_ODDS[playerName] && PLAYER_PROPS_ODDS[playerName][stat];
+  return (entry && entry.line!==null && entry.line!==undefined) ? entry : null;
 }
 // Median instead of mean for a player's "recent form" window -- confirmed
 // live: a single extreme outlier game (a QB's real 457-yard passing game
@@ -1680,8 +1691,11 @@ function computeGameBets(nameA, nameB){
       const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
       if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
       const ratio = clampDefenseRatio(shrunkTeamStat(teamsCache[oppName], defKey, league) / avgVal);
-      const projected = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderGameBets
-      playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough', _recencyKey: mostRecentGameKey(p) });
+      const modelProjection = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderGameBets
+      const realProp = getRealPropLine(pname, mainStat);
+      const projected = realProp ? realProp.line : modelProjection;
+      const direction = realProp ? (modelProjection > realProp.line ? 'over' : 'under') : (ratio>=1 ? 'favorable' : 'tough');
+      playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, modelProjection, statLabel: statLabel(mainStat), direction, usedRealLine: !!realProp, _recencyKey: mostRecentGameKey(p) });
     });
   });
   const dedupedPlayerBets = capPlayersPerTeamByPosition(playerBets);
@@ -1942,6 +1956,7 @@ function findMarketLine(nameA, nameB){
 }
 let MODEL_CALIBRATION = null; // loaded at startup from data/calibration.json -- null until enough graded picks exist to calibrate from (see calibrate_model.py). Keyed by league (NFL/CFB calibrate independently -- see that script's docstring for why)
 let MODEL_WEIGHTS = null; // loaded at startup from data/model_weights.json -- null (or .trained===false) until enough graded team bets exist for train_model.py to trust a fit (see that script's docstring)
+let PLAYER_PROPS_ODDS = {}; // loaded at startup from data/player-props-odds.json -- real sportsbook player-prop lines (see fetch_player_props_odds.py). Keyed by player name -> stat -> {line, books}; empty object (not null) when unavailable so lookups can always safely use {} fallback
 // Applies the logistic regression trained in train_model.py to a single
 // candidate pick, mirroring that script's sigmoid(bias + w.edge*edge +
 // w.is_favorite*isFavorite + w.league_is_cfb*isCfb) exactly, including
@@ -2143,10 +2158,14 @@ function computeTopPlayerBets(league){
     const last5 = games.slice(-5);
     const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
     if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
-    const projected = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderPlayerBetsList
+    const modelProjection = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderPlayerBetsList
+    const realProp = getRealPropLine(name, mainStat);
+    const projected = realProp ? realProp.line : modelProjection;
+    const direction = realProp ? (modelProjection > realProp.line ? 'over' : 'under') : (ratio>=1 ? 'favorable' : 'tough');
+    const edge = realProp ? Math.abs(modelProjection - realProp.line) : null;
     candidates.push({
-      name, pos: p.pos, team: p.team, opp, ratio, l5avg, projected, statLabel: statLabel(mainStat),
-      direction: ratio>=1 ? 'favorable' : 'tough', _recencyKey: mostRecentGameKey(p)
+      name, pos: p.pos, team: p.team, opp, ratio, l5avg, projected, modelProjection, statLabel: statLabel(mainStat),
+      direction, usedRealLine: !!realProp, edge, _recencyKey: mostRecentGameKey(p)
     });
   });
   const deduped = capPlayersPerTeamByPosition(candidates);
@@ -2765,6 +2784,7 @@ if(globalSearchInput){
 (async function init(){
   try{ MODEL_CALIBRATION = await fetchJSON('./data/calibration.json'); }catch(e){ MODEL_CALIBRATION = null; }
   try{ MODEL_WEIGHTS = await fetchJSON('./data/model_weights.json'); }catch(e){ MODEL_WEIGHTS = null; }
+  try{ PLAYER_PROPS_ODDS = await fetchJSON('./data/player-props-odds.json'); }catch(e){ PLAYER_PROPS_ODDS = {}; }
   const calNote = document.getElementById('calibration-note');
   if(calNote && MODEL_CALIBRATION){
     const parts = ['NFL','CFB'].map(function(lg){
