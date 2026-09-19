@@ -5777,7 +5777,7 @@
       "_player_name": "Nicholas Singleton",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 42.6,
+      "line": 51.5,
       "direction": "under"
     },
     {
@@ -5811,8 +5811,8 @@
       "_player_name": "Malik Benson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 57.7,
-      "direction": "over"
+      "line": 50.5,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-10|Taylen Green|passYds|player_prop",
@@ -5828,7 +5828,7 @@
       "_player_name": "Taylen Green",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 97.8,
+      "line": 154.5,
       "direction": "under"
     },
     {
@@ -5840,12 +5840,12 @@
       "label": "Kaytron Allen Under 107.0 rushing yards",
       "edge": null,
       "date_logged": "2026-09-10",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-14",
       "_player_name": "Kaytron Allen",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 107.0,
+      "line": 147.0,
       "direction": "under"
     },
     {
@@ -5862,7 +5862,7 @@
       "_player_name": "Jack Endries",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 24.5,
+      "line": 22.5,
       "direction": "under"
     },
     {
@@ -5879,7 +5879,7 @@
       "_player_name": "Seth McGowan",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 0.8,
+      "line": 36.5,
       "direction": "under"
     },
     {
@@ -5925,12 +5925,12 @@
       "label": "Haynes King Under 66.8 passing yards",
       "edge": null,
       "date_logged": "2026-09-10",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-15",
       "_player_name": "Haynes King",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 66.8,
+      "line": 256.5,
       "direction": "under"
     },
     {
@@ -5959,13 +5959,13 @@
       "label": "Carnell Tate Under 77.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-10",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Carnell Tate",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 77.4,
-      "direction": "under"
+      "line": 84.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-10|Germie Bernard|recYds|player_prop",
@@ -5993,12 +5993,12 @@
       "label": "Nate Boerkircher Under 8.1 receiving yards",
       "edge": null,
       "date_logged": "2026-09-10",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Nate Boerkircher",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 8.1,
+      "line": 12.5,
       "direction": "under"
     },
     {
@@ -6010,13 +6010,13 @@
       "label": "Max Klare Under 41.8 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Max Klare",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 41.8,
-      "direction": "under"
+      "line": 29.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-10|Drew Allar|passYds|player_prop",
@@ -6027,13 +6027,13 @@
       "label": "Drew Allar Under 175.9 passing yards",
       "edge": null,
       "date_logged": "2026-09-10",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-15",
       "_player_name": "Drew Allar",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 175.9,
-      "direction": "under"
+      "line": 205.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-11|Devon Dampier|passYds|player_prop",
@@ -6049,7 +6049,7 @@
       "_player_name": "Devon Dampier",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 104.0,
+      "line": 248.5,
       "direction": "under"
     },
     {
@@ -6061,12 +6061,12 @@
       "label": "Byrd Ficklin Under 16.6 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Byrd Ficklin",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 16.6,
+      "line": 45.0,
       "direction": "under"
     },
     {
@@ -6083,7 +6083,7 @@
       "_player_name": "LaMarcus Bell",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 23.2,
+      "line": 72.5,
       "direction": "under"
     },
     {
@@ -6095,12 +6095,12 @@
       "label": "Wayshawn Parker Under 26.6 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-18",
       "_player_name": "Wayshawn Parker",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 26.6,
+      "line": 79.5,
       "direction": "under"
     },
     {
@@ -6112,12 +6112,12 @@
       "label": "Steve Chavez-Soto Under 12.4 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Steve Chavez-Soto",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 12.4,
+      "line": 39.5,
       "direction": "under"
     },
     {
@@ -6151,7 +6151,7 @@
       "_player_name": "Hunter Andrews",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 6.7,
+      "line": 11.0,
       "direction": "under"
     },
     {
@@ -6168,7 +6168,7 @@
       "_player_name": "Daniel Bray",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 4.2,
+      "line": 7.5,
       "direction": "under"
     },
     {
@@ -6185,7 +6185,7 @@
       "_player_name": "Braden Pegan",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 37.1,
+      "line": 77.5,
       "direction": "under"
     },
     {
@@ -6202,7 +6202,7 @@
       "_player_name": "Larry Simmons",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 24.4,
+      "line": 40.5,
       "direction": "under"
     },
     {
@@ -6219,7 +6219,7 @@
       "_player_name": "Noah Bennee",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.2,
+      "line": 34.5,
       "direction": "under"
     },
     {
@@ -6231,12 +6231,12 @@
       "label": "Creed Whittemore Under 12.6 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Creed Whittemore",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.6,
+      "line": 19.5,
       "direction": "under"
     },
     {
@@ -6253,8 +6253,8 @@
       "_player_name": "Drew Mestemaker",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 283.2,
-      "direction": "under"
+      "line": 336.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-11|Caleb Hawkins|rushYds|player_prop",
@@ -6265,13 +6265,13 @@
       "label": "Caleb Hawkins Under 71.0 rushing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Caleb Hawkins",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 71.0,
-      "direction": "under"
+      "line": 100.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Ayo Adeyi|rushYds|player_prop",
@@ -6287,8 +6287,8 @@
       "_player_name": "Ayo Adeyi",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 17.9,
-      "direction": "under"
+      "line": 24.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Tre Page III|rushYds|player_prop",
@@ -6299,13 +6299,13 @@
       "label": "Tre Page III Under 61.2 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Tre Page III",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 61.2,
-      "direction": "under"
+      "line": 76.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Wyatt Young|recYds|player_prop",
@@ -6321,8 +6321,8 @@
       "_player_name": "Wyatt Young",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 110.7,
-      "direction": "under"
+      "line": 128.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Miles Coleman|recYds|player_prop",
@@ -6333,13 +6333,13 @@
       "label": "Miles Coleman Under 42.9 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-18",
       "_player_name": "Miles Coleman",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 42.9,
-      "direction": "under"
+      "line": 42.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Chris Barnes|recYds|player_prop",
@@ -6350,13 +6350,13 @@
       "label": "Chris Barnes Under 15.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Chris Barnes",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 15.4,
-      "direction": "under"
+      "line": 25.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Justin Bowick|recYds|player_prop",
@@ -6367,13 +6367,13 @@
       "label": "Justin Bowick Under 17.9 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Justin Bowick",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 17.9,
-      "direction": "under"
+      "line": 25.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Terrence Lewis|recYds|player_prop",
@@ -6384,13 +6384,13 @@
       "label": "Terrence Lewis Under 15.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Terrence Lewis",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 15.4,
-      "direction": "under"
+      "line": 21.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-11|Jaylen Raynor|passYds|player_prop",
@@ -6406,7 +6406,7 @@
       "_player_name": "Jaylen Raynor",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 146.4,
+      "line": 208.0,
       "direction": "under"
     },
     {
@@ -6423,7 +6423,7 @@
       "_player_name": "Dominic Overby",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 18.1,
+      "line": 22.0,
       "direction": "under"
     },
     {
@@ -6457,7 +6457,7 @@
       "_player_name": "Tyler Fortenberry",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 21.7,
+      "line": 32.5,
       "direction": "under"
     },
     {
@@ -6474,7 +6474,7 @@
       "_player_name": "Nik McMillan",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 75.7,
+      "line": 105.0,
       "direction": "under"
     },
     {
@@ -6491,7 +6491,7 @@
       "_player_name": "Bryson Hayes",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 37.0,
+      "line": 48.5,
       "direction": "under"
     },
     {
@@ -6508,7 +6508,7 @@
       "_player_name": "Nahzae Cox",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 18.5,
+      "line": 23.5,
       "direction": "under"
     },
     {
@@ -6542,7 +6542,7 @@
       "_player_name": "Carson Bruhn",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.1,
+      "line": 18.0,
       "direction": "under"
     },
     {
@@ -6559,7 +6559,7 @@
       "_player_name": "Isaiah Marshall",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 13.6,
+      "line": 19.0,
       "direction": "under"
     },
     {
@@ -6576,7 +6576,7 @@
       "_player_name": "Yasin Willis",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 32.9,
+      "line": 51.5,
       "direction": "under"
     },
     {
@@ -6593,7 +6593,7 @@
       "_player_name": "Jalen Dupree",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 20.6,
+      "line": 25.5,
       "direction": "under"
     },
     {
@@ -6610,7 +6610,7 @@
       "_player_name": "Donald Collier",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 10.2,
+      "line": 15.0,
       "direction": "under"
     },
     {
@@ -6622,13 +6622,13 @@
       "label": "Dante Moore Over 285.1 passing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Dante Moore",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 285.1,
-      "direction": "over"
+      "line": 282.0,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-12|Jordon Davison|rushYds|player_prop",
@@ -6656,13 +6656,13 @@
       "label": "Jeremiah McClellan Over 70.1 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-18",
       "_player_name": "Jeremiah McClellan",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 70.1,
-      "direction": "over"
+      "line": 52.5,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-12|Jamari Johnson|recYds|player_prop",
@@ -6673,13 +6673,13 @@
       "label": "Jamari Johnson Over 44.1 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Jamari Johnson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 44.1,
-      "direction": "over"
+      "line": 56.5,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-11|Hank Brown|passYds|player_prop",
@@ -6695,7 +6695,7 @@
       "_player_name": "Hank Brown",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 85.9,
+      "line": 50.0,
       "direction": "under"
     },
     {
@@ -6707,12 +6707,12 @@
       "label": "Kamari Moulton Under 47.5 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Kamari Moulton",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 47.5,
+      "line": 72.5,
       "direction": "under"
     },
     {
@@ -6729,7 +6729,7 @@
       "_player_name": "Braeden Jackson",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 13.4,
+      "line": 24.0,
       "direction": "under"
     },
     {
@@ -6746,7 +6746,7 @@
       "_player_name": "Tony Diaz",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 45.7,
+      "line": 76.5,
       "direction": "under"
     },
     {
@@ -6763,7 +6763,7 @@
       "_player_name": "Nathan Mcneil",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 7.9,
+      "line": 6.5,
       "direction": "under"
     },
     {
@@ -6780,7 +6780,7 @@
       "_player_name": "L.J. Phillips Jr.",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 49.9,
+      "line": 106.5,
       "direction": "under"
     },
     {
@@ -6797,7 +6797,7 @@
       "_player_name": "DJ Vonnahme",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 35.3,
+      "line": 38.0,
       "direction": "under"
     },
     {
@@ -6814,7 +6814,7 @@
       "_player_name": "Jarriett Buie",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.6,
+      "line": 20.0,
       "direction": "under"
     },
     {
@@ -6826,12 +6826,12 @@
       "label": "James Simon Under 10.6 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "James Simon",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 10.6,
+      "line": 29.0,
       "direction": "under"
     },
     {
@@ -6843,12 +6843,12 @@
       "label": "Arch Manning Under 163.4 passing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Arch Manning",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 163.4,
+      "line": 224.0,
       "direction": "under"
     },
     {
@@ -6865,7 +6865,7 @@
       "_player_name": "Daylan Smothers",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 16.2,
+      "line": 59.0,
       "direction": "under"
     },
     {
@@ -6882,7 +6882,7 @@
       "_player_name": "Raleek Brown",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 10.2,
+      "line": 45.5,
       "direction": "under"
     },
     {
@@ -6899,7 +6899,7 @@
       "_player_name": "Cam Coleman",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 39.8,
+      "line": 58.0,
       "direction": "under"
     },
     {
@@ -6916,7 +6916,7 @@
       "_player_name": "Emmett Mosley V",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 29.4,
+      "line": 58.0,
       "direction": "under"
     },
     {
@@ -6933,7 +6933,7 @@
       "_player_name": "Sterling Berkhalter",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.5,
+      "line": 17.0,
       "direction": "under"
     },
     {
@@ -6950,7 +6950,7 @@
       "_player_name": "Emaree Winston",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.4,
+      "line": 26.0,
       "direction": "under"
     },
     {
@@ -6967,7 +6967,7 @@
       "_player_name": "Jermaine Bishop Jr.",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.0,
+      "line": 11.0,
       "direction": "under"
     },
     {
@@ -6984,7 +6984,7 @@
       "_player_name": "Xavier Robinson",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 40.6,
+      "line": 27.0,
       "direction": "under"
     },
     {
@@ -7001,7 +7001,7 @@
       "_player_name": "Jonathan Hatton Jr.",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 18.5,
+      "line": 19.0,
       "direction": "under"
     },
     {
@@ -7018,7 +7018,7 @@
       "_player_name": "John Mateer",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 84.6,
+      "line": 162.0,
       "direction": "under"
     },
     {
@@ -7035,7 +7035,7 @@
       "_player_name": "Lloyd Avant",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 27.1,
+      "line": 31.5,
       "direction": "under"
     },
     {
@@ -7052,7 +7052,7 @@
       "_player_name": "Ben McCreary",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 35.2,
+      "line": 36.0,
       "direction": "under"
     },
     {
@@ -7069,7 +7069,7 @@
       "_player_name": "Trell Harris",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 30.2,
+      "line": 37.0,
       "direction": "under"
     },
     {
@@ -7086,7 +7086,7 @@
       "_player_name": "Rocky Beers",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 25.5,
+      "line": 57.5,
       "direction": "under"
     },
     {
@@ -7120,7 +7120,7 @@
       "_player_name": "Parker Livingstone",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.9,
+      "line": 14.5,
       "direction": "under"
     },
     {
@@ -7137,7 +7137,7 @@
       "_player_name": "Bear Bachmeier",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -1.3,
+      "line": 23.5,
       "direction": "under"
     },
     {
@@ -7154,7 +7154,7 @@
       "_player_name": "Logan Payne",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -1.4,
+      "line": 23.5,
       "direction": "under"
     },
     {
@@ -7166,12 +7166,12 @@
       "label": "Sione I Moa Under -1.1 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Sione I Moa",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -1.1,
+      "line": 22.0,
       "direction": "under"
     },
     {
@@ -7188,7 +7188,7 @@
       "_player_name": "Treyson Bourguet",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -0.9,
+      "line": 15.0,
       "direction": "under"
     },
     {
@@ -7200,12 +7200,12 @@
       "label": "Legend Glasker Under -0.7 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Legend Glasker",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -0.7,
+      "line": 8.0,
       "direction": "under"
     },
     {
@@ -7222,7 +7222,7 @@
       "_player_name": "Devaughn Eka",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -2.8,
+      "line": 46.0,
       "direction": "under"
     },
     {
@@ -7239,7 +7239,7 @@
       "_player_name": "LJ Martin",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -5.0,
+      "line": 74.5,
       "direction": "under"
     },
     {
@@ -7256,7 +7256,7 @@
       "_player_name": "Journee Tonga",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -1.8,
+      "line": 30.0,
       "direction": "under"
     },
     {
@@ -7273,7 +7273,7 @@
       "_player_name": "Kyler Kasper",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 28.9,
+      "line": 40.5,
       "direction": "under"
     },
     {
@@ -7324,7 +7324,7 @@
       "_player_name": "Jojo Phillips",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 17.6,
+      "line": 16.0,
       "direction": "under"
     },
     {
@@ -7336,12 +7336,12 @@
       "label": "Jared Esplin Under 14.0 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Jared Esplin",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.0,
+      "line": 15.0,
       "direction": "under"
     },
     {
@@ -7358,7 +7358,7 @@
       "_player_name": "Chris Marshall",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 31.3,
+      "line": 59.0,
       "direction": "under"
     },
     {
@@ -7375,7 +7375,7 @@
       "_player_name": "Sutton Smith",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.3,
+      "line": 11.0,
       "direction": "under"
     },
     {
@@ -7392,7 +7392,7 @@
       "_player_name": "CJ Brown",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.9,
+      "line": 21.5,
       "direction": "under"
     },
     {
@@ -7409,7 +7409,7 @@
       "_player_name": "Ty Lockwood",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.6,
+      "line": 18.0,
       "direction": "under"
     },
     {
@@ -7426,7 +7426,7 @@
       "_player_name": "Ismael Cisse",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 11.1,
+      "line": 25.5,
       "direction": "under"
     },
     {
@@ -7443,7 +7443,7 @@
       "_player_name": "Braylen Russell",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 24.1,
+      "line": 25.5,
       "direction": "under"
     },
     {
@@ -7460,7 +7460,7 @@
       "_player_name": "Jaden Platt",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.4,
+      "line": 21.5,
       "direction": "under"
     },
     {
@@ -7477,7 +7477,7 @@
       "_player_name": "Matt Zollers",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 77.9,
+      "line": 84.5,
       "direction": "under"
     },
     {
@@ -7494,7 +7494,7 @@
       "_player_name": "Jamal Roberts",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 14.8,
+      "line": 41.0,
       "direction": "under"
     },
     {
@@ -7511,7 +7511,7 @@
       "_player_name": "Xai'Shaun Edwards",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 36.1,
+      "line": 39.5,
       "direction": "under"
     },
     {
@@ -7528,7 +7528,7 @@
       "_player_name": "Preston Hatfield",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 24.1,
+      "line": 30.0,
       "direction": "under"
     },
     {
@@ -7545,7 +7545,7 @@
       "_player_name": "Anthony Favrow",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 12.0,
+      "line": 15.0,
       "direction": "under"
     },
     {
@@ -7557,12 +7557,12 @@
       "label": "Malae Fonoti Under 14.4 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Malae Fonoti",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 14.4,
+      "line": 18.5,
       "direction": "under"
     },
     {
@@ -7579,7 +7579,7 @@
       "_player_name": "Donovan Olugbode",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 70.7,
+      "line": 72.0,
       "direction": "under"
     },
     {
@@ -7596,7 +7596,7 @@
       "_player_name": "Cayden Lee",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 71.1,
+      "line": 75.0,
       "direction": "under"
     },
     {
@@ -7608,12 +7608,12 @@
       "label": "Shaun Terry II Under 26.3 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Shaun Terry II",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 26.3,
+      "line": 19.5,
       "direction": "under"
     },
     {
@@ -7630,7 +7630,7 @@
       "_player_name": "Naeshaun Montgomery",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 20.0,
+      "line": 15.0,
       "direction": "under"
     },
     {
@@ -7664,7 +7664,7 @@
       "_player_name": "Caleb Goodie",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 25.4,
+      "line": 20.5,
       "direction": "under"
     },
     {
@@ -7698,7 +7698,7 @@
       "_player_name": "Cam Wallace",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 10.5,
+      "line": 3.5,
       "direction": "under"
     },
     {
@@ -7732,7 +7732,7 @@
       "_player_name": "James Peoples",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 22.4,
+      "line": 38.5,
       "direction": "under"
     },
     {
@@ -7744,13 +7744,13 @@
       "label": "Koby Howard Under 47.3 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Koby Howard",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 47.3,
-      "direction": "under"
+      "line": 32.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Brett Eskildsen|recYds|player_prop",
@@ -7761,13 +7761,13 @@
       "label": "Brett Eskildsen Under 30.0 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Brett Eskildsen",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 30.0,
-      "direction": "under"
+      "line": 20.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Chase Sowell|recYds|player_prop",
@@ -7778,13 +7778,13 @@
       "label": "Chase Sowell Under 47.9 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Chase Sowell",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 47.9,
-      "direction": "under"
+      "line": 55.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Andrew Rappleyea|recYds|player_prop",
@@ -7795,13 +7795,13 @@
       "label": "Andrew Rappleyea Under 22.2 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Andrew Rappleyea",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 22.2,
-      "direction": "under"
+      "line": 13.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Benjamin Brahmer|recYds|player_prop",
@@ -7812,13 +7812,13 @@
       "label": "Benjamin Brahmer Under 24.9 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Benjamin Brahmer",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 24.9,
-      "direction": "under"
+      "line": 24.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-11|Marcel Reed|passYds|player_prop",
@@ -7834,7 +7834,7 @@
       "_player_name": "Marcel Reed",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 96.2,
+      "line": 149.5,
       "direction": "under"
     },
     {
@@ -7851,7 +7851,7 @@
       "_player_name": "Rueben Owens",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 40.7,
+      "line": 41.0,
       "direction": "under"
     },
     {
@@ -7868,7 +7868,7 @@
       "_player_name": "Carsyn Baker",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 35.4,
+      "line": 24.5,
       "direction": "under"
     },
     {
@@ -7885,7 +7885,7 @@
       "_player_name": "KJ Edwards",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 30.0,
+      "line": 28.0,
       "direction": "under"
     },
     {
@@ -7902,7 +7902,7 @@
       "_player_name": "Isaiah Horton",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.7,
+      "line": 27.5,
       "direction": "under"
     },
     {
@@ -7914,12 +7914,12 @@
       "label": "Mario Craver Under 15.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Mario Craver",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 15.4,
+      "line": 34.0,
       "direction": "under"
     },
     {
@@ -7936,7 +7936,7 @@
       "_player_name": "Aaron Gregory",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 8.8,
+      "line": 18.5,
       "direction": "under"
     },
     {
@@ -7953,7 +7953,7 @@
       "_player_name": "Ashton Bethel-Roman",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 20.6,
+      "line": 14.0,
       "direction": "under"
     },
     {
@@ -7970,7 +7970,7 @@
       "_player_name": "Kenny Minchey",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 65.6,
+      "line": 42.5,
       "direction": "under"
     },
     {
@@ -8004,7 +8004,7 @@
       "_player_name": "CJ Baxter Jr.",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 0.3,
+      "line": 16.5,
       "direction": "under"
     },
     {
@@ -8038,7 +8038,7 @@
       "_player_name": "Willie Rodriguez",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 23.5,
+      "line": 42.5,
       "direction": "under"
     },
     {
@@ -8055,7 +8055,7 @@
       "_player_name": "Brock Coffman",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 28.4,
+      "line": 17.0,
       "direction": "under"
     },
     {
@@ -8072,7 +8072,7 @@
       "_player_name": "Henry Boyer",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 11.9,
+      "line": 17.5,
       "direction": "under"
     },
     {
@@ -8089,7 +8089,7 @@
       "_player_name": "Prince Jean",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 20.2,
+      "line": 24.0,
       "direction": "under"
     },
     {
@@ -8106,7 +8106,7 @@
       "_player_name": "Cutter Boley",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 32.8,
+      "line": 219.0,
       "direction": "under"
     },
     {
@@ -8123,7 +8123,7 @@
       "_player_name": "Kyson Brown",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 9.2,
+      "line": 10.5,
       "direction": "under"
     },
     {
@@ -8135,12 +8135,12 @@
       "label": "Marquis Gillis Under 6.7 rushing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-18",
       "_player_name": "Marquis Gillis",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 6.7,
+      "line": 21.5,
       "direction": "under"
     },
     {
@@ -8157,7 +8157,7 @@
       "_player_name": "Cardae Mack",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 5.9,
+      "line": 10.5,
       "direction": "under"
     },
     {
@@ -8169,12 +8169,12 @@
       "label": "David Avit Under 11.0 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "David Avit",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 11.0,
+      "line": 41.5,
       "direction": "under"
     },
     {
@@ -8191,7 +8191,7 @@
       "_player_name": "Reed Harris",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 11.8,
+      "line": 118.0,
       "direction": "under"
     },
     {
@@ -8203,12 +8203,12 @@
       "label": "Omarion Miller Under 13.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Omarion Miller",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.4,
+      "line": 88.0,
       "direction": "under"
     },
     {
@@ -8225,7 +8225,7 @@
       "_player_name": "Jalen Moss",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 3.9,
+      "line": 8.5,
       "direction": "under"
     },
     {
@@ -8237,12 +8237,12 @@
       "label": "Tre Spivey Under 15.6 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Tre Spivey",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 15.6,
+      "line": 14.0,
       "direction": "under"
     },
     {
@@ -8259,7 +8259,7 @@
       "_player_name": "Kedrick Reescano",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 15.9,
+      "line": 38.0,
       "direction": "under"
     },
     {
@@ -8276,7 +8276,7 @@
       "_player_name": "Antwan Roberts",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 15.6,
+      "line": 24.5,
       "direction": "under"
     },
     {
@@ -8293,7 +8293,7 @@
       "_player_name": "Wesley Yarbrough",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 6.7,
+      "line": 19.0,
       "direction": "under"
     },
     {
@@ -8305,12 +8305,12 @@
       "label": "Noah Fifita Under 149.8 passing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Noah Fifita",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 149.8,
+      "line": 245.5,
       "direction": "under"
     },
     {
@@ -8327,7 +8327,7 @@
       "_player_name": "Quincy Craig",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 9.8,
+      "line": 19.0,
       "direction": "under"
     },
     {
@@ -8344,7 +8344,7 @@
       "_player_name": "Gio Richardson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 27.1,
+      "line": 35.5,
       "direction": "under"
     },
     {
@@ -8361,7 +8361,7 @@
       "_player_name": "Isaiah Mizell",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.3,
+      "line": 15.0,
       "direction": "under"
     },
     {
@@ -8378,7 +8378,7 @@
       "_player_name": "R.J. Mosley",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.4,
+      "line": 24.5,
       "direction": "under"
     },
     {
@@ -8395,7 +8395,7 @@
       "_player_name": "Brandon Phelps",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.0,
+      "line": 12.0,
       "direction": "under"
     },
     {
@@ -8412,7 +8412,7 @@
       "_player_name": "Cole Rusk",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 23.3,
+      "line": 31.0,
       "direction": "under"
     },
     {
@@ -8424,12 +8424,12 @@
       "label": "Chris Hunter Under 15.5 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Chris Hunter",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 15.5,
+      "line": 11.5,
       "direction": "under"
     },
     {
@@ -8446,7 +8446,7 @@
       "_player_name": "Alberto Mendoza",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 15.4,
+      "line": 64.0,
       "direction": "under"
     },
     {
@@ -8463,7 +8463,7 @@
       "_player_name": "Malachi Hosley",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 38.1,
+      "line": 14.0,
       "direction": "over"
     },
     {
@@ -8497,7 +8497,7 @@
       "_player_name": "Kevin Roche Jr.",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 7.4,
+      "line": 43.5,
       "direction": "under"
     },
     {
@@ -8514,7 +8514,7 @@
       "_player_name": "Isaiah Fuhrmann",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.9,
+      "line": 66.5,
       "direction": "under"
     },
     {
@@ -8526,12 +8526,12 @@
       "label": "Bryce Underwood Under 70.4 passing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Bryce Underwood",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 70.4,
+      "line": 133.0,
       "direction": "under"
     },
     {
@@ -8548,7 +8548,7 @@
       "_player_name": "Savion Hiter",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 11.2,
+      "line": 10.0,
       "direction": "under"
     },
     {
@@ -8560,12 +8560,12 @@
       "label": "JJ Buchanan Under 25.8 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "JJ Buchanan",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 25.8,
+      "line": 51.0,
       "direction": "under"
     },
     {
@@ -8594,13 +8594,13 @@
       "label": "Julian Sayin Under 203.1 passing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Julian Sayin",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 203.1,
-      "direction": "under"
+      "line": 266.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-11|Ja'Kobi Jackson|rushYds|player_prop",
@@ -8611,13 +8611,13 @@
       "label": "Ja'Kobi Jackson Over 38.9 rushing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Ja'Kobi Jackson",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 38.9,
-      "direction": "over"
+      "line": 20.5,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-12|Bo Jackson|rushYds|player_prop",
@@ -8628,13 +8628,13 @@
       "label": "Bo Jackson Over 108.5 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Bo Jackson",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 108.5,
-      "direction": "over"
+      "line": 77.5,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-12|Isaiah West|rushYds|player_prop",
@@ -8645,13 +8645,13 @@
       "label": "Isaiah West Over 34.4 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Isaiah West",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 34.4,
-      "direction": "over"
+      "line": 18.5,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-12|Jeremiah Smith|recYds|player_prop",
@@ -8662,13 +8662,13 @@
       "label": "Jeremiah Smith Under 65.8 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Jeremiah Smith",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 65.8,
-      "direction": "under"
+      "line": 148.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Devin Mccuin|recYds|player_prop",
@@ -8679,13 +8679,13 @@
       "label": "Devin Mccuin Under 67.7 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Devin Mccuin",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 67.7,
-      "direction": "under"
+      "line": 88.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Brock Boyd|recYds|player_prop",
@@ -8701,8 +8701,8 @@
       "_player_name": "Brock Boyd",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 19.3,
-      "direction": "under"
+      "line": 22.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Chris Henry Jr.|recYds|player_prop",
@@ -8718,8 +8718,8 @@
       "_player_name": "Chris Henry Jr.",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.2,
-      "direction": "under"
+      "line": 15.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Keelon Russell|passYds|player_prop",
@@ -8735,7 +8735,7 @@
       "_player_name": "Keelon Russell",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 152.7,
+      "line": 133.0,
       "direction": "over"
     },
     {
@@ -8747,12 +8747,12 @@
       "label": "Daniel Hill Over 24.5 receiving yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Daniel Hill",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 24.5,
+      "line": 10.0,
       "direction": "over"
     },
     {
@@ -8764,12 +8764,12 @@
       "label": "EJ Crowell Under 14.6 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "EJ Crowell",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 14.6,
+      "line": 23.5,
       "direction": "under"
     },
     {
@@ -8786,7 +8786,7 @@
       "_player_name": "Trae'shawn Brown",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 5.9,
+      "line": 16.5,
       "direction": "under"
     },
     {
@@ -8798,12 +8798,12 @@
       "label": "Derek Meadows Over 50.5 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Derek Meadows",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 50.5,
+      "line": 44.0,
       "direction": "over"
     },
     {
@@ -8820,7 +8820,7 @@
       "_player_name": "Kaleb Edwards",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 28.9,
+      "line": 25.0,
       "direction": "over"
     },
     {
@@ -8837,7 +8837,7 @@
       "_player_name": "Javin Gordon",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 38.6,
+      "line": 39.5,
       "direction": "over"
     },
     {
@@ -8854,7 +8854,7 @@
       "_player_name": "Daune Morris",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 25.2,
+      "line": 24.5,
       "direction": "over"
     },
     {
@@ -8871,7 +8871,7 @@
       "_player_name": "DeSean Bishop",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.6,
+      "line": 5.0,
       "direction": "under"
     },
     {
@@ -8888,7 +8888,7 @@
       "_player_name": "Justin Baker",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 32.2,
+      "line": 7.5,
       "direction": "over"
     },
     {
@@ -8905,7 +8905,7 @@
       "_player_name": "Faizon Brandon",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 83.1,
+      "line": 55.0,
       "direction": "over"
     },
     {
@@ -8922,7 +8922,7 @@
       "_player_name": "Mike Matthews",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 39.4,
+      "line": 38.5,
       "direction": "under"
     },
     {
@@ -8939,7 +8939,7 @@
       "_player_name": "TK Keys",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.8,
+      "line": 24.5,
       "direction": "under"
     },
     {
@@ -8956,7 +8956,7 @@
       "_player_name": "Travis Smith Jr.",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.8,
+      "line": 17.0,
       "direction": "under"
     },
     {
@@ -8968,12 +8968,12 @@
       "label": "Ethan Davis Under 28.9 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Ethan Davis",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 28.9,
+      "line": 22.0,
       "direction": "under"
     },
     {
@@ -9002,12 +9002,12 @@
       "label": "Braylon Staley Under 21.5 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Braylon Staley",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 21.5,
+      "line": 17.0,
       "direction": "under"
     },
     {
@@ -9024,7 +9024,7 @@
       "_player_name": "Ryan Staub",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 52.4,
+      "line": 55.5,
       "direction": "under"
     },
     {
@@ -9041,7 +9041,7 @@
       "_player_name": "KJ Jackson",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 75.0,
+      "line": 130.0,
       "direction": "under"
     },
     {
@@ -9053,12 +9053,12 @@
       "label": "Monte Harrison Under 16.1 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Monte Harrison",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.1,
+      "line": 22.0,
       "direction": "under"
     },
     {
@@ -9075,7 +9075,7 @@
       "_player_name": "Hunter Smith",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 5.6,
+      "line": 8.0,
       "direction": "under"
     },
     {
@@ -9087,13 +9087,13 @@
       "label": "Hunter Welcing Under 27.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Hunter Welcing",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 27.4,
-      "direction": "under"
+      "line": 30.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Drake Martinez|recYds|player_prop",
@@ -9109,7 +9109,7 @@
       "_player_name": "Drake Martinez",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 10.5,
+      "line": 18.0,
       "direction": "under"
     },
     {
@@ -9126,7 +9126,7 @@
       "_player_name": "Simeon Price",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 32.2,
+      "line": 36.0,
       "direction": "under"
     },
     {
@@ -9143,7 +9143,7 @@
       "_player_name": "Tobias Merriweather",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.9,
+      "line": 14.5,
       "direction": "under"
     },
     {
@@ -9160,7 +9160,7 @@
       "_player_name": "MJ Morris",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 57.0,
+      "line": 91.0,
       "direction": "under"
     },
     {
@@ -9177,7 +9177,7 @@
       "_player_name": "Houston Thomas",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.5,
+      "line": 29.0,
       "direction": "under"
     },
     {
@@ -9194,7 +9194,7 @@
       "_player_name": "Michael Masunas",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.0,
+      "line": 18.5,
       "direction": "under"
     },
     {
@@ -9206,13 +9206,13 @@
       "label": "Rodney Harris II Under 43.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Rodney Harris II",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 43.4,
-      "direction": "under"
+      "line": 26.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Nate Johnson|rushYds|player_prop",
@@ -9223,12 +9223,12 @@
       "label": "Nate Johnson Under 4.0 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Nate Johnson",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 4.0,
+      "line": 0.0,
       "direction": "under"
     },
     {
@@ -9240,13 +9240,13 @@
       "label": "Gabe Burkle Under 24.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Gabe Burkle",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 24.4,
-      "direction": "under"
+      "line": 22.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Cam Pickett|recYds|player_prop",
@@ -9262,7 +9262,7 @@
       "_player_name": "Cam Pickett",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 17.6,
+      "line": 19.0,
       "direction": "under"
     },
     {
@@ -9274,13 +9274,13 @@
       "label": "Brandon Inniss Under 16.3 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Brandon Inniss",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.3,
-      "direction": "under"
+      "line": 12.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Noah Rogers|recYds|player_prop",
@@ -9291,12 +9291,12 @@
       "label": "Noah Rogers Over 46.6 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Noah Rogers",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 46.6,
+      "line": 30.0,
       "direction": "over"
     },
     {
@@ -9313,7 +9313,7 @@
       "_player_name": "Cody Jackson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 45.0,
+      "line": 76.5,
       "direction": "under"
     },
     {
@@ -9325,13 +9325,13 @@
       "label": "Grant Jordan Under 64.9 passing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Grant Jordan",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 64.9,
-      "direction": "under"
+      "line": 40.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Kyle Parker|recYds|player_prop",
@@ -9342,13 +9342,13 @@
       "label": "Kyle Parker Under 16.8 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Kyle Parker",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.8,
-      "direction": "under"
+      "line": 16.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Jamari Hawkins|recYds|player_prop",
@@ -9364,7 +9364,7 @@
       "_player_name": "Jamari Hawkins",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 27.2,
+      "line": 36.5,
       "direction": "under"
     },
     {
@@ -9376,13 +9376,13 @@
       "label": "Israel Polk Under 51.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Israel Polk",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 51.4,
-      "direction": "under"
+      "line": 71.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-11|Zane Flores|passYds|player_prop",
@@ -9398,7 +9398,7 @@
       "_player_name": "Zane Flores",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 85.3,
+      "line": 135.0,
       "direction": "under"
     },
     {
@@ -9415,7 +9415,7 @@
       "_player_name": "Chase Jenkins",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 48.3,
+      "line": 86.0,
       "direction": "under"
     },
     {
@@ -9432,7 +9432,7 @@
       "_player_name": "Evan Boyd",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.2,
+      "line": 11.5,
       "direction": "under"
     },
     {
@@ -9444,12 +9444,12 @@
       "label": "Ajani Sheppard Under 40.9 passing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Ajani Sheppard",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 40.9,
+      "line": 53.0,
       "direction": "under"
     },
     {
@@ -9466,7 +9466,7 @@
       "_player_name": "Kenric Lanier II",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 37.2,
+      "line": 38.5,
       "direction": "under"
     },
     {
@@ -9483,7 +9483,7 @@
       "_player_name": "Hogan Hansen",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 17.3,
+      "line": 33.5,
       "direction": "under"
     },
     {
@@ -9500,7 +9500,7 @@
       "_player_name": "Gabe Sawchuk",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 18.5,
+      "line": 19.0,
       "direction": "under"
     },
     {
@@ -9517,7 +9517,7 @@
       "_player_name": "Peter Clarke",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.9,
+      "line": 20.0,
       "direction": "under"
     },
     {
@@ -9529,13 +9529,13 @@
       "label": "David Adolph Under 13.6 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "David Adolph",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.6,
-      "direction": "under"
+      "line": 16.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-11|Ismail Mahdi|rushYds|player_prop",
@@ -9551,7 +9551,7 @@
       "_player_name": "Ismail Mahdi",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 22.3,
+      "line": 48.0,
       "direction": "under"
     },
     {
@@ -9568,7 +9568,7 @@
       "_player_name": "Chris Corbo",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.0,
+      "line": 17.5,
       "direction": "under"
     },
     {
@@ -9580,12 +9580,12 @@
       "label": "Jayce Freeman Under 42.7 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Jayce Freeman",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 42.7,
+      "line": 38.0,
       "direction": "under"
     },
     {
@@ -9602,7 +9602,7 @@
       "_player_name": "Zack Marshall",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.2,
+      "line": 23.5,
       "direction": "under"
     },
     {
@@ -9619,7 +9619,7 @@
       "_player_name": "Carter Moses",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 17.0,
+      "line": 21.5,
       "direction": "under"
     },
     {
@@ -9636,7 +9636,7 @@
       "_player_name": "MJ Chirgwin",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 17.8,
+      "line": 15.5,
       "direction": "over"
     },
     {
@@ -9648,12 +9648,12 @@
       "label": "Kendrick Bell Under 6.0 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Kendrick Bell",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 6.0,
+      "line": 0.0,
       "direction": "under"
     },
     {
@@ -9670,7 +9670,7 @@
       "_player_name": "Ivan Carreon",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 7.3,
+      "line": 15.0,
       "direction": "under"
     },
     {
@@ -9687,7 +9687,7 @@
       "_player_name": "Dayton Howard",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 11.3,
+      "line": 10.0,
       "direction": "under"
     },
     {
@@ -9704,7 +9704,7 @@
       "_player_name": "Courtney Crutchfield",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.7,
+      "line": 16.5,
       "direction": "under"
     },
     {
@@ -9721,7 +9721,7 @@
       "_player_name": "Josh Ford",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 17.2,
+      "line": 14.0,
       "direction": "over"
     },
     {
@@ -9738,7 +9738,7 @@
       "_player_name": "Reece Vander Zee",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 19.9,
+      "line": 29.0,
       "direction": "under"
     },
     {
@@ -9750,12 +9750,12 @@
       "label": "Tory Blaylock Under 27.2 rushing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Tory Blaylock",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 27.2,
+      "line": 2.5,
       "direction": "under"
     },
     {
@@ -9767,12 +9767,12 @@
       "label": "AK Dear Under 11.0 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "AK Dear",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 11.0,
+      "line": 9.0,
       "direction": "under"
     },
     {
@@ -9784,12 +9784,12 @@
       "label": "AJ Hill Under 97.2 passing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "AJ Hill",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 97.2,
+      "line": 131.0,
       "direction": "under"
     },
     {
@@ -9806,7 +9806,7 @@
       "_player_name": "Justin Thurman",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 9.1,
+      "line": 13.0,
       "direction": "under"
     },
     {
@@ -9818,12 +9818,12 @@
       "label": "Da'Jaun Riggs Under 15.4 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Da'Jaun Riggs",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 15.4,
+      "line": 2.0,
       "direction": "under"
     },
     {
@@ -9840,7 +9840,7 @@
       "_player_name": "Lucky Finau",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -1.5,
+      "line": 25.0,
       "direction": "under"
     },
     {
@@ -9857,7 +9857,7 @@
       "_player_name": "Kristian Ingman",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 3.0,
+      "line": 15.5,
       "direction": "under"
     },
     {
@@ -9874,7 +9874,7 @@
       "_player_name": "Gavin Harris",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 3.7,
+      "line": 0.0,
       "direction": "under"
     },
     {
@@ -9891,7 +9891,7 @@
       "_player_name": "Jer'Michael Carter",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 7.6,
+      "line": 18.0,
       "direction": "under"
     },
     {
@@ -9908,7 +9908,7 @@
       "_player_name": "Bryson Kuzdzal",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 32.0,
+      "line": 36.0,
       "direction": "under"
     },
     {
@@ -9925,7 +9925,7 @@
       "_player_name": "Ian Duarte",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 23.7,
+      "line": 34.0,
       "direction": "under"
     },
     {
@@ -9942,7 +9942,7 @@
       "_player_name": "Jacob Washington",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 26.8,
+      "line": 30.0,
       "direction": "under"
     },
     {
@@ -9959,7 +9959,7 @@
       "_player_name": "Marshall Pritchett",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 21.8,
+      "line": 19.5,
       "direction": "over"
     },
     {
@@ -9976,7 +9976,7 @@
       "_player_name": "Cole Harrison",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.8,
+      "line": 14.5,
       "direction": "under"
     },
     {
@@ -9988,12 +9988,12 @@
       "label": "Cameron Pettaway Under 12.9 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Cameron Pettaway",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.9,
+      "line": 0.0,
       "direction": "under"
     },
     {
@@ -10010,7 +10010,7 @@
       "_player_name": "Ahmad Hardy",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 101.9,
+      "line": 95.5,
       "direction": "under"
     },
     {
@@ -10027,7 +10027,7 @@
       "_player_name": "J.P. Powell",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 21.4,
+      "line": 5.5,
       "direction": "over"
     },
     {
@@ -10044,7 +10044,7 @@
       "_player_name": "Jacob Jordan",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 11.2,
+      "line": 23.0,
       "direction": "under"
     },
     {
@@ -10061,7 +10061,7 @@
       "_player_name": "Leyton Cure",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.9,
+      "line": 18.0,
       "direction": "under"
     },
     {
@@ -10073,12 +10073,12 @@
       "label": "Jovesa Damuni Under -0.7 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Jovesa Damuni",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -0.7,
+      "line": 6.5,
       "direction": "under"
     },
     {
@@ -10095,7 +10095,7 @@
       "_player_name": "Xavier Daisy",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 26.4,
+      "line": 37.0,
       "direction": "under"
     },
     {
@@ -10112,7 +10112,7 @@
       "_player_name": "Daniel Evert",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 7.2,
+      "line": 12.0,
       "direction": "under"
     },
     {
@@ -10129,7 +10129,7 @@
       "_player_name": "Kyri Shoels",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 30.6,
+      "line": 23.5,
       "direction": "under"
     },
     {
@@ -10146,7 +10146,7 @@
       "_player_name": "Tomas O'Meara",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 31.0,
+      "line": 39.0,
       "direction": "under"
     },
     {
@@ -10163,7 +10163,7 @@
       "_player_name": "Shane Carr",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 55.0,
+      "line": 68.0,
       "direction": "under"
     },
     {
@@ -10197,7 +10197,7 @@
       "_player_name": "DJ Miller",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 24.2,
+      "line": 17.5,
       "direction": "under"
     },
     {
@@ -10209,12 +10209,12 @@
       "label": "De'Carlos Young Under 6.2 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "De'Carlos Young",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 6.2,
+      "line": 17.0,
       "direction": "under"
     },
     {
@@ -10231,7 +10231,7 @@
       "_player_name": "Keveun Mason",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 16.1,
+      "line": 32.0,
       "direction": "under"
     },
     {
@@ -10248,7 +10248,7 @@
       "_player_name": "Tiger Riden Jr.",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 30.6,
+      "line": 38.5,
       "direction": "under"
     },
     {
@@ -10260,13 +10260,13 @@
       "label": "Malachi Jackson Under 23.0 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Malachi Jackson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 23.0,
-      "direction": "under"
+      "line": 27.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Evan James|recYds|player_prop",
@@ -10282,7 +10282,7 @@
       "_player_name": "Evan James",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 38.6,
+      "line": 32.5,
       "direction": "under"
     },
     {
@@ -10299,7 +10299,7 @@
       "_player_name": "Jovanni Bermudez",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.3,
+      "line": 28.0,
       "direction": "under"
     },
     {
@@ -10316,8 +10316,8 @@
       "_player_name": "Terrill Davis",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 41.7,
-      "direction": "under"
+      "line": 58.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Christian Fitzpatrick|recYds|player_prop",
@@ -10328,13 +10328,13 @@
       "label": "Christian Fitzpatrick Under 19.0 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Christian Fitzpatrick",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 19.0,
-      "direction": "under"
+      "line": 21.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Eli Green|recYds|player_prop",
@@ -10350,7 +10350,7 @@
       "_player_name": "Eli Green",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 8.4,
+      "line": 12.0,
       "direction": "under"
     },
     {
@@ -10367,7 +10367,7 @@
       "_player_name": "Major Cantrell",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 1.2,
+      "line": 19.5,
       "direction": "under"
     },
     {
@@ -10384,7 +10384,7 @@
       "_player_name": "Daniel Hishaw Jr.",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 42.3,
+      "line": 55.0,
       "direction": "under"
     },
     {
@@ -10401,7 +10401,7 @@
       "_player_name": "Emmanuel Henderson Jr.",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 31.2,
+      "line": 20.5,
       "direction": "under"
     },
     {
@@ -10418,7 +10418,7 @@
       "_player_name": "Boden Groen",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 28.5,
+      "line": 36.0,
       "direction": "under"
     },
     {
@@ -10435,7 +10435,7 @@
       "_player_name": "Levi Wentz",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 15.1,
+      "line": 15.5,
       "direction": "under"
     },
     {
@@ -10452,7 +10452,7 @@
       "_player_name": "DeShawn Hanika",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 16.0,
+      "line": 9.0,
       "direction": "under"
     },
     {
@@ -10469,7 +10469,7 @@
       "_player_name": "Leshon Williams",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 29.9,
+      "line": 34.5,
       "direction": "under"
     },
     {
@@ -10486,7 +10486,7 @@
       "_player_name": "Michael Washington",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 56.2,
+      "line": 69.5,
       "direction": "under"
     },
     {
@@ -10503,7 +10503,7 @@
       "_player_name": "O'Mega Blake",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 19.8,
+      "line": 27.0,
       "direction": "under"
     },
     {
@@ -10515,12 +10515,12 @@
       "label": "Raylen Sharpe Under 34.7 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Raylen Sharpe",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 34.7,
+      "line": 61.0,
       "direction": "under"
     },
     {
@@ -10537,7 +10537,7 @@
       "_player_name": "Jocquez Smith",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 6.4,
+      "line": 19.5,
       "direction": "under"
     },
     {
@@ -10554,7 +10554,7 @@
       "_player_name": "Jevyon Ducker",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 14.6,
+      "line": 41.0,
       "direction": "under"
     },
     {
@@ -10571,7 +10571,7 @@
       "_player_name": "Kajiya Hollawayne",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.2,
+      "line": 14.5,
       "direction": "under"
     },
     {
@@ -10588,7 +10588,7 @@
       "_player_name": "Cole Hagen",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": -0.8,
+      "line": 13.5,
       "direction": "under"
     },
     {
@@ -10605,7 +10605,7 @@
       "_player_name": "Chase Roberts",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 52.7,
+      "line": 49.5,
       "direction": "under"
     },
     {
@@ -10617,12 +10617,12 @@
       "label": "Keontez Lewis Under 9.9 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Keontez Lewis",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.9,
+      "line": 22.5,
       "direction": "under"
     },
     {
@@ -10639,7 +10639,7 @@
       "_player_name": "Jaren Kanak",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.2,
+      "line": 20.5,
       "direction": "under"
     },
     {
@@ -10656,7 +10656,7 @@
       "_player_name": "Le'Veon Moss",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 50.4,
+      "line": 58.0,
       "direction": "under"
     },
     {
@@ -10673,7 +10673,7 @@
       "_player_name": "Amari Daniels",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 19.5,
+      "line": 4.5,
       "direction": "under"
     },
     {
@@ -10690,7 +10690,7 @@
       "_player_name": "E.J. Smith",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 18.1,
+      "line": 21.5,
       "direction": "under"
     },
     {
@@ -10707,7 +10707,7 @@
       "_player_name": "Amari Niblack",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 6.9,
+      "line": 17.5,
       "direction": "under"
     },
     {
@@ -10719,12 +10719,12 @@
       "label": "Jordyn Tyson Under 9.9 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Jordyn Tyson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.9,
+      "line": 52.5,
       "direction": "under"
     },
     {
@@ -10741,7 +10741,7 @@
       "_player_name": "Chamon Metayer",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 4.2,
+      "line": 18.0,
       "direction": "under"
     },
     {
@@ -10758,7 +10758,7 @@
       "_player_name": "Sam Olson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 9.6,
+      "line": 15.0,
       "direction": "under"
     },
     {
@@ -10775,7 +10775,7 @@
       "_player_name": "Jamal Haynes",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 22.6,
+      "line": 14.0,
       "direction": "over"
     },
     {
@@ -10792,7 +10792,7 @@
       "_player_name": "Bryce Duke",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 4.6,
+      "line": 11.5,
       "direction": "under"
     },
     {
@@ -10809,7 +10809,7 @@
       "_player_name": "Donaven McCulley",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.2,
+      "line": 36.0,
       "direction": "under"
     },
     {
@@ -10821,13 +10821,13 @@
       "label": "CJ Donaldson Over 17.4 rushing yards",
       "edge": null,
       "date_logged": "2026-09-11",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "CJ Donaldson",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 17.4,
-      "direction": "over"
+      "line": 11.0,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-12|Kyron Ware-Hudson|recYds|player_prop",
@@ -10838,13 +10838,13 @@
       "label": "Kyron Ware-Hudson Under 14.6 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Kyron Ware-Hudson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.6,
-      "direction": "under"
+      "line": 18.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Khalil Dinkins|recYds|player_prop",
@@ -10855,13 +10855,13 @@
       "label": "Khalil Dinkins Under 24.4 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Khalil Dinkins",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 24.4,
-      "direction": "under"
+      "line": 23.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Devonte Ross|recYds|player_prop",
@@ -10872,13 +10872,13 @@
       "label": "Devonte Ross Under 32.2 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Devonte Ross",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 32.2,
-      "direction": "under"
+      "line": 29.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Jacob Gill|recYds|player_prop",
@@ -10894,7 +10894,7 @@
       "_player_name": "Jacob Gill",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 18.7,
+      "line": 22.5,
       "direction": "under"
     },
     {
@@ -10911,7 +10911,7 @@
       "_player_name": "Mark Gronowski",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 95.6,
+      "line": 125.5,
       "direction": "under"
     },
     {
@@ -10928,7 +10928,7 @@
       "_player_name": "Zach Calzada",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 59.5,
+      "line": 75.0,
       "direction": "under"
     },
     {
@@ -10945,7 +10945,7 @@
       "_player_name": "Josh Kattus",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.4,
+      "line": 17.5,
       "direction": "under"
     },
     {
@@ -10962,7 +10962,7 @@
       "_player_name": "Jay Maclin",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 11.4,
+      "line": 17.5,
       "direction": "under"
     },
     {
@@ -10979,7 +10979,7 @@
       "_player_name": "Fred Farrier II",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.3,
+      "line": 11.5,
       "direction": "under"
     },
     {
@@ -10996,7 +10996,7 @@
       "_player_name": "Hardley Gilmore IV",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 23.6,
+      "line": 23.0,
       "direction": "under"
     },
     {
@@ -11013,7 +11013,7 @@
       "_player_name": "Chris Brazzell II",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 48.0,
+      "line": 58.0,
       "direction": "under"
     },
     {
@@ -11030,7 +11030,7 @@
       "_player_name": "Miles Kitselman",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 11.8,
+      "line": 15.5,
       "direction": "under"
     },
     {
@@ -11042,13 +11042,13 @@
       "label": "Trenten Howland Under 16.8 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Trenten Howland",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 16.8,
-      "direction": "under"
+      "line": 37.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Otto Tia|recYds|player_prop",
@@ -11064,7 +11064,7 @@
       "_player_name": "Otto Tia",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 10.0,
+      "line": 18.5,
       "direction": "under"
     },
     {
@@ -11081,7 +11081,7 @@
       "_player_name": "Anthony Wilhite",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 7.2,
+      "line": 17.5,
       "direction": "under"
     },
     {
@@ -11098,7 +11098,7 @@
       "_player_name": "Kris Hutson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 53.2,
+      "line": 89.0,
       "direction": "under"
     },
     {
@@ -11115,7 +11115,7 @@
       "_player_name": "Dasaahn Brame",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.2,
+      "line": 10.5,
       "direction": "under"
     },
     {
@@ -11132,7 +11132,7 @@
       "_player_name": "Dean Patterson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 6.6,
+      "line": 18.0,
       "direction": "under"
     },
     {
@@ -11149,7 +11149,7 @@
       "_player_name": "Brett Seither",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 7.3,
+      "line": 24.5,
       "direction": "under"
     },
     {
@@ -11166,7 +11166,7 @@
       "_player_name": "Cameron Harpole",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 2.2,
+      "line": 14.5,
       "direction": "under"
     },
     {
@@ -11183,7 +11183,7 @@
       "_player_name": "Rohan Jones",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 32.2,
+      "line": 48.5,
       "direction": "under"
     },
     {
@@ -11200,7 +11200,7 @@
       "_player_name": "Jeff Sims",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 18.5,
+      "line": 34.5,
       "direction": "under"
     },
     {
@@ -11217,7 +11217,7 @@
       "_player_name": "Jamarion Miller",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 16.6,
+      "line": 23.5,
       "direction": "under"
     },
     {
@@ -11229,13 +11229,13 @@
       "label": "Quinton Stewart Under 13.1 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Quinton Stewart",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 13.1,
-      "direction": "under"
+      "line": 13.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Jake Woods|recYds|player_prop",
@@ -11246,12 +11246,12 @@
       "label": "Jake Woods Under 7.2 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Jake Woods",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 7.2,
+      "line": 12.0,
       "direction": "under"
     },
     {
@@ -11268,7 +11268,7 @@
       "_player_name": "Javian Hester",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 21.8,
+      "line": 23.0,
       "direction": "under"
     },
     {
@@ -11285,7 +11285,7 @@
       "_player_name": "Cornelius Warren",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 10.5,
+      "line": 25.5,
       "direction": "under"
     },
     {
@@ -11297,12 +11297,12 @@
       "label": "Brody Dalton Over 25.3 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Brody Dalton",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 25.3,
+      "line": 22.0,
       "direction": "over"
     },
     {
@@ -11314,12 +11314,12 @@
       "label": "Hunter Watson Under 77.7 passing yards",
       "edge": null,
       "date_logged": "2026-09-10",
-      "status": "hit",
+      "status": "push",
       "graded_date": "2026-09-13",
       "_player_name": "Hunter Watson",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 77.7,
+      "line": 0.0,
       "direction": "under"
     },
     {
@@ -11795,7 +11795,7 @@
       "_player_name": "Devon Dampier",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 14.7,
+      "line": 42.0,
       "direction": "under"
     },
     {
@@ -11807,13 +11807,13 @@
       "label": "Caleb Hawkins Under 17.1 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Caleb Hawkins",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 17.1,
-      "direction": "under"
+      "line": 12.5,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Jaylen Raynor|rushYds|player_prop",
@@ -11824,12 +11824,12 @@
       "label": "Jaylen Raynor Under 1.3 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Jaylen Raynor",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 1.3,
+      "line": 20.5,
       "direction": "under"
     },
     {
@@ -11846,7 +11846,7 @@
       "_player_name": "Omari Hayes",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 14.9,
+      "line": 23.5,
       "direction": "under"
     },
     {
@@ -11880,7 +11880,7 @@
       "_player_name": "Raleek Brown",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 10.2,
+      "line": 10.0,
       "direction": "under"
     },
     {
@@ -11897,7 +11897,7 @@
       "_player_name": "Ryan Wingo",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 43.4,
+      "line": 55.5,
       "direction": "under"
     },
     {
@@ -11914,7 +11914,7 @@
       "_player_name": "John Mateer",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 34.7,
+      "line": 24.5,
       "direction": "under"
     },
     {
@@ -11931,7 +11931,7 @@
       "_player_name": "Donovan Faupel",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 37.5,
+      "line": 25.5,
       "direction": "under"
     },
     {
@@ -11943,12 +11943,12 @@
       "label": "Marcel Reed Under 18.7 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Marcel Reed",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 18.7,
+      "line": 14.5,
       "direction": "under"
     },
     {
@@ -11960,12 +11960,12 @@
       "label": "Kyson Brown Under 2.3 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-13",
       "_player_name": "Kyson Brown",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 2.3,
+      "line": 0.0,
       "direction": "under"
     },
     {
@@ -11982,7 +11982,7 @@
       "_player_name": "Noah Fifita",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 5.8,
+      "line": 19.0,
       "direction": "under"
     },
     {
@@ -11999,7 +11999,7 @@
       "_player_name": "Justice Haynes",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 126.7,
+      "line": 81.5,
       "direction": "over"
     },
     {
@@ -12016,7 +12016,7 @@
       "_player_name": "Bryce Underwood",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 21.2,
+      "line": 28.5,
       "direction": "under"
     },
     {
@@ -12033,7 +12033,7 @@
       "_player_name": "Jordan Marshall",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 81.0,
+      "line": 57.5,
       "direction": "under"
     },
     {
@@ -12050,7 +12050,7 @@
       "_player_name": "Daniel Hill",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 13.5,
+      "line": 34.5,
       "direction": "under"
     },
     {
@@ -12062,13 +12062,13 @@
       "label": "Iverson Hooks Over 77.8 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-18",
       "_player_name": "Iverson Hooks",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 77.8,
-      "direction": "over"
+      "line": 57.0,
+      "direction": "under"
     },
     {
       "id": "CFB|CFB-2026-09-12|Chase Jenkins|rushYds|player_prop",
@@ -12079,12 +12079,12 @@
       "label": "Chase Jenkins Under 29.0 rushing yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Chase Jenkins",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 29.0,
+      "line": 46.0,
       "direction": "under"
     },
     {
@@ -12096,12 +12096,12 @@
       "label": "Colin Chase Under 24.0 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Colin Chase",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 24.0,
+      "line": 43.5,
       "direction": "under"
     },
     {
@@ -12118,7 +12118,7 @@
       "_player_name": "Dierre Hill Jr.",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 28.6,
+      "line": 26.0,
       "direction": "under"
     },
     {
@@ -12152,7 +12152,7 @@
       "_player_name": "Michael Washington",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 11.7,
+      "line": 18.0,
       "direction": "under"
     },
     {
@@ -12198,12 +12198,12 @@
       "label": "Jamal Haynes Under 4.3 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-13",
       "_player_name": "Jamal Haynes",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 4.3,
+      "line": 18.5,
       "direction": "under"
     },
     {
@@ -12254,7 +12254,7 @@
       "_player_name": "Mark Gronowski",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 18.1,
+      "line": 26.0,
       "direction": "under"
     },
     {
@@ -12266,12 +12266,12 @@
       "label": "Ryan Williams Over 43.2 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "push",
       "graded_date": "2026-09-18",
       "_player_name": "Ryan Williams",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 43.2,
+      "line": 0.0,
       "direction": "over"
     },
     {
@@ -12283,12 +12283,12 @@
       "label": "Eric Rivers Under 12.0 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-18",
       "_player_name": "Eric Rivers",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 12.0,
+      "line": 36.5,
       "direction": "under"
     },
     {
@@ -12317,13 +12317,13 @@
       "label": "Trebor Pena Under 42.1 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-18",
       "_player_name": "Trebor Pena",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 42.1,
-      "direction": "under"
+      "line": 39.0,
+      "direction": "over"
     },
     {
       "id": "CFB|CFB-2026-09-12|Noah Whittington|rushYds|player_prop",
@@ -12339,7 +12339,7 @@
       "_player_name": "Noah Whittington",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 78.4,
+      "line": 86.5,
       "direction": "under"
     },
     {
@@ -12351,13 +12351,13 @@
       "label": "Gary Bryant Jr. Over 33.3 receiving yards",
       "edge": null,
       "date_logged": "2026-09-12",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-18",
       "_player_name": "Gary Bryant Jr.",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 33.3,
-      "direction": "over"
+      "line": 31.5,
+      "direction": "under"
     },
     {
       "id": "NFL|NFL-Week1|Chris Moore|recYds|player_prop",
@@ -12458,7 +12458,7 @@
       "_player_name": "Will Hammond",
       "_stat": "passYds",
       "_logged_recency_key": 202602,
-      "line": 185.5,
+      "line": 201.0,
       "direction": "over"
     },
     {
@@ -12475,7 +12475,7 @@
       "_player_name": "Jalen Jones",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 96.5,
+      "line": 11.5,
       "direction": "over"
     },
     {
@@ -12623,12 +12623,12 @@
       "label": "Jordan Faison Over 43.0 receiving yards",
       "edge": null,
       "date_logged": "2026-09-13",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-18",
       "_player_name": "Jordan Faison",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 43.0,
+      "line": 55.0,
       "direction": "over"
     },
     {
@@ -12985,7 +12985,7 @@
       "_player_name": "Eli Wood",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 21.0,
+      "line": 27.5,
       "direction": "under"
     },
     {
@@ -13002,7 +13002,7 @@
       "_player_name": "J'Koby Williams",
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
-      "line": 93.0,
+      "line": 78.0,
       "direction": "over"
     },
     {
@@ -13082,12 +13082,12 @@
       "label": "Deuce Knight Under 127.5 passing yards",
       "edge": null,
       "date_logged": "2026-09-13",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-18",
       "_player_name": "Deuce Knight",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 127.5,
+      "line": 67.5,
       "direction": "under"
     },
     {
@@ -13988,7 +13988,7 @@
       "_player_name": "Cameron Dickey",
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
-      "line": 90.0,
+      "line": 71.5,
       "direction": "over"
     },
     {
@@ -14328,7 +14328,7 @@
       "_player_name": "Javen Jacobs",
       "_stat": "rushYds",
       "_logged_recency_key": -1,
-      "line": 39.0,
+      "line": 56.5,
       "direction": "under"
     },
     {
@@ -14357,12 +14357,12 @@
       "label": "Kenny Johnson Over 82.5 receiving yards",
       "edge": null,
       "date_logged": "2026-09-13",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-18",
       "_player_name": "Kenny Johnson",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 82.5,
+      "line": 81.0,
       "direction": "over"
     },
     {
@@ -15042,7 +15042,7 @@
       "_player_name": "Will Hammond",
       "_stat": "passYds",
       "_logged_recency_key": 202602,
-      "line": 194.5,
+      "line": 205.5,
       "direction": "over"
     },
     {
@@ -15059,7 +15059,7 @@
       "_player_name": "Cameron Dickey",
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
-      "line": 4.5,
+      "line": 46.0,
       "direction": "under"
     },
     {
@@ -15076,7 +15076,7 @@
       "_player_name": "Jalen Jones",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 81.5,
+      "line": 12.0,
       "direction": "over"
     },
     {
@@ -15246,7 +15246,7 @@
       "_player_name": "Conner Weigman",
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
-      "line": 34.5,
+      "line": 46.5,
       "direction": "under"
     },
     {
@@ -15263,7 +15263,7 @@
       "_player_name": "Amare Thomas",
       "_stat": "recYds",
       "_logged_recency_key": 202602,
-      "line": 120.5,
+      "line": 85.0,
       "direction": "over"
     },
     {
@@ -15450,7 +15450,7 @@
       "_player_name": "Darian Mensah",
       "_stat": "passYds",
       "_logged_recency_key": 202602,
-      "line": 283.0,
+      "line": 263.0,
       "direction": "over"
     },
     {
@@ -15467,7 +15467,7 @@
       "_player_name": "Malachi Toney",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 141.5,
+      "line": 131.5,
       "direction": "over"
     },
     {
@@ -15484,7 +15484,7 @@
       "_player_name": "Cooper Barkate",
       "_stat": "recYds",
       "_logged_recency_key": 202602,
-      "line": 75.5,
+      "line": 70.0,
       "direction": "over"
     },
     {
@@ -15569,7 +15569,7 @@
       "_player_name": "Yamir Knight",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 56.0,
+      "line": 52.5,
       "direction": "over"
     },
     {
@@ -15615,12 +15615,12 @@
       "label": "Deuce Lawrence Under 18.0 rushing yards",
       "edge": null,
       "date_logged": "2026-09-14",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-19",
       "_player_name": "Deuce Lawrence",
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
-      "line": 18.0,
+      "line": 29.0,
       "direction": "under"
     },
     {
@@ -15637,7 +15637,7 @@
       "_player_name": "Antonio Meeks",
       "_stat": "recYds",
       "_logged_recency_key": 202602,
-      "line": 21.5,
+      "line": 31.0,
       "direction": "under"
     },
     {
@@ -16040,7 +16040,7 @@
       "label": "Kenny Johnson Over 82.5 receiving yards",
       "edge": null,
       "date_logged": "2026-09-14",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-18",
       "_player_name": "Kenny Johnson",
       "_stat": "recYds",
@@ -16096,7 +16096,7 @@
       "_player_name": "Miles Williams",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 20.5,
+      "line": 35.0,
       "direction": "under"
     },
     {
@@ -16108,12 +16108,12 @@
       "label": "Deuce Knight Under 74.5 passing yards",
       "edge": null,
       "date_logged": "2026-09-14",
-      "status": "hit",
+      "status": "miss",
       "graded_date": "2026-09-18",
       "_player_name": "Deuce Knight",
       "_stat": "passYds",
       "_logged_recency_key": -1,
-      "line": 74.5,
+      "line": 56.5,
       "direction": "under"
     },
     {
@@ -16125,12 +16125,12 @@
       "label": "Carlos Hernandez Under 67.5 receiving yards",
       "edge": null,
       "date_logged": "2026-09-14",
-      "status": "miss",
+      "status": "hit",
       "graded_date": "2026-09-19",
       "_player_name": "Carlos Hernandez",
       "_stat": "recYds",
       "_logged_recency_key": 202602,
-      "line": 67.5,
+      "line": 90.0,
       "direction": "under"
     },
     {
@@ -16164,7 +16164,7 @@
       "_player_name": "Girard Pringle Jr.",
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
-      "line": 44.0,
+      "line": 16.5,
       "direction": "under"
     },
     {
@@ -16725,7 +16725,7 @@
       "_player_name": "Thomas Castellanos",
       "_stat": "passYds",
       "_logged_recency_key": 202602,
-      "line": 144.0,
+      "line": 167.0,
       "direction": "under"
     },
     {
@@ -16793,7 +16793,7 @@
       "_player_name": "Cameron Ross",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 74.0,
+      "line": 65.0,
       "direction": "over"
     },
     {
@@ -16810,7 +16810,7 @@
       "_player_name": "Keelan Marion",
       "_stat": "recYds",
       "_logged_recency_key": -1,
-      "line": 88.5,
+      "line": 82.5,
       "direction": "over"
     },
     {
@@ -21689,7 +21689,7 @@
       "_player_name": "Thomas Castellanos",
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
-      "line": 9.5,
+      "line": 31.0,
       "direction": "under"
     },
     {
