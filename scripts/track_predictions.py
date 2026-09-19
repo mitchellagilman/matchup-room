@@ -645,6 +645,7 @@ def main():
 
     existing_ids = {p["id"] for p in record["picks"]}
     logged = 0
+    upgraded = 0
 
     all_league_sources = [
         ("NFL", nfl_week_label, nfl_sched.get("games", [])),
@@ -672,13 +673,29 @@ def main():
             logged += 1
 
         player_picks = compute_player_bets(all_players, teams, games, league, all_odds, player_props_odds)
+        # Pending picks already logged this week, keyed by id, so a real
+        # line that's now available can upgrade one in place -- confirmed
+        # live this was a real gap: a pick logged BEFORE
+        # fetch_player_props_odds.py existed would sit at "pid already
+        # exists" forever and never pick up a real line becoming
+        # available later in the same week, even though nothing about the
+        # pick has graded yet and upgrading it is still entirely fair.
+        pending_by_id = {p["id"]: p for p in record["picks"] if p.get("type") == "player_prop" and p.get("status") == "pending"}
         for p in player_picks:
             pick_week_label = f"CFB-{p['game_date']}" if league == "CFB" and p.get("game_date") else week_label
             pid = f"{league}|{pick_week_label}|{p['name']}|{p['stat']}|player_prop"
-            if pid in existing_ids:
-                continue
             dir_label = "Over" if p["direction"] == "over" else "Under"
             line_source = " (real line)" if p.get("used_real_line") else " (model proj.)"
+            if pid in existing_ids:
+                existing_pick = pending_by_id.get(pid)
+                if existing_pick and p.get("used_real_line") and not existing_pick.get("used_real_line"):
+                    existing_pick["line"] = p["projected"]
+                    existing_pick["direction"] = p["direction"]
+                    existing_pick["edge"] = p.get("edge")
+                    existing_pick["used_real_line"] = True
+                    existing_pick["label"] = f"{p['name']} {dir_label} {p['projected']} {p['stat_label']}{line_source}"
+                    upgraded += 1
+                continue
             record["picks"].append({
                 "id": pid, "league": league, "week": pick_week_label, "matchup": p["matchup"],
                 "type": "player_prop", "label": f"{p['name']} {dir_label} {p['projected']} {p['stat_label']}{line_source}",
@@ -710,7 +727,7 @@ def main():
 
     with open(TRACK_PATH, "w") as f:
         json.dump(record, f, indent=2)
-    print(f"[{'/'.join(sorted(active_leagues))}] Logged {logged} new picks, graded {graded} pending picks. Total tracked: {len(record['picks'])}")
+    print(f"[{'/'.join(sorted(active_leagues))}] Logged {logged} new picks, upgraded {upgraded} pending picks to a real line, graded {graded} pending picks. Total tracked: {len(record['picks'])}")
 
 
 if __name__ == "__main__":
