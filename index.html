@@ -1152,7 +1152,7 @@ function computeSinglePlayerProjection(name){
   if(!avgVal) return { statLabel: statLabel(mainStat), opp, noData: true };
   const last5 = games.slice(-5);
   const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
-  const ratio = clampDefenseRatio(teamsCache[opp][defKey] / avgVal);
+  const ratio = clampDefenseRatio(shrunkTeamStat(teamsCache[opp], defKey, league) / avgVal);
   const projected = roundToHalf(l5avg * ratio);
   return {
     statLabel: statLabel(mainStat), opp, l5avg, ratio, projected,
@@ -1385,6 +1385,26 @@ function leagueAvgDefStat(league, key){
   if(teams.length===0) return null;
   return teams.reduce((s,t)=>s+t[key],0)/teams.length;
 }
+// Same small-sample problem shrinkStat fixes for ppg/pa/to, extended to
+// passOff/rushOff/passDef/rushDef -- confirmed live these were still
+// being read completely raw everywhere, including feeding directly into
+// EVERY player prop's opponent-matchup ratio (teamsCache[opp][defKey]).
+// An opponent's pass/rush defense number from just 1-2 games is exactly
+// the kind of extreme-outlier-prone sample this app already treats
+// carefully for ppg/pa/to; player props inherited that same risk here
+// without the same protection. No team-specific previous-season prior
+// exists yet for these 4 specific stats (only ppg/pa/to have that), so
+// this shrinks toward league average for now -- still a large
+// improvement over no shrinkage at all, and a reasonable next candidate
+// for a team-specific prior later once that data's being fetched.
+function shrunkTeamStat(team, statKey, league){
+  if(!team) return null;
+  const raw = team[statKey];
+  if(raw===null || raw===undefined) return raw;
+  const gamesPlayed = (team.games && team.games.length) || 0;
+  const leagueAvg = leagueAvgDefStat(league, statKey);
+  return shrinkStat(raw, null, leagueAvg, gamesPlayed);
+}
 
 function wireHitRate(lg){
   document.getElementById(lg+'-run-hitrate').addEventListener('click', ()=>{
@@ -1419,7 +1439,7 @@ function wireHitRate(lg){
     const opp = findOpponentThisWeek(league, player.team);
     const defKey = defCategoryForStat(stat);
     if(opp && teamsCache[opp] && defKey && teamsCache[opp][defKey]){
-      const oppVal = teamsCache[opp][defKey];
+      const oppVal = shrunkTeamStat(teamsCache[opp], defKey, league);
       const avgVal = leagueAvgDefStat(league, defKey);
       if(avgVal){
         const ratio = clampDefenseRatio(oppVal/avgVal); // >1 = opponent allows more than average (easier matchup)
@@ -1512,10 +1532,14 @@ function venueAdjustedStat(venueStat, venueGames, seasonShrunkStat){
 function computeProjection(nameA, nameB, league){
   const A = teamsCache[nameA], B = teamsCache[nameB];
   if(!A || !B) return null;
-  const aPassProj = (A.passOff + B.passDef)/2;
-  const bPassProj = (B.passOff + A.passDef)/2;
-  const aRushProj = (A.rushOff + B.rushDef)/2;
-  const bRushProj = (B.rushOff + A.rushDef)/2;
+  const aPassOffS = shrunkTeamStat(A, 'passOff', league), aRushOffS = shrunkTeamStat(A, 'rushOff', league);
+  const aPassDefS = shrunkTeamStat(A, 'passDef', league), aRushDefS = shrunkTeamStat(A, 'rushDef', league);
+  const bPassOffS = shrunkTeamStat(B, 'passOff', league), bRushOffS = shrunkTeamStat(B, 'rushOff', league);
+  const bPassDefS = shrunkTeamStat(B, 'passDef', league), bRushDefS = shrunkTeamStat(B, 'rushDef', league);
+  const aPassProj = (aPassOffS + bPassDefS)/2;
+  const bPassProj = (bPassOffS + aPassDefS)/2;
+  const aRushProj = (aRushOffS + bRushDefS)/2;
+  const bRushProj = (bRushOffS + aRushDefS)/2;
 
   const aGamesPlayed = (A.games && A.games.length) || 0;
   const bGamesPlayed = (B.games && B.games.length) || 0;
@@ -1655,7 +1679,7 @@ function computeGameBets(nameA, nameB){
       const last5 = games.slice(-5);
       const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
       if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
-      const ratio = clampDefenseRatio(teamsCache[oppName][defKey] / avgVal);
+      const ratio = clampDefenseRatio(shrunkTeamStat(teamsCache[oppName], defKey, league) / avgVal);
       const projected = roundToHalf(l5avg * ratio); // simple matchup-adjusted projection -- see note in renderGameBets
       playerBets.push({ name: pname, pos: p.pos, team: teamName, opp: oppName, ratio, l5avg, projected, statLabel: statLabel(mainStat), direction: ratio>=1 ? 'favorable' : 'tough', _recencyKey: mostRecentGameKey(p) });
     });
@@ -2115,7 +2139,7 @@ function computeTopPlayerBets(league){
     if(!defKey || !teamsCache[opp][defKey]) return;
     const avgVal = leagueAvgDefStat(league, defKey);
     if(!avgVal) return;
-    const ratio = clampDefenseRatio(teamsCache[opp][defKey] / avgVal);
+    const ratio = clampDefenseRatio(shrunkTeamStat(teamsCache[opp], defKey, league) / avgVal);
     const last5 = games.slice(-5);
     const l5avg = median(last5.map(function(g){ return g[mainStat]||0; }));
     if(!meetsVolumeThreshold(mainStat, l5avg)) return; // filters out fullbacks/deep bench players with a token stat line
