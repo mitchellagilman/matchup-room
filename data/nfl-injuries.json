@@ -211,6 +211,14 @@
     },
     {
       "team": "Cleveland Browns",
+      "name": "Noah Igbinoghene",
+      "pos": "CB",
+      "injury": "Hand",
+      "status": "Questionable",
+      "_id": "00-0036287"
+    },
+    {
+      "team": "Cleveland Browns",
       "name": "Teven Jenkins",
       "pos": "G",
       "injury": "Back",
@@ -410,6 +418,30 @@
       "_id": "00-0041543"
     },
     {
+      "team": "Los Angeles Rams",
+      "name": "Puka Nacua",
+      "pos": "WR",
+      "injury": "Hip",
+      "status": "Questionable",
+      "_id": "00-0039075"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Jordan Whittington",
+      "pos": "WR",
+      "injury": "Quadricep",
+      "status": "Doubtful",
+      "_id": "00-0039751"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Kamren Kinchens",
+      "pos": "S",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0039834"
+    },
+    {
       "team": "Los Angeles Chargers",
       "name": "Trey Pipkins",
       "pos": "T",
@@ -518,7 +550,7 @@
       "name": "Carlton Davis III",
       "pos": "CB",
       "injury": "Neck",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0034778"
     },
     {
@@ -584,6 +616,22 @@
       "injury": "Toe",
       "status": "Questionable",
       "_id": "00-0041390"
+    },
+    {
+      "team": "New York Giants",
+      "name": "Micah McFadden",
+      "pos": "LB",
+      "injury": "Neck",
+      "status": "Questionable",
+      "_id": "00-0037259"
+    },
+    {
+      "team": "New York Giants",
+      "name": "Deonte Banks",
+      "pos": "CB",
+      "injury": "Calf",
+      "status": "Questionable",
+      "_id": "00-0039000"
     },
     {
       "team": "New York Jets",
@@ -686,7 +734,7 @@
       "name": "Anthony Bradford",
       "pos": "G",
       "injury": "Knee",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0039020"
     },
     {
