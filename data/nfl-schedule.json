@@ -1,115 +1,85 @@
 {
-  "week": 2,
+  "week": 3,
   "games": [
     {
-      "a": "Detroit Lions",
+      "a": "Atlanta Falcons",
+      "b": "Green Bay Packers",
+      "date": "2026-09-24 (Thursday)"
+    },
+    {
+      "a": "Los Angeles Chargers",
       "b": "Buffalo Bills",
-      "date": "2026-09-17 (Thursday)",
-      "awayScore": 31.0,
-      "homeScore": 41.0
+      "date": "2026-09-27 (Sunday)"
     },
     {
       "a": "Carolina Panthers",
-      "b": "Atlanta Falcons",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 34.0,
-      "homeScore": 3.0
+      "b": "Cleveland Browns",
+      "date": "2026-09-27 (Sunday)"
     },
     {
-      "a": "New Orleans Saints",
-      "b": "Baltimore Ravens",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 24.0,
-      "homeScore": 17.0
+      "a": "New York Jets",
+      "b": "Detroit Lions",
+      "date": "2026-09-27 (Sunday)"
     },
     {
-      "a": "Minnesota Vikings",
-      "b": "Chicago Bears",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 9.0,
-      "homeScore": 3.0
+      "a": "Houston Texans",
+      "b": "Indianapolis Colts",
+      "date": "2026-09-27 (Sunday)"
+    },
+    {
+      "a": "New England Patriots",
+      "b": "Jacksonville Jaguars",
+      "date": "2026-09-27 (Sunday)"
+    },
+    {
+      "a": "Kansas City Chiefs",
+      "b": "Miami Dolphins",
+      "date": "2026-09-27 (Sunday)"
+    },
+    {
+      "a": "Tennessee Titans",
+      "b": "New York Giants",
+      "date": "2026-09-27 (Sunday)"
     },
     {
       "a": "Cincinnati Bengals",
-      "b": "Houston Texans",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 20.0,
-      "homeScore": 6.0
-    },
-    {
-      "a": "Pittsburgh Steelers",
-      "b": "New England Patriots",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 3.0,
-      "homeScore": 20.0
-    },
-    {
-      "a": "Green Bay Packers",
-      "b": "New York Jets",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 20.0,
-      "homeScore": 17.0
-    },
-    {
-      "a": "Cleveland Browns",
-      "b": "Tampa Bay Buccaneers",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 23.0,
-      "homeScore": 19.0
-    },
-    {
-      "a": "Philadelphia Eagles",
-      "b": "Tennessee Titans",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 24.0,
-      "homeScore": 20.0
-    },
-    {
-      "a": "Jacksonville Jaguars",
-      "b": "Denver Broncos",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 13.0,
-      "homeScore": 20.0
-    },
-    {
-      "a": "Las Vegas Raiders",
-      "b": "Los Angeles Chargers",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 26.0,
-      "homeScore": 14.0
+      "b": "Pittsburgh Steelers",
+      "date": "2026-09-27 (Sunday)"
     },
     {
       "a": "Seattle Seahawks",
-      "b": "Arizona Cardinals",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 31.0,
-      "homeScore": 7.0
+      "b": "Washington Commanders",
+      "date": "2026-09-27 (Sunday)"
     },
     {
-      "a": "Washington Commanders",
-      "b": "Dallas Cowboys",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 20.0,
-      "homeScore": 37.0
-    },
-    {
-      "a": "Miami Dolphins",
+      "a": "Arizona Cardinals",
       "b": "San Francisco 49ers",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 13.0,
-      "homeScore": 35.0
+      "date": "2026-09-27 (Sunday)"
     },
     {
-      "a": "Indianapolis Colts",
-      "b": "Kansas City Chiefs",
-      "date": "2026-09-20 (Sunday)",
-      "awayScore": 30.0,
-      "homeScore": 33.0
+      "a": "Minnesota Vikings",
+      "b": "Tampa Bay Buccaneers",
+      "date": "2026-09-27 (Sunday)"
     },
     {
-      "a": "New York Giants",
-      "b": "Los Angeles Rams",
-      "date": "2026-09-21 (Monday)"
+      "a": "Baltimore Ravens",
+      "b": "Dallas Cowboys",
+      "date": "2026-09-27 (Sunday)"
+    },
+    {
+      "a": "Las Vegas Raiders",
+      "b": "New Orleans Saints",
+      "date": "2026-09-27 (Sunday)"
+    },
+    {
+      "a": "Los Angeles Rams",
+      "b": "Denver Broncos",
+      "date": "2026-09-27 (Sunday)"
+    },
+    {
+      "a": "Philadelphia Eagles",
+      "b": "Chicago Bears",
+      "date": "2026-09-28 (Monday)"
     }
   ]
 }

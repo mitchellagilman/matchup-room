@@ -1,13 +1,13 @@
 {
   "Los Angeles Rams": {
     "league": "NFL",
-    "record": "0-1",
-    "ppg": 7.0,
-    "pa": 27.0,
-    "passOff": 168.0,
-    "rushOff": 122.0,
-    "passDef": 205.0,
-    "rushDef": 174.0,
+    "record": "1-1",
+    "ppg": 17.5,
+    "pa": 16.5,
+    "passOff": 247.5,
+    "rushOff": 142.5,
+    "passDef": 168.0,
+    "rushDef": 113.0,
     "to": -1.0,
     "ats": "",
     "wk1": true,
@@ -18,14 +18,21 @@
         "teamScore": 7.0,
         "oppScore": 27.0,
         "result": "L"
+      },
+      {
+        "week": "2",
+        "opp": "New York Giants",
+        "teamScore": 28.0,
+        "oppScore": 6.0,
+        "result": "W"
       }
     ],
     "prevPpg": 30.5,
     "prevPa": 20.4,
     "prevTo": 0.7,
-    "homePpg": 7.0,
-    "homePa": 27.0,
-    "homeGames": 1
+    "homePpg": 17.5,
+    "homePa": 16.5,
+    "homeGames": 2
   },
   "Dallas Cowboys": {
     "league": "NFL",
@@ -444,14 +451,14 @@
   },
   "New York Giants": {
     "league": "NFL",
-    "record": "1-0",
-    "ppg": 28.0,
-    "pa": 20.0,
-    "passOff": 230.0,
-    "rushOff": 165.0,
-    "passDef": 175.0,
-    "rushDef": 69.0,
-    "to": 0.0,
+    "record": "1-1",
+    "ppg": 17.0,
+    "pa": 24.0,
+    "passOff": 180.5,
+    "rushOff": 108.5,
+    "passDef": 251.0,
+    "rushDef": 116.0,
+    "to": 0.5,
     "ats": "",
     "wk1": true,
     "games": [
@@ -461,6 +468,13 @@
         "teamScore": 28.0,
         "oppScore": 20.0,
         "result": "W"
+      },
+      {
+        "week": "2",
+        "opp": "Los Angeles Rams",
+        "teamScore": 6.0,
+        "oppScore": 28.0,
+        "result": "L"
       }
     ],
     "prevPpg": 22.4,
@@ -468,7 +482,10 @@
     "prevTo": -0.06,
     "homePpg": 28.0,
     "homePa": 20.0,
-    "homeGames": 1
+    "homeGames": 1,
+    "awayPpg": 6.0,
+    "awayPa": 28.0,
+    "awayGames": 1
   },
   "Atlanta Falcons": {
     "league": "NFL",
