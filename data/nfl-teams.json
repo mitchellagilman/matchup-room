@@ -489,14 +489,14 @@
   },
   "Atlanta Falcons": {
     "league": "NFL",
-    "record": "0-2",
-    "ppg": 8.0,
-    "pa": 27.0,
-    "passOff": 144.0,
-    "rushOff": 138.5,
-    "passDef": 254.0,
-    "rushDef": 63.0,
-    "to": -3.0,
+    "record": "1-2",
+    "ppg": 17.0,
+    "pa": 22.7,
+    "passOff": 181.3,
+    "rushOff": 173.0,
+    "passDef": 273.3,
+    "rushDef": 47.7,
+    "to": -2.0,
     "ats": "",
     "wk1": true,
     "games": [
@@ -513,6 +513,13 @@
         "teamScore": 3.0,
         "oppScore": 34.0,
         "result": "L"
+      },
+      {
+        "week": "3",
+        "opp": "Green Bay Packers",
+        "teamScore": 35.0,
+        "oppScore": 14.0,
+        "result": "W"
       }
     ],
     "prevPpg": 20.8,
@@ -521,20 +528,20 @@
     "homePpg": 3.0,
     "homePa": 34.0,
     "homeGames": 1,
-    "awayPpg": 13.0,
-    "awayPa": 20.0,
-    "awayGames": 1
+    "awayPpg": 24.0,
+    "awayPa": 17.0,
+    "awayGames": 2
   },
   "Green Bay Packers": {
     "league": "NFL",
-    "record": "1-1",
-    "ppg": 21.0,
-    "pa": 28.0,
-    "passOff": 266.0,
-    "rushOff": 64.5,
-    "passDef": 199.0,
-    "rushDef": 87.0,
-    "to": -1.0,
+    "record": "1-2",
+    "ppg": 18.7,
+    "pa": 30.3,
+    "passOff": 281.3,
+    "rushOff": 48.7,
+    "passDef": 218.0,
+    "rushDef": 138.7,
+    "to": -0.67,
     "ats": "",
     "wk1": true,
     "games": [
@@ -551,11 +558,21 @@
         "teamScore": 20.0,
         "oppScore": 17.0,
         "result": "W"
+      },
+      {
+        "week": "3",
+        "opp": "Atlanta Falcons",
+        "teamScore": 14.0,
+        "oppScore": 35.0,
+        "result": "L"
       }
     ],
     "prevPpg": 23.0,
     "prevPa": 21.2,
     "prevTo": 0.17,
+    "homePpg": 14.0,
+    "homePa": 35.0,
+    "homeGames": 1,
     "awayPpg": 21.0,
     "awayPa": 28.0,
     "awayGames": 2
