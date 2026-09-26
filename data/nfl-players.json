@@ -33717,5 +33717,104 @@
     "games": [],
     "_id": "00-0041565",
     "teamYear": 2026
+  },
+  "Greg Dortch": {
+    "pos": "WR",
+    "team": "Buffalo Bills",
+    "league": "NFL",
+    "games": [
+      {
+        "date": "2025-wk3",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 5.0,
+        "receptions": 2,
+        "recYds": 3.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk4",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 4,
+        "recYds": 35.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk5",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 12.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk6",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 9.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk7",
+        "opp": "vs GB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 5.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk9",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 9.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk10",
+        "opp": "vs SEA",
+        "passYds": 0.0,
+        "rushYds": 2.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk11",
+        "opp": "vs SF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6,
+        "recYds": 66.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk12",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": -5.0,
+        "receptions": 6,
+        "recYds": 53.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk13",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 14.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0035500",
+    "teamYear": 2026
   }
 }
