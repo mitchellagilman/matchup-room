@@ -312,8 +312,9 @@ def main():
         if hp is None or ap is None:
             continue  # not played yet
         week = g.get("week")
-        points_by_team.setdefault(home, []).append({"for": hp, "against": ap, "week": week, "opp": away, "venue": "home"})
-        points_by_team.setdefault(away, []).append({"for": ap, "against": hp, "week": week, "opp": home, "venue": "away"})
+        game_date = (g.get("startDate") or "")[:10] or None  # confirmed via fetch_cfb_schedule.py's own use of this same field -- needed for real rest-days calculation, week number alone isn't enough (see fetch_nfl.py's matching fix and comment for the full reasoning)
+        points_by_team.setdefault(home, []).append({"for": hp, "against": ap, "week": week, "date": game_date, "opp": away, "venue": "home"})
+        points_by_team.setdefault(away, []).append({"for": ap, "against": hp, "week": week, "date": game_date, "opp": home, "venue": "away"})
 
     per_team_games = {}  # team -> list of {passOff, rushOff, passDef, rushDef}
     for gid, teams_in_game in offense_by_game_team.items():
@@ -350,7 +351,7 @@ def main():
         # full reasoning (shown in the Teams tab, and gives the frontend a
         # real games-played count for early-season shrinkage).
         sorted_pts = sorted(pts, key=lambda p: p.get("week") or 0)
-        game_log = [{"week": p.get("week"), "opp": p.get("opp"), "teamScore": p["for"], "oppScore": p["against"],
+        game_log = [{"week": p.get("week"), "date": p.get("date"), "opp": p.get("opp"), "teamScore": p["for"], "oppScore": p["against"],
                      "result": "W" if p["for"] > p["against"] else ("L" if p["for"] < p["against"] else "T")}
                     for p in sorted_pts]
 
