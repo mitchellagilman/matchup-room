@@ -1685,7 +1685,7 @@ function computeProjection(nameA, nameB, league, gameDate){
   const homeAdv = HOME_ADV[league] || 2.0;
   let aScoreBox = (aPpgAdj + bPa)/2 - homeAdv/2 + aTo*TO_FACTOR;
   let bScoreBox = (bPpgAdj + aPa)/2 + homeAdv/2 + bTo*TO_FACTOR;
-  const total = aScoreBox + bScoreBox;
+  let total = aScoreBox + bScoreBox;
   let spread = aScoreBox - bScoreBox; // positive = A favored
   let usedSP = false;
   let marketAnchored = false;
