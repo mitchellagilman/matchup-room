@@ -972,6 +972,36 @@ function rankTeamStat(name, key, lowerIsBetter){
   return { rank, of: rows.length };
 }
 function rankLabel(r){ return r ? ('#'+r.rank+' of '+r.of) : '—'; }
+// Computes a team's own real betting track record (spread, total, and
+// its players' props) from TRACK_RECORD_PICKS -- confirmed live this was
+// a real gap: nothing anywhere in the app showed how a specific team's
+// games have actually performed against the model's own picks, only
+// league-wide stats. Spread/total match by the pick's own stored
+// _away/_home fields (exact); player props match primarily via the
+// player's CURRENT roster team (playersCache), falling back to a plain
+// substring check against the pick's matchup string only if the player
+// isn't found there (e.g. since left the roster) -- the roster lookup is
+// preferred since it's exact, unlike matching raw text.
+function computeTeamBettingStats(teamName){
+  const spreadPicks = [], totalPicks = [], propPicks = [];
+  TRACK_RECORD_PICKS.forEach(function(p){
+    if(p.status!=='hit' && p.status!=='miss') return; // pushes and pending excluded -- a push isn't a hit or a miss, and pending has no result yet
+    if(p.type==='spread' || p.type==='total'){
+      if(p._away===teamName || p._home===teamName){
+        (p.type==='spread' ? spreadPicks : totalPicks).push(p);
+      }
+    } else if(p.type==='player_prop'){
+      const player = playersCache[p._player_name];
+      const belongsToTeam = player ? player.team===teamName : (p.matchup||'').indexOf(teamName)>=0;
+      if(belongsToTeam) propPicks.push(p);
+    }
+  });
+  function summarize(picks){
+    const hits = picks.filter(function(p){ return p.status==='hit'; }).length;
+    return { hits: hits, total: picks.length, pct: picks.length ? Math.round(hits/picks.length*100) : null };
+  }
+  return { spread: summarize(spreadPicks), total: summarize(totalPicks), props: summarize(propPicks) };
+}
 function renderTeamDetail(lg, name){
   const container = document.getElementById(lg+'-team-detail');
   const t = teamsCache[name];
@@ -988,9 +1018,18 @@ function renderTeamDetail(lg, name){
     return '<div class="glog-row"><span>Week '+(g.week||'?')+' '+(won?'vs':lost?'@':'vs')+' '+g.opp+'</span>'
       + '<span class="glog-val '+(won?'over':lost?'under':'')+'">'+g.result+' '+fmt(g.teamScore)+'-'+fmt(g.oppScore)+'</span></div>';
   }).join('') : '<div class="empty">No games played yet this season.</div>';
+  const betStats = computeTeamBettingStats(name);
+  function betLine(label, s){
+    return '<div class="glog-row"><span>'+label+'</span><span class="glog-val">'+(s.total ? s.hits+'-'+(s.total-s.hits)+' ('+s.pct+'%)' : 'no graded picks yet')+'</span></div>';
+  }
   container.innerHTML = '<div class="card">'
     + '<h2>'+name+(t.conf?' <span class="pill">'+t.conf+'</span>':'')+(t.division==='fcs'?' <span class="pill">FCS</span>':'')+'</h2>'
     + '<div class="team-meta">Record: <b>'+(t.record||'—')+'</b> · TO margin '+(t.to>=0?'+':'')+fmt(t.to)+'/g · ATS '+(t.ats||'—')+'</div>'
+    + '<div style="margin-top:14px;font-weight:700;font-size:0.85rem;">This app\'s betting track record</div>'
+    + '<div class="note" style="margin-top:0;">How the model\'s own picks involving this team have actually graded -- not this team\'s real sportsbook ATS record, just this app\'s history.</div>'
+    + betLine('Spread picks', betStats.spread)
+    + betLine('Total (O/U) picks', betStats.total)
+    + betLine('Player prop picks', betStats.props)
     + '<div style="margin-top:14px;font-weight:700;font-size:0.85rem;">Offense</div>'
     + '<div class="glog-row"><span>Points/g — '+fmt(t.ppg)+'</span><span class="glog-val">'+rankLabel(offRank)+'</span></div>'
     + '<div class="glog-row"><span>Pass yds/g — '+fmt(t.passOff)+'</span><span class="glog-val">'+rankLabel(passOffRank)+'</span></div>'
@@ -2073,6 +2112,7 @@ let MODEL_CALIBRATION = null; // loaded at startup from data/calibration.json --
 let MODEL_WEIGHTS = null; // loaded at startup from data/model_weights.json -- null (or .trained===false) until enough graded team bets exist for train_model.py to trust a fit (see that script's docstring)
 let INJURIES_CACHE = {}; // loaded at startup from data/nfl-injuries.json -- keyed by team name -> list of {name, pos, injury, status}. Used by detectBackupQB(); see that function's comment for the honest limitations (this lags breaking news by a few days, since it only reflects official team-released reports)
 let WEATHER_CACHE = {}; // loaded at startup from data/weather.json -- keyed by HOME team name -> {dome:true} or {windMph, tempF, shortForecast, severe}. NFL-only, see fetch_weather.py's docstring for the scope reasoning
+let TRACK_RECORD_PICKS = []; // loaded at startup from data/track-record.json -- used by computeTeamBettingStats() to show a team's own real betting track record (spread/total/props) on its detail page
 let PLAYER_PROPS_ODDS = {}; // loaded at startup from data/player-props-odds.json -- real sportsbook player-prop lines (see fetch_player_props_odds.py). Keyed by player name -> stat -> {line, books}; empty object (not null) when unavailable so lookups can always safely use {} fallback
 // Applies the logistic regression trained in train_model.py to a single
 // candidate pick, mirroring that script's sigmoid(bias + w.edge*edge +
@@ -2916,6 +2956,7 @@ if(globalSearchInput){
     (injData.entries||[]).forEach(function(e){ (INJURIES_CACHE[e.team] = INJURIES_CACHE[e.team]||[]).push(e); });
   }catch(e){ INJURIES_CACHE = {}; }
   try{ WEATHER_CACHE = await fetchJSON('./data/weather.json'); }catch(e){ WEATHER_CACHE = {}; }
+  try{ const trData = await fetchJSON('./data/track-record.json'); TRACK_RECORD_PICKS = trData.picks || []; }catch(e){ TRACK_RECORD_PICKS = []; }
   try{ PLAYER_PROPS_ODDS = await fetchJSON('./data/player-props-odds.json'); }catch(e){ PLAYER_PROPS_ODDS = {}; }
   const calNote = document.getElementById('calibration-note');
   if(calNote && MODEL_CALIBRATION){
