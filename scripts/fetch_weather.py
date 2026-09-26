@@ -1,0 +1,145 @@
+name: Update stats and odds
+
+on:
+  schedule:
+    # Thu/Fri/Sat/Sun/Mon at 11:59 PM Central -- covers Thursday Night
+    # Football, Friday/Saturday college games, Sunday NFL, and Monday
+    # Night Football, instead of just once a week.
+    #
+    # Cron is always UTC and has no timezone awareness, so this is
+    # converted by hand: 11:59 PM CDT (UTC-5, current as of Sept 2026) =
+    # 04:59 UTC the next calendar day. That means the cron's day-of-week
+    # values are shifted one day later than the Central-time day they
+    # correspond to (Thu->Fri, Fri->Sat, Sat->Sun, Sun->Mon, Mon->Tue).
+    #
+    # DST CAVEAT: this does NOT auto-adjust when clocks change. Once
+    # Central time switches to CST (UTC-6, early November), these same
+    # cron entries will actually fire at 10:59 PM Central instead of
+    # 11:59 PM -- a real GitHub Actions limitation, not a bug here. If
+    # that hour matters to you, update the hour field (04 -> 05) after
+    # DST ends, or just let it drift; either way the data is still same
+    # day, just an hour earlier.
+    #
+    # MNF NOTE: Monday's run (11:59 PM CT = ~1 hour after most Monday
+    # Night Football games end) should usually catch a final score, but
+    # a game running long (OT, weather delay) could still be in progress.
+    # If a Monday-night pick doesn't get graded until Thursday's run,
+    # that's why -- add a Tuesday-morning run back if you want a
+    # dedicated buffer day for that specific case.
+    - cron: '59 4 * * 5,6,0,1,2'
+  workflow_dispatch: {}   # lets you also trigger this manually from the Actions tab
+
+permissions:
+  contents: write   # needed so the workflow can commit the updated data files
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch NFL team stats (nflverse, no key needed)
+        continue-on-error: true
+        run: python3 scripts/fetch_nfl.py
+
+      - name: Fetch NFL schedule + week odds (nflverse, no key needed)
+        continue-on-error: true
+        run: python3 scripts/fetch_nfl_schedule.py
+
+      - name: Fetch weather forecasts (National Weather Service, no key needed)
+        continue-on-error: true
+        run: python3 scripts/fetch_weather.py
+
+      - name: Fetch NFL current roster (nflverse, no key needed)
+        continue-on-error: true
+        run: python3 scripts/fetch_nfl_rosters.py
+
+      - name: Fetch NFL player stats (nflverse, no key needed)
+        continue-on-error: true
+        run: python3 scripts/fetch_players_nfl.py
+
+      - name: Fetch NFL injury report (nflverse, no key needed)
+        continue-on-error: true
+        run: python3 scripts/fetch_injuries_nfl.py
+
+      - name: Fetch CFB team stats (CollegeFootballData)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb.py
+
+      - name: Fetch CFB SP+ ratings (CollegeFootballData)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb_ratings.py
+
+      - name: Fetch CFB SRS ratings -- covers FCS teams, unlike SP+ (CollegeFootballData)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb_srs.py
+
+      - name: Fetch CFB schedule + rankings (CollegeFootballData)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb_schedule.py
+
+      - name: Fetch CFB current roster (CollegeFootballData)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_cfb_rosters.py
+
+      - name: Fetch CFB player stats (CollegeFootballData)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/fetch_players_cfb.py
+
+      - name: Fetch odds (The Odds API)
+        continue-on-error: true
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python3 scripts/fetch_odds.py
+
+      - name: Fetch real player-prop odds (The Odds API)
+        continue-on-error: true
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python3 scripts/fetch_player_props_odds.py
+
+      - name: Fetch real player-prop odds (SportsGameOdds)
+        continue-on-error: true
+        env:
+          SPORTSGAMEODDS_API_KEY: ${{ secrets.SPORTSGAMEODDS_API_KEY }}
+        run: python3 scripts/fetch_sportsgameodds_props.py
+
+      - name: Track predictions (log + grade Top Bets picks)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/track_predictions.py
+
+      - name: Calibrate confidence thresholds from track record
+        continue-on-error: true
+        run: python3 scripts/calibrate_model.py
+
+      - name: Train learned model from track record
+        continue-on-error: true
+        run: python3 scripts/train_model.py
+
+      - name: Commit updated data files
+        if: always()
+        run: |
+          git config user.name "matchup-room-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/*.json
+          git diff --staged --quiet || git commit -m "Auto-update stats/odds ($(date -u +%Y-%m-%d))"
+          git pull --rebase origin main
+          git push
