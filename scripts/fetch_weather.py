@@ -131,7 +131,20 @@ def classify_severity(period):
     wind_mph = max(wind_numbers) if wind_numbers else 0
     temp = period.get("temperature")
     short_forecast = (period.get("shortForecast") or "").lower()
-    precip = any(w in short_forecast for w in ["rain", "snow", "storm", "shower"])
+    # FIX, confirmed live against real coverage of an actual game: light,
+    # forecasted rain ("Sunday shower", "Light Rain") was being treated the
+    # same as heavy/torrential rain -- real analysts covering that exact
+    # game described light rain and single-digit wind as something that
+    # "likely will not impact too much of the game," but the old any()
+    # check would have flagged it severe anyway just because "rain"
+    # appeared in the text at all, regardless of how light. Now requires
+    # either an explicit heavy/intensity word, or "rain"/"snow" combined
+    # with at least moderately elevated wind -- light rain on a calm day
+    # no longer trips this alone, matching how real coverage actually
+    # distinguishes these games.
+    heavy_precip = any(w in short_forecast for w in ["heavy", "torrential", "downpour", "severe thunderstorm", "blizzard"])
+    any_precip = any(w in short_forecast for w in ["rain", "snow", "storm", "shower"])
+    precip = heavy_precip or (any_precip and wind_mph >= 15)
 
     severe = wind_mph >= 20 or precip or (isinstance(temp, (int, float)) and temp <= 20)
     return {
