@@ -143,8 +143,9 @@ def main():
         except (TypeError, ValueError):
             continue  # game hasn't been played yet
         week = g.get("week")
-        scores_by_team.setdefault(home, []).append({"for": hs, "against": as_, "week": week, "opp": away, "venue": "home"})
-        scores_by_team.setdefault(away, []).append({"for": as_, "against": hs, "week": week, "opp": home, "venue": "away"})
+        game_date = g.get("gameday")  # real calendar date (YYYY-MM-DD), confirmed present in nflverse's games.csv -- week number alone isn't enough to compute real rest-days between games (a Thursday game and a Sunday game can both be "week N" for their respective teams, but represent very different rest situations)
+        scores_by_team.setdefault(home, []).append({"for": hs, "against": as_, "week": week, "date": game_date, "opp": away, "venue": "home"})
+        scores_by_team.setdefault(away, []).append({"for": as_, "against": hs, "week": week, "date": game_date, "opp": home, "venue": "away"})
 
     per_team = {}  # team -> list of per-game dicts
     for game_id, teams_in_game in offense_by_game_team.items():
@@ -187,7 +188,7 @@ def main():
         for s in sorted_scores:
             result = "W" if s["for"] > s["against"] else ("L" if s["for"] < s["against"] else "T")
             game_log.append({
-                "week": s.get("week"),
+                "week": s.get("week"), "date": s.get("date"),
                 "opp": TEAM_NAME_MAP.get(s.get("opp"), s.get("opp")),
                 "teamScore": s["for"], "oppScore": s["against"], "result": result,
             })
