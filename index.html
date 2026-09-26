@@ -483,7 +483,8 @@
       </div>
       <div class="tabs" id="track-type-filter" style="margin-bottom:12px;">
         <div class="subtab active" data-tracktypefilter="ALL">All</div>
-        <div class="subtab" data-tracktypefilter="TEAM">Team bets</div>
+        <div class="subtab" data-tracktypefilter="SPREAD">Spread/ML</div>
+        <div class="subtab" data-tracktypefilter="TOTAL">Over/Under</div>
         <div class="subtab" data-tracktypefilter="PLAYER">Player props</div>
       </div>
       <div id="track-record-list" class="empty">Loading...</div>
@@ -1416,6 +1417,109 @@ function shrunkTeamStat(team, statKey, league){
   const leagueAvg = leagueAvgDefStat(league, statKey);
   return shrinkStat(raw, null, leagueAvg, gamesPlayed);
 }
+// Detects a likely backup/emergency QB situation for a team -- confirmed
+// live this was a real, meaningful gap: the model had no way to know a
+// team's QB situation had changed at all, using season-wide ppg built
+// mostly from games the normal starter played. Real example that
+// motivated this: Bears' starter and primary backup were both hurt in
+// the same week, dropping them to their 3rd-string QB -- the real market
+// line swung 6 points (Bears -1.5 to Bears +4.5) purely on that news, and
+// the model had zero mechanism to reflect any of it.
+//
+// Two independent signals, either one triggers the flag:
+// 1. RECENCY MISMATCH -- the team's season-long primary QB (most games
+//    played) is not the one who played most recently, meaning a backup
+//    has ALREADY taken meaningful snaps this season.
+// 2. INJURY REPORT -- the season-long primary QB is listed Out or
+//    Doubtful on the current injury report.
+//
+// HONEST LIMITATION: this can detect "a backup is playing" but not WHICH
+// backup, or how far down the depth chart the team has had to go. A
+// third-string emergency QB (like the Bears/Keenum case, since Keenum
+// has zero games logged this season and so isn't even visible to this
+// detection at all) is a much bigger downgrade than a normal primary
+// backup, but this applies the same flat penalty either way -- it's a
+// real, useful signal, not a complete substitute for actually knowing
+// this week's specific depth-chart situation.
+const BACKUP_QB_PENALTY = 5; // points off the team's projected offense when flagged -- a middle estimate grounded in the real 6-point Bears/Eagles market swing, not an exact calibration
+// Rest-days adjustment -- confirmed live this was a real, well-documented
+// gap with zero data-source cost: everything needed (real calendar dates
+// for each team's games) was already one field away in the same raw
+// nflverse data fetch_nfl.py already pulls, just never carried through
+// past "week number" into each team's game log. A short week (Thursday
+// game after a normal Sunday game, ~4 days rest instead of the usual ~7)
+// and an extra-rest week (coming off a bye, ~13-14 days) are both
+// commonly-documented factors in real sports analytics -- modest,
+// single-digit-point effects, not huge ones, which is why these
+// adjustments are kept small and symmetric rather than dramatic.
+const REST_SHORT_THRESHOLD = 5; // days -- at or below this counts as a short week
+const REST_LONG_THRESHOLD = 12; // days -- at or above this counts as extra rest (bye week territory)
+const REST_SHORT_PENALTY = 1.5; // points off projected offense on a short week
+const REST_LONG_BONUS = 1.0; // points added to projected offense coming off extra rest
+function computeRestDays(team, upcomingGameDate){
+  const games = team && team.games;
+  if(!games || !games.length || !upcomingGameDate) return null;
+  const lastGame = games[games.length-1];
+  if(!lastGame.date) return null; // older cached data without the date field yet -- gracefully skip rather than guess
+  const lastDate = new Date(lastGame.date+'T00:00:00Z');
+  const upcoming = new Date(upcomingGameDate+'T00:00:00Z');
+  const days = Math.round((upcoming-lastDate)/(1000*60*60*24));
+  return days>0 ? days : null; // negative/zero would mean bad data (upcoming date before last game) -- treat as unknown rather than apply a nonsensical adjustment
+}
+function restAdjustment(team, upcomingGameDate){
+  const days = computeRestDays(team, upcomingGameDate);
+  if(days===null) return 0;
+  if(days<=REST_SHORT_THRESHOLD) return -REST_SHORT_PENALTY;
+  if(days>=REST_LONG_THRESHOLD) return REST_LONG_BONUS;
+  return 0;
+}
+// Weather adjustment -- confirmed real via fetch_weather.py using the
+// National Weather Service's real public API structure. Applied to the
+// TOTAL (not one team's spread specifically), since bad weather affects
+// both offenses playing in the same conditions, not just one side.
+// NFL-only, home-team's stadium only (the away team plays in the SAME
+// conditions as the home team, so only one lookup per game is needed) --
+// see fetch_weather.py's docstring for the CFB scope decision.
+const WEATHER_TOTAL_PENALTY = 3; // points off the combined total when flagged severe -- a modest, commonly-cited magnitude for real bad-weather NFL games, not a dramatic one
+function weatherAdjustment(homeTeamName, league){
+  if(league!=='NFL') return 0;
+  const w = WEATHER_CACHE[homeTeamName];
+  if(!w || w.dome || !w.severe) return 0;
+  return -WEATHER_TOTAL_PENALTY;
+}
+function detectBackupQB(teamName, league){
+  if(league!=='NFL') return null; // injury report + this whole detection mechanism only covers NFL for now
+  const qbs = Object.keys(playersCache).filter(function(n){
+    const p = playersCache[n];
+    return p.team===teamName && p.pos==='QB' && p.league===league;
+  });
+  if(qbs.length<2) return null; // nothing to compare against
+  let primary = null, primaryGames = -1;
+  qbs.forEach(function(n){
+    const g = (playersCache[n].games||[]).length;
+    if(g>primaryGames){ primaryGames = g; primary = n; }
+  });
+  if(!primary || primaryGames<2) return null; // too little data to call anyone "the primary" confidently
+  let mostRecent = null, mostRecentKey = -1;
+  qbs.forEach(function(n){
+    const k = mostRecentGameKey(playersCache[n]);
+    if(k>mostRecentKey){ mostRecentKey = k; mostRecent = n; }
+  });
+  const recencyMismatch = mostRecent && mostRecent!==primary;
+
+  let injuryFlag = false;
+  const teamInjuries = (INJURIES_CACHE[teamName]||[]);
+  teamInjuries.forEach(function(e){
+    if(e.name===primary && e.pos==='QB' && (e.status==='Out' || e.status==='Doubtful')) injuryFlag = true;
+  });
+
+  if(!recencyMismatch && !injuryFlag) return null;
+  return {
+    primary: primary,
+    reason: injuryFlag ? (primary+' listed '+teamInjuries.find(function(e){return e.name===primary;}).status+' at QB')
+                        : (primary+'\'s backup has already played more recently this season'),
+  };
+}
 
 function wireHitRate(lg){
   document.getElementById(lg+'-run-hitrate').addEventListener('click', ()=>{
@@ -1540,7 +1644,7 @@ function venueAdjustedStat(venueStat, venueGames, seasonShrunkStat){
   if(venueStat===null || venueStat===undefined || !venueGames) return seasonShrunkStat;
   return (venueStat*venueGames + seasonShrunkStat*SHRINK_PRIOR_GAMES) / (venueGames + SHRINK_PRIOR_GAMES);
 }
-function computeProjection(nameA, nameB, league){
+function computeProjection(nameA, nameB, league, gameDate){
   const A = teamsCache[nameA], B = teamsCache[nameB];
   if(!A || !B) return null;
   const aPassOffS = shrunkTeamStat(A, 'passOff', league), aRushOffS = shrunkTeamStat(A, 'rushOff', league);
@@ -1571,9 +1675,16 @@ function computeProjection(nameA, nameB, league){
   const bPpg = venueAdjustedStat(B.homePpg, B.homeGames, bPpgSeason);
   const bPa = venueAdjustedStat(B.homePa, B.homeGames, bPaSeason);
 
+  const aQbFlag = detectBackupQB(nameA, league);
+  const bQbFlag = detectBackupQB(nameB, league);
+  const aRestAdj = restAdjustment(A, gameDate);
+  const bRestAdj = restAdjustment(B, gameDate);
+  const aPpgAdj = (aQbFlag ? aPpg - BACKUP_QB_PENALTY : aPpg) + aRestAdj;
+  const bPpgAdj = (bQbFlag ? bPpg - BACKUP_QB_PENALTY : bPpg) + bRestAdj;
+
   const homeAdv = HOME_ADV[league] || 2.0;
-  let aScoreBox = (aPpg + bPa)/2 - homeAdv/2 + aTo*TO_FACTOR;
-  let bScoreBox = (bPpg + aPa)/2 + homeAdv/2 + bTo*TO_FACTOR;
+  let aScoreBox = (aPpgAdj + bPa)/2 - homeAdv/2 + aTo*TO_FACTOR;
+  let bScoreBox = (bPpgAdj + aPa)/2 + homeAdv/2 + bTo*TO_FACTOR;
   const total = aScoreBox + bScoreBox;
   let spread = aScoreBox - bScoreBox; // positive = A favored
   let usedSP = false;
@@ -1625,11 +1736,15 @@ function computeProjection(nameA, nameB, league){
     usedSP = true; // treated the same as SP+ for confidence-tier purposes -- both are real opponent-adjusted signals
   }
 
+  const weatherAdj = weatherAdjustment(nameB, league); // B is the home team, see HOME_ADV convention above -- the game is played at B's stadium
+  total += weatherAdj;
+
   const aScore = Math.round((total + spread)/2);
   const bScore = Math.round((total - spread)/2);
   return {
     aScore, bScore, total: aScore+bScore, spread: aScore-bScore,
-    aPassProj, bPassProj, aRushProj, bRushProj, usedSP, marketAnchored
+    aPassProj, bPassProj, aRushProj, bRushProj, usedSP, marketAnchored,
+    aQbFlag, bQbFlag, aRestAdj, bRestAdj, weatherAdj,
   };
 }
 
@@ -1754,7 +1869,8 @@ function runMatchupFor(nameA, nameB, outId){
     const btn = document.getElementById(backBtnId);
     if(btn) btn.addEventListener('click', function(){ activateSubTab(lg+'-week'); window.scrollTo({top:0, behavior:'smooth'}); });
   }
-  const proj = computeProjection(nameA, nameB, league);
+  const muMarket = findMarketLine(nameA, nameB);
+  const proj = computeProjection(nameA, nameB, league, muMarket && muMarket.date);
   const A = teamsCache[nameA], B = teamsCache[nameB];
 
   const finalResult = findFinalScoreForMatchup(league, nameA, nameB);
@@ -1785,7 +1901,6 @@ function runMatchupFor(nameA, nameB, outId){
 
   out.innerHTML = backBtnHtml + '<div class="card"><h2>'+nameA+' vs '+nameB+'</h2><div class="proj-score"><div><div class="num">'+proj.aScore+'</div><div class="lbl">'+nameA+' proj.</div></div><div><div class="num">'+proj.bScore+'</div><div class="lbl">'+nameB+' proj.</div></div></div><div class="matchup-result">'+edgeRow('Proj. pass yds', proj.aPassProj, proj.bPassProj)+edgeRow('Proj. rush yds', proj.aRushProj, proj.bRushProj)+edgeRow('Turnover margin', A.to, B.to)+'</div><div style="display:flex;gap:8px;margin-top:12px;"><button class="secondary" id="'+addSpreadId+'">Add "'+spreadLabel+'" to parlay</button><button class="secondary" id="'+addTotalId+'">Add "Total '+totalLine+'" to parlay</button></div><div class="note">'+methodNote+'</div></div>'+renderGameBets(nameA, nameB);
   wireBackButton();
-  const muMarket = findMarketLine(nameA, nameB);
   let muSpreadProb = null, muTotalProb = null;
   if(muMarket){
     const muAIsEntryA = teamNamesMatch(muMarket.aTeam, nameA);
@@ -1935,10 +2050,10 @@ async function renderInjuries(){
 
 
 // ==================== top bets ====================
-function projectMatchup(nameA, nameB){
+function projectMatchup(nameA, nameB, gameDate){
   const A = teamsCache[nameA], B = teamsCache[nameB];
   if(!A || !B) return null;
-  return computeProjection(nameA, nameB, A.league); // same model as the Matchup tab -- see computeProjection
+  return computeProjection(nameA, nameB, A.league, gameDate); // same model as the Matchup tab -- see computeProjection
 }
 function teamNamesMatch(a, b){
   if(!a || !b) return false;
@@ -1956,6 +2071,8 @@ function findMarketLine(nameA, nameB){
 }
 let MODEL_CALIBRATION = null; // loaded at startup from data/calibration.json -- null until enough graded picks exist to calibrate from (see calibrate_model.py). Keyed by league (NFL/CFB calibrate independently -- see that script's docstring for why)
 let MODEL_WEIGHTS = null; // loaded at startup from data/model_weights.json -- null (or .trained===false) until enough graded team bets exist for train_model.py to trust a fit (see that script's docstring)
+let INJURIES_CACHE = {}; // loaded at startup from data/nfl-injuries.json -- keyed by team name -> list of {name, pos, injury, status}. Used by detectBackupQB(); see that function's comment for the honest limitations (this lags breaking news by a few days, since it only reflects official team-released reports)
+let WEATHER_CACHE = {}; // loaded at startup from data/weather.json -- keyed by HOME team name -> {dome:true} or {windMph, tempF, shortForecast, severe}. NFL-only, see fetch_weather.py's docstring for the scope reasoning
 let PLAYER_PROPS_ODDS = {}; // loaded at startup from data/player-props-odds.json -- real sportsbook player-prop lines (see fetch_player_props_odds.py). Keyed by player name -> stat -> {line, books}; empty object (not null) when unavailable so lookups can always safely use {} fallback
 // Applies the logistic regression trained in train_model.py to a single
 // candidate pick, mirroring that script's sigmoid(bias + w.edge*edge +
@@ -1998,7 +2115,7 @@ function computeAllBetCandidates(games, league){
   const MIN_LEARNED_PROB = 0.55; // modest bar above a coinflip -- once the model is trained, a pick clearing the edge threshold but predicted below this gets filtered out rather than shown anyway
   games.forEach(function(g){
     if(g.awayScore!=null && g.homeScore!=null) return; // game's already been played -- nothing left to bet on
-    const proj = projectMatchup(g.a, g.b);
+    const proj = projectMatchup(g.a, g.b, g.date);
     if(!proj) return;
     const market = findMarketLine(g.a, g.b);
     if(!market) return;
@@ -2253,16 +2370,22 @@ async function renderTrackRecord(){
 
   const leagueFiltered = trackFilter==='ALL' ? allPicks : allPicks.filter(function(p){ return p.league===trackFilter; });
   const typeFiltered = trackTypeFilter==='ALL' ? leagueFiltered : leagueFiltered.filter(function(p){
-    return trackTypeFilter==='PLAYER' ? p.type==='player_prop' : p.type!=='player_prop';
+    if(trackTypeFilter==='PLAYER') return p.type==='player_prop';
+    if(trackTypeFilter==='SPREAD') return p.type==='spread';
+    if(trackTypeFilter==='TOTAL') return p.type==='total';
+    return true;
   });
   const filtered = trackStatusFilter==='ALL' ? typeFiltered : typeFiltered.filter(function(p){
     return trackStatusFilter==='PENDING' ? p.status==='pending' : p.status!=='pending';
   });
 
-  // Overall summary -- team bets (spread/total) and player props are different
-  // kinds of bet with different expected baselines, so they're broken out
-  // separately rather than folded into one combined percentage.
-  const teamPicks = leagueFiltered.filter(function(p){ return p.type!=='player_prop'; });
+  // Overall summary -- spread, total, and player props each have
+  // different expected baselines and behave differently (confirmed live:
+  // splitting spread/total together as one "team bets" number masked
+  // real differences between how each is actually performing), so each
+  // gets its own line instead of being folded together.
+  const spreadPicks = leagueFiltered.filter(function(p){ return p.type==='spread'; });
+  const totalPicks = leagueFiltered.filter(function(p){ return p.type==='total'; });
   const propPicks = leagueFiltered.filter(function(p){ return p.type==='player_prop'; });
   const summaryEl = document.getElementById('track-record-summary');
   if(summaryEl){
@@ -2270,7 +2393,8 @@ async function renderTrackRecord(){
   }
   const splitEl = document.getElementById('track-record-split');
   if(splitEl){
-    splitEl.innerHTML = '<div class="history-item"><span>Team bets (spread/total)</span><span>'+summaryLine(summarizePicks(teamPicks))+'</span></div>'+
+    splitEl.innerHTML = '<div class="history-item"><span>Spread / ML</span><span>'+summaryLine(summarizePicks(spreadPicks))+'</span></div>'+
+      '<div class="history-item"><span>Over / Under</span><span>'+summaryLine(summarizePicks(totalPicks))+'</span></div>'+
       '<div class="history-item"><span>Player props</span><span>'+summaryLine(summarizePicks(propPicks))+'</span></div>';
   }
 
@@ -2293,9 +2417,10 @@ async function renderTrackRecord(){
     } else {
       weeklyEl.innerHTML = weeks.map(function(wk){
         const wkPicks = byWeek[wk].picks;
-        const wkTeam = wkPicks.filter(function(p){ return p.type!=='player_prop'; });
+        const wkSpread = wkPicks.filter(function(p){ return p.type==='spread'; });
+        const wkTotal = wkPicks.filter(function(p){ return p.type==='total'; });
         const wkProp = wkPicks.filter(function(p){ return p.type==='player_prop'; });
-        return '<div class="history-item"><span>'+wk+'</span><span>Team: '+summaryLine(summarizePicks(wkTeam))+' · Props: '+summaryLine(summarizePicks(wkProp))+'</span></div>';
+        return '<div class="history-item"><span>'+wk+'</span><span>Spread: '+summaryLine(summarizePicks(wkSpread))+' · O/U: '+summaryLine(summarizePicks(wkTotal))+' · Props: '+summaryLine(summarizePicks(wkProp))+'</span></div>';
       }).join('');
     }
   }
@@ -2580,7 +2705,8 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
   const nameB = document.getElementById('chk-teamB').value;
   const resultEl = document.getElementById('chk-result');
   if(!nameA || !nameB || nameA===nameB){ resultEl.innerHTML = '<div class="empty">Pick two different teams first.</div>'; return; }
-  const proj = computeProjection(nameA, nameB, league);
+  const chkMarket = findMarketLine(nameA, nameB);
+  const proj = computeProjection(nameA, nameB, league, chkMarket && chkMarket.date);
   if(!proj){ resultEl.innerHTML = '<div class="empty">Missing stats for one of those teams.</div>'; return; }
   const betType = document.getElementById('chk-type').value;
   let signedEdge, label, isFavorite, oddsGuess=-110;
@@ -2784,6 +2910,12 @@ if(globalSearchInput){
 (async function init(){
   try{ MODEL_CALIBRATION = await fetchJSON('./data/calibration.json'); }catch(e){ MODEL_CALIBRATION = null; }
   try{ MODEL_WEIGHTS = await fetchJSON('./data/model_weights.json'); }catch(e){ MODEL_WEIGHTS = null; }
+  try{
+    const injData = await fetchJSON('./data/nfl-injuries.json');
+    INJURIES_CACHE = {};
+    (injData.entries||[]).forEach(function(e){ (INJURIES_CACHE[e.team] = INJURIES_CACHE[e.team]||[]).push(e); });
+  }catch(e){ INJURIES_CACHE = {}; }
+  try{ WEATHER_CACHE = await fetchJSON('./data/weather.json'); }catch(e){ WEATHER_CACHE = {}; }
   try{ PLAYER_PROPS_ODDS = await fetchJSON('./data/player-props-odds.json'); }catch(e){ PLAYER_PROPS_ODDS = {}; }
   const calNote = document.getElementById('calibration-note');
   if(calNote && MODEL_CALIBRATION){
