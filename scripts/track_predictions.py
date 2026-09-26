@@ -140,7 +140,100 @@ def shrunk_team_stat(team, stat_key, teams, league):
     return shrink_stat(raw, None, league_avg, games_played)
 
 
-def compute_projection(a, b, teams, league, odds_list=None):
+BACKUP_QB_PENALTY = 5  # mirrors index.html's BACKUP_QB_PENALTY -- see detect_backup_qb() and that function's JS mirror for the full reasoning
+
+REST_SHORT_THRESHOLD = 5
+REST_LONG_THRESHOLD = 12
+REST_SHORT_PENALTY = 1.5
+REST_LONG_BONUS = 1.0
+
+
+def compute_rest_days(team, upcoming_game_date):
+    """Mirrors index.html's computeRestDays() -- see that function's
+    comment for the full reasoning."""
+    games = (team or {}).get("games")
+    if not games or not upcoming_game_date:
+        return None
+    last_game = games[-1]
+    if not last_game.get("date"):
+        return None
+    try:
+        last_date = datetime.date.fromisoformat(last_game["date"])
+        upcoming = datetime.date.fromisoformat(upcoming_game_date)
+    except (ValueError, TypeError):
+        return None
+    days = (upcoming - last_date).days
+    return days if days > 0 else None
+
+
+def rest_adjustment(team, upcoming_game_date):
+    """Mirrors index.html's restAdjustment()."""
+    days = compute_rest_days(team, upcoming_game_date)
+    if days is None:
+        return 0
+    if days <= REST_SHORT_THRESHOLD:
+        return -REST_SHORT_PENALTY
+    if days >= REST_LONG_THRESHOLD:
+        return REST_LONG_BONUS
+    return 0
+
+
+WEATHER_TOTAL_PENALTY = 3  # mirrors index.html's WEATHER_TOTAL_PENALTY
+
+
+def weather_adjustment(home_team_name, league, weather_cache):
+    """Mirrors index.html's weatherAdjustment() -- see that function's
+    comment for the full reasoning (NFL-only, home stadium only, applied
+    to the total rather than one team's spread since both teams play in
+    the same conditions)."""
+    if league != "NFL":
+        return 0
+    w = (weather_cache or {}).get(home_team_name)
+    if not w or w.get("dome") or not w.get("severe"):
+        return 0
+    return -WEATHER_TOTAL_PENALTY
+
+
+def detect_backup_qb(team_name, league, players, injuries_by_team):
+    """Mirrors index.html's detectBackupQB() -- see that function's
+    comment for the full reasoning and its honest limitations (same-week
+    in-game relief appearances create a recency tie this can't resolve;
+    catches a backup who's already started a separate game, or one
+    confirmed Out/Doubtful on the injury report, not every real
+    depth-chart change)."""
+    if league != "NFL":
+        return None
+    qbs = [n for n, p in players.items() if p.get("team") == team_name and p.get("pos") == "QB" and p.get("league") == league]
+    if len(qbs) < 2:
+        return None
+    primary, primary_games = None, -1
+    for n in qbs:
+        g = len(players[n].get("games") or [])
+        if g > primary_games:
+            primary_games, primary = g, n
+    if not primary or primary_games < 2:
+        return None
+    most_recent, most_recent_key = None, -1
+    for n in qbs:
+        k = most_recent_game_key(players[n])
+        if k > most_recent_key:
+            most_recent_key, most_recent = k, n
+    recency_mismatch = most_recent and most_recent != primary
+
+    injury_flag = False
+    injury_status = None
+    for e in injuries_by_team.get(team_name, []):
+        if e.get("name") == primary and e.get("pos") == "QB" and e.get("status") in ("Out", "Doubtful"):
+            injury_flag = True
+            injury_status = e.get("status")
+
+    if not recency_mismatch and not injury_flag:
+        return None
+    reason = f"{primary} listed {injury_status} at QB" if injury_flag else f"{primary}'s backup has already played more recently this season"
+    return {"primary": primary, "reason": reason}
+
+
+def compute_projection(a, b, teams, league, odds_list=None, players=None, injuries_by_team=None, game_date=None, weather_cache=None):
     A, B = teams.get(a), teams.get(b)
     if not A or not B:
         return None
@@ -161,11 +254,20 @@ def compute_projection(a, b, teams, league, odds_list=None):
     a_pa = venue_adjusted_stat(A.get("awayPa"), A.get("awayGames"), a_pa_season)
     b_ppg = venue_adjusted_stat(B.get("homePpg"), B.get("homeGames"), b_ppg_season)
     b_pa = venue_adjusted_stat(B.get("homePa"), B.get("homeGames"), b_pa_season)
-    a_score = (a_ppg + b_pa) / 2 - home_adv / 2 + a_to * TO_FACTOR
-    b_score = (b_ppg + a_pa) / 2 + home_adv / 2 + b_to * TO_FACTOR
+
+    a_qb_flag = detect_backup_qb(a, league, players or {}, injuries_by_team or {})
+    b_qb_flag = detect_backup_qb(b, league, players or {}, injuries_by_team or {})
+    a_rest_adj = rest_adjustment(A, game_date)
+    b_rest_adj = rest_adjustment(B, game_date)
+    a_ppg_adj = (a_ppg - BACKUP_QB_PENALTY if a_qb_flag else a_ppg) + a_rest_adj
+    b_ppg_adj = (b_ppg - BACKUP_QB_PENALTY if b_qb_flag else b_ppg) + b_rest_adj
+
+    a_score = (a_ppg_adj + b_pa) / 2 - home_adv / 2 + a_to * TO_FACTOR
+    b_score = (b_ppg_adj + a_pa) / 2 + home_adv / 2 + b_to * TO_FACTOR
     total = a_score + b_score
     spread = a_score - b_score
     market_anchored = False
+    used_sp = False
     market = find_market_line(a, b, odds_list) if odds_list else None
     market_has_spread = market and market.get("aSpread") is not None
     if league == "CFB" and isinstance(A.get("spPlus"), (int, float)) and isinstance(B.get("spPlus"), (int, float)):
@@ -178,6 +280,7 @@ def compute_projection(a, b, teams, league, odds_list=None):
         # rather than split evenly with the noisier box-score signal.
         sp_spread = (A["spPlus"] - B["spPlus"]) - home_adv
         spread = spread * 0.25 + sp_spread * 0.75
+        used_sp = True
     elif league == "CFB" and A.get("division") and B.get("division") and A["division"] != B["division"] and market_has_spread:
         # FBS vs FCS, and a real market line exists for this specific game
         # -- see index.html's computeProjection for the full explanation
@@ -197,9 +300,14 @@ def compute_projection(a, b, teams, league, odds_list=None):
         # bit less than SP+ since it's a simpler methodology.
         srs_spread = (A["srs"] - B["srs"]) - home_adv
         spread = spread * 0.3 + srs_spread * 0.7
+        used_sp = True  # treated the same as SP+ for confidence-tier purposes -- both are real opponent-adjusted signals
+
+    weather_adj = weather_adjustment(b, league, weather_cache)  # b is the home team, see HOME_ADV convention above
+    total += weather_adj
+
     a_final = round((total + spread) / 2)
     b_final = round((total - spread) / 2)
-    return {"aScore": a_final, "bScore": b_final, "total": a_final + b_final, "spread": a_final - b_final, "marketAnchored": market_anchored}
+    return {"aScore": a_final, "bScore": b_final, "total": a_final + b_final, "spread": a_final - b_final, "marketAnchored": market_anchored, "usedSP": used_sp, "aQbFlag": a_qb_flag, "bQbFlag": b_qb_flag}
 
 
 def team_names_match(a, b):
@@ -258,6 +366,24 @@ def load_model_weights():
     return load_json("data/model_weights.json", None)
 
 
+def confidence_tier(edge, used_sp, league, calibration):
+    """Mirrors index.html's confidenceTier() -- see that function's
+    comment for the full reasoning (per-league calibrated thresholds,
+    falling back to 7/3.5 defaults; a CFB pick without SP+/SRS backing
+    gets a starred, lower tier even at a big edge)."""
+    league_cal = (calibration or {}).get(league)
+    strong_threshold = league_cal["strong_threshold"] if league_cal and league_cal.get("calibrated") else 7
+    moderate_threshold = league_cal["moderate_threshold"] if league_cal and league_cal.get("calibrated") else 3.5
+    data_ok = league != "CFB" or used_sp
+    if edge >= strong_threshold and data_ok:
+        return "Strong"
+    if edge >= strong_threshold:
+        return "Strong*"
+    if edge >= moderate_threshold:
+        return "Moderate"
+    return "Lean"
+
+
 def predict_hit_probability(model_weights, edge, is_favorite, is_cfb):
     """Mirrors index.html's predictHitProbability() -- see that
     function's comment for the full reasoning. Returns None (not a
@@ -271,7 +397,7 @@ def predict_hit_probability(model_weights, edge, is_favorite, is_cfb):
     return 1 / (1 + math.exp(-z))
 
 
-def compute_team_bets(games, teams, odds_list, league):
+def compute_team_bets(games, teams, odds_list, league, players=None, injuries_by_team=None, weather_cache=None):
     """Every game's spread + total pick -- no top-N cut. (Was capped at 10
     by combined edge; that cap is what's removed here so the whole week's
     slate gets tracked, not just the model's most-confident-looking picks.)"""
@@ -280,7 +406,7 @@ def compute_team_bets(games, teams, odds_list, league):
     for g in games:
         if is_cross_division_game(g, teams, league):
             continue
-        proj = compute_projection(g["a"], g["b"], teams, league, odds_list)
+        proj = compute_projection(g["a"], g["b"], teams, league, odds_list, players, injuries_by_team, g.get("date"), weather_cache)
         if not proj:
             continue
         market = find_market_line(g["a"], g["b"], odds_list)
@@ -305,7 +431,7 @@ def compute_team_bets(games, teams, odds_list, league):
                     "type": "spread", "edge": abs(spread_edge),
                     "label": f"{favored_team} {'+' if favored_line and favored_line > 0 else ''}{favored_line}",
                     "matchup": f"{g['a']} vs {g['b']}", "favored_team": favored_team, "line": favored_line,
-                    "game_date": g.get("date"),
+                    "game_date": g.get("date"), "used_sp": proj.get("usedSP", False),
                 })
         total_val = market.get("total")
         if total_val is not None:
@@ -320,7 +446,7 @@ def compute_team_bets(games, teams, odds_list, league):
                     "type": "total", "edge": abs(total_edge),
                     "label": f"{'Over' if total_edge > 0 else 'Under'} {total_val}",
                     "matchup": f"{g['a']} vs {g['b']}", "direction": "over" if total_edge > 0 else "under", "line": total_val,
-                    "game_date": g.get("date"),
+                    "game_date": g.get("date"), "used_sp": proj.get("usedSP", False),
                 })
     return candidates
 
@@ -621,6 +747,14 @@ def main():
         key = f"{name} (CFB)" if existing and existing.get("league") != p.get("league") else name
         all_players[key] = p
 
+    injuries_data = load_json("data/nfl-injuries.json", {})
+    injuries_by_team = {}
+    for e in (injuries_data.get("entries") or []):
+        injuries_by_team.setdefault(e.get("team"), []).append(e)
+
+    calibration = load_json("data/calibration.json", {})
+    weather_cache = load_json("data/weather.json", {})
+
     nfl_sched = load_json("data/nfl-schedule.json", {"week": None, "games": []})
     cfb_games = load_json("data/cfb-schedule.json", [])
     odds = load_json("data/odds.json", [])
@@ -654,12 +788,26 @@ def main():
     for league, week_label, games in all_league_sources:
         if league not in active_leagues:
             continue
-        team_picks = compute_team_bets(games, teams, all_odds, league)
+        team_picks = compute_team_bets(games, teams, all_odds, league, all_players, injuries_by_team, weather_cache)
         matchup_teams = {f"{g['a']} vs {g['b']}": (g["a"], g["b"]) for g in games}
         for p in team_picks:
             pick_week_label = f"CFB-{p['game_date']}" if league == "CFB" and p.get("game_date") else week_label
             pid = f"{league}|{pick_week_label}|{p['matchup']}|{p['type']}"
             if pid in existing_ids:
+                continue
+            # NFL-ONLY selectivity filter, confirmed live this was needed:
+            # NFL spread picks were hitting 15/33 (45%, below breakeven)
+            # against real graded results, and checking whether bigger
+            # edges predicted better outcomes showed real (if imperfect)
+            # support -- top-half-by-edge picks hit 56% vs bottom-half's
+            # 35%. CFB team bets aren't included here: those already
+            # showed a much bigger, cleaner improvement from the
+            # turnover-margin and previous-season-prior fixes, so adding
+            # the same restriction there would just needlessly shrink an
+            # already-working sample. Only "Strong" counts -- "Strong*"
+            # (CFB-only tier, doesn't apply to NFL anyway) is excluded by
+            # this same check being NFL-scoped.
+            if league == "NFL" and confidence_tier(p["edge"], p.get("used_sp", False), league, calibration) != "Strong":
                 continue
             away, home = matchup_teams.get(p["matchup"], (None, None))
             record["picks"].append({
