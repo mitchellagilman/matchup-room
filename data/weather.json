@@ -1,15 +1,15 @@
 {
   "Buffalo Bills": {
-    "windMph": 14,
-    "tempF": 70,
-    "shortForecast": "Mostly Sunny",
+    "windMph": 5,
+    "tempF": 50,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "Cleveland Browns": {
-    "windMph": 14,
-    "tempF": 69,
-    "shortForecast": "Mostly Sunny",
+    "windMph": 7,
+    "tempF": 60,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
@@ -20,51 +20,51 @@
     "dome": true
   },
   "Jacksonville Jaguars": {
-    "windMph": 9,
-    "tempF": 81,
-    "shortForecast": "Sunny",
+    "windMph": 5,
+    "tempF": 61,
+    "shortForecast": "Mostly Clear",
     "severe": false,
     "dome": false
   },
   "Miami Dolphins": {
-    "windMph": 8,
-    "tempF": 87,
-    "shortForecast": "Sunny then Slight Chance Showers And Thunderstorms",
+    "windMph": 5,
+    "tempF": 72,
+    "shortForecast": "Mostly Clear",
     "severe": false,
     "dome": false
   },
   "New York Giants": {
-    "windMph": 25,
-    "tempF": 63,
-    "shortForecast": "Light Rain",
+    "windMph": 28,
+    "tempF": 57,
+    "shortForecast": "Heavy Rain",
     "severe": true,
     "dome": false
   },
   "Pittsburgh Steelers": {
-    "windMph": 14,
-    "tempF": 72,
-    "shortForecast": "Mostly Sunny",
+    "windMph": 7,
+    "tempF": 54,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "Washington Commanders": {
-    "windMph": 17,
-    "tempF": 67,
-    "shortForecast": "Light Rain Likely",
-    "severe": true,
+    "windMph": 10,
+    "tempF": 58,
+    "shortForecast": "Chance Light Rain",
+    "severe": false,
     "dome": false
   },
   "San Francisco 49ers": {
-    "windMph": 13,
-    "tempF": 72,
-    "shortForecast": "Sunny",
+    "windMph": 5,
+    "tempF": 54,
+    "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
   },
   "Tampa Bay Buccaneers": {
-    "windMph": 6,
-    "tempF": 86,
-    "shortForecast": "Sunny",
+    "windMph": 5,
+    "tempF": 66,
+    "shortForecast": "Mostly Clear",
     "severe": false,
     "dome": false
   },
@@ -75,16 +75,16 @@
     "dome": true
   },
   "Denver Broncos": {
-    "windMph": 9,
-    "tempF": 83,
-    "shortForecast": "Sunny",
+    "windMph": 5,
+    "tempF": 54,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "Chicago Bears": {
-    "windMph": 10,
-    "tempF": 66,
-    "shortForecast": "Sunny",
+    "windMph": 5,
+    "tempF": 57,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   }
