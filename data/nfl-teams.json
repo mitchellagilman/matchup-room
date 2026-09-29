@@ -241,14 +241,14 @@
   },
   "Chicago Bears": {
     "league": "NFL",
-    "record": "1-1",
-    "ppg": 31.0,
-    "pa": 23.0,
-    "passOff": 230.5,
-    "rushOff": 212.5,
-    "passDef": 252.0,
-    "rushDef": 122.0,
-    "to": 0.0,
+    "record": "2-1",
+    "ppg": 29.7,
+    "pa": 17.7,
+    "passOff": 236.0,
+    "rushOff": 184.3,
+    "passDef": 219.0,
+    "rushDef": 117.0,
+    "to": 1.0,
     "ats": "",
     "wk1": true,
     "games": [
@@ -267,14 +267,22 @@
         "teamScore": 3.0,
         "oppScore": 9.0,
         "result": "L"
+      },
+      {
+        "week": "3",
+        "date": "2026-09-28",
+        "opp": "Philadelphia Eagles",
+        "teamScore": 27.0,
+        "oppScore": 7.0,
+        "result": "W"
       }
     ],
     "prevPpg": 25.9,
     "prevPa": 24.4,
     "prevTo": 0.95,
-    "homePpg": 3.0,
-    "homePa": 9.0,
-    "homeGames": 1,
+    "homePpg": 15.0,
+    "homePa": 8.0,
+    "homeGames": 2,
     "awayPpg": 59.0,
     "awayPa": 37.0,
     "awayGames": 1
@@ -1097,14 +1105,14 @@
   },
   "Philadelphia Eagles": {
     "league": "NFL",
-    "record": "2-0",
-    "ppg": 24.0,
-    "pa": 21.0,
-    "passOff": 233.5,
-    "rushOff": 112.5,
-    "passDef": 173.5,
-    "rushDef": 127.0,
-    "to": -1.0,
+    "record": "2-1",
+    "ppg": 18.3,
+    "pa": 23.0,
+    "passOff": 206.7,
+    "rushOff": 110.7,
+    "passDef": 198.0,
+    "rushDef": 127.3,
+    "to": -1.67,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1123,6 +1131,14 @@
         "teamScore": 24.0,
         "oppScore": 20.0,
         "result": "W"
+      },
+      {
+        "week": "3",
+        "date": "2026-09-28",
+        "opp": "Chicago Bears",
+        "teamScore": 7.0,
+        "oppScore": 27.0,
+        "result": "L"
       }
     ],
     "prevPpg": 22.3,
@@ -1131,9 +1147,9 @@
     "homePpg": 24.0,
     "homePa": 22.0,
     "homeGames": 1,
-    "awayPpg": 24.0,
-    "awayPa": 20.0,
-    "awayGames": 1
+    "awayPpg": 15.5,
+    "awayPa": 23.5,
+    "awayGames": 2
   },
   "Pittsburgh Steelers": {
     "league": "NFL",
