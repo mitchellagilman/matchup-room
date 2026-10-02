@@ -1153,14 +1153,14 @@
   },
   "Pittsburgh Steelers": {
     "league": "NFL",
-    "record": "2-1",
-    "ppg": 17.7,
-    "pa": 20.0,
-    "passOff": 233.3,
-    "rushOff": 95.7,
-    "passDef": 211.0,
-    "rushDef": 113.0,
-    "to": 0.67,
+    "record": "2-2",
+    "ppg": 19.2,
+    "pa": 21.8,
+    "passOff": 249.8,
+    "rushOff": 94.8,
+    "passDef": 225.2,
+    "rushDef": 112.8,
+    "to": 0.5,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1187,6 +1187,14 @@
         "teamScore": 30.0,
         "oppScore": 27.0,
         "result": "W"
+      },
+      {
+        "week": "4",
+        "date": "2026-10-01",
+        "opp": "Cleveland Browns",
+        "teamScore": 24.0,
+        "oppScore": 27.0,
+        "result": "L"
       }
     ],
     "prevPpg": 23.4,
@@ -1195,9 +1203,9 @@
     "homePpg": 25.0,
     "homePa": 20.0,
     "homeGames": 2,
-    "awayPpg": 3.0,
-    "awayPa": 20.0,
-    "awayGames": 1
+    "awayPpg": 13.5,
+    "awayPa": 23.5,
+    "awayGames": 2
   },
   "Miami Dolphins": {
     "league": "NFL",
@@ -1393,13 +1401,13 @@
   },
   "Cleveland Browns": {
     "league": "NFL",
-    "record": "2-1",
-    "ppg": 18.0,
-    "pa": 23.7,
-    "passOff": 195.7,
-    "rushOff": 87.7,
-    "passDef": 239.3,
-    "rushDef": 120.3,
+    "record": "3-1",
+    "ppg": 20.2,
+    "pa": 23.8,
+    "passOff": 213.8,
+    "rushOff": 93.8,
+    "passDef": 254.2,
+    "rushDef": 113.2,
     "to": 0.0,
     "ats": "",
     "wk1": true,
@@ -1427,14 +1435,22 @@
         "teamScore": 21.0,
         "oppScore": 18.0,
         "result": "W"
+      },
+      {
+        "week": "4",
+        "date": "2026-10-01",
+        "opp": "Pittsburgh Steelers",
+        "teamScore": 27.0,
+        "oppScore": 24.0,
+        "result": "W"
       }
     ],
     "prevPpg": 16.4,
     "prevPa": 22.3,
     "prevTo": -0.35,
-    "homePpg": 21.0,
-    "homePa": 18.0,
-    "homeGames": 1,
+    "homePpg": 24.0,
+    "homePa": 21.0,
+    "homeGames": 2,
     "awayPpg": 16.5,
     "awayPa": 26.5,
     "awayGames": 2
