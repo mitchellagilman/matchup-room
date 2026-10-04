@@ -1,36 +1,36 @@
 {
   "Washington Commanders": {
-    "windMph": 8,
-    "tempF": 60,
+    "windMph": 7,
+    "tempF": 66,
     "shortForecast": "Rain Showers Likely",
     "severe": false,
     "dome": false
   },
   "Baltimore Ravens": {
-    "windMph": 5,
-    "tempF": 60,
-    "shortForecast": "Chance Rain Showers",
+    "windMph": 7,
+    "tempF": 67,
+    "shortForecast": "Rain Showers Likely",
     "severe": false,
     "dome": false
   },
   "Buffalo Bills": {
-    "windMph": 2,
-    "tempF": 43,
-    "shortForecast": "Mostly Clear",
+    "windMph": 8,
+    "tempF": 68,
+    "shortForecast": "Mostly Sunny",
     "severe": false,
     "dome": false
   },
   "Chicago Bears": {
     "windMph": 10,
-    "tempF": 52,
-    "shortForecast": "Mostly Clear",
+    "tempF": 53,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "Cincinnati Bengals": {
-    "windMph": 5,
-    "tempF": 52,
-    "shortForecast": "Partly Cloudy",
+    "windMph": 3,
+    "tempF": 74,
+    "shortForecast": "Mostly Sunny",
     "severe": false,
     "dome": false
   },
@@ -38,23 +38,23 @@
     "dome": true
   },
   "New York Giants": {
-    "windMph": 7,
-    "tempF": 60,
-    "shortForecast": "Slight Chance Rain Showers",
+    "windMph": 8,
+    "tempF": 66,
+    "shortForecast": "Chance Rain Showers",
     "severe": false,
     "dome": false
   },
   "Philadelphia Eagles": {
     "windMph": 10,
-    "tempF": 61,
-    "shortForecast": "Slight Chance Rain Showers",
+    "tempF": 66,
+    "shortForecast": "Chance Rain Showers",
     "severe": false,
     "dome": false
   },
   "Tampa Bay Buccaneers": {
-    "windMph": 6,
-    "tempF": 75,
-    "shortForecast": "Isolated Showers And Thunderstorms",
+    "windMph": 7,
+    "tempF": 90,
+    "shortForecast": "Mostly Sunny then Isolated Showers And Thunderstorms",
     "severe": false,
     "dome": false
   },
@@ -65,23 +65,23 @@
     "dome": true
   },
   "Seattle Seahawks": {
-    "windMph": 5,
-    "tempF": 56,
-    "shortForecast": "Mostly Cloudy",
+    "windMph": 2,
+    "tempF": 54,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "San Francisco 49ers": {
-    "windMph": 2,
-    "tempF": 61,
+    "windMph": 1,
+    "tempF": 66,
     "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "Carolina Panthers": {
-    "windMph": 2,
-    "tempF": 69,
-    "shortForecast": "Patchy Fog",
+    "windMph": 6,
+    "tempF": 72,
+    "shortForecast": "Patchy Fog then Chance Showers And Thunderstorms",
     "severe": false,
     "dome": false
   },
