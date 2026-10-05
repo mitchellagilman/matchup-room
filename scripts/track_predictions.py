@@ -384,6 +384,20 @@ def confidence_tier(edge, used_sp, league, calibration):
     return "Lean"
 
 
+def simplify_tier(tier_label):
+    """Collapses confidence_tier()'s 4-way label (Strong/Strong*/Moderate/
+    Lean) into the 3 user-facing strength buckets: Strong, Medium, Low.
+    Strong* (a real tier, but CFB-specific -- a big edge without SP+/SRS
+    backing) still counts as the Strong bucket here; the asterisk
+    distinction is preserved separately in the full "tier" field already
+    stored alongside this on each pick, for anyone who wants that detail."""
+    if tier_label in ("Strong", "Strong*"):
+        return "Strong"
+    if tier_label == "Moderate":
+        return "Medium"
+    return "Low"
+
+
 def predict_hit_probability(model_weights, edge, is_favorite, is_cfb):
     """Mirrors index.html's predictHitProbability() -- see that
     function's comment for the full reasoning. Returns None (not a
@@ -795,20 +809,15 @@ def main():
             pid = f"{league}|{pick_week_label}|{p['matchup']}|{p['type']}"
             if pid in existing_ids:
                 continue
-            # NFL-ONLY selectivity filter, confirmed live this was needed:
-            # NFL spread picks were hitting 15/33 (45%, below breakeven)
-            # against real graded results, and checking whether bigger
-            # edges predicted better outcomes showed real (if imperfect)
-            # support -- top-half-by-edge picks hit 56% vs bottom-half's
-            # 35%. CFB team bets aren't included here: those already
-            # showed a much bigger, cleaner improvement from the
-            # turnover-margin and previous-season-prior fixes, so adding
-            # the same restriction there would just needlessly shrink an
-            # already-working sample. Only "Strong" counts -- "Strong*"
-            # (CFB-only tier, doesn't apply to NFL anyway) is excluded by
-            # this same check being NFL-scoped.
-            if league == "NFL" and confidence_tier(p["edge"], p.get("used_sp", False), league, calibration) != "Strong":
-                continue
+            # Every pick gets tracked now, labeled by strength, instead of
+            # the earlier NFL-only "Strong tier only" exclusion -- that
+            # filter meant Week 4 logged just 1 NFL spread pick out of a
+            # full 16-game slate, which turned out to be a much bigger cut
+            # than intended once seen in practice. Tagging strength
+            # instead of filtering it out keeps every pick visible while
+            # still surfacing which ones the model is most confident in.
+            tier_label = confidence_tier(p["edge"], p.get("used_sp", False), league, calibration)
+            strength = simplify_tier(tier_label)
             away, home = matchup_teams.get(p["matchup"], (None, None))
             record["picks"].append({
                 "id": pid, "league": league, "week": pick_week_label, "matchup": p["matchup"],
@@ -816,6 +825,7 @@ def main():
                 "date_logged": today, "status": "pending", "graded_date": None,
                 "_away": away, "_home": home,
                 "line": p.get("line"), "favored_team": p.get("favored_team"), "direction": p.get("direction"),
+                "tier": tier_label, "strength": strength,
             })
             existing_ids.add(pid)
             logged += 1
@@ -842,8 +852,18 @@ def main():
                     existing_pick["edge"] = p.get("edge")
                     existing_pick["used_real_line"] = True
                     existing_pick["label"] = f"{p['name']} {dir_label} {p['projected']} {p['stat_label']}{line_source}"
+                    upgraded_tier = confidence_tier(p.get("edge") or 0, False, league, calibration)
+                    existing_pick["tier"] = upgraded_tier
+                    existing_pick["strength"] = simplify_tier(upgraded_tier)
                     upgraded += 1
                 continue
+            # Player props get the same strength label as team bets, using
+            # the real edge when a real sportsbook line backs this pick,
+            # or 0 (naturally landing in "Low") when it's still only the
+            # model's own self-generated number -- a prop with no real
+            # market comparison genuinely shouldn't claim high confidence.
+            prop_tier_label = confidence_tier(p.get("edge") or 0, False, league, calibration)
+            prop_strength = simplify_tier(prop_tier_label)
             record["picks"].append({
                 "id": pid, "league": league, "week": pick_week_label, "matchup": p["matchup"],
                 "type": "player_prop", "label": f"{p['name']} {dir_label} {p['projected']} {p['stat_label']}{line_source}",
@@ -851,6 +871,7 @@ def main():
                 "date_logged": today, "status": "pending", "graded_date": None,
                 "_player_name": p["name"], "_stat": p["stat"], "_logged_recency_key": p["_recency_key"],
                 "line": p["projected"], "direction": p["direction"], "used_real_line": p.get("used_real_line", False),
+                "tier": prop_tier_label, "strength": prop_strength,
             })
             existing_ids.add(pid)
             logged += 1
