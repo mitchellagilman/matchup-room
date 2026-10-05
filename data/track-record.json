@@ -15112,7 +15112,9 @@
       "_logged_recency_key": 202602,
       "line": 24.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|Xavier Robinson|rushYds|player_prop",
@@ -15163,7 +15165,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 16.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Rocky Beers|recYds|player_prop",
@@ -15180,7 +15184,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 26.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|LJ Martin|rushYds|player_prop",
@@ -15197,7 +15203,9 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
       "line": 108.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kyler Kasper|recYds|player_prop",
@@ -15214,7 +15222,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 35.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Walker Lyons|recYds|player_prop",
@@ -15333,7 +15343,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 33.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Mario Craver|recYds|player_prop",
@@ -15350,7 +15362,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 41.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|CJ Baxter Jr.|rushYds|player_prop",
@@ -15418,7 +15432,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202601,
       "line": 37.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jayvan Boggs|recYds|player_prop",
@@ -15435,7 +15451,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202601,
       "line": 17.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-18|Darian Mensah|passYds|player_prop",
@@ -15538,7 +15556,9 @@
       "_logged_recency_key": 202602,
       "line": 295.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|Yannick Smith|recYds|player_prop",
@@ -15556,7 +15576,9 @@
       "_logged_recency_key": 202602,
       "line": 38.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|Yamir Knight|recYds|player_prop",
@@ -15590,7 +15612,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202601,
       "line": 10.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-18|Giovanni Lopez|passYds|player_prop",
@@ -15607,7 +15631,9 @@
       "_stat": "passYds",
       "_logged_recency_key": 202602,
       "line": 137.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-18|Deuce Lawrence|rushYds|player_prop",
@@ -15692,7 +15718,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 50.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Trey'Dez Green|recYds|player_prop",
@@ -15709,7 +15737,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 50.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jackson Harris|recYds|player_prop",
@@ -15726,7 +15756,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 90.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kewan Lacy|rushYds|player_prop",
@@ -15811,7 +15843,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 42.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Keelon Russell|passYds|player_prop",
@@ -15845,7 +15879,9 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
       "line": 18.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kaleb Edwards|recYds|player_prop",
@@ -15913,7 +15949,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 65.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Troy Omeire|recYds|player_prop",
@@ -15930,7 +15968,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 15.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Dakota Twitty|recYds|player_prop",
@@ -15964,7 +16004,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 35.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Noah Rogers|recYds|player_prop",
@@ -15998,7 +16040,9 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
       "line": 18.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Josh Sapp|recYds|player_prop",
@@ -16032,7 +16076,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 45.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kenny Johnson|recYds|player_prop",
@@ -16185,7 +16231,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 18.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Tommy Maher|recYds|player_prop",
@@ -16202,7 +16250,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202601,
       "line": 36.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Cade Keith|recYds|player_prop",
@@ -16219,7 +16269,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 23.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Xavier Daisy|recYds|player_prop",
@@ -16236,7 +16288,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202512,
       "line": 27.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Caleb Cunningham|recYds|player_prop",
@@ -16270,7 +16324,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202513,
       "line": 50.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|James Laubstein|rushYds|player_prop",
@@ -16304,7 +16360,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 10.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Cedric Ross|recYds|player_prop",
@@ -16321,7 +16379,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 39.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Reginald Vick Jr|recYds|player_prop",
@@ -16338,7 +16398,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 45.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Reginald Virgil|recYds|player_prop",
@@ -16355,7 +16417,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202515,
       "line": 84.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Caleb Douglas (CFB)|recYds|player_prop",
@@ -16389,7 +16453,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 15.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Miller Moss (CFB)|passYds|player_prop",
@@ -16423,7 +16489,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202513,
       "line": 33.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Dacari Collins|recYds|player_prop",
@@ -16457,7 +16525,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 39.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|De'Zhaun Stribling (CFB)|recYds|player_prop",
@@ -16491,7 +16561,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202515,
       "line": 27.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Chase Roberts|recYds|player_prop",
@@ -16508,7 +16580,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202515,
       "line": 42.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Tanner Koziol (CFB)|recYds|player_prop",
@@ -16525,7 +16599,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 73.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Keontez Lewis|recYds|player_prop",
@@ -16542,7 +16618,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202513,
       "line": 10.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jaren Kanak|recYds|player_prop",
@@ -16593,7 +16671,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202513,
       "line": 57.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jordan Hudson|recYds|player_prop",
@@ -16610,7 +16690,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 114.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Tay Lanier|recYds|player_prop",
@@ -16627,7 +16709,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 34.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Zach Calzada|passYds|player_prop",
@@ -16695,7 +16779,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202515,
       "line": 101.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Josh Cuevas (CFB)|recYds|player_prop",
@@ -16712,7 +16798,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202512,
       "line": 53.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Thomas Castellanos|passYds|player_prop",
@@ -16746,7 +16834,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202507,
       "line": 54.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jeff Weimer|recYds|player_prop",
@@ -16763,7 +16853,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 40.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-18|Sawyer Racanelli|recYds|player_prop",
@@ -20996,7 +21088,9 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
       "line": 83.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|KJ Duff|recYds|player_prop",
@@ -21013,7 +21107,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 102.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jourdin Houston|recYds|player_prop",
@@ -21030,7 +21126,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 33.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Terrell Anderson|recYds|player_prop",
@@ -21047,7 +21145,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 42.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Miller Moss|passYds|player_prop",
@@ -21115,7 +21215,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 22.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kenny Fletcher|recYds|player_prop",
@@ -21337,7 +21439,9 @@
       "_logged_recency_key": 202602,
       "line": 143.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|Lloyd Avant|rushYds|player_prop",
@@ -21371,7 +21475,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 39.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ashton Daniels|passYds|player_prop",
@@ -21388,7 +21494,9 @@
       "_stat": "passYds",
       "_logged_recency_key": 202601,
       "line": 143.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Derrick McFall|rushYds|player_prop",
@@ -21439,7 +21547,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202601,
       "line": 59.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Tre Richardson|recYds|player_prop",
@@ -21456,7 +21566,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 67.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Daniel Hill|rushYds|player_prop",
@@ -21541,7 +21653,9 @@
       "_stat": "passYds",
       "_logged_recency_key": 202513,
       "line": 94.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Lotzeir Brooks|recYds|player_prop",
@@ -21558,7 +21672,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 37.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Deuce Alexander|recYds|player_prop",
@@ -21592,7 +21708,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202602,
       "line": 108.0,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ja'Kobi Lane|recYds|player_prop",
@@ -21609,7 +21727,9 @@
       "_stat": "recYds",
       "_logged_recency_key": 202514,
       "line": 67.5,
-      "direction": "over"
+      "direction": "over",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Deion Burks (CFB)|recYds|player_prop",
@@ -21677,7 +21797,9 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202514,
       "line": 26.5,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Thomas Castellanos|rushYds|player_prop",
@@ -21711,7 +21833,9 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202602,
       "line": 20.0,
-      "direction": "under"
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|J'Koby Williams|rushYds|player_prop",
@@ -21781,7 +21905,9 @@
       "_logged_recency_key": 202603,
       "line": 17.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Coy Eakin|recYds|player_prop",
@@ -21799,7 +21925,9 @@
       "_logged_recency_key": 202512,
       "line": 52.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Shahn Alston|rushYds|player_prop",
@@ -21817,7 +21945,9 @@
       "_logged_recency_key": 202602,
       "line": 31.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Amari Latimer|rushYds|player_prop",
@@ -21835,7 +21965,9 @@
       "_logged_recency_key": 202602,
       "line": 25.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|John Neider|recYds|player_prop",
@@ -21853,7 +21985,9 @@
       "_logged_recency_key": 202513,
       "line": 19.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|John Mateer|rushYds|player_prop",
@@ -21871,7 +22005,9 @@
       "_logged_recency_key": 202513,
       "line": 18.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Hayden Hansen|recYds|player_prop",
@@ -21889,7 +22025,9 @@
       "_logged_recency_key": 202513,
       "line": 17.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jojo Phillips|recYds|player_prop",
@@ -21907,7 +22045,9 @@
       "_logged_recency_key": 202513,
       "line": 20.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ashton Bethel-Roman|recYds|player_prop",
@@ -21925,7 +22065,9 @@
       "_logged_recency_key": 202513,
       "line": 61.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Tre Wisner|recYds|player_prop",
@@ -21943,7 +22085,9 @@
       "_logged_recency_key": 202513,
       "line": 14.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jalen Cooper|recYds|player_prop",
@@ -21961,7 +22105,9 @@
       "_logged_recency_key": 202506,
       "line": 49.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-18|Landon Morris|recYds|player_prop",
@@ -21979,7 +22125,9 @@
       "_logged_recency_key": 202511,
       "line": 29.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Landen Clark|rushYds|player_prop",
@@ -21997,7 +22145,9 @@
       "_logged_recency_key": 202513,
       "line": 59.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Keyjuan Brown|rushYds|player_prop",
@@ -22015,7 +22165,9 @@
       "_logged_recency_key": 202602,
       "line": 88.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jaleel Skinner|recYds|player_prop",
@@ -22033,7 +22185,9 @@
       "_logged_recency_key": 202512,
       "line": 22.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jekail Middlebrook|recYds|player_prop",
@@ -22051,7 +22205,9 @@
       "_logged_recency_key": 202513,
       "line": 58.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Johntay Cook II|recYds|player_prop",
@@ -22069,7 +22225,9 @@
       "_logged_recency_key": 202513,
       "line": 37.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Joshua Dye|rushYds|player_prop",
@@ -22087,7 +22245,9 @@
       "_logged_recency_key": 202513,
       "line": 117.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Darrion Bowers|rushYds|player_prop",
@@ -22105,7 +22265,9 @@
       "_logged_recency_key": 202602,
       "line": 29.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Behren Morton (CFB)|passYds|player_prop",
@@ -22141,7 +22303,9 @@
       "_logged_recency_key": 202512,
       "line": 84.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Dae'Quan Wright|recYds|player_prop",
@@ -22159,7 +22323,9 @@
       "_logged_recency_key": 202512,
       "line": 26.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Makai Lemon (CFB)|recYds|player_prop",
@@ -22177,7 +22343,9 @@
       "_logged_recency_key": 202513,
       "line": 77.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|TJ Harden|rushYds|player_prop",
@@ -22195,7 +22363,9 @@
       "_logged_recency_key": 202513,
       "line": 24.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-18|Eni Falayi|recYds|player_prop",
@@ -22213,7 +22383,9 @@
       "_logged_recency_key": 202511,
       "line": 37.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-18|Chevy Brenson|recYds|player_prop",
@@ -22231,7 +22403,9 @@
       "_logged_recency_key": 202513,
       "line": 30.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-18|Demond Claiborne (CFB)|rushYds|player_prop",
@@ -22249,7 +22423,9 @@
       "_logged_recency_key": 202513,
       "line": 47.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-18|C.J. Daniels|recYds|player_prop",
@@ -22267,7 +22443,9 @@
       "_logged_recency_key": 202509,
       "line": 58.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Javian Hester|recYds|player_prop",
@@ -22285,7 +22463,9 @@
       "_logged_recency_key": 202513,
       "line": 25.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ryan Williams|recYds|player_prop",
@@ -22303,7 +22483,9 @@
       "_logged_recency_key": 202513,
       "line": 41.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week2|Deshaun Watson|passYds|player_prop",
@@ -22699,7 +22881,9 @@
       "_logged_recency_key": 202512,
       "line": 26.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week3|Atlanta Falcons vs Green Bay Packers|spread",
@@ -27095,7 +27279,9 @@
       "_logged_recency_key": 202512,
       "line": 238.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week3|Jonnu Smith|recYds|player_prop",
@@ -28119,7 +28305,9 @@
       "_logged_recency_key": 202603,
       "line": 18.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Christian McCaffrey|rushYds|player_prop",
@@ -28191,7 +28379,9 @@
       "_logged_recency_key": 202603,
       "line": 21.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Deshaun Watson|passYds|player_prop",
@@ -28605,7 +28795,9 @@
       "_logged_recency_key": 202603,
       "line": 7.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|DK Metcalf|recYds|player_prop",
@@ -28641,7 +28833,9 @@
       "_logged_recency_key": 202603,
       "line": 18.0,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Terry McLaurin|recYds|player_prop",
@@ -28731,7 +28925,9 @@
       "_logged_recency_key": 202603,
       "line": 39.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|J.K. Dobbins|rushYds|player_prop",
@@ -28839,7 +29035,9 @@
       "_logged_recency_key": 202603,
       "line": 20.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Justin Jefferson|recYds|player_prop",
@@ -29091,7 +29289,9 @@
       "_logged_recency_key": 202603,
       "line": 28.0,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Trevor Lawrence|passYds|player_prop",
@@ -29217,7 +29417,9 @@
       "_logged_recency_key": 202603,
       "line": 78.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Chris Olave|recYds|player_prop",
@@ -29235,7 +29437,9 @@
       "_logged_recency_key": 202603,
       "line": 85.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Jameson Williams|recYds|player_prop",
@@ -29307,7 +29511,9 @@
       "_logged_recency_key": 202603,
       "line": 29.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Khalil Shakir|recYds|player_prop",
@@ -29343,7 +29549,9 @@
       "_logged_recency_key": 202603,
       "line": 19.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Moderate",
+      "strength": "Medium"
     },
     {
       "id": "NFL|NFL-Week4|Garrett Wilson|recYds|player_prop",
@@ -29667,7 +29875,9 @@
       "_logged_recency_key": 202603,
       "line": 86.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Jaxon Smith-Njigba|recYds|player_prop",
@@ -29865,7 +30075,9 @@
       "_logged_recency_key": 202515,
       "line": 25.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Jared Wayne|recYds|player_prop",
@@ -29901,7 +30113,9 @@
       "_logged_recency_key": 202603,
       "line": 19.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Ryan Miller|recYds|player_prop",
@@ -29919,7 +30133,9 @@
       "_logged_recency_key": 202603,
       "line": 19.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Brycen Tremayne|recYds|player_prop",
@@ -30081,7 +30297,9 @@
       "_logged_recency_key": 202601,
       "line": 18.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Sam LaPorta|recYds|player_prop",
@@ -30135,7 +30353,9 @@
       "_logged_recency_key": 202603,
       "line": 54.0,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Moderate",
+      "strength": "Medium"
     },
     {
       "id": "NFL|NFL-Week4|Jahmyr Gibbs|rushYds|player_prop",
@@ -30297,7 +30517,9 @@
       "_logged_recency_key": 202603,
       "line": 45.0,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Isaiah Williams|recYds|player_prop",
@@ -30351,7 +30573,9 @@
       "_logged_recency_key": 202603,
       "line": 20.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Bo Nix|passYds|player_prop",
@@ -30477,7 +30701,9 @@
       "_logged_recency_key": 202603,
       "line": 20.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Malik Washington|recYds|player_prop",
@@ -30567,7 +30793,9 @@
       "_logged_recency_key": 202603,
       "line": 46.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Caleb Williams|passYds|player_prop",
@@ -30837,7 +31065,9 @@
       "_logged_recency_key": 202601,
       "line": 23.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Keleki Latu|recYds|player_prop",
@@ -30855,7 +31085,9 @@
       "_logged_recency_key": 202518,
       "line": 16.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Woody Marks|rushYds|player_prop",
@@ -30981,7 +31213,9 @@
       "_logged_recency_key": 202601,
       "line": 6.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Bhayshul Tuten|rushYds|player_prop",
@@ -31089,7 +31323,9 @@
       "_logged_recency_key": 202602,
       "line": 17.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Tyler Shough|passYds|player_prop",
@@ -31107,7 +31343,9 @@
       "_logged_recency_key": 202603,
       "line": 256.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Quinshon Judkins|rushYds|player_prop",
@@ -31197,7 +31435,9 @@
       "_logged_recency_key": 202603,
       "line": 41.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Denzel Boston|recYds|player_prop",
@@ -31287,7 +31527,9 @@
       "_logged_recency_key": 202602,
       "line": 27.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Carnell Tate|recYds|player_prop",
@@ -31359,7 +31601,9 @@
       "_logged_recency_key": 202603,
       "line": 31.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|KC Concepcion|recYds|player_prop",
@@ -31521,7 +31765,9 @@
       "_logged_recency_key": 202518,
       "line": 17.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Sam Darnold|passYds|player_prop",
@@ -31611,7 +31857,9 @@
       "_logged_recency_key": 202517,
       "line": 33.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Zay Flowers|recYds|player_prop",
@@ -31683,7 +31931,9 @@
       "_logged_recency_key": 202603,
       "line": 224.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Moderate",
+      "strength": "Medium"
     },
     {
       "id": "NFL|NFL-Week4|Braxton Berrios|recYds|player_prop",
@@ -31701,7 +31951,9 @@
       "_logged_recency_key": 202508,
       "line": 19.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Nick Westbrook-Ikhine|recYds|player_prop",
@@ -31719,7 +31971,9 @@
       "_logged_recency_key": 202510,
       "line": 18.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Kevin Austin Jr.|recYds|player_prop",
@@ -31737,7 +31991,9 @@
       "_logged_recency_key": 202602,
       "line": 36.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Caleb Douglas|recYds|player_prop",
@@ -31808,7 +32064,9 @@
       "_logged_recency_key": 202604,
       "line": 37.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Cody White|recYds|player_prop",
@@ -32096,7 +32354,9 @@
       "_logged_recency_key": 202513,
       "line": 89.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Braden Pegan|recYds|player_prop",
@@ -32114,7 +32374,9 @@
       "_logged_recency_key": 202513,
       "line": 90.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Noah Bennee|recYds|player_prop",
@@ -32132,7 +32394,9 @@
       "_logged_recency_key": 202513,
       "line": 28.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|James Simon|rushYds|player_prop",
@@ -32150,7 +32414,9 @@
       "_logged_recency_key": 202507,
       "line": 60.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|Ryan Wingo|recYds|player_prop",
@@ -32168,7 +32434,9 @@
       "_logged_recency_key": 202513,
       "line": 81.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|Cam Coleman|recYds|player_prop",
@@ -32186,7 +32454,9 @@
       "_logged_recency_key": 202513,
       "line": 65.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|Emmett Mosley V|recYds|player_prop",
@@ -32204,7 +32474,9 @@
       "_logged_recency_key": 202513,
       "line": 66.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Chris Marshall|recYds|player_prop",
@@ -32222,7 +32494,9 @@
       "_logged_recency_key": 202509,
       "line": 51.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Donovan Faupel|recYds|player_prop",
@@ -32240,7 +32514,9 @@
       "_logged_recency_key": 202513,
       "line": 69.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Matt Zollers|passYds|player_prop",
@@ -32258,7 +32534,9 @@
       "_logged_recency_key": 202512,
       "line": 77.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Donovan Olugbode|recYds|player_prop",
@@ -32276,7 +32554,9 @@
       "_logged_recency_key": 202513,
       "line": 34.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Cayden Lee|recYds|player_prop",
@@ -32294,7 +32574,9 @@
       "_logged_recency_key": 202512,
       "line": 48.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|James Peoples|rushYds|player_prop",
@@ -32312,7 +32594,9 @@
       "_logged_recency_key": 202513,
       "line": 27.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Chase Sowell|recYds|player_prop",
@@ -32330,7 +32614,9 @@
       "_logged_recency_key": 202513,
       "line": 36.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Benjamin Brahmer|recYds|player_prop",
@@ -32348,7 +32634,9 @@
       "_logged_recency_key": 202513,
       "line": 56.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Charlie Becker|recYds|player_prop",
@@ -32366,7 +32654,9 @@
       "_logged_recency_key": 202512,
       "line": 51.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Nick Marsh|recYds|player_prop",
@@ -32384,7 +32674,9 @@
       "_logged_recency_key": 202513,
       "line": 63.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Shazz Preston|recYds|player_prop",
@@ -32402,7 +32694,9 @@
       "_logged_recency_key": 202513,
       "line": 84.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Alessio Milivojevic|passYds|player_prop",
@@ -32420,7 +32714,9 @@
       "_logged_recency_key": 202513,
       "line": 178.0,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|Camryn Edwards|rushYds|player_prop",
@@ -32438,7 +32734,9 @@
       "_logged_recency_key": 202513,
       "line": 48.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Savion Hiter|recYds|player_prop",
@@ -32456,7 +32754,9 @@
       "_logged_recency_key": 202602,
       "line": 7.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|JJ Buchanan|recYds|player_prop",
@@ -32474,7 +32774,9 @@
       "_logged_recency_key": 202513,
       "line": 72.0,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|Bo Jackson|rushYds|player_prop",
@@ -32492,7 +32794,9 @@
       "_logged_recency_key": 202513,
       "line": 106.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jeremiah Smith|recYds|player_prop",
@@ -32510,7 +32814,9 @@
       "_logged_recency_key": 202512,
       "line": 113.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Devin Mccuin|recYds|player_prop",
@@ -32528,7 +32834,9 @@
       "_logged_recency_key": 202512,
       "line": 75.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jordan Faison|recYds|player_prop",
@@ -32546,7 +32854,9 @@
       "_logged_recency_key": 202513,
       "line": 66.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong*",
+      "strength": "Strong"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jaden Greathouse|recYds|player_prop",
@@ -32564,7 +32874,9 @@
       "_logged_recency_key": 202505,
       "line": 32.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Craig Dandridge|recYds|player_prop",
@@ -32582,7 +32894,9 @@
       "_logged_recency_key": 202602,
       "line": 45.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Nick Peal|rushYds|player_prop",
@@ -32600,7 +32914,9 @@
       "_logged_recency_key": 202602,
       "line": 22.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Faizon Brandon|rushYds|player_prop",
@@ -32618,7 +32934,9 @@
       "_logged_recency_key": 202602,
       "line": 43.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Mike Matthews|recYds|player_prop",
@@ -32636,7 +32954,9 @@
       "_logged_recency_key": 202513,
       "line": 42.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Braylon Staley|recYds|player_prop",
@@ -32654,7 +32974,9 @@
       "_logged_recency_key": 202513,
       "line": 70.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ryan Staub|passYds|player_prop",
@@ -32672,7 +32994,9 @@
       "_logged_recency_key": 202510,
       "line": 104.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Hunter Welcing|recYds|player_prop",
@@ -32690,7 +33014,9 @@
       "_logged_recency_key": 202513,
       "line": 34.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Demick Starling|recYds|player_prop",
@@ -32708,7 +33034,9 @@
       "_logged_recency_key": 202602,
       "line": 24.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|Miles Campbell|recYds|player_prop",
@@ -32726,7 +33054,9 @@
       "_logged_recency_key": 202512,
       "line": 35.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jacob Conover|passYds|player_prop",
@@ -32744,7 +33074,9 @@
       "_logged_recency_key": 202511,
       "line": 71.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|K.D. Hutchinson|recYds|player_prop",
@@ -32762,7 +33094,9 @@
       "_logged_recency_key": 202513,
       "line": 43.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jasaiah Gathings|recYds|player_prop",
@@ -32780,7 +33114,9 @@
       "_logged_recency_key": 202513,
       "line": 21.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Chance Morrow|recYds|player_prop",
@@ -32798,7 +33134,9 @@
       "_logged_recency_key": 202504,
       "line": 42.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Rickie Collins|passYds|player_prop",
@@ -32816,7 +33154,9 @@
       "_logged_recency_key": 202511,
       "line": 189.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|A'Marion Peterson|rushYds|player_prop",
@@ -32834,7 +33174,9 @@
       "_logged_recency_key": 202513,
       "line": 17.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ardell Banks|recYds|player_prop",
@@ -32852,7 +33194,9 @@
       "_logged_recency_key": 202513,
       "line": 22.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|TJ Lott|recYds|player_prop",
@@ -32870,7 +33214,9 @@
       "_logged_recency_key": 202507,
       "line": 36.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kenric Lanier II|recYds|player_prop",
@@ -32888,7 +33234,9 @@
       "_logged_recency_key": 202509,
       "line": 40.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Grady Brosterhous|rushYds|player_prop",
@@ -32906,7 +33254,9 @@
       "_logged_recency_key": 202602,
       "line": 47.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Terik Mulder|recYds|player_prop",
@@ -32924,7 +33274,9 @@
       "_logged_recency_key": 202513,
       "line": 13.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Zack Marshall|recYds|player_prop",
@@ -32942,7 +33294,9 @@
       "_logged_recency_key": 202513,
       "line": 27.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Trevor Wilson|recYds|player_prop",
@@ -32960,7 +33314,9 @@
       "_logged_recency_key": 202513,
       "line": 26.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Maurice Stephens|rushYds|player_prop",
@@ -32978,7 +33334,9 @@
       "_logged_recency_key": 202513,
       "line": 12.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Wayne Harris|recYds|player_prop",
@@ -32996,7 +33354,9 @@
       "_logged_recency_key": 202513,
       "line": 31.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|TK Keyes|recYds|player_prop",
@@ -33014,7 +33374,9 @@
       "_logged_recency_key": 202602,
       "line": 72.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Judah Ezinwa|recYds|player_prop",
@@ -33032,7 +33394,9 @@
       "_logged_recency_key": 202507,
       "line": 26.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Anthony Garcia|recYds|player_prop",
@@ -33050,7 +33414,9 @@
       "_logged_recency_key": 202513,
       "line": 31.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ian Duarte|recYds|player_prop",
@@ -33068,7 +33434,9 @@
       "_logged_recency_key": 202513,
       "line": 37.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Javon Robinson|recYds|player_prop",
@@ -33086,7 +33454,9 @@
       "_logged_recency_key": 202513,
       "line": 33.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Zion Booker|recYds|player_prop",
@@ -33104,7 +33474,9 @@
       "_logged_recency_key": 202509,
       "line": 46.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jacob Washington|rushYds|player_prop",
@@ -33122,7 +33494,9 @@
       "_logged_recency_key": 202513,
       "line": 49.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Carver Cheeks|recYds|player_prop",
@@ -33140,7 +33514,9 @@
       "_logged_recency_key": 202513,
       "line": 24.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Brayden Munroe|recYds|player_prop",
@@ -33158,7 +33534,9 @@
       "_logged_recency_key": 202513,
       "line": 51.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Cash Cheeks|recYds|player_prop",
@@ -33176,7 +33554,9 @@
       "_logged_recency_key": 202602,
       "line": 22.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ahmad Hardy|rushYds|player_prop",
@@ -33194,7 +33574,9 @@
       "_logged_recency_key": 202513,
       "line": 77.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kyri Shoels|recYds|player_prop",
@@ -33212,7 +33594,9 @@
       "_logged_recency_key": 202513,
       "line": 90.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Raymond Moore III|rushYds|player_prop",
@@ -33230,7 +33614,9 @@
       "_logged_recency_key": 202513,
       "line": 47.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Triston Morgan|rushYds|player_prop",
@@ -33248,7 +33634,9 @@
       "_logged_recency_key": 202602,
       "line": 39.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Le'Kamren Meadows|rushYds|player_prop",
@@ -33266,7 +33654,9 @@
       "_logged_recency_key": 202602,
       "line": 28.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Devaughn Slaughter|recYds|player_prop",
@@ -33284,7 +33674,9 @@
       "_logged_recency_key": 202513,
       "line": 44.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Clint Walker|recYds|player_prop",
@@ -33302,7 +33694,9 @@
       "_logged_recency_key": 202602,
       "line": 16.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Gavin Griffin|rushYds|player_prop",
@@ -33320,7 +33714,9 @@
       "_logged_recency_key": 202602,
       "line": 56.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|AJ Wilson|recYds|player_prop",
@@ -33338,7 +33734,9 @@
       "_logged_recency_key": 202513,
       "line": 36.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|David Amador|recYds|player_prop",
@@ -33356,7 +33754,9 @@
       "_logged_recency_key": 202513,
       "line": 58.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jairus Mack|recYds|player_prop",
@@ -33374,7 +33774,9 @@
       "_logged_recency_key": 202513,
       "line": 29.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kelby Williams|recYds|player_prop",
@@ -33392,7 +33794,9 @@
       "_logged_recency_key": 202512,
       "line": 33.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Matthew Henry|recYds|player_prop",
@@ -33410,7 +33814,9 @@
       "_logged_recency_key": 202513,
       "line": 49.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Taylen Green (CFB)|rushYds|player_prop",
@@ -33446,7 +33852,9 @@
       "_logged_recency_key": 202513,
       "line": 57.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Eric Willis III|recYds|player_prop",
@@ -33464,7 +33872,9 @@
       "_logged_recency_key": 202512,
       "line": 31.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Brady Boyd|recYds|player_prop",
@@ -33482,7 +33892,9 @@
       "_logged_recency_key": 202513,
       "line": 39.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Zachariah Branch (CFB)|recYds|player_prop",
@@ -33500,7 +33912,9 @@
       "_logged_recency_key": 202513,
       "line": 67.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Oscar Delp (CFB)|recYds|player_prop",
@@ -33518,7 +33932,9 @@
       "_logged_recency_key": 202512,
       "line": 35.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Colbie Young (CFB)|recYds|player_prop",
@@ -33554,7 +33970,9 @@
       "_logged_recency_key": 202512,
       "line": 85.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Elijah Sarratt (CFB)|recYds|player_prop",
@@ -33572,7 +33990,9 @@
       "_logged_recency_key": 202509,
       "line": 91.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Tray Taylor|recYds|player_prop",
@@ -33590,7 +34010,9 @@
       "_logged_recency_key": 202513,
       "line": 48.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Ethan Conner|recYds|player_prop",
@@ -33608,7 +34030,9 @@
       "_logged_recency_key": 202513,
       "line": 34.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Dallen Bentley (CFB)|recYds|player_prop",
@@ -33644,7 +34068,9 @@
       "_logged_recency_key": 202513,
       "line": 20.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jack Velling|recYds|player_prop",
@@ -33662,7 +34088,9 @@
       "_logged_recency_key": 202513,
       "line": 22.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Donaven McCulley|recYds|player_prop",
@@ -33680,7 +34108,9 @@
       "_logged_recency_key": 202513,
       "line": 19.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Al-Jay Henderson|rushYds|player_prop",
@@ -33698,7 +34128,9 @@
       "_logged_recency_key": 202513,
       "line": 51.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Carnell Tate (CFB)|recYds|player_prop",
@@ -33716,7 +34148,9 @@
       "_logged_recency_key": 202510,
       "line": 129.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-20|Jack Endries (CFB)|recYds|player_prop",
@@ -33734,7 +34168,9 @@
       "_logged_recency_key": 202513,
       "line": 24.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Devonte Ross|recYds|player_prop",
@@ -33752,7 +34188,9 @@
       "_logged_recency_key": 202513,
       "line": 32.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Gabriel Benyard|recYds|player_prop",
@@ -33770,7 +34208,9 @@
       "_logged_recency_key": 202513,
       "line": 82.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Chris Brazzell II|recYds|player_prop",
@@ -33788,7 +34228,9 @@
       "_logged_recency_key": 202513,
       "line": 62.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Jeremiyah Love (CFB)|rushYds|player_prop",
@@ -33806,7 +34248,9 @@
       "_logged_recency_key": 202513,
       "line": 122.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Eli Raridon (CFB)|recYds|player_prop",
@@ -33824,7 +34268,9 @@
       "_logged_recency_key": 202512,
       "line": 52.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Malachi Fields (CFB)|recYds|player_prop",
@@ -33842,7 +34288,9 @@
       "_logged_recency_key": 202513,
       "line": 46.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Rohan Jones|recYds|player_prop",
@@ -33860,7 +34308,9 @@
       "_logged_recency_key": 202513,
       "line": 46.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Zy'Aire Fletcher|recYds|player_prop",
@@ -33878,7 +34328,9 @@
       "_logged_recency_key": 202508,
       "line": 18.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Kevin Coleman Jr. (CFB)|recYds|player_prop",
@@ -33896,7 +34348,9 @@
       "_logged_recency_key": 202513,
       "line": 61.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Trebor Pena|recYds|player_prop",
@@ -33914,7 +34368,9 @@
       "_logged_recency_key": 202513,
       "line": 44.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Kendre Miller|rushYds|player_prop",
@@ -33932,7 +34388,9 @@
       "_logged_recency_key": 202603,
       "line": 26.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Jordan Watkins|recYds|player_prop",
@@ -33950,7 +34408,9 @@
       "_logged_recency_key": 202603,
       "line": 20.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "CFB|CFB-2026-09-19|Taylen Green|rushYds|player_prop",
@@ -33968,7 +34428,9 @@
       "_logged_recency_key": 202513,
       "line": 36.5,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Indianapolis Colts vs Washington Commanders|total",
@@ -34091,7 +34553,9 @@
       "_logged_recency_key": 202604,
       "line": 44.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Moderate",
+      "strength": "Medium"
     },
     {
       "id": "NFL|NFL-Week4|Dyami Brown|recYds|player_prop",
@@ -34109,7 +34573,9 @@
       "_logged_recency_key": 202604,
       "line": 23.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Noah Gray|recYds|player_prop",
@@ -34127,7 +34593,9 @@
       "_logged_recency_key": 202604,
       "line": 8.5,
       "direction": "over",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Chris Brooks|rushYds|player_prop",
@@ -34145,7 +34613,9 @@
       "_logged_recency_key": 202604,
       "line": 24.0,
       "direction": "under",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Braelon Allen|rushYds|player_prop",
@@ -34163,7 +34633,9 @@
       "_logged_recency_key": 202604,
       "line": 56.5,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
     },
     {
       "id": "NFL|NFL-Week4|Jaylin Lane|recYds|player_prop",
@@ -34181,7 +34653,9 @@
       "_logged_recency_key": 202603,
       "line": 23.0,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Cam Skattebo|rushYds|player_prop",
@@ -34199,7 +34673,9 @@
       "_logged_recency_key": 202604,
       "line": 63.0,
       "direction": "under",
-      "used_real_line": true
+      "used_real_line": true,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Efton Chism III|recYds|player_prop",
@@ -34217,7 +34693,9 @@
       "_logged_recency_key": 202604,
       "line": 38.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Ashton Dulin|recYds|player_prop",
@@ -34235,7 +34713,9 @@
       "_logged_recency_key": 202604,
       "line": 30.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Brandin Cooks|recYds|player_prop",
@@ -34253,7 +34733,9 @@
       "_logged_recency_key": 202517,
       "line": 16.5,
       "direction": "over",
-      "used_real_line": false
+      "used_real_line": false,
+      "tier": "Lean",
+      "strength": "Low"
     },
     {
       "id": "NFL|NFL-Week4|Pittsburgh Steelers vs Cleveland Browns|spread",
