@@ -481,6 +481,11 @@
       <div id="track-record-split"></div>
     </div>
     <div class="card">
+      <h2>By strength</h2>
+      <div class="note" style="margin-top:0;">How picks have actually graded, broken out by confidence tier at the time each was logged.</div>
+      <div id="track-record-by-strength"></div>
+    </div>
+    <div class="card">
       <h2>Weekly breakdown</h2>
       <div id="track-record-weekly" class="empty">Loading...</div>
     </div>
@@ -496,6 +501,12 @@
         <div class="subtab" data-tracktypefilter="SPREAD">Spread/ML</div>
         <div class="subtab" data-tracktypefilter="TOTAL">Over/Under</div>
         <div class="subtab" data-tracktypefilter="PLAYER">Player props</div>
+      </div>
+      <div class="tabs" id="track-strength-filter" style="margin-bottom:12px;">
+        <div class="subtab active" data-trackstrengthfilter="ALL">All strengths</div>
+        <div class="subtab" data-trackstrengthfilter="Strong">Strong</div>
+        <div class="subtab" data-trackstrengthfilter="Medium">Medium</div>
+        <div class="subtab" data-trackstrengthfilter="Low">Low</div>
       </div>
       <div id="track-record-list" class="empty">Loading...</div>
     </div>
@@ -2409,6 +2420,7 @@ async function renderTopBets(){
 // ---- Track record ----
 let trackFilter = 'ALL';
 let trackTypeFilter = 'ALL';
+let trackStrengthFilter = 'ALL';
 let trackStatusFilter = 'FINISHED'; // defaults to Finished -- with hundreds of new pending picks logged every week, "All" sorted by date_logged buries every finished bet under the current week's fresh pending ones
 let trackSeasonFilter = 'MAIN'; // MAIN = everything after the test-week cutoff (the "real" record); TEST = the first TEST_WEEKS_CUTOFF weeks only
 
@@ -2468,7 +2480,8 @@ async function renderTrackRecord(){
     if(trackTypeFilter==='TOTAL') return p.type==='total';
     return true;
   });
-  const filtered = trackStatusFilter==='ALL' ? typeFiltered : typeFiltered.filter(function(p){
+  const strengthFiltered = trackStrengthFilter==='ALL' ? typeFiltered : typeFiltered.filter(function(p){ return p.strength===trackStrengthFilter; });
+  const filtered = trackStatusFilter==='ALL' ? strengthFiltered : strengthFiltered.filter(function(p){
     return trackStatusFilter==='PENDING' ? p.status==='pending' : p.status!=='pending';
   });
 
@@ -2489,6 +2502,25 @@ async function renderTrackRecord(){
     splitEl.innerHTML = '<div class="history-item"><span>Spread / ML</span><span>'+summaryLine(summarizePicks(spreadPicks))+'</span></div>'+
       '<div class="history-item"><span>Over / Under</span><span>'+summaryLine(summarizePicks(totalPicks))+'</span></div>'+
       '<div class="history-item"><span>Player props</span><span>'+summaryLine(summarizePicks(propPicks))+'</span></div>';
+  }
+
+  // By strength -- confirmed live this was a real, separate ask from the
+  // live "this week by strength" view: seeing how each confidence tier
+  // has actually graded historically, not just this week's upcoming
+  // picks. Older picks logged before the tier/strength fields existed
+  // (and anything track_predictions.py's backfill hasn't reached yet)
+  // show in their own "Not yet labeled" bucket rather than being
+  // silently dropped or miscounted into one of the real tiers.
+  const strengthEl = document.getElementById('track-record-by-strength');
+  if(strengthEl){
+    const strongPicks = leagueFiltered.filter(function(p){ return p.strength==='Strong'; });
+    const mediumPicks = leagueFiltered.filter(function(p){ return p.strength==='Medium'; });
+    const lowPicks = leagueFiltered.filter(function(p){ return p.strength==='Low'; });
+    const unlabeledPicks = leagueFiltered.filter(function(p){ return !p.strength; });
+    strengthEl.innerHTML = '<div class="history-item"><span>Strong</span><span>'+summaryLine(summarizePicks(strongPicks))+'</span></div>'+
+      '<div class="history-item"><span>Medium</span><span>'+summaryLine(summarizePicks(mediumPicks))+'</span></div>'+
+      '<div class="history-item"><span>Low</span><span>'+summaryLine(summarizePicks(lowPicks))+'</span></div>'+
+      (unlabeledPicks.length ? '<div class="history-item"><span>Not yet labeled</span><span>'+summaryLine(summarizePicks(unlabeledPicks))+'</span></div>' : '');
   }
 
   // Weekly breakdown -- grouped by the week label already stored on each
@@ -2562,6 +2594,13 @@ document.querySelectorAll('#track-type-filter [data-tracktypefilter]').forEach(f
   btn.addEventListener('click', function(){
     trackTypeFilter = btn.dataset.tracktypefilter;
     document.querySelectorAll('#track-type-filter [data-tracktypefilter]').forEach(function(b){ b.classList.toggle('active', b===btn); });
+    renderTrackRecord();
+  });
+});
+document.querySelectorAll('#track-strength-filter [data-trackstrengthfilter]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    trackStrengthFilter = btn.dataset.trackstrengthfilter;
+    document.querySelectorAll('#track-strength-filter [data-trackstrengthfilter]').forEach(function(b){ b.classList.toggle('active', b===btn); });
     renderTrackRecord();
   });
 });
