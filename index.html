@@ -414,6 +414,16 @@
         <div class="note" id="learned-model-note"></div>
       </div>
       <div class="card">
+        <h2>NFL — this week by strength</h2>
+        <div class="note" style="margin-top:0;">Every game this week, grouped by confidence tier -- not just a top-10 cut, the whole slate.</div>
+        <div id="nfl-bets-by-strength">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>NCAA — this week by strength</h2>
+        <div class="note" style="margin-top:0;">Every ranked matchup this week, grouped by confidence tier -- not just a top-10 cut, the whole slate.</div>
+        <div id="cfb-bets-by-strength">Loading...</div>
+      </div>
+      <div class="card">
         <h2>NFL — top 10</h2>
         <div id="nfl-topbets-list" class="empty">Loading...</div>
       </div>
@@ -2150,6 +2160,16 @@ function confidenceTier(edge, usedSP, league){
   if(edge>=moderateThreshold) return {label:'Moderate', cls:'mid'};
   return {label:'Lean', cls:'low'};
 }
+// Mirrors track_predictions.py's simplify_tier() -- collapses the 4-way
+// tier label into the 3 user-facing strength buckets. See that
+// function's comment for the full reasoning (Strong* still counts as
+// Strong here; the asterisk distinction stays visible elsewhere via the
+// full tier label, just not in this simplified bucketing).
+function simplifyTier(tierLabel){
+  if(tierLabel==='Strong' || tierLabel==='Strong*') return 'Strong';
+  if(tierLabel==='Moderate') return 'Medium';
+  return 'Low';
+}
 function computeAllBetCandidates(games, league){
   const candidates = [];
   const MIN_LEARNED_PROB = 0.55; // modest bar above a coinflip -- once the model is trained, a pick clearing the edge threshold but predicted below this gets filtered out rather than shown anyway
@@ -2277,6 +2297,37 @@ function renderParlaysList(elId, parlays){
     });
   });
 }
+// Groups every candidate this week (not just a top-10 cut) into Strong /
+// Medium / Low sections, so the whole week's picks can be scanned by
+// confidence without clicking into each individual game -- confirmed
+// live this was a real gap: the only way to see a pick's tier before
+// this was opening its specific matchup one at a time.
+function renderBetsByStrength(elId, games, league){
+  const el = document.getElementById(elId);
+  const all = computeAllBetCandidates(games, league);
+  if(all.length===0){
+    el.innerHTML = '<div class="empty">No matchups with both team stats and a market line loaded yet this week.</div>';
+    return;
+  }
+  const groups = {Strong: [], Medium: [], Low: []};
+  all.forEach(function(b){ groups[simplifyTier(b.tier.label)].push(b); });
+  ['Strong','Medium','Low'].forEach(function(bucket){ groups[bucket].sort(function(a,b){ return b.edge-a.edge; }); });
+  const bucketStyle = {
+    Strong: 'background:rgba(51,211,153,0.18);color:#5eead4;',
+    Medium: 'background:rgba(240,185,61,0.18);',
+    Low: 'background:rgba(136,146,176,0.18);',
+  };
+  el.innerHTML = ['Strong','Medium','Low'].map(function(bucket){
+    const items = groups[bucket];
+    const header = '<div style="display:flex;align-items:center;gap:8px;margin:14px 0 8px;"><span class="pill" style="'+bucketStyle[bucket]+'">'+bucket+'</span><span class="team-meta">'+items.length+' pick'+(items.length===1?'':'s')+'</span></div>';
+    const body = items.length
+      ? items.map(function(b){
+          return '<div class="team-row"><div><div class="team-name">'+b.label+'</div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
+        }).join('')
+      : '<div class="empty" style="padding:10px 0;">None this week</div>';
+    return header + body;
+  }).join('');
+}
 function renderTopBetsList(elId, bets){
   const el = document.getElementById(elId);
   if(bets.length===0){
@@ -2345,6 +2396,8 @@ function renderPlayerBetsList(elId, bets){
 
 async function renderTopBets(){
   await loadAllOdds();
+  renderBetsByStrength('nfl-bets-by-strength', NFL_WEEK_GAMES, 'NFL');
+  renderBetsByStrength('cfb-bets-by-strength', CFB_WEEK_GAMES, 'CFB');
   renderTopBetsList('nfl-topbets-list', computeTopBets(NFL_WEEK_GAMES, 'NFL'));
   renderTopBetsList('cfb-topbets-list', computeTopBets(CFB_WEEK_GAMES, 'CFB'));
   renderParlaysList('nfl-topparlays-list', buildTopParlays(NFL_WEEK_GAMES, 'NFL'));
