@@ -778,6 +778,31 @@ def main():
 
     record = load_json(TRACK_PATH, {"picks": []})
 
+    # One-time backfill for ALREADY-GRADED picks missing tier/strength,
+    # confirmed live this was a real, separate gap from the pending-pick
+    # backfill above: a graded pick can't be "recomputed" the way a
+    # pending one can (its game isn't in the upcoming-games list anymore
+    # to run compute_team_bets/compute_player_bets against), but it
+    # doesn't need to be -- every pick, graded or not, already has its
+    # own edge stored from when it was first logged, which is all
+    # confidence_tier() actually needs. Runs over every pick regardless
+    # of status; a no-op once a pick already has a tier.
+    backfilled_graded = 0
+    for p in record["picks"]:
+        if "tier" in p:
+            continue
+        # used_sp was never actually stored as its own field on a logged
+        # pick (only used internally at log time to decide the tier), so
+        # it defaults to False here for a pick from before tier existed
+        # at all -- a CFB pick that genuinely had SP+ backing at the time
+        # may get labeled "Strong*" instead of "Strong" as a result. A
+        # reasonable, disclosed approximation given that information
+        # isn't recoverable after the fact, not a claim of certainty.
+        backfill_tier = confidence_tier(p.get("edge") or 0, p.get("used_sp", False), p.get("league"), calibration)
+        p["tier"] = backfill_tier
+        p["strength"] = simplify_tier(backfill_tier)
+        backfilled_graded += 1
+
     today = datetime.date.today().isoformat()
     nfl_week_label = f"NFL-Week{nfl_sched.get('week')}"
     # CFB has no stable week-number field to key off (unlike NFL's
@@ -918,7 +943,7 @@ def main():
 
     with open(TRACK_PATH, "w") as f:
         json.dump(record, f, indent=2)
-    print(f"[{'/'.join(sorted(active_leagues))}] Logged {logged} new picks, upgraded {upgraded} pending picks to a real line, graded {graded} pending picks. Total tracked: {len(record['picks'])}")
+    print(f"[{'/'.join(sorted(active_leagues))}] Logged {logged} new picks, upgraded {upgraded} pending picks to a real line, backfilled tier/strength on {backfilled_graded} already-graded picks, graded {graded} pending picks. Total tracked: {len(record['picks'])}")
 
 
 if __name__ == "__main__":
