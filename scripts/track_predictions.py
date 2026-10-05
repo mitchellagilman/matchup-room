@@ -804,10 +804,23 @@ def main():
             continue
         team_picks = compute_team_bets(games, teams, all_odds, league, all_players, injuries_by_team, weather_cache)
         matchup_teams = {f"{g['a']} vs {g['b']}": (g["a"], g["b"]) for g in games}
+        # Backfill, confirmed live this was needed: a pick logged in an
+        # EARLIER run, before tier/strength existed, would otherwise never
+        # get them -- this loop only ever ran the "new pick" branch below
+        # for picks it hadn't seen the id of yet, silently skipping past
+        # anything already logged (which, this early after deploying
+        # tier/strength, was most of the current week's picks).
+        pending_team_by_id = {p["id"]: p for p in record["picks"] if p.get("type") in ("spread", "total") and p.get("status") == "pending" and "tier" not in p}
         for p in team_picks:
             pick_week_label = f"CFB-{p['game_date']}" if league == "CFB" and p.get("game_date") else week_label
             pid = f"{league}|{pick_week_label}|{p['matchup']}|{p['type']}"
             if pid in existing_ids:
+                existing_pick = pending_team_by_id.get(pid)
+                if existing_pick:
+                    backfill_tier = confidence_tier(p["edge"], p.get("used_sp", False), league, calibration)
+                    existing_pick["tier"] = backfill_tier
+                    existing_pick["strength"] = simplify_tier(backfill_tier)
+                    upgraded += 1
                 continue
             # Every pick gets tracked now, labeled by strength, instead of
             # the earlier NFL-only "Strong tier only" exclusion -- that
@@ -855,6 +868,15 @@ def main():
                     upgraded_tier = confidence_tier(p.get("edge") or 0, False, league, calibration)
                     existing_pick["tier"] = upgraded_tier
                     existing_pick["strength"] = simplify_tier(upgraded_tier)
+                    upgraded += 1
+                elif existing_pick and "tier" not in existing_pick:
+                    # Same backfill reasoning as the team-bet loop above --
+                    # a pick logged before tier/strength existed otherwise
+                    # never gets them, even without a real-line upgrade
+                    # happening alongside it.
+                    backfill_tier = confidence_tier(existing_pick.get("edge") or 0, False, league, calibration)
+                    existing_pick["tier"] = backfill_tier
+                    existing_pick["strength"] = simplify_tier(backfill_tier)
                     upgraded += 1
                 continue
             # Player props get the same strength label as team bets, using
