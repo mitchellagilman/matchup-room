@@ -729,14 +729,14 @@
   },
   "Atlanta Falcons": {
     "league": "NFL",
-    "record": "1-2",
-    "ppg": 17.0,
-    "pa": 22.7,
-    "passOff": 181.3,
-    "rushOff": 173.0,
-    "passDef": 273.3,
-    "rushDef": 47.7,
-    "to": -2.0,
+    "record": "2-2",
+    "ppg": 24.0,
+    "pa": 23.0,
+    "passOff": 191.8,
+    "rushOff": 181.0,
+    "passDef": 276.5,
+    "rushDef": 48.2,
+    "to": -1.25,
     "ats": "",
     "wk1": true,
     "games": [
@@ -763,6 +763,14 @@
         "teamScore": 35.0,
         "oppScore": 14.0,
         "result": "W"
+      },
+      {
+        "week": "4",
+        "date": "2026-10-05",
+        "opp": "New Orleans Saints",
+        "teamScore": 45.0,
+        "oppScore": 24.0,
+        "result": "W"
       }
     ],
     "prevPpg": 20.8,
@@ -771,9 +779,9 @@
     "homePpg": 3.0,
     "homePa": 34.0,
     "homeGames": 1,
-    "awayPpg": 24.0,
-    "awayPa": 17.0,
-    "awayGames": 2
+    "awayPpg": 31.0,
+    "awayPa": 19.3,
+    "awayGames": 3
   },
   "Green Bay Packers": {
     "league": "NFL",
@@ -1225,14 +1233,14 @@
   },
   "New Orleans Saints": {
     "league": "NFL",
-    "record": "1-2",
-    "ppg": 27.0,
-    "pa": 27.7,
-    "passOff": 305.7,
-    "rushOff": 101.3,
-    "passDef": 229.7,
-    "rushDef": 128.7,
-    "to": -1.33,
+    "record": "1-3",
+    "ppg": 26.2,
+    "pa": 32.0,
+    "passOff": 300.8,
+    "rushOff": 88.5,
+    "passDef": 228.0,
+    "rushDef": 147.8,
+    "to": -1.25,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1259,14 +1267,22 @@
         "teamScore": 27.0,
         "oppScore": 35.0,
         "result": "L"
+      },
+      {
+        "week": "4",
+        "date": "2026-10-05",
+        "opp": "Atlanta Falcons",
+        "teamScore": 24.0,
+        "oppScore": 45.0,
+        "result": "L"
       }
     ],
     "prevPpg": 18.0,
     "prevPa": 22.5,
     "prevTo": -0.18,
-    "homePpg": 27.0,
-    "homePa": 35.0,
-    "homeGames": 1,
+    "homePpg": 25.5,
+    "homePa": 40.0,
+    "homeGames": 2,
     "awayPpg": 27.0,
     "awayPa": 24.0,
     "awayGames": 2

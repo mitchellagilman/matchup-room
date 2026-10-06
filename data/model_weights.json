@@ -1,11 +1,20 @@
 {
-  "last_updated": "2026-10-05",
-  "sample_size": 149,
+  "last_updated": "2026-10-06",
+  "sample_size": 151,
   "min_sample_size": 150,
-  "trained": false,
+  "trained": true,
   "features": [
     "edge",
     "is_favorite",
     "league_is_cfb"
-  ]
+  ],
+  "weights": [
+    0.1357516860564234,
+    -0.26407580228623456,
+    1.099378437707378
+  ],
+  "bias": 0.25571715675016476,
+  "edge_mean": 3.4271523178807946,
+  "edge_std": 3.1261540126126377,
+  "train_accuracy": 0.616
 }

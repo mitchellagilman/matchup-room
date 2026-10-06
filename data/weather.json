@@ -1,5 +1,83 @@
 {
+  "Dallas Cowboys": {
+    "dome": true
+  },
+  "Jacksonville Jaguars": {
+    "windMph": 10,
+    "tempF": 72,
+    "shortForecast": "Showers And Thunderstorms",
+    "severe": false,
+    "dome": false
+  },
+  "Green Bay Packers": {
+    "windMph": 6,
+    "tempF": 45,
+    "shortForecast": "Mostly Cloudy then Scattered Rain Showers",
+    "severe": false,
+    "dome": false
+  },
+  "Miami Dolphins": {
+    "windMph": 3,
+    "tempF": 77,
+    "shortForecast": "Partly Cloudy",
+    "severe": false,
+    "dome": false
+  },
+  "New England Patriots": {
+    "windMph": 8,
+    "tempF": 41,
+    "shortForecast": "Clear",
+    "severe": false,
+    "dome": false
+  },
   "New Orleans Saints": {
+    "dome": true
+  },
+  "New York Jets": {
+    "windMph": 10,
+    "tempF": 47,
+    "shortForecast": "Clear",
+    "severe": false,
+    "dome": false
+  },
+  "Pittsburgh Steelers": {
+    "windMph": 1,
+    "tempF": 39,
+    "shortForecast": "Clear",
+    "severe": false,
+    "dome": false
+  },
+  "Tennessee Titans": {
+    "windMph": 5,
+    "tempF": 52,
+    "shortForecast": "Clear",
+    "severe": false,
+    "dome": false
+  },
+  "Washington Commanders": {
+    "windMph": 6,
+    "tempF": 46,
+    "shortForecast": "Clear",
+    "severe": false,
+    "dome": false
+  },
+  "Los Angeles Chargers": {
+    "dome": true
+  },
+  "Arizona Cardinals": {
+    "dome": true
+  },
+  "Seattle Seahawks": {
+    "windMph": 3,
+    "tempF": 54,
+    "shortForecast": "Mostly Cloudy then Areas Of Fog",
+    "severe": false,
+    "dome": false
+  },
+  "Atlanta Falcons": {
+    "dome": true
+  },
+  "Los Angeles Rams": {
     "dome": true
   }
 }
