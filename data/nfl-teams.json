@@ -57,14 +57,14 @@
   },
   "Dallas Cowboys": {
     "league": "NFL",
-    "record": "2-2",
-    "ppg": 30.5,
-    "pa": 28.0,
-    "passOff": 266.2,
-    "rushOff": 89.5,
-    "passDef": 242.5,
-    "rushDef": 150.2,
-    "to": 0.0,
+    "record": "2-3",
+    "ppg": 27.6,
+    "pa": 27.2,
+    "passOff": 276.2,
+    "rushOff": 81.6,
+    "passDef": 231.8,
+    "rushDef": 168.4,
+    "to": -0.4,
     "ats": "",
     "wk1": true,
     "games": [
@@ -99,14 +99,22 @@
         "teamScore": 34.0,
         "oppScore": 30.0,
         "result": "W"
+      },
+      {
+        "week": "5",
+        "date": "2026-10-08",
+        "opp": "Tampa Bay Buccaneers",
+        "teamScore": 16.0,
+        "oppScore": 24.0,
+        "result": "L"
       }
     ],
     "prevPpg": 27.7,
     "prevPa": 30.1,
     "prevTo": -0.53,
-    "homePpg": 34.0,
-    "homePa": 27.0,
-    "homeGames": 2,
+    "homePpg": 28.0,
+    "homePa": 26.0,
+    "homeGames": 3,
     "awayPpg": 27.0,
     "awayPa": 29.0,
     "awayGames": 2
@@ -1121,14 +1129,14 @@
   },
   "Tampa Bay Buccaneers": {
     "league": "NFL",
-    "record": "0-4",
-    "ppg": 19.0,
-    "pa": 24.0,
-    "passOff": 190.8,
-    "rushOff": 106.0,
-    "passDef": 214.2,
-    "rushDef": 78.5,
-    "to": -1.25,
+    "record": "1-4",
+    "ppg": 20.0,
+    "pa": 22.4,
+    "passOff": 190.4,
+    "rushOff": 133.0,
+    "passDef": 234.6,
+    "rushDef": 72.8,
+    "to": -0.4,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1163,6 +1171,14 @@
         "teamScore": 14.0,
         "oppScore": 17.0,
         "result": "L"
+      },
+      {
+        "week": "5",
+        "date": "2026-10-08",
+        "opp": "Dallas Cowboys",
+        "teamScore": 24.0,
+        "oppScore": 16.0,
+        "result": "W"
       }
     ],
     "prevPpg": 22.4,
@@ -1171,9 +1187,9 @@
     "homePpg": 16.3,
     "homePa": 21.0,
     "homeGames": 3,
-    "awayPpg": 27.0,
-    "awayPa": 33.0,
-    "awayGames": 1
+    "awayPpg": 25.5,
+    "awayPa": 24.5,
+    "awayGames": 2
   },
   "Washington Commanders": {
     "league": "NFL",

@@ -1,32 +1,29 @@
 {
-  "Dallas Cowboys": {
-    "dome": true
-  },
   "Jacksonville Jaguars": {
-    "windMph": 10,
-    "tempF": 72,
-    "shortForecast": "Showers And Thunderstorms",
+    "windMph": 12,
+    "tempF": 73,
+    "shortForecast": "Showers And Thunderstorms Likely",
     "severe": false,
     "dome": false
   },
   "Green Bay Packers": {
-    "windMph": 6,
-    "tempF": 45,
-    "shortForecast": "Mostly Cloudy then Scattered Rain Showers",
-    "severe": false,
-    "dome": false
-  },
-  "Miami Dolphins": {
-    "windMph": 3,
-    "tempF": 77,
+    "windMph": 2,
+    "tempF": 44,
     "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
+  "Miami Dolphins": {
+    "windMph": 5,
+    "tempF": 78,
+    "shortForecast": "Showers And Thunderstorms Likely then Partly Cloudy",
+    "severe": false,
+    "dome": false
+  },
   "New England Patriots": {
-    "windMph": 8,
-    "tempF": 41,
-    "shortForecast": "Clear",
+    "windMph": 5,
+    "tempF": 47,
+    "shortForecast": "Mostly Clear",
     "severe": false,
     "dome": false
   },
@@ -34,30 +31,30 @@
     "dome": true
   },
   "New York Jets": {
-    "windMph": 10,
-    "tempF": 47,
+    "windMph": 5,
+    "tempF": 51,
     "shortForecast": "Clear",
     "severe": false,
     "dome": false
   },
   "Pittsburgh Steelers": {
-    "windMph": 1,
-    "tempF": 39,
+    "windMph": 0,
+    "tempF": 46,
     "shortForecast": "Clear",
     "severe": false,
     "dome": false
   },
   "Tennessee Titans": {
     "windMph": 5,
-    "tempF": 52,
-    "shortForecast": "Clear",
+    "tempF": 55,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "Washington Commanders": {
-    "windMph": 6,
-    "tempF": 46,
-    "shortForecast": "Clear",
+    "windMph": 2,
+    "tempF": 51,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
@@ -68,9 +65,9 @@
     "dome": true
   },
   "Seattle Seahawks": {
-    "windMph": 3,
-    "tempF": 54,
-    "shortForecast": "Mostly Cloudy then Areas Of Fog",
+    "windMph": 10,
+    "tempF": 55,
+    "shortForecast": "Mostly Cloudy then Slight Chance Light Rain",
     "severe": false,
     "dome": false
   },
