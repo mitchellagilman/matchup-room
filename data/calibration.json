@@ -10,12 +10,12 @@
     "deviation_pct": -1.5
   },
   "CFB": {
-    "sample_size": 42,
+    "sample_size": 124,
     "min_sample_size": 30,
     "calibrated": true,
-    "strong_threshold": 6.06,
-    "moderate_threshold": 2.56,
-    "hit_rate": 0.738,
-    "deviation_pct": 18.8
+    "strong_threshold": 6.69,
+    "moderate_threshold": 3.19,
+    "hit_rate": 0.613,
+    "deviation_pct": 6.3
   }
 }
