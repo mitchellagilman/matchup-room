@@ -1,7 +1,7 @@
 {
   "Jacksonville Jaguars": {
-    "windMph": 12,
-    "tempF": 84,
+    "windMph": 13,
+    "tempF": 83,
     "shortForecast": "Showers And Thunderstorms Likely then Partly Sunny",
     "severe": false,
     "dome": false
@@ -23,7 +23,7 @@
   "New England Patriots": {
     "windMph": 6,
     "tempF": 61,
-    "shortForecast": "Mostly Cloudy then Chance Rain Showers",
+    "shortForecast": "Cloudy then Chance Rain Showers",
     "severe": false,
     "dome": false
   },
@@ -45,9 +45,9 @@
     "dome": false
   },
   "Tennessee Titans": {
-    "windMph": 0,
-    "tempF": 60,
-    "shortForecast": "Chance Rain Showers",
+    "windMph": 10,
+    "tempF": 75,
+    "shortForecast": "Chance Rain Showers then Mostly Cloudy",
     "severe": false,
     "dome": false
   },
@@ -65,9 +65,9 @@
     "dome": true
   },
   "Seattle Seahawks": {
-    "windMph": 3,
-    "tempF": 46,
-    "shortForecast": "Clear",
+    "windMph": 9,
+    "tempF": 59,
+    "shortForecast": "Sunny",
     "severe": false,
     "dome": false
   },
