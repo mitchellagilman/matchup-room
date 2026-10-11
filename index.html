@@ -541,6 +541,7 @@
     <div class="tabs">
       <div class="subtab active" data-subtab="odds-board">Odds Board</div>
       <div class="subtab" data-subtab="parlay-calc">Calculator</div>
+      <div class="subtab" data-subtab="my-bets">My Bets</div>
     </div>
 
     <div class="subpanel active" id="subpanel-odds-board">
@@ -560,6 +561,21 @@
       </div>
     </div>
 
+    <div class="subpanel" id="subpanel-my-bets">
+      <div class="card"><h2>My bets <span class="pill" id="mb-count"></span></h2>
+        <div id="mb-summary"></div>
+        <div class="note">Saved on this device/browser only (not synced to other devices). Tap "Place bet" on the slip to log one, or add a bet you already placed below.</div>
+      </div>
+      <div class="card"><h2>Log a bet I already placed</h2>
+        <div class="field"><label>Description (e.g. Eagles -3.5 + Over 44.5)</label><input id="mb-desc" placeholder="Bet description"></div>
+        <div class="grid2"><div class="field"><label>Odds (American)</label><input id="mb-odds" type="number" placeholder="+250"></div><div class="field"><label>Stake ($)</label><input id="mb-stake" type="number" value="10"></div></div>
+        <button class="secondary" id="mb-add">Add to My Bets</button>
+      </div>
+      <div class="card"><div class="tabs" id="mb-filter" style="margin-bottom:10px;"><div class="subtab active" data-mbfilter="ALL">All</div><div class="subtab" data-mbfilter="pending">Pending</div><div class="subtab" data-mbfilter="settled">Settled</div></div>
+        <button class="secondary" id="mb-autograde" style="margin:0 0 10px;">Auto-check results</button>
+        <div id="mb-list"></div></div>
+    </div>
+
     <div class="subpanel" id="subpanel-parlay-calc">
       <div class="card">
         <h2>Check a bet's likelihood</h2>
@@ -569,7 +585,7 @@
             <select id="chk-league"><option value="NFL">NFL</option><option value="CFB">CFB</option></select>
           </div>
           <div class="field"><label>Bet type</label>
-            <select id="chk-type"><option value="spread">Spread</option><option value="total">Total</option></select>
+            <select id="chk-type"><option value="spread">Spread</option><option value="ml">Moneyline</option><option value="total">Total</option></select>
           </div>
         </div>
         <div class="grid2">
@@ -2669,12 +2685,12 @@ function probabilityCategory(prob){
   if(prob>=0.35) return {label:'Not Likely', style:'background:rgba(242,139,125,0.12);'};
   return {label:'Very Unlikely', style:'background:rgba(242,139,125,0.2);color:#f28b7d;'};
 }
-function addLeg(label, odds, probability, meta){
+function addLeg(label, odds, probability, meta, est){
   let prob = (probability===undefined?null:probability);
   // Legs that carry structured bet info (league/teams/line) get a model read
   // even when added from the Odds Board, and can be re-scored by the parlay analyzer.
   if(prob===null && meta){ const ev = evalBet(meta); if(ev) prob = ev.prob; }
-  parlaySlip.push({label:label, odds: Number(odds), probability: prob, meta: meta||null});
+  parlaySlip.push({label:label, odds: Number(odds), probability: prob, meta: meta||null, est: !!est});
   renderParlaySlip();
 }
 
@@ -2868,7 +2884,7 @@ function evalBet(meta){
       isFav = meta.type==='ml' ? signedEdge>0 : line<0;
     }
     const rawProb = pickProbability(Math.abs(signedEdge), proj.usedSP, meta.league, isFav, null);
-    return {prob: signedEdge<0 ? 1-rawProb : rawProb, signedEdge: signedEdge, gameId: [o.a,o.b].sort().join('|')};
+    return {prob: signedEdge<0 ? 1-rawProb : rawProb, signedEdge: signedEdge, gameId: [o.a,o.b].sort().join('|'), proj: proj, orient: o};
   }catch(e){ return null; }
 }
 function fmtLine(n){ return (n>0?'+':'')+n; }
@@ -3031,6 +3047,231 @@ function wireParlayActions(root){
   });
 }
 
+
+// ---------- Alt lines ----------
+let ALT_ACTIONS = [];
+function normCdf(z){
+  // Abramowitz-Stegun approximation of the standard normal CDF
+  const t = 1/(1+0.2316419*Math.abs(z));
+  const d = 0.3989423*Math.exp(-z*z/2);
+  const p = d*t*(0.3193815+t*(-0.3565638+t*(1.781478+t*(-1.821256+t*1.330274))));
+  return z>0 ? 1-p : p;
+}
+function probToAmerican(p){
+  const pv = Math.max(0.03, Math.min(0.97, p*1.045)); // ~4.5% sportsbook margin baked in
+  const am = pv>=0.5 ? -(100*pv/(1-pv)) : (100*(1-pv)/pv);
+  const r = Math.round(am/5)*5;
+  return Math.abs(r)<100 ? (r<0?-100:100) : r;
+}
+// Estimated sportsbook price for an alt line, derived from the market line
+// (normal approximation of the final margin / total). It's an estimate, NOT
+// a real DraftKings price, so legs added this way are flagged "est." and the
+// odds box in the slip is editable.
+function estAltOdds(meta){
+  try{
+    const lg = meta.league;
+    const market = findMarketLine(meta.team, meta.opp);
+    const ev = evalBet(meta);
+    if(!ev) return null;
+    const marginSd = lg==='CFB' ? 16 : 13.5, totalSd = lg==='CFB' ? 12 : 10;
+    if(meta.type==='total'){
+      const center = (market && market.total!==null && market.total!==undefined) ? market.total : ev.proj.total;
+      const pOver = 1 - normCdf((meta.line-center)/totalSd);
+      return probToAmerican(meta.dir==='over' ? pOver : 1-pOver);
+    }
+    let expMargin; // expected margin for the side being bet
+    if(market){
+      const isEntryA = teamNamesMatch(market.aTeam, meta.team);
+      const mk = isEntryA ? market.aSpread : market.bSpread;
+      if(mk!==null && mk!==undefined) expMargin = -mk;
+    }
+    if(expMargin===undefined){
+      const sideIsA = resolveTeamKey(meta.team, meta.league)===ev.orient.a;
+      expMargin = sideIsA ? ev.proj.spread : -ev.proj.spread;
+    }
+    if(meta.type==='ml'){
+      if(market){ const ml = teamNamesMatch(market.aTeam, meta.team) ? market.aML : market.bML; if(ml!==null && ml!==undefined) return ml; }
+      return probToAmerican(normCdf(expMargin/marginSd));
+    }
+    return probToAmerican(normCdf((expMargin + meta.line)/marginSd));
+  }catch(e){ return null; }
+}
+function renderAltLadder(elId, meta, legIndex){
+  const el = document.getElementById(elId);
+  if(!el) return;
+  ALT_ACTIONS = ALT_ACTIONS || [];
+  const chips = [];
+  for(let off=-6; off<=6; off++){
+    const m = Object.assign({}, meta); m.line = meta.line + off;
+    const ev = evalBet(m);
+    if(!ev) continue;
+    const est = estAltOdds(m);
+    const idx = ALT_ACTIONS.push({m:m, prob:ev.prob, est:est}) - 1;
+    const cat = probabilityCategory(ev.prob);
+    const cur = off===0;
+    const lab = m.type==='total' ? ((m.dir==='over'?'O ':'U ')+m.line) : fmtLine(m.line);
+    chips.push('<button class="secondary" data-altchip="'+idx+'" style="margin:0;padding:6px 4px;font-size:0.76rem;line-height:1.25;'+(cur?'border-color:var(--accent);':'')+'"><b>'+lab+'</b><br><span style="'+cat.style+'padding:1px 6px;border-radius:999px;">'+Math.round(ev.prob*100)+'%</span>'+(est!==null?'<br><span class="team-meta">est '+(est>0?'+':'')+est+'</span>':'')+'</button>');
+  }
+  const who = meta.type==='total' ? ((meta.dir==='over'?'Over':'Under')+' · '+meta.team+' vs '+meta.opp) : meta.team;
+  el.innerHTML = '<div class="team-meta" style="margin:6px 0;">'+who+' — probability by line (est. prices, edit odds to match your book)</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">'+chips.join('')+'</div>';
+  el.querySelectorAll('[data-altchip]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      const a = ALT_ACTIONS[Number(btn.dataset.altchip)];
+      const label = betLabel(a.m)+' ('+a.m.team+' vs '+a.m.opp+')';
+      const odds = a.est!==null ? a.est : -110;
+      if(legIndex===null || legIndex===undefined){
+        addLeg(label, odds, a.prob, a.m, true);
+      } else {
+        parlaySlip[legIndex] = {label:label, odds:odds, probability:a.prob, meta:a.m, est:true, _altOpen:true};
+        renderParlaySlip();
+      }
+    });
+  });
+}
+
+// ---------- My Bets tracker ----------
+const MYBETS_KEY = 'mr_my_bets_v1';
+let MY_BETS = [];
+let myBetsFilter = 'ALL';
+function loadMyBets(){ try{ MY_BETS = JSON.parse(localStorage.getItem(MYBETS_KEY)||'[]') || []; }catch(e){ MY_BETS = []; } }
+function saveMyBets(){ try{ localStorage.setItem(MYBETS_KEY, JSON.stringify(MY_BETS)); }catch(e){} }
+loadMyBets();
+function betDecimal(b){ return b.legs.reduce(function(a,l){ return a*americanToDecimal(l.odds); }, 1); }
+function betProfit(b){
+  if(b.status==='won') return b.stake*(betDecimal(b)-1);
+  if(b.status==='lost') return -b.stake;
+  return 0;
+}
+function placeSlipAsBet(){
+  if(parlaySlip.length===0) return;
+  const stakeEl = document.getElementById('slip-dock-stake') || document.getElementById('parlay-stake');
+  const stake = parseFloat(stakeEl.value);
+  if(!stake || stake<=0){ alert('Enter a stake first.'); return; }
+  const legs = parlaySlip.map(function(l){ return {label:l.label, odds:l.odds, prob:(l.probability===undefined?null:l.probability), meta:l.meta||null, result:null}; });
+  MY_BETS.unshift({id:Date.now(), ts:new Date().toISOString(), stake:stake, legs:legs, status:'pending', manual:false});
+  saveMyBets();
+  parlaySlip.length = 0;
+  document.getElementById('slip-dock').classList.remove('open');
+  renderParlaySlip();
+  renderMyBets();
+  activateTopTab('parlay'); activateSubTab('my-bets');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+function gradeLeg(leg){
+  // best-effort: only works for games in this week's loaded schedule with a final score
+  const m = leg.meta;
+  if(!m) return null;
+  const o = orientGame(m.team, m.opp, m.league);
+  if(!o) return null;
+  const f = findFinalScoreForMatchup(m.league, o.a, o.b);
+  if(!f) return null;
+  if(m.type==='total'){
+    const tot = f.awayScore + f.homeScore;
+    if(tot===m.line) return 'push';
+    return ((m.dir==='over') === (tot>m.line)) ? 'won' : 'lost';
+  }
+  const teamKey = resolveTeamKey(m.team, m.league);
+  const margin = teamKey===f.away ? f.awayScore-f.homeScore : f.homeScore-f.awayScore;
+  const line = m.type==='ml' ? 0 : m.line;
+  const v = margin + line;
+  if(m.type==='ml') return margin>0 ? 'won' : (margin<0 ? 'lost' : 'push');
+  return v>0 ? 'won' : (v<0 ? 'lost' : 'push');
+}
+function autoGradeBets(){
+  let n = 0;
+  MY_BETS.forEach(function(b){
+    if(b.status!=='pending') return;
+    b.legs.forEach(function(l){ if(!l.result){ const r = gradeLeg(l); if(r) l.result = r; } });
+    if(b.legs.some(function(l){ return l.result==='lost'; })){ b.status='lost'; n++; }
+    else if(b.legs.every(function(l){ return l.result; })){
+      b.status = b.legs.every(function(l){ return l.result==='push'; }) ? 'push' : 'won'; n++;
+      // pushed legs are removed from a won parlay (odds recomputed without them)
+      if(b.status==='won'){ b.legs = b.legs.filter(function(l){ return l.result!=='push'; }); }
+    }
+  });
+  saveMyBets(); renderMyBets();
+  return n;
+}
+function renderMyBets(){
+  const listEl = document.getElementById('mb-list');
+  if(!listEl) return;
+  const settled = MY_BETS.filter(function(b){ return b.status!=='pending'; });
+  const pending = MY_BETS.filter(function(b){ return b.status==='pending'; });
+  const won = settled.filter(function(b){ return b.status==='won'; }).length;
+  const lost = settled.filter(function(b){ return b.status==='lost'; }).length;
+  const push = settled.filter(function(b){ return b.status==='push'; }).length;
+  const profit = settled.reduce(function(a,b){ return a+betProfit(b); }, 0);
+  const staked = settled.filter(function(b){ return b.status!=='push'; }).reduce(function(a,b){ return a+b.stake; }, 0);
+  const atRisk = pending.reduce(function(a,b){ return a+b.stake; }, 0);
+  document.getElementById('mb-count').textContent = MY_BETS.length+' bet'+(MY_BETS.length===1?'':'s');
+  const withP = settled.filter(function(b){ return b.legs.every(function(l){ return l.prob!==null && l.prob!==undefined; }) && b.status!=='push'; });
+  let calib = '';
+  if(withP.length>=3){
+    const avg = withP.reduce(function(a,b){ return a + b.legs.reduce(function(x,l){ return x*l.prob; },1); },0)/withP.length;
+    const act = withP.filter(function(b){ return b.status==='won'; }).length/withP.length;
+    calib = '<div class="note">Model said these '+withP.length+' settled bets would hit about <b>'+Math.round(avg*100)+'%</b> of the time; you hit <b>'+Math.round(act*100)+'%</b>.</div>';
+  }
+  document.getElementById('mb-summary').innerHTML = '<div class="proj-score" style="padding-top:8px;"><div><div class="num">'+won+'-'+lost+(push?'-'+push:'')+'</div><div class="lbl">record</div></div><div><div class="num" style="color:'+(profit>=0?'#5eead4':'#f28b7d')+';">'+(profit>=0?'+':'-')+'$'+Math.abs(profit).toFixed(2)+'</div><div class="lbl">net profit</div></div><div><div class="num">'+(staked>0?Math.round(profit/staked*100)+'%':'—')+'</div><div class="lbl">ROI</div></div></div><div class="note">'+pending.length+' pending · $'+atRisk.toFixed(2)+' at risk</div>'+calib;
+  let list = MY_BETS;
+  if(myBetsFilter==='pending') list = pending;
+  if(myBetsFilter==='settled') list = settled;
+  if(list.length===0){ listEl.innerHTML = '<div class="empty">Nothing here yet.</div>'; return; }
+  const stStyle = {pending:'', won:'background:rgba(51,211,153,0.18);color:#5eead4;', lost:'background:rgba(242,139,125,0.2);color:#f28b7d;', push:'background:rgba(136,146,176,0.18);'};
+  listEl.innerHTML = list.map(function(b){
+    const dec = betDecimal(b);
+    const d = new Date(b.ts);
+    const legRows = b.legs.map(function(l){
+      const r = l.result ? ' <span class="pill" style="'+stStyle[l.result]+'">'+l.result+'</span>' : '';
+      const p = (l.prob!==null && l.prob!==undefined) ? ' <span class="team-meta">'+Math.round(l.prob*100)+'%</span>' : '';
+      return '<div class="history-item"><span>'+l.label+p+r+'</span><span>'+(l.odds>0?'+':'')+l.odds+'</span></div>';
+    }).join('');
+    const pl = b.status==='pending' ? 'To win $'+(b.stake*(dec-1)).toFixed(2) : (b.status==='push' ? 'Refunded' : (betProfit(b)>=0?'+':'-')+'$'+Math.abs(betProfit(b)).toFixed(2));
+    return '<div class="card" style="background:var(--card-2);margin-bottom:10px;"><div style="display:flex;justify-content:space-between;align-items:center;"><div style="font-weight:800;">'+(b.legs.length===1?'Straight':b.legs.length+'-leg parlay')+' <span class="pill" style="'+stStyle[b.status]+'">'+b.status+'</span></div><div style="font-weight:800;">'+decimalToAmerican(dec)+'</div></div>'
+      + '<div class="team-meta" style="margin:2px 0 6px;">'+d.toLocaleDateString()+' · $'+b.stake.toFixed(2)+' stake · '+pl+'</div>'+legRows
+      + '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;">'
+      + (b.status==='pending'
+          ? '<button class="secondary" data-mbset="won" data-mbid="'+b.id+'" style="margin:0;padding:6px 12px;">Won</button><button class="secondary" data-mbset="lost" data-mbid="'+b.id+'" style="margin:0;padding:6px 12px;">Lost</button><button class="secondary" data-mbset="push" data-mbid="'+b.id+'" style="margin:0;padding:6px 12px;">Push</button>'
+          : '<button class="secondary" data-mbset="pending" data-mbid="'+b.id+'" style="margin:0;padding:6px 12px;">Reopen</button>')
+      + '<button class="danger" data-mbdel="'+b.id+'" style="margin:0 0 0 auto;">Delete</button></div></div>';
+  }).join('');
+  listEl.querySelectorAll('[data-mbset]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const b = MY_BETS.find(function(x){ return String(x.id)===btn.dataset.mbid; });
+      if(b){ b.status = btn.dataset.mbset; saveMyBets(); renderMyBets(); }
+    });
+  });
+  listEl.querySelectorAll('[data-mbdel]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(!confirm('Delete this bet?')) return;
+      MY_BETS = MY_BETS.filter(function(x){ return String(x.id)!==btn.dataset.mbdel; });
+      saveMyBets(); renderMyBets();
+    });
+  });
+}
+document.getElementById('mb-add').addEventListener('click', function(){
+  const desc = document.getElementById('mb-desc').value.trim();
+  const odds = Number(document.getElementById('mb-odds').value);
+  const stake = parseFloat(document.getElementById('mb-stake').value);
+  if(!desc || !odds || Math.abs(odds)<100 || !stake || stake<=0){ alert('Enter a description, American odds (like +250 or -110) and a stake.'); return; }
+  MY_BETS.unshift({id:Date.now(), ts:new Date().toISOString(), stake:stake, legs:[{label:desc, odds:odds, prob:null, meta:null, result:null}], status:'pending', manual:true});
+  saveMyBets();
+  document.getElementById('mb-desc').value = ''; document.getElementById('mb-odds').value = '';
+  renderMyBets();
+});
+document.querySelectorAll('#mb-filter [data-mbfilter]').forEach(function(b){
+  b.addEventListener('click', function(){
+    myBetsFilter = b.dataset.mbfilter;
+    document.querySelectorAll('#mb-filter [data-mbfilter]').forEach(function(x){ x.classList.toggle('active', x===b); });
+    renderMyBets();
+  });
+});
+document.getElementById('mb-autograde').addEventListener('click', function(){
+  const n = autoGradeBets();
+  alert(n ? n+' bet(s) settled from final scores.' : 'No pending bets could be graded automatically. Only games on this week\'s loaded schedule with a final score can be, so settle older or player-prop bets with the Won / Lost buttons.');
+});
+document.querySelector('[data-subtab="my-bets"]').addEventListener('click', renderMyBets);
+renderMyBets();
 // ---------- Sportsbook-style bet slip dock ----------
 let SLIP_PREV_COUNT = 0;
 function syncNavHeight(){
@@ -3054,15 +3295,30 @@ function renderSlipDock(){
   document.getElementById('slip-bar-label').textContent = n===1 ? 'Straight bet' : n+'-leg parlay';
   document.getElementById('slip-bar-right').textContent = decimalToAmerican(dec)+'  ·  '+(dock.classList.contains('open')?'Hide ▾':'View ▴');
   const sheet = document.getElementById('slip-sheet');
+  ALT_ACTIONS = [];
   const rows = parlaySlip.map(function(l,i){
     const hasP = l.probability!==null && l.probability!==undefined;
     const pill = hasP ? '<span class="pill" style="margin-left:0;'+probabilityCategory(l.probability).style+'">'+Math.round(l.probability*100)+'%</span>' : '';
-    return '<div class="slip-leg"><div style="min-width:0;"><div style="font-weight:700;">'+l.label+'</div><div class="team-meta">'+pill+'</div></div><div style="white-space:nowrap;font-weight:700;">'+(l.odds>0?'+':'')+l.odds+' <button class="slip-x" data-dockrm="'+i+'" aria-label="Remove">✕</button></div></div>';
+    const canAlt = l.meta && l.meta.type!=='ml';
+    const altBtn = canAlt ? ' <button class="secondary" data-dockalt="'+i+'" style="font-size:0.7rem;padding:2px 8px;margin:0 0 0 6px;">'+(l._altOpen?'Hide alt lines':'Alt lines')+'</button>' : '';
+    return '<div class="slip-leg" style="flex-wrap:wrap;"><div style="min-width:0;flex:1;"><div style="font-weight:700;">'+l.label+'</div><div class="team-meta">'+pill+altBtn+(l.est?' <span class="team-meta">odds are an estimate &mdash; edit to match your book</span>':'')+'</div></div><div style="white-space:nowrap;display:flex;align-items:center;gap:4px;"><input type="number" data-dockodds="'+i+'" value="'+l.odds+'" style="width:76px;padding:6px 8px;text-align:right;"><button class="slip-x" data-dockrm="'+i+'" aria-label="Remove">✕</button></div>'+(l._altOpen ? '<div style="width:100%;" id="dock-ladder-'+i+'"></div>' : '')+'</div>';
   }).join('');
   const prevStake = document.getElementById('slip-dock-stake') ? document.getElementById('slip-dock-stake').value : document.getElementById('parlay-stake').value;
   sheet.innerHTML = rows
     + '<div style="display:flex;align-items:center;gap:10px;margin-top:10px;"><label style="font-size:0.8rem;color:var(--muted);">Stake $</label><input id="slip-dock-stake" type="number" value="'+prevStake+'" style="max-width:110px;"><div style="margin-left:auto;text-align:right;font-size:0.82rem;">To win <b style="color:#5eead4;">$'+fmt(stake*dec - stake)+'</b></div></div>'
-    + '<div style="display:flex;gap:8px;margin-top:10px;"><button class="secondary" id="slip-dock-analyze" style="flex:1;">Analyze parlay</button><button class="danger" id="slip-dock-clear" style="padding:9px 14px;">Clear</button></div>';
+    + '<div style="display:flex;gap:8px;margin-top:10px;"><button id="slip-dock-place" style="flex:1.3;">Place bet</button><button class="secondary" id="slip-dock-analyze" style="flex:1;">Analyze</button><button class="danger" id="slip-dock-clear" style="padding:9px 14px;">Clear</button></div>';
+  parlaySlip.forEach(function(l,i){ if(l._altOpen && l.meta) renderAltLadder('dock-ladder-'+i, l.meta, i); });
+  sheet.querySelectorAll('[data-dockalt]').forEach(function(b){
+    b.addEventListener('click', function(e){ e.stopPropagation(); const l = parlaySlip[Number(b.dataset.dockalt)]; l._altOpen = !l._altOpen; renderSlipDock(); });
+  });
+  sheet.querySelectorAll('[data-dockodds]').forEach(function(inp){
+    inp.addEventListener('change', function(){
+      const v = Number(inp.value);
+      if(!v || Math.abs(v)<100){ renderSlipDock(); return; }
+      const l = parlaySlip[Number(inp.dataset.dockodds)]; l.odds = v; l.est = false; renderParlaySlip();
+    });
+  });
+  document.getElementById('slip-dock-place').addEventListener('click', function(){ placeSlipAsBet(); });
   sheet.querySelectorAll('[data-dockrm]').forEach(function(b){
     b.addEventListener('click', function(e){ e.stopPropagation(); parlaySlip.splice(Number(b.dataset.dockrm),1); renderParlaySlip(); });
   });
@@ -3106,7 +3362,7 @@ function renderParlaySlipMain(){
     const probHtml = hasProb
       ? '<span class="pill" style="margin-left:6px;'+cat.style+'">'+Math.round(leg.probability*100)+'% · '+cat.label+'</span>'
       : '<span class="team-meta" style="margin-left:6px;">no model read</span>';
-    return '<div class="history-item"><span>'+leg.label+probHtml+'</span><span>'+(leg.odds>0?'+':'')+leg.odds+' <button class="danger" data-rmleg="'+i+'" style="margin-left:8px;">✕</button></span></div>';
+    return '<div class="history-item"><span>'+leg.label+probHtml+'</span><span>'+(leg.odds>0?'+':'')+leg.odds+(leg.est?' <span class="team-meta">est.</span>':'')+' <button class="danger" data-rmleg="'+i+'" style="margin-left:8px;">✕</button></span></div>';
   }).join('');
   slipEl.querySelectorAll('[data-rmleg]').forEach(function(btn){
     btn.addEventListener('click', function(){ parlaySlip.splice(Number(btn.dataset.rmleg), 1); renderParlaySlip(); });
@@ -3138,9 +3394,11 @@ document.getElementById('chk-league').addEventListener('change', populateCheckSe
 document.getElementById('chk-teamA').addEventListener('change', populateCheckSideSelect);
 document.getElementById('chk-teamB').addEventListener('change', populateCheckSideSelect);
 document.getElementById('chk-type').addEventListener('change', function(){
-  const isSpread = this.value==='spread';
+  const isSpread = this.value==='spread' || this.value==='ml';
   document.getElementById('chk-spread-fields').style.display = isSpread ? '' : 'none';
   document.getElementById('chk-total-fields').style.display = isSpread ? 'none' : '';
+  const lineField = document.getElementById('chk-line').closest('.field');
+  if(lineField) lineField.style.display = this.value==='ml' ? 'none' : '';
 });
 document.getElementById('chk-check-btn').addEventListener('click', function(){
   const league = document.getElementById('chk-league').value;
@@ -3186,6 +3444,18 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
     signedEdge = side==='A' ? rawSignedEdge : -rawSignedEdge;
     isFavorite = rawLine<0;
     label = sideName+' '+(rawLine>0?'+':'')+rawLine;
+  } else if(betType==='ml'){
+    const mSide = document.getElementById('chk-side').value;
+    const mName = mSide==='A' ? nameA : nameB;
+    const mRaw = proj.spread; // positive = A favored
+    signedEdge = mSide==='A' ? mRaw : -mRaw;
+    isFavorite = signedEdge>0;
+    label = mName+' ML';
+    if(chkMarket){
+      const mIsEntryA = teamNamesMatch(chkMarket.aTeam, mName);
+      const mlOdds = mIsEntryA ? chkMarket.aML : chkMarket.bML;
+      if(mlOdds!==null && mlOdds!==undefined) oddsGuess = mlOdds;
+    }
   } else {
     const totalLine = parseFloat(document.getElementById('chk-total-line').value);
     if(isNaN(totalLine)){ resultEl.innerHTML = '<div class="empty">Enter a total line, e.g. 47.5.</div>'; return; }
@@ -3201,7 +3471,10 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
     signedEdge = direction==='over' ? rawTotalEdge : -rawTotalEdge;
   }
   let chkMeta;
-  if(betType==='spread'){
+  if(betType==='ml'){
+    const mS = document.getElementById('chk-side').value;
+    chkMeta = {league: league, type:'ml', team: mS==='A'?nameA:nameB, opp: mS==='A'?nameB:nameA, line: 0};
+  } else if(betType==='spread'){
     const cSide = document.getElementById('chk-side').value;
     chkMeta = {league: league, type:'spread', team: cSide==='A'?nameA:nameB, opp: cSide==='A'?nameB:nameA, line: parseFloat(document.getElementById('chk-line').value)};
   } else {
@@ -3216,10 +3489,14 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
   resultEl.innerHTML = '<div class="proj-score" style="padding-top:12px;"><div><div class="num">'+Math.round(finalProb*100)+'%</div><div class="lbl">estimated likelihood</div></div></div>'
     + '<div style="text-align:center;margin:6px 0 10px;"><span class="pill" style="'+cat.style+'">'+cat.label+'</span></div>'
     + '<div class="note" style="margin-top:0;">'+label+' · '+nameA+' vs '+nameB+(MODEL_WEIGHTS && MODEL_WEIGHTS.trained ? ' · from the trained model' : ' · calibrated estimate (learned model not trained yet -- see Track Record)')+'</div>'
-    + '<button class="secondary" id="chk-add-btn" style="margin-top:8px;">Add to slip</button>';
+    + '<button class="secondary" id="chk-add-btn" style="margin-top:8px;">Add to slip</button>'
+    + (chkMeta.type!=='ml' ? '<div style="font-weight:700;font-size:0.86rem;margin-top:14px;">Alt lines <span class="team-meta" style="font-weight:400;">tap one to add it to your slip</span></div><div id="chk-ladder"></div>' : '');
+  const chkEst = betType!=='ml' ? estAltOdds(chkMeta) : null;
+  const chkOdds = (betType!=='ml' && chkEst!==null) ? chkEst : oddsGuess;
   document.getElementById('chk-add-btn').addEventListener('click', function(){
-    addLeg(label+' ('+nameA+' vs '+nameB+')', oddsGuess, finalProb, chkMeta);
+    addLeg(label+' ('+nameA+' vs '+nameB+')', chkOdds, finalProb, chkMeta, betType!=='ml');
   });
+  if(chkMeta.type!=='ml') renderAltLadder('chk-ladder', chkMeta, null);
 });
 document.getElementById('add-custom-leg').addEventListener('click', ()=>{
   const label = document.getElementById('cl-label').value.trim();
