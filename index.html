@@ -187,9 +187,33 @@
 
   .wrap{padding:14px 16px 210px;}
 }
+
+  /* ---- Bet slip dock (sportsbook-style) ---- */
+  .leg-btn.selected{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);box-shadow:0 0 0 2px rgba(232,182,74,0.35);}
+  .leg-btn{transition:transform .12s, background .15s, box-shadow .15s;}
+  .leg-btn:active{transform:scale(0.95);}
+  #slip-dock{position:fixed;left:0;right:0;bottom:var(--nav-h,70px);z-index:75;display:none;pointer-events:none;}
+  #slip-dock.show{display:block;}
+  #slip-dock .dock-inner{max-width:720px;margin:0 auto;padding:0 10px;pointer-events:auto;}
+  #slip-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent);color:var(--accent-ink);border-radius:12px 12px 0 0;padding:11px 14px;font-weight:800;cursor:pointer;box-shadow:0 -6px 22px rgba(0,0,0,0.45);animation:slipRise .28s ease-out;}
+  #slip-bar .slip-count{background:var(--accent-ink);color:var(--accent);border-radius:999px;min-width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:0.8rem;margin-right:8px;}
+  #slip-bar.bump{animation:slipBump .3s ease-out;}
+  #slip-sheet{display:none;background:var(--card);border:1px solid var(--line);border-bottom:none;border-radius:12px 12px 0 0;padding:12px 14px;max-height:55vh;overflow-y:auto;box-shadow:0 -10px 28px rgba(0,0,0,0.5);}
+  #slip-dock.open #slip-sheet{display:block;animation:slipRise .22s ease-out;}
+  #slip-dock.open #slip-bar{border-radius:0;box-shadow:none;animation:none;}
+  .slip-leg{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;padding:9px 0;border-bottom:1px solid var(--line);font-size:0.86rem;}
+  .slip-leg:last-of-type{border-bottom:none;}
+  .slip-x{background:transparent;color:var(--muted);border:none;font-size:1.1rem;padding:0 4px;margin:0;cursor:pointer;}
+  @keyframes slipRise{from{transform:translateY(16px);opacity:0;}to{transform:none;opacity:1;}}
+  @keyframes slipBump{0%{transform:scale(1);}40%{transform:scale(1.03);}100%{transform:scale(1);}}
 </style>
 </head>
 <body>
+<div id="slip-dock"><div class="dock-inner">
+  <div id="slip-sheet"></div>
+  <div id="slip-bar"><span><span class="slip-count" id="slip-count">0</span><span id="slip-bar-label">Bet slip</span></span><span id="slip-bar-right"></span></div>
+</div></div>
+
 <div class="wrap">
   <div class="app-header">
     <div class="brand-row">
@@ -2714,12 +2738,19 @@ async function loadAllOdds(){
 
 function legBtn(label, oddsVal, bookName, meta){
   const b = document.createElement('button');
-  b.className = 'secondary';
+  b.className = 'secondary leg-btn';
+  b.dataset.leglabel = label;
   const shown = (oddsVal===null || oddsVal===undefined) ? '—' : (oddsVal>0?'+':'')+oddsVal;
   b.textContent = label+' '+shown;
   b.title = bookName ? ('Best price via '+bookName) : '';
   b.disabled = (oddsVal===null || oddsVal===undefined);
-  b.addEventListener('click', function(){ if(oddsVal!==null && oddsVal!==undefined) addLeg(label, oddsVal, undefined, meta); });
+  if(parlaySlip.some(function(l){ return l.label===label; })) b.classList.add('selected');
+  b.addEventListener('click', function(){
+    if(oddsVal===null || oddsVal===undefined) return;
+    const existing = parlaySlip.findIndex(function(l){ return l.label===label; });
+    if(existing>=0){ parlaySlip.splice(existing,1); renderParlaySlip(); } // tap again to remove, like a sportsbook
+    else addLeg(label, oddsVal, undefined, meta);
+  });
   return b;
 }
 function buildGameRow(g){
@@ -2999,7 +3030,69 @@ function wireParlayActions(root){
     });
   });
 }
+
+// ---------- Sportsbook-style bet slip dock ----------
+let SLIP_PREV_COUNT = 0;
+function syncNavHeight(){
+  const nav = document.querySelector('.bottom-nav');
+  document.documentElement.style.setProperty('--nav-h', (nav ? nav.offsetHeight : 70)+'px');
+}
+window.addEventListener('resize', syncNavHeight);
+function renderSlipDock(){
+  syncNavHeight();
+  const dock = document.getElementById('slip-dock');
+  const n = parlaySlip.length;
+  // Highlight every matching odds button
+  document.querySelectorAll('.leg-btn').forEach(function(b){
+    b.classList.toggle('selected', parlaySlip.some(function(l){ return l.label===b.dataset.leglabel; }));
+  });
+  if(n===0){ dock.classList.remove('show','open'); document.body.style.paddingBottom=''; SLIP_PREV_COUNT = 0; return; }
+  dock.classList.add('show');
+  const dec = parlaySlip.reduce(function(a,l){ return a*americanToDecimal(l.odds); }, 1);
+  const stake = parseFloat((document.getElementById('slip-dock-stake')||document.getElementById('parlay-stake')).value) || 0;
+  document.getElementById('slip-count').textContent = n;
+  document.getElementById('slip-bar-label').textContent = n===1 ? 'Straight bet' : n+'-leg parlay';
+  document.getElementById('slip-bar-right').textContent = decimalToAmerican(dec)+'  ·  '+(dock.classList.contains('open')?'Hide ▾':'View ▴');
+  const sheet = document.getElementById('slip-sheet');
+  const rows = parlaySlip.map(function(l,i){
+    const hasP = l.probability!==null && l.probability!==undefined;
+    const pill = hasP ? '<span class="pill" style="margin-left:0;'+probabilityCategory(l.probability).style+'">'+Math.round(l.probability*100)+'%</span>' : '';
+    return '<div class="slip-leg"><div style="min-width:0;"><div style="font-weight:700;">'+l.label+'</div><div class="team-meta">'+pill+'</div></div><div style="white-space:nowrap;font-weight:700;">'+(l.odds>0?'+':'')+l.odds+' <button class="slip-x" data-dockrm="'+i+'" aria-label="Remove">✕</button></div></div>';
+  }).join('');
+  const prevStake = document.getElementById('slip-dock-stake') ? document.getElementById('slip-dock-stake').value : document.getElementById('parlay-stake').value;
+  sheet.innerHTML = rows
+    + '<div style="display:flex;align-items:center;gap:10px;margin-top:10px;"><label style="font-size:0.8rem;color:var(--muted);">Stake $</label><input id="slip-dock-stake" type="number" value="'+prevStake+'" style="max-width:110px;"><div style="margin-left:auto;text-align:right;font-size:0.82rem;">To win <b style="color:#5eead4;">$'+fmt(stake*dec - stake)+'</b></div></div>'
+    + '<div style="display:flex;gap:8px;margin-top:10px;"><button class="secondary" id="slip-dock-analyze" style="flex:1;">Analyze parlay</button><button class="danger" id="slip-dock-clear" style="padding:9px 14px;">Clear</button></div>';
+  sheet.querySelectorAll('[data-dockrm]').forEach(function(b){
+    b.addEventListener('click', function(e){ e.stopPropagation(); parlaySlip.splice(Number(b.dataset.dockrm),1); renderParlaySlip(); });
+  });
+  document.getElementById('slip-dock-stake').addEventListener('input', function(){
+    document.getElementById('parlay-stake').value = this.value;
+    const st = parseFloat(this.value)||0;
+    this.parentNode.querySelector('b').textContent = '$'+fmt(st*dec - st);
+    renderParlaySlipMain();
+  });
+  document.getElementById('slip-dock-clear').addEventListener('click', function(){ parlaySlip.length = 0; renderParlaySlip(); });
+  document.getElementById('slip-dock-analyze').addEventListener('click', function(){
+    dock.classList.remove('open');
+    activateTopTab('parlay'); activateSubTab('parlay-calc');
+    window.scrollTo({top:0, behavior:'smooth'});
+    renderSlipDock();
+  });
+  document.body.style.paddingBottom = (60 + (dock.offsetHeight||0))+'px';
+  if(n>SLIP_PREV_COUNT){ const bar = document.getElementById('slip-bar'); bar.classList.remove('bump'); void bar.offsetWidth; bar.classList.add('bump'); }
+  SLIP_PREV_COUNT = n;
+}
+document.getElementById('slip-bar').addEventListener('click', function(){
+  document.getElementById('slip-dock').classList.toggle('open');
+  renderSlipDock();
+});
+window.addEventListener('load', syncNavHeight);
 function renderParlaySlip(){
+  try{ renderSlipDock(); }catch(e){ console.warn('dock failed', e); }
+  renderParlaySlipMain();
+}
+function renderParlaySlipMain(){
   const slipEl = document.getElementById('parlay-slip');
   const resultEl = document.getElementById('parlay-result');
   if(parlaySlip.length===0){
