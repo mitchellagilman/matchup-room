@@ -127,6 +127,12 @@ jobs:
           SPORTSGAMEODDS_API_KEY: ${{ secrets.SPORTSGAMEODDS_API_KEY }}
         run: python3 scripts/fetch_sportsgameodds_props.py
 
+      - name: Backfill missed CFB picks (safe to leave in; skips anything already logged)
+        continue-on-error: true
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 scripts/backfill_cfb.py
+
       - name: Track predictions (log + grade Top Bets picks)
         continue-on-error: true
         env:
