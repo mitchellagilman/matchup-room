@@ -29,6 +29,13 @@ on:
     - cron: '59 4 * * 5,6,0,1,2'
   workflow_dispatch: {}   # lets you also trigger this manually from the Actions tab
 
+# Never run two data updates at once -- overlapping runs both edit the
+# same data/*.json files and the second one's push fails with a merge
+# conflict (this is what happened on 2026-10-11).
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
 permissions:
   contents: write   # needed so the workflow can commit the updated data files
 
@@ -141,5 +148,15 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/*.json
           git diff --staged --quiet || git commit -m "Auto-update stats/odds ($(date -u +%Y-%m-%d))"
-          git pull --rebase origin main
-          git push
+          # If anything else landed on main during this run, replay our data
+          # commit on top of it and prefer THIS run's freshly fetched data
+          # for any conflicting data file (in a rebase, -X theirs means the
+          # commit being replayed, i.e. ours). Retry a few times in case of
+          # a push race.
+          for i in 1 2 3; do
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; git reset --hard origin/main; echo "rebase failed, nothing pushed"; exit 1; }
+            git push && exit 0
+            sleep 5
+          done
+          exit 1
