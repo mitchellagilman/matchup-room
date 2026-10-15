@@ -1842,7 +1842,10 @@ function computeProjection(nameA, nameB, league, gameDate){
   const aScore = Math.round((total + spread)/2);
   const bScore = Math.round((total - spread)/2);
   return {
-    aScore, bScore, total: aScore+bScore, spread: aScore-bScore,
+    // total/spread are the UNROUNDED model numbers (1 decimal), not aScore-bScore: those
+    // are whole-number scores, so a true 3.4-point margin used to read as exactly 3 and
+    // a market line of -3 gave a 0.0 edge that picked the wrong side at random.
+    aScore, bScore, total: Math.round(total*10)/10, spread: Math.round(spread*10)/10,
     aPassProj, bPassProj, aRushProj, bRushProj, usedSP, marketAnchored,
     aQbFlag, bQbFlag, aRestAdj, bRestAdj, weatherAdj,
   };
@@ -1863,6 +1866,7 @@ function computeGameBets(nameA, nameB){
     const marketFavA = (market.aSpread===null || market.aSpread===undefined) ? null : (aIsEntryA ? -market.aSpread : market.aSpread);
     if(marketFavA!==null){
       const spreadEdge = proj.spread - marketFavA;
+      if(Math.abs(spreadEdge)>=MIN_BET_EDGE){
       const favoredTeam = spreadEdge>0 ? nameA : nameB;
       const favoredLine = aIsEntryA ? (spreadEdge>0 ? market.aSpread : market.bSpread) : (spreadEdge>0 ? market.bSpread : market.aSpread);
       teamBets.push({
@@ -1871,10 +1875,11 @@ function computeGameBets(nameA, nameB){
         tier: confidenceTier(Math.abs(spreadEdge), proj.usedSP, league),
         sub: 'model has it '+(proj.spread>0?nameA:nameB)+' by '+Math.abs(tieSafeLine(proj.spread))
       });
+      }
     }
     if(market.total!==null && market.total!==undefined){
       const totalEdge = proj.total - market.total;
-      teamBets.push({
+      if(Math.abs(totalEdge)>=MIN_BET_EDGE) teamBets.push({
         label: (totalEdge>0?'Over':'Under')+' '+market.total,
         edge: Math.abs(totalEdge),
         tier: confidenceTier(Math.abs(totalEdge), proj.usedSP, league),
@@ -2221,6 +2226,7 @@ function simplifyTier(tierLabel){
   if(tierLabel==='Moderate') return 'Medium';
   return 'Low';
 }
+const MIN_BET_EDGE = 1.0; // a team bet needs at least this many points of edge vs the market line; anything smaller is a pass, not a pick (mirrors track_predictions.py)
 function computeAllBetCandidates(games, league){
   const candidates = [];
   const MIN_LEARNED_PROB = 0.55; // modest bar above a coinflip -- once the model is trained, a pick clearing the edge threshold but predicted below this gets filtered out rather than shown anyway
@@ -2247,7 +2253,7 @@ function computeAllBetCandidates(games, league){
       // looked big. Falls through untouched (learnedProb stays null) if
       // the model isn't trained yet -- see predictHitProbability's comment.
       const learnedProb = predictHitProbability(Math.abs(spreadEdge), favoredLine<0, isCfb);
-      if(learnedProb===null || learnedProb>=MIN_LEARNED_PROB){
+      if(Math.abs(spreadEdge)>=MIN_BET_EDGE && (learnedProb===null || learnedProb>=MIN_LEARNED_PROB)){
         candidates.push({
           edge: Math.abs(spreadEdge),
           label: favoredTeam+' '+(favoredLine>0?'+':'')+favoredLine,
@@ -2268,7 +2274,7 @@ function computeAllBetCandidates(games, league){
       // default, not a claim that totals and dog-side spreads behave the
       // same).
       const learnedProb = predictHitProbability(Math.abs(totalEdge), false, isCfb);
-      if(learnedProb===null || learnedProb>=MIN_LEARNED_PROB){
+      if(Math.abs(totalEdge)>=MIN_BET_EDGE && (learnedProb===null || learnedProb>=MIN_LEARNED_PROB)){
         candidates.push({
           edge: Math.abs(totalEdge),
           label: (totalEdge>0?'Over':'Under')+' '+market.total,
