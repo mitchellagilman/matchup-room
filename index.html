@@ -2509,6 +2509,21 @@ function summaryLine(s){
   if(s.graded===0) return 'no graded picks yet';
   return s.hits+'-'+s.misses+(s.pushes?'-'+s.pushes+' push':'')+(s.pct!==null?' ('+s.pct+'%)':'');
 }
+// Closing-line value: positive means the line you were given beat the
+// last line seen before the game (the best early sign of a real edge).
+function pickClv(p){
+  if(p.last_line===undefined || p.last_line===null || p.line===undefined || p.line===null || p.backfilled) return null;
+  if(p.type==='total') return p.direction==='over' ? p.last_line - p.line : p.line - p.last_line;
+  if(p.type==='spread') return p.line - p.last_line;
+  return null;
+}
+function clvRowHtml(picks){
+  const vals = picks.map(pickClv).filter(function(v){ return v!==null; });
+  if(vals.length<5) return '<div class="history-item"><span>Closing-line value</span><span class="team-meta">collecting (needs 5+ picks)</span></div>';
+  const avg = vals.reduce(function(a,b){ return a+b; },0)/vals.length;
+  const beat = vals.filter(function(v){ return v>0; }).length, lost = vals.filter(function(v){ return v<0; }).length;
+  return '<div class="history-item"><span>Closing-line value</span><span>'+(avg>=0?'+':'')+avg.toFixed(2)+' pts avg · beat close '+beat+', lost to it '+lost+' (of '+vals.length+')</span></div>';
+}
 async function renderTrackRecord(){
   const data = await fetchJSON('./data/track-record.json');
   const rawPicks = (data && data.picks) ? data.picks : [];
@@ -2549,7 +2564,9 @@ async function renderTrackRecord(){
   if(splitEl){
     splitEl.innerHTML = '<div class="history-item"><span>Spread / ML</span><span>'+summaryLine(summarizePicks(spreadPicks))+'</span></div>'+
       '<div class="history-item"><span>Over / Under</span><span>'+summaryLine(summarizePicks(totalPicks))+'</span></div>'+
-      '<div class="history-item"><span>Player props</span><span>'+summaryLine(summarizePicks(propPicks))+'</span></div>';
+      '<div class="history-item"><span>Player props (real sportsbook line)</span><span>'+summaryLine(summarizePicks(propPicks.filter(function(p){ return p.used_real_line; })))+'</span></div>'+
+      '<div class="history-item"><span>Player props (model-only line)</span><span>'+summaryLine(summarizePicks(propPicks.filter(function(p){ return !p.used_real_line; })))+'</span></div>'+
+      clvRowHtml(leagueFiltered);
   }
 
   // By strength -- confirmed live this was a real, separate ask from the
