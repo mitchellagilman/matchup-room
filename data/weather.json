@@ -58,10 +58,10 @@
     "dome": true
   },
   "Kansas City Chiefs": {
-    "windMph": 5,
-    "tempF": 61,
+    "windMph": 16,
+    "tempF": 70,
     "shortForecast": "Showers And Thunderstorms",
-    "severe": false,
+    "severe": true,
     "dome": false
   },
   "Las Vegas Raiders": {
@@ -70,7 +70,7 @@
   "Green Bay Packers": {
     "windMph": 3,
     "tempF": 47,
-    "shortForecast": "Mostly Cloudy",
+    "shortForecast": "Cloudy",
     "severe": false,
     "dome": false
   },
