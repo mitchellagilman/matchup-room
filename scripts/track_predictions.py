@@ -907,6 +907,13 @@ def main():
                     existing_pick["strength"] = simplify_tier(backfill_tier)
                     upgraded += 1
                 continue
+            # Props with no real sportsbook line are no longer logged. Their
+            # "line" is the model's own number, so Over/Under is just a
+            # matchup-direction call, not a measured edge, and they hit ~44%
+            # (vs ~52% for real-line props) across 1,450 graded picks. They
+            # still show on the site, labeled as matchup reads.
+            if not p.get("used_real_line"):
+                continue
             # Player props get the same strength label as team bets, using
             # the real edge when a real sportsbook line backs this pick,
             # or 0 (naturally landing in "Low") when it's still only the
@@ -925,6 +932,26 @@ def main():
             })
             existing_ids.add(pid)
             logged += 1
+
+    # Closing-line value: remember the most recent market line seen for each
+    # pending team pick. The last value saved before kickoff is the
+    # approximate closing line; the site compares it to the line the pick
+    # was logged at. Beating the close is the fastest honest sign of a real
+    # edge. A market that has disappeared (game started) keeps its last value.
+    for pk in record["picks"]:
+        if pk.get("status") != "pending" or pk.get("type") not in ("spread", "total") or pk.get("league") not in active_leagues or pk.get("backfilled"):
+            continue
+        mk = find_market_line(pk.get("_away"), pk.get("_home"), all_odds)
+        if not mk:
+            continue
+        if pk["type"] == "total":
+            if mk.get("total") is not None:
+                pk["last_line"] = mk["total"]
+        elif pk.get("favored_team"):
+            is_a = team_names_match(mk.get("aTeam"), pk["favored_team"])
+            v = mk.get("aSpread") if is_a else mk.get("bSpread")
+            if v is not None:
+                pk["last_line"] = v
 
     nfl_scores = fetch_nfl_final_scores(2026) if "NFL" in active_leagues else {}
     cfb_scores = fetch_cfb_final_scores(2026, os.environ.get("CFBD_API_KEY", "").strip()) if "CFB" in active_leagues else {}
