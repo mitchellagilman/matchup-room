@@ -307,7 +307,7 @@ def compute_projection(a, b, teams, league, odds_list=None, players=None, injuri
 
     a_final = round((total + spread) / 2)
     b_final = round((total - spread) / 2)
-    return {"aScore": a_final, "bScore": b_final, "total": a_final + b_final, "spread": a_final - b_final, "marketAnchored": market_anchored, "usedSP": used_sp, "aQbFlag": a_qb_flag, "bQbFlag": b_qb_flag}
+    return {"aScore": a_final, "bScore": b_final, "total": round(total, 1), "spread": round(spread, 1), "marketAnchored": market_anchored, "usedSP": used_sp, "aQbFlag": a_qb_flag, "bQbFlag": b_qb_flag}
 
 
 def team_names_match(a, b):
@@ -411,6 +411,9 @@ def predict_hit_probability(model_weights, edge, is_favorite, is_cfb):
     return 1 / (1 + math.exp(-z))
 
 
+MIN_BET_EDGE = 1.0  # mirrors index.html's MIN_BET_EDGE: under this many points of edge vs the market line is a pass, not a pick
+
+
 def compute_team_bets(games, teams, odds_list, league, players=None, injuries_by_team=None, weather_cache=None):
     """Every game's spread + total pick -- no top-N cut. (Was capped at 10
     by combined edge; that cap is what's removed here so the whole week's
@@ -440,7 +443,7 @@ def compute_team_bets(games, teams, odds_list, league, players=None, injuries_by
             else:
                 favored_line = market.get("bSpread") if spread_edge > 0 else market.get("aSpread")
             learned_prob = predict_hit_probability(model_weights, abs(spread_edge), (favored_line or 0) < 0, is_cfb)
-            if learned_prob is None or learned_prob >= MIN_LEARNED_PROB:
+            if abs(spread_edge) >= MIN_BET_EDGE and (learned_prob is None or learned_prob >= MIN_LEARNED_PROB):
                 candidates.append({
                     "type": "spread", "edge": abs(spread_edge),
                     "label": f"{favored_team} {'+' if favored_line and favored_line > 0 else ''}{favored_line}",
@@ -455,7 +458,7 @@ def compute_team_bets(games, teams, odds_list, league, players=None, injuries_by
             # index.html's mirror of this (see that comment for the
             # honest caveat about totals vs. dog-side spreads).
             learned_prob = predict_hit_probability(model_weights, abs(total_edge), False, is_cfb)
-            if learned_prob is None or learned_prob >= MIN_LEARNED_PROB:
+            if abs(total_edge) >= MIN_BET_EDGE and (learned_prob is None or learned_prob >= MIN_LEARNED_PROB):
                 candidates.append({
                     "type": "total", "edge": abs(total_edge),
                     "label": f"{'Over' if total_edge > 0 else 'Under'} {total_val}",
