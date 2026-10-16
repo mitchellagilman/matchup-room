@@ -806,33 +806,6 @@
       {
         "date": "2026-wk6",
         "opp": "",
-        "passYds": 0.0,
-        "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": -6.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": -2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "",
         "passYds": 0,
         "rushYds": 0,
         "receptions": 0,
@@ -843,6 +816,15 @@
         "date": "2026-wk6",
         "opp": "",
         "passYds": 0,
+        "rushYds": -11.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk6",
+        "opp": "",
+        "passYds": 0,
         "rushYds": -1.0,
         "receptions": 0,
         "recYds": 0,
@@ -860,15 +842,6 @@
       {
         "date": "2026-wk7",
         "opp": "",
-        "passYds": 0,
-        "rushYds": -1.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk7",
-        "opp": "",
         "passYds": 0.0,
         "rushYds": -4.0,
         "receptions": 0,
@@ -879,7 +852,34 @@
         "date": "2026-wk7",
         "opp": "",
         "passYds": 0,
+        "rushYds": -1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
         "rushYds": -2.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -5.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -3.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -6251,7 +6251,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 1.0,
-        "recYds": 13.0,
+        "recYds": 3.0,
         "tds": 0.0
       },
       {
@@ -6260,7 +6260,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 1.0,
-        "recYds": 3.0,
+        "recYds": 13.0,
         "tds": 0.0
       },
       {
@@ -6415,8 +6415,8 @@
       {
         "date": "2025-wk1",
         "opp": "",
-        "passYds": 38.0,
-        "rushYds": 42.0,
+        "passYds": 0,
+        "rushYds": 10.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -6424,8 +6424,8 @@
       {
         "date": "2025-wk1",
         "opp": "",
-        "passYds": 0,
-        "rushYds": 10.0,
+        "passYds": 38.0,
+        "rushYds": 42.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -28413,15 +28413,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 52.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk11",
         "opp": "",
         "passYds": 0,
@@ -28465,6 +28456,15 @@
         "receptions": 4.0,
         "recYds": 64.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk2",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 81.0,
+        "tds": 3.0
       },
       {
         "date": "2026-wk3",
@@ -33414,7 +33414,7 @@
     ]
   },
   "Semaj Morgan": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "UCLA",
     "league": "CFB",
     "games": [
@@ -36052,7 +36052,7 @@
     ]
   },
   "Richard Young": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Colorado",
     "league": "CFB",
     "games": [
@@ -36562,7 +36562,7 @@
     ]
   },
   "Justice Haynes": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Georgia Tech",
     "league": "CFB",
     "games": [
@@ -38881,7 +38881,7 @@
     ]
   },
   "Jordan Marshall": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Michigan",
     "league": "CFB",
     "games": [
@@ -52129,7 +52129,7 @@
     ]
   },
   "Daniel Hill": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Alabama",
     "league": "CFB",
     "games": [
@@ -52287,7 +52287,7 @@
     ]
   },
   "Kevin Riley": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Alabama",
     "league": "CFB",
     "games": [
@@ -58957,15 +58957,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk1",
-        "opp": "",
-        "passYds": 21.0,
-        "rushYds": 8.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk2",
         "opp": "",
         "passYds": 19.0,
@@ -59042,6 +59033,15 @@
         "opp": "",
         "passYds": -1.0,
         "rushYds": 9.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 2.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -59231,7 +59231,7 @@
     "games": []
   },
   "Peter Costelli": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Middle Tennessee",
     "league": "CFB",
     "games": [
@@ -63285,6 +63285,15 @@
         "receptions": 3.0,
         "recYds": 22.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 7.0,
+        "recYds": 61.0,
+        "tds": 0.0
       }
     ]
   },
@@ -66030,15 +66039,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk1",
-        "opp": "",
-        "passYds": 103.0,
-        "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk4",
         "opp": "",
         "passYds": 67.0,
@@ -66118,6 +66118,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 29.0,
+        "rushYds": 2.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -67755,6 +67764,15 @@
         "receptions": 3.0,
         "recYds": 33.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 4.0,
+        "recYds": 57.0,
+        "tds": 0.0
       }
     ]
   },
@@ -67982,7 +68000,7 @@
     ]
   },
   "Ja'Quez Cross": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "App State",
     "league": "CFB",
     "games": [
@@ -73248,15 +73266,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk1",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk6",
         "opp": "",
         "passYds": 0,
@@ -73336,6 +73345,15 @@
         "receptions": 1.0,
         "recYds": 6.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 34.0,
+        "tds": 1.0
       }
     ]
   },
@@ -75028,6 +75046,15 @@
         "receptions": 8.0,
         "recYds": 111.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 1.0,
+        "receptions": 4.0,
+        "recYds": 33.0,
+        "tds": 0.0
       }
     ]
   },
@@ -75675,6 +75702,15 @@
         "rushYds": 0,
         "receptions": 3.0,
         "recYds": 18.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 6.0,
         "tds": 0.0
       }
     ]
@@ -85682,7 +85718,7 @@
     "games": []
   },
   "Kenyon Clay": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Arkansas State",
     "league": "CFB",
     "games": [
@@ -86082,6 +86118,15 @@
         "receptions": 2.0,
         "recYds": 7.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 31.0,
+        "receptions": 2.0,
+        "recYds": 8.0,
+        "tds": 2.0
       }
     ]
   },
@@ -86452,7 +86497,7 @@
         "date": "2025-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 39.0,
+        "rushYds": 12.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -86461,7 +86506,7 @@
         "date": "2025-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 12.0,
+        "rushYds": 39.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -88211,6 +88256,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 205.0,
+        "rushYds": 2.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       }
     ]
   },
@@ -89462,15 +89516,6 @@
         "date": "2026-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 65.0,
-        "receptions": 2.0,
-        "recYds": 8.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "",
-        "passYds": 0,
         "rushYds": 82.0,
         "receptions": 1.0,
         "recYds": 9.0,
@@ -89547,6 +89592,15 @@
         "receptions": 1.0,
         "recYds": 21.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 78.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       }
     ]
   },
@@ -90657,6 +90711,15 @@
         "receptions": 1.0,
         "recYds": 5.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 33.0,
+        "receptions": 2.0,
+        "recYds": 22.0,
+        "tds": 1.0
       }
     ]
   },
@@ -92849,15 +92912,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 36.0,
-        "receptions": 1.0,
-        "recYds": 14.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "",
         "passYds": 0,
@@ -92936,6 +92990,15 @@
         "rushYds": 101.0,
         "receptions": 1.0,
         "recYds": 4.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 25.0,
+        "receptions": 2.0,
+        "recYds": 7.0,
         "tds": 0.0
       }
     ]
@@ -95004,15 +95067,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk11",
-        "opp": "",
-        "passYds": 213.0,
-        "rushYds": -5.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "",
         "passYds": 7.0,
@@ -95092,6 +95146,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 262.0,
+        "rushYds": -16.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 2.0
       }
     ]
   },
@@ -95730,6 +95793,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 126.0,
+        "rushYds": 40.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 2.0
       }
     ]
   },
@@ -96597,15 +96669,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk6",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 7.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk8",
         "opp": "",
         "passYds": 0,
@@ -96685,6 +96748,15 @@
         "receptions": 4.0,
         "recYds": 36.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 5.0,
+        "recYds": 91.0,
+        "tds": 0.0
       }
     ]
   },
@@ -96760,15 +96832,6 @@
     "team": "Texas State",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk10",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk11",
         "opp": "",
@@ -96848,6 +96911,15 @@
         "rushYds": 0,
         "receptions": 5.0,
         "recYds": 57.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 5.0,
+        "recYds": 44.0,
         "tds": 0.0
       }
     ]
@@ -102217,6 +102289,15 @@
         "receptions": 1.0,
         "recYds": 24.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 7.0,
+        "recYds": 75.0,
+        "tds": 0.0
       }
     ]
   },
@@ -105794,7 +105875,7 @@
     "games": []
   },
   "Jack Layne": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -111989,7 +112070,7 @@
     ]
   },
   "Taco Dowler": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Montana State",
     "league": "CFB",
     "games": [
@@ -112650,6 +112731,15 @@
         "rushYds": 0,
         "receptions": 2.0,
         "recYds": 36.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 39.0,
         "tds": 1.0
       }
     ]
@@ -119594,6 +119684,15 @@
         "receptions": 2.0,
         "recYds": 13.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 224.0,
+        "receptions": 3.0,
+        "recYds": 52.0,
+        "tds": 4.0
       }
     ]
   },
@@ -131655,6 +131754,15 @@
         "receptions": 1.0,
         "recYds": 7.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 33.0,
+        "tds": 1.0
       }
     ]
   },
@@ -131669,15 +131777,6 @@
     "team": "East Carolina",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk7",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 24.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk8",
         "opp": "",
@@ -131757,6 +131856,15 @@
         "rushYds": 0,
         "receptions": 1.0,
         "recYds": 10.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 16.0,
         "tds": 0.0
       }
     ]
@@ -133472,15 +133580,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk5",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 33.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk6",
         "opp": "",
         "passYds": 0,
@@ -133559,6 +133658,15 @@
         "rushYds": 0,
         "receptions": 2.0,
         "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 22.0,
         "tds": 0.0
       }
     ]
@@ -135348,19 +135456,10 @@
     ]
   },
   "Harry Stewart III": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Boise State",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk1",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 33.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk1",
         "opp": "",
@@ -135369,6 +135468,15 @@
         "receptions": 1.0,
         "recYds": 4.0,
         "tds": 0.0
+      },
+      {
+        "date": "2025-wk1",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 33.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       },
       {
         "date": "2025-wk4",
@@ -139834,6 +139942,15 @@
         "receptions": 1.0,
         "recYds": 13.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 21.0,
+        "tds": 0.0
       }
     ]
   },
@@ -143564,6 +143681,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 4.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -143830,8 +143956,8 @@
       {
         "date": "2026-wk5",
         "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
+        "passYds": 0.0,
+        "rushYds": -1.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -143839,8 +143965,8 @@
       {
         "date": "2026-wk5",
         "opp": "",
-        "passYds": 0.0,
-        "rushYds": -1.0,
+        "passYds": 0,
+        "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -144377,15 +144503,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "",
-        "passYds": 230.0,
-        "rushYds": 43.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk11",
         "opp": "",
         "passYds": 360.0,
@@ -144465,6 +144582,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 213.0,
+        "rushYds": 181.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 4.0
       }
     ]
   },
@@ -149170,6 +149296,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -153271,15 +153406,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk8",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 9.0,
-        "receptions": 9.0,
-        "recYds": 168.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk10",
         "opp": "",
         "passYds": 0,
@@ -153359,6 +153485,15 @@
         "receptions": 10.0,
         "recYds": 153.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 57.0,
+        "tds": 0.0
       }
     ]
   },
@@ -155709,15 +155844,6 @@
       {
         "date": "2026-wk3",
         "opp": "",
-        "passYds": 20.0,
-        "rushYds": 2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "",
         "passYds": 0,
         "rushYds": 0,
         "receptions": 2.0,
@@ -155795,6 +155921,15 @@
         "receptions": 5.0,
         "recYds": 13.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -157017,15 +157152,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 52.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk11",
         "opp": "",
         "passYds": 0,
@@ -157104,6 +157230,15 @@
         "rushYds": 0,
         "receptions": 3.0,
         "recYds": 50.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 4.0,
+        "recYds": 47.0,
         "tds": 0.0
       }
     ]
@@ -168091,15 +168226,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk11",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 4.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "",
         "passYds": 0,
@@ -168179,6 +168305,15 @@
         "receptions": 1.0,
         "recYds": 25.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 7.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -172723,15 +172858,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk11",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 74.0,
-        "receptions": 1.0,
-        "recYds": 21.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "",
         "passYds": 0,
@@ -172811,6 +172937,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 31.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -176699,6 +176834,15 @@
         "receptions": 1.0,
         "recYds": 5.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 13.0,
+        "tds": 1.0
       }
     ]
   },
@@ -180219,7 +180363,7 @@
     ]
   },
   "Sekou Kamau": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Wagner",
     "league": "CFB",
     "games": [
@@ -185748,7 +185892,7 @@
     ]
   },
   "Deshaun Buchanan": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -187548,7 +187692,7 @@
     "games": []
   },
   "Scottre Humphrey": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -192026,15 +192170,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk9",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 16.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk10",
         "opp": "",
         "passYds": 0,
@@ -192114,6 +192249,15 @@
         "receptions": 2.0,
         "recYds": 26.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 42.0,
+        "tds": 1.0
       }
     ]
   },
@@ -193171,15 +193315,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk6",
-        "opp": "",
-        "passYds": 2.0,
-        "rushYds": 49.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk8",
         "opp": "",
         "passYds": 0,
@@ -193259,6 +193394,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 86.0,
+        "rushYds": 16.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       }
     ]
   },
@@ -193267,15 +193411,6 @@
     "team": "Old Dominion",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk6",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 26.0,
-        "receptions": 1.0,
-        "recYds": 8.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk7",
         "opp": "",
@@ -193356,6 +193491,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 29.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -193774,15 +193918,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk8",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 32.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk9",
         "opp": "",
         "passYds": 0,
@@ -193861,6 +193996,15 @@
         "rushYds": 18.0,
         "receptions": 3.0,
         "recYds": 4.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 26.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       }
     ]
@@ -195753,15 +195897,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk4",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 15.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk7",
         "opp": "",
         "passYds": 0,
@@ -195838,6 +195973,15 @@
         "opp": "",
         "passYds": 0.0,
         "rushYds": 3.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 6.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -200254,15 +200398,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk9",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": -2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "",
         "passYds": 4.0,
@@ -200339,6 +200474,15 @@
         "opp": "",
         "passYds": 0.0,
         "rushYds": 1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 6.0,
+        "rushYds": 6.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -205355,6 +205499,15 @@
         "receptions": 1.0,
         "recYds": 10.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 3.0,
+        "receptions": 2.0,
+        "recYds": 14.0,
+        "tds": 0.0
       }
     ]
   },
@@ -205736,15 +205889,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk8",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk9",
         "opp": "",
         "passYds": 0,
@@ -205823,6 +205967,15 @@
         "rushYds": 0,
         "receptions": 4.0,
         "recYds": 29.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 4.0,
+        "recYds": 66.0,
         "tds": 0.0
       }
     ]
@@ -227834,6 +227987,15 @@
         "receptions": 2.0,
         "recYds": 20.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 26.0,
+        "tds": 0.0
       }
     ]
   },
@@ -235651,7 +235813,7 @@
     ]
   },
   "Matt Morad": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Wagner",
     "league": "CFB",
     "games": [
@@ -250376,6 +250538,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 10.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -252038,6 +252209,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 9.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -254103,7 +254283,17 @@
     "pos": "RB",
     "team": "Colorado State",
     "league": "CFB",
-    "games": []
+    "games": [
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 5.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      }
+    ]
   },
   "Brady Owens": {
     "pos": "TE",
@@ -254954,6 +255144,15 @@
         "rushYds": 8.0,
         "receptions": 0,
         "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 3.0,
+        "receptions": 2.0,
+        "recYds": -1.0,
         "tds": 0.0
       }
     ]
@@ -256920,6 +257119,15 @@
         "receptions": 1.0,
         "recYds": 8.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 5.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -257951,6 +258159,15 @@
         "rushYds": 0,
         "receptions": 1.0,
         "recYds": 12.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 9.0,
         "tds": 0.0
       }
     ]
@@ -259188,6 +259405,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 115.0,
+        "rushYds": -10.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       }
     ]
   },
@@ -259248,6 +259474,15 @@
         "rushYds": 1.0,
         "receptions": 2.0,
         "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 28.0,
         "tds": 0.0
       }
     ]
@@ -259386,6 +259621,15 @@
         "rushYds": 0,
         "receptions": 2.0,
         "recYds": 5.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 0.0,
         "tds": 0.0
       }
     ]
@@ -262671,6 +262915,15 @@
         "rushYds": 12.0,
         "receptions": 1.0,
         "recYds": 5.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 15.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       }
     ]
@@ -281104,7 +281357,7 @@
     ]
   },
   "Chandler Chapman": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Southern Illinois",
     "league": "CFB",
     "games": [
@@ -289519,6 +289772,15 @@
       },
       {
         "date": "2026-wk5",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
@@ -298239,6 +298501,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 77.0,
+        "receptions": 6.0,
+        "recYds": 22.0,
+        "tds": 0.0
       }
     ]
   },
@@ -298983,6 +299254,15 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 3.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 1.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -313934,8 +314214,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 15.0,
+        "receptions": 2.0,
+        "recYds": 19.0,
         "tds": 0.0
       },
       {
@@ -313943,8 +314223,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 19.0,
+        "receptions": 1.0,
+        "recYds": 15.0,
         "tds": 0.0
       },
       {
@@ -319419,7 +319699,7 @@
     ]
   },
   "DJ McKinney": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Tulsa",
     "league": "CFB",
     "games": [
@@ -319643,15 +319923,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk6",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 25.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk8",
         "opp": "",
         "passYds": 0,
@@ -319731,6 +320002,15 @@
         "receptions": 1.0,
         "recYds": 12.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 2.0,
+        "tds": 0.0
       }
     ]
   },
@@ -319739,15 +320019,6 @@
     "team": "Colorado State",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk6",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 17.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk9",
         "opp": "",
@@ -319827,6 +320098,15 @@
         "rushYds": 1.0,
         "receptions": 1.0,
         "recYds": -1.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 46.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       }
     ]
@@ -322610,15 +322890,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 14.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "",
         "passYds": 0,
@@ -322698,6 +322969,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 19.0,
+        "receptions": 2.0,
+        "recYds": 19.0,
+        "tds": 1.0
       }
     ]
   },
@@ -322706,15 +322986,6 @@
     "team": "UAB",
     "league": "CFB",
     "games": [
-      {
-        "date": "2026-wk1",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 57.0,
-        "tds": 0.0
-      },
       {
         "date": "2026-wk1",
         "opp": "",
@@ -322795,6 +323066,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 22.0,
+        "receptions": 8.0,
+        "recYds": 119.0,
+        "tds": 0.0
       }
     ]
   },
@@ -322855,6 +323135,15 @@
         "rushYds": 0,
         "receptions": 3.0,
         "recYds": 79.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 3.0,
+        "recYds": 47.0,
         "tds": 0.0
       }
     ]
@@ -324734,15 +325023,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk7",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 40.0,
-        "receptions": 4.0,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk8",
         "opp": "",
         "passYds": 0,
@@ -324822,6 +325102,15 @@
         "receptions": 2.0,
         "recYds": 10.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 104.0,
+        "receptions": 3.0,
+        "recYds": 17.0,
+        "tds": 0.0
       }
     ]
   },
@@ -327262,19 +327551,10 @@
     ]
   },
   "Daniel Hishaw Jr.": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Kansas",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk1",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 89.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk1",
         "opp": "",
@@ -327283,6 +327563,15 @@
         "receptions": 1.0,
         "recYds": 5.0,
         "tds": 0.0
+      },
+      {
+        "date": "2025-wk1",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 89.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       },
       {
         "date": "2025-wk2",
@@ -327562,8 +327851,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 3.0,
+        "receptions": 2.0,
+        "recYds": 53.0,
         "tds": 0.0
       },
       {
@@ -327738,8 +328027,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 32.0,
+        "receptions": 1.0,
+        "recYds": 15.0,
         "tds": 0.0
       },
       {
@@ -327747,8 +328036,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 15.0,
+        "receptions": 4.0,
+        "recYds": 32.0,
         "tds": 0.0
       },
       {
@@ -327842,7 +328131,7 @@
     ]
   },
   "Douglas Emilien": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Kansas",
     "league": "CFB",
     "games": [
@@ -327850,18 +328139,18 @@
         "date": "2025-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 5.0,
+        "rushYds": 2.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       },
       {
         "date": "2025-wk1",
         "opp": "",
         "passYds": 0,
-        "rushYds": 2.0,
-        "receptions": 0,
-        "recYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 5.0,
         "tds": 0.0
       },
       {
@@ -327894,18 +328183,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 4.0,
-        "tds": 1.0
+        "receptions": 2.0,
+        "recYds": 17.0,
+        "tds": 0.0
       },
       {
         "date": "2025-wk1",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 17.0,
-        "tds": 0.0
+        "receptions": 1.0,
+        "recYds": 4.0,
+        "tds": 1.0
       },
       {
         "date": "2025-wk2",
@@ -327928,7 +328217,7 @@
     ]
   },
   "Leshon Williams": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Kansas",
     "league": "CFB",
     "games": [
@@ -355702,7 +355991,7 @@
     ]
   },
   "Damon Bankston": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -355799,7 +356088,7 @@
     ]
   },
   "Keagan Johnson": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "New Mexico",
     "league": "CFB",
     "games": [
@@ -364607,7 +364896,7 @@
     ]
   },
   "Germie Bernard": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Alabama",
     "league": "CFB",
     "games": [
@@ -367347,15 +367636,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk7",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk8",
         "opp": "",
         "passYds": 0,
@@ -367429,6 +367709,15 @@
       },
       {
         "date": "2026-wk6",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
@@ -374054,6 +374343,15 @@
         "opp": "",
         "passYds": 183.0,
         "rushYds": 1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 2.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 282.0,
+        "rushYds": 26.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 2.0
@@ -382554,7 +382852,7 @@
     ]
   },
   "Vinson Davis": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Southern Illinois",
     "league": "CFB",
     "games": [
@@ -382676,7 +382974,7 @@
     ]
   },
   "Lashaun Lester": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "Southern Illinois",
     "league": "CFB",
     "games": [
@@ -384282,7 +384580,7 @@
     ]
   },
   "John Gentry": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "UT Martin",
     "league": "CFB",
     "games": [
@@ -417162,7 +417460,7 @@
     ]
   },
   "Hank Gibbs": {
-    "pos": "RB",
+    "pos": "QB",
     "team": "Northern Colorado",
     "league": "CFB",
     "games": [
@@ -418451,7 +418749,7 @@
     ]
   },
   "Griffin Woodell": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "UAlbany",
     "league": "CFB",
     "games": [
@@ -418548,7 +418846,7 @@
     ]
   },
   "Alex Jreige": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "UAlbany",
     "league": "CFB",
     "games": [
@@ -418645,7 +418943,7 @@
     ]
   },
   "Caden Burti": {
-    "pos": "RB",
+    "pos": "WR",
     "team": "UAlbany",
     "league": "CFB",
     "games": [
@@ -418803,7 +419101,7 @@
     ]
   },
   "Julius Davis": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Houston Christian",
     "league": "CFB",
     "games": [
@@ -418900,7 +419198,7 @@
     ]
   },
   "Chris Long": {
-    "pos": "WR",
+    "pos": "RB",
     "team": "Montana State",
     "league": "CFB",
     "games": [
@@ -468064,6 +468362,15 @@
         "receptions": 1.0,
         "recYds": 49.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 7.0,
+        "tds": 0.0
       }
     ]
   },

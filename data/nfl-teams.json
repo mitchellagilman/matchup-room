@@ -449,14 +449,14 @@
   },
   "Seattle Seahawks": {
     "league": "NFL",
-    "record": "3-2",
-    "ppg": 26.8,
-    "pa": 21.0,
-    "passOff": 238.2,
-    "rushOff": 106.0,
-    "passDef": 166.8,
-    "rushDef": 100.4,
-    "to": 0.4,
+    "record": "3-3",
+    "ppg": 24.7,
+    "pa": 20.3,
+    "passOff": 244.8,
+    "rushOff": 107.2,
+    "passDef": 156.8,
+    "rushDef": 96.0,
+    "to": -0.17,
     "ats": "",
     "wk1": true,
     "games": [
@@ -499,6 +499,14 @@
         "teamScore": 29.0,
         "oppScore": 32.0,
         "result": "L"
+      },
+      {
+        "week": "6",
+        "date": "2026-10-15",
+        "opp": "Denver Broncos",
+        "teamScore": 14.0,
+        "oppScore": 17.0,
+        "result": "L"
       }
     ],
     "prevPpg": 28.4,
@@ -507,9 +515,9 @@
     "homePpg": 24.0,
     "homePa": 21.7,
     "homeGames": 3,
-    "awayPpg": 31.0,
-    "awayPa": 20.0,
-    "awayGames": 2
+    "awayPpg": 25.3,
+    "awayPa": 19.0,
+    "awayGames": 3
   },
   "Indianapolis Colts": {
     "league": "NFL",
@@ -577,14 +585,14 @@
   },
   "Denver Broncos": {
     "league": "NFL",
-    "record": "3-2",
-    "ppg": 19.4,
-    "pa": 22.2,
-    "passOff": 188.4,
-    "rushOff": 86.2,
-    "passDef": 220.4,
-    "rushDef": 145.2,
-    "to": 0.4,
+    "record": "4-2",
+    "ppg": 19.0,
+    "pa": 20.8,
+    "passOff": 174.8,
+    "rushOff": 84.2,
+    "passDef": 230.0,
+    "rushDef": 139.8,
+    "to": 0.83,
     "ats": "",
     "wk1": true,
     "games": [
@@ -627,14 +635,22 @@
         "teamScore": 23.0,
         "oppScore": 17.0,
         "result": "W"
+      },
+      {
+        "week": "6",
+        "date": "2026-10-15",
+        "opp": "Seattle Seahawks",
+        "teamScore": 17.0,
+        "oppScore": 14.0,
+        "result": "W"
       }
     ],
     "prevPpg": 23.6,
     "prevPa": 18.3,
     "prevTo": 0.05,
-    "homePpg": 25.0,
-    "homePa": 19.5,
-    "homeGames": 2,
+    "homePpg": 22.3,
+    "homePa": 17.7,
+    "homeGames": 3,
     "awayPpg": 15.7,
     "awayPa": 24.0,
     "awayGames": 3
