@@ -2695,6 +2695,18 @@ function edgeToProbability(edge, usedSP, league){
   if(league==='CFB' && !usedSP) prob = 0.5 + (prob-0.5)*0.6; // same "less trustworthy without SP+/SRS backing" discount confidenceTier already applies via the Strong* star
   return Math.max(0.5, Math.min(0.75, prob));
 }
+// Probability for a bet at ANY line, positive or negative edge. Built on the
+// calibrated edge->probability curve only (not the learned model), because the
+// learned model was trained on picks that already had a positive edge and
+// includes a favorite/underdog switch at line 0 -- extrapolating it to small or
+// negative edges made -1.5 read 50% while -0.5 read 48%. This version is
+// symmetric around 50% and never decreases as a line gets easier:
+// more points for the same side (or a lower number for an Over, a higher number
+// for an Under) can only raise the probability.
+function signedBetProbability(signedEdge, usedSP, league){
+  const lift = edgeToProbability(Math.abs(signedEdge), usedSP, league) - 0.5;
+  return 0.5 + (signedEdge<0 ? -lift : lift);
+}
 function pickProbability(edge, usedSP, league, isFavorite, learnedProbOverride){
   if(learnedProbOverride!==null && learnedProbOverride!==undefined) return learnedProbOverride;
   const learned = predictHitProbability(edge, isFavorite===undefined ? true : isFavorite, league==='CFB');
@@ -2906,8 +2918,7 @@ function evalBet(meta){
       signedEdge = sideIsA ? raw : -raw;
       isFav = meta.type==='ml' ? signedEdge>0 : line<0;
     }
-    const rawProb = pickProbability(Math.abs(signedEdge), proj.usedSP, meta.league, isFav, null);
-    return {prob: signedEdge<0 ? 1-rawProb : rawProb, signedEdge: signedEdge, gameId: [o.a,o.b].sort().join('|'), proj: proj, orient: o};
+    return {prob: signedBetProbability(signedEdge, proj.usedSP, meta.league), signedEdge: signedEdge, gameId: [o.a,o.b].sort().join('|'), proj: proj, orient: o};
   }catch(e){ return null; }
 }
 function fmtLine(n){ return (n>0?'+':'')+n; }
@@ -3503,15 +3514,11 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
   } else {
     chkMeta = {league: league, type:'total', dir: document.getElementById('chk-direction').value, team: nameA, opp: nameB, line: parseFloat(document.getElementById('chk-total-line').value)};
   }
-  const rawProb = pickProbability(Math.abs(signedEdge), proj.usedSP, league, isFavorite, null);
-  // Negative signedEdge means the model actually favors the OTHER side of
-  // this exact bet -- invert back toward (and potentially below) 50%
-  // rather than claim confidence in a direction the model disagrees with.
-  const finalProb = signedEdge<0 ? (1-rawProb) : rawProb;
+  const finalProb = signedBetProbability(signedEdge, proj.usedSP, league);
   const cat = probabilityCategory(finalProb);
   resultEl.innerHTML = '<div class="proj-score" style="padding-top:12px;"><div><div class="num">'+Math.round(finalProb*100)+'%</div><div class="lbl">estimated likelihood</div></div></div>'
     + '<div style="text-align:center;margin:6px 0 10px;"><span class="pill" style="'+cat.style+'">'+cat.label+'</span></div>'
-    + '<div class="note" style="margin-top:0;">'+label+' · '+nameA+' vs '+nameB+(MODEL_WEIGHTS && MODEL_WEIGHTS.trained ? ' · from the trained model' : ' · calibrated estimate (learned model not trained yet -- see Track Record)')+'</div>'
+    + '<div class="note" style="margin-top:0;">'+label+' · '+nameA+' vs '+nameB+' · calibrated estimate, consistent across lines'+'</div>'
     + '<button class="secondary" id="chk-add-btn" style="margin-top:8px;">Add to slip</button>'
     + (chkMeta.type!=='ml' ? '<div style="font-weight:700;font-size:0.86rem;margin-top:14px;">Alt lines <span class="team-meta" style="font-weight:400;">tap one to add it to your slip</span></div><div id="chk-ladder"></div>' : '');
   const chkEst = betType!=='ml' ? estAltOdds(chkMeta) : null;
