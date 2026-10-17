@@ -1,8 +1,8 @@
 {
   "Jacksonville Jaguars": {
-    "windMph": 0,
-    "tempF": 68,
-    "shortForecast": "Patchy Fog",
+    "windMph": 7,
+    "tempF": 69,
+    "shortForecast": "Slight Chance Rain Showers",
     "severe": false,
     "dome": false
   },
@@ -10,9 +10,9 @@
     "dome": true
   },
   "Cleveland Browns": {
-    "windMph": 17,
-    "tempF": 59,
-    "shortForecast": "Chance Showers And Thunderstorms",
+    "windMph": 20,
+    "tempF": 44,
+    "shortForecast": "Slight Chance Rain Showers",
     "severe": true,
     "dome": false
   },
@@ -20,30 +20,30 @@
     "dome": true
   },
   "New England Patriots": {
-    "windMph": 5,
-    "tempF": 45,
-    "shortForecast": "Mostly Cloudy",
+    "windMph": 13,
+    "tempF": 46,
+    "shortForecast": "Chance Rain Showers",
     "severe": false,
     "dome": false
   },
   "New York Giants": {
-    "windMph": 3,
-    "tempF": 57,
-    "shortForecast": "Rain Showers",
+    "windMph": 13,
+    "tempF": 48,
+    "shortForecast": "Chance Rain Showers",
     "severe": false,
     "dome": false
   },
   "Philadelphia Eagles": {
-    "windMph": 5,
-    "tempF": 59,
-    "shortForecast": "Rain Showers",
+    "windMph": 10,
+    "tempF": 49,
+    "shortForecast": "Chance Rain Showers",
     "severe": false,
     "dome": false
   },
   "Tampa Bay Buccaneers": {
-    "windMph": 3,
+    "windMph": 1,
     "tempF": 75,
-    "shortForecast": "Partly Cloudy",
+    "shortForecast": "Isolated Showers And Thunderstorms",
     "severe": false,
     "dome": false
   },
@@ -51,9 +51,9 @@
     "dome": true
   },
   "Kansas City Chiefs": {
-    "windMph": 14,
-    "tempF": 44,
-    "shortForecast": "Mostly Clear",
+    "windMph": 2,
+    "tempF": 36,
+    "shortForecast": "Patchy Frost",
     "severe": false,
     "dome": false
   },
@@ -61,15 +61,15 @@
     "dome": true
   },
   "Green Bay Packers": {
-    "windMph": 9,
-    "tempF": 44,
-    "shortForecast": "Rain Showers",
+    "windMph": 3,
+    "tempF": 32,
+    "shortForecast": "Widespread Frost",
     "severe": false,
     "dome": false
   },
   "San Francisco 49ers": {
     "windMph": 2,
-    "tempF": 56,
+    "tempF": 59,
     "shortForecast": "Clear",
     "severe": false,
     "dome": false
