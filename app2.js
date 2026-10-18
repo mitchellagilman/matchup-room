@@ -1063,6 +1063,79 @@ async function renderTrackRecord(){
     return '<div class="team-row"><div><div class="team-name">'+p.label+' <span class="pill">'+p.league+'</span></div><div class="team-meta">'+detail+'</div></div><div style="color:'+statusColor+';font-weight:700;font-size:0.85rem;">'+statusLabel+'</div></div>';
   }).join('');
 }
+
+// ---- Weekly Top Bets tracker (separate record from the main Track Record) ----
+let weeklyFilter = 'ALL';
+async function renderWeeklyTracker(){
+  const data = await fetchJSON('./data/best-per-game.json');
+  const all = (data && data.picks) ? data.picks : [];
+  const picks = weeklyFilter==='ALL' ? all : all.filter(function(p){ return p.league===weeklyFilter; });
+  const sumEl = document.getElementById('weekly-summary');
+  const weekEl = document.getElementById('weekly-by-week');
+  const listEl = document.getElementById('weekly-list');
+  if(!sumEl) return;
+  if(!all.length){
+    sumEl.className='empty'; sumEl.textContent='No picks logged yet. They start appearing after the next data update, and grade after the games finish.';
+    weekEl.className='empty'; weekEl.textContent='Nothing yet.';
+    listEl.className='empty'; listEl.textContent='Nothing yet.';
+    return;
+  }
+  function rec(list){
+    const done = list.filter(function(p){ return p.status==='hit' || p.status==='miss'; });
+    const hits = done.filter(function(p){ return p.status==='hit'; }).length;
+    const pushes = list.filter(function(p){ return p.status==='push'; }).length;
+    const pending = list.filter(function(p){ return p.status==='pending'; }).length;
+    return {hits:hits, misses:done.length-hits, pushes:pushes, pending:pending, n:done.length, pct: done.length ? Math.round(hits/done.length*100) : null};
+  }
+  function recHtml(label, r){
+    const color = r.pct===null ? 'var(--muted,#888)' : (r.pct>=55 ? '#2e9e5b' : (r.pct>=50 ? '#c98a00' : '#d64545'));
+    return '<div class="team-row"><div><div class="team-name">'+label+'</div><div class="team-meta">'+r.hits+'-'+r.misses+(r.pushes?'-'+r.pushes+' push':'')+' · '+r.pending+' pending</div></div><div style="color:'+color+';font-weight:700;">'+(r.pct===null?'—':r.pct+'%')+'</div></div>';
+  }
+  const kinds = [['Spread','Spread'],['Moneyline','Moneyline'],['Total','Total'],['Player prop','Player props']];
+  const parts = [recHtml('Overall', rec(picks))];
+  const teamOnly = picks.filter(function(p){ return p.type!=='player_prop'; });
+  parts.push(recHtml('All team bets', rec(teamOnly)));
+  kinds.forEach(function(k){
+    const sub = picks.filter(function(p){ return p.kind===k[0]; });
+    if(sub.length) parts.push(recHtml(k[1], rec(sub)));
+  });
+  if(weeklyFilter==='ALL'){
+    ['NFL','CFB'].forEach(function(lg){
+      const sub = all.filter(function(p){ return p.league===lg; });
+      if(sub.length) parts.push(recHtml(lg==='CFB'?'College':'NFL', rec(sub)));
+    });
+  }
+  const graded = rec(picks).n;
+  sumEl.className='';
+  sumEl.innerHTML = parts.join('') + (graded<30 ? '<div class="note">Only '+graded+' graded so far, so these percentages can swing a lot. Treat them as a trend, not a verdict, until there are 30+.</div>' : '');
+
+  const byWeek = {};
+  picks.forEach(function(p){ (byWeek[p.week] = byWeek[p.week] || []).push(p); });
+  const weeks = Object.keys(byWeek).sort(function(a,b){
+    const da = byWeek[a].reduce(function(m,p){ return p.date>m?p.date:m; },'');
+    const db = byWeek[b].reduce(function(m,p){ return p.date>m?p.date:m; },'');
+    return da<db?1:-1;
+  });
+  weekEl.className='';
+  weekEl.innerHTML = weeks.map(function(w){ return recHtml(w, rec(byWeek[w])); }).join('');
+
+  const sorted = picks.slice().sort(function(a,b){ return a.date<b.date?1:(a.date>b.date?-1:0); });
+  listEl.className='';
+  listEl.innerHTML = sorted.map(function(p){
+    const color = p.status==='hit' ? '#2e9e5b' : (p.status==='miss' ? '#d64545' : (p.status==='push' ? '#c98a00' : 'var(--muted,#888)'));
+    const label = p.status.charAt(0).toUpperCase()+p.status.slice(1);
+    const extra = p.prob ? ' · '+Math.round(p.prob*100)+'% est' : '';
+    return '<div class="team-row"><div><div class="team-name">'+p.label+' <span class="pill">'+p.league+'</span> <span class="pill">'+p.kind+'</span></div><div class="team-meta">'+p.matchup+' · '+p.week+extra+'</div></div><div style="color:'+color+';font-weight:700;font-size:0.85rem;">'+label+'</div></div>';
+  }).join('');
+}
+document.querySelectorAll('#weekly-filter [data-weeklyfilter]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    weeklyFilter = btn.dataset.weeklyfilter;
+    document.querySelectorAll('#weekly-filter [data-weeklyfilter]').forEach(function(b){ b.classList.toggle('active', b===btn); });
+    renderWeeklyTracker();
+  });
+});
+document.querySelectorAll('[data-subtab="track-weekly"]').forEach(function(t){ t.addEventListener('click', renderWeeklyTracker); });
 document.querySelectorAll('#track-filter [data-trackfilter]').forEach(function(btn){
   btn.addEventListener('click', function(){
     trackFilter = btn.dataset.trackfilter;
