@@ -28,6 +28,22 @@ function signedBetProbability(signedEdge, usedSP, league){
   const lift = edgeToProbability(Math.abs(signedEdge), usedSP, league) - 0.5;
   return 0.5 + (signedEdge<0 ? -lift : lift);
 }
+// Moneyline win chance. The market is a strong prior, so the model's margin is
+// only allowed to move the market's expected margin part of the way (35%):
+// a model that disagrees with the market by 6 points does NOT get to claim the
+// underdog is the likely winner. marketMargin = how many points the team is
+// favored by in the market (negative for an underdog), or null if no market line.
+function marketMarginFor(team, opp){
+  const m = findMarketLine(team, opp);
+  if(!m) return null;
+  const s = teamNamesMatch(m.aTeam, team) ? m.aSpread : m.bSpread;
+  return (s===null || s===undefined) ? null : -s;
+}
+function mlWinProb(league, modelMargin, marketMargin){
+  const sd = league==='CFB' ? 16 : 13.5;
+  const m = (marketMargin===null || marketMargin===undefined) ? modelMargin : marketMargin + 0.35*(modelMargin-marketMargin);
+  return Math.max(0.1, Math.min(0.9, normCdf(m/sd)));
+}
 function pickProbability(edge, usedSP, league, isFavorite, learnedProbOverride){
   if(learnedProbOverride!==null && learnedProbOverride!==undefined) return learnedProbOverride;
   const learned = predictHitProbability(edge, isFavorite===undefined ? true : isFavorite, league==='CFB');
@@ -239,7 +255,8 @@ function evalBet(meta){
       signedEdge = sideIsA ? raw : -raw;
       isFav = meta.type==='ml' ? signedEdge>0 : line<0;
     }
-    return {prob: signedBetProbability(signedEdge, proj.usedSP, meta.league), signedEdge: signedEdge, gameId: [o.a,o.b].sort().join('|'), proj: proj, orient: o};
+    const evProb = meta.type==='ml' ? mlWinProb(meta.league, signedEdge, marketMarginFor(meta.team, meta.opp)) : signedBetProbability(signedEdge, proj.usedSP, meta.league);
+    return {prob: evProb, signedEdge: signedEdge, gameId: [o.a,o.b].sort().join('|'), proj: proj, orient: o};
   }catch(e){ return null; }
 }
 function fmtLine(n){ return (n>0?'+':'')+n; }
@@ -835,7 +852,7 @@ document.getElementById('chk-check-btn').addEventListener('click', function(){
   } else {
     chkMeta = {league: league, type:'total', dir: document.getElementById('chk-direction').value, team: nameA, opp: nameB, line: parseFloat(document.getElementById('chk-total-line').value)};
   }
-  const finalProb = signedBetProbability(signedEdge, proj.usedSP, league);
+  const finalProb = chkMeta.type==='ml' ? mlWinProb(league, signedEdge, marketMarginFor(chkMeta.team, chkMeta.opp)) : signedBetProbability(signedEdge, proj.usedSP, league);
   const cat = probabilityCategory(finalProb);
   resultEl.innerHTML = '<div class="proj-score" style="padding-top:12px;"><div><div class="num">'+Math.round(finalProb*100)+'%</div><div class="lbl">estimated likelihood</div></div></div>'
     + '<div style="text-align:center;margin:6px 0 10px;"><span class="pill" style="'+cat.style+'">'+cat.label+'</span></div>'
