@@ -493,6 +493,11 @@
 
   <!-- ================= TRACK RECORD ================= -->
   <div class="leaguepanel" id="panel-track">
+    <div class="tabs">
+      <div class="subtab active" data-subtab="track-all">All Picks</div>
+      <div class="subtab" data-subtab="track-weekly">Weekly Top Bets</div>
+    </div>
+    <div class="subpanel active" id="subpanel-track-all">
     <div class="card">
       <h2>How this works</h2>
       <div class="note" style="margin-top:0;">Every week's bets get logged automatically before the games are played — every game's spread and total, not just a curated top 10, plus a player prop projection for every player who clears a minimum recent-volume bar. Once a game (or a player's next game) is final, its pick gets graded hit/miss/push against the real result. Team bets grade against the real market line. Player props have no real sportsbook line in this pipeline, so they grade against the model's own projected number — that measures whether the projection itself is well-calibrated, not whether a real bet would have won.</div>
@@ -542,6 +547,29 @@
         <div class="subtab" data-trackstrengthfilter="Low">Low</div>
       </div>
       <div id="track-record-list" class="empty">Loading...</div>
+    </div>
+    </div>
+    <div class="subpanel" id="subpanel-track-weekly">
+      <div class="card">
+        <h2>Weekly Top Bets record</h2>
+        <div class="note" style="margin-top:0;">Tracks the "Best per game" picks from Top Bets: one top team bet (spread, moneyline or total) and, when a real sportsbook line exists, one top player prop for every game. Each pick is frozen when first logged, then graded after the game. Kept completely separate from the All Picks record. Tracking starts from the first run after this was added, so there is no past history yet.</div>
+      </div>
+      <div class="card">
+        <div class="tabs" id="weekly-filter" style="margin-bottom:8px;">
+          <div class="subtab active" data-weeklyfilter="ALL">All</div>
+          <div class="subtab" data-weeklyfilter="NFL">NFL</div>
+          <div class="subtab" data-weeklyfilter="CFB">College</div>
+        </div>
+        <div id="weekly-summary" class="empty">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>By week</h2>
+        <div id="weekly-by-week" class="empty">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>All picks</h2>
+        <div id="weekly-list" class="empty">Loading...</div>
+      </div>
     </div>
   </div>
 
