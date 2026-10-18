@@ -555,14 +555,6 @@
     },
     {
       "team": "Indianapolis Colts",
-      "name": "Will Mallory",
-      "pos": "TE",
-      "injury": "Thumb",
-      "status": "Questionable",
-      "_id": "00-0038394"
-    },
-    {
-      "team": "Indianapolis Colts",
       "name": "Jaylon Carlies",
       "pos": "LB",
       "injury": "Ribs",
@@ -1038,7 +1030,7 @@
       "name": "Landon Dickerson",
       "pos": "G",
       "injury": "Knee",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0037002"
     },
     {
@@ -1046,7 +1038,7 @@
       "name": "Grant Calcaterra",
       "pos": "TE",
       "injury": "Back",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0037086"
     },
     {
@@ -1054,7 +1046,7 @@
       "name": "Jakorian Bennett",
       "pos": "CB",
       "injury": "Knee",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0039072"
     },
     {
@@ -1086,7 +1078,7 @@
       "name": "Eli Stowers",
       "pos": "TE",
       "injury": "Quadricep",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0041483"
     },
     {
@@ -1104,14 +1096,6 @@
       "injury": "Knee",
       "status": "Out",
       "_id": "00-0034277"
-    },
-    {
-      "team": "Pittsburgh Steelers",
-      "name": "DK Metcalf",
-      "pos": "WR",
-      "injury": "Illness",
-      "status": "Questionable",
-      "_id": "00-0035640"
     },
     {
       "team": "Pittsburgh Steelers",
@@ -1136,6 +1120,14 @@
       "injury": "Calf",
       "status": "Out",
       "_id": "00-0036862"
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "name": "Pat Freiermuth",
+      "pos": "TE",
+      "injury": "Calf",
+      "status": "Questionable",
+      "_id": "00-0036894"
     },
     {
       "team": "Pittsburgh Steelers",
@@ -1176,6 +1168,86 @@
       "injury": "Knee",
       "status": "Out",
       "_id": "00-0039165"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Mike Evans",
+      "pos": "WR",
+      "injury": "Ribs",
+      "status": "Questionable",
+      "_id": "00-0031408"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Siran Neal",
+      "pos": "S",
+      "injury": "Neck",
+      "status": "Questionable",
+      "_id": "00-0034391"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Christian Kirk",
+      "pos": "WR",
+      "injury": "Calf",
+      "status": "Questionable",
+      "_id": "00-0034775"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Nick Bosa",
+      "pos": "DE",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0035717"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Deebo Samuel Sr.",
+      "pos": "WR",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0035719"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Garret Wallow",
+      "pos": "LB",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0036844"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Upton Stout",
+      "pos": "CB",
+      "injury": "Shoulder",
+      "status": "Questionable",
+      "_id": "00-0040152"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Marques Sigle",
+      "pos": "S",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0040185"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Mykel Williams",
+      "pos": "DE",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0040660"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Gracen Halton",
+      "pos": "DT",
+      "injury": "Quadricep",
+      "status": "Questionable",
+      "_id": "00-0041557"
     },
     {
       "team": "Tampa Bay Buccaneers",
@@ -1272,6 +1344,110 @@
       "injury": "Quadricep",
       "status": "Out",
       "_id": "00-0040141"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Stefon Diggs",
+      "pos": "WR",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0031588"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Marcus Mariota",
+      "pos": "QB",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0032268"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Lucas Patrick",
+      "pos": "G",
+      "injury": "Illness",
+      "status": "Questionable",
+      "_id": "00-0033082"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Jeremy McNichols",
+      "pos": "RB",
+      "injury": "Quadricep",
+      "status": "Questionable",
+      "_id": "00-0033955"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Charles Omenihu",
+      "pos": "DE",
+      "injury": "Groin",
+      "status": "Out",
+      "_id": "00-0035279"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Javon Kinlaw",
+      "pos": "DT",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0036260"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Nick Cross",
+      "pos": "S",
+      "injury": "Illness",
+      "status": "Questionable",
+      "_id": "00-0037616"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Percy Butler",
+      "pos": "S",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0038100"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Jordan Magee",
+      "pos": "LB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0039368"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Javontae Jean-Baptiste",
+      "pos": "LB",
+      "injury": "Pectoral",
+      "status": "Out",
+      "_id": "00-0039412"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Tyler Owens",
+      "pos": "S",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0039681"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Jacory Croskey-Merritt",
+      "pos": "RB",
+      "injury": "Groin",
+      "status": "Out",
+      "_id": "00-0040242"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Trey Amos",
+      "pos": "CB",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0040731"
     }
   ]
 }
