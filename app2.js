@@ -787,7 +787,7 @@ function bestTeamBetForGame(g, league){
     const odds = aIsEntryA ? (edge>0 ? market.aSpreadOdds : market.bSpreadOdds) : (edge>0 ? market.bSpreadOdds : market.aSpreadOdds);
     const price = (odds===null||odds===undefined) ? -110 : odds;
     const prob = signedBetProbability(Math.abs(edge), proj.usedSP, league);
-    opts.push({kind:'Spread', label: team+' '+fmtLine(line), prob:prob, odds:price, hasOdds: odds!==null&&odds!==undefined, edge:Math.abs(edge), value: prob-impliedFromAmerican(price),
+    opts.push({kind:'Spread', label: team+' '+fmtLine(line), prob:prob, odds:price, hasOdds: odds!==null&&odds!==undefined, edge:Math.abs(edge), bigGap: Math.abs(edge)>=7 || (marketFavA!==0 && proj.spread!==0 && (marketFavA>0)!==(proj.spread>0)), value: prob-impliedFromAmerican(price),
       sub:'model has it '+(proj.spread>0?g.a:g.b)+' by '+Math.abs(tieSafeLine(proj.spread)),
       meta:{league:league,type:'spread',team:team,opp:opp,line:line}});
   }
@@ -797,7 +797,7 @@ function bestTeamBetForGame(g, league){
     const odds = over ? market.overOdds : market.underOdds;
     const price = (odds===null||odds===undefined) ? -110 : odds;
     const prob = signedBetProbability(Math.abs(edge), proj.usedSP, league);
-    opts.push({kind:'Total', label:(over?'Over ':'Under ')+market.total, prob:prob, odds:price, hasOdds: odds!==null&&odds!==undefined, edge:Math.abs(edge), value: prob-impliedFromAmerican(price),
+    opts.push({kind:'Total', label:(over?'Over ':'Under ')+market.total, prob:prob, odds:price, hasOdds: odds!==null&&odds!==undefined, edge:Math.abs(edge), bigGap: Math.abs(edge)>=7, value: prob-impliedFromAmerican(price),
       sub:'model projects '+tieSafeLine(proj.total)+' total points',
       meta:{league:league,type:'total',dir:over?'over':'under',team:g.a,opp:g.b,line:market.total}});
   }
@@ -805,10 +805,15 @@ function bestTeamBetForGame(g, league){
   // win chance beats the price (win chance from a normal curve on the projected margin).
   [[g.a, g.b, proj.spread, aIsEntryA ? market.aML : market.bML],[g.b, g.a, -proj.spread, aIsEntryA ? market.bML : market.aML]].forEach(function(t){
     const team=t[0], opp=t[1], margin=t[2], ml=t[3];
-    if(ml===null || ml===undefined || margin<=0) return;
-    const prob = Math.min(0.9, normCdf(margin/marginSd));
+    if(ml===null || ml===undefined) return;
+    // Market-anchored win chance (see mlWinProb). Only list a moneyline when the
+    // team is still more likely than not to win -- an underdog moneyline is a
+    // long shot, and the same view is better expressed as the spread.
+    const mm = marketMarginFor(team, opp);
+    const prob = mlWinProb(league, margin, mm);
+    if(prob<0.5) return;
     opts.push({kind:'Moneyline', label: team+' ML', prob:prob, odds:ml, hasOdds:true, edge:margin, value: prob-impliedFromAmerican(ml),
-      sub:'model has '+team+' winning by '+fmt(margin),
+      sub:(mm!==null ? 'market has '+team+' '+(mm>=0?'favored by ':'as a ')+(mm>=0?fmt(mm):'dog')+' · model margin '+fmt(margin) : 'model has '+team+' winning by '+fmt(margin)),
       meta:{league:league,type:'ml',team:team,opp:opp,line:0}});
   });
   if(opts.length===0) return null;
@@ -841,7 +846,7 @@ function renderBestPerGame(elId, games, league){
     let teamHtml = '<div class="team-meta">No market line loaded for this game yet.</div>';
     if(r.team){
       const t = r.team, cat = probabilityCategory(t.prob);
-      const thin = t.prob<0.55 ? ' <span class="team-meta">(thin edge &mdash; lean only)</span>' : '';
+      const thin = (t.prob<0.55 ? ' <span class="team-meta">(thin edge &mdash; lean only)</span>' : '') + (t.bigGap ? ' <span class="team-meta" style="color:#f28b7d;">(model and market disagree a lot &mdash; double-check injuries/news)</span>' : '');
       const idx = ACTIONS.push(t)-1;
       teamHtml = '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><div><div class="team-name">'+t.label+' <span class="pill" style="'+cat.style+'">'+Math.round(t.prob*100)+'% · '+cat.label+'</span></div><div class="team-meta">'+t.kind+' · '+t.sub+' · '+fmtLine(t.odds)+thin+'</div></div><button class="secondary" data-bgadd="'+idx+'" style="margin:0;padding:6px 10px;font-size:0.76rem;">+ Slip</button></div>';
     }
