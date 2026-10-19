@@ -1,76 +1,8 @@
 {
-  "Jacksonville Jaguars": {
-    "windMph": 22,
-    "tempF": 70,
-    "shortForecast": "Partly Sunny",
-    "severe": true,
-    "dome": false
-  },
-  "Atlanta Falcons": {
-    "dome": true
-  },
-  "Cleveland Browns": {
-    "windMph": 9,
-    "tempF": 61,
-    "shortForecast": "Sunny",
-    "severe": false,
-    "dome": false
-  },
-  "Indianapolis Colts": {
-    "dome": true
-  },
-  "New England Patriots": {
-    "windMph": 3,
-    "tempF": 54,
-    "shortForecast": "Sunny",
-    "severe": false,
-    "dome": false
-  },
-  "New York Giants": {
-    "windMph": 6,
-    "tempF": 59,
-    "shortForecast": "Sunny",
-    "severe": false,
-    "dome": false
-  },
-  "Philadelphia Eagles": {
-    "windMph": 5,
-    "tempF": 58,
-    "shortForecast": "Sunny",
-    "severe": false,
-    "dome": false
-  },
-  "Tampa Bay Buccaneers": {
-    "windMph": 16,
-    "tempF": 79,
-    "shortForecast": "Sunny",
-    "severe": false,
-    "dome": false
-  },
-  "Los Angeles Rams": {
-    "dome": true
-  },
-  "Kansas City Chiefs": {
-    "windMph": 12,
-    "tempF": 68,
-    "shortForecast": "Sunny",
-    "severe": false,
-    "dome": false
-  },
-  "Las Vegas Raiders": {
-    "dome": true
-  },
-  "Green Bay Packers": {
-    "windMph": 20,
-    "tempF": 62,
-    "shortForecast": "Sunny",
-    "severe": true,
-    "dome": false
-  },
   "San Francisco 49ers": {
-    "windMph": 14,
-    "tempF": 75,
-    "shortForecast": "Sunny",
+    "windMph": 5,
+    "tempF": 49,
+    "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
   }
