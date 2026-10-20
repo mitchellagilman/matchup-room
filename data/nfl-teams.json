@@ -425,14 +425,14 @@
   },
   "San Francisco 49ers": {
     "league": "NFL",
-    "record": "5-0",
-    "ppg": 30.8,
-    "pa": 18.6,
-    "passOff": 239.2,
-    "rushOff": 128.6,
-    "passDef": 210.8,
-    "rushDef": 97.6,
-    "to": 0.8,
+    "record": "6-0",
+    "ppg": 29.5,
+    "pa": 18.3,
+    "passOff": 243.3,
+    "rushOff": 128.2,
+    "passDef": 225.7,
+    "rushDef": 90.2,
+    "to": 0.5,
     "ats": "",
     "wk1": true,
     "games": [
@@ -475,14 +475,22 @@
         "teamScore": 32.0,
         "oppScore": 29.0,
         "result": "W"
+      },
+      {
+        "week": "6",
+        "date": "2026-10-19",
+        "opp": "Washington Commanders",
+        "teamScore": 23.0,
+        "oppScore": 17.0,
+        "result": "W"
       }
     ],
     "prevPpg": 25.7,
     "prevPa": 21.8,
     "prevTo": -0.58,
-    "homePpg": 31.7,
-    "homePa": 19.0,
-    "homeGames": 3,
+    "homePpg": 29.5,
+    "homePa": 18.5,
+    "homeGames": 4,
     "awayPpg": 29.5,
     "awayPa": 18.0,
     "awayGames": 2
@@ -1481,13 +1489,13 @@
   },
   "Washington Commanders": {
     "league": "NFL",
-    "record": "1-3-1",
-    "ppg": 23.0,
-    "pa": 29.8,
-    "passOff": 197.0,
-    "rushOff": 139.6,
-    "passDef": 268.8,
-    "rushDef": 95.4,
+    "record": "1-4-1",
+    "ppg": 22.0,
+    "pa": 28.7,
+    "passOff": 214.2,
+    "rushOff": 125.2,
+    "passDef": 268.0,
+    "rushDef": 100.5,
     "to": 1.0,
     "ats": "",
     "wk1": true,
@@ -1531,6 +1539,14 @@
         "teamScore": 27.0,
         "oppScore": 27.0,
         "result": "T"
+      },
+      {
+        "week": "6",
+        "date": "2026-10-19",
+        "opp": "San Francisco 49ers",
+        "teamScore": 17.0,
+        "oppScore": 23.0,
+        "result": "L"
       }
     ],
     "prevPpg": 20.9,
@@ -1539,9 +1555,9 @@
     "homePpg": 24.3,
     "homePa": 29.3,
     "homeGames": 3,
-    "awayPpg": 21.0,
-    "awayPa": 30.5,
-    "awayGames": 2
+    "awayPpg": 19.7,
+    "awayPa": 28.0,
+    "awayGames": 3
   },
   "New Orleans Saints": {
     "league": "NFL",
