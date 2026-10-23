@@ -1,11 +1,4 @@
 {
-  "Chicago Bears": {
-    "windMph": 0,
-    "tempF": 49,
-    "shortForecast": "Patchy Fog",
-    "severe": false,
-    "dome": false
-  },
   "New Orleans Saints": {
     "dome": true
   },
@@ -14,14 +7,14 @@
   },
   "Baltimore Ravens": {
     "windMph": 7,
-    "tempF": 51,
+    "tempF": 44,
     "shortForecast": "Clear",
     "severe": false,
     "dome": false
   },
   "Carolina Panthers": {
     "windMph": 5,
-    "tempF": 42,
+    "tempF": 44,
     "shortForecast": "Clear",
     "severe": false,
     "dome": false
@@ -34,15 +27,15 @@
   },
   "New York Jets": {
     "windMph": 10,
-    "tempF": 48,
+    "tempF": 46,
     "shortForecast": "Clear",
     "severe": false,
     "dome": false
   },
   "Tennessee Titans": {
-    "windMph": 0,
-    "tempF": 48,
-    "shortForecast": "Partly Cloudy",
+    "windMph": 5,
+    "tempF": 46,
+    "shortForecast": "Clear",
     "severe": false,
     "dome": false
   },
@@ -56,15 +49,15 @@
     "dome": true
   },
   "Seattle Seahawks": {
-    "windMph": 7,
-    "tempF": 48,
+    "windMph": 2,
+    "tempF": 47,
     "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "Philadelphia Eagles": {
     "windMph": 10,
-    "tempF": 46,
+    "tempF": 47,
     "shortForecast": "Mostly Clear",
     "severe": false,
     "dome": false

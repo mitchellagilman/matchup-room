@@ -145,13 +145,13 @@
   },
   "New England Patriots": {
     "league": "NFL",
-    "record": "4-2",
-    "ppg": 22.7,
-    "pa": 18.8,
-    "passOff": 251.5,
-    "rushOff": 130.7,
-    "passDef": 227.5,
-    "rushDef": 91.8,
+    "record": "4-3",
+    "ppg": 22.9,
+    "pa": 20.4,
+    "passOff": 261.4,
+    "rushOff": 122.0,
+    "passDef": 239.0,
+    "rushDef": 95.3,
     "to": -1.0,
     "ats": "",
     "wk1": true,
@@ -203,6 +203,14 @@
         "teamScore": 26.0,
         "oppScore": 19.0,
         "result": "W"
+      },
+      {
+        "week": "7",
+        "date": "2026-10-22",
+        "opp": "Chicago Bears",
+        "teamScore": 24.0,
+        "oppScore": 30.0,
+        "result": "L"
       }
     ],
     "prevPpg": 28.8,
@@ -211,9 +219,9 @@
     "homePpg": 30.3,
     "homePa": 13.0,
     "homeGames": 3,
-    "awayPpg": 15.0,
-    "awayPa": 24.7,
-    "awayGames": 3
+    "awayPpg": 17.2,
+    "awayPa": 26.0,
+    "awayGames": 4
   },
   "Buffalo Bills": {
     "league": "NFL",
@@ -353,14 +361,14 @@
   },
   "Chicago Bears": {
     "league": "NFL",
-    "record": "4-2",
-    "ppg": 25.0,
-    "pa": 19.8,
-    "passOff": 246.0,
-    "rushOff": 160.7,
-    "passDef": 228.0,
-    "rushDef": 90.5,
-    "to": -0.33,
+    "record": "5-2",
+    "ppg": 25.7,
+    "pa": 20.4,
+    "passOff": 254.9,
+    "rushOff": 154.3,
+    "passDef": 241.3,
+    "rushDef": 87.6,
+    "to": -0.14,
     "ats": "",
     "wk1": true,
     "games": [
@@ -411,14 +419,22 @@
         "teamScore": 31.0,
         "oppScore": 23.0,
         "result": "W"
+      },
+      {
+        "week": "7",
+        "date": "2026-10-22",
+        "opp": "New England Patriots",
+        "teamScore": 30.0,
+        "oppScore": 24.0,
+        "result": "W"
       }
     ],
     "prevPpg": 25.9,
     "prevPa": 24.4,
     "prevTo": 0.95,
-    "homePpg": 17.7,
-    "homePa": 9.3,
-    "homeGames": 3,
+    "homePpg": 20.8,
+    "homePa": 13.0,
+    "homeGames": 4,
     "awayPpg": 32.3,
     "awayPa": 30.3,
     "awayGames": 3

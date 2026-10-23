@@ -33381,8 +33381,8 @@
       "label": "Ryan Miller Over 19.0 receiving yards (model proj.)",
       "edge": null,
       "date_logged": "2026-09-29",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "Ryan Miller",
       "_stat": "recYds",
       "_logged_recency_key": 202603,
@@ -41401,8 +41401,8 @@
       "label": "Ryan Miller Over 19.0 receiving yards (model proj.)",
       "edge": null,
       "date_logged": "2026-10-06",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "Ryan Miller",
       "_stat": "recYds",
       "_logged_recency_key": 202603,
@@ -53321,8 +53321,8 @@
       "label": "Caleb Douglas Under 80.0 receiving yards (model proj.)",
       "edge": null,
       "date_logged": "2026-10-12",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "Caleb Douglas",
       "_stat": "recYds",
       "_logged_recency_key": 202515,
@@ -53401,8 +53401,8 @@
       "label": "Colbie Young Under 51.0 receiving yards (model proj.)",
       "edge": null,
       "date_logged": "2026-10-12",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "Colbie Young",
       "_stat": "recYds",
       "_logged_recency_key": 202508,
@@ -57481,8 +57481,8 @@
       "label": "Efton Chism III Over 16.5 receiving yards (real line)",
       "edge": 15.0,
       "date_logged": "2026-10-13",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "Efton Chism III",
       "_stat": "recYds",
       "_logged_recency_key": 202605,
@@ -59601,8 +59601,8 @@
       "label": "Caleb Williams Over 242.5 passing yards (real line)",
       "edge": 52.0,
       "date_logged": "2026-10-19",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "Caleb Williams",
       "_stat": "passYds",
       "_logged_recency_key": 202606,
@@ -59621,8 +59621,8 @@
       "label": "A.J. Brown Under 61.5 receiving yards (real line)",
       "edge": 24.5,
       "date_logged": "2026-10-19",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "A.J. Brown",
       "_stat": "recYds",
       "_logged_recency_key": 202606,
@@ -59710,7 +59710,7 @@
       "direction": null,
       "tier": "Lean",
       "strength": "Low",
-      "last_line": 19.5
+      "last_line": 18.5
     },
     {
       "id": "CFB|CFB-2026-10-24|California vs SMU|total",
@@ -59730,7 +59730,7 @@
       "direction": "under",
       "tier": "Lean",
       "strength": "Low",
-      "last_line": 53.5
+      "last_line": 55.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Pittsburgh vs Miami|spread",
@@ -59750,7 +59750,7 @@
       "direction": null,
       "tier": "Lean",
       "strength": "Low",
-      "last_line": 20.5
+      "last_line": 19.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Pittsburgh vs Miami|total",
@@ -59770,7 +59770,7 @@
       "direction": "over",
       "tier": "Strong",
       "strength": "Strong",
-      "last_line": 50.5
+      "last_line": 48.5
     },
     {
       "id": "CFB|CFB-2026-10-24|LSU vs Auburn|spread",
@@ -59790,7 +59790,7 @@
       "direction": null,
       "tier": "Lean",
       "strength": "Low",
-      "last_line": 7.5
+      "last_line": 7.0
     },
     {
       "id": "CFB|CFB-2026-10-24|LSU vs Auburn|total",
@@ -59810,7 +59810,7 @@
       "direction": "over",
       "tier": "Lean",
       "strength": "Low",
-      "last_line": 50.5
+      "last_line": 51.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Indiana vs Michigan|total",
@@ -59830,7 +59830,7 @@
       "direction": "over",
       "tier": "Moderate",
       "strength": "Medium",
-      "last_line": 41.5
+      "last_line": 42.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Rutgers vs Northwestern|spread",
@@ -59910,7 +59910,7 @@
       "direction": null,
       "tier": "Moderate",
       "strength": "Medium",
-      "last_line": -14.0
+      "last_line": -15.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Michigan State vs UCLA|total",
@@ -59930,7 +59930,7 @@
       "direction": "over",
       "tier": "Lean",
       "strength": "Low",
-      "last_line": 44.5
+      "last_line": 43.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Iowa vs Minnesota|spread",
@@ -59950,7 +59950,7 @@
       "direction": null,
       "tier": "Lean",
       "strength": "Low",
-      "last_line": 6.5
+      "last_line": 7.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Iowa vs Minnesota|total",
@@ -59990,7 +59990,7 @@
       "direction": null,
       "tier": "Moderate",
       "strength": "Medium",
-      "last_line": -6.5
+      "last_line": -7.0
     },
     {
       "id": "CFB|CFB-2026-10-24|BYU vs UCF|total",
@@ -60090,7 +60090,7 @@
       "direction": "under",
       "tier": "Lean",
       "strength": "Low",
-      "last_line": 50.5
+      "last_line": 51.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Ole Miss vs Texas|spread",
@@ -60110,7 +60110,7 @@
       "direction": null,
       "tier": "Moderate",
       "strength": "Medium",
-      "last_line": -3.0
+      "last_line": -3.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Ole Miss vs Texas|total",
@@ -60170,7 +60170,7 @@
       "direction": "over",
       "tier": "Moderate",
       "strength": "Medium",
-      "last_line": 49.5
+      "last_line": 50.5
     },
     {
       "id": "CFB|CFB-2026-10-24|Vanderbilt vs Kentucky|spread",
@@ -60210,7 +60210,7 @@
       "direction": "over",
       "tier": "Moderate",
       "strength": "Medium",
-      "last_line": 51.5
+      "last_line": 52.5
     },
     {
       "id": "CFB|CFB-2026-10-25|Houston vs Utah|spread",
@@ -61761,8 +61761,8 @@
       "label": "Under 50.5",
       "edge": 12.1,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_away": "New England Patriots",
       "_home": "Chicago Bears",
       "line": 50.5,
@@ -61810,7 +61810,7 @@
       "direction": "under",
       "tier": "Moderate",
       "strength": "Medium",
-      "last_line": 51.5
+      "last_line": 48.5
     },
     {
       "id": "NFL|NFL-Week7|Tampa Bay Buccaneers vs Carolina Panthers|total",
@@ -61850,7 +61850,7 @@
       "direction": null,
       "tier": "Moderate",
       "strength": "Medium",
-      "last_line": 4.5
+      "last_line": 3.5
     },
     {
       "id": "NFL|NFL-Week7|Dallas Cowboys vs Philadelphia Eagles|spread",
@@ -62121,8 +62121,8 @@
       "label": "Hunter Henry Over 33.0 receiving yards (real line)",
       "edge": 10.0,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "Hunter Henry",
       "_stat": "recYds",
       "_logged_recency_key": 202606,
@@ -62681,8 +62681,8 @@
       "label": "D'Andre Swift Under 64.0 rushing yards (real line)",
       "edge": 24.0,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "D'Andre Swift",
       "_stat": "rushYds",
       "_logged_recency_key": 202606,
@@ -62881,8 +62881,8 @@
       "label": "Rhamondre Stevenson Under 42.0 rushing yards (real line)",
       "edge": 4.0,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "Rhamondre Stevenson",
       "_stat": "rushYds",
       "_logged_recency_key": 202606,
@@ -63621,8 +63621,8 @@
       "label": "DeMario Douglas Over 27.5 receiving yards (real line)",
       "edge": 9.5,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "DeMario Douglas",
       "_stat": "recYds",
       "_logged_recency_key": 202606,
@@ -64001,8 +64001,8 @@
       "label": "Drake Maye Under 238.5 passing yards (real line)",
       "edge": 8.5,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "Drake Maye",
       "_stat": "passYds",
       "_logged_recency_key": 202606,
@@ -64081,8 +64081,8 @@
       "label": "Rome Odunze Under 45.0 receiving yards (real line)",
       "edge": 3.0,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "Rome Odunze",
       "_stat": "recYds",
       "_logged_recency_key": 202606,
@@ -64161,8 +64161,8 @@
       "label": "Colston Loveland Under 41.0 receiving yards (real line)",
       "edge": 10.5,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "Colston Loveland",
       "_stat": "recYds",
       "_logged_recency_key": 202606,
@@ -64381,8 +64381,8 @@
       "label": "Luther Burden III Over 57.0 receiving yards (real line)",
       "edge": 2.5,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "Luther Burden III",
       "_stat": "recYds",
       "_logged_recency_key": 202606,
@@ -64641,8 +64641,8 @@
       "label": "Efton Chism III Over 16.5 receiving yards (real line)",
       "edge": 18.0,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-10-23",
       "_player_name": "Efton Chism III",
       "_stat": "recYds",
       "_logged_recency_key": 202605,
@@ -65001,8 +65001,8 @@
       "label": "Caleb Williams Over 242.5 passing yards (real line)",
       "edge": 20.5,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "Caleb Williams",
       "_stat": "passYds",
       "_logged_recency_key": 202606,
@@ -65021,8 +65021,8 @@
       "label": "A.J. Brown Under 61.5 receiving yards (real line)",
       "edge": 21.5,
       "date_logged": "2026-10-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "hit",
+      "graded_date": "2026-10-23",
       "_player_name": "A.J. Brown",
       "_stat": "recYds",
       "_logged_recency_key": 202606,
@@ -65551,6 +65551,186 @@
       "used_real_line": true,
       "tier": "Strong*",
       "strength": "Strong"
+    },
+    {
+      "id": "NFL|NFL-Week7|Woody Marks|rushYds|player_prop",
+      "league": "NFL",
+      "week": "NFL-Week7",
+      "matchup": "New York Giants vs Houston Texans",
+      "type": "player_prop",
+      "label": "Woody Marks Under 46.5 rushing yards (real line)",
+      "edge": 21.0,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_player_name": "Woody Marks",
+      "_stat": "rushYds",
+      "_logged_recency_key": 202606,
+      "line": 46.5,
+      "direction": "under",
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
+    },
+    {
+      "id": "NFL|NFL-Week7|Eli Raridon|recYds|player_prop",
+      "league": "NFL",
+      "week": "NFL-Week7",
+      "matchup": "New England Patriots vs Chicago Bears",
+      "type": "player_prop",
+      "label": "Eli Raridon Over 9.5 receiving yards (real line)",
+      "edge": 21.0,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_player_name": "Eli Raridon",
+      "_stat": "recYds",
+      "_logged_recency_key": 202607,
+      "line": 9.5,
+      "direction": "over",
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
+    },
+    {
+      "id": "NFL|NFL-Week7|Saquon Barkley|rushYds|player_prop",
+      "league": "NFL",
+      "week": "NFL-Week7",
+      "matchup": "Dallas Cowboys vs Philadelphia Eagles",
+      "type": "player_prop",
+      "label": "Saquon Barkley Over 69.5 rushing yards (real line)",
+      "edge": 15.0,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_player_name": "Saquon Barkley",
+      "_stat": "rushYds",
+      "_logged_recency_key": 202604,
+      "line": 69.5,
+      "direction": "over",
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
+    },
+    {
+      "id": "NFL|NFL-Week7|Jordan Addison|recYds|player_prop",
+      "league": "NFL",
+      "week": "NFL-Week7",
+      "matchup": "Indianapolis Colts vs Minnesota Vikings",
+      "type": "player_prop",
+      "label": "Jordan Addison Under 54.5 receiving yards (real line)",
+      "edge": 33.5,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_player_name": "Jordan Addison",
+      "_stat": "recYds",
+      "_logged_recency_key": 202604,
+      "line": 54.5,
+      "direction": "under",
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
+    },
+    {
+      "id": "NFL|NFL-Week7|Rashee Rice|recYds|player_prop",
+      "league": "NFL",
+      "week": "NFL-Week7",
+      "matchup": "Kansas City Chiefs vs Seattle Seahawks",
+      "type": "player_prop",
+      "label": "Rashee Rice Under 54.0 receiving yards (real line)",
+      "edge": 14.5,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_player_name": "Rashee Rice",
+      "_stat": "recYds",
+      "_logged_recency_key": 202603,
+      "line": 54.0,
+      "direction": "under",
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
+    },
+    {
+      "id": "NFL|NFL-Week7|Theo Johnson|recYds|player_prop",
+      "league": "NFL",
+      "week": "NFL-Week7",
+      "matchup": "New York Giants vs Houston Texans",
+      "type": "player_prop",
+      "label": "Theo Johnson Over 8.0 receiving yards (real line)",
+      "edge": 23.5,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_player_name": "Theo Johnson",
+      "_stat": "recYds",
+      "_logged_recency_key": 202605,
+      "line": 8.0,
+      "direction": "over",
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
+    },
+    {
+      "id": "NFL|NFL-Week7|Tyler Warren|recYds|player_prop",
+      "league": "NFL",
+      "week": "NFL-Week7",
+      "matchup": "Indianapolis Colts vs Minnesota Vikings",
+      "type": "player_prop",
+      "label": "Tyler Warren Under 48.5 receiving yards (real line)",
+      "edge": 12.0,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_player_name": "Tyler Warren",
+      "_stat": "recYds",
+      "_logged_recency_key": 202605,
+      "line": 48.5,
+      "direction": "under",
+      "used_real_line": true,
+      "tier": "Strong",
+      "strength": "Strong"
+    },
+    {
+      "id": "CFB|CFB-2026-10-24|Texas A&M vs Alabama|spread",
+      "league": "CFB",
+      "week": "CFB-2026-10-24",
+      "matchup": "Texas A&M vs Alabama",
+      "type": "spread",
+      "label": "Texas A&M +13.5",
+      "edge": 1.7,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_away": "Texas A&M",
+      "_home": "Alabama",
+      "line": 13.5,
+      "favored_team": "Texas A&M",
+      "direction": null,
+      "tier": "Lean",
+      "strength": "Low",
+      "last_line": 13.5
+    },
+    {
+      "id": "CFB|CFB-2026-10-24|Boise State vs Washington State|total",
+      "league": "CFB",
+      "week": "CFB-2026-10-24",
+      "matchup": "Boise State vs Washington State",
+      "type": "total",
+      "label": "Under 52.5",
+      "edge": 1.2,
+      "date_logged": "2026-10-23",
+      "status": "pending",
+      "graded_date": null,
+      "_away": "Boise State",
+      "_home": "Washington State",
+      "line": 52.5,
+      "favored_team": null,
+      "direction": "under",
+      "tier": "Lean",
+      "strength": "Low",
+      "last_line": 52.5
     }
   ]
 }
