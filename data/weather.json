@@ -1,8 +1,87 @@
 {
-  "Philadelphia Eagles": {
+  "Green Bay Packers": {
     "windMph": 5,
-    "tempF": 70,
-    "shortForecast": "Sunny",
+    "tempF": 45,
+    "shortForecast": "Isolated Rain Showers",
+    "severe": false,
+    "dome": false
+  },
+  "Buffalo Bills": {
+    "windMph": 5,
+    "tempF": 36,
+    "shortForecast": "Partly Cloudy",
+    "severe": false,
+    "dome": false
+  },
+  "Cincinnati Bengals": {
+    "windMph": 0,
+    "tempF": 47,
+    "shortForecast": "Areas Of Fog",
+    "severe": false,
+    "dome": false
+  },
+  "Dallas Cowboys": {
+    "dome": true
+  },
+  "Detroit Lions": {
+    "dome": true
+  },
+  "Jacksonville Jaguars": {
+    "windMph": 16,
+    "tempF": 76,
+    "shortForecast": "Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "New York Jets": {
+    "windMph": 8,
+    "tempF": 50,
+    "shortForecast": "Clear",
+    "severe": false,
+    "dome": false
+  },
+  "Pittsburgh Steelers": {
+    "windMph": 2,
+    "tempF": 69,
+    "shortForecast": "Patchy Fog then Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Tampa Bay Buccaneers": {
+    "windMph": 9,
+    "tempF": 67,
+    "shortForecast": "Mostly Clear",
+    "severe": false,
+    "dome": false
+  },
+  "Los Angeles Rams": {
+    "dome": true
+  },
+  "Denver Broncos": {
+    "windMph": 2,
+    "tempF": 39,
+    "shortForecast": "Areas Of Fog",
+    "severe": false,
+    "dome": false
+  },
+  "Miami Dolphins": {
+    "windMph": 23,
+    "tempF": 82,
+    "shortForecast": "Showers And Thunderstorms",
+    "severe": true,
+    "dome": false
+  },
+  "Washington Commanders": {
+    "windMph": 6,
+    "tempF": 69,
+    "shortForecast": "Patchy Fog then Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Seattle Seahawks": {
+    "windMph": 2,
+    "tempF": 48,
+    "shortForecast": "Light Rain Likely",
     "severe": false,
     "dome": false
   }

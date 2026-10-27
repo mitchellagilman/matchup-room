@@ -5023,43 +5023,43 @@
   },
   "Jordan Love": {
     "passYds": {
-      "line": 271.5,
+      "line": 259.5,
       "books": [
         {
-          "line": 271.5,
-          "book": "DraftKings",
-          "overPrice": -113,
-          "underPrice": -111
+          "line": 258.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 274.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 259.5,
+          "book": "draftkings",
+          "overPrice": "-111",
+          "underPrice": "-113"
         },
         {
-          "line": 271.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 258.5,
+          "book": "caesars",
+          "overPrice": "-125",
+          "underPrice": "-108"
         },
         {
-          "line": 268.5,
-          "book": "BetRivers",
-          "overPrice": -114,
-          "underPrice": -117
+          "line": 260.5,
+          "book": "espnbet",
+          "overPrice": "-105",
+          "underPrice": "-125"
         },
         {
-          "line": 272.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 259.5,
+          "book": "bovada",
+          "overPrice": "-115",
+          "underPrice": "-115"
         },
         {
-          "line": 271.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 264.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     },
@@ -5067,34 +5067,40 @@
       "line": 5.5,
       "books": [
         {
-          "line": 6.5,
-          "book": "DraftKings",
-          "overPrice": -114,
-          "underPrice": -110
+          "line": 5.5,
+          "book": "fanduel",
+          "overPrice": "-108",
+          "underPrice": "-120"
         },
         {
           "line": 5.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "book": "draftkings",
+          "overPrice": "-107",
+          "underPrice": "-117"
         },
         {
           "line": 5.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 5.5,
-          "book": "BetRivers",
-          "overPrice": -120,
-          "underPrice": -112
+          "book": "caesars",
+          "overPrice": "-108",
+          "underPrice": "-121"
         },
         {
           "line": 4.5,
-          "book": "BetMGM",
-          "overPrice": -155,
-          "underPrice": 115
+          "book": "espnbet",
+          "overPrice": "-135",
+          "underPrice": "+105"
+        },
+        {
+          "line": 5.5,
+          "book": "bovada",
+          "overPrice": "-110",
+          "underPrice": "-120"
+        },
+        {
+          "line": 4.5,
+          "book": "betmgm",
+          "overPrice": "-120",
+          "underPrice": "-110"
         }
       ]
     }
@@ -5185,129 +5191,123 @@
   },
   "Christian Watson": {
     "recYds": {
-      "line": 73.5,
+      "line": 69.5,
       "books": [
         {
-          "line": 73.5,
-          "book": "DraftKings",
-          "overPrice": -113,
-          "underPrice": -111
+          "line": 68.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 74.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 69.5,
+          "book": "draftkings",
+          "overPrice": "-114",
+          "underPrice": "-110"
         },
         {
-          "line": 74.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 69.5,
+          "book": "espnbet",
+          "overPrice": "-115",
+          "underPrice": "-115"
         },
         {
-          "line": 72.5,
-          "book": "BetRivers",
-          "overPrice": -115,
-          "underPrice": -114
+          "line": 69.5,
+          "book": "bovada",
+          "overPrice": "-115",
+          "underPrice": "-115"
         },
         {
-          "line": 73.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
-        },
-        {
-          "line": 73.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 68.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
   },
   "Matthew Golden": {
     "recYds": {
-      "line": 65.0,
+      "line": 62.5,
       "books": [
         {
+          "line": 62.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 62.5,
+          "book": "draftkings",
+          "overPrice": "-113",
+          "underPrice": "-111"
+        },
+        {
+          "line": 62.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 62.5,
+          "book": "espnbet",
+          "overPrice": "-115",
+          "underPrice": "-115"
+        },
+        {
+          "line": 62.5,
+          "book": "bovada",
+          "overPrice": "-115",
+          "underPrice": "-115"
+        },
+        {
           "line": 64.5,
-          "book": "DraftKings",
-          "overPrice": -112,
-          "underPrice": -112
-        },
-        {
-          "line": 65.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 65.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 64.5,
-          "book": "BetRivers",
-          "overPrice": -114,
-          "underPrice": -117
-        },
-        {
-          "line": 65.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
-        },
-        {
-          "line": 64.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
   },
   "Tucker Kraft": {
     "recYds": {
-      "line": 47.5,
+      "line": 43.5,
       "books": [
         {
-          "line": 47.5,
-          "book": "DraftKings",
-          "overPrice": -113,
-          "underPrice": -111
+          "line": 41.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 47.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 43.5,
+          "book": "draftkings",
+          "overPrice": "-110",
+          "underPrice": "-115"
         },
         {
-          "line": 47.5,
-          "book": "BetOnline.ag",
-          "overPrice": -112,
-          "underPrice": -115
+          "line": 42.5,
+          "book": "caesars",
+          "overPrice": "-112",
+          "underPrice": "-117"
         },
         {
-          "line": 48.5,
-          "book": "BetRivers",
-          "overPrice": -113,
-          "underPrice": -118
+          "line": 44.5,
+          "book": "espnbet",
+          "overPrice": "-105",
+          "underPrice": "-125"
         },
         {
-          "line": 47.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 43.5,
+          "book": "bovada",
+          "overPrice": "-110",
+          "underPrice": "-120"
         },
         {
-          "line": 47.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 43.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
@@ -5711,84 +5711,54 @@
   },
   "MarShawn Lloyd": {
     "recYds": {
-      "line": 12.5,
+      "line": 5.5,
       "books": [
         {
-          "line": 10.5,
-          "book": "DraftKings",
-          "overPrice": -118,
-          "underPrice": -107
-        },
-        {
-          "line": 12.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 12.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 12.5,
-          "book": "BetRivers",
-          "overPrice": -115,
-          "underPrice": -115
-        },
-        {
-          "line": 12.5,
-          "book": "BetMGM",
-          "overPrice": -120,
-          "underPrice": -111
-        },
-        {
-          "line": 10.5,
-          "book": "Bovada",
-          "overPrice": -120,
-          "underPrice": -110
+          "line": 5.5,
+          "book": "betmgm",
+          "overPrice": "-120",
+          "underPrice": "-110"
         }
       ]
     },
     "rushYds": {
-      "line": 42.5,
+      "line": 18.5,
       "books": [
         {
-          "line": 42.5,
-          "book": "DraftKings",
-          "overPrice": -111,
-          "underPrice": -113
+          "line": 18.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 42.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 18.5,
+          "book": "draftkings",
+          "overPrice": "-108",
+          "underPrice": "-116"
         },
         {
-          "line": 42.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 18.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 42.5,
-          "book": "BetRivers",
-          "overPrice": -114,
-          "underPrice": -115
+          "line": 18.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": "-110"
         },
         {
-          "line": 42.5,
-          "book": "BetMGM",
-          "overPrice": -120,
-          "underPrice": -111
+          "line": 18.5,
+          "book": "bovada",
+          "overPrice": "-110",
+          "underPrice": "-120"
         },
         {
-          "line": 42.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 19.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
@@ -9196,43 +9166,43 @@
   },
   "Bryce Young": {
     "passYds": {
-      "line": 238.0,
+      "line": 250.5,
       "books": [
         {
-          "line": 238.5,
-          "book": "DraftKings",
-          "overPrice": -112,
-          "underPrice": -112
+          "line": 250.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 234.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 250.5,
+          "book": "caesars",
+          "overPrice": "-115",
+          "underPrice": "-114"
         },
         {
-          "line": 238.5,
-          "book": "BetOnline.ag",
-          "overPrice": -112,
-          "underPrice": -115
+          "line": 251.5,
+          "book": "draftkings",
+          "overPrice": "-113",
+          "underPrice": "-111"
         },
         {
-          "line": 232.5,
-          "book": "BetRivers",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 249.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": "-110"
         },
         {
-          "line": 237.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 250.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 238.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 252.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     },
@@ -9241,39 +9211,39 @@
       "books": [
         {
           "line": 9.5,
-          "book": "DraftKings",
-          "overPrice": -115,
-          "underPrice": -110
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
           "line": 10.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "book": "draftkings",
+          "overPrice": "-116",
+          "underPrice": "-108"
         },
         {
           "line": 9.5,
-          "book": "BetOnline.ag",
-          "overPrice": -118,
-          "underPrice": -110
+          "book": "caesars",
+          "overPrice": "-120",
+          "underPrice": "-110"
         },
         {
           "line": 10.5,
-          "book": "BetRivers",
-          "overPrice": -118,
-          "underPrice": -112
-        },
-        {
-          "line": 8.5,
-          "book": "BetMGM",
-          "overPrice": -135,
-          "underPrice": 100
+          "book": "espnbet",
+          "overPrice": "-115",
+          "underPrice": "-115"
         },
         {
           "line": 9.5,
-          "book": "Bovada",
-          "overPrice": -120,
-          "underPrice": -110
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 9.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
@@ -9323,43 +9293,43 @@
   },
   "Tetairoa McMillan": {
     "recYds": {
-      "line": 64.5,
+      "line": 72.5,
       "books": [
         {
-          "line": 64.5,
-          "book": "DraftKings",
-          "overPrice": -110,
-          "underPrice": -114
+          "line": 73.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 64.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 72.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-115"
         },
         {
-          "line": 62.5,
-          "book": "BetOnline.ag",
-          "overPrice": -110,
-          "underPrice": -118
+          "line": 71.5,
+          "book": "draftkings",
+          "overPrice": "-110",
+          "underPrice": "-114"
         },
         {
-          "line": 65.5,
-          "book": "BetRivers",
-          "overPrice": -117,
-          "underPrice": -114
+          "line": 69.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": "-110"
         },
         {
-          "line": 64.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 72.5,
+          "book": "bovada",
+          "overPrice": "-116",
+          "underPrice": "-111"
         },
         {
-          "line": 64.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 72.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
@@ -9409,43 +9379,43 @@
   },
   "Jalen Coker": {
     "recYds": {
-      "line": 57.0,
+      "line": 64.0,
       "books": [
         {
-          "line": 57.5,
-          "book": "DraftKings",
-          "overPrice": -115,
-          "underPrice": -109
+          "line": 64.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 55.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 63.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-115"
         },
         {
-          "line": 57.5,
-          "book": "BetOnline.ag",
-          "overPrice": -119,
-          "underPrice": -109
+          "line": 63.5,
+          "book": "draftkings",
+          "overPrice": "-110",
+          "underPrice": "-114"
         },
         {
-          "line": 56.5,
-          "book": "BetRivers",
-          "overPrice": -117,
-          "underPrice": -113
+          "line": 64.5,
+          "book": "espnbet",
+          "overPrice": "-105",
+          "underPrice": "-125"
         },
         {
-          "line": 56.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 63.5,
+          "book": "bovada",
+          "overPrice": "-115",
+          "underPrice": "-115"
         },
         {
-          "line": 57.5,
-          "book": "Bovada",
-          "overPrice": -120,
-          "underPrice": -110
+          "line": 64.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
@@ -9579,127 +9549,115 @@
   },
   "Darren Waller": {
     "recYds": {
-      "line": 29.5,
+      "line": 19.5,
       "books": [
         {
-          "line": 28.5,
-          "book": "DraftKings",
-          "overPrice": -115,
-          "underPrice": -109
+          "line": 18.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 29.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 20.5,
+          "book": "draftkings",
+          "overPrice": "-108",
+          "underPrice": "-116"
         },
         {
-          "line": 29.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 19.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": "-110"
         },
         {
-          "line": 29.5,
-          "book": "BetRivers",
-          "overPrice": -113,
-          "underPrice": -118
+          "line": 19.5,
+          "book": "bovada",
+          "overPrice": "-119",
+          "underPrice": "-109"
         },
         {
-          "line": 29.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
-        },
-        {
-          "line": 28.5,
-          "book": "Bovada",
-          "overPrice": -120,
-          "underPrice": -110
+          "line": 19.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
   },
   "Chuba Hubbard": {
     "recYds": {
-      "line": 16.5,
+      "line": 14.0,
       "books": [
         {
-          "line": 16.5,
-          "book": "DraftKings",
-          "overPrice": -108,
-          "underPrice": -116
+          "line": 13.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 17.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 13.5,
+          "book": "caesars",
+          "overPrice": "-118",
+          "underPrice": "-112"
         },
         {
-          "line": 16.5,
-          "book": "BetOnline.ag",
-          "overPrice": -110,
-          "underPrice": -118
+          "line": 14.5,
+          "book": "draftkings",
+          "overPrice": "-112",
+          "underPrice": "-112"
         },
         {
-          "line": 16.5,
-          "book": "BetRivers",
-          "overPrice": -121,
-          "underPrice": -110
+          "line": 13.5,
+          "book": "espnbet",
+          "overPrice": "-125",
+          "underPrice": "-105"
         },
         {
-          "line": 15.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 14.5,
+          "book": "bovada",
+          "overPrice": "-115",
+          "underPrice": "-115"
         },
         {
-          "line": 16.5,
-          "book": "Bovada",
-          "overPrice": -110,
-          "underPrice": -120
+          "line": 14.5,
+          "book": "betmgm",
+          "overPrice": "-110",
+          "underPrice": "-120"
         }
       ]
     },
     "rushYds": {
-      "line": 71.0,
+      "line": 69.5,
       "books": [
         {
-          "line": 71.5,
-          "book": "DraftKings",
-          "overPrice": -111,
-          "underPrice": -113
-        },
-        {
           "line": 70.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 70.5,
-          "book": "BetOnline.ag",
-          "overPrice": -119,
-          "underPrice": -109
-        },
-        {
-          "line": 71.5,
-          "book": "BetRivers",
-          "overPrice": -114,
-          "underPrice": -117
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
           "line": 69.5,
-          "book": "BetMGM",
-          "overPrice": -115,
-          "underPrice": -115
+          "book": "draftkings",
+          "overPrice": "-114",
+          "underPrice": "-110"
         },
         {
-          "line": 71.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 69.5,
+          "book": "espnbet",
+          "overPrice": "-115",
+          "underPrice": "-115"
+        },
+        {
+          "line": 69.5,
+          "book": "bovada",
+          "overPrice": "-115",
+          "underPrice": "-115"
+        },
+        {
+          "line": 68.5,
+          "book": "betmgm",
+          "overPrice": "-115",
+          "underPrice": "-115"
         }
       ]
     }
@@ -11887,19 +11845,13 @@
   },
   "Roman Gagliano": {
     "passYds": {
-      "line": 202.5,
+      "line": 207.5,
       "books": [
         {
-          "line": 205.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 199.5,
-          "book": "BetOnline.ag",
-          "overPrice": 106,
-          "underPrice": -137
+          "line": 207.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     },
@@ -11984,19 +11936,19 @@
   },
   "Cam'ron Lacy": {
     "recYds": {
-      "line": 55.0,
+      "line": 59.0,
       "books": [
         {
-          "line": 55.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 58.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         },
         {
-          "line": 54.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 59.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": null
         }
       ]
     }
@@ -12111,19 +12063,13 @@
   },
   "Antonio Martin": {
     "rushYds": {
-      "line": 52.5,
+      "line": 30.5,
       "books": [
         {
-          "line": 55.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 49.5,
-          "book": "BetOnline.ag",
-          "overPrice": -116,
-          "underPrice": -111
+          "line": 30.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
@@ -12301,31 +12247,13 @@
   },
   "JJ Buchanan": {
     "recYds": {
-      "line": 66.5,
+      "line": 63.5,
       "books": [
         {
-          "line": 65.5,
-          "book": "BetRivers",
-          "overPrice": -120,
+          "line": 63.5,
+          "book": "draftkings",
+          "overPrice": "-113",
           "underPrice": null
-        },
-        {
-          "line": 66.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 66.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 66.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
         }
       ]
     }
@@ -12430,31 +12358,13 @@
   },
   "Jordan Marshall": {
     "rushYds": {
-      "line": 53.5,
+      "line": 70.5,
       "books": [
         {
-          "line": 51.5,
-          "book": "BetRivers",
-          "overPrice": -121,
+          "line": 70.5,
+          "book": "draftkings",
+          "overPrice": "-119",
           "underPrice": null
-        },
-        {
-          "line": 53.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 57.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 53.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
         }
       ]
     }
@@ -15094,60 +15004,24 @@
   },
   "Noah Fifita": {
     "passYds": {
-      "line": 276.5,
+      "line": 245.5,
       "books": [
         {
-          "line": 276.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 280.5,
-          "book": "BetRivers",
-          "overPrice": -121,
-          "underPrice": null
-        },
-        {
-          "line": 276.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 276.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 245.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     },
     "rushYds": {
-      "line": 21.0,
+      "line": 13.5,
       "books": [
         {
-          "line": 20.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 21.5,
-          "book": "BetRivers",
-          "overPrice": -122,
-          "underPrice": null
-        },
-        {
-          "line": 21.5,
-          "book": "BetOnline.ag",
-          "overPrice": -110,
-          "underPrice": -118
-        },
-        {
-          "line": 20.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 13.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
@@ -19862,25 +19736,13 @@
   },
   "Coy Eakin": {
     "recYds": {
-      "line": 32.5,
+      "line": 36.5,
       "books": [
         {
-          "line": 32.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
           "line": 36.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 32.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "book": "fanduel",
+          "overPrice": "-112",
+          "underPrice": "-118"
         }
       ]
     }
@@ -19935,25 +19797,13 @@
   },
   "Kenny Johnson": {
     "recYds": {
-      "line": 51.5,
+      "line": 62.5,
       "books": [
         {
-          "line": 51.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 51.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 51.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 62.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
@@ -20034,13 +19884,13 @@
   },
   "J'Koby Williams": {
     "recYds": {
-      "line": 25.5,
+      "line": 22.5,
       "books": [
         {
-          "line": 25.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
+          "line": 22.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     },
@@ -20071,48 +19921,24 @@
   },
   "Byrum Brown": {
     "passYds": {
-      "line": 202.5,
+      "line": 180.5,
       "books": [
         {
-          "line": 202.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 202.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 202.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 180.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     },
     "rushYds": {
-      "line": 48.5,
+      "line": 59.5,
       "books": [
         {
-          "line": 48.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 48.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 48.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 59.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
@@ -20217,25 +20043,13 @@
   },
   "Chas Nimrod": {
     "recYds": {
-      "line": 38.5,
+      "line": 41.5,
       "books": [
         {
-          "line": 38.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 38.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 38.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 41.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
@@ -20292,25 +20106,13 @@
   },
   "Keshaun Singleton": {
     "recYds": {
-      "line": 54.5,
+      "line": 51.5,
       "books": [
         {
-          "line": 54.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 54.5,
-          "book": "BetOnline.ag",
-          "overPrice": -112,
-          "underPrice": -115
-        },
-        {
-          "line": 54.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 51.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
@@ -20852,19 +20654,13 @@
   },
   "Camden Coleman": {
     "passYds": {
-      "line": 210.5,
+      "line": 224.5,
       "books": [
         {
-          "line": 210.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 210.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 224.5,
+          "book": "espnbet",
+          "overPrice": "-130",
+          "underPrice": null
         }
       ]
     }
@@ -21074,48 +20870,24 @@
   },
   "Trinidad Chambliss": {
     "passYds": {
-      "line": 289.5,
+      "line": 284.5,
       "books": [
         {
-          "line": 289.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 289.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 289.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 284.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     },
     "rushYds": {
-      "line": 23.5,
+      "line": 22.5,
       "books": [
         {
-          "line": 23.5,
-          "book": "FanDuel",
-          "overPrice": -110,
-          "underPrice": -120
-        },
-        {
-          "line": 21.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 23.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 22.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
@@ -21170,75 +20942,39 @@
   },
   "Horatio Fields": {
     "recYds": {
-      "line": 32.5,
+      "line": 27.5,
       "books": [
         {
-          "line": 32.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 32.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 32.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 27.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
   },
   "Traylon Ray": {
     "recYds": {
-      "line": 35.5,
+      "line": 38.5,
       "books": [
         {
-          "line": 35.5,
-          "book": "FanDuel",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 35.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 35.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 38.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
   },
   "Caleb Odom": {
     "recYds": {
-      "line": 36.5,
+      "line": 40.5,
       "books": [
         {
-          "line": 36.5,
-          "book": "FanDuel",
-          "overPrice": -112,
-          "underPrice": -118
-        },
-        {
-          "line": 36.5,
-          "book": "BetOnline.ag",
-          "overPrice": -114,
-          "underPrice": -114
-        },
-        {
-          "line": 36.5,
-          "book": "Bovada",
-          "overPrice": -115,
-          "underPrice": -115
+          "line": 40.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }
@@ -25181,6 +24917,1416 @@
           "book": "BetOnline.ag",
           "overPrice": -110,
           "underPrice": -118
+        }
+      ]
+    }
+  },
+  "Brock Glenn": {
+    "passYds": {
+      "line": 200.5,
+      "books": [
+        {
+          "line": 200.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 200.5,
+          "book": "bovada",
+          "overPrice": "-112",
+          "underPrice": "-115"
+        },
+        {
+          "line": 201.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-115"
+        },
+        {
+          "line": 199.5,
+          "book": "espnbet",
+          "overPrice": "-135",
+          "underPrice": null
+        }
+      ]
+    },
+    "rushYds": {
+      "line": 64.5,
+      "books": [
+        {
+          "line": 64.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 64.5,
+          "book": "bovada",
+          "overPrice": "-112",
+          "underPrice": "-115"
+        },
+        {
+          "line": 64.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-115"
+        },
+        {
+          "line": 69.5,
+          "book": "espnbet",
+          "overPrice": "-105",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Nicholas Minicucci": {
+    "passYds": {
+      "line": 265.5,
+      "books": [
+        {
+          "line": 265.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 265.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 274.5,
+          "book": "espnbet",
+          "overPrice": "+100",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Ajay Allen": {
+    "recYds": {
+      "line": 10.5,
+      "books": [
+        {
+          "line": 10.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 10.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 9.5,
+          "book": "espnbet",
+          "overPrice": "-135",
+          "underPrice": null
+        },
+        {
+          "line": 10.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-115"
+        }
+      ]
+    },
+    "rushYds": {
+      "line": 55.5,
+      "books": [
+        {
+          "line": 54.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 54.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 59.5,
+          "book": "espnbet",
+          "overPrice": "+100",
+          "underPrice": null
+        },
+        {
+          "line": 55.5,
+          "book": "caesars",
+          "overPrice": "-117",
+          "underPrice": "-113"
+        },
+        {
+          "line": 57.5,
+          "book": "draftkings",
+          "overPrice": "-112",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Bryson Graves": {
+    "recYds": {
+      "line": 24.5,
+      "books": [
+        {
+          "line": 24.5,
+          "book": "fanduel",
+          "overPrice": "-118",
+          "underPrice": "-112"
+        },
+        {
+          "line": 24.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 29.5,
+          "book": "espnbet",
+          "overPrice": "+100",
+          "underPrice": null
+        },
+        {
+          "line": 24.5,
+          "book": "draftkings",
+          "overPrice": "-143",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Donovan Lewis": {
+    "recYds": {
+      "line": 52.5,
+      "books": [
+        {
+          "line": 52.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 52.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 59.5,
+          "book": "espnbet",
+          "overPrice": "+105",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Henry Belin": {
+    "passYds": {
+      "line": 260.5,
+      "books": [
+        {
+          "line": 260.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 274.5,
+          "book": "espnbet",
+          "overPrice": "+115",
+          "underPrice": null
+        },
+        {
+          "line": 219.5,
+          "book": "draftkings",
+          "overPrice": "-366",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Chris Reed": {
+    "recYds": {
+      "line": 39.5,
+      "books": [
+        {
+          "line": 37.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 39.5,
+          "book": "espnbet",
+          "overPrice": "-110",
+          "underPrice": null
+        },
+        {
+          "line": 41.5,
+          "book": "draftkings",
+          "overPrice": "-111",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Grady O'Neill": {
+    "recYds": {
+      "line": 47.0,
+      "books": [
+        {
+          "line": 46.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 46.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 69.5,
+          "book": "espnbet",
+          "overPrice": "+185",
+          "underPrice": null
+        },
+        {
+          "line": 47.5,
+          "book": "draftkings",
+          "overPrice": "-109",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Isaiah Myers": {
+    "recYds": {
+      "line": 93.5,
+      "books": [
+        {
+          "line": 93.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 93.5,
+          "book": "caesars",
+          "overPrice": "-115",
+          "underPrice": "-115"
+        },
+        {
+          "line": 99.5,
+          "book": "espnbet",
+          "overPrice": "+100",
+          "underPrice": null
+        },
+        {
+          "line": 92.5,
+          "book": "draftkings",
+          "overPrice": "-124",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Jmariyae Robinson": {
+    "recYds": {
+      "line": 69.5,
+      "books": [
+        {
+          "line": 69.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 69.5,
+          "book": "bovada",
+          "overPrice": "-110",
+          "underPrice": "-118"
+        },
+        {
+          "line": 69.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-117"
+        },
+        {
+          "line": 69.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": null
+        },
+        {
+          "line": 69.5,
+          "book": "draftkings",
+          "overPrice": "-104",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Kyan Berry-Johnson": {
+    "recYds": {
+      "line": 25.5,
+      "books": [
+        {
+          "line": 25.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 25.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 25.5,
+          "book": "caesars",
+          "overPrice": "-117",
+          "underPrice": "-114"
+        },
+        {
+          "line": 24.5,
+          "book": "draftkings",
+          "overPrice": "-118",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Tim Burns": {
+    "recYds": {
+      "line": 45.5,
+      "books": [
+        {
+          "line": 44.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 44.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 69.5,
+          "book": "espnbet",
+          "overPrice": "+200",
+          "underPrice": null
+        },
+        {
+          "line": 46.5,
+          "book": "draftkings",
+          "overPrice": "-128",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Connor Lair": {
+    "rushYds": {
+      "line": 52.5,
+      "books": [
+        {
+          "line": 51.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 49.5,
+          "book": "espnbet",
+          "overPrice": "-130",
+          "underPrice": null
+        },
+        {
+          "line": 53.5,
+          "book": "caesars",
+          "overPrice": "-113",
+          "underPrice": "-117"
+        },
+        {
+          "line": 56.5,
+          "book": "draftkings",
+          "overPrice": "-122",
+          "underPrice": null
+        }
+      ]
+    },
+    "recYds": {
+      "line": 12.5,
+      "books": [
+        {
+          "line": 12.5,
+          "book": "bovada",
+          "overPrice": "-116",
+          "underPrice": "-111"
+        }
+      ]
+    }
+  },
+  "MJ Dowdy": {
+    "rushYds": {
+      "line": 38.0,
+      "books": [
+        {
+          "line": 37.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 34.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 38.5,
+          "book": "draftkings",
+          "overPrice": "-118",
+          "underPrice": null
+        },
+        {
+          "line": 38.5,
+          "book": "caesars",
+          "overPrice": "-115",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Ramone Green Jr.": {
+    "rushYds": {
+      "line": 29.5,
+      "books": [
+        {
+          "line": 29.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 29.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": null
+        },
+        {
+          "line": 29.5,
+          "book": "draftkings",
+          "overPrice": "-140",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Landyn Locke": {
+    "passYds": {
+      "line": 235.5,
+      "books": [
+        {
+          "line": 235.5,
+          "book": "draftkings",
+          "overPrice": "-117",
+          "underPrice": null
+        },
+        {
+          "line": 235.5,
+          "book": "bovada",
+          "overPrice": "-112",
+          "underPrice": "-115"
+        },
+        {
+          "line": 249.5,
+          "book": "espnbet",
+          "overPrice": "+120",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Jeron Askren": {
+    "recYds": {
+      "line": 18.5,
+      "books": [
+        {
+          "line": 18.5,
+          "book": "draftkings",
+          "overPrice": "-111",
+          "underPrice": null
+        },
+        {
+          "line": 18.5,
+          "book": "bovada",
+          "overPrice": "-112",
+          "underPrice": "-115"
+        }
+      ]
+    }
+  },
+  "Dillon Hipp": {
+    "recYds": {
+      "line": 13.5,
+      "books": [
+        {
+          "line": 13.5,
+          "book": "bovada",
+          "overPrice": "-110",
+          "underPrice": "-118"
+        }
+      ]
+    }
+  },
+  "Dylan Gary": {
+    "recYds": {
+      "line": 36.5,
+      "books": [
+        {
+          "line": 33.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-118"
+        },
+        {
+          "line": 39.5,
+          "book": "espnbet",
+          "overPrice": "+115",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Javon Rogers": {
+    "recYds": {
+      "line": 40.5,
+      "books": [
+        {
+          "line": 40.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Caden Creel": {
+    "passYds": {
+      "line": 227.5,
+      "books": [
+        {
+          "line": 227.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 199.5,
+          "book": "espnbet",
+          "overPrice": "-225",
+          "underPrice": null
+        },
+        {
+          "line": 227.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-115"
+        },
+        {
+          "line": 227.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        }
+      ]
+    },
+    "rushYds": {
+      "line": 60.5,
+      "books": [
+        {
+          "line": 60.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 59.5,
+          "book": "espnbet",
+          "overPrice": "-130",
+          "underPrice": null
+        },
+        {
+          "line": 60.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Darius Cannon": {
+    "recYds": {
+      "line": 28.5,
+      "books": [
+        {
+          "line": 28.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 9.5,
+          "book": "espnbet",
+          "overPrice": "-525",
+          "underPrice": null
+        },
+        {
+          "line": 28.5,
+          "book": "caesars",
+          "overPrice": "-117",
+          "underPrice": "-114"
+        },
+        {
+          "line": 28.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Deondre Johnson": {
+    "recYds": {
+      "line": 55.5,
+      "books": [
+        {
+          "line": 55.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 29.5,
+          "book": "espnbet",
+          "overPrice": "-450",
+          "underPrice": null
+        },
+        {
+          "line": 55.5,
+          "book": "caesars",
+          "overPrice": "-115",
+          "underPrice": "-114"
+        },
+        {
+          "line": 55.5,
+          "book": "bovada",
+          "overPrice": "-112",
+          "underPrice": "-115"
+        }
+      ]
+    }
+  },
+  "Jamill Williams": {
+    "recYds": {
+      "line": 29.5,
+      "books": [
+        {
+          "line": 29.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 29.5,
+          "book": "bovada",
+          "overPrice": "-111",
+          "underPrice": "-116"
+        },
+        {
+          "line": 29.5,
+          "book": "draftkings",
+          "overPrice": "-106",
+          "underPrice": null
+        },
+        {
+          "line": 29.5,
+          "book": "caesars",
+          "overPrice": "-115",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Josiah Thomas": {
+    "recYds": {
+      "line": 28.0,
+      "books": [
+        {
+          "line": 27.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 29.5,
+          "book": "espnbet",
+          "overPrice": "-105",
+          "underPrice": null
+        },
+        {
+          "line": 27.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 28.5,
+          "book": "draftkings",
+          "overPrice": "-137",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "James Jones": {
+    "rushYds": {
+      "line": 99.5,
+      "books": [
+        {
+          "line": 102.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 99.5,
+          "book": "espnbet",
+          "overPrice": "-135",
+          "underPrice": null
+        },
+        {
+          "line": 102.5,
+          "book": "bovada",
+          "overPrice": "-115",
+          "underPrice": "-115"
+        },
+        {
+          "line": 99.5,
+          "book": "draftkings",
+          "overPrice": "-151",
+          "underPrice": null
+        },
+        {
+          "line": 99.5,
+          "book": "caesars",
+          "overPrice": "-114",
+          "underPrice": "-115"
+        }
+      ]
+    }
+  },
+  "Adam Damante": {
+    "passYds": {
+      "line": 193.5,
+      "books": [
+        {
+          "line": 187.5,
+          "book": "bovada",
+          "overPrice": "-112",
+          "underPrice": "-115"
+        },
+        {
+          "line": 199.5,
+          "book": "espnbet",
+          "overPrice": "+115",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Ronnel Johnson": {
+    "recYds": {
+      "line": 27.5,
+      "books": [
+        {
+          "line": 27.5,
+          "book": "draftkings",
+          "overPrice": "-117",
+          "underPrice": null
+        },
+        {
+          "line": 27.5,
+          "book": "bovada",
+          "overPrice": "-108",
+          "underPrice": "-120"
+        }
+      ]
+    }
+  },
+  "Jalen Likely": {
+    "rushYds": {
+      "line": 33.5,
+      "books": [
+        {
+          "line": 33.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Cole Keller": {
+    "recYds": {
+      "line": 29.0,
+      "books": [
+        {
+          "line": 28.5,
+          "book": "draftkings",
+          "overPrice": "-121",
+          "underPrice": null
+        },
+        {
+          "line": 29.5,
+          "book": "espnbet",
+          "overPrice": "-115",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Jace Petty": {
+    "recYds": {
+      "line": 29.5,
+      "books": [
+        {
+          "line": 29.5,
+          "book": "espnbet",
+          "overPrice": "-110",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Michael Scott": {
+    "recYds": {
+      "line": 49.5,
+      "books": [
+        {
+          "line": 49.5,
+          "book": "espnbet",
+          "overPrice": "+110",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "George Pettaway": {
+    "rushYds": {
+      "line": 99.5,
+      "books": [
+        {
+          "line": 99.5,
+          "book": "espnbet",
+          "overPrice": "+105",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Jordan Lovett": {
+    "rushYds": {
+      "line": 49.5,
+      "books": [
+        {
+          "line": 49.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Caden Veltkamp": {
+    "passYds": {
+      "line": 328.5,
+      "books": [
+        {
+          "line": 328.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 328.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 249.5,
+          "book": "espnbet",
+          "overPrice": "-475",
+          "underPrice": null
+        }
+      ]
+    },
+    "rushYds": {
+      "line": 7.5,
+      "books": [
+        {
+          "line": 7.5,
+          "book": "bovada",
+          "overPrice": "+102",
+          "underPrice": "-132"
+        }
+      ]
+    }
+  },
+  "Tayven Jackson": {
+    "passYds": {
+      "line": 314.5,
+      "books": [
+        {
+          "line": 314.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 314.5,
+          "book": "bovada",
+          "overPrice": "-112",
+          "underPrice": "-115"
+        },
+        {
+          "line": 314.5,
+          "book": "caesars",
+          "overPrice": "-115",
+          "underPrice": "-114"
+        },
+        {
+          "line": 324.5,
+          "book": "espnbet",
+          "overPrice": "+100",
+          "underPrice": null
+        }
+      ]
+    },
+    "rushYds": {
+      "line": 14.5,
+      "books": [
+        {
+          "line": 14.5,
+          "book": "bovada",
+          "overPrice": "-106",
+          "underPrice": "-122"
+        }
+      ]
+    }
+  },
+  "Easton Messer": {
+    "recYds": {
+      "line": 109.5,
+      "books": [
+        {
+          "line": 109.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 109.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 109.5,
+          "book": "caesars",
+          "overPrice": "-125",
+          "underPrice": "-108"
+        },
+        {
+          "line": 109.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Jahiem White": {
+    "recYds": {
+      "line": 32.5,
+      "books": [
+        {
+          "line": 32.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 32.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 32.5,
+          "book": "caesars",
+          "overPrice": "-117",
+          "underPrice": "-114"
+        },
+        {
+          "line": 9.5,
+          "book": "espnbet",
+          "overPrice": "-800",
+          "underPrice": null
+        }
+      ]
+    },
+    "rushYds": {
+      "line": 134.5,
+      "books": [
+        {
+          "line": 134.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 134.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 134.5,
+          "book": "caesars",
+          "overPrice": "-127",
+          "underPrice": "-107"
+        },
+        {
+          "line": 79.5,
+          "book": "espnbet",
+          "overPrice": "-650",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Kelby Valsin": {
+    "recYds": {
+      "line": 84.5,
+      "books": [
+        {
+          "line": 84.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 84.5,
+          "book": "bovada",
+          "overPrice": "-115",
+          "underPrice": "-115"
+        },
+        {
+          "line": 87.5,
+          "book": "caesars",
+          "overPrice": "-108",
+          "underPrice": "-125"
+        },
+        {
+          "line": 79.5,
+          "book": "espnbet",
+          "overPrice": "-140",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Max Reese": {
+    "recYds": {
+      "line": 29.5,
+      "books": [
+        {
+          "line": 29.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 29.5,
+          "book": "fanduel",
+          "overPrice": "-118",
+          "underPrice": "-112"
+        },
+        {
+          "line": 29.5,
+          "book": "caesars",
+          "overPrice": "-117",
+          "underPrice": "-113"
+        },
+        {
+          "line": 29.5,
+          "book": "espnbet",
+          "overPrice": "-125",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Brec Long": {
+    "recYds": {
+      "line": 10.5,
+      "books": [
+        {
+          "line": 10.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Leonard Farrow": {
+    "rushYds": {
+      "line": 23.5,
+      "books": [
+        {
+          "line": 23.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Justin Stevenson": {
+    "recYds": {
+      "line": 98.5,
+      "books": [
+        {
+          "line": 98.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 98.5,
+          "book": "caesars",
+          "overPrice": "-125",
+          "underPrice": "-108"
+        },
+        {
+          "line": 59.5,
+          "book": "espnbet",
+          "overPrice": "-400",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Kyle Koch": {
+    "recYds": {
+      "line": 42.5,
+      "books": [
+        {
+          "line": 41.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 42.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 42.5,
+          "book": "caesars",
+          "overPrice": "-115",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Josh Jacobs": {
+    "rushYds": {
+      "line": 56.5,
+      "books": [
+        {
+          "line": 58.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 56.5,
+          "book": "draftkings",
+          "overPrice": "-110",
+          "underPrice": "-114"
+        },
+        {
+          "line": 54.5,
+          "book": "espnbet",
+          "overPrice": "-125",
+          "underPrice": "-105"
+        },
+        {
+          "line": 58.5,
+          "book": "bovada",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 56.5,
+          "book": "betmgm",
+          "overPrice": "-120",
+          "underPrice": "-111"
+        }
+      ]
+    },
+    "recYds": {
+      "line": 15.0,
+      "books": [
+        {
+          "line": 14.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 14.5,
+          "book": "caesars",
+          "overPrice": "-118",
+          "underPrice": "-110"
+        },
+        {
+          "line": 15.5,
+          "book": "draftkings",
+          "overPrice": "-110",
+          "underPrice": "-114"
+        },
+        {
+          "line": 15.5,
+          "book": "espnbet",
+          "overPrice": "-110",
+          "underPrice": "-120"
+        }
+      ]
+    }
+  },
+  "Savion Williams": {
+    "recYds": {
+      "line": 22.0,
+      "books": [
+        {
+          "line": 21.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        },
+        {
+          "line": 22.5,
+          "book": "caesars",
+          "overPrice": "-122",
+          "underPrice": "-110"
+        },
+        {
+          "line": 22.5,
+          "book": "draftkings",
+          "overPrice": "-109",
+          "underPrice": "-115"
+        },
+        {
+          "line": 22.5,
+          "book": "bovada",
+          "overPrice": "-110",
+          "underPrice": "-120"
+        },
+        {
+          "line": 21.5,
+          "book": "betmgm",
+          "overPrice": "-120",
+          "underPrice": "-111"
+        },
+        {
+          "line": 21.5,
+          "book": "espnbet",
+          "overPrice": "-120",
+          "underPrice": "-110"
+        }
+      ]
+    }
+  },
+  "Tommy Carr": {
+    "passYds": {
+      "line": 187.5,
+      "books": [
+        {
+          "line": 187.5,
+          "book": "draftkings",
+          "overPrice": "-117",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Hogan Hansen": {
+    "recYds": {
+      "line": 27.5,
+      "books": [
+        {
+          "line": 27.5,
+          "book": "draftkings",
+          "overPrice": "-114",
+          "underPrice": null
+        }
+      ]
+    }
+  },
+  "Jeremiah Koger": {
+    "recYds": {
+      "line": 21.5,
+      "books": [
+        {
+          "line": 21.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
+        }
+      ]
+    }
+  },
+  "Jeremiah Cobb": {
+    "rushYds": {
+      "line": 39.5,
+      "books": [
+        {
+          "line": 39.5,
+          "book": "fanduel",
+          "overPrice": "-114",
+          "underPrice": "-114"
         }
       ]
     }

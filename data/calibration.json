@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "NFL": {
-    "sample_size": 168,
+    "sample_size": 169,
     "min_sample_size": 30,
     "calibrated": true,
-    "strong_threshold": 7.1,
-    "moderate_threshold": 3.6,
-    "hit_rate": 0.53,
-    "deviation_pct": -2.0
+    "strong_threshold": 7.12,
+    "moderate_threshold": 3.62,
+    "hit_rate": 0.527,
+    "deviation_pct": -2.3
   },
   "CFB": {
-    "sample_size": 191,
+    "sample_size": 193,
     "min_sample_size": 30,
     "calibrated": true,
-    "strong_threshold": 6.87,
-    "moderate_threshold": 3.37,
-    "hit_rate": 0.576,
-    "deviation_pct": 2.6
+    "strong_threshold": 6.85,
+    "moderate_threshold": 3.35,
+    "hit_rate": 0.58,
+    "deviation_pct": 3.0
   }
 }

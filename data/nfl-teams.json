@@ -81,14 +81,14 @@
   },
   "Dallas Cowboys": {
     "league": "NFL",
-    "record": "2-4",
-    "ppg": 25.2,
-    "pa": 26.5,
-    "passOff": 273.2,
-    "rushOff": 76.0,
-    "passDef": 239.2,
-    "rushDef": 149.8,
-    "to": -0.5,
+    "record": "3-4",
+    "ppg": 27.0,
+    "pa": 25.7,
+    "passOff": 264.4,
+    "rushOff": 94.3,
+    "passDef": 235.1,
+    "rushDef": 145.7,
+    "to": -0.29,
     "ats": "",
     "wk1": true,
     "games": [
@@ -139,6 +139,14 @@
         "teamScore": 13.0,
         "oppScore": 23.0,
         "result": "L"
+      },
+      {
+        "week": "7",
+        "date": "2026-10-26",
+        "opp": "Philadelphia Eagles",
+        "teamScore": 38.0,
+        "oppScore": 21.0,
+        "result": "W"
       }
     ],
     "prevPpg": 27.7,
@@ -147,9 +155,9 @@
     "homePpg": 28.0,
     "homePa": 26.0,
     "homeGames": 3,
-    "awayPpg": 22.3,
-    "awayPa": 27.0,
-    "awayGames": 3
+    "awayPpg": 26.2,
+    "awayPa": 25.5,
+    "awayGames": 4
   },
   "New England Patriots": {
     "league": "NFL",
@@ -1777,14 +1785,14 @@
   },
   "Philadelphia Eagles": {
     "league": "NFL",
-    "record": "2-4",
-    "ppg": 17.7,
-    "pa": 22.8,
-    "passOff": 191.3,
-    "rushOff": 82.2,
-    "passDef": 253.8,
-    "rushDef": 119.3,
-    "to": -0.33,
+    "record": "2-5",
+    "ppg": 18.1,
+    "pa": 25.0,
+    "passOff": 194.1,
+    "rushOff": 87.7,
+    "passDef": 247.9,
+    "rushDef": 131.4,
+    "to": -0.43,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1835,14 +1843,22 @@
         "teamScore": 14.0,
         "oppScore": 25.0,
         "result": "L"
+      },
+      {
+        "week": "7",
+        "date": "2026-10-26",
+        "opp": "Dallas Cowboys",
+        "teamScore": 21.0,
+        "oppScore": 38.0,
+        "result": "L"
       }
     ],
     "prevPpg": 22.3,
     "prevPa": 19.1,
     "prevTo": 0.61,
-    "homePpg": 19.3,
-    "homePa": 23.7,
-    "homeGames": 3,
+    "homePpg": 19.8,
+    "homePa": 27.2,
+    "homeGames": 4,
     "awayPpg": 16.0,
     "awayPa": 22.0,
     "awayGames": 3
