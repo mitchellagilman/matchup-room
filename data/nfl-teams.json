@@ -1089,14 +1089,14 @@
   },
   "Green Bay Packers": {
     "league": "NFL",
-    "record": "4-3",
-    "ppg": 20.6,
-    "pa": 20.7,
-    "passOff": 279.7,
-    "rushOff": 59.9,
-    "passDef": 222.6,
-    "rushDef": 115.0,
-    "to": 0.71,
+    "record": "5-3",
+    "ppg": 21.4,
+    "pa": 20.5,
+    "passOff": 280.8,
+    "rushOff": 60.6,
+    "passDef": 220.9,
+    "rushDef": 110.9,
+    "to": 0.62,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1155,14 +1155,22 @@
         "teamScore": 17.0,
         "oppScore": 20.0,
         "result": "L"
+      },
+      {
+        "week": "8",
+        "date": "2026-10-29",
+        "opp": "Carolina Panthers",
+        "teamScore": 27.0,
+        "oppScore": 19.0,
+        "result": "W"
       }
     ],
     "prevPpg": 23.0,
     "prevPa": 21.2,
     "prevTo": 0.17,
-    "homePpg": 22.7,
-    "homePa": 18.3,
-    "homeGames": 3,
+    "homePpg": 23.8,
+    "homePa": 18.5,
+    "homeGames": 4,
     "awayPpg": 19.0,
     "awayPa": 22.5,
     "awayGames": 4
@@ -2017,14 +2025,14 @@
   },
   "Carolina Panthers": {
     "league": "NFL",
-    "record": "3-3",
-    "ppg": 26.5,
-    "pa": 27.7,
-    "passOff": 293.2,
-    "rushOff": 105.3,
-    "passDef": 208.2,
-    "rushDef": 153.2,
-    "to": 0.17,
+    "record": "3-4",
+    "ppg": 25.4,
+    "pa": 27.6,
+    "passOff": 281.1,
+    "rushOff": 102.0,
+    "passDef": 219.6,
+    "rushDef": 140.7,
+    "to": 0.43,
     "ats": "",
     "wk1": true,
     "games": [
@@ -2075,6 +2083,14 @@
         "teamScore": 13.0,
         "oppScore": 43.0,
         "result": "L"
+      },
+      {
+        "week": "8",
+        "date": "2026-10-29",
+        "opp": "Green Bay Packers",
+        "teamScore": 19.0,
+        "oppScore": 27.0,
+        "result": "L"
       }
     ],
     "prevPpg": 18.3,
@@ -2083,9 +2099,9 @@
     "homePpg": 27.3,
     "homePa": 42.7,
     "homeGames": 3,
-    "awayPpg": 25.7,
-    "awayPa": 12.7,
-    "awayGames": 3
+    "awayPpg": 24.0,
+    "awayPa": 16.2,
+    "awayGames": 4
   },
   "Minnesota Vikings": {
     "league": "NFL",

@@ -2332,8 +2332,8 @@
       "_away": "Carolina Panthers",
       "_home": "Green Bay Packers",
       "date_logged": "2026-10-27",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-10-30"
     },
     {
       "id": "BPG|NFL|2026-11-01|Baltimore Ravens vs Buffalo Bills|team",
@@ -2700,8 +2700,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202607,
       "date_logged": "2026-10-27",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-10-30"
     },
     {
       "id": "BPG|NFL|2026-11-02|Chicago Bears vs Seattle Seahawks|prop",
@@ -2875,5 +2875,5 @@
       "graded_date": null
     }
   ],
-  "updated": "2026-10-27"
+  "updated": "2026-10-30"
 }
