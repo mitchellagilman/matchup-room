@@ -52,8 +52,8 @@ def implied(american):
     return 1 / dec
 
 
-def market_margin_for(team, opp, odds_list):
-    m = tp.find_market_line(team, opp, odds_list)
+def market_margin_for(team, opp, odds_list, league=None):
+    m = tp.find_market_line(team, opp, odds_list, league)
     if not m:
         return None
     s = m.get("aSpread") if tp.team_names_match(m.get("aTeam"), team) else m.get("bSpread")
@@ -64,7 +64,7 @@ def best_team_bet(g, league, teams, odds_list, players, injuries_by_team, weathe
     if tp.is_cross_division_game(g, teams, league):
         return None
     proj = tp.compute_projection(g["a"], g["b"], teams, league, odds_list, players, injuries_by_team, g.get("date"), weather_cache)
-    market = tp.find_market_line(g["a"], g["b"], odds_list)
+    market = tp.find_market_line(g["a"], g["b"], odds_list, league)
     if not proj or not market or tp.is_extreme_mismatch(market):
         return None
     a_is_entry_a = tp.team_names_match(market.get("aTeam"), g["a"])
@@ -102,7 +102,7 @@ def best_team_bet(g, league, teams, odds_list, players, injuries_by_team, weathe
     ):
         if ml is None:
             continue
-        mm = market_margin_for(team, opp, odds_list)
+        mm = market_margin_for(team, opp, odds_list, league)
         m = margin if mm is None else mm + ML_MODEL_WEIGHT * (margin - mm)
         prob = max(0.1, min(0.9, norm_cdf(m / sd)))
         if prob < 0.5:
@@ -161,6 +161,13 @@ def main():
     props_odds = tp.load_json("data/player-props-odds.json", {})
 
     record = tp.load_json(OUT_PATH, {"picks": []})
+    if record.get("version", 1) < 2:
+        # One-time cleanup after fixing a team-name matching bug ("Indiana" was
+        # matching the Indianapolis Colts' odds). Drop still-pending team picks
+        # so they re-log correctly, plus any CFB Indiana team pick already made.
+        record["picks"] = [p for p in record["picks"] if not (
+            p.get("type") != "player_prop" and (p.get("status") == "pending" or (p.get("league") == "CFB" and "Indiana" in p.get("matchup", ""))))]
+        record["version"] = 2
     existing = {p["id"] for p in record["picks"]}
     logged = 0
 
