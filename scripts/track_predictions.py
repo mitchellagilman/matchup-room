@@ -268,7 +268,7 @@ def compute_projection(a, b, teams, league, odds_list=None, players=None, injuri
     spread = a_score - b_score
     market_anchored = False
     used_sp = False
-    market = find_market_line(a, b, odds_list) if odds_list else None
+    market = find_market_line(a, b, odds_list, league) if odds_list else None
     market_has_spread = market and market.get("aSpread") is not None
     if league == "CFB" and isinstance(A.get("spPlus"), (int, float)) and isinstance(B.get("spPlus"), (int, float)):
         # SP+ is opponent-adjusted; raw box-score ppg/pa isn't and is a
@@ -311,20 +311,44 @@ def compute_projection(a, b, teams, league, odds_list=None, players=None, injuri
 
 
 def team_names_match(a, b):
+    """Bridges naming differences between sources ("Ohio State" vs "Ohio State
+    Buckeyes") but only on WHOLE WORDS. A plain startswith() made "Indiana"
+    match "Indianapolis Colts", so the Colts' NFL line was being shown as
+    Indiana's CFB line."""
     if not a or not b:
         return False
     if a == b:
         return True
-    na, nb = a.lower(), b.lower()
-    return na.startswith(nb) or nb.startswith(na)
+    na, nb = a.lower().strip(), b.lower().strip()
+    if na == nb:
+        return True
+    return na.startswith(nb + " ") or nb.startswith(na + " ")
 
 
-def find_market_line(a, b, odds_list):
+def _name_score(a, b):
+    if not a or not b:
+        return 0
+    if a == b or a.lower().strip() == b.lower().strip():
+        return 2
+    return 1 if team_names_match(a, b) else 0
+
+
+def find_market_line(a, b, odds_list, league=None):
+    """Best-matching odds entry: exact names beat prefix matches, and when a
+    league is given, entries from the other league are ignored (so a CFB
+    "Washington" can't pick up the NFL Commanders' line)."""
+    best, best_score = None, 0
     for o in odds_list:
-        if (team_names_match(o.get("aTeam"), a) and team_names_match(o.get("bTeam"), b)) or \
-           (team_names_match(o.get("aTeam"), b) and team_names_match(o.get("bTeam"), a)):
-            return o
-    return None
+        if league and o.get("league") and o.get("league") != league:
+            continue
+        s1 = _name_score(o.get("aTeam"), a) and _name_score(o.get("bTeam"), b)
+        s1 = (_name_score(o.get("aTeam"), a) + _name_score(o.get("bTeam"), b)) if s1 else 0
+        s2 = _name_score(o.get("aTeam"), b) and _name_score(o.get("bTeam"), a)
+        s2 = (_name_score(o.get("aTeam"), b) + _name_score(o.get("bTeam"), a)) if s2 else 0
+        sc = max(s1, s2)
+        if sc > best_score:
+            best, best_score = o, sc
+    return best
 
 
 def is_cross_division_game(g, teams, league):
@@ -426,7 +450,7 @@ def compute_team_bets(games, teams, odds_list, league, players=None, injuries_by
         proj = compute_projection(g["a"], g["b"], teams, league, odds_list, players, injuries_by_team, g.get("date"), weather_cache)
         if not proj:
             continue
-        market = find_market_line(g["a"], g["b"], odds_list)
+        market = find_market_line(g["a"], g["b"], odds_list, league)
         if not market:
             continue
         if is_extreme_mismatch(market):
@@ -584,7 +608,7 @@ def compute_player_bets(players, teams, games, league, odds_list=None, player_pr
             continue
         if is_cross_division_game(game, teams, league):
             continue
-        if odds_list and is_extreme_mismatch(find_market_line(game["a"], game["b"], odds_list)):
+        if odds_list and is_extreme_mismatch(find_market_line(game["a"], game["b"], odds_list, league)):
             continue
         opp = game["b"] if game["a"].lower() == (p.get("team") or "").lower() else game["a"]
         if opp not in teams:
@@ -941,7 +965,7 @@ def main():
     for pk in record["picks"]:
         if pk.get("status") != "pending" or pk.get("type") not in ("spread", "total") or pk.get("league") not in active_leagues or pk.get("backfilled"):
             continue
-        mk = find_market_line(pk.get("_away"), pk.get("_home"), all_odds)
+        mk = find_market_line(pk.get("_away"), pk.get("_home"), all_odds, pk.get("league"))
         if not mk:
             continue
         if pk["type"] == "total":
