@@ -478,16 +478,36 @@ function projectMatchup(nameA, nameB, gameDate){
 function teamNamesMatch(a, b){
   if(!a || !b) return false;
   if(a===b) return true;
-  const na = a.toLowerCase(), nb = b.toLowerCase();
-  // Bridges naming convention differences between sources -- e.g. CFBD's
-  // "Ohio State" vs an odds provider's "Ohio State Buckeyes".
-  return na.indexOf(nb)===0 || nb.indexOf(na)===0;
+  const na = a.toLowerCase().trim(), nb = b.toLowerCase().trim();
+  if(na===nb) return true;
+  // Bridges naming differences between sources -- e.g. CFBD's "Ohio State"
+  // vs an odds provider's "Ohio State Buckeyes" -- but only on WHOLE WORDS.
+  // A plain prefix check made "Indiana" match "Indianapolis Colts", so the
+  // Colts' NFL line showed up as Indiana's CFB line.
+  return na.indexOf(nb+' ')===0 || nb.indexOf(na+' ')===0;
+}
+function nameMatchScore(a, b){
+  if(!a || !b) return 0;
+  if(a===b || a.toLowerCase().trim()===b.toLowerCase().trim()) return 2;
+  return teamNamesMatch(a,b) ? 1 : 0;
 }
 function findMarketLine(nameA, nameB){
-  return ALL_ODDS.find(function(o){
-    return (teamNamesMatch(o.aTeam,nameA) && teamNamesMatch(o.bTeam,nameB)) ||
-           (teamNamesMatch(o.aTeam,nameB) && teamNamesMatch(o.bTeam,nameA));
+  // Best match wins (exact names beat prefix matches), and entries from the
+  // other league are ignored when we know which league these teams are in.
+  let lg = null;
+  try{
+    const ta = (typeof teamsCache!=='undefined') && (teamsCache[nameA] || teamsCache[nameB]);
+    if(ta && ta.league) lg = ta.league;
+  }catch(e){}
+  let best = null, bestScore = 0;
+  ALL_ODDS.forEach(function(o){
+    if(lg && o.league && o.league!==lg) return;
+    const f1 = nameMatchScore(o.aTeam,nameA), f2 = nameMatchScore(o.bTeam,nameB);
+    const r1 = nameMatchScore(o.aTeam,nameB), r2 = nameMatchScore(o.bTeam,nameA);
+    const sc = Math.max((f1&&f2)?f1+f2:0, (r1&&r2)?r1+r2:0);
+    if(sc>bestScore){ best=o; bestScore=sc; }
   });
+  return best || undefined;
 }
 let MODEL_CALIBRATION = null; // loaded at startup from data/calibration.json -- null until enough graded picks exist to calibrate from (see calibrate_model.py). Keyed by league (NFL/CFB calibrate independently -- see that script's docstring for why)
 let MODEL_WEIGHTS = null; // loaded at startup from data/model_weights.json -- null (or .trained===false) until enough graded team bets exist for train_model.py to trust a fit (see that script's docstring)
