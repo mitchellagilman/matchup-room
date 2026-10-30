@@ -188,7 +188,8 @@ function computeGameBets(nameA, nameB){
         label: favoredTeam+' '+(favoredLine>0?'+':'')+favoredLine,
         edge: Math.abs(spreadEdge),
         tier: confidenceTier(Math.abs(spreadEdge), proj.usedSP, league),
-        sub: 'model has it '+(proj.spread>0?nameA:nameB)+' by '+Math.abs(tieSafeLine(proj.spread))
+        sub: 'model has it '+(proj.spread>0?nameA:nameB)+' by '+Math.abs(tieSafeLine(proj.spread)),
+        market: market
       });
       }
     }
@@ -198,7 +199,8 @@ function computeGameBets(nameA, nameB){
         label: (totalEdge>0?'Over':'Under')+' '+market.total,
         edge: Math.abs(totalEdge),
         tier: confidenceTier(Math.abs(totalEdge), proj.usedSP, league),
-        sub: 'model projects '+tieSafeLine(proj.total)+' total points'
+        sub: 'model projects '+tieSafeLine(proj.total)+' total points',
+        market: market
       });
     }
   }
@@ -247,16 +249,16 @@ function renderGameBets(nameA, nameB){
   }
   let rows = '';
   teamBets.forEach(function(b,i){
-    rows += '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.label+' <span class="pill" style="background:rgba(240,185,61,0.15);">'+b.tier.label+'</span></div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
+    rows += '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.label+' <span class="pill" style="background:rgba(240,185,61,0.15);">'+b.tier.label+'</span> '+realLinePill(b.market)+'</div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
   });
   playerBets.forEach(function(b,i){
     const idx = teamBets.length + i + 1;
     const pct = Math.round((b.ratio-1)*100);
     const dirLabel = (b.direction==='favorable' ? 'Over ' : 'Under ')+b.statLabel+' · '+(b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average');
     const cls = b.direction==='favorable' ? 'over' : 'under';
-    rows += '<div class="team-row"><div><div class="team-name">'+idx+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+' · <b>projected '+fmt(b.projected)+'</b></div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
+    rows += '<div class="team-row"><div><div class="team-name">'+idx+'. '+b.name+' <span class="pill">'+b.pos+'</span> '+(b.usedRealLine?'<span class="pill" style="background:rgba(51,211,153,0.15);color:#5eead4;">real line</span>':modelNumberPill())+'</div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+' · <b>projected '+fmt(b.projected)+'</b></div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
   });
-  return '<div class="card"><h2>Top bets for this game</h2>'+rows+'<div class="note">Team rows compare the model\'s projection to the market line, same math as the main Top Bets tab. Player rows show the best matchup mismatches for either team\'s roster this game — "projected" is each player\'s last-5-game average scaled by how this opponent\'s defense compares to league average, a simple heuristic (not a sportsbook line) meant to give you a number to weigh your own line against.</div></div>';
+  return '<div class="card"><h2>Top bets for this game</h2>'+rows+'<div class="note">Team rows compare the model\'s projection to the market line, same math as the main Top Bets tab. Player rows show the best matchup mismatches for either team\'s roster this game. A green "real line" tag means a sportsbook is offering that number; a red "model number" tag means "projected" is just the model\'s own estimate (last-5-game average scaled by the opponent\'s defense), so compare it to your book\'s line before betting.</div></div>';
 }
 
 // A completed game shouldn't show a hypothetical projection as if it were
@@ -358,11 +360,23 @@ function oddsForGame(market, g){
   };
 }
 function fmtOddsNum(n){ return (n===null || n===undefined) ? '—' : (n>0?'+':'')+n; }
+// Labels that say whether a number comes from a real sportsbook or from the
+// model alone, so it is obvious what can actually be bet.
+function realLinePill(market){
+  const n = market && market.books ? market.books.length : 0;
+  return '<span class="pill" style="background:rgba(51,211,153,0.15);color:#5eead4;">real line'+(n>1?' · '+n+' books':(n===1?' · '+market.books[0].book:''))+'</span>';
+}
+function noLinePill(){
+  return '<span class="pill" style="background:rgba(136,146,176,0.18);">no sportsbook line</span>';
+}
+function modelNumberPill(){
+  return '<span class="pill" style="background:rgba(242,139,125,0.18);color:#f28b7d;">model number, not a book line</span>';
+}
 function scheduleOddsLine(nameA, nameB){
   const market = findMarketLine(nameA, nameB);
-  if(!market) return '<div class="team-meta" style="margin-top:4px;">No odds loaded for this game yet.</div>';
+  if(!market) return '<div class="team-meta" style="margin-top:4px;">'+noLinePill()+' No odds loaded for this game yet &mdash; any projection here is the model only.</div>';
   const o = oddsForGame(market, {a:nameA, b:nameB});
-  return '<div class="team-meta" style="margin-top:4px;">'
+  return '<div class="team-meta" style="margin-top:4px;">'+realLinePill(market)+' '
     + nameA+' ML '+fmtOddsNum(o.aML)+' · '+fmtOddsNum(o.aSpread)+' ('+fmtOddsNum(o.aSpreadOdds)+')'
     + ' &nbsp;|&nbsp; '
     + nameB+' ML '+fmtOddsNum(o.bML)+' · '+fmtOddsNum(o.bSpread)+' ('+fmtOddsNum(o.bSpreadOdds)+')'
@@ -593,6 +607,7 @@ function computeAllBetCandidates(games, league){
           edge: Math.abs(spreadEdge),
           label: favoredTeam+' '+(favoredLine>0?'+':'')+favoredLine,
           sub: g.a+' vs '+g.b+' · model has it '+(proj.spread>0?g.a:g.b)+' by '+Math.abs(tieSafeLine(proj.spread)),
+          market: market,
           tier: confidenceTier(Math.abs(spreadEdge), proj.usedSP, league),
           gameKey: gameKey, oddsPrice: (favoredOdds===null||favoredOdds===undefined) ? null : favoredOdds,
           learnedProb: learnedProb, league: league, usedSP: proj.usedSP, isFavorite: favoredLine<0,
@@ -614,6 +629,7 @@ function computeAllBetCandidates(games, league){
           edge: Math.abs(totalEdge),
           label: (totalEdge>0?'Over':'Under')+' '+market.total,
           sub: g.a+' vs '+g.b+' · model projects '+tieSafeLine(proj.total)+' total points',
+          market: market,
           tier: confidenceTier(Math.abs(totalEdge), proj.usedSP, league),
           gameKey: gameKey, oddsPrice: (totalOdds===null||totalOdds===undefined) ? null : totalOdds,
           learnedProb: learnedProb, league: league, usedSP: proj.usedSP, isFavorite: false,
@@ -729,7 +745,7 @@ function renderTopBetsList(elId, bets){
     return;
   }
   el.innerHTML = bets.map(function(b,i){
-    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.label+' <span class="pill" style="background:rgba(240,185,61,0.15);">'+b.tier.label+'</span></div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
+    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.label+' <span class="pill" style="background:rgba(240,185,61,0.15);">'+b.tier.label+'</span> '+realLinePill(b.market)+'</div><div class="team-meta">'+b.sub+'</div></div><div class="pill">edge '+fmt(b.edge)+'</div></div>';
   }).join('');
 }
 
@@ -784,7 +800,7 @@ function renderPlayerBetsList(elId, bets){
     const pct = Math.round((b.ratio-1)*100);
     const dirLabel = (b.direction==='favorable' ? 'Over ' : 'Under ')+b.statLabel+' · '+(b.direction==='favorable' ? '+'+pct+'% easier than average' : pct+'% tougher than average');
     const cls = b.direction==='favorable' ? 'over' : 'under';
-    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.name+' <span class="pill">'+b.pos+'</span></div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+' · <b>projected '+fmt(b.projected)+'</b></div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
+    return '<div class="team-row"><div><div class="team-name">'+(i+1)+'. '+b.name+' <span class="pill">'+b.pos+'</span> '+(b.usedRealLine?'<span class="pill" style="background:rgba(51,211,153,0.15);color:#5eead4;">real line</span>':modelNumberPill())+'</div><div class="team-meta">'+b.team+' vs '+b.opp+' · L5 avg '+fmt(b.l5avg)+' '+b.statLabel+' · <b>projected '+fmt(b.projected)+'</b></div></div><div class="glog-val '+cls+'">'+dirLabel+'</div></div>';
   }).join('');
 }
 
@@ -868,7 +884,7 @@ function renderBestPerGame(elId, games, league){
       const t = r.team, cat = probabilityCategory(t.prob);
       const thin = (t.prob<0.55 ? ' <span class="team-meta">(thin edge &mdash; lean only)</span>' : '') + (t.bigGap ? ' <span class="team-meta" style="color:#f28b7d;">(model and market disagree a lot &mdash; double-check injuries/news)</span>' : '');
       const idx = ACTIONS.push(t)-1;
-      teamHtml = '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><div><div class="team-name">'+t.label+' <span class="pill" style="'+cat.style+'">'+Math.round(t.prob*100)+'% · '+cat.label+'</span></div><div class="team-meta">'+t.kind+' · '+t.sub+' · '+fmtLine(t.odds)+thin+'</div></div><button class="secondary" data-bgadd="'+idx+'" style="margin:0;padding:6px 10px;font-size:0.76rem;">+ Slip</button></div>';
+      teamHtml = '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><div><div class="team-name">'+t.label+' '+realLinePill(findMarketLine(r.g.a, r.g.b))+' <span class="pill" style="'+cat.style+'">'+Math.round(t.prob*100)+'% · '+cat.label+'</span></div><div class="team-meta">'+t.kind+' · '+t.sub+' · '+fmtLine(t.odds)+thin+'</div></div><button class="secondary" data-bgadd="'+idx+'" style="margin:0;padding:6px 10px;font-size:0.76rem;">+ Slip</button></div>';
     }
     let propHtml = '<div class="team-meta">No player prop data for this game.</div>';
     if(r.prop){
