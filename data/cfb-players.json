@@ -834,7 +834,7 @@
         "date": "2026-wk8",
         "opp": "",
         "passYds": 0,
-        "rushYds": -3.0,
+        "rushYds": -1.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -861,6 +861,15 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
+        "rushYds": -1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
         "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
@@ -878,8 +887,8 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 0,
-        "rushYds": -1.0,
+        "passYds": 0.0,
+        "rushYds": -14.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -889,15 +898,6 @@
         "opp": "",
         "passYds": 0,
         "rushYds": -2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "",
-        "passYds": 0.0,
-        "rushYds": -14.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -173295,18 +173295,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 11.0,
-        "tds": 0.0
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0
       },
       {
         "date": "2026-wk7",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0
+        "receptions": 1.0,
+        "recYds": 11.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk8",
@@ -260214,8 +260214,8 @@
       {
         "date": "2026-wk3",
         "opp": "",
-        "passYds": 105.0,
-        "rushYds": 22.0,
+        "passYds": 0,
+        "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -260223,8 +260223,8 @@
       {
         "date": "2026-wk3",
         "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
+        "passYds": 105.0,
+        "rushYds": 22.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
