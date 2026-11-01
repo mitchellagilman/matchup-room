@@ -60,13 +60,14 @@ def market_margin_for(team, opp, odds_list, league=None):
     return None if s is None else -s
 
 
-def best_team_bet(g, league, teams, odds_list, players, injuries_by_team, weather_cache, calibration):
+def team_options(g, league, teams, odds_list, players, injuries_by_team, weather_cache, calibration):
+    """Every spread/total/moneyline option the model sees for one game (or [])."""
     if tp.is_cross_division_game(g, teams, league):
-        return None
+        return []
     proj = tp.compute_projection(g["a"], g["b"], teams, league, odds_list, players, injuries_by_team, g.get("date"), weather_cache)
     market = tp.find_market_line(g["a"], g["b"], odds_list, league)
     if not proj or not market or tp.is_extreme_mismatch(market):
-        return None
+        return []
     a_is_entry_a = tp.team_names_match(market.get("aTeam"), g["a"])
     opts = []
     a_spread = market.get("aSpread")
@@ -109,9 +110,14 @@ def best_team_bet(g, league, teams, odds_list, players, injuries_by_team, weathe
             continue
         opts.append({"type": "ml", "kind": "Moneyline", "label": f"{team} ML", "prob": prob, "odds": ml,
                      "edge": margin, "line": 0, "favored_team": team, "value": prob - implied(ml)})
-    if not opts:
-        return None
-    return max(opts, key=lambda o: o["value"])
+    for o in opts:
+        o["big_gap"] = o["type"] in ("spread", "total") and o["edge"] >= 7
+    return opts
+
+
+def best_team_bet(g, league, teams, odds_list, players, injuries_by_team, weather_cache, calibration):
+    opts = team_options(g, league, teams, odds_list, players, injuries_by_team, weather_cache, calibration)
+    return max(opts, key=lambda o: o["value"]) if opts else None
 
 
 def week_label(league, nfl_week, date_str):
