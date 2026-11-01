@@ -429,6 +429,7 @@
       <div class="subtab active" data-subtab="topbets-team">Team Bets</div>
       <div class="subtab" data-subtab="topbets-bygame">Best per game</div>
       <div class="subtab" data-subtab="topbets-player">Player Props</div>
+      <div class="subtab" data-subtab="topbets-parlays">Parlays</div>
     </div>
 
     <div class="subpanel active" id="subpanel-topbets-team">
@@ -467,6 +468,21 @@
       </div>
     </div>
 
+    <div class="subpanel" id="subpanel-topbets-parlays">
+      <div class="card">
+        <h2>Recommended parlays</h2>
+        <div class="note" style="margin-top:0;">5 per league each week, listed strongest first. Two are spreads/moneylines only, two are overs/unders only, and one mixes both with real-line player props. One leg per game, no leg where the model and market disagree by 7+ points, and props only when a real sportsbook line exists. Strength is the average win chance of the legs. They are frozen when first made, then graded in the Track tab. Parlays are long shots by nature &mdash; even strong ones lose most of the time, so keep stakes small.</div>
+      </div>
+      <div class="card">
+        <h2>NFL &mdash; 5 recommended parlays</h2>
+        <div id="nfl-recparlays" class="empty">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>NCAA &mdash; 5 recommended parlays</h2>
+        <div id="cfb-recparlays" class="empty">Loading...</div>
+      </div>
+    </div>
+
     <div class="subpanel" id="subpanel-topbets-bygame">
       <div class="card"><h2>Best bet for every game</h2>
         <div class="note" style="margin-top:0;">Two picks per game: the best team bet (spread, moneyline or total, whichever the model likes most vs. the market price) and the best player prop. Games are sorted with the strongest team bet first. Props marked "no sportsbook line" are a matchup read &mdash; compare the model's number to the line at your book.</div>
@@ -496,6 +512,7 @@
     <div class="tabs">
       <div class="subtab active" data-subtab="track-all">All Picks</div>
       <div class="subtab" data-subtab="track-weekly">Weekly Top Bets</div>
+      <div class="subtab" data-subtab="track-parlays">Parlays</div>
     </div>
     <div class="subpanel active" id="subpanel-track-all">
     <div class="card">
@@ -569,6 +586,28 @@
       <div class="card">
         <h2>All picks</h2>
         <div id="weekly-list" class="empty">Loading...</div>
+      </div>
+    </div>
+    <div class="subpanel" id="subpanel-track-parlays">
+      <div class="card">
+        <h2>Recommended parlay record</h2>
+        <div class="note" style="margin-top:0;">Tracks the weekly Recommended parlays from Top Bets, separately for NFL and college. A parlay wins only if every leg hits (a pushed leg is dropped). Profit is in units, risking 1 unit per parlay at the parlay's listed price. Tracking starts with the first week created, so there is no past history.</div>
+      </div>
+      <div class="card">
+        <div class="tabs" id="parlaytrack-filter" style="margin-bottom:8px;">
+          <div class="subtab active" data-parlayfilter="NFL">NFL</div>
+          <div class="subtab" data-parlayfilter="CFB">College</div>
+          <div class="subtab" data-parlayfilter="ALL">Both</div>
+        </div>
+        <div id="parlaytrack-summary" class="empty">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>By type</h2>
+        <div id="parlaytrack-bytype" class="empty">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>All parlays</h2>
+        <div id="parlaytrack-list" class="empty">Loading...</div>
       </div>
     </div>
   </div>
