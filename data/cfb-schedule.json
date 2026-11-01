@@ -1,92 +1,128 @@
 [
   {
-    "a": "Arizona",
-    "b": "Texas Tech",
-    "date": "2026-10-31"
-  },
-  {
     "a": "Notre Dame",
     "b": "Navy",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 35,
+    "homeScore": 13
+  },
+  {
+    "a": "Arizona",
+    "b": "Texas Tech",
+    "date": "2026-10-31",
+    "awayScore": 26,
+    "homeScore": 34
   },
   {
     "a": "Wisconsin",
     "b": "Iowa",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 0,
+    "homeScore": 30
   },
   {
     "a": "SMU",
     "b": "Syracuse",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 27,
+    "homeScore": 30
   },
   {
     "a": "Auburn",
     "b": "Ole Miss",
-    "date": "2026-10-31"
-  },
-  {
-    "a": "Minnesota",
-    "b": "Indiana",
-    "date": "2026-10-31"
-  },
-  {
-    "a": "Northwestern",
-    "b": "Oregon",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 15,
+    "homeScore": 45
   },
   {
     "a": "Florida",
     "b": "Georgia",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 8,
+    "homeScore": 27
   },
   {
     "a": "Arizona State",
     "b": "BYU",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 20,
+    "homeScore": 27
   },
   {
-    "a": "Utah",
-    "b": "Cincinnati",
-    "date": "2026-10-31"
+    "a": "Northwestern",
+    "b": "Oregon",
+    "date": "2026-10-31",
+    "awayScore": 26,
+    "homeScore": 34
+  },
+  {
+    "a": "Minnesota",
+    "b": "Indiana",
+    "date": "2026-10-31",
+    "awayScore": 16,
+    "homeScore": 23
   },
   {
     "a": "Virginia",
     "b": "Wake Forest",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 7,
+    "homeScore": 51
+  },
+  {
+    "a": "Utah",
+    "b": "Cincinnati",
+    "date": "2026-10-31",
+    "awayScore": 49,
+    "homeScore": 25
   },
   {
     "a": "Nevada",
     "b": "UCLA",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 0,
+    "homeScore": 27
   },
   {
     "a": "Oklahoma State",
     "b": "Iowa State",
-    "date": "2026-10-31"
-  },
-  {
-    "a": "Mississippi State",
-    "b": "Texas",
-    "date": "2026-10-31"
-  },
-  {
-    "a": "Ohio State",
-    "b": "USC",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 49,
+    "homeScore": 51
   },
   {
     "a": "Miami",
     "b": "North Carolina",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 38,
+    "homeScore": 35
+  },
+  {
+    "a": "Ohio State",
+    "b": "USC",
+    "date": "2026-10-31",
+    "awayScore": 18,
+    "homeScore": 30
+  },
+  {
+    "a": "Mississippi State",
+    "b": "Texas",
+    "date": "2026-10-31",
+    "awayScore": 3,
+    "homeScore": 31
   },
   {
     "a": "Missouri",
     "b": "Arkansas",
-    "date": "2026-10-31"
+    "date": "2026-10-31",
+    "awayScore": 34,
+    "homeScore": 10
   },
   {
     "a": "Texas State",
     "b": "Boise State",
-    "date": "2026-11-01"
+    "date": "2026-11-01",
+    "awayScore": 45,
+    "homeScore": 46
   }
 ]
