@@ -92,7 +92,7 @@
         "rushYds": 45.0,
         "receptions": 0,
         "recYds": 0,
-        "tds": 2.0
+        "tds": 3.0
       }
     ]
   },
@@ -530,7 +530,7 @@
         "rushYds": 1.0,
         "receptions": 5.0,
         "recYds": 112.0,
-        "tds": 1.0
+        "tds": 2.0
       }
     ]
   },
@@ -834,42 +834,6 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
-        "rushYds": -9.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": -7.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": -2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "",
-        "passYds": 0.0,
-        "rushYds": -1.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "",
-        "passYds": 0,
         "rushYds": -1.0,
         "receptions": 0,
         "recYds": 0,
@@ -888,16 +852,52 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
-        "rushYds": -2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "",
-        "passYds": 0.0,
         "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -18.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0.0,
+        "rushYds": -17.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0.0,
+        "rushYds": -1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -2.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -8.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -914,8 +914,8 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 0,
-        "rushYds": -8.0,
+        "passYds": 0.0,
+        "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -18652,6 +18652,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 5.0,
+        "receptions": 2.0,
+        "recYds": 11.0,
+        "tds": 0.0
       }
     ]
   },
@@ -18660,15 +18669,6 @@
     "team": "Washington",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk11",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 3.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk13",
         "opp": "",
@@ -18749,6 +18749,15 @@
         "receptions": 6.0,
         "recYds": 103.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 12.0,
+        "recYds": 155.0,
+        "tds": 1.0
       }
     ]
   },
@@ -18828,6 +18837,15 @@
         "receptions": 3.0,
         "recYds": 35.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 9.0,
+        "tds": 0.0
       }
     ]
   },
@@ -18836,15 +18854,6 @@
     "team": "Washington",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk12",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 10.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk13",
         "opp": "",
@@ -18925,6 +18934,15 @@
         "receptions": 5.0,
         "recYds": 97.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": -6.0,
+        "receptions": 5.0,
+        "recYds": 25.0,
+        "tds": 0.0
       }
     ]
   },
@@ -19003,15 +19021,6 @@
     "team": "Washington",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk12",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 5.0,
-        "recYds": 91.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk13",
         "opp": "",
@@ -19092,6 +19101,15 @@
         "receptions": 1.0,
         "recYds": 2.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 2.0,
+        "recYds": 21.0,
+        "tds": 0.0
       }
     ]
   },
@@ -28959,7 +28977,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 172.0,
-        "rushYds": 11.0,
+        "rushYds": 17.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
@@ -35688,7 +35706,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 349.0,
+        "passYds": 351.0,
         "rushYds": -5.0,
         "receptions": 0,
         "recYds": 0,
@@ -35884,8 +35902,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 12.0,
+        "receptions": 2.0,
+        "recYds": 14.0,
         "tds": 0.0
       }
     ]
@@ -42075,15 +42093,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "",
-        "passYds": 253.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 3.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "",
         "passYds": 270.0,
@@ -42163,6 +42172,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 255.0,
+        "rushYds": 20.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       }
     ]
   },
@@ -42224,6 +42242,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 72.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -42232,15 +42259,6 @@
     "team": "Nebraska",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk10",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 2.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk13",
         "opp": "",
@@ -42321,6 +42339,15 @@
         "receptions": 2.0,
         "recYds": 5.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 24.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -42329,15 +42356,6 @@
     "team": "Nebraska",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk11",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 3.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk13",
         "opp": "",
@@ -42418,6 +42436,15 @@
         "receptions": 2.0,
         "recYds": 6.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 6.0,
+        "receptions": 2.0,
+        "recYds": 13.0,
+        "tds": 0.0
       }
     ]
   },
@@ -42426,15 +42453,6 @@
     "team": "Nebraska",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk11",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 4.0,
-        "recYds": 19.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk13",
         "opp": "",
@@ -42515,6 +42533,15 @@
         "receptions": 2.0,
         "recYds": 37.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 10.0,
+        "receptions": 6.0,
+        "recYds": 65.0,
+        "tds": 0.0
       }
     ]
   },
@@ -42539,15 +42566,6 @@
     "team": "Nebraska",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk9",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 15.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk10",
         "opp": "",
@@ -42628,6 +42646,15 @@
         "receptions": 3.0,
         "recYds": 25.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 5.0,
+        "recYds": 61.0,
+        "tds": 0.0
       }
     ]
   },
@@ -42636,15 +42663,6 @@
     "team": "Nebraska",
     "league": "CFB",
     "games": [
-      {
-        "date": "2025-wk11",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 3.0,
-        "recYds": 37.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk13",
         "opp": "",
@@ -42724,6 +42742,15 @@
         "rushYds": 0,
         "receptions": 3.0,
         "recYds": 17.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 6.0,
+        "recYds": 39.0,
         "tds": 0.0
       }
     ]
@@ -60334,15 +60361,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk12",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
-        "receptions": 2.0,
-        "recYds": 37.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk13",
         "opp": "",
         "passYds": 0,
@@ -60421,6 +60439,15 @@
         "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 4.0,
         "tds": 0.0
       }
     ]
@@ -65207,15 +65234,6 @@
     "league": "CFB",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 18.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "",
         "passYds": 0,
@@ -65286,6 +65304,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0
       },
       {
         "date": "2026-wk9",
@@ -69632,7 +69659,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 318.0,
+        "passYds": 327.0,
         "rushYds": 8.0,
         "receptions": 0,
         "recYds": 0,
@@ -86155,7 +86182,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 195.0,
-        "rushYds": 38.0,
+        "rushYds": 36.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
@@ -94748,7 +94775,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 115.0,
-        "rushYds": 20.0,
+        "rushYds": 46.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
@@ -95069,6 +95096,15 @@
       },
       {
         "date": "2026-wk6",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
@@ -123339,7 +123375,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 4.0,
-        "recYds": 9.0,
+        "recYds": 8.0,
         "tds": 0.0
       }
     ]
@@ -126647,7 +126683,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 260.0,
+        "passYds": 265.0,
         "rushYds": 34.0,
         "receptions": 0,
         "recYds": 0,
@@ -135525,7 +135561,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 204.0,
-        "rushYds": 1.0,
+        "rushYds": 5.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
@@ -136086,6 +136122,15 @@
         "receptions": 1.0,
         "recYds": 6.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 24.0,
+        "tds": 1.0
       }
     ]
   },
@@ -139101,8 +139146,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 34.0,
-        "receptions": 0,
-        "recYds": 0,
+        "receptions": 1.0,
+        "recYds": 1.0,
         "tds": 0.0
       }
     ]
@@ -147618,6 +147663,15 @@
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
       }
     ]
   },
@@ -152315,8 +152369,8 @@
       {
         "date": "2026-wk5",
         "opp": "",
-        "passYds": 0.0,
-        "rushYds": -1.0,
+        "passYds": 0,
+        "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -152324,8 +152378,8 @@
       {
         "date": "2026-wk5",
         "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
+        "passYds": 0.0,
+        "rushYds": -1.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -161832,7 +161886,7 @@
         "rushYds": 26.0,
         "receptions": 9.0,
         "recYds": 122.0,
-        "tds": 4.0
+        "tds": 3.0
       }
     ]
   },
@@ -176078,18 +176132,18 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0
+        "receptions": 1.0,
+        "recYds": 11.0,
+        "tds": 0.0
       },
       {
         "date": "2026-wk7",
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 1.0,
-        "recYds": 11.0,
-        "tds": 0.0
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0
       },
       {
         "date": "2026-wk8",
@@ -181867,7 +181921,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
-        "rushYds": 142.0,
+        "rushYds": 158.0,
         "receptions": 1.0,
         "recYds": 8.0,
         "tds": 2.0
@@ -187229,6 +187283,15 @@
         "rushYds": 0,
         "receptions": 2.0,
         "recYds": 32.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 1.0,
+        "recYds": 2.0,
         "tds": 0.0
       }
     ]
@@ -194115,7 +194178,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 90.0,
-        "rushYds": 9.0,
+        "rushYds": 13.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -196568,8 +196631,8 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 98.0,
-        "rushYds": 95.0,
+        "passYds": 94.0,
+        "rushYds": 97.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 1.0
@@ -196718,7 +196781,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
-        "rushYds": 26.0,
+        "rushYds": 25.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -201190,7 +201253,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
-        "rushYds": 46.0,
+        "rushYds": 47.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -209232,6 +209295,15 @@
         "receptions": 2.0,
         "recYds": 25.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 13.0,
+        "receptions": 1.0,
+        "recYds": 4.0,
+        "tds": 0.0
       }
     ]
   },
@@ -231623,7 +231695,7 @@
         "rushYds": 0,
         "receptions": 3.0,
         "recYds": 68.0,
-        "tds": 1.0
+        "tds": 2.0
       }
     ]
   },
@@ -238488,7 +238560,7 @@
         "rushYds": 0,
         "receptions": 1.0,
         "recYds": 28.0,
-        "tds": 0.0
+        "tds": 1.0
       }
     ]
   },
@@ -244424,7 +244496,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 6.0,
+        "passYds": 0,
         "rushYds": 0,
         "receptions": 12.0,
         "recYds": 126.0,
@@ -250594,7 +250666,7 @@
         "rushYds": 0,
         "receptions": 8.0,
         "recYds": 126.0,
-        "tds": 0.0
+        "tds": 1.0
       }
     ]
   },
@@ -265203,20 +265275,20 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 173.0,
-        "rushYds": 39.0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "",
         "passYds": 0,
         "rushYds": 0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 173.0,
+        "rushYds": 39.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 1.0
       }
     ]
   },
@@ -278631,7 +278703,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 3.0,
+        "passYds": 0,
         "rushYds": -6.0,
         "receptions": 0,
         "recYds": 0,
@@ -284546,15 +284618,6 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 0,
-        "receptions": 0,
-        "recYds": 0,
-        "tds": 0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "",
-        "passYds": 0,
-        "rushYds": 0,
         "receptions": 1.0,
         "recYds": 8.0,
         "tds": 0.0
@@ -284629,6 +284692,15 @@
         "rushYds": 0,
         "receptions": 1.0,
         "recYds": 6.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       }
     ]
@@ -287865,8 +287937,8 @@
         "opp": "",
         "passYds": 0,
         "rushYds": 15.0,
-        "receptions": 1.0,
-        "recYds": 6.0,
+        "receptions": 2.0,
+        "recYds": 12.0,
         "tds": 0.0
       }
     ]
@@ -296735,7 +296807,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 5.0,
+        "passYds": 0,
         "rushYds": -3.0,
         "receptions": 5.0,
         "recYds": 94.0,
@@ -296814,7 +296886,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 246.0,
+        "passYds": 257.0,
         "rushYds": 116.0,
         "receptions": 0,
         "recYds": 0,
@@ -318095,9 +318167,9 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
-        "rushYds": 8.0,
-        "receptions": 1.0,
-        "recYds": 3.0,
+        "rushYds": 11.0,
+        "receptions": 0,
+        "recYds": 0,
         "tds": 0.0
       }
     ]
@@ -323143,6 +323215,15 @@
       },
       {
         "date": "2026-wk7",
+        "opp": "",
+        "passYds": 0,
+        "rushYds": 1.0,
+        "receptions": 0,
+        "recYds": 0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
         "rushYds": 1.0,
@@ -336533,7 +336614,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 33.0,
-        "rushYds": 99.0,
+        "rushYds": 104.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -340352,7 +340433,7 @@
         "passYds": 0,
         "rushYds": 0,
         "receptions": 4.0,
-        "recYds": 90.0,
+        "recYds": 86.0,
         "tds": 0.0
       }
     ]
@@ -426626,7 +426707,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
-        "rushYds": 232.0,
+        "rushYds": 233.0,
         "receptions": 1.0,
         "recYds": 17.0,
         "tds": 2.0
@@ -450207,7 +450288,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 5.0,
+        "passYds": 0,
         "rushYds": 2.0,
         "receptions": 2.0,
         "recYds": 33.0,
@@ -463453,7 +463534,7 @@
         "date": "2026-wk9",
         "opp": "",
         "passYds": 0,
-        "rushYds": 49.0,
+        "rushYds": 50.0,
         "receptions": 0,
         "recYds": 0,
         "tds": 0.0
@@ -496576,7 +496657,7 @@
       {
         "date": "2026-wk9",
         "opp": "",
-        "passYds": 158.0,
+        "passYds": 154.0,
         "rushYds": 37.0,
         "receptions": 0,
         "recYds": 0,

@@ -1,19 +1,5 @@
 [
   {
-    "a": "Notre Dame",
-    "b": "Navy",
-    "date": "2026-10-31",
-    "awayScore": 35,
-    "homeScore": 13
-  },
-  {
-    "a": "Arizona",
-    "b": "Texas Tech",
-    "date": "2026-10-31",
-    "awayScore": 26,
-    "homeScore": 34
-  },
-  {
     "a": "Wisconsin",
     "b": "Iowa",
     "date": "2026-10-31",
@@ -28,25 +14,25 @@
     "homeScore": 30
   },
   {
+    "a": "Arizona",
+    "b": "Texas Tech",
+    "date": "2026-10-31",
+    "awayScore": 26,
+    "homeScore": 34
+  },
+  {
+    "a": "Notre Dame",
+    "b": "Navy",
+    "date": "2026-10-31",
+    "awayScore": 35,
+    "homeScore": 13
+  },
+  {
     "a": "Auburn",
     "b": "Ole Miss",
     "date": "2026-10-31",
     "awayScore": 15,
     "homeScore": 45
-  },
-  {
-    "a": "Florida",
-    "b": "Georgia",
-    "date": "2026-10-31",
-    "awayScore": 8,
-    "homeScore": 27
-  },
-  {
-    "a": "Arizona State",
-    "b": "BYU",
-    "date": "2026-10-31",
-    "awayScore": 20,
-    "homeScore": 27
   },
   {
     "a": "Northwestern",
@@ -63,11 +49,18 @@
     "homeScore": 23
   },
   {
-    "a": "Virginia",
-    "b": "Wake Forest",
+    "a": "Florida",
+    "b": "Georgia",
     "date": "2026-10-31",
-    "awayScore": 7,
-    "homeScore": 51
+    "awayScore": 8,
+    "homeScore": 27
+  },
+  {
+    "a": "Arizona State",
+    "b": "BYU",
+    "date": "2026-10-31",
+    "awayScore": 20,
+    "homeScore": 27
   },
   {
     "a": "Utah",
@@ -75,6 +68,13 @@
     "date": "2026-10-31",
     "awayScore": 49,
     "homeScore": 25
+  },
+  {
+    "a": "Virginia",
+    "b": "Wake Forest",
+    "date": "2026-10-31",
+    "awayScore": 7,
+    "homeScore": 51
   },
   {
     "a": "Nevada",
@@ -98,18 +98,18 @@
     "homeScore": 35
   },
   {
-    "a": "Ohio State",
-    "b": "USC",
-    "date": "2026-10-31",
-    "awayScore": 18,
-    "homeScore": 30
-  },
-  {
     "a": "Mississippi State",
     "b": "Texas",
     "date": "2026-10-31",
     "awayScore": 3,
     "homeScore": 31
+  },
+  {
+    "a": "Ohio State",
+    "b": "USC",
+    "date": "2026-10-31",
+    "awayScore": 18,
+    "homeScore": 30
   },
   {
     "a": "Missouri",
