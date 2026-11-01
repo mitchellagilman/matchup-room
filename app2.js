@@ -919,6 +919,7 @@ async function renderTopBets(){
   renderTopBetsList('cfb-topbets-list', computeTopBets(CFB_WEEK_GAMES, 'CFB'));
   renderParlaysList('nfl-topparlays-list', buildTopParlays(NFL_WEEK_GAMES, 'NFL'));
   renderParlaysList('cfb-topparlays-list', buildTopParlays(CFB_WEEK_GAMES, 'CFB'));
+  renderRecommendedParlays();
   renderPlayerBetsList('nfl-playerbets-list', computeTopPlayerBets('NFL'));
   renderPlayerBetsList('cfb-playerbets-list', computeTopPlayerBets('CFB'));
 }
@@ -1172,6 +1173,102 @@ document.querySelectorAll('#weekly-filter [data-weeklyfilter]').forEach(function
   });
 });
 document.querySelectorAll('[data-subtab="track-weekly"]').forEach(function(t){ t.addEventListener('click', renderWeeklyTracker); });
+
+// ---- Recommended parlays (built + frozen weekly by scripts/track_parlays.py) ----
+function strengthPillStyle(label){
+  if(label==='Strong') return 'background:rgba(51,211,153,0.18);color:#5eead4;';
+  if(label==='Medium') return 'background:rgba(240,185,61,0.18);color:#f0b93d;';
+  return 'background:rgba(136,146,176,0.18);';
+}
+function fmtAm(n){ return (n>0?'+':'')+n; }
+async function renderRecommendedParlays(){
+  const data = await fetchJSON('./data/recommended-parlays.json');
+  const all = (data && data.parlays) ? data.parlays : [];
+  [['NFL','nfl-recparlays'],['CFB','cfb-recparlays']].forEach(function(pair){
+    const el = document.getElementById(pair[1]);
+    if(!el) return;
+    const list = all.filter(function(p){ return p.league===pair[0]; });
+    if(!list.length){ el.className='empty'; el.textContent='No parlays yet. They are created with each week\'s data update once games and lines are loaded.'; return; }
+    // newest week only; older weeks live in the Track tab
+    const latestWeek = list.reduce(function(m,p){ return p.date_logged>m.d ? {d:p.date_logged,w:p.week} : m; }, {d:'',w:list[0].week}).w;
+    const weekList = list.filter(function(p){ return p.week===latestWeek; }).sort(function(a,b){ return a.rank-b.rank; });
+    el.className='';
+    el.innerHTML = '<div class="team-meta" style="margin-bottom:8px;">'+latestWeek+' · listed strongest first</div>' + weekList.map(function(p,i){
+      const legs = p.legs.map(function(l){
+        const mark = l.status==='hit' ? ' <span style="color:#2e9e5b;font-weight:700;">✓</span>' : (l.status==='miss' ? ' <span style="color:#d64545;font-weight:700;">✗</span>' : (l.status==='push' ? ' <span style="color:#c98a00;">push</span>' : ''));
+        const tag = l.type==='player_prop' ? '<span class="pill" style="background:rgba(51,211,153,0.15);color:#5eead4;">real line</span>' : '';
+        return '<div class="history-item"><span><span style="display:block;">'+l.label+mark+' '+tag+'</span><span class="team-meta" style="font-weight:400;">'+l.kind+' · '+l.matchup+' · '+Math.round(l.prob*100)+'% est</span></span><span>'+fmtAm(l.odds)+'</span></div>';
+      }).join('');
+      const statusNote = p.status==='pending' ? '' : ' <span class="pill" style="'+(p.status==='hit'?'background:rgba(51,211,153,0.18);color:#5eead4;':'background:rgba(214,69,69,0.18);color:#f28b7d;')+'">'+p.status.toUpperCase()+'</span>';
+      return '<div class="card" style="background:var(--card-2);margin-bottom:10px;">'
+        + '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><h2 style="margin:0;">#'+p.rank+' '+p.name+' <span class="pill" style="'+strengthPillStyle(p.strength)+'">'+p.strength+'</span>'+statusNote+'</h2><div style="font-weight:800;color:var(--accent);">'+fmtAm(p.combined_odds)+'</div></div>'
+        + '<div class="note" style="margin:4px 0 8px;">'+p.legs.length+' legs · avg leg chance '+Math.round(p.avg_prob*100)+'% · all legs hit ≈ '+Math.round(p.combined_prob*100)+'%</div>'
+        + legs
+        + (p.status==='pending' ? '<button class="secondary" data-recparlay="'+pair[0]+':'+i+'" style="margin-top:8px;">Add all '+p.legs.length+' legs to slip</button>' : '')
+        + '</div>';
+    }).join('');
+    el.querySelectorAll('[data-recparlay]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        const idx = Number(btn.dataset.recparlay.split(':')[1]);
+        weekList[idx].legs.forEach(function(l){ addLeg(l.label+' ('+l.matchup+')', l.odds, l.prob, l.meta || null, l.type==='player_prop'); });
+        btn.textContent = 'Added ✓';
+      });
+    });
+  });
+}
+
+// ---- Parlay tracker (Track tab) ----
+let parlayTrackFilter = 'NFL';
+async function renderParlayTracker(){
+  const data = await fetchJSON('./data/recommended-parlays.json');
+  const all = (data && data.parlays) ? data.parlays : [];
+  const list = parlayTrackFilter==='ALL' ? all : all.filter(function(p){ return p.league===parlayTrackFilter; });
+  const sumEl = document.getElementById('parlaytrack-summary');
+  const typeEl = document.getElementById('parlaytrack-bytype');
+  const listEl = document.getElementById('parlaytrack-list');
+  if(!sumEl) return;
+  if(!list.length){
+    sumEl.className='empty'; sumEl.textContent='No parlays logged yet for this league. They start after the next data update with games and lines loaded.';
+    typeEl.className='empty'; typeEl.textContent='Nothing yet.'; listEl.className='empty'; listEl.textContent='Nothing yet.';
+    return;
+  }
+  function rec(ps){
+    const done = ps.filter(function(p){ return p.status==='hit' || p.status==='miss'; });
+    const hits = done.filter(function(p){ return p.status==='hit'; }).length;
+    const units = done.reduce(function(a,p){ return a+(p.profit_units||0); },0);
+    return {hits:hits, misses:done.length-hits, n:done.length, pending:ps.filter(function(p){ return p.status==='pending'; }).length, units:units, pct: done.length?Math.round(hits/done.length*100):null};
+  }
+  function row(label, r){
+    const color = r.n===0 ? 'var(--muted,#888)' : (r.units>=0 ? '#2e9e5b' : '#d64545');
+    return '<div class="team-row"><div><div class="team-name">'+label+'</div><div class="team-meta">'+r.hits+'-'+r.misses+' · '+r.pending+' pending'+(r.pct!==null?' · '+r.pct+'% hit':'')+'</div></div><div style="color:'+color+';font-weight:700;">'+(r.n?(r.units>=0?'+':'')+r.units.toFixed(2)+'u':'—')+'</div></div>';
+  }
+  const overall = rec(list);
+  sumEl.className='';
+  sumEl.innerHTML = row('Overall', overall) + (overall.n<10 ? '<div class="note">Only '+overall.n+' graded so far. Parlays win rarely by design, so judge profit in units over many weeks, not a single week.</div>' : '');
+  const kinds = [['sides','Sides (spread/ML)'],['totals','Totals (over/under)'],['mix','Mix + props']];
+  typeEl.className='';
+  typeEl.innerHTML = kinds.map(function(k){ return row(k[1], rec(list.filter(function(p){ return p.kind===k[0]; }))); }).join('')
+    + ['Strong','Medium','Lean'].map(function(t){ return row('Strength: '+t, rec(list.filter(function(p){ return p.strength===t; }))); }).join('');
+  const sorted = list.slice().sort(function(a,b){ return a.date_logged<b.date_logged?1:(a.date_logged>b.date_logged?-1:a.rank-b.rank); });
+  listEl.className='';
+  listEl.innerHTML = sorted.map(function(p){
+    const color = p.status==='hit' ? '#2e9e5b' : (p.status==='miss' ? '#d64545' : (p.status==='push' ? '#c98a00' : 'var(--muted,#888)'));
+    const legs = p.legs.map(function(l){
+      const c = l.status==='hit' ? '#2e9e5b' : (l.status==='miss' ? '#d64545' : 'var(--muted,#888)');
+      return '<div class="team-meta" style="margin-top:2px;"><span style="color:'+c+';font-weight:700;">'+(l.status==='hit'?'✓':(l.status==='miss'?'✗':(l.status==='push'?'–':'·')))+'</span> '+l.label+' <span style="opacity:.7;">('+fmtAm(l.odds)+')</span></div>';
+    }).join('');
+    return '<div class="team-row" style="align-items:flex-start;"><div><div class="team-name">'+p.name+' <span class="pill">'+p.league+'</span> <span class="pill" style="'+strengthPillStyle(p.strength)+'">'+p.strength+'</span></div><div class="team-meta">'+p.week+' · '+fmtAm(p.combined_odds)+'</div>'+legs+'</div><div style="color:'+color+';font-weight:700;font-size:0.85rem;">'+p.status.charAt(0).toUpperCase()+p.status.slice(1)+'</div></div>';
+  }).join('');
+}
+document.querySelectorAll('#parlaytrack-filter [data-parlayfilter]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    parlayTrackFilter = btn.dataset.parlayfilter;
+    document.querySelectorAll('#parlaytrack-filter [data-parlayfilter]').forEach(function(b){ b.classList.toggle('active', b===btn); });
+    renderParlayTracker();
+  });
+});
+document.querySelectorAll('[data-subtab="track-parlays"]').forEach(function(t){ t.addEventListener('click', renderParlayTracker); });
+document.querySelectorAll('[data-subtab="topbets-parlays"]').forEach(function(t){ t.addEventListener('click', renderRecommendedParlays); });
 document.querySelectorAll('#track-filter [data-trackfilter]').forEach(function(btn){
   btn.addEventListener('click', function(){
     trackFilter = btn.dataset.trackfilter;
