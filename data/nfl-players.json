@@ -5,15 +5,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs DET",
-        "passYds": 266.0,
-        "rushYds": 9.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs CLE",
         "passYds": 168.0,
@@ -93,6 +84,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CLE",
+        "passYds": 172.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0023459",
@@ -203,15 +203,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs SEA",
-        "passYds": 457.0,
-        "rushYds": 6.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 3.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs ATL",
         "passYds": 269.0,
@@ -291,6 +282,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LAC",
+        "passYds": 157.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0026498",
@@ -374,15 +374,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs ARI",
-        "passYds": 197.0,
-        "rushYds": -3.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 3.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs LA",
         "passYds": 126.0,
@@ -462,6 +453,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NYJ",
+        "passYds": 247.0,
+        "rushYds": 3.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 4.0
       }
     ],
     "_id": "00-0029604",
@@ -472,15 +472,6 @@
     "team": "Kansas City Chiefs",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 70.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs TEN",
@@ -561,6 +552,15 @@
         "receptions": 4,
         "recYds": 44.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 67.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0030506",
@@ -571,15 +571,6 @@
     "team": "New York Jets",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs DEN",
-        "passYds": 116.0,
-        "rushYds": 4.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs HOU",
@@ -660,6 +651,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LV",
+        "passYds": 290.0,
+        "rushYds": 4.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0030565",
@@ -896,15 +896,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk9",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk10",
         "opp": "vs ATL",
         "passYds": 0.0,
@@ -984,6 +975,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 13.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0032104",
@@ -994,15 +994,6 @@
     "team": "Atlanta Falcons",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk9",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk12",
         "opp": "vs CIN",
@@ -1082,6 +1073,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 21.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 9.0,
         "tds": 0.0
       }
     ],
@@ -1193,15 +1193,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 128.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs GB",
         "passYds": 0.0,
@@ -1281,6 +1272,15 @@
         "receptions": 1,
         "recYds": 4.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 53.0,
+        "receptions": 2,
+        "recYds": 7.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0032764",
@@ -1416,6 +1416,15 @@
         "receptions": 2,
         "recYds": 19.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 18.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0032951",
@@ -1426,15 +1435,6 @@
     "team": "Dallas Cowboys",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs LAC",
-        "passYds": 244.0,
-        "rushYds": 14.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs WAS",
@@ -1515,6 +1515,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ARI",
+        "passYds": 195.0,
+        "rushYds": 20.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0033077",
@@ -1525,15 +1534,6 @@
     "team": "New England Patriots",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 35.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs NYJ",
@@ -1614,6 +1614,15 @@
         "receptions": 7,
         "recYds": 71.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 30.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033090",
@@ -1624,15 +1633,6 @@
     "team": "Detroit Lions",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs LA",
-        "passYds": 338.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 3.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs PIT",
@@ -1713,6 +1713,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIN",
+        "passYds": 176.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0033106",
@@ -1723,15 +1732,6 @@
     "team": "Los Angeles Rams",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk9",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 13.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk10",
         "opp": "vs SF",
@@ -1812,6 +1812,15 @@
         "receptions": 2,
         "recYds": 14.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 14.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033110",
@@ -1822,15 +1831,6 @@
     "team": "Arizona Cardinals",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs ATL",
-        "passYds": 203.0,
-        "rushYds": 5.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs CIN",
@@ -1911,6 +1911,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 119.0,
+        "rushYds": 7.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033119",
@@ -2318,15 +2327,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk14",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 76.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk15",
         "opp": "vs DAL",
         "passYds": 0.0,
@@ -2406,6 +2406,15 @@
         "receptions": 1,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 22.0,
+        "receptions": 2,
+        "recYds": 18.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033293",
@@ -2416,15 +2425,6 @@
     "team": "Arizona Cardinals",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk10",
-        "opp": "vs LA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 19.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs TEN",
@@ -2505,6 +2505,15 @@
         "receptions": 3,
         "recYds": 9.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 29.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033307",
@@ -2551,15 +2560,6 @@
     "team": "Cincinnati Bengals",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 42.0,
-        "receptions": 1,
-        "recYds": 1.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs MIA",
@@ -2640,6 +2640,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 10.0,
+        "receptions": 1,
+        "recYds": 9.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033526",
@@ -2712,6 +2721,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 324.0,
+        "rushYds": 2.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033537",
@@ -2858,15 +2876,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk12",
-        "opp": "vs IND",
-        "passYds": 352.0,
-        "rushYds": 30.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk13",
         "opp": "vs DAL",
         "passYds": 261.0,
@@ -2946,6 +2955,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 321.0,
+        "rushYds": 6.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 3.0
       }
     ],
     "_id": "00-0033873",
@@ -3299,15 +3317,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 86.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs KC",
         "passYds": 0.0,
@@ -3386,6 +3395,15 @@
         "rushYds": 0.0,
         "receptions": 3,
         "recYds": 45.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 53.0,
         "tds": 0.0
       }
     ],
@@ -3612,6 +3630,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": -2.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0034577",
@@ -3622,15 +3649,6 @@
     "team": "Baltimore Ravens",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 2,
-        "recYds": 21.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs GB",
@@ -3710,6 +3728,15 @@
         "rushYds": 0.0,
         "receptions": 3,
         "recYds": 23.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 14.0,
         "tds": 0.0
       }
     ],
@@ -3794,15 +3821,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk14",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 86.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk15",
         "opp": "vs BAL",
         "passYds": 0.0,
@@ -3882,6 +3900,15 @@
         "receptions": 1,
         "recYds": 6.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 76.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0034829",
@@ -3892,15 +3919,6 @@
     "team": "Buffalo Bills",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs CIN",
-        "passYds": 251.0,
-        "rushYds": 78.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 4.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs NE",
@@ -3981,6 +3999,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 289.0,
+        "rushYds": 30.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 3.0
       }
     ],
     "_id": "00-0034857",
@@ -4073,15 +4100,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 71.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs DEN",
         "passYds": 0.0,
@@ -4161,6 +4179,15 @@
         "receptions": 5,
         "recYds": 83.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 24.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0034960",
@@ -4171,15 +4198,6 @@
     "team": "Baltimore Ravens",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 2.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk9",
         "opp": "vs MIA",
@@ -4259,6 +4277,15 @@
         "rushYds": 7.0,
         "receptions": 3,
         "recYds": 26.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 15.0,
+        "receptions": 4,
+        "recYds": 20.0,
         "tds": 0.0
       }
     ],
@@ -4370,15 +4397,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 59.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "vs WAS",
         "passYds": 0.0,
@@ -4458,6 +4476,15 @@
         "receptions": 4,
         "recYds": 35.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 58.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0035229",
@@ -4468,15 +4495,6 @@
     "team": "Tennessee Titans",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 102.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs NO",
@@ -4557,6 +4575,15 @@
         "receptions": 3,
         "recYds": 26.0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 117.0,
+        "receptions": 3,
+        "recYds": 20.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0035261",
@@ -4620,6 +4647,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 188.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 3.0
       }
     ],
     "_id": "00-0035289",
@@ -4730,15 +4766,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk14",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 148.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk15",
         "opp": "vs MIA",
         "passYds": 0.0,
@@ -4817,6 +4844,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 56.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 4.0,
         "tds": 0.0
       }
     ],
@@ -4928,15 +4964,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 37.0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs CLE",
         "passYds": 0.0,
@@ -5016,6 +5043,15 @@
         "receptions": 1,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 6.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0035689",
@@ -5026,15 +5062,6 @@
     "team": "Indianapolis Colts",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk12",
-        "opp": "vs KC",
-        "passYds": 181.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wk13",
         "opp": "vs HOU",
@@ -5115,6 +5142,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 144.0,
+        "rushYds": 7.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0035710",
@@ -5205,6 +5241,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0035993",
@@ -5315,15 +5360,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk8",
-        "opp": "vs DAL",
-        "passYds": 0.0,
-        "rushYds": 111.0,
-        "receptions": 2,
-        "recYds": 10.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk9",
         "opp": "vs HOU",
         "passYds": 0.0,
@@ -5403,6 +5439,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 13.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036158",
@@ -5413,15 +5458,6 @@
     "team": "Indianapolis Colts",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 46.0,
-        "receptions": 3,
-        "recYds": 33.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs JAX",
@@ -5502,6 +5538,15 @@
         "receptions": 2,
         "recYds": 15.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 23.0,
+        "receptions": 4,
+        "recYds": 24.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036223",
@@ -5826,6 +5871,15 @@
         "receptions": 1,
         "recYds": 24.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 14.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036331",
@@ -5836,15 +5890,6 @@
     "team": "Los Angeles Chargers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs PHI",
-        "passYds": 139.0,
-        "rushYds": 66.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs KC",
@@ -5925,6 +5970,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LA",
+        "passYds": 257.0,
+        "rushYds": 15.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036355",
@@ -5935,15 +5989,6 @@
     "team": "Dallas Cowboys",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 51.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs WAS",
@@ -6024,6 +6069,15 @@
         "receptions": 5,
         "recYds": 74.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7,
+        "recYds": 58.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036358",
@@ -6134,15 +6188,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk14",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 92.0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs MIA",
         "passYds": 0.0,
@@ -6222,6 +6267,15 @@
         "receptions": 6,
         "recYds": 148.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 10,
+        "recYds": 155.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0036410",
@@ -6232,15 +6286,6 @@
     "team": "Denver Broncos",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk4",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 32.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk5",
         "opp": "vs PHI",
@@ -6320,6 +6365,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 10.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 30.0,
         "tds": 0.0
       }
     ],
@@ -6404,15 +6458,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs BAL",
-        "passYds": 225.0,
-        "rushYds": 5.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs MIA",
         "passYds": 309.0,
@@ -6492,6 +6537,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 4.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TEN",
+        "passYds": 462.0,
+        "rushYds": 10.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 6.0
       }
     ],
     "_id": "00-0036442",
@@ -6520,15 +6574,6 @@
     "team": "Baltimore Ravens",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 51.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk9",
         "opp": "vs MIA",
@@ -6608,6 +6653,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 33.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 22.0,
         "tds": 0.0
       }
     ],
@@ -6782,15 +6836,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 26.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs CIN",
         "passYds": 0.0,
@@ -6870,6 +6915,15 @@
         "receptions": 4,
         "recYds": 48.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 39.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0036613",
@@ -7079,15 +7133,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk11",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "vs IND",
         "passYds": 0.0,
@@ -7167,6 +7212,15 @@
         "receptions": 3,
         "recYds": 44.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 15.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0036637",
@@ -7178,48 +7232,12 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2024-wk3",
-        "opp": "vs PIT",
+        "date": "2026-wk8",
+        "opp": "vs DAL",
         "passYds": 0.0,
         "rushYds": 0.0,
-        "receptions": 1.0,
+        "receptions": 1,
         "recYds": 17.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2024-wk6",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2.0,
-        "recYds": 44.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2024-wk7",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3.0,
-        "recYds": 45.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2024-wk8",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 0.0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2024-wk9",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 0.0,
-        "recYds": 0.0,
         "tds": 0.0
       }
     ],
@@ -7358,15 +7376,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 51.0,
-        "receptions": 2,
-        "recYds": 27.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs NYJ",
         "passYds": 0.0,
@@ -7446,6 +7455,15 @@
         "receptions": 5,
         "recYds": 93.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 82.0,
+        "receptions": 3,
+        "recYds": 8.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036875",
@@ -7556,15 +7574,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs CLE",
         "passYds": 0.0,
@@ -7644,6 +7653,15 @@
         "receptions": 2,
         "recYds": 20.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 1.0,
+        "receptions": 2,
+        "recYds": 35.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0036894",
@@ -7717,15 +7735,6 @@
     "team": "Cincinnati Bengals",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 10,
-        "recYds": 132.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs MIA",
@@ -7806,6 +7815,15 @@
         "receptions": 5,
         "recYds": 62.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 11,
+        "recYds": 141.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0036900",
@@ -7816,15 +7834,6 @@
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 50.0,
-        "receptions": 5,
-        "recYds": 78.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs CLE",
@@ -7902,6 +7911,15 @@
         "opp": "vs CAR",
         "passYds": 0.0,
         "rushYds": 88.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 140.0,
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
@@ -8006,15 +8024,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs LA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 13,
-        "recYds": 164.0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs PIT",
         "passYds": 0.0,
@@ -8094,6 +8103,15 @@
         "receptions": 9,
         "recYds": 153.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 10.0,
+        "receptions": 7,
+        "recYds": 46.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036963",
@@ -8104,15 +8122,6 @@
     "team": "Atlanta Falcons",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 11,
-        "recYds": 166.0,
-        "tds": 3.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs ARI",
@@ -8193,6 +8202,15 @@
         "receptions": 5,
         "recYds": 22.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 6.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036970",
@@ -8203,15 +8221,6 @@
     "team": "Jacksonville Jaguars",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs NYJ",
-        "passYds": 330.0,
-        "rushYds": 51.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 6.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs DEN",
@@ -8292,6 +8301,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 4.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 210.0,
+        "rushYds": 10.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 3.0
       }
     ],
     "_id": "00-0036971",
@@ -8402,15 +8420,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs MIN",
-        "passYds": 0.0,
-        "rushYds": 91.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs LAC",
         "passYds": 0.0,
@@ -8490,6 +8499,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 56.0,
+        "receptions": 1,
+        "recYds": 1.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036997",
@@ -8762,15 +8780,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 28.0,
-        "receptions": 1,
-        "recYds": 5.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk11",
         "opp": "vs SF",
         "passYds": 0.0,
@@ -8850,6 +8859,15 @@
         "receptions": 3,
         "recYds": 9.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 8.0,
+        "receptions": 1,
+        "recYds": 10.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037157",
@@ -8860,15 +8878,6 @@
     "team": "Pittsburgh Steelers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 143.0,
-        "receptions": 2,
-        "recYds": 8.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs CLE",
@@ -8949,6 +8958,15 @@
         "receptions": 3,
         "recYds": 36.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 143.0,
+        "receptions": 1,
+        "recYds": 0.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0037228",
@@ -8959,15 +8977,6 @@
     "team": "Atlanta Falcons",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 27.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs LA",
@@ -9048,6 +9057,15 @@
         "receptions": 7,
         "recYds": 66.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 8.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037238",
@@ -9158,15 +9176,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs LA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 126.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs PIT",
         "passYds": 0.0,
@@ -9246,6 +9255,15 @@
         "receptions": 5,
         "recYds": 91.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 70.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0037240",
@@ -9256,15 +9274,6 @@
     "team": "Dallas Cowboys",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 130.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs WAS",
@@ -9345,6 +9354,15 @@
         "receptions": 4,
         "recYds": 57.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 48.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037247",
@@ -9355,15 +9373,6 @@
     "team": "Buffalo Bills",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 107.0,
-        "receptions": 2,
-        "recYds": 4.0,
-        "tds": 3.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs CLE",
@@ -9444,6 +9453,15 @@
         "receptions": 3,
         "recYds": 58.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 80.0,
+        "receptions": 2,
+        "recYds": 21.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0037248",
@@ -9454,15 +9472,6 @@
     "team": "Miami Dolphins",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 41.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs PIT",
@@ -9543,6 +9552,15 @@
         "receptions": 5,
         "recYds": 86.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 43.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037252",
@@ -9553,15 +9571,6 @@
     "team": "Buffalo Bills",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 16.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs NE",
@@ -9642,6 +9651,15 @@
         "receptions": 4,
         "recYds": 34.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 64.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037261",
@@ -9652,15 +9670,6 @@
     "team": "Arizona Cardinals",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 79.0,
-        "receptions": 1,
-        "recYds": -6.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs LA",
@@ -9741,6 +9750,15 @@
         "receptions": 3,
         "recYds": 30.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 147.0,
+        "receptions": 5,
+        "recYds": 44.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0037263",
@@ -9805,15 +9823,6 @@
     "team": "Las Vegas Raiders",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk11",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk12",
         "opp": "vs CHI",
@@ -9893,6 +9902,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 13.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
         "tds": 0.0
       }
     ],
@@ -10103,15 +10121,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk4",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 82.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk5",
         "opp": "vs DAL",
         "passYds": 0.0,
@@ -10191,6 +10200,15 @@
         "receptions": 2,
         "recYds": 26.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6,
+        "recYds": 83.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037740",
@@ -10201,15 +10219,6 @@
     "team": "Atlanta Falcons",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 3.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs WAS",
@@ -10290,6 +10299,15 @@
         "receptions": 1,
         "recYds": 6.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 95.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037741",
@@ -10300,15 +10318,6 @@
     "team": "Arizona Cardinals",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 27.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs CIN",
@@ -10388,6 +10397,15 @@
         "rushYds": 0.0,
         "receptions": 10,
         "recYds": 111.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7,
+        "recYds": 72.0,
         "tds": 1.0
       }
     ],
@@ -10751,15 +10769,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 70.0,
-        "receptions": 3,
-        "recYds": 15.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs ATL",
         "passYds": 0.0,
@@ -10838,6 +10847,15 @@
         "rushYds": 99.0,
         "receptions": 2,
         "recYds": 22.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 56.0,
+        "receptions": 1,
+        "recYds": 3.0,
         "tds": 1.0
       }
     ],
@@ -11039,15 +11057,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk8",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 21.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk10",
         "opp": "vs CHI",
         "passYds": 0.0,
@@ -11127,6 +11136,15 @@
         "receptions": 1,
         "recYds": 4.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 36.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0038115",
@@ -11137,15 +11155,6 @@
     "team": "Tennessee Titans",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 54.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs MIN",
@@ -11226,6 +11235,15 @@
         "receptions": 4,
         "recYds": 7.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6,
+        "recYds": 57.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0038117",
@@ -11336,15 +11354,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk11",
-        "opp": "vs NYG",
-        "passYds": 6.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "vs MIN",
         "passYds": 7.0,
@@ -11424,6 +11433,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 211.0,
+        "rushYds": 2.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0038128",
@@ -11534,15 +11552,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs IND",
-        "passYds": 0.0,
-        "rushYds": 17.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs LA",
         "passYds": 0.0,
@@ -11622,6 +11631,15 @@
         "receptions": 4,
         "recYds": 21.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 69.0,
+        "receptions": 4,
+        "recYds": 15.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0038134",
@@ -11632,15 +11650,6 @@
     "team": "Los Angeles Chargers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 66.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs NE",
@@ -11720,6 +11729,15 @@
         "rushYds": 4.0,
         "receptions": 0,
         "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 6.0,
+        "receptions": 3,
+        "recYds": 17.0,
         "tds": 0.0
       }
     ],
@@ -11804,15 +11822,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 76.0,
-        "receptions": 7,
-        "recYds": 92.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs LA",
         "passYds": 0.0,
@@ -11891,6 +11900,15 @@
         "rushYds": 63.0,
         "receptions": 5,
         "recYds": 45.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 76.0,
+        "receptions": 0,
+        "recYds": 0.0,
         "tds": 0.0
       }
     ],
@@ -11996,119 +12014,11 @@
     "_id": "00-0038543",
     "teamYear": 2026
   },
-  "Luke Schoonmaker": {
-    "pos": "TE",
-    "team": "Dallas Cowboys",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 25.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk9",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 14.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 1.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 12.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs MIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 29.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 15.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 12.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 12.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0038547",
-    "teamYear": 2026
-  },
   "Darnell Washington": {
     "pos": "TE",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 25.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs DET",
@@ -12189,6 +12099,15 @@
         "receptions": 1,
         "recYds": 4.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 94.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0038558",
@@ -12199,15 +12118,6 @@
     "team": "Arizona Cardinals",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 52.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs CIN",
@@ -12288,6 +12198,15 @@
         "receptions": 4,
         "recYds": 55.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 17.0,
+        "receptions": 8,
+        "recYds": 111.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0038559",
@@ -12523,15 +12442,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 53.0,
-        "receptions": 7,
-        "recYds": 37.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs MIA",
         "passYds": 0.0,
@@ -12611,6 +12521,15 @@
         "receptions": 4,
         "recYds": 19.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 55.0,
+        "receptions": 8,
+        "recYds": 46.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0038597",
@@ -12621,15 +12540,6 @@
     "team": "Jacksonville Jaguars",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 53.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs DEN",
@@ -12709,6 +12619,15 @@
         "rushYds": 0.0,
         "receptions": 4,
         "recYds": 64.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 10.0,
+        "receptions": 1,
+        "recYds": 16.0,
         "tds": 0.0
       }
     ],
@@ -12820,15 +12739,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 41.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "vs MIN",
         "passYds": 0.0,
@@ -12908,6 +12818,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 41.0,
+        "receptions": 1,
+        "recYds": 17.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0038611",
@@ -13018,15 +12937,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs NYJ",
         "passYds": 0.0,
@@ -13106,6 +13016,15 @@
         "receptions": 3,
         "recYds": 23.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 76.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0038621",
@@ -13159,6 +13078,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 8.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 9.0,
         "tds": 0.0
       }
     ],
@@ -13312,6 +13240,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 8.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 4.0,
         "tds": 1.0
       }
     ],
@@ -13540,15 +13477,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 37.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "vs CIN",
         "passYds": 0.0,
@@ -13628,6 +13556,15 @@
         "receptions": 7,
         "recYds": 38.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 86.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0038933",
@@ -13638,15 +13575,6 @@
     "team": "Jacksonville Jaguars",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 26.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs DEN",
@@ -13726,6 +13654,15 @@
         "rushYds": 0.0,
         "receptions": 5,
         "recYds": 44.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 55.0,
         "tds": 0.0
       }
     ],
@@ -13837,15 +13774,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 5,
-        "recYds": 65.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs JAX",
         "passYds": 0.0,
@@ -13925,6 +13853,15 @@
         "receptions": 2,
         "recYds": 18.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 23.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0038997",
@@ -13998,15 +13935,6 @@
     "team": "Arizona Cardinals",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 17.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs LA",
@@ -14087,6 +14015,15 @@
         "receptions": 3,
         "recYds": 17.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 10.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039041",
@@ -14160,15 +14097,6 @@
     "team": "Detroit Lions",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk6",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 55.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk7",
         "opp": "vs TB",
@@ -14249,6 +14177,15 @@
         "receptions": 1,
         "recYds": 18.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 2.0,
+        "receptions": 3,
+        "recYds": 33.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039065",
@@ -14259,15 +14196,6 @@
     "team": "Las Vegas Raiders",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 10.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs NYG",
@@ -14348,6 +14276,15 @@
         "receptions": 3,
         "recYds": 32.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 53.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039066",
@@ -14358,15 +14295,6 @@
     "team": "Los Angeles Rams",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 4.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs ARI",
@@ -14447,6 +14375,15 @@
         "receptions": 4,
         "recYds": 20.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 8.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039074",
@@ -14475,15 +14412,6 @@
     "team": "Detroit Lions",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs LA",
-        "passYds": 0.0,
-        "rushYds": 38.0,
-        "receptions": 4,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs PIT",
@@ -14564,6 +14492,15 @@
         "receptions": 5,
         "recYds": 27.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 153.0,
+        "receptions": 2,
+        "recYds": 15.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039139",
@@ -14788,6 +14725,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 8.0,
+        "rushYds": 4.0,
+        "receptions": 0,
+        "recYds": 0.0,
         "tds": 0.0
       }
     ],
@@ -15088,15 +15034,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 71.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs MIA",
         "passYds": 0.0,
@@ -15176,6 +15113,15 @@
         "receptions": 1,
         "recYds": 4.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 170.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039361",
@@ -15247,6 +15193,15 @@
         "rushYds": 5.0,
         "receptions": 0,
         "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 65.0,
+        "receptions": 1,
+        "recYds": 5.0,
         "tds": 0.0
       }
     ],
@@ -15484,15 +15439,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk11",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 13.0,
-        "receptions": 2,
-        "recYds": -1.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk13",
         "opp": "vs LV",
         "passYds": 0.0,
@@ -15572,6 +15518,15 @@
         "receptions": 3,
         "recYds": 19.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 23.0,
+        "receptions": 2,
+        "recYds": 7.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039391",
@@ -15645,15 +15600,6 @@
     "team": "Dallas Cowboys",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs MIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 40.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs LAC",
@@ -15734,6 +15680,15 @@
         "receptions": 4,
         "recYds": 70.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 3.0,
+        "receptions": 3,
+        "recYds": 38.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039410",
@@ -15844,15 +15799,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 53.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs NO",
         "passYds": 0.0,
@@ -15932,6 +15878,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 18.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039451",
@@ -15942,15 +15897,6 @@
     "team": "Dallas Cowboys",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk11",
         "opp": "vs LV",
@@ -16030,6 +15976,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 11.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 31.0,
         "tds": 0.0
       }
     ],
@@ -16132,15 +16087,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs JAX",
-        "passYds": 352.0,
-        "rushYds": 11.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs KC",
         "passYds": 182.0,
@@ -16220,6 +16166,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 222.0,
+        "rushYds": 4.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0039732",
@@ -16230,15 +16185,6 @@
     "team": "Los Angeles Rams",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 48.0,
-        "receptions": 1,
-        "recYds": 13.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs ATL",
@@ -16318,6 +16264,15 @@
         "rushYds": 93.0,
         "receptions": 1,
         "recYds": 8.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 73.0,
+        "receptions": 0,
+        "recYds": 0.0,
         "tds": 1.0
       }
     ],
@@ -16528,15 +16483,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk2",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 11.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk3",
         "opp": "vs TB",
         "passYds": 0.0,
@@ -16616,6 +16562,15 @@
         "receptions": 6,
         "recYds": 30.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 147.0,
+        "receptions": 2,
+        "recYds": 6.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039794",
@@ -16706,6 +16661,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 5.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039796",
@@ -16716,15 +16680,6 @@
     "team": "New York Jets",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk10",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 10.0,
-        "receptions": 1,
-        "recYds": 1.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk11",
         "opp": "vs NE",
@@ -16804,6 +16759,15 @@
         "rushYds": 5.0,
         "receptions": 3,
         "recYds": 49.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 15.0,
+        "receptions": 0,
+        "recYds": 0.0,
         "tds": 0.0
       }
     ],
@@ -16897,15 +16861,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs BAL",
-        "passYds": 380.0,
-        "rushYds": 25.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs NYJ",
         "passYds": 256.0,
@@ -16985,6 +16940,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 199.0,
+        "rushYds": 4.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 3.0
       }
     ],
     "_id": "00-0039851",
@@ -16995,15 +16959,6 @@
     "team": "Denver Broncos",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 21.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs LV",
@@ -17084,6 +17039,15 @@
         "receptions": 1,
         "recYds": 2.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 3.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039868",
@@ -17094,15 +17058,6 @@
     "team": "Buffalo Bills",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk10",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": -2.0,
-        "receptions": 1,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk13",
         "opp": "vs PIT",
@@ -17183,6 +17138,15 @@
         "receptions": 1,
         "recYds": 5.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 30.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039875",
@@ -17193,15 +17157,6 @@
     "team": "Miami Dolphins",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 10.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs CIN",
@@ -17282,6 +17237,15 @@
         "receptions": 3,
         "recYds": 27.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 40.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039880",
@@ -17292,15 +17256,6 @@
     "team": "Jacksonville Jaguars",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 28.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs IND",
@@ -17381,6 +17336,15 @@
         "receptions": 2,
         "recYds": 17.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 12.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039893",
@@ -17391,15 +17355,6 @@
     "team": "Kansas City Chiefs",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 55.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs LAC",
@@ -17480,6 +17435,15 @@
         "receptions": 3,
         "recYds": 11.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 13.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039894",
@@ -17490,15 +17454,6 @@
     "team": "Buffalo Bills",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk10",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 46.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk13",
         "opp": "vs PIT",
@@ -17579,6 +17534,15 @@
         "receptions": 4,
         "recYds": 59.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 4.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039901",
@@ -17680,15 +17644,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk11",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 13.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk13",
         "opp": "vs LV",
         "passYds": 0.0,
@@ -17767,6 +17722,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 17.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 86.0,
         "tds": 0.0
       }
     ],
@@ -17985,15 +17949,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk12",
-        "opp": "vs DAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 7.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "vs LAC",
         "passYds": 0.0,
@@ -18073,6 +18028,15 @@
         "receptions": 1,
         "recYds": 17.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 19.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040024",
@@ -18127,6 +18091,15 @@
         "receptions": 1,
         "recYds": 9.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 6.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040081",
@@ -18137,15 +18110,6 @@
     "team": "Las Vegas Raiders",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 128.0,
-        "receptions": 1,
-        "recYds": 60.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wk17",
         "opp": "vs NYG",
@@ -18226,6 +18190,15 @@
         "receptions": 8,
         "recYds": 61.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 9.0,
+        "receptions": 3,
+        "recYds": 64.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040122",
@@ -18435,15 +18408,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 72.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "vs CIN",
         "passYds": 0.0,
@@ -18523,6 +18487,15 @@
         "receptions": 1,
         "recYds": 12.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 43.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0040131",
@@ -18687,15 +18660,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 58.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs NO",
         "passYds": 0.0,
@@ -18774,6 +18738,15 @@
         "rushYds": 0.0,
         "receptions": 3,
         "recYds": 44.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 34.0,
         "tds": 0.0
       }
     ],
@@ -18885,15 +18858,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "vs LV",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 27.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "vs PHI",
         "passYds": 0.0,
@@ -18973,6 +18937,15 @@
         "receptions": 3,
         "recYds": 17.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 52.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040189",
@@ -18983,15 +18956,6 @@
     "team": "Buffalo Bills",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk4",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 15.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk8",
         "opp": "vs CAR",
@@ -19072,6 +19036,15 @@
         "receptions": 1,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 7.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040194",
@@ -19082,15 +19055,6 @@
     "team": "Miami Dolphins",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 10.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs NYJ",
@@ -19171,6 +19135,15 @@
         "receptions": 1,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 69.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040198",
@@ -19587,15 +19560,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk15",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 11.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk16",
         "opp": "vs ATL",
         "passYds": 0.0,
@@ -19672,6 +19636,15 @@
         "opp": "vs CHI",
         "passYds": 0.0,
         "rushYds": 13.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 38.0,
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
@@ -19785,15 +19758,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 23.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "vs CLE",
         "passYds": 0.0,
@@ -19872,6 +19836,15 @@
         "rushYds": 0.0,
         "receptions": 3,
         "recYds": 24.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 76.0,
         "tds": 0.0
       }
     ],
@@ -20035,6 +20008,15 @@
         "receptions": 2,
         "recYds": 24.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 4.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040646",
@@ -20045,15 +20027,6 @@
     "team": "Cleveland Browns",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 2.0,
-        "receptions": 7,
-        "recYds": 48.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs BUF",
@@ -20134,6 +20107,15 @@
         "receptions": 6,
         "recYds": 91.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 10,
+        "recYds": 154.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040663",
@@ -20144,15 +20126,6 @@
     "team": "Los Angeles Chargers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 56.0,
-        "receptions": 2,
-        "recYds": 11.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs KC",
@@ -20232,6 +20205,15 @@
         "rushYds": 18.0,
         "receptions": 4,
         "recYds": 21.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 20.0,
+        "receptions": 2,
+        "recYds": 7.0,
         "tds": 0.0
       }
     ],
@@ -20422,6 +20404,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 2.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040668",
@@ -20532,15 +20523,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk16",
-        "opp": "vs KC",
-        "passYds": 228.0,
-        "rushYds": 9.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk17",
         "opp": "vs NO",
         "passYds": 251.0,
@@ -20620,6 +20602,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CIN",
+        "passYds": 304.0,
+        "rushYds": 41.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0040676",
@@ -20630,15 +20621,6 @@
     "team": "Tennessee Titans",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 1.0,
-        "receptions": 1,
-        "recYds": 8.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs CLE",
@@ -20719,6 +20701,15 @@
         "receptions": 3,
         "recYds": 28.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 71.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0040705",
@@ -20829,15 +20820,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk1",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 33.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk2",
         "opp": "vs CIN",
         "passYds": 0.0,
@@ -20917,6 +20899,15 @@
         "receptions": 4,
         "recYds": 59.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 5.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040718",
@@ -20927,15 +20918,6 @@
     "team": "Jacksonville Jaguars",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 17.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs IND",
@@ -21015,6 +20997,15 @@
         "rushYds": 39.0,
         "receptions": 4,
         "recYds": 48.0,
+        "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 104.0,
+        "receptions": 2,
+        "recYds": 55.0,
         "tds": 2.0
       }
     ],
@@ -21358,6 +21349,15 @@
         "receptions": 2,
         "recYds": 12.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 34.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040785",
@@ -21430,6 +21430,15 @@
         "receptions": 7,
         "recYds": 67.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6,
+        "recYds": 57.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040867",
@@ -21502,6 +21511,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 83.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040878",
@@ -21547,6 +21565,15 @@
         "receptions": 2,
         "recYds": 35.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 15.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040887",
@@ -21574,36 +21601,18 @@
         "receptions": 1,
         "recYds": 18.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 20.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040890",
-    "teamYear": 2026
-  },
-  "Malik Benson": {
-    "pos": "WR",
-    "team": "Las Vegas Raiders",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2026-wk1",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": -8.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0040894",
     "teamYear": 2026
   },
   "Emmett Johnson": {
@@ -21664,6 +21673,15 @@
         "receptions": 2,
         "recYds": 17.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 15.0,
+        "receptions": 5,
+        "recYds": 128.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0041013",
@@ -21726,6 +21744,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 6.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 22.0,
         "tds": 0.0
       }
     ],
@@ -21799,6 +21826,15 @@
         "receptions": 3,
         "recYds": 27.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 6,
+        "recYds": 37.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0041037",
@@ -21861,6 +21897,15 @@
         "rushYds": 0.0,
         "receptions": 3,
         "recYds": 50.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 54.0,
         "tds": 0.0
       }
     ],
@@ -22364,6 +22409,15 @@
         "receptions": 1,
         "recYds": 2.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 29.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0041125",
@@ -22408,6 +22462,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 11.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 2.0,
         "tds": 0.0
       }
     ],
@@ -22502,78 +22565,6 @@
     "_id": "00-0041436",
     "teamYear": 2026
   },
-  "Carnell Tate": {
-    "pos": "WR",
-    "team": "Tennessee Titans",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2026-wk1",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 38.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 27.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 58.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 9,
-        "recYds": 145.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs IND",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 70.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk7",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 69.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0041438",
-    "teamYear": 2026
-  },
   "Germie Bernard": {
     "pos": "WR",
     "team": "Pittsburgh Steelers",
@@ -22632,6 +22623,15 @@
         "receptions": 3,
         "recYds": 27.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 30.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0041489",
@@ -22676,6 +22676,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 8.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 31.0,
         "tds": 1.0
       }
     ],
@@ -22758,6 +22767,15 @@
         "receptions": 3,
         "recYds": 25.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": -2.0,
+        "receptions": 4,
+        "recYds": 31.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0041525",
@@ -22793,6 +22811,15 @@
         "rushYds": 0.0,
         "receptions": 3,
         "recYds": 30.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 46.0,
         "tds": 1.0
       }
     ],
@@ -22866,6 +22893,15 @@
         "receptions": 8,
         "recYds": 129.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 37.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0041547",
@@ -22931,24 +22967,6 @@
     "league": "NFL",
     "games": [],
     "_id": "00-0041579",
-    "teamYear": 2026
-  },
-  "Britain Covey": {
-    "pos": "WR",
-    "team": "Philadelphia Eagles",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk18",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 20.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0037132",
     "teamYear": 2026
   },
   "Nick Muse": {
@@ -23173,15 +23191,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk9",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 14.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk10",
         "opp": "vs DET",
         "passYds": 0.0,
@@ -23260,6 +23269,15 @@
         "rushYds": 0.0,
         "receptions": 4,
         "recYds": 66.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 81.0,
         "tds": 0.0
       }
     ],
@@ -23566,6 +23584,15 @@
         "receptions": 1,
         "recYds": 16.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 37.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040563",
@@ -23650,105 +23677,6 @@
       }
     ],
     "_id": "00-0040648",
-    "teamYear": 2026
-  },
-  "TreVeyon Henderson": {
-    "pos": "RB",
-    "team": "New England Patriots",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 148.0,
-        "receptions": 2,
-        "recYds": 13.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 82.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 53.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 76.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 23.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 42.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs LV",
-        "passYds": 0.0,
-        "rushYds": 22.0,
-        "receptions": 1,
-        "recYds": 4.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 31.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk7",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 2,
-        "recYds": 14.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0040734",
     "teamYear": 2026
   },
   "J. Michael Sturdivant": {
@@ -23982,15 +23910,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk1",
-        "opp": "vs NO",
-        "passYds": 163.0,
-        "rushYds": 38.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
-      {
         "date": "2025-wk2",
         "opp": "vs CAR",
         "passYds": 220.0,
@@ -24070,6 +23989,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 210.0,
+        "rushYds": 35.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0035228",
@@ -24080,15 +24008,6 @@
     "team": "Buffalo Bills",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 5.0,
-        "receptions": 3,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs CIN",
@@ -24168,6 +24087,15 @@
         "rushYds": 3.0,
         "receptions": 2,
         "recYds": 24.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 3,
+        "recYds": 19.0,
         "tds": 0.0
       }
     ],
@@ -24279,15 +24207,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk11",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 54.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk12",
         "opp": "vs CAR",
         "passYds": 0.0,
@@ -24366,6 +24285,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 34.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 11.0,
         "tds": 0.0
       }
     ],
@@ -24477,15 +24405,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk4",
-        "opp": "vs LA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk8",
         "opp": "vs TEN",
         "passYds": 0.0,
@@ -24565,6 +24484,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ARI",
+        "passYds": 0.0,
+        "rushYds": 14.0,
+        "receptions": 2,
+        "recYds": 19.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037120",
@@ -24628,6 +24556,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs WAS",
+        "passYds": 212.0,
+        "rushYds": 25.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0038400",
@@ -24837,15 +24774,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk12",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 55.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk13",
         "opp": "vs LAC",
         "passYds": 0.0,
@@ -24925,6 +24853,15 @@
         "receptions": 6,
         "recYds": 73.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7,
+        "recYds": 92.0,
+        "tds": 2.0
       }
     ],
     "_id": "00-0039338",
@@ -24953,15 +24890,6 @@
     "team": "Atlanta Falcons",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk6",
-        "opp": "vs BUF",
-        "passYds": 250.0,
-        "rushYds": 6.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk7",
         "opp": "vs SF",
@@ -25042,6 +24970,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 3.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TB",
+        "passYds": 125.0,
+        "rushYds": 11.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0039917",
@@ -25141,6 +25078,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs IND",
+        "passYds": 8.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040234",
@@ -25150,26 +25096,18 @@
     "pos": "TE",
     "team": "Jacksonville Jaguars",
     "league": "NFL",
-    "games": [],
-    "_id": "00-0041084",
-    "teamYear": 2026
-  },
-  "Athan Kaliakmanis": {
-    "pos": "QB",
-    "team": "Washington Commanders",
-    "league": "NFL",
     "games": [
       {
-        "date": "2026-wk4",
+        "date": "2026-wk8",
         "opp": "vs IND",
-        "passYds": 186.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 8.0,
+        "tds": 0.0
       }
     ],
-    "_id": "00-0041117",
+    "_id": "00-0041084",
     "teamYear": 2026
   },
   "Malik McClain": {
@@ -25498,6 +25436,15 @@
         "receptions": 2,
         "recYds": 4.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 36.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033699",
@@ -25716,15 +25663,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 29.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "vs CLE",
         "passYds": 0.0,
@@ -25804,6 +25742,15 @@
         "receptions": 7,
         "recYds": 69.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 32.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037809",
@@ -25827,101 +25774,11 @@
     "_id": "00-0038576",
     "teamYear": 2026
   },
-  "Mitchell Tinsley": {
-    "pos": "WR",
-    "team": "Cincinnati Bengals",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk2",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 13.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk4",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk9",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 27.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk12",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 29.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 22.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 16.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 49.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk7",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 7.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0038839",
-    "teamYear": 2026
-  },
   "Marvin Mims Jr.": {
     "pos": "WR",
     "team": "Denver Broncos",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 2,
-        "recYds": 8.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs LV",
@@ -26002,6 +25859,15 @@
         "receptions": 2,
         "recYds": 53.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 19.0,
+        "receptions": 2,
+        "recYds": 10.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0038976",
@@ -26012,15 +25878,6 @@
     "team": "Los Angeles Rams",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 167.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs DET",
@@ -26101,6 +25958,15 @@
         "receptions": 8,
         "recYds": 68.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 11,
+        "recYds": 80.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039075",
@@ -26111,15 +25977,6 @@
     "team": "Miami Dolphins",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 107.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs PIT",
@@ -26197,6 +26054,15 @@
         "opp": "vs NYJ",
         "passYds": 0.0,
         "rushYds": 8.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 5.0,
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
@@ -26407,6 +26273,15 @@
         "receptions": 3,
         "recYds": 56.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 5.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0041395",
@@ -26544,15 +26419,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk6",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk9",
         "opp": "vs HOU",
         "passYds": 0.0,
@@ -26632,6 +26498,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 10.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036727",
@@ -26642,15 +26517,6 @@
     "team": "Indianapolis Colts",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 36.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk16",
         "opp": "vs DAL",
@@ -26731,6 +26597,15 @@
         "receptions": 3,
         "recYds": 31.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7,
+        "recYds": 67.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0030279",
@@ -26802,6 +26677,15 @@
         "receptions": 1,
         "recYds": 4.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 7.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0034270",
@@ -26812,15 +26696,6 @@
     "team": "Philadelphia Eagles",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 27.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs LAC",
@@ -26901,108 +26776,18 @@
         "receptions": 5,
         "recYds": 48.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 2.0,
+        "receptions": 4,
+        "recYds": 30.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0034351",
-    "teamYear": 2026
-  },
-  "Colby Parkinson": {
-    "pos": "TE",
-    "team": "Los Angeles Rams",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 32.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 75.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 21.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 53.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 36.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 15.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 3.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 31.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk7",
-        "opp": "vs LV",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 48.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0036244",
     "teamYear": 2026
   },
   "Justin Jefferson": {
@@ -27010,15 +26795,6 @@
     "team": "Minnesota Vikings",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 11.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs DAL",
@@ -27099,6 +26875,15 @@
         "receptions": 4,
         "recYds": 44.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 5,
+        "recYds": 33.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0036322",
@@ -27109,15 +26894,6 @@
     "team": "Washington Commanders",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 53.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs ATL",
@@ -27198,6 +26974,15 @@
         "receptions": 4,
         "recYds": 30.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 55.0,
+        "receptions": 2,
+        "recYds": 5.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0037256",
@@ -27234,15 +27019,6 @@
     "team": "Los Angeles Chargers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk5",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 10.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk8",
         "opp": "vs CHI",
@@ -27323,6 +27099,15 @@
         "receptions": 3,
         "recYds": 20.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 20.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0038046",
@@ -27396,15 +27181,6 @@
     "team": "Washington Commanders",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk2",
-        "opp": "vs GB",
-        "passYds": 200.0,
-        "rushYds": 17.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
       {
         "date": "2025-wk5",
         "opp": "vs LAC",
@@ -27485,6 +27261,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PHI",
+        "passYds": 217.0,
+        "rushYds": 23.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039910",
@@ -27557,6 +27342,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 43.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040179",
@@ -27593,15 +27387,6 @@
     "team": "New York Jets",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 34.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk10",
         "opp": "vs CLE",
@@ -27682,6 +27467,15 @@
         "receptions": 5,
         "recYds": 62.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 19.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040736",
@@ -27691,7 +27485,17 @@
     "pos": "QB",
     "team": "Baltimore Ravens",
     "league": "NFL",
-    "games": [],
+    "games": [
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 91.0,
+        "rushYds": 3.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
+      }
+    ],
     "_id": "00-0040981",
     "teamYear": 2026
   },
@@ -27711,14 +27515,6 @@
       }
     ],
     "_id": "00-0041070",
-    "teamYear": 2026
-  },
-  "Skyler Bell": {
-    "pos": "WR",
-    "team": "Buffalo Bills",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041443",
     "teamYear": 2026
   },
   "Lil'Jordan Humphrey": {
@@ -27788,6 +27584,15 @@
         "receptions": 1,
         "recYds": 5.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 10.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0035406",
@@ -27829,105 +27634,6 @@
     "_id": "00-0038098",
     "teamYear": 2026
   },
-  "Tim Patrick": {
-    "pos": "WR",
-    "team": "New York Jets",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk4",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": -1.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk6",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 26.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk7",
-        "opp": "vs LA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 22.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk11",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 20.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 11.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs IND",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 78.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 11.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 4.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 26.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 15.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0033375",
-    "teamYear": 2026
-  },
   "Scott Matlock": {
     "pos": "RB",
     "team": "Los Angeles Chargers",
@@ -27964,60 +27670,6 @@
     "_id": "00-0038614",
     "teamYear": 2026
   },
-  "Theo Wease Jr.": {
-    "pos": "WR",
-    "team": "Los Angeles Chargers",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 32.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 63.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 44.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 16.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 21.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0040311",
-    "teamYear": 2026
-  },
   "Ben Yurosek": {
     "pos": "TE",
     "team": "Minnesota Vikings",
@@ -28048,6 +27700,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 10.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 24.0,
         "tds": 0.0
       }
     ],
@@ -28159,15 +27820,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 26.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk15",
         "opp": "vs BUF",
         "passYds": 0.0,
@@ -28247,36 +27899,18 @@
         "receptions": 6,
         "recYds": 44.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 38.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0031588",
-    "teamYear": 2026
-  },
-  "Pharaoh Brown": {
-    "pos": "TE",
-    "team": "Indianapolis Colts",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 1.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 7.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0033439",
     "teamYear": 2026
   },
   "Devin Singletary": {
@@ -28384,15 +28018,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk12",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 38.0,
-        "receptions": 4,
-        "recYds": 36.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk13",
         "opp": "vs LA",
         "passYds": 0.0,
@@ -28472,6 +28097,15 @@
         "receptions": 6,
         "recYds": 45.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 56.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0036139",
@@ -28516,6 +28150,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 12.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 3.0,
         "tds": 0.0
       }
     ],
@@ -28726,15 +28369,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 124.0,
-        "tds": 1.0
-      },
-      {
         "date": "2025-wk11",
         "opp": "vs CHI",
         "passYds": 0.0,
@@ -28814,6 +28448,15 @@
         "receptions": 2,
         "recYds": 14.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NYJ",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 38.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0037291",
@@ -28824,15 +28467,6 @@
     "team": "Los Angeles Chargers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk10",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 42.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk13",
         "opp": "vs LV",
@@ -28912,6 +28546,15 @@
         "rushYds": 0.0,
         "receptions": 1,
         "recYds": 57.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 37.0,
         "tds": 0.0
       }
     ],
@@ -29268,24 +28911,6 @@
     "_id": "00-0040058",
     "teamYear": 2026
   },
-  "Brenen Thompson": {
-    "pos": "WR",
-    "team": "Los Angeles Chargers",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2026-wk2",
-        "opp": "vs LV",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 13.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0041550",
-    "teamYear": 2026
-  },
   "Velus Jones Jr.": {
     "pos": "RB",
     "team": "Seattle Seahawks",
@@ -29320,105 +28945,6 @@
       }
     ],
     "_id": "00-0037745",
-    "teamYear": 2026
-  },
-  "A.J. Brown": {
-    "pos": "WR",
-    "team": "New England Patriots",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk11",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 49.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk12",
-        "opp": "vs DAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 8,
-        "recYds": 110.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 10,
-        "recYds": 132.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 100.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs LV",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 41.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 9,
-        "recYds": 95.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 68.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 26.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 27.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk7",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 48.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0035676",
     "teamYear": 2026
   },
   "Will Mallory": {
@@ -29866,6 +29392,15 @@
         "receptions": 3,
         "recYds": 25.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 13.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040870",
@@ -29912,15 +29447,6 @@
     "team": "Washington Commanders",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk9",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk10",
         "opp": "vs DET",
@@ -30001,6 +29527,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 21.0,
+        "receptions": 1,
+        "recYds": 7.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0033955",
@@ -30011,15 +29546,6 @@
     "team": "Philadelphia Eagles",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 56.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs LAC",
@@ -30100,6 +29626,15 @@
         "receptions": 2,
         "recYds": 9.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 30.0,
+        "receptions": 1,
+        "recYds": 24.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0034844",
@@ -30110,15 +29645,6 @@
     "team": "Tampa Bay Buccaneers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs ARI",
-        "passYds": 194.0,
-        "rushYds": 27.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs NO",
@@ -30199,6 +29725,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 14.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0034855",
@@ -30271,6 +29806,15 @@
         "receptions": 3,
         "recYds": 29.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs JAX",
+        "passYds": 0.0,
+        "rushYds": 3.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0035021",
@@ -30281,15 +29825,6 @@
     "team": "Philadelphia Eagles",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk9",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 73.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk11",
         "opp": "vs DEN",
@@ -30369,6 +29904,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 30.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 17.0,
         "tds": 0.0
       }
     ],
@@ -30451,54 +29995,18 @@
         "receptions": 1,
         "recYds": 4.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 52.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036849",
-    "teamYear": 2026
-  },
-  "Jared Wayne": {
-    "pos": "WR",
-    "team": "Miami Dolphins",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 12.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 33.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs IND",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 20.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0038728",
     "teamYear": 2026
   },
   "Sean Tucker": {
@@ -30606,15 +30114,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk13",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 36.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk14",
         "opp": "vs WAS",
         "passYds": 0.0,
@@ -30694,6 +30193,15 @@
         "receptions": 2,
         "recYds": 20.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 3,
+        "recYds": 66.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0038994",
@@ -30767,15 +30275,6 @@
     "team": "New York Jets",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk9",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 7.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk11",
         "opp": "vs NE",
@@ -30856,6 +30355,15 @@
         "receptions": 6,
         "recYds": 63.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs LV",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7,
+        "recYds": 142.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039890",
@@ -30902,15 +30410,6 @@
     "team": "Cleveland Browns",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 91.0,
-        "receptions": 3,
-        "recYds": 18.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs TEN",
@@ -30991,6 +30490,15 @@
         "receptions": 1,
         "recYds": 8.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 25.0,
+        "receptions": 2,
+        "recYds": 24.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040784",
@@ -31067,14 +30575,6 @@
     "_id": "00-0041069",
     "teamYear": 2026
   },
-  "Justin Joly": {
-    "pos": "TE",
-    "team": "Miami Dolphins",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041077",
-    "teamYear": 2026
-  },
   "Kaytron Allen": {
     "pos": "RB",
     "team": "Miami Dolphins",
@@ -31115,7 +30615,17 @@
     "pos": "TE",
     "team": "Cincinnati Bengals",
     "league": "NFL",
-    "games": [],
+    "games": [
+      {
+        "date": "2026-wk8",
+        "opp": "vs TEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 1.0,
+        "tds": 1.0
+      }
+    ],
     "_id": "00-0041116",
     "teamYear": 2026
   },
@@ -31166,6 +30676,15 @@
         "receptions": 2,
         "recYds": 70.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 4,
+        "recYds": 43.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0041523",
@@ -31499,15 +31018,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk10",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 25.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk11",
         "opp": "vs CHI",
         "passYds": 0.0,
@@ -31587,72 +31097,18 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 20.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037525",
-    "teamYear": 2026
-  },
-  "Evan Hull": {
-    "pos": "RB",
-    "team": "Arizona Cardinals",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 15.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 4.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 12.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": 11.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0038397",
     "teamYear": 2026
   },
   "Jalin Hyatt": {
@@ -31805,15 +31261,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk7",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 8.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk8",
         "opp": "vs NE",
         "passYds": 0.0,
@@ -31893,6 +31340,15 @@
         "receptions": 3,
         "recYds": 32.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs PIT",
+        "passYds": 0.0,
+        "rushYds": 7.0,
+        "receptions": 6,
+        "recYds": 62.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040162",
@@ -31936,6 +31392,15 @@
         "receptions": 2,
         "recYds": 15.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 41.0,
+        "receptions": 4,
+        "recYds": 63.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0041496",
@@ -32017,62 +31482,18 @@
     "pos": "TE",
     "team": "Philadelphia Eagles",
     "league": "NFL",
-    "games": [],
-    "_id": "00-0041483",
-    "teamYear": 2026
-  },
-  "Andy Dalton": {
-    "pos": "QB",
-    "team": "Atlanta Falcons",
-    "league": "NFL",
     "games": [
       {
-        "date": "2025-wk3",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": -1.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk4",
-        "opp": "vs NE",
-        "passYds": 58.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk7",
-        "opp": "vs NYJ",
-        "passYds": 60.0,
-        "rushYds": -2.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk8",
-        "opp": "vs BUF",
-        "passYds": 175.0,
-        "rushYds": 1.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs CHI",
+        "date": "2026-wk8",
+        "opp": "vs WAS",
         "passYds": 0.0,
         "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
+        "receptions": 3,
+        "recYds": 53.0,
         "tds": 0.0
       }
     ],
-    "_id": "00-0027973",
+    "_id": "00-0041483",
     "teamYear": 2026
   },
   "Case Keenum": {
@@ -32207,15 +31628,6 @@
     "league": "NFL",
     "games": [
       {
-        "date": "2025-wk12",
-        "opp": "vs NYJ",
-        "passYds": 153.0,
-        "rushYds": 11.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
         "date": "2025-wk13",
         "opp": "vs CIN",
         "passYds": 246.0,
@@ -32295,6 +31707,15 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 2.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BUF",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0034796",
@@ -32305,15 +31726,6 @@
     "team": "Buffalo Bills",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 10.0,
-        "receptions": 2,
-        "recYds": 17.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk14",
         "opp": "vs GB",
@@ -32394,6 +31806,15 @@
         "receptions": 1,
         "recYds": 11.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs BAL",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 4,
+        "recYds": 82.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0034827",
@@ -32404,15 +31825,6 @@
     "team": "Tennessee Titans",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk1",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 27.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk2",
         "opp": "vs LA",
@@ -32493,6 +31905,15 @@
         "receptions": 2,
         "recYds": 33.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs CIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 10.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0034837",
@@ -32503,15 +31924,6 @@
     "team": "Atlanta Falcons",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 33.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk9",
         "opp": "vs CIN",
@@ -32591,6 +32003,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 4.0,
         "tds": 0.0
       }
     ],
@@ -32777,230 +32198,6 @@
     "_id": "00-0036842",
     "teamYear": 2026
   },
-  "Ben Skowronek": {
-    "pos": "WR",
-    "team": "Pittsburgh Steelers",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk1",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 22.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk8",
-        "opp": "vs GB",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 13.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk12",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 21.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 13.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 23.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 7.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0036862",
-    "teamYear": 2026
-  },
-  "Kylen Granson": {
-    "pos": "TE",
-    "team": "Tennessee Titans",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk1",
-        "opp": "vs DAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 1.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk2",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 5.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk11",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 4.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 30.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0036876",
-    "teamYear": 2026
-  },
-  "Sam Ehlinger": {
-    "pos": "QB",
-    "team": "Denver Broncos",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0036879",
-    "teamYear": 2026
-  },
-  "DeVonta Smith": {
-    "pos": "WR",
-    "team": "Philadelphia Eagles",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 48.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 4,
-        "recYds": 37.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs LV",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 50.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 42.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 25.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 52.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 53.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 10,
-        "recYds": 117.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 65.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 75.0,
-        "tds": 1.0
-      }
-    ],
-    "_id": "00-0036912",
-    "teamYear": 2026
-  },
   "Jalen Tolbert": {
     "pos": "WR",
     "team": "Miami Dolphins",
@@ -33086,530 +32283,18 @@
         "receptions": 1,
         "recYds": 22.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 8.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0037666",
-    "teamYear": 2026
-  },
-  "Brian Robinson": {
-    "pos": "RB",
-    "team": "Atlanta Falcons",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 21.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs IND",
-        "passYds": 0.0,
-        "rushYds": 20.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 22.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 31.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 51.0,
-        "receptions": 2,
-        "recYds": 16.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs GB",
-        "passYds": 0.0,
-        "rushYds": 50.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 62.0,
-        "receptions": 1,
-        "recYds": 5.0,
-        "tds": 3.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 1.0,
-        "receptions": 2,
-        "recYds": 9.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0037746",
-    "teamYear": 2026
-  },
-  "KaVontae Turpin": {
-    "pos": "WR",
-    "team": "Dallas Cowboys",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 33.0,
-        "receptions": 2,
-        "recYds": 28.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 4.0,
-        "receptions": 2,
-        "recYds": 26.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs MIN",
-        "passYds": 0.0,
-        "rushYds": 2.0,
-        "receptions": 2,
-        "recYds": 10.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 13.0,
-        "receptions": 2,
-        "recYds": 14.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 86.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 7.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 8.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 1.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 22.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0037801",
-    "teamYear": 2026
-  },
-  "Breece Hall": {
-    "pos": "RB",
-    "team": "New York Jets",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk11",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 58.0,
-        "receptions": 2,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk12",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 44.0,
-        "receptions": 4,
-        "recYds": 75.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": 68.0,
-        "receptions": 2,
-        "recYds": 8.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 43.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 23.0,
-        "receptions": 2,
-        "recYds": 14.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 54.0,
-        "receptions": 2,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 111.0,
-        "receptions": 2,
-        "recYds": 18.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 102.0,
-        "receptions": 2,
-        "recYds": 16.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs GB",
-        "passYds": 0.0,
-        "rushYds": 29.0,
-        "receptions": 5,
-        "recYds": 63.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 32.0,
-        "receptions": 3,
-        "recYds": 23.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0038120",
-    "teamYear": 2026
-  },
-  "Dontayvion Wicks": {
-    "pos": "WR",
-    "team": "Philadelphia Eagles",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk13",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 6.0,
-        "receptions": 6,
-        "recYds": 94.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 12.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 7.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 73.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 74.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 32.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs LA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 18.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 63.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 24.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0038393",
-    "teamYear": 2026
-  },
-  "Ben VanSumeren": {
-    "pos": "RB",
-    "team": "Kansas City Chiefs",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0038489",
-    "teamYear": 2026
-  },
-  "Aidan O'Connell": {
-    "pos": "QB",
-    "team": "Las Vegas Raiders",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk18",
-        "opp": "vs KC",
-        "passYds": 102.0,
-        "rushYds": 7.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0038579",
-    "teamYear": 2026
-  },
-  "Tyjae Spears": {
-    "pos": "RB",
-    "team": "Tennessee Titans",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk15",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 34.0,
-        "receptions": 2,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 52.0,
-        "receptions": 5,
-        "recYds": 53.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 2.0,
-        "receptions": 1,
-        "recYds": -1.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 18.0,
-        "receptions": 7,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 12.0,
-        "receptions": 2,
-        "recYds": 12.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 41.0,
-        "receptions": 2,
-        "recYds": 29.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 5.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 7.0,
-        "receptions": 1,
-        "recYds": -1.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs HOU",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 9,
-        "recYds": 28.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs IND",
-        "passYds": 0.0,
-        "rushYds": 1.0,
-        "receptions": 1,
-        "recYds": 7.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0039032",
     "teamYear": 2026
   },
   "Rashee Rice": {
@@ -33617,15 +32302,6 @@
     "team": "Kansas City Chiefs",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 12.0,
-        "receptions": 9,
-        "recYds": 93.0,
-        "tds": 1.0
-      },
       {
         "date": "2025-wk9",
         "opp": "vs BUF",
@@ -33706,6 +32382,15 @@
         "receptions": 7,
         "recYds": 88.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DEN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 7,
+        "recYds": 53.0,
+        "tds": 1.0
       }
     ],
     "_id": "00-0039067",
@@ -33810,69 +32495,6 @@
     "_id": "00-0039165",
     "teamYear": 2026
   },
-  "Audric Estim\u00e9": {
-    "pos": "RB",
-    "team": "Cleveland Browns",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 11.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 11.0,
-        "receptions": 3,
-        "recYds": 39.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 19.0,
-        "receptions": 3,
-        "recYds": 17.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 94.0,
-        "receptions": 1,
-        "recYds": 4.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": 63.0,
-        "receptions": 5,
-        "recYds": 43.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs BAL",
-        "passYds": 0.0,
-        "rushYds": 19.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      }
-    ],
-    "_id": "00-0039373",
-    "teamYear": 2026
-  },
   "Cam Grandy": {
     "pos": "TE",
     "team": "Cincinnati Bengals",
@@ -33900,47 +32522,11 @@
     "_id": "00-0039631",
     "teamYear": 2026
   },
-  "Anthony Gould": {
-    "pos": "WR",
-    "team": "Indianapolis Colts",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk7",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 3.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 3.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0039816",
-    "teamYear": 2026
-  },
   "Tyler Warren": {
     "pos": "TE",
     "team": "Indianapolis Colts",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 2.0,
-        "receptions": 2,
-        "recYds": 15.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs SEA",
@@ -34021,170 +32607,18 @@
         "receptions": 7,
         "recYds": 83.0,
         "tds": 1.0
-      }
-    ],
-    "_id": "00-0040128",
-    "teamYear": 2026
-  },
-  "Emeka Egbuka": {
-    "pos": "WR",
-    "team": "Tampa Bay Buccaneers",
-    "league": "NFL",
-    "games": [
+      },
       {
-        "date": "2025-wk15",
-        "opp": "vs ATL",
+        "date": "2026-wk8",
+        "opp": "vs JAX",
         "passYds": 0.0,
         "rushYds": 0.0,
         "receptions": 4,
-        "recYds": 64.0,
+        "recYds": 18.0,
         "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 40.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 3,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs CAR",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 8.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 63.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk2",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": -3.0,
-        "receptions": 3,
-        "recYds": 16.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs MIN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 62.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs GB",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 13.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs DAL",
-        "passYds": 0.0,
-        "rushYds": 14.0,
-        "receptions": 6,
-        "recYds": 38.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 7,
-        "recYds": 48.0,
-        "tds": 1.0
       }
     ],
-    "_id": "00-0040129",
-    "teamYear": 2026
-  },
-  "Will Howard": {
-    "pos": "QB",
-    "team": "Pittsburgh Steelers",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0040203",
-    "teamYear": 2026
-  },
-  "Riley Leonard": {
-    "pos": "QB",
-    "team": "Indianapolis Colts",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk8",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 1.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs JAX",
-        "passYds": 145.0,
-        "rushYds": 5.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs JAX",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs HOU",
-        "passYds": 270.0,
-        "rushYds": 21.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 3.0
-      }
-    ],
-    "_id": "00-0040206",
+    "_id": "00-0040128",
     "teamYear": 2026
   },
   "Kyle Monangai": {
@@ -34286,168 +32720,6 @@
     "_id": "00-0040236",
     "teamYear": 2026
   },
-  "Jackson Meeks": {
-    "pos": "TE",
-    "team": "Detroit Lions",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2026-wk3",
-        "opp": "vs NYJ",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 8.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0040390",
-    "teamYear": 2026
-  },
-  "Max Brosmer": {
-    "pos": "QB",
-    "team": "Minnesota Vikings",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk3",
-        "opp": "vs CIN",
-        "passYds": 29.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk5",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": -1.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk8",
-        "opp": "vs LAC",
-        "passYds": 13.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs SEA",
-        "passYds": 126.0,
-        "rushYds": -1.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs NYG",
-        "passYds": 52.0,
-        "rushYds": -3.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs DET",
-        "passYds": 51.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs GB",
-        "passYds": 57.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0040494",
-    "teamYear": 2026
-  },
-  "Dont'e Thornton Jr.": {
-    "pos": "WR",
-    "team": "Las Vegas Raiders",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk1",
-        "opp": "vs NE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 45.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk2",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk3",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 29.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk10",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 4.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk12",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 14.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 11.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 2,
-        "recYds": 12.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0040581",
-    "teamYear": 2026
-  },
   "Jaydon Blue": {
     "pos": "RB",
     "team": "Philadelphia Eagles",
@@ -34497,108 +32769,18 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 1.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 9.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0040586",
-    "teamYear": 2026
-  },
-  "Dillon Gabriel": {
-    "pos": "QB",
-    "team": "Cleveland Browns",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk2",
-        "opp": "vs BAL",
-        "passYds": 19.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk4",
-        "opp": "vs DET",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk5",
-        "opp": "vs MIN",
-        "passYds": 190.0,
-        "rushYds": 5.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wk6",
-        "opp": "vs PIT",
-        "passYds": 221.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk7",
-        "opp": "vs MIA",
-        "passYds": 116.0,
-        "rushYds": 12.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk8",
-        "opp": "vs NE",
-        "passYds": 156.0,
-        "rushYds": 13.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wk10",
-        "opp": "vs NYJ",
-        "passYds": 167.0,
-        "rushYds": 54.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wk11",
-        "opp": "vs BAL",
-        "passYds": 68.0,
-        "rushYds": 2.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0040704",
     "teamYear": 2026
   },
   "Tre Harris": {
@@ -34606,15 +32788,6 @@
     "team": "Los Angeles Chargers",
     "league": "NFL",
     "games": [
-      {
-        "date": "2025-wk14",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 1,
-        "recYds": 18.0,
-        "tds": 0.0
-      },
       {
         "date": "2025-wk15",
         "opp": "vs KC",
@@ -34695,27 +32868,18 @@
         "receptions": 2,
         "recYds": 16.0,
         "tds": 0.0
-      }
-    ],
-    "_id": "00-0040727",
-    "teamYear": 2026
-  },
-  "Elijah Sarratt": {
-    "pos": "WR",
-    "team": "Baltimore Ravens",
-    "league": "NFL",
-    "games": [
+      },
       {
-        "date": "2026-wk4",
-        "opp": "vs TEN",
+        "date": "2026-wk8",
+        "opp": "vs LA",
         "passYds": 0.0,
         "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 13.0,
+        "receptions": 3,
+        "recYds": 31.0,
         "tds": 0.0
       }
     ],
-    "_id": "00-0040876",
+    "_id": "00-0040727",
     "teamYear": 2026
   },
   "Nicholas Singleton": {
@@ -34751,14 +32915,6 @@
     "league": "NFL",
     "games": [],
     "_id": "00-0040891",
-    "teamYear": 2026
-  },
-  "Garrett Nussmeier": {
-    "pos": "QB",
-    "team": "Kansas City Chiefs",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0040906",
     "teamYear": 2026
   },
   "Jeremiyah Love": {
@@ -34810,86 +32966,18 @@
         "receptions": 0,
         "recYds": 0.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DAL",
+        "passYds": 0.0,
+        "rushYds": 23.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0041027",
-    "teamYear": 2026
-  },
-  "Taylen Green": {
-    "pos": "QB",
-    "team": "Cleveland Browns",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041092",
-    "teamYear": 2026
-  },
-  "Demond Claiborne": {
-    "pos": "RB",
-    "team": "Minnesota Vikings",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2026-wk2",
-        "opp": "vs CHI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk3",
-        "opp": "vs TB",
-        "passYds": 0.0,
-        "rushYds": 1.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs MIA",
-        "passYds": 0.0,
-        "rushYds": 12.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs NO",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0041104",
-    "teamYear": 2026
-  },
-  "C.J. Williams": {
-    "pos": "WR",
-    "team": "Jacksonville Jaguars",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041106",
-    "teamYear": 2026
-  },
-  "Behren Morton": {
-    "pos": "QB",
-    "team": "New England Patriots",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041123",
-    "teamYear": 2026
-  },
-  "Dallen Bentley": {
-    "pos": "TE",
-    "team": "Denver Broncos",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041133",
     "teamYear": 2026
   },
   "Robert Henry Jr.": {
@@ -34900,62 +32988,12 @@
     "_id": "00-0041178",
     "teamYear": 2026
   },
-  "Jack Strand": {
-    "pos": "QB",
-    "team": "Atlanta Falcons",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2026-wk2",
-        "opp": "vs CAR",
-        "passYds": 59.0,
-        "rushYds": 16.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0041194",
-    "teamYear": 2026
-  },
-  "Eli Heidenreich": {
-    "pos": "RB",
-    "team": "Pittsburgh Steelers",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041490",
-    "teamYear": 2026
-  },
   "Max Klare": {
     "pos": "TE",
     "team": "Los Angeles Rams",
     "league": "NFL",
     "games": [],
     "_id": "00-0041510",
-    "teamYear": 2026
-  },
-  "Carson Beck": {
-    "pos": "QB",
-    "team": "Arizona Cardinals",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041561",
-    "teamYear": 2026
-  },
-  "Drew Allar": {
-    "pos": "QB",
-    "team": "Pittsburgh Steelers",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041565",
-    "teamYear": 2026
-  },
-  "Ty Simpson": {
-    "pos": "QB",
-    "team": "Los Angeles Rams",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041568",
     "teamYear": 2026
   },
   "DeeJay Dallas": {
@@ -35025,6 +33063,15 @@
         "receptions": 1,
         "recYds": 11.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs DET",
+        "passYds": 0.0,
+        "rushYds": 4.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036425",
@@ -35050,6 +33097,15 @@
         "rushYds": 11.0,
         "receptions": 3,
         "recYds": 23.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 34.0,
+        "receptions": 4,
+        "recYds": 3.0,
         "tds": 0.0
       }
     ],
@@ -35114,6 +33170,15 @@
         "receptions": 1,
         "recYds": 19.0,
         "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs TB",
+        "passYds": 0.0,
+        "rushYds": 12.0,
+        "receptions": 1,
+        "recYds": 3.0,
+        "tds": 0.0
       }
     ],
     "_id": "00-0036906",
@@ -35150,7 +33215,17 @@
     "pos": "WR",
     "team": "Pittsburgh Steelers",
     "league": "NFL",
-    "games": [],
+    "games": [
+      {
+        "date": "2026-wk8",
+        "opp": "vs CLE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 9.0,
+        "tds": 0.0
+      }
+    ],
     "_id": "00-0037382",
     "teamYear": 2026
   },
@@ -35246,6 +33321,15 @@
         "rushYds": 0.0,
         "receptions": 2,
         "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk8",
+        "opp": "vs MIA",
+        "passYds": 0.0,
+        "rushYds": 6.0,
+        "receptions": 0,
+        "recYds": 0.0,
         "tds": 0.0
       }
     ],
