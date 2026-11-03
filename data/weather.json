@@ -1,9 +1,87 @@
 {
-  "Seattle Seahawks": {
-    "windMph": 1,
-    "tempF": 44,
+  "Baltimore Ravens": {
+    "windMph": 7,
+    "tempF": 71,
+    "shortForecast": "Patchy Fog then Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Atlanta Falcons": {
+    "dome": true
+  },
+  "Carolina Panthers": {
+    "windMph": 7,
+    "tempF": 77,
+    "shortForecast": "Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Indianapolis Colts": {
+    "dome": true
+  },
+  "Kansas City Chiefs": {
+    "windMph": 14,
+    "tempF": 70,
+    "shortForecast": "Showers And Thunderstorms Likely",
+    "severe": false,
+    "dome": false
+  },
+  "Miami Dolphins": {
+    "windMph": 13,
+    "tempF": 84,
+    "shortForecast": "Showers And Thunderstorms Likely",
+    "severe": false,
+    "dome": false
+  },
+  "New Orleans Saints": {
+    "dome": true
+  },
+  "Philadelphia Eagles": {
+    "windMph": 5,
+    "tempF": 71,
+    "shortForecast": "Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Washington Commanders": {
+    "windMph": 7,
+    "tempF": 71,
+    "shortForecast": "Patchy Fog then Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Los Angeles Chargers": {
+    "dome": true
+  },
+  "San Francisco 49ers": {
+    "windMph": 6,
+    "tempF": 47,
     "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
+  },
+  "New England Patriots": {
+    "windMph": 5,
+    "tempF": 72,
+    "shortForecast": "Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Seattle Seahawks": {
+    "windMph": 2,
+    "tempF": 47,
+    "shortForecast": "Cloudy",
+    "severe": false,
+    "dome": false
+  },
+  "Chicago Bears": {
+    "windMph": 25,
+    "tempF": 70,
+    "shortForecast": "Mostly Cloudy then Chance Rain Showers",
+    "severe": true,
+    "dome": false
+  },
+  "Minnesota Vikings": {
+    "dome": true
   }
 }

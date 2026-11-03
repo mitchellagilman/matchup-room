@@ -425,14 +425,14 @@
   },
   "Chicago Bears": {
     "league": "NFL",
-    "record": "5-2",
-    "ppg": 25.7,
-    "pa": 20.4,
-    "passOff": 254.9,
-    "rushOff": 154.3,
-    "passDef": 241.3,
-    "rushDef": 87.6,
-    "to": -0.14,
+    "record": "6-2",
+    "ppg": 26.8,
+    "pa": 20.0,
+    "passOff": 253.9,
+    "rushOff": 150.8,
+    "passDef": 234.6,
+    "rushDef": 86.8,
+    "to": -0.12,
     "ats": "",
     "wk1": true,
     "games": [
@@ -491,6 +491,14 @@
         "teamScore": 30.0,
         "oppScore": 24.0,
         "result": "W"
+      },
+      {
+        "week": "8",
+        "date": "2026-11-02",
+        "opp": "Seattle Seahawks",
+        "teamScore": 34.0,
+        "oppScore": 17.0,
+        "result": "W"
       }
     ],
     "prevPpg": 25.9,
@@ -499,9 +507,9 @@
     "homePpg": 20.8,
     "homePa": 13.0,
     "homeGames": 4,
-    "awayPpg": 32.3,
-    "awayPa": 30.3,
-    "awayGames": 3
+    "awayPpg": 32.8,
+    "awayPa": 27.0,
+    "awayGames": 4
   },
   "San Francisco 49ers": {
     "league": "NFL",
@@ -585,14 +593,14 @@
   },
   "Seattle Seahawks": {
     "league": "NFL",
-    "record": "4-3",
-    "ppg": 24.0,
-    "pa": 17.9,
-    "passOff": 246.6,
-    "rushOff": 113.7,
-    "passDef": 158.0,
-    "rushDef": 89.4,
-    "to": -0.14,
+    "record": "4-4",
+    "ppg": 23.1,
+    "pa": 19.9,
+    "passOff": 239.2,
+    "rushOff": 109.6,
+    "passDef": 169.1,
+    "rushDef": 94.0,
+    "to": -0.12,
     "ats": "",
     "wk1": true,
     "games": [
@@ -651,14 +659,22 @@
         "teamScore": 20.0,
         "oppScore": 3.0,
         "result": "W"
+      },
+      {
+        "week": "8",
+        "date": "2026-11-02",
+        "opp": "Chicago Bears",
+        "teamScore": 17.0,
+        "oppScore": 34.0,
+        "result": "L"
       }
     ],
     "prevPpg": 28.4,
     "prevPa": 17.2,
     "prevTo": 0.3,
-    "homePpg": 23.0,
-    "homePa": 17.0,
-    "homeGames": 4,
+    "homePpg": 21.8,
+    "homePa": 20.4,
+    "homeGames": 5,
     "awayPpg": 25.3,
     "awayPa": 19.0,
     "awayGames": 3
