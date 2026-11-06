@@ -213,12 +213,12 @@ def detect_backup_qb(team_name, league, players, injuries_by_team):
             primary_games, primary = g, n
     if not primary or primary_games < 2:
         return None
-    most_recent, most_recent_key = None, -1
-    for n in qbs:
-        k = most_recent_game_key(players[n])
-        if k > most_recent_key:
-            most_recent_key, most_recent = k, n
-    recency_mismatch = most_recent and most_recent != primary
+    # A backup only counts as "playing now" if he appeared STRICTLY more recently
+    # than the primary. A same-week tie is almost always a garbage-time cameo
+    # (e.g. Kyle Allen's 0-yard appearance the same week Josh Allen played all
+    # game), and used to wrongly knock 5 points off a healthy team.
+    primary_key = most_recent_game_key(players[primary])
+    recency_mismatch = any(most_recent_game_key(players[n]) > primary_key for n in qbs if n != primary)
 
     injury_flag = False
     injury_status = None
