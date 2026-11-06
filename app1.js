@@ -949,12 +949,12 @@ function detectBackupQB(teamName, league){
     if(g>primaryGames){ primaryGames = g; primary = n; }
   });
   if(!primary || primaryGames<2) return null; // too little data to call anyone "the primary" confidently
-  let mostRecent = null, mostRecentKey = -1;
-  qbs.forEach(function(n){
-    const k = mostRecentGameKey(playersCache[n]);
-    if(k>mostRecentKey){ mostRecentKey = k; mostRecent = n; }
-  });
-  const recencyMismatch = mostRecent && mostRecent!==primary;
+  // A backup only counts as "playing now" if he appeared STRICTLY more recently
+  // than the primary. A same-week tie is almost always a garbage-time cameo
+  // (e.g. Kyle Allen's 0-yard appearance the same week Josh Allen played all
+  // game), and used to wrongly knock 5 points off a healthy team.
+  const primaryKey = mostRecentGameKey(playersCache[primary]);
+  const recencyMismatch = qbs.some(function(n){ return n!==primary && mostRecentGameKey(playersCache[n])>primaryKey; });
 
   let injuryFlag = false;
   const teamInjuries = (INJURIES_CACHE[teamName]||[]);
