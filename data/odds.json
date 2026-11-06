@@ -583,9 +583,9 @@
         "aML": -310,
         "bML": 255,
         "aSpread": -7.0,
-        "aSpreadOdds": -105,
+        "aSpreadOdds": -110,
         "bSpread": 7.0,
-        "bSpreadOdds": -115,
+        "bSpreadOdds": -110,
         "total": 50.5,
         "overOdds": -110,
         "underOdds": -110
@@ -8287,7 +8287,7 @@
     "books": [
       {
         "book": "FanDuel",
-        "aML": 198,
+        "aML": 195,
         "bML": -240,
         "aSpread": 6.5,
         "aSpreadOdds": -106,
@@ -8812,10 +8812,10 @@
     "bSpreadOdds": -108,
     "bSpreadOddsBook": "DraftKings",
     "total": 56.5,
-    "overOdds": -110,
-    "overOddsBook": "DraftKings",
-    "underOdds": -102,
-    "underOddsBook": "BetMGM",
+    "overOdds": -108,
+    "overOddsBook": "BetMGM",
+    "underOdds": -110,
+    "underOddsBook": "DraftKings",
     "books": [
       {
         "book": "DraftKings",
@@ -8861,9 +8861,9 @@
         "aSpreadOdds": -110,
         "bSpread": 3.5,
         "bSpreadOdds": -108,
-        "total": 55.5,
-        "overOdds": -115,
-        "underOdds": -102
+        "total": 56.5,
+        "overOdds": -108,
+        "underOdds": -110
       },
       {
         "book": "BetOnline.ag",
