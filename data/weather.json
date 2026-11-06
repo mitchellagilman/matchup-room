@@ -14,7 +14,7 @@
   },
   "Kansas City Chiefs": {
     "windMph": 6,
-    "tempF": 43,
+    "tempF": 53,
     "shortForecast": "Patchy Drizzle",
     "severe": false,
     "dome": false
@@ -39,7 +39,7 @@
   "Washington Commanders": {
     "windMph": 8,
     "tempF": 69,
-    "shortForecast": "Patchy Fog",
+    "shortForecast": "Chance Rain Showers then Partly Sunny",
     "severe": false,
     "dome": false
   },
@@ -69,8 +69,8 @@
   },
   "Chicago Bears": {
     "windMph": 20,
-    "tempF": 41,
-    "shortForecast": "Mostly Cloudy",
+    "tempF": 48,
+    "shortForecast": "Partly Sunny",
     "severe": true,
     "dome": false
   },
