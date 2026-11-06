@@ -692,7 +692,7 @@ function renderParlaysList(elId, parlays){
     const legRows = p.legs.map(function(l){
       return '<div class="history-item"><span><span style="display:block;">'+l.label+'</span><span class="team-meta" style="font-weight:400;">'+(l.gameKey||'')+'</span></span><span>'+(l.oddsPrice>0?'+':'')+l.oddsPrice+'</span></div>';
     }).join('');
-    return '<div class="card" style="background:var(--card-2);margin-bottom:10px;">'
+    return '<div class="card" data-filter-item style="background:var(--card-2);margin-bottom:10px;">'
       + '<div style="display:flex;justify-content:space-between;align-items:center;"><h2 style="margin:0;">'+p.name+' <span class="pill">'+p.legs.length+' legs</span></h2><div style="font-weight:800;color:var(--accent);">'+(p.combinedAmerican.startsWith('-')?'':'')+p.combinedAmerican+'</div></div>'
       + '<div class="note" style="margin:4px 0 8px;">'+p.description+'</div>'
       + legRows
@@ -1200,7 +1200,7 @@ async function renderRecommendedParlays(){
         return '<div class="history-item"><span><span style="display:block;">'+l.label+mark+' '+tag+'</span><span class="team-meta" style="font-weight:400;">'+l.kind+' · '+l.matchup+' · '+Math.round(l.prob*100)+'% est</span></span><span>'+fmtAm(l.odds)+'</span></div>';
       }).join('');
       const statusNote = p.status==='pending' ? '' : ' <span class="pill" style="'+(p.status==='hit'?'background:rgba(51,211,153,0.18);color:#5eead4;':'background:rgba(214,69,69,0.18);color:#f28b7d;')+'">'+p.status.toUpperCase()+'</span>';
-      return '<div class="card" style="background:var(--card-2);margin-bottom:10px;">'
+      return '<div class="card" data-filter-item style="background:var(--card-2);margin-bottom:10px;">'
         + '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><h2 style="margin:0;">#'+p.rank+' '+p.name+' <span class="pill" style="'+strengthPillStyle(p.strength)+'">'+p.strength+'</span>'+statusNote+'</h2><div style="font-weight:800;color:var(--accent);">'+fmtAm(p.combined_odds)+'</div></div>'
         + '<div class="note" style="margin:4px 0 8px;">'+p.legs.length+' legs · avg leg chance '+Math.round(p.avg_prob*100)+'% · all legs hit ≈ '+Math.round(p.combined_prob*100)+'%</div>'
         + legs
