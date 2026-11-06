@@ -857,14 +857,14 @@
   },
   "Jacksonville Jaguars": {
     "league": "NFL",
-    "record": "5-2",
-    "ppg": 28.0,
-    "pa": 15.9,
-    "passOff": 242.6,
-    "rushOff": 122.9,
-    "passDef": 264.3,
-    "rushDef": 77.4,
-    "to": 1.0,
+    "record": "6-2",
+    "ppg": 28.6,
+    "pa": 15.1,
+    "passOff": 242.5,
+    "rushOff": 117.1,
+    "passDef": 238.4,
+    "rushDef": 89.2,
+    "to": 1.12,
     "ats": "",
     "wk1": true,
     "games": [
@@ -923,6 +923,14 @@
         "teamScore": 42.0,
         "oppScore": 7.0,
         "result": "W"
+      },
+      {
+        "week": "9",
+        "date": "2026-11-05",
+        "opp": "Baltimore Ravens",
+        "teamScore": 33.0,
+        "oppScore": 10.0,
+        "result": "W"
       }
     ],
     "prevPpg": 27.9,
@@ -931,9 +939,9 @@
     "homePpg": 32.2,
     "homePa": 14.8,
     "homeGames": 5,
-    "awayPpg": 17.5,
-    "awayPa": 18.5,
-    "awayGames": 2
+    "awayPpg": 22.7,
+    "awayPa": 15.7,
+    "awayGames": 3
   },
   "Los Angeles Chargers": {
     "league": "NFL",
@@ -1273,14 +1281,14 @@
   },
   "Baltimore Ravens": {
     "league": "NFL",
-    "record": "4-4",
-    "ppg": 22.4,
-    "pa": 25.4,
-    "passOff": 223.1,
-    "rushOff": 133.5,
+    "record": "4-5",
+    "ppg": 21.0,
+    "pa": 26.2,
+    "passOff": 204.7,
+    "rushOff": 137.8,
     "passDef": 241.9,
-    "rushDef": 102.8,
-    "to": 0.0,
+    "rushDef": 99.9,
+    "to": -0.11,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1347,14 +1355,22 @@
         "teamScore": 10.0,
         "oppScore": 36.0,
         "result": "L"
+      },
+      {
+        "week": "9",
+        "date": "2026-11-05",
+        "opp": "Jacksonville Jaguars",
+        "teamScore": 10.0,
+        "oppScore": 33.0,
+        "result": "L"
       }
     ],
     "prevPpg": 24.9,
     "prevPa": 23.4,
     "prevTo": -0.12,
-    "homePpg": 18.0,
-    "homePa": 25.7,
-    "homeGames": 3,
+    "homePpg": 16.0,
+    "homePa": 27.5,
+    "homeGames": 4,
     "awayPpg": 25.0,
     "awayPa": 25.2,
     "awayGames": 5

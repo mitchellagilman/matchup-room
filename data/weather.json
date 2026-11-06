@@ -1,18 +1,11 @@
 {
-  "Baltimore Ravens": {
-    "windMph": 7,
-    "tempF": 71,
-    "shortForecast": "Patchy Fog then Mostly Sunny",
-    "severe": false,
-    "dome": false
-  },
   "Atlanta Falcons": {
     "dome": true
   },
   "Carolina Panthers": {
-    "windMph": 7,
-    "tempF": 77,
-    "shortForecast": "Sunny",
+    "windMph": 6,
+    "tempF": 73,
+    "shortForecast": "Patchy Fog then Partly Sunny",
     "severe": false,
     "dome": false
   },
@@ -20,16 +13,16 @@
     "dome": true
   },
   "Kansas City Chiefs": {
-    "windMph": 14,
-    "tempF": 70,
-    "shortForecast": "Showers And Thunderstorms Likely",
+    "windMph": 6,
+    "tempF": 43,
+    "shortForecast": "Patchy Drizzle",
     "severe": false,
     "dome": false
   },
   "Miami Dolphins": {
-    "windMph": 13,
-    "tempF": 84,
-    "shortForecast": "Showers And Thunderstorms Likely",
+    "windMph": 7,
+    "tempF": 85,
+    "shortForecast": "Sunny",
     "severe": false,
     "dome": false
   },
@@ -38,15 +31,15 @@
   },
   "Philadelphia Eagles": {
     "windMph": 5,
-    "tempF": 71,
-    "shortForecast": "Mostly Sunny",
+    "tempF": 69,
+    "shortForecast": "Rain",
     "severe": false,
     "dome": false
   },
   "Washington Commanders": {
-    "windMph": 7,
-    "tempF": 71,
-    "shortForecast": "Patchy Fog then Mostly Sunny",
+    "windMph": 8,
+    "tempF": 69,
+    "shortForecast": "Patchy Fog",
     "severe": false,
     "dome": false
   },
@@ -54,30 +47,30 @@
     "dome": true
   },
   "San Francisco 49ers": {
-    "windMph": 6,
+    "windMph": 1,
     "tempF": 47,
-    "shortForecast": "Mostly Cloudy",
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },
   "New England Patriots": {
-    "windMph": 5,
-    "tempF": 72,
-    "shortForecast": "Mostly Sunny",
+    "windMph": 6,
+    "tempF": 68,
+    "shortForecast": "Patchy Fog then Rain",
     "severe": false,
     "dome": false
   },
   "Seattle Seahawks": {
-    "windMph": 2,
-    "tempF": 47,
-    "shortForecast": "Cloudy",
+    "windMph": 6,
+    "tempF": 49,
+    "shortForecast": "Light Rain Likely",
     "severe": false,
     "dome": false
   },
   "Chicago Bears": {
-    "windMph": 25,
-    "tempF": 70,
-    "shortForecast": "Mostly Cloudy then Chance Rain Showers",
+    "windMph": 20,
+    "tempF": 41,
+    "shortForecast": "Mostly Cloudy",
     "severe": true,
     "dome": false
   },
