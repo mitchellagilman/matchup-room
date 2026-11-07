@@ -2871,8 +2871,8 @@
       "_away": "New Mexico",
       "_home": "Nevada",
       "date_logged": "2026-11-02",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-07"
     },
     {
       "id": "BPG|CFB|2026-11-07|TCU vs Arizona|team",
@@ -2892,8 +2892,8 @@
       "_away": "TCU",
       "_home": "Arizona",
       "date_logged": "2026-11-02",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-07"
     },
     {
       "id": "BPG|CFB|2026-11-07|BYU vs Utah|team",
@@ -3262,8 +3262,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202609,
       "date_logged": "2026-11-02",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-07"
     },
     {
       "id": "BPG|CFB|2026-11-07|Texas vs Missouri|prop",
@@ -3490,8 +3490,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202608,
       "date_logged": "2026-11-02",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-07"
     },
     {
       "id": "BPG|NFL|2026-11-05|Jacksonville Jaguars vs Baltimore Ravens|team",
@@ -4094,6 +4094,6 @@
       "graded_date": null
     }
   ],
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "version": 2
 }

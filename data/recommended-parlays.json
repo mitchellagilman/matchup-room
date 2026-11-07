@@ -695,7 +695,7 @@
           "direction": "over",
           "_away": "New Mexico",
           "_home": "Nevada",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "CFB",
             "type": "total",
@@ -711,10 +711,11 @@
       "combined_odds": 638,
       "strength": "Medium",
       "date_logged": "2026-11-02",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-07",
       "rank": 3,
-      "id": "PAR|CFB|CFB Week 11|totals|Totals A"
+      "id": "PAR|CFB|CFB Week 11|totals|Totals A",
+      "profit_units": -1.0
     },
     {
       "league": "CFB",
@@ -1330,5 +1331,5 @@
       "id": "PAR|NFL|NFL Week 9|totals|Totals B"
     }
   ],
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
 }

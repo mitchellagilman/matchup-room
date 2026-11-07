@@ -2,17 +2,16 @@
   {
     "a": "New Mexico",
     "b": "Nevada",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 31,
+    "homeScore": 3
   },
   {
     "a": "TCU",
     "b": "Arizona",
-    "date": "2026-11-07"
-  },
-  {
-    "a": "BYU",
-    "b": "Utah",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 28,
+    "homeScore": 29
   },
   {
     "a": "UCLA",
@@ -25,13 +24,13 @@
     "date": "2026-11-07"
   },
   {
-    "a": "Texas A&M",
-    "b": "South Carolina",
+    "a": "BYU",
+    "b": "Utah",
     "date": "2026-11-07"
   },
   {
-    "a": "Cincinnati",
-    "b": "Houston",
+    "a": "Texas A&M",
+    "b": "South Carolina",
     "date": "2026-11-07"
   },
   {
@@ -40,13 +39,18 @@
     "date": "2026-11-07"
   },
   {
-    "a": "Alabama",
-    "b": "LSU",
+    "a": "Oregon",
+    "b": "Ohio State",
     "date": "2026-11-07"
   },
   {
-    "a": "Oregon",
-    "b": "Ohio State",
+    "a": "Cincinnati",
+    "b": "Houston",
+    "date": "2026-11-07"
+  },
+  {
+    "a": "Alabama",
+    "b": "LSU",
     "date": "2026-11-07"
   },
   {
@@ -60,8 +64,8 @@
     "date": "2026-11-07"
   },
   {
-    "a": "Miami",
-    "b": "Notre Dame",
+    "a": "Iowa",
+    "b": "Northwestern",
     "date": "2026-11-08"
   },
   {
@@ -70,8 +74,8 @@
     "date": "2026-11-08"
   },
   {
-    "a": "Iowa",
-    "b": "Northwestern",
+    "a": "Miami",
+    "b": "Notre Dame",
     "date": "2026-11-08"
   },
   {

@@ -3,9 +3,9 @@
     "dome": true
   },
   "Carolina Panthers": {
-    "windMph": 6,
-    "tempF": 73,
-    "shortForecast": "Patchy Fog then Partly Sunny",
+    "windMph": 8,
+    "tempF": 65,
+    "shortForecast": "Sunny",
     "severe": false,
     "dome": false
   },
@@ -13,16 +13,16 @@
     "dome": true
   },
   "Kansas City Chiefs": {
-    "windMph": 6,
-    "tempF": 53,
-    "shortForecast": "Patchy Drizzle",
+    "windMph": 2,
+    "tempF": 37,
+    "shortForecast": "Cloudy",
     "severe": false,
     "dome": false
   },
   "Miami Dolphins": {
     "windMph": 7,
-    "tempF": 85,
-    "shortForecast": "Sunny",
+    "tempF": 86,
+    "shortForecast": "Sunny then Slight Chance Rain Showers",
     "severe": false,
     "dome": false
   },
@@ -30,16 +30,16 @@
     "dome": true
   },
   "Philadelphia Eagles": {
-    "windMph": 5,
-    "tempF": 69,
-    "shortForecast": "Rain",
+    "windMph": 15,
+    "tempF": 58,
+    "shortForecast": "Mostly Sunny",
     "severe": false,
     "dome": false
   },
   "Washington Commanders": {
-    "windMph": 8,
-    "tempF": 69,
-    "shortForecast": "Chance Rain Showers then Partly Sunny",
+    "windMph": 18,
+    "tempF": 59,
+    "shortForecast": "Mostly Sunny",
     "severe": false,
     "dome": false
   },
@@ -47,31 +47,31 @@
     "dome": true
   },
   "San Francisco 49ers": {
-    "windMph": 1,
-    "tempF": 47,
-    "shortForecast": "Partly Cloudy",
+    "windMph": 2,
+    "tempF": 48,
+    "shortForecast": "Mostly Clear",
     "severe": false,
     "dome": false
   },
   "New England Patriots": {
-    "windMph": 6,
-    "tempF": 68,
-    "shortForecast": "Patchy Fog then Rain",
+    "windMph": 5,
+    "tempF": 64,
+    "shortForecast": "Rain Showers",
     "severe": false,
     "dome": false
   },
   "Seattle Seahawks": {
-    "windMph": 6,
-    "tempF": 49,
-    "shortForecast": "Cloudy then Light Rain Likely",
+    "windMph": 3,
+    "tempF": 50,
+    "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
   },
   "Chicago Bears": {
-    "windMph": 20,
-    "tempF": 48,
-    "shortForecast": "Partly Sunny",
-    "severe": true,
+    "windMph": 10,
+    "tempF": 38,
+    "shortForecast": "Mostly Clear",
+    "severe": false,
     "dome": false
   },
   "Minnesota Vikings": {

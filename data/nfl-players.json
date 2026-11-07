@@ -28426,96 +28426,6 @@
     "_id": "00-0038409",
     "teamYear": 2026
   },
-  "Zavier Scott": {
-    "pos": "RB",
-    "team": "Chicago Bears",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk3",
-        "opp": "vs CIN",
-        "passYds": 0.0,
-        "rushYds": 30.0,
-        "receptions": 1,
-        "recYds": 20.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk4",
-        "opp": "vs PIT",
-        "passYds": 0.0,
-        "rushYds": 1.0,
-        "receptions": 6,
-        "recYds": 43.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk5",
-        "opp": "vs CLE",
-        "passYds": 0.0,
-        "rushYds": 18.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk7",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 4.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk8",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 16.0,
-        "receptions": 2,
-        "recYds": 8.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk13",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 17.0,
-        "receptions": 1,
-        "recYds": 4.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 15.0,
-        "receptions": 1,
-        "recYds": 5.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs NYG",
-        "passYds": 0.0,
-        "rushYds": 4.0,
-        "receptions": 1,
-        "recYds": 8.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs GB",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 1,
-        "recYds": 8.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0038440",
-    "teamYear": 2026
-  },
   "Savion Williams": {
     "pos": "WR",
     "team": "Green Bay Packers",
@@ -32125,14 +32035,6 @@
     "_id": "00-0040729",
     "teamYear": 2026
   },
-  "Carsen Ryan": {
-    "pos": "TE",
-    "team": "Cleveland Browns",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0041131",
-    "teamYear": 2026
-  },
   "Stephen Carlson": {
     "pos": "TE",
     "team": "Chicago Bears",
@@ -34254,14 +34156,6 @@
     "_id": "00-0038839",
     "teamYear": 2026
   },
-  "Jake Haener": {
-    "pos": "QB",
-    "team": "New York Giants",
-    "league": "NFL",
-    "games": [],
-    "_id": "00-0038998",
-    "teamYear": 2026
-  },
   "Ja'Tavion Sanders": {
     "pos": "TE",
     "team": "Carolina Panthers",
@@ -34989,24 +34883,6 @@
     "_id": "00-0040390",
     "teamYear": 2026
   },
-  "Carter Runyon": {
-    "pos": "TE",
-    "team": "Las Vegas Raiders",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk7",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 3.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0040488",
-    "teamYear": 2026
-  },
   "Max Brosmer": {
     "pos": "QB",
     "team": "Minnesota Vikings",
@@ -35595,6 +35471,87 @@
     "league": "NFL",
     "games": [],
     "_id": "00-0041568",
+    "teamYear": 2026
+  },
+  "Cody White": {
+    "pos": "WR",
+    "team": "Las Vegas Raiders",
+    "league": "NFL",
+    "games": [
+      {
+        "date": "2025-wk9",
+        "opp": "vs WAS",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 60.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2025-wk13",
+        "opp": "vs MIN",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 21.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk14",
+        "opp": "vs ATL",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 9.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk2",
+        "opp": "vs LAC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 24.0,
+        "tds": 2.0
+      },
+      {
+        "date": "2026-wk3",
+        "opp": "vs NO",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 4.0,
+        "tds": 1.0
+      },
+      {
+        "date": "2026-wk4",
+        "opp": "vs KC",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 36.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk5",
+        "opp": "vs NE",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 2,
+        "recYds": 44.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2026-wk7",
+        "opp": "vs LA",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 4.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0035891",
     "teamYear": 2026
   }
 }
