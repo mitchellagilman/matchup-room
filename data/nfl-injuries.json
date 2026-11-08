@@ -94,7 +94,7 @@
       "name": "Cameron Williams",
       "pos": "T",
       "injury": "Ankle",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0040687"
     },
     {
@@ -144,6 +144,54 @@
       "injury": "Neck",
       "status": "Questionable",
       "_id": "00-0040888"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Dion Dawkins",
+      "pos": "T",
+      "injury": "Rib",
+      "status": "Questionable",
+      "_id": "00-0033904"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Greg Gaines",
+      "pos": "DT",
+      "injury": "Calf",
+      "status": "Questionable",
+      "_id": "00-0035667"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Josh Palmer",
+      "pos": "WR",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0036988"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Alec Anderson",
+      "pos": "G",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0037428"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Tyrell Shavers",
+      "pos": "WR",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0038679"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Jordan Hancock",
+      "pos": "CB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0040192"
     },
     {
       "team": "Carolina Panthers",
@@ -506,6 +554,22 @@
       "_id": "00-0039819"
     },
     {
+      "team": "Houston Texans",
+      "name": "David Montgomery",
+      "pos": "RB",
+      "injury": "Groin",
+      "status": "Out",
+      "_id": "00-0035685"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Reed Blankenship",
+      "pos": "S",
+      "injury": "Concussion",
+      "status": "Out",
+      "_id": "00-0037130"
+    },
+    {
       "team": "Indianapolis Colts",
       "name": "Akeem Davis-Gaither",
       "pos": "LB",
@@ -534,7 +598,7 @@
       "name": "A.J. Haulcy",
       "pos": "S",
       "injury": "Ankle",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0041043"
     },
     {
@@ -738,11 +802,51 @@
       "_id": "00-0041096"
     },
     {
+      "team": "Minnesota Vikings",
+      "name": "Kyler Murray",
+      "pos": "QB",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0035228"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Jauan Jennings",
+      "pos": "WR",
+      "injury": "Calf",
+      "status": "Out",
+      "_id": "00-0036259"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Theo Jackson",
+      "pos": "S",
+      "injury": "Quadricep",
+      "status": "Questionable",
+      "_id": "00-0037301"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Jay Ward",
+      "pos": "S",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0038578"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Demond Claiborne",
+      "pos": "RB",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0041104"
+    },
+    {
       "team": "New England Patriots",
       "name": "Greg Van Roten",
       "pos": "G",
       "injury": "Hamstring",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0029685"
     },
     {
@@ -878,7 +982,7 @@
       "name": "Joseph Ossai",
       "pos": "DE",
       "injury": "Ankle",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0036902"
     },
     {
@@ -886,7 +990,7 @@
       "name": "Nahshon Wright",
       "pos": "CB",
       "injury": "Back",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0036986"
     },
     {
@@ -910,7 +1014,7 @@
       "name": "VJ Payne",
       "pos": "S",
       "injury": "Knee",
-      "status": "Questionable",
+      "status": "Out",
       "_id": "00-0041120"
     },
     {

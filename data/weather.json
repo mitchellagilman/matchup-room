@@ -2,27 +2,20 @@
   "Atlanta Falcons": {
     "dome": true
   },
-  "Carolina Panthers": {
-    "windMph": 8,
-    "tempF": 65,
-    "shortForecast": "Sunny",
-    "severe": false,
-    "dome": false
-  },
   "Indianapolis Colts": {
     "dome": true
   },
   "Kansas City Chiefs": {
-    "windMph": 2,
-    "tempF": 37,
-    "shortForecast": "Cloudy",
+    "windMph": 5,
+    "tempF": 38,
+    "shortForecast": "Mostly Clear",
     "severe": false,
     "dome": false
   },
   "Miami Dolphins": {
     "windMph": 7,
-    "tempF": 86,
-    "shortForecast": "Sunny then Slight Chance Rain Showers",
+    "tempF": 84,
+    "shortForecast": "Sunny",
     "severe": false,
     "dome": false
   },
@@ -30,16 +23,16 @@
     "dome": true
   },
   "Philadelphia Eagles": {
-    "windMph": 15,
-    "tempF": 58,
-    "shortForecast": "Mostly Sunny",
+    "windMph": 10,
+    "tempF": 61,
+    "shortForecast": "Sunny",
     "severe": false,
     "dome": false
   },
   "Washington Commanders": {
-    "windMph": 18,
-    "tempF": 59,
-    "shortForecast": "Mostly Sunny",
+    "windMph": 13,
+    "tempF": 63,
+    "shortForecast": "Sunny",
     "severe": false,
     "dome": false
   },
@@ -48,29 +41,29 @@
   },
   "San Francisco 49ers": {
     "windMph": 2,
-    "tempF": 48,
-    "shortForecast": "Mostly Clear",
+    "tempF": 49,
+    "shortForecast": "Patchy Fog",
     "severe": false,
     "dome": false
   },
   "New England Patriots": {
-    "windMph": 5,
-    "tempF": 64,
-    "shortForecast": "Rain Showers",
+    "windMph": 12,
+    "tempF": 58,
+    "shortForecast": "Mostly Sunny",
     "severe": false,
     "dome": false
   },
   "Seattle Seahawks": {
-    "windMph": 3,
-    "tempF": 50,
-    "shortForecast": "Mostly Cloudy",
-    "severe": false,
+    "windMph": 18,
+    "tempF": 52,
+    "shortForecast": "Light Rain Likely",
+    "severe": true,
     "dome": false
   },
   "Chicago Bears": {
-    "windMph": 10,
-    "tempF": 38,
-    "shortForecast": "Mostly Clear",
+    "windMph": 15,
+    "tempF": 40,
+    "shortForecast": "Partly Cloudy",
     "severe": false,
     "dome": false
   },

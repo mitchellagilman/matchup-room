@@ -14,78 +14,108 @@
     "homeScore": 29
   },
   {
-    "a": "UCLA",
-    "b": "Minnesota",
-    "date": "2026-11-07"
-  },
-  {
     "a": "Texas",
     "b": "Missouri",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 34,
+    "homeScore": 20
   },
   {
     "a": "BYU",
     "b": "Utah",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 20,
+    "homeScore": 28
+  },
+  {
+    "a": "UCLA",
+    "b": "Minnesota",
+    "date": "2026-11-07",
+    "awayScore": 34,
+    "homeScore": 20
   },
   {
     "a": "Texas A&M",
     "b": "South Carolina",
-    "date": "2026-11-07"
-  },
-  {
-    "a": "Merrimack",
-    "b": "Wake Forest",
-    "date": "2026-11-07"
-  },
-  {
-    "a": "Oregon",
-    "b": "Ohio State",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 9,
+    "homeScore": 17
   },
   {
     "a": "Cincinnati",
     "b": "Houston",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 24,
+    "homeScore": 31
   },
   {
     "a": "Alabama",
     "b": "LSU",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 31,
+    "homeScore": 13
+  },
+  {
+    "a": "Merrimack",
+    "b": "Wake Forest",
+    "date": "2026-11-07",
+    "awayScore": 0,
+    "homeScore": 77
+  },
+  {
+    "a": "Oregon",
+    "b": "Ohio State",
+    "date": "2026-11-07",
+    "awayScore": 41,
+    "homeScore": 28
   },
   {
     "a": "Boise State",
     "b": "Colorado State",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 64,
+    "homeScore": 38
   },
   {
     "a": "Kentucky",
     "b": "Tennessee",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "awayScore": 6,
+    "homeScore": 34
   },
   {
     "a": "Iowa",
     "b": "Northwestern",
-    "date": "2026-11-08"
-  },
-  {
-    "a": "Georgia",
-    "b": "Ole Miss",
-    "date": "2026-11-08"
+    "date": "2026-11-08",
+    "awayScore": 24,
+    "homeScore": 10
   },
   {
     "a": "Miami",
     "b": "Notre Dame",
-    "date": "2026-11-08"
+    "date": "2026-11-08",
+    "awayScore": 24,
+    "homeScore": 31
+  },
+  {
+    "a": "Georgia",
+    "b": "Ole Miss",
+    "date": "2026-11-08",
+    "awayScore": 42,
+    "homeScore": 7
   },
   {
     "a": "Oklahoma",
     "b": "Florida",
-    "date": "2026-11-08"
+    "date": "2026-11-08",
+    "awayScore": 23,
+    "homeScore": 7
   },
   {
     "a": "West Virginia",
     "b": "Texas Tech",
-    "date": "2026-11-08"
+    "date": "2026-11-08",
+    "awayScore": 48,
+    "homeScore": 53
   }
 ]
