@@ -96,8 +96,8 @@
     "awayPpg": 35.5,
     "awayPa": 19.8,
     "awayGames": 4,
-    "spPlus": 20.9,
-    "srs": 23.6
+    "spPlus": 22.7,
+    "srs": 26.3
   },
   "Arkansas": {
     "league": "CFB",
@@ -106,11 +106,11 @@
     "record": "3-6",
     "ppg": 20.0,
     "pa": 27.4,
-    "passOff": 226.3,
+    "passOff": 225.4,
     "rushOff": 112.4,
     "passDef": 205.6,
     "rushDef": 156.4,
-    "to": -0.33,
+    "to": -0.44,
     "ats": "",
     "wk1": true,
     "games": [
@@ -196,8 +196,8 @@
     "awayPpg": 17.8,
     "awayPa": 31.0,
     "awayGames": 4,
-    "spPlus": -0.4,
-    "srs": -1.4
+    "spPlus": -3.6,
+    "srs": 0.4
   },
   "Auburn": {
     "league": "CFB",
@@ -208,9 +208,9 @@
     "pa": 26.3,
     "passOff": 211.4,
     "rushOff": 156.1,
-    "passDef": 245.1,
+    "passDef": 244.2,
     "rushDef": 157.7,
-    "to": 0.22,
+    "to": 0.33,
     "ats": "",
     "wk1": true,
     "games": [
@@ -296,8 +296,8 @@
     "awayPpg": 18.7,
     "awayPa": 31.0,
     "awayGames": 3,
-    "spPlus": 6.5,
-    "srs": 8.0
+    "spPlus": 2.8,
+    "srs": 6.9
   },
   "Florida": {
     "league": "CFB",
@@ -396,8 +396,8 @@
     "awayPpg": 24.0,
     "awayPa": 33.8,
     "awayGames": 4,
-    "spPlus": 10.6,
-    "srs": 13.4
+    "spPlus": 5.9,
+    "srs": 11.0
   },
   "Georgia": {
     "league": "CFB",
@@ -496,8 +496,8 @@
     "awayPpg": 35.7,
     "awayPa": 13.7,
     "awayGames": 3,
-    "spPlus": 27.1,
-    "srs": 20.9
+    "spPlus": 31.3,
+    "srs": 24.1
   },
   "Kentucky": {
     "league": "CFB",
@@ -596,8 +596,8 @@
     "awayPpg": 23.2,
     "awayPa": 25.5,
     "awayGames": 4,
-    "spPlus": 10.6,
-    "srs": 15.0
+    "spPlus": 8.3,
+    "srs": 13.0
   },
   "LSU": {
     "league": "CFB",
@@ -696,8 +696,8 @@
     "awayPpg": 32.0,
     "awayPa": 28.0,
     "awayGames": 3,
-    "spPlus": 25.2,
-    "srs": 25.9
+    "spPlus": 22.9,
+    "srs": 23.1
   },
   "Mississippi State": {
     "league": "CFB",
@@ -796,8 +796,8 @@
     "awayPpg": 20.5,
     "awayPa": 27.2,
     "awayGames": 4,
-    "spPlus": 6.0,
-    "srs": 7.5
+    "spPlus": 3.8,
+    "srs": 6.3
   },
   "Missouri": {
     "league": "CFB",
@@ -809,7 +809,7 @@
     "passOff": 254.7,
     "rushOff": 160.7,
     "passDef": 234.4,
-    "rushDef": 96.1,
+    "rushDef": 99.2,
     "to": 1.0,
     "ats": "",
     "wk1": true,
@@ -896,8 +896,8 @@
     "awayPpg": 24.8,
     "awayPa": 23.2,
     "awayGames": 4,
-    "spPlus": 14.2,
-    "srs": 14.7
+    "spPlus": 13.7,
+    "srs": 12.4
   },
   "Oklahoma": {
     "league": "CFB",
@@ -996,8 +996,8 @@
     "awayPpg": 17.2,
     "awayPa": 20.0,
     "awayGames": 4,
-    "spPlus": 10.3,
-    "srs": 6.4
+    "spPlus": 7.8,
+    "srs": 9.3
   },
   "Ole Miss": {
     "league": "CFB",
@@ -1096,8 +1096,8 @@
     "awayPpg": 35.7,
     "awayPa": 34.3,
     "awayGames": 3,
-    "spPlus": 14.7,
-    "srs": 20.6
+    "spPlus": 13.5,
+    "srs": 17.1
   },
   "South Carolina": {
     "league": "CFB",
@@ -1196,8 +1196,8 @@
     "awayPpg": 32.7,
     "awayPa": 31.0,
     "awayGames": 3,
-    "spPlus": 11.0,
-    "srs": 11.1
+    "spPlus": 13.7,
+    "srs": 11.9
   },
   "Tennessee": {
     "league": "CFB",
@@ -1296,8 +1296,8 @@
     "awayPpg": 31.0,
     "awayPa": 22.7,
     "awayGames": 3,
-    "spPlus": 17.9,
-    "srs": 16.6
+    "spPlus": 20.5,
+    "srs": 19.6
   },
   "Texas": {
     "league": "CFB",
@@ -1307,7 +1307,7 @@
     "ppg": 31.1,
     "pa": 17.4,
     "passOff": 232.2,
-    "rushOff": 127.8,
+    "rushOff": 130.9,
     "passDef": 179.8,
     "rushDef": 100.3,
     "to": -0.44,
@@ -1396,8 +1396,8 @@
     "awayPpg": 26.0,
     "awayPa": 21.3,
     "awayGames": 3,
-    "spPlus": 20.4,
-    "srs": 20.9
+    "spPlus": 23.5,
+    "srs": 21.4
   },
   "Texas A&M": {
     "league": "CFB",
@@ -1496,8 +1496,8 @@
     "awayPpg": 10.2,
     "awayPa": 27.5,
     "awayGames": 4,
-    "spPlus": 9.7,
-    "srs": 9.9
+    "spPlus": 8.3,
+    "srs": 9.1
   },
   "Vanderbilt": {
     "league": "CFB",
@@ -1596,8 +1596,8 @@
     "awayPpg": 17.8,
     "awayPa": 29.0,
     "awayGames": 4,
-    "spPlus": -1.4,
-    "srs": -2.7
+    "spPlus": -1.5,
+    "srs": -1.6
   },
   "Illinois": {
     "league": "CFB",
@@ -1696,8 +1696,8 @@
     "awayPpg": 25.7,
     "awayPa": 32.0,
     "awayGames": 3,
-    "spPlus": 6.8,
-    "srs": 4.6
+    "spPlus": 8.0,
+    "srs": 6.9
   },
   "Indiana": {
     "league": "CFB",
@@ -1796,8 +1796,8 @@
     "awayPpg": 26.7,
     "awayPa": 12.7,
     "awayGames": 3,
-    "spPlus": 24.2,
-    "srs": 16.3
+    "spPlus": 23.5,
+    "srs": 15.5
   },
   "Iowa": {
     "league": "CFB",
@@ -1896,8 +1896,8 @@
     "awayPpg": 23.8,
     "awayPa": 16.5,
     "awayGames": 4,
-    "spPlus": 12.4,
-    "srs": 14.3
+    "spPlus": 16.4,
+    "srs": 15.2
   },
   "Maryland": {
     "league": "CFB",
@@ -1997,7 +1997,7 @@
     "awayPa": 34.0,
     "awayGames": 4,
     "spPlus": -2.1,
-    "srs": -4.7
+    "srs": -3.3
   },
   "Michigan": {
     "league": "CFB",
@@ -2096,8 +2096,8 @@
     "awayPpg": 21.0,
     "awayPa": 20.5,
     "awayGames": 2,
-    "spPlus": 11.5,
-    "srs": 5.0
+    "spPlus": 10.0,
+    "srs": 3.6
   },
   "Michigan State": {
     "league": "CFB",
@@ -2196,8 +2196,8 @@
     "awayPpg": 9.5,
     "awayPa": 23.0,
     "awayGames": 4,
-    "spPlus": -3.0,
-    "srs": 1.3
+    "spPlus": -2.4,
+    "srs": 2.5
   },
   "Minnesota": {
     "league": "CFB",
@@ -2296,8 +2296,8 @@
     "awayPpg": 18.7,
     "awayPa": 29.3,
     "awayGames": 3,
-    "spPlus": 3.9,
-    "srs": 3.4
+    "spPlus": 1.3,
+    "srs": 2.3
   },
   "Nebraska": {
     "league": "CFB",
@@ -2396,8 +2396,8 @@
     "awayPpg": 19.3,
     "awayPa": 18.0,
     "awayGames": 3,
-    "spPlus": 15.4,
-    "srs": 12.8
+    "spPlus": 14.4,
+    "srs": 11.6
   },
   "Northwestern": {
     "league": "CFB",
@@ -2496,8 +2496,8 @@
     "awayPpg": 24.3,
     "awayPa": 28.0,
     "awayGames": 3,
-    "spPlus": 13.7,
-    "srs": 14.3
+    "spPlus": 12.4,
+    "srs": 12.7
   },
   "Ohio State": {
     "league": "CFB",
@@ -2596,8 +2596,8 @@
     "awayPpg": 22.8,
     "awayPa": 20.8,
     "awayGames": 4,
-    "spPlus": 28.6,
-    "srs": 18.7
+    "spPlus": 24.0,
+    "srs": 17.1
   },
   "Oregon": {
     "league": "CFB",
@@ -2696,8 +2696,8 @@
     "awayPpg": 30.8,
     "awayPa": 28.8,
     "awayGames": 4,
-    "spPlus": 17.0,
-    "srs": 14.1
+    "spPlus": 16.9,
+    "srs": 16.5
   },
   "Penn State": {
     "league": "CFB",
@@ -2797,7 +2797,7 @@
     "awayPa": 22.2,
     "awayGames": 4,
     "spPlus": 9.3,
-    "srs": 6.8
+    "srs": 6.4
   },
   "Purdue": {
     "league": "CFB",
@@ -2896,8 +2896,8 @@
     "awayPpg": 26.3,
     "awayPa": 33.3,
     "awayGames": 3,
-    "spPlus": 0.2,
-    "srs": 4.0
+    "spPlus": -2.4,
+    "srs": 2.1
   },
   "Rutgers": {
     "league": "CFB",
@@ -2996,8 +2996,8 @@
     "awayPpg": 20.5,
     "awayPa": 32.8,
     "awayGames": 4,
-    "spPlus": -4.9,
-    "srs": -7.6
+    "spPlus": -9.2,
+    "srs": -8.3
   },
   "UCLA": {
     "league": "CFB",
@@ -3096,8 +3096,8 @@
     "awayPpg": 37.5,
     "awayPa": 15.5,
     "awayGames": 4,
-    "spPlus": 14.4,
-    "srs": 16.1
+    "spPlus": 20.2,
+    "srs": 16.6
   },
   "USC": {
     "league": "CFB",
@@ -3196,8 +3196,8 @@
     "awayPpg": 26.7,
     "awayPa": 27.3,
     "awayGames": 3,
-    "spPlus": 14.2,
-    "srs": 10.5
+    "spPlus": 15.8,
+    "srs": 10.1
   },
   "Washington": {
     "league": "CFB",
@@ -3296,8 +3296,8 @@
     "awayPpg": 25.3,
     "awayPa": 20.3,
     "awayGames": 3,
-    "spPlus": 9.5,
-    "srs": 5.3
+    "spPlus": 8.9,
+    "srs": 4.2
   },
   "Wisconsin": {
     "league": "CFB",
@@ -3396,8 +3396,8 @@
     "awayPpg": 11.0,
     "awayPa": 27.0,
     "awayGames": 4,
-    "spPlus": 8.7,
-    "srs": 8.1
+    "spPlus": 9.1,
+    "srs": 8.5
   },
   "Arizona": {
     "league": "CFB",
@@ -3496,8 +3496,8 @@
     "awayPpg": 32.2,
     "awayPa": 29.2,
     "awayGames": 4,
-    "spPlus": 16.0,
-    "srs": 14.3
+    "spPlus": 15.4,
+    "srs": 13.7
   },
   "Arizona State": {
     "league": "CFB",
@@ -3509,7 +3509,7 @@
     "passOff": 248.2,
     "rushOff": 136.7,
     "passDef": 219.6,
-    "rushDef": 124.9,
+    "rushDef": 126.2,
     "to": -0.22,
     "ats": "",
     "wk1": true,
@@ -3596,8 +3596,8 @@
     "awayPpg": 22.2,
     "awayPa": 36.2,
     "awayGames": 4,
-    "spPlus": 2.3,
-    "srs": 0.2
+    "spPlus": 1.9,
+    "srs": 0.3
   },
   "Baylor": {
     "league": "CFB",
@@ -3696,8 +3696,8 @@
     "awayPpg": 34.0,
     "awayPa": 17.5,
     "awayGames": 4,
-    "spPlus": 8.5,
-    "srs": 11.1
+    "spPlus": 13.3,
+    "srs": 11.8
   },
   "BYU": {
     "league": "CFB",
@@ -3709,7 +3709,7 @@
     "passOff": 228.0,
     "rushOff": 169.1,
     "passDef": 199.6,
-    "rushDef": 102.6,
+    "rushDef": 102.7,
     "to": -0.11,
     "ats": "",
     "wk1": true,
@@ -3796,8 +3796,8 @@
     "awayPpg": 27.2,
     "awayPa": 25.0,
     "awayGames": 4,
-    "spPlus": 16.7,
-    "srs": 14.1
+    "spPlus": 16.2,
+    "srs": 14.5
   },
   "Cincinnati": {
     "league": "CFB",
@@ -3896,8 +3896,8 @@
     "awayPpg": 24.3,
     "awayPa": 36.7,
     "awayGames": 3,
-    "spPlus": 6.7,
-    "srs": 4.9
+    "spPlus": 3.0,
+    "srs": 5.3
   },
   "Colorado": {
     "league": "CFB",
@@ -3907,7 +3907,7 @@
     "ppg": 19.8,
     "pa": 28.3,
     "passOff": 255.4,
-    "rushOff": 130.2,
+    "rushOff": 131.6,
     "passDef": 243.1,
     "rushDef": 133.9,
     "to": -1.22,
@@ -3996,8 +3996,8 @@
     "awayPpg": 13.6,
     "awayPa": 30.8,
     "awayGames": 5,
-    "spPlus": -4.3,
-    "srs": -1.8
+    "spPlus": -5.2,
+    "srs": -2.6
   },
   "Houston": {
     "league": "CFB",
@@ -4096,8 +4096,8 @@
     "awayPpg": 29.0,
     "awayPa": 23.2,
     "awayGames": 4,
-    "spPlus": 13.3,
-    "srs": 16.3
+    "spPlus": 14.1,
+    "srs": 15.5
   },
   "Iowa State": {
     "league": "CFB",
@@ -4196,8 +4196,8 @@
     "awayPpg": 14.2,
     "awayPa": 30.2,
     "awayGames": 4,
-    "spPlus": -1.2,
-    "srs": 4.4
+    "spPlus": -2.3,
+    "srs": 4.9
   },
   "Kansas": {
     "league": "CFB",
@@ -4207,7 +4207,7 @@
     "ppg": 29.4,
     "pa": 24.8,
     "passOff": 240.2,
-    "rushOff": 200.9,
+    "rushOff": 201.3,
     "passDef": 186.0,
     "rushDef": 157.8,
     "to": -0.56,
@@ -4296,8 +4296,8 @@
     "awayPpg": 21.3,
     "awayPa": 32.7,
     "awayGames": 3,
-    "spPlus": 2.8,
-    "srs": 2.6
+    "spPlus": 2.0,
+    "srs": 2.3
   },
   "Kansas State": {
     "league": "CFB",
@@ -4396,8 +4396,8 @@
     "awayPpg": 22.3,
     "awayPa": 28.7,
     "awayGames": 3,
-    "spPlus": 8.8,
-    "srs": 3.2
+    "spPlus": 4.5,
+    "srs": 1.0
   },
   "Oklahoma State": {
     "league": "CFB",
@@ -4496,8 +4496,8 @@
     "awayPpg": 39.6,
     "awayPa": 32.4,
     "awayGames": 5,
-    "spPlus": 12.4,
-    "srs": 13.6
+    "spPlus": 15.5,
+    "srs": 16.0
   },
   "TCU": {
     "league": "CFB",
@@ -4596,8 +4596,8 @@
     "awayPpg": 19.3,
     "awayPa": 18.7,
     "awayGames": 3,
-    "spPlus": 8.6,
-    "srs": 7.1
+    "spPlus": 7.9,
+    "srs": 8.3
   },
   "Texas Tech": {
     "league": "CFB",
@@ -4696,8 +4696,8 @@
     "awayPpg": 29.3,
     "awayPa": 22.7,
     "awayGames": 3,
-    "spPlus": 18.4,
-    "srs": 13.7
+    "spPlus": 18.1,
+    "srs": 12.1
   },
   "UCF": {
     "league": "CFB",
@@ -4709,7 +4709,7 @@
     "passOff": 212.8,
     "rushOff": 146.2,
     "passDef": 245.2,
-    "rushDef": 133.3,
+    "rushDef": 133.8,
     "to": 0.33,
     "ats": "",
     "wk1": true,
@@ -4796,8 +4796,8 @@
     "awayPpg": 21.2,
     "awayPa": 28.2,
     "awayGames": 4,
-    "spPlus": 4.5,
-    "srs": 6.0
+    "spPlus": 1.3,
+    "srs": 6.1
   },
   "Utah": {
     "league": "CFB",
@@ -4807,7 +4807,7 @@
     "ppg": 37.7,
     "pa": 16.3,
     "passOff": 252.7,
-    "rushOff": 215.4,
+    "rushOff": 215.6,
     "passDef": 233.8,
     "rushDef": 103.3,
     "to": 0.56,
@@ -4896,8 +4896,8 @@
     "awayPpg": 35.7,
     "awayPa": 22.0,
     "awayGames": 3,
-    "spPlus": 18.0,
-    "srs": 21.5
+    "spPlus": 21.5,
+    "srs": 21.8
   },
   "West Virginia": {
     "league": "CFB",
@@ -4996,8 +4996,8 @@
     "awayPpg": 38.0,
     "awayPa": 36.2,
     "awayGames": 4,
-    "spPlus": 0.0,
-    "srs": 2.8
+    "spPlus": -0.2,
+    "srs": 3.9
   },
   "Boston College": {
     "league": "CFB",
@@ -5009,7 +5009,7 @@
     "passOff": 185.6,
     "rushOff": 165.9,
     "passDef": 187.3,
-    "rushDef": 155.7,
+    "rushDef": 156.6,
     "to": 0.11,
     "ats": "",
     "wk1": true,
@@ -5096,8 +5096,8 @@
     "awayPpg": 20.5,
     "awayPa": 33.2,
     "awayGames": 4,
-    "spPlus": -1.5,
-    "srs": -7.5
+    "spPlus": -5.4,
+    "srs": -7.0
   },
   "California": {
     "league": "CFB",
@@ -5196,8 +5196,8 @@
     "awayPpg": 20.5,
     "awayPa": 36.8,
     "awayGames": 4,
-    "spPlus": -8.2,
-    "srs": -9.7
+    "spPlus": -11.4,
+    "srs": -9.8
   },
   "Clemson": {
     "league": "CFB",
@@ -5296,8 +5296,8 @@
     "awayPpg": 22.0,
     "awayPa": 24.5,
     "awayGames": 4,
-    "spPlus": 4.7,
-    "srs": 4.8
+    "spPlus": 3.3,
+    "srs": 4.9
   },
   "Duke": {
     "league": "CFB",
@@ -5307,7 +5307,7 @@
     "ppg": 33.0,
     "pa": 13.0,
     "passOff": 234.6,
-    "rushOff": 190.7,
+    "rushOff": 190.6,
     "passDef": 186.6,
     "rushDef": 95.6,
     "to": 0.44,
@@ -5396,8 +5396,8 @@
     "awayPpg": 29.0,
     "awayPa": 18.5,
     "awayGames": 4,
-    "spPlus": 6.8,
-    "srs": 7.1
+    "spPlus": 13.0,
+    "srs": 9.1
   },
   "Florida State": {
     "league": "CFB",
@@ -5407,7 +5407,7 @@
     "ppg": 30.7,
     "pa": 28.3,
     "passOff": 240.8,
-    "rushOff": 168.9,
+    "rushOff": 169.8,
     "passDef": 239.4,
     "rushDef": 173.3,
     "to": -1.0,
@@ -5496,8 +5496,8 @@
     "awayPpg": 30.5,
     "awayPa": 40.2,
     "awayGames": 4,
-    "spPlus": 5.8,
-    "srs": 3.3
+    "spPlus": 5.5,
+    "srs": 4.1
   },
   "Georgia Tech": {
     "league": "CFB",
@@ -5596,8 +5596,8 @@
     "awayPpg": 20.7,
     "awayPa": 34.0,
     "awayGames": 3,
-    "spPlus": -1.1,
-    "srs": -8.5
+    "spPlus": -8.1,
+    "srs": -8.7
   },
   "Louisville": {
     "league": "CFB",
@@ -5696,8 +5696,8 @@
     "awayPpg": 36.0,
     "awayPa": 28.8,
     "awayGames": 4,
-    "spPlus": 12.2,
-    "srs": 12.6
+    "spPlus": 17.7,
+    "srs": 13.2
   },
   "NC State": {
     "league": "CFB",
@@ -5709,7 +5709,7 @@
     "passOff": 242.2,
     "rushOff": 144.8,
     "passDef": 233.8,
-    "rushDef": 143.0,
+    "rushDef": 142.9,
     "to": -0.11,
     "ats": "",
     "wk1": true,
@@ -5796,8 +5796,8 @@
     "awayPpg": 22.3,
     "awayPa": 33.3,
     "awayGames": 3,
-    "spPlus": -0.9,
-    "srs": -1.2
+    "spPlus": -2.3,
+    "srs": -3.5
   },
   "North Carolina": {
     "league": "CFB",
@@ -5896,8 +5896,8 @@
     "awayPpg": 23.6,
     "awayPa": 19.2,
     "awayGames": 5,
-    "spPlus": 3.7,
-    "srs": 7.9
+    "spPlus": 5.3,
+    "srs": 8.9
   },
   "Pittsburgh": {
     "league": "CFB",
@@ -5996,8 +5996,8 @@
     "awayPpg": 26.3,
     "awayPa": 37.3,
     "awayGames": 3,
-    "spPlus": 7.9,
-    "srs": 5.6
+    "spPlus": 10.2,
+    "srs": 5.3
   },
   "SMU": {
     "league": "CFB",
@@ -6096,8 +6096,8 @@
     "awayPpg": 28.3,
     "awayPa": 31.7,
     "awayGames": 3,
-    "spPlus": 13.4,
-    "srs": 6.0
+    "spPlus": 15.8,
+    "srs": 7.9
   },
   "Stanford": {
     "league": "CFB",
@@ -6196,7 +6196,7 @@
     "awayPpg": 10.2,
     "awayPa": 50.5,
     "awayGames": 4,
-    "spPlus": -10.8,
+    "spPlus": -13.3,
     "srs": -9.5
   },
   "Syracuse": {
@@ -6296,8 +6296,8 @@
     "awayPpg": 27.8,
     "awayPa": 31.5,
     "awayGames": 4,
-    "spPlus": -2.8,
-    "srs": 1.5
+    "spPlus": -2.7,
+    "srs": 1.3
   },
   "Virginia": {
     "league": "CFB",
@@ -6396,8 +6396,8 @@
     "awayPpg": 9.0,
     "awayPa": 37.3,
     "awayGames": 3,
-    "spPlus": 5.8,
-    "srs": 1.1
+    "spPlus": 2.1,
+    "srs": 1.5
   },
   "Virginia Tech": {
     "league": "CFB",
@@ -6496,8 +6496,8 @@
     "awayPpg": 24.8,
     "awayPa": 26.4,
     "awayGames": 5,
-    "spPlus": 9.0,
-    "srs": 1.5
+    "spPlus": 6.6,
+    "srs": 0.4
   },
   "Wake Forest": {
     "league": "CFB",
@@ -6596,8 +6596,8 @@
     "awayPpg": 36.8,
     "awayPa": 21.0,
     "awayGames": 4,
-    "spPlus": 12.2,
-    "srs": 14.9
+    "spPlus": 20.0,
+    "srs": 14.3
   },
   "Notre Dame": {
     "league": "CFB",
@@ -6608,9 +6608,9 @@
     "pa": 14.6,
     "passOff": 263.7,
     "rushOff": 175.7,
-    "passDef": 167.6,
+    "passDef": 164.7,
     "rushDef": 87.1,
-    "to": 1.67,
+    "to": 1.78,
     "ats": "",
     "wk1": true,
     "games": [
@@ -6696,8 +6696,8 @@
     "awayPpg": 36.2,
     "awayPa": 19.2,
     "awayGames": 4,
-    "spPlus": 25.2,
-    "srs": 21.1
+    "spPlus": 24.4,
+    "srs": 21.6
   },
   "Miami": {
     "league": "CFB",
@@ -6706,11 +6706,11 @@
     "record": "8-1",
     "ppg": 45.0,
     "pa": 19.2,
-    "passOff": 329.0,
+    "passOff": 326.1,
     "rushOff": 191.2,
     "passDef": 259.3,
     "rushDef": 64.3,
-    "to": 0.56,
+    "to": 0.44,
     "ats": "",
     "wk1": true,
     "games": [
@@ -6796,8 +6796,8 @@
     "awayPpg": 36.2,
     "awayPa": 21.0,
     "awayGames": 5,
-    "spPlus": 24.7,
-    "srs": 20.2
+    "spPlus": 24.0,
+    "srs": 20.0
   },
   "Air Force": {
     "league": "CFB",
@@ -6896,8 +6896,8 @@
     "awayPpg": 25.5,
     "awayPa": 22.2,
     "awayGames": 4,
-    "spPlus": -0.8,
-    "srs": -3.9
+    "spPlus": 1.1,
+    "srs": -2.9
   },
   "Akron": {
     "league": "CFB",
@@ -6996,8 +6996,8 @@
     "awayPpg": 14.8,
     "awayPa": 37.8,
     "awayGames": 5,
-    "spPlus": -25.1,
-    "srs": -22.8
+    "spPlus": -24.8,
+    "srs": -22.5
   },
   "App State": {
     "league": "CFB",
@@ -7096,8 +7096,8 @@
     "awayPpg": 24.0,
     "awayPa": 29.0,
     "awayGames": 4,
-    "spPlus": -4.9,
-    "srs": -8.1
+    "spPlus": -4.5,
+    "srs": -9.6
   },
   "Arkansas State": {
     "league": "CFB",
@@ -7197,7 +7197,7 @@
     "awayPa": 27.2,
     "awayGames": 4,
     "spPlus": -7.0,
-    "srs": -7.8
+    "srs": -9.8
   },
   "Army": {
     "league": "CFB",
@@ -7296,8 +7296,8 @@
     "awayPpg": 27.5,
     "awayPa": 33.0,
     "awayGames": 4,
-    "spPlus": 1.0,
-    "srs": 0.2
+    "spPlus": -2.1,
+    "srs": 0.0
   },
   "Ball State": {
     "league": "CFB",
@@ -7396,8 +7396,8 @@
     "awayPpg": 17.8,
     "awayPa": 40.0,
     "awayGames": 6,
-    "spPlus": -20.1,
-    "srs": -15.4
+    "spPlus": -19.5,
+    "srs": -15.8
   },
   "Boise State": {
     "league": "CFB",
@@ -7496,8 +7496,8 @@
     "awayPpg": 38.4,
     "awayPa": 24.0,
     "awayGames": 5,
-    "spPlus": 10.9,
-    "srs": 12.3
+    "spPlus": 13.8,
+    "srs": 13.5
   },
   "Bowling Green": {
     "league": "CFB",
@@ -7596,8 +7596,8 @@
     "awayPpg": 14.4,
     "awayPa": 37.0,
     "awayGames": 5,
-    "spPlus": -18.2,
-    "srs": -15.0
+    "spPlus": -19.3,
+    "srs": -14.9
   },
   "Buffalo": {
     "league": "CFB",
@@ -7696,8 +7696,8 @@
     "awayPpg": 22.5,
     "awayPa": 31.8,
     "awayGames": 4,
-    "spPlus": -12.0,
-    "srs": -14.6
+    "spPlus": -11.1,
+    "srs": -14.0
   },
   "Central Michigan": {
     "league": "CFB",
@@ -7796,8 +7796,8 @@
     "awayPpg": 14.8,
     "awayPa": 32.0,
     "awayGames": 4,
-    "spPlus": -16.7,
-    "srs": -13.1
+    "spPlus": -13.2,
+    "srs": -10.3
   },
   "Charlotte": {
     "league": "CFB",
@@ -7896,8 +7896,8 @@
     "awayPpg": 18.0,
     "awayPa": 34.2,
     "awayGames": 5,
-    "spPlus": -25.4,
-    "srs": -19.2
+    "spPlus": -27.4,
+    "srs": -20.4
   },
   "Coastal Carolina": {
     "league": "CFB",
@@ -7996,8 +7996,8 @@
     "awayPpg": 24.0,
     "awayPa": 23.5,
     "awayGames": 4,
-    "spPlus": -10.3,
-    "srs": -7.3
+    "spPlus": -8.2,
+    "srs": -9.9
   },
   "Colorado State": {
     "league": "CFB",
@@ -8096,8 +8096,8 @@
     "awayPpg": 28.7,
     "awayPa": 52.0,
     "awayGames": 3,
-    "spPlus": -8.4,
-    "srs": -8.2
+    "spPlus": -11.0,
+    "srs": -8.9
   },
   "Delaware": {
     "league": "CFB",
@@ -8196,8 +8196,8 @@
     "awayPpg": 26.8,
     "awayPa": 34.6,
     "awayGames": 5,
-    "spPlus": -11.7,
-    "srs": -8.3
+    "spPlus": -9.2,
+    "srs": -8.6
   },
   "East Carolina": {
     "league": "CFB",
@@ -8296,8 +8296,8 @@
     "awayPpg": 20.2,
     "awayPa": 34.0,
     "awayGames": 4,
-    "spPlus": -4.0,
-    "srs": -8.6
+    "spPlus": -2.8,
+    "srs": -7.5
   },
   "Eastern Michigan": {
     "league": "CFB",
@@ -8404,8 +8404,8 @@
     "awayPpg": 20.0,
     "awayPa": 30.0,
     "awayGames": 5,
-    "spPlus": -14.6,
-    "srs": -14.1
+    "spPlus": -16.9,
+    "srs": -16.4
   },
   "Florida Atlantic": {
     "league": "CFB",
@@ -8417,7 +8417,7 @@
     "passOff": 317.7,
     "rushOff": 135.8,
     "passDef": 219.4,
-    "rushDef": 243.9,
+    "rushDef": 244.6,
     "to": 0.44,
     "ats": "",
     "wk1": true,
@@ -8504,8 +8504,8 @@
     "awayPpg": 32.8,
     "awayPa": 46.8,
     "awayGames": 4,
-    "spPlus": -3.4,
-    "srs": -7.1
+    "spPlus": -1.3,
+    "srs": -2.9
   },
   "Florida International": {
     "league": "CFB",
@@ -8604,8 +8604,8 @@
     "awayPpg": 13.2,
     "awayPa": 27.8,
     "awayGames": 4,
-    "spPlus": -7.9,
-    "srs": -11.7
+    "spPlus": -8.9,
+    "srs": -11.4
   },
   "Fresno State": {
     "league": "CFB",
@@ -8704,8 +8704,8 @@
     "awayPpg": 17.0,
     "awayPa": 19.6,
     "awayGames": 5,
-    "spPlus": 2.6,
-    "srs": 2.9
+    "spPlus": 4.9,
+    "srs": 1.3
   },
   "Georgia Southern": {
     "league": "CFB",
@@ -8804,8 +8804,8 @@
     "awayPpg": 22.0,
     "awayPa": 23.0,
     "awayGames": 4,
-    "spPlus": -4.8,
-    "srs": -2.2
+    "spPlus": 0.8,
+    "srs": -0.7
   },
   "Georgia State": {
     "league": "CFB",
@@ -8904,8 +8904,8 @@
     "awayPpg": 30.8,
     "awayPa": 34.2,
     "awayGames": 5,
-    "spPlus": -9.2,
-    "srs": -5.5
+    "spPlus": -6.1,
+    "srs": -3.7
   },
   "Hawai'i": {
     "league": "CFB",
@@ -9004,8 +9004,8 @@
     "awayPpg": 24.4,
     "awayPa": 25.8,
     "awayGames": 5,
-    "spPlus": -9.6,
-    "srs": -14.0
+    "spPlus": -10.3,
+    "srs": -13.6
   },
   "Jacksonville State": {
     "league": "CFB",
@@ -9104,8 +9104,8 @@
     "awayPpg": 21.2,
     "awayPa": 22.0,
     "awayGames": 4,
-    "spPlus": -2.6,
-    "srs": -5.0
+    "spPlus": 4.5,
+    "srs": -2.9
   },
   "James Madison": {
     "league": "CFB",
@@ -9212,8 +9212,8 @@
     "awayPpg": 36.8,
     "awayPa": 22.8,
     "awayGames": 5,
-    "spPlus": 10.9,
-    "srs": 4.5
+    "spPlus": 13.8,
+    "srs": 5.4
   },
   "Kennesaw State": {
     "league": "CFB",
@@ -9312,8 +9312,8 @@
     "awayPpg": 22.0,
     "awayPa": 27.8,
     "awayGames": 4,
-    "spPlus": -13.8,
-    "srs": -10.2
+    "spPlus": -10.0,
+    "srs": -9.7
   },
   "Kent State": {
     "league": "CFB",
@@ -9412,8 +9412,8 @@
     "awayPpg": 4.4,
     "awayPa": 42.8,
     "awayGames": 5,
-    "spPlus": -21.3,
-    "srs": -18.2
+    "spPlus": -22.1,
+    "srs": -18.6
   },
   "Liberty": {
     "league": "CFB",
@@ -9512,8 +9512,8 @@
     "awayPpg": 28.2,
     "awayPa": 14.2,
     "awayGames": 5,
-    "spPlus": 7.5,
-    "srs": 7.0
+    "spPlus": 15.0,
+    "srs": 5.9
   },
   "Louisiana": {
     "league": "CFB",
@@ -9612,8 +9612,8 @@
     "awayPpg": 31.5,
     "awayPa": 30.8,
     "awayGames": 4,
-    "spPlus": 0.4,
-    "srs": -0.1
+    "spPlus": 1.7,
+    "srs": -1.5
   },
   "Louisiana Tech": {
     "league": "CFB",
@@ -9712,8 +9712,8 @@
     "awayPpg": 26.6,
     "awayPa": 23.6,
     "awayGames": 5,
-    "spPlus": -2.6,
-    "srs": 1.7
+    "spPlus": 2.2,
+    "srs": 3.2
   },
   "Marshall": {
     "league": "CFB",
@@ -9812,8 +9812,8 @@
     "awayPpg": 19.2,
     "awayPa": 37.2,
     "awayGames": 5,
-    "spPlus": -10.7,
-    "srs": -13.8
+    "spPlus": -12.4,
+    "srs": -15.6
   },
   "Massachusetts": {
     "league": "CFB",
@@ -9912,8 +9912,8 @@
     "awayPpg": 26.5,
     "awayPa": 21.8,
     "awayGames": 4,
-    "spPlus": -11.1,
-    "srs": -13.9
+    "spPlus": -8.8,
+    "srs": -14.9
   },
   "Memphis": {
     "league": "CFB",
@@ -10012,8 +10012,8 @@
     "awayPpg": 30.8,
     "awayPa": 24.5,
     "awayGames": 4,
-    "spPlus": 7.0,
-    "srs": 1.5
+    "spPlus": 9.6,
+    "srs": 1.2
   },
   "Miami (OH)": {
     "league": "CFB",
@@ -10112,8 +10112,8 @@
     "awayPpg": 23.2,
     "awayPa": 35.0,
     "awayGames": 4,
-    "spPlus": -4.2,
-    "srs": -8.7
+    "spPlus": -4.9,
+    "srs": -9.9
   },
   "Middle Tennessee": {
     "league": "CFB",
@@ -10212,8 +10212,8 @@
     "awayPpg": 16.2,
     "awayPa": 32.2,
     "awayGames": 4,
-    "spPlus": -15.2,
-    "srs": -14.4
+    "spPlus": -14.5,
+    "srs": -13.8
   },
   "Missouri State": {
     "league": "CFB",
@@ -10312,8 +10312,8 @@
     "awayPpg": 19.0,
     "awayPa": 40.4,
     "awayGames": 5,
-    "spPlus": -16.9,
-    "srs": -14.0
+    "spPlus": -14.0,
+    "srs": -13.9
   },
   "Navy": {
     "league": "CFB",
@@ -10412,8 +10412,8 @@
     "awayPpg": 23.2,
     "awayPa": 28.5,
     "awayGames": 4,
-    "spPlus": -1.6,
-    "srs": -6.2
+    "spPlus": -3.1,
+    "srs": -5.5
   },
   "Nevada": {
     "league": "CFB",
@@ -10512,8 +10512,8 @@
     "awayPpg": 16.8,
     "awayPa": 24.5,
     "awayGames": 4,
-    "spPlus": -3.1,
-    "srs": -7.2
+    "spPlus": -6.4,
+    "srs": -8.3
   },
   "New Mexico": {
     "league": "CFB",
@@ -10612,8 +10612,8 @@
     "awayPpg": 24.2,
     "awayPa": 12.2,
     "awayGames": 5,
-    "spPlus": 9.3,
-    "srs": 5.6
+    "spPlus": 14.4,
+    "srs": 7.9
   },
   "New Mexico State": {
     "league": "CFB",
@@ -10712,8 +10712,8 @@
     "awayPpg": 17.2,
     "awayPa": 27.2,
     "awayGames": 4,
-    "spPlus": -13.4,
-    "srs": -16.0
+    "spPlus": -16.1,
+    "srs": -15.3
   },
   "North Dakota State": {
     "league": "CFB",
@@ -10811,8 +10811,8 @@
     "awayPpg": 23.0,
     "awayPa": 19.0,
     "awayGames": 4,
-    "spPlus": 8.6,
-    "srs": 2.6
+    "spPlus": 10.7,
+    "srs": 3.6
   },
   "Northern Illinois": {
     "league": "CFB",
@@ -10911,8 +10911,8 @@
     "awayPpg": 16.2,
     "awayPa": 36.5,
     "awayGames": 6,
-    "spPlus": -25.4,
-    "srs": -22.0
+    "spPlus": -26.9,
+    "srs": -21.5
   },
   "North Texas": {
     "league": "CFB",
@@ -11011,8 +11011,8 @@
     "awayPpg": 36.2,
     "awayPa": 46.0,
     "awayGames": 4,
-    "spPlus": -0.6,
-    "srs": 4.1
+    "spPlus": 4.7,
+    "srs": 5.9
   },
   "Ohio": {
     "league": "CFB",
@@ -11111,8 +11111,8 @@
     "awayPpg": 29.2,
     "awayPa": 25.4,
     "awayGames": 5,
-    "spPlus": -1.5,
-    "srs": -7.7
+    "spPlus": -0.4,
+    "srs": -8.1
   },
   "Old Dominion": {
     "league": "CFB",
@@ -11219,8 +11219,8 @@
     "awayPpg": 12.4,
     "awayPa": 24.6,
     "awayGames": 5,
-    "spPlus": -14.7,
-    "srs": -19.6
+    "spPlus": -14.3,
+    "srs": -16.7
   },
   "Oregon State": {
     "league": "CFB",
@@ -11319,8 +11319,8 @@
     "awayPpg": 32.8,
     "awayPa": 26.0,
     "awayGames": 4,
-    "spPlus": 6.6,
-    "srs": 8.1
+    "spPlus": 3.8,
+    "srs": 5.1
   },
   "Rice": {
     "league": "CFB",
@@ -11419,8 +11419,8 @@
     "awayPpg": 21.6,
     "awayPa": 44.2,
     "awayGames": 5,
-    "spPlus": -14.2,
-    "srs": -11.4
+    "spPlus": -16.1,
+    "srs": -12.2
   },
   "Sacramento State": {
     "league": "CFB",
@@ -11526,8 +11526,8 @@
     "awayPpg": 11.8,
     "awayPa": 37.2,
     "awayGames": 4,
-    "spPlus": -29.1,
-    "srs": -25.3
+    "spPlus": -24.9,
+    "srs": -24.1
   },
   "Sam Houston": {
     "league": "CFB",
@@ -11626,8 +11626,8 @@
     "awayPpg": 11.0,
     "awayPa": 35.8,
     "awayGames": 5,
-    "spPlus": -18.0,
-    "srs": -16.7
+    "spPlus": -20.7,
+    "srs": -18.4
   },
   "San Diego State": {
     "league": "CFB",
@@ -11726,8 +11726,8 @@
     "awayPpg": 22.2,
     "awayPa": 47.8,
     "awayGames": 4,
-    "spPlus": -8.6,
-    "srs": -7.3
+    "spPlus": -8.4,
+    "srs": -7.7
   },
   "San Jos\u00e9 State": {
     "league": "CFB",
@@ -11834,8 +11834,8 @@
     "awayPpg": 22.0,
     "awayPa": 23.6,
     "awayGames": 5,
-    "spPlus": -11.3,
-    "srs": -11.4
+    "spPlus": -10.7,
+    "srs": -11.6
   },
   "South Alabama": {
     "league": "CFB",
@@ -11934,8 +11934,8 @@
     "awayPpg": 28.0,
     "awayPa": 34.0,
     "awayGames": 5,
-    "spPlus": -11.5,
-    "srs": -8.5
+    "spPlus": -12.3,
+    "srs": -8.4
   },
   "Southern Miss": {
     "league": "CFB",
@@ -12034,8 +12034,8 @@
     "awayPpg": 24.5,
     "awayPa": 35.8,
     "awayGames": 4,
-    "spPlus": -16.0,
-    "srs": -14.0
+    "spPlus": -15.9,
+    "srs": -15.7
   },
   "South Florida": {
     "league": "CFB",
@@ -12134,8 +12134,8 @@
     "awayPpg": 20.8,
     "awayPa": 20.2,
     "awayGames": 4,
-    "spPlus": 2.2,
-    "srs": -1.6
+    "spPlus": 4.0,
+    "srs": -2.7
   },
   "Temple": {
     "league": "CFB",
@@ -12234,8 +12234,8 @@
     "awayPpg": 27.2,
     "awayPa": 30.2,
     "awayGames": 4,
-    "spPlus": -7.7,
-    "srs": -11.1
+    "spPlus": -9.6,
+    "srs": -11.7
   },
   "Texas State": {
     "league": "CFB",
@@ -12334,8 +12334,8 @@
     "awayPpg": 30.8,
     "awayPa": 39.2,
     "awayGames": 4,
-    "spPlus": 1.5,
-    "srs": 6.8
+    "spPlus": 5.8,
+    "srs": 9.5
   },
   "Toledo": {
     "league": "CFB",
@@ -12434,8 +12434,8 @@
     "awayPpg": 28.2,
     "awayPa": 21.2,
     "awayGames": 4,
-    "spPlus": 2.0,
-    "srs": -0.2
+    "spPlus": 2.7,
+    "srs": -2.2
   },
   "Troy": {
     "league": "CFB",
@@ -12534,8 +12534,8 @@
     "awayPpg": 14.2,
     "awayPa": 25.5,
     "awayGames": 4,
-    "spPlus": -9.9,
-    "srs": -10.6
+    "spPlus": -12.1,
+    "srs": -12.6
   },
   "Tulane": {
     "league": "CFB",
@@ -12545,7 +12545,7 @@
     "ppg": 21.1,
     "pa": 29.2,
     "passOff": 193.2,
-    "rushOff": 139.2,
+    "rushOff": 139.6,
     "passDef": 222.1,
     "rushDef": 215.3,
     "to": -0.56,
@@ -12634,8 +12634,8 @@
     "awayPpg": 19.5,
     "awayPa": 24.8,
     "awayGames": 4,
-    "spPlus": -8.2,
-    "srs": -6.3
+    "spPlus": -11.7,
+    "srs": -9.4
   },
   "Tulsa": {
     "league": "CFB",
@@ -12647,7 +12647,7 @@
     "passOff": 225.7,
     "rushOff": 165.4,
     "passDef": 193.2,
-    "rushDef": 189.4,
+    "rushDef": 189.8,
     "to": 1.33,
     "ats": "",
     "wk1": true,
@@ -12734,8 +12734,8 @@
     "awayPpg": 30.6,
     "awayPa": 22.4,
     "awayGames": 5,
-    "spPlus": -2.2,
-    "srs": -1.7
+    "spPlus": 1.1,
+    "srs": 1.1
   },
   "UAB": {
     "league": "CFB",
@@ -12834,8 +12834,8 @@
     "awayPpg": 15.0,
     "awayPa": 32.8,
     "awayGames": 4,
-    "spPlus": -10.4,
-    "srs": -11.9
+    "spPlus": -8.2,
+    "srs": -11.4
   },
   "UConn": {
     "league": "CFB",
@@ -12934,8 +12934,8 @@
     "awayPpg": 32.2,
     "awayPa": 24.8,
     "awayGames": 4,
-    "spPlus": 0.7,
-    "srs": -3.6
+    "spPlus": -0.8,
+    "srs": -4.6
   },
   "UL Monroe": {
     "league": "CFB",
@@ -13034,8 +13034,8 @@
     "awayPpg": 21.6,
     "awayPa": 34.2,
     "awayGames": 5,
-    "spPlus": -24.2,
-    "srs": -23.2
+    "spPlus": -23.2,
+    "srs": -21.1
   },
   "UNLV": {
     "league": "CFB",
@@ -13134,8 +13134,8 @@
     "awayPpg": 24.0,
     "awayPa": 25.2,
     "awayGames": 4,
-    "spPlus": -2.2,
-    "srs": -6.2
+    "spPlus": -3.7,
+    "srs": -7.1
   },
   "Utah State": {
     "league": "CFB",
@@ -13234,8 +13234,8 @@
     "awayPpg": 12.2,
     "awayPa": 26.5,
     "awayGames": 4,
-    "spPlus": -9.2,
-    "srs": -4.8
+    "spPlus": -4.7,
+    "srs": -3.5
   },
   "UTEP": {
     "league": "CFB",
@@ -13334,8 +13334,8 @@
     "awayPpg": 7.8,
     "awayPa": 48.8,
     "awayGames": 4,
-    "spPlus": -24.5,
-    "srs": -21.6
+    "spPlus": -26.3,
+    "srs": -20.9
   },
   "UTSA": {
     "league": "CFB",
@@ -13345,7 +13345,7 @@
     "ppg": 33.0,
     "pa": 29.8,
     "passOff": 229.7,
-    "rushOff": 180.4,
+    "rushOff": 181.1,
     "passDef": 210.0,
     "rushDef": 200.6,
     "to": 0.56,
@@ -13434,8 +13434,8 @@
     "awayPpg": 24.8,
     "awayPa": 29.8,
     "awayGames": 5,
-    "spPlus": 3.5,
-    "srs": 2.4
+    "spPlus": 0.9,
+    "srs": -1.3
   },
   "Washington State": {
     "league": "CFB",
@@ -13534,8 +13534,8 @@
     "awayPpg": 16.6,
     "awayPa": 29.8,
     "awayGames": 5,
-    "spPlus": -14.1,
-    "srs": -8.0
+    "spPlus": -14.5,
+    "srs": -8.9
   },
   "Western Kentucky": {
     "league": "CFB",
@@ -13548,7 +13548,7 @@
     "rushOff": 157.0,
     "passDef": 229.1,
     "rushDef": 174.6,
-    "to": -0.44,
+    "to": -0.56,
     "ats": "",
     "wk1": true,
     "games": [
@@ -13634,8 +13634,8 @@
     "awayPpg": 17.5,
     "awayPa": 40.8,
     "awayGames": 6,
-    "spPlus": -11.5,
-    "srs": -14.1
+    "spPlus": -13.7,
+    "srs": -14.9
   },
   "Western Michigan": {
     "league": "CFB",
@@ -13734,8 +13734,8 @@
     "awayPpg": 23.8,
     "awayPa": 22.0,
     "awayGames": 5,
-    "spPlus": -2.7,
-    "srs": -2.2
+    "spPlus": -0.9,
+    "srs": -2.3
   },
   "Wyoming": {
     "league": "CFB",
@@ -13834,8 +13834,8 @@
     "awayPpg": 16.0,
     "awayPa": 27.0,
     "awayGames": 5,
-    "spPlus": -7.3,
-    "srs": -12.9
+    "spPlus": -5.0,
+    "srs": -10.8
   },
   "Abilene Christian": {
     "league": "CFB",
@@ -13941,7 +13941,7 @@
     "awayPpg": 24.6,
     "awayPa": 32.2,
     "awayGames": 5,
-    "srs": -22.5
+    "srs": -22.7
   },
   "Alcorn State": {
     "league": "CFB",
@@ -14047,7 +14047,7 @@
     "awayPpg": 34.4,
     "awayPa": 41.6,
     "awayGames": 5,
-    "srs": -42.5
+    "srs": -40.6
   },
   "Arkansas-Pine Bluff": {
     "league": "CFB",
@@ -14145,7 +14145,7 @@
     "awayPpg": 34.4,
     "awayPa": 35.4,
     "awayGames": 5,
-    "srs": -29.7
+    "srs": -32.0
   },
   "Austin Peay": {
     "league": "CFB",
@@ -14251,7 +14251,7 @@
     "awayPpg": 24.5,
     "awayPa": 18.8,
     "awayGames": 4,
-    "srs": -20.1
+    "srs": -18.9
   },
   "Bethune-Cookman": {
     "league": "CFB",
@@ -14357,7 +14357,7 @@
     "awayPpg": 19.0,
     "awayPa": 50.0,
     "awayGames": 5,
-    "srs": -43.2
+    "srs": -47.2
   },
   "Bryant": {
     "league": "CFB",
@@ -14463,7 +14463,7 @@
     "awayPpg": 18.2,
     "awayPa": 24.0,
     "awayGames": 6,
-    "srs": -37.0
+    "srs": -33.8
   },
   "Charleston Southern": {
     "league": "CFB",
@@ -14569,7 +14569,7 @@
     "awayPpg": 12.6,
     "awayPa": 23.0,
     "awayGames": 5,
-    "srs": -29.2
+    "srs": -31.5
   },
   "Duquesne": {
     "league": "CFB",
@@ -14667,7 +14667,7 @@
     "awayPpg": 15.0,
     "awayPa": 34.6,
     "awayGames": 5,
-    "srs": -33.0
+    "srs": -34.6
   },
   "Eastern Illinois": {
     "league": "CFB",
@@ -14773,7 +14773,7 @@
     "awayPpg": 20.2,
     "awayPa": 31.2,
     "awayGames": 6,
-    "srs": -31.6
+    "srs": -33.6
   },
   "Eastern Kentucky": {
     "league": "CFB",
@@ -14879,7 +14879,7 @@
     "awayPpg": 20.6,
     "awayPa": 45.2,
     "awayGames": 5,
-    "srs": -36.2
+    "srs": -36.3
   },
   "Fordham": {
     "league": "CFB",
@@ -14985,7 +14985,7 @@
     "awayPpg": 19.4,
     "awayPa": 31.4,
     "awayGames": 5,
-    "srs": -43.6
+    "srs": -41.8
   },
   "Furman": {
     "league": "CFB",
@@ -15091,7 +15091,7 @@
     "awayPpg": 15.4,
     "awayPa": 23.2,
     "awayGames": 5,
-    "srs": -31.6
+    "srs": -30.9
   },
   "Hampton": {
     "league": "CFB",
@@ -15103,7 +15103,7 @@
     "passOff": 189.9,
     "rushOff": 96.2,
     "passDef": 237.7,
-    "rushDef": 212.6,
+    "rushDef": 212.0,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -15197,7 +15197,7 @@
     "awayPpg": 12.2,
     "awayPa": 41.4,
     "awayGames": 5,
-    "srs": -58.7
+    "srs": -58.0
   },
   "Houston Christian": {
     "league": "CFB",
@@ -15303,7 +15303,7 @@
     "awayPpg": 15.0,
     "awayPa": 37.3,
     "awayGames": 6,
-    "srs": -33.4
+    "srs": -34.4
   },
   "Idaho": {
     "league": "CFB",
@@ -15409,7 +15409,7 @@
     "awayPpg": 31.0,
     "awayPa": 38.2,
     "awayGames": 5,
-    "srs": -22.2
+    "srs": -19.9
   },
   "Idaho State": {
     "league": "CFB",
@@ -15515,7 +15515,7 @@
     "awayPpg": 27.8,
     "awayPa": 23.8,
     "awayGames": 4,
-    "srs": -19.7
+    "srs": -18.5
   },
   "Indiana State": {
     "league": "CFB",
@@ -15621,7 +15621,7 @@
     "awayPpg": 21.6,
     "awayPa": 37.0,
     "awayGames": 5,
-    "srs": -27.9
+    "srs": -30.2
   },
   "Lafayette": {
     "league": "CFB",
@@ -15719,7 +15719,7 @@
     "awayPpg": 22.2,
     "awayPa": 26.8,
     "awayGames": 5,
-    "srs": -44.5
+    "srs": -44.6
   },
   "Lamar": {
     "league": "CFB",
@@ -15731,7 +15731,7 @@
     "passOff": 212.1,
     "rushOff": 172.9,
     "passDef": 208.1,
-    "rushDef": 130.4,
+    "rushDef": 131.2,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -15825,7 +15825,7 @@
     "awayPpg": 32.4,
     "awayPa": 26.0,
     "awayGames": 5,
-    "srs": -19.3
+    "srs": -17.0
   },
   "Long Island University": {
     "league": "CFB",
@@ -15931,7 +15931,7 @@
     "awayPpg": 11.8,
     "awayPa": 25.5,
     "awayGames": 6,
-    "srs": -38.5
+    "srs": -39.8
   },
   "Maine": {
     "league": "CFB",
@@ -16029,7 +16029,7 @@
     "awayPpg": 14.0,
     "awayPa": 30.4,
     "awayGames": 5,
-    "srs": -44.2
+    "srs": -44.0
   },
   "Mercyhurst": {
     "league": "CFB",
@@ -16135,7 +16135,7 @@
     "awayPpg": 14.9,
     "awayPa": 43.6,
     "awayGames": 7,
-    "srs": -45.1
+    "srs": -46.3
   },
   "Merrimack": {
     "league": "CFB",
@@ -16241,7 +16241,7 @@
     "awayPpg": 15.8,
     "awayPa": 41.0,
     "awayGames": 6,
-    "srs": -43.4
+    "srs": -42.8
   },
   "Mississippi Valley State": {
     "league": "CFB",
@@ -16347,7 +16347,7 @@
     "awayPpg": 14.0,
     "awayPa": 41.8,
     "awayGames": 5,
-    "srs": -61.2
+    "srs": -61.4
   },
   "Morgan State": {
     "league": "CFB",
@@ -16357,7 +16357,7 @@
     "ppg": 24.6,
     "pa": 29.1,
     "passOff": 216.6,
-    "rushOff": 101.3,
+    "rushOff": 101.5,
     "passDef": 272.7,
     "rushDef": 132.7,
     "to": 0,
@@ -16453,7 +16453,7 @@
     "awayPpg": 22.2,
     "awayPa": 31.2,
     "awayGames": 6,
-    "srs": -42.3
+    "srs": -42.7
   },
   "Murray State": {
     "league": "CFB",
@@ -16559,7 +16559,7 @@
     "awayPpg": 13.0,
     "awayPa": 45.8,
     "awayGames": 5,
-    "srs": -40.3
+    "srs": -39.8
   },
   "New Hampshire": {
     "league": "CFB",
@@ -16665,7 +16665,7 @@
     "awayPpg": 14.8,
     "awayPa": 33.6,
     "awayGames": 5,
-    "srs": -43.8
+    "srs": -43.3
   },
   "Nicholls": {
     "league": "CFB",
@@ -16771,7 +16771,7 @@
     "awayPpg": 7.8,
     "awayPa": 37.8,
     "awayGames": 5,
-    "srs": -46.5
+    "srs": -45.9
   },
   "Norfolk State": {
     "league": "CFB",
@@ -16877,7 +16877,7 @@
     "awayPpg": 18.8,
     "awayPa": 33.0,
     "awayGames": 5,
-    "srs": -41.9
+    "srs": -41.0
   },
   "North Alabama": {
     "league": "CFB",
@@ -16983,7 +16983,7 @@
     "awayPpg": 18.2,
     "awayPa": 21.5,
     "awayGames": 4,
-    "srs": -26.3
+    "srs": -25.2
   },
   "North Carolina A&T": {
     "league": "CFB",
@@ -17089,7 +17089,7 @@
     "awayPpg": 18.6,
     "awayPa": 36.6,
     "awayGames": 5,
-    "srs": -44.4
+    "srs": -42.5
   },
   "Northern Arizona": {
     "league": "CFB",
@@ -17195,7 +17195,7 @@
     "awayPpg": 27.7,
     "awayPa": 25.7,
     "awayGames": 6,
-    "srs": -17.5
+    "srs": -16.0
   },
   "Northwestern State": {
     "league": "CFB",
@@ -17513,7 +17513,7 @@
     "awayPpg": 25.3,
     "awayPa": 28.3,
     "awayGames": 6,
-    "srs": -33.6
+    "srs": -34.8
   },
   "SE Louisiana": {
     "league": "CFB",
@@ -17522,10 +17522,10 @@
     "record": "4-6",
     "ppg": 24.6,
     "pa": 28.8,
-    "passOff": 175.0,
-    "rushOff": 159.6,
-    "passDef": 220.8,
-    "rushDef": 162.4,
+    "passOff": 172.3,
+    "rushOff": 154.3,
+    "passDef": 228.1,
+    "rushDef": 171.4,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -17619,7 +17619,7 @@
     "awayPpg": 23.0,
     "awayPa": 27.2,
     "awayGames": 6,
-    "srs": -30.0
+    "srs": -30.5
   },
   "South Dakota State": {
     "league": "CFB",
@@ -17725,7 +17725,7 @@
     "awayPpg": 25.0,
     "awayPa": 21.0,
     "awayGames": 4,
-    "srs": -9.3
+    "srs": -8.5
   },
   "Southeast Missouri State": {
     "league": "CFB",
@@ -17831,7 +17831,7 @@
     "awayPpg": 24.0,
     "awayPa": 24.0,
     "awayGames": 6,
-    "srs": -27.0
+    "srs": -26.4
   },
   "Tarleton State": {
     "league": "CFB",
@@ -17937,7 +17937,7 @@
     "awayPpg": 34.0,
     "awayPa": 18.8,
     "awayGames": 4,
-    "srs": -21.7
+    "srs": -19.8
   },
   "Tennessee State": {
     "league": "CFB",
@@ -18043,7 +18043,7 @@
     "awayPpg": 11.2,
     "awayPa": 34.8,
     "awayGames": 5,
-    "srs": -43.6
+    "srs": -44.1
   },
   "The Citadel": {
     "league": "CFB",
@@ -18149,7 +18149,7 @@
     "awayPpg": 22.0,
     "awayPa": 36.6,
     "awayGames": 5,
-    "srs": -35.1
+    "srs": -37.1
   },
   "Towson": {
     "league": "CFB",
@@ -18255,7 +18255,7 @@
     "awayPpg": 25.8,
     "awayPa": 37.5,
     "awayGames": 6,
-    "srs": -37.2
+    "srs": -36.9
   },
   "UAlbany": {
     "league": "CFB",
@@ -18361,7 +18361,7 @@
     "awayPpg": 24.2,
     "awayPa": 23.2,
     "awayGames": 6,
-    "srs": -23.8
+    "srs": -27.1
   },
   "Utah Tech": {
     "league": "CFB",
@@ -18467,7 +18467,7 @@
     "awayPpg": 18.0,
     "awayPa": 35.8,
     "awayGames": 6,
-    "srs": -36.4
+    "srs": -35.8
   },
   "UT Rio Grande Valley": {
     "league": "CFB",
@@ -18573,7 +18573,7 @@
     "awayPpg": 26.5,
     "awayPa": 28.5,
     "awayGames": 6,
-    "srs": -34.5
+    "srs": -32.7
   },
   "VMI": {
     "league": "CFB",
@@ -18679,7 +18679,7 @@
     "awayPpg": 11.7,
     "awayPa": 44.9,
     "awayGames": 7,
-    "srs": -53.3
+    "srs": -52.9
   },
   "West Georgia": {
     "league": "CFB",
@@ -18785,7 +18785,7 @@
     "awayPpg": 11.3,
     "awayPa": 43.0,
     "awayGames": 6,
-    "srs": -44.3
+    "srs": -45.3
   },
   "Youngstown State": {
     "league": "CFB",
@@ -18891,7 +18891,7 @@
     "awayPpg": 36.0,
     "awayPa": 29.4,
     "awayGames": 5,
-    "srs": -8.5
+    "srs": -9.4
   },
   "Alabama A&M": {
     "league": "CFB",
@@ -18997,7 +18997,7 @@
     "awayPpg": 25.5,
     "awayPa": 28.5,
     "awayGames": 4,
-    "srs": -28.2
+    "srs": -32.5
   },
   "Alabama State": {
     "league": "CFB",
@@ -19095,7 +19095,7 @@
     "awayPpg": 22.0,
     "awayPa": 25.4,
     "awayGames": 5,
-    "srs": -34.1
+    "srs": -36.9
   },
   "Albany State": {
     "league": "CFB",
@@ -19411,7 +19411,7 @@
     "awayPpg": 12.5,
     "awayPa": 30.5,
     "awayGames": 6,
-    "srs": -48.4
+    "srs": -50.3
   },
   "Butler": {
     "league": "CFB",
@@ -19517,7 +19517,7 @@
     "awayPpg": 29.2,
     "awayPa": 27.5,
     "awayGames": 4,
-    "srs": -33.3
+    "srs": -30.2
   },
   "Cal Poly": {
     "league": "CFB",
@@ -19631,7 +19631,7 @@
     "awayPpg": 20.2,
     "awayPa": 34.0,
     "awayGames": 5,
-    "srs": -32.2
+    "srs": -32.9
   },
   "Campbell": {
     "league": "CFB",
@@ -19737,7 +19737,7 @@
     "awayPpg": 34.0,
     "awayPa": 31.8,
     "awayGames": 6,
-    "srs": -25.3
+    "srs": -25.2
   },
   "Central Arkansas": {
     "league": "CFB",
@@ -19843,7 +19843,7 @@
     "awayPpg": 20.2,
     "awayPa": 30.8,
     "awayGames": 5,
-    "srs": -34.8
+    "srs": -32.9
   },
   "Central Connecticut": {
     "league": "CFB",
@@ -19941,7 +19941,7 @@
     "awayPpg": 26.8,
     "awayPa": 40.8,
     "awayGames": 5,
-    "srs": -29.1
+    "srs": -26.7
   },
   "Central State": {
     "league": "CFB",
@@ -20257,7 +20257,7 @@
     "awayPpg": 22.4,
     "awayPa": 14.4,
     "awayGames": 5,
-    "srs": -23.5
+    "srs": -25.2
   },
   "Chicago State": {
     "league": "CFB",
@@ -20353,7 +20353,7 @@
     "awayPpg": 13.8,
     "awayPa": 43.2,
     "awayGames": 5,
-    "srs": -59.6
+    "srs": -57.6
   },
   "Clark Atlanta": {
     "league": "CFB",
@@ -20556,7 +20556,7 @@
     "awayPpg": 15.3,
     "awayPa": 19.0,
     "awayGames": 6,
-    "srs": -26.3
+    "srs": -28.4
   },
   "Concord": {
     "league": "CFB",
@@ -20767,7 +20767,7 @@
     "awayPpg": 14.0,
     "awayPa": 45.3,
     "awayGames": 3,
-    "srs": -63.4
+    "srs": -60.7
   },
   "Dayton": {
     "league": "CFB",
@@ -20865,7 +20865,7 @@
     "awayPpg": 25.5,
     "awayPa": 21.8,
     "awayGames": 4,
-    "srs": -37.0
+    "srs": -36.2
   },
   "Delaware State": {
     "league": "CFB",
@@ -20877,7 +20877,7 @@
     "passOff": 193.9,
     "rushOff": 161.7,
     "passDef": 190.8,
-    "rushDef": 134.7,
+    "rushDef": 134.9,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -20971,7 +20971,7 @@
     "awayPpg": 17.8,
     "awayPa": 35.5,
     "awayGames": 4,
-    "srs": -42.9
+    "srs": -42.3
   },
   "Drake": {
     "league": "CFB",
@@ -21077,7 +21077,7 @@
     "awayPpg": 26.6,
     "awayPa": 37.8,
     "awayGames": 5,
-    "srs": -45.3
+    "srs": -47.1
   },
   "Eastern Washington": {
     "league": "CFB",
@@ -21183,7 +21183,7 @@
     "awayPpg": 27.0,
     "awayPa": 46.8,
     "awayGames": 5,
-    "srs": -27.9
+    "srs": -30.0
   },
   "East Tennessee State": {
     "league": "CFB",
@@ -21289,7 +21289,7 @@
     "awayPpg": 25.0,
     "awayPa": 17.0,
     "awayGames": 3,
-    "srs": -23.5
+    "srs": -25.2
   },
   "East Texas A&M": {
     "league": "CFB",
@@ -21395,7 +21395,7 @@
     "awayPpg": 16.8,
     "awayPa": 35.2,
     "awayGames": 6,
-    "srs": -38.6
+    "srs": -38.4
   },
   "Edward Waters": {
     "league": "CFB",
@@ -21615,7 +21615,7 @@
     "ppg": 22.1,
     "pa": 17.5,
     "passOff": 173.7,
-    "rushOff": 171.0,
+    "rushOff": 170.4,
     "passDef": 179.2,
     "rushDef": 111.0,
     "to": 0,
@@ -21711,7 +21711,7 @@
     "awayPpg": 17.6,
     "awayPa": 21.6,
     "awayGames": 5,
-    "srs": -40.1
+    "srs": -40.2
   },
   "Fairmont State": {
     "league": "CFB",
@@ -21922,7 +21922,7 @@
     "awayPpg": 18.0,
     "awayPa": 42.2,
     "awayGames": 4,
-    "srs": -45.2
+    "srs": -47.5
   },
   "Franklin Pierce": {
     "league": "CFB",
@@ -22125,7 +22125,7 @@
     "awayPpg": 20.0,
     "awayPa": 21.3,
     "awayGames": 7,
-    "srs": -22.8
+    "srs": -25.5
   },
   "Georgetown": {
     "league": "CFB",
@@ -22215,7 +22215,7 @@
     "awayPpg": 25.3,
     "awayPa": 22.7,
     "awayGames": 3,
-    "srs": -42.1
+    "srs": -43.0
   },
   "Glenville State": {
     "league": "CFB",
@@ -22418,7 +22418,7 @@
     "awayPpg": 19.3,
     "awayPa": 49.0,
     "awayGames": 3,
-    "srs": -45.6
+    "srs": -43.8
   },
   "Holy Cross": {
     "league": "CFB",
@@ -22524,7 +22524,7 @@
     "awayPpg": 21.7,
     "awayPa": 29.7,
     "awayGames": 6,
-    "srs": -36.3
+    "srs": -37.1
   },
   "Howard": {
     "league": "CFB",
@@ -22630,7 +22630,7 @@
     "awayPpg": 13.3,
     "awayPa": 34.0,
     "awayGames": 6,
-    "srs": -43.4
+    "srs": -43.7
   },
   "Illinois State": {
     "league": "CFB",
@@ -22736,7 +22736,7 @@
     "awayPpg": 29.2,
     "awayPa": 25.0,
     "awayGames": 5,
-    "srs": -14.9
+    "srs": -17.5
   },
   "Jackson State": {
     "league": "CFB",
@@ -22834,7 +22834,7 @@
     "awayPpg": 28.3,
     "awayPa": 31.0,
     "awayGames": 3,
-    "srs": -36.9
+    "srs": -37.4
   },
   "Kentucky State": {
     "league": "CFB",
@@ -23150,7 +23150,7 @@
     "awayPpg": 31.2,
     "awayPa": 20.6,
     "awayGames": 5,
-    "srs": -26.7
+    "srs": -24.5
   },
   "Lindenwood": {
     "league": "CFB",
@@ -23248,7 +23248,7 @@
     "awayPpg": 20.6,
     "awayPa": 29.4,
     "awayGames": 5,
-    "srs": -32.3
+    "srs": -30.3
   },
   "Marist": {
     "league": "CFB",
@@ -23354,7 +23354,7 @@
     "awayPpg": 25.0,
     "awayPa": 22.4,
     "awayGames": 5,
-    "srs": -43.9
+    "srs": -45.9
   },
   "McNeese": {
     "league": "CFB",
@@ -23460,7 +23460,7 @@
     "awayPpg": 12.8,
     "awayPa": 29.8,
     "awayGames": 5,
-    "srs": -36.7
+    "srs": -34.7
   },
   "Mercer": {
     "league": "CFB",
@@ -23566,7 +23566,7 @@
     "awayPpg": 28.8,
     "awayPa": 18.4,
     "awayGames": 5,
-    "srs": -26.8
+    "srs": -25.5
   },
   "Miles": {
     "league": "CFB",
@@ -23777,7 +23777,7 @@
     "awayPpg": 29.7,
     "awayPa": 28.2,
     "awayGames": 6,
-    "srs": -29.6
+    "srs": -30.7
   },
   "Montana": {
     "league": "CFB",
@@ -23883,7 +23883,7 @@
     "awayPpg": 41.2,
     "awayPa": 39.0,
     "awayGames": 4,
-    "srs": -17.8
+    "srs": -16.9
   },
   "Montana State": {
     "league": "CFB",
@@ -23989,7 +23989,7 @@
     "awayPpg": 38.4,
     "awayPa": 17.6,
     "awayGames": 5,
-    "srs": -9.6
+    "srs": -9.3
   },
   "Morehead State": {
     "league": "CFB",
@@ -24095,7 +24095,7 @@
     "awayPpg": 16.2,
     "awayPa": 45.2,
     "awayGames": 5,
-    "srs": -58.9
+    "srs": -56.7
   },
   "Morehouse": {
     "league": "CFB",
@@ -24306,7 +24306,7 @@
     "awayPpg": 17.4,
     "awayPa": 34.6,
     "awayGames": 5,
-    "srs": -45.0
+    "srs": -43.8
   },
   "North Carolina Central": {
     "league": "CFB",
@@ -24412,7 +24412,7 @@
     "awayPpg": 23.8,
     "awayPa": 33.6,
     "awayGames": 5,
-    "srs": -38.5
+    "srs": -38.1
   },
   "North Dakota": {
     "league": "CFB",
@@ -24526,7 +24526,7 @@
     "awayPpg": 27.3,
     "awayPa": 28.8,
     "awayGames": 6,
-    "srs": -12.7
+    "srs": -11.6
   },
   "Northern Colorado": {
     "league": "CFB",
@@ -24632,7 +24632,7 @@
     "awayPpg": 15.8,
     "awayPa": 30.4,
     "awayGames": 5,
-    "srs": -29.6
+    "srs": -29.4
   },
   "Northern Iowa": {
     "league": "CFB",
@@ -24730,7 +24730,7 @@
     "awayPpg": 15.8,
     "awayPa": 36.0,
     "awayGames": 4,
-    "srs": -20.3
+    "srs": -22.8
   },
   "Ohio Dominican": {
     "league": "CFB",
@@ -24941,7 +24941,7 @@
     "awayPpg": 22.2,
     "awayPa": 30.8,
     "awayGames": 5,
-    "srs": -38.8
+    "srs": -35.3
   },
   "Presbyterian": {
     "league": "CFB",
@@ -25039,7 +25039,7 @@
     "awayPpg": 15.6,
     "awayPa": 45.8,
     "awayGames": 5,
-    "srs": -50.2
+    "srs": -50.0
   },
   "Richmond": {
     "league": "CFB",
@@ -25145,7 +25145,7 @@
     "awayPpg": 16.0,
     "awayPa": 34.7,
     "awayGames": 6,
-    "srs": -38.6
+    "srs": -41.3
   },
   "Robert Morris": {
     "league": "CFB",
@@ -25251,7 +25251,7 @@
     "awayPpg": 20.0,
     "awayPa": 28.3,
     "awayGames": 6,
-    "srs": -41.5
+    "srs": -39.5
   },
   "Roosevelt": {
     "league": "CFB",
@@ -25454,7 +25454,7 @@
     "awayPpg": 22.2,
     "awayPa": 27.8,
     "awayGames": 5,
-    "srs": -40.2
+    "srs": -40.8
   },
   "Samford": {
     "league": "CFB",
@@ -25560,7 +25560,7 @@
     "awayPpg": 16.0,
     "awayPa": 26.7,
     "awayGames": 6,
-    "srs": -32.5
+    "srs": -31.3
   },
   "San Diego": {
     "league": "CFB",
@@ -25666,7 +25666,7 @@
     "awayPpg": 25.7,
     "awayPa": 39.8,
     "awayGames": 6,
-    "srs": -44.3
+    "srs": -41.7
   },
   "Savannah State": {
     "league": "CFB",
@@ -25877,7 +25877,7 @@
     "awayPpg": 34.5,
     "awayPa": 23.0,
     "awayGames": 6,
-    "srs": -29.3
+    "srs": -31.1
   },
   "South Dakota": {
     "league": "CFB",
@@ -25983,7 +25983,7 @@
     "awayPpg": 31.8,
     "awayPa": 31.8,
     "awayGames": 5,
-    "srs": -9.8
+    "srs": -9.6
   },
   "South Dakota Mines": {
     "league": "CFB",
@@ -26194,7 +26194,7 @@
     "awayPpg": 21.8,
     "awayPa": 32.3,
     "awayGames": 6,
-    "srs": -41.2
+    "srs": -39.1
   },
   "Southern Connecticut State": {
     "league": "CFB",
@@ -26397,7 +26397,7 @@
     "awayPpg": 26.0,
     "awayPa": 26.2,
     "awayGames": 6,
-    "srs": -25.0
+    "srs": -23.6
   },
   "Southern Utah": {
     "league": "CFB",
@@ -26503,7 +26503,7 @@
     "awayPpg": 29.0,
     "awayPa": 35.6,
     "awayGames": 5,
-    "srs": -24.9
+    "srs": -24.5
   },
   "Stephen F. Austin": {
     "league": "CFB",
@@ -26513,7 +26513,7 @@
     "ppg": 39.6,
     "pa": 16.6,
     "passOff": 265.5,
-    "rushOff": 202.8,
+    "rushOff": 203.6,
     "passDef": 235.9,
     "rushDef": 105.2,
     "to": 0,
@@ -26609,7 +26609,7 @@
     "awayPpg": 35.8,
     "awayPa": 17.8,
     "awayGames": 5,
-    "srs": -13.5
+    "srs": -14.7
   },
   "Stetson": {
     "league": "CFB",
@@ -26715,7 +26715,7 @@
     "awayPpg": 16.3,
     "awayPa": 48.8,
     "awayGames": 6,
-    "srs": -56.7
+    "srs": -59.5
   },
   "Stonehill": {
     "league": "CFB",
@@ -26821,7 +26821,7 @@
     "awayPpg": 20.5,
     "awayPa": 22.8,
     "awayGames": 6,
-    "srs": -36.6
+    "srs": -38.4
   },
   "Stony Brook": {
     "league": "CFB",
@@ -26927,7 +26927,7 @@
     "awayPpg": 29.2,
     "awayPa": 31.2,
     "awayGames": 6,
-    "srs": -31.8
+    "srs": -31.9
   },
   "St. Thomas (MN)": {
     "league": "CFB",
@@ -27033,7 +27033,7 @@
     "awayPpg": 24.0,
     "awayPa": 42.8,
     "awayGames": 4,
-    "srs": -35.2
+    "srs": -37.4
   },
   "Tennessee Tech": {
     "league": "CFB",
@@ -27139,7 +27139,7 @@
     "awayPpg": 27.6,
     "awayPa": 24.2,
     "awayGames": 5,
-    "srs": -18.4
+    "srs": -19.6
   },
   "Texas Southern": {
     "league": "CFB",
@@ -27237,7 +27237,7 @@
     "awayPpg": 18.5,
     "awayPa": 53.0,
     "awayGames": 4,
-    "srs": -51.6
+    "srs": -49.0
   },
   "Tusculum": {
     "league": "CFB",
@@ -27448,7 +27448,7 @@
     "awayPpg": 24.2,
     "awayPa": 34.6,
     "awayGames": 5,
-    "srs": -29.5
+    "srs": -29.6
   },
   "UT Martin": {
     "league": "CFB",
@@ -27554,7 +27554,7 @@
     "awayPpg": 21.0,
     "awayPa": 37.5,
     "awayGames": 6,
-    "srs": -37.5
+    "srs": -35.4
   },
   "UT Permian Basin": {
     "league": "CFB",
@@ -27870,7 +27870,7 @@
     "awayPpg": 26.4,
     "awayPa": 25.8,
     "awayGames": 5,
-    "srs": -34.1
+    "srs": -32.2
   },
   "Wagner": {
     "league": "CFB",
@@ -27976,7 +27976,7 @@
     "awayPpg": 15.3,
     "awayPa": 46.7,
     "awayGames": 6,
-    "srs": -52.6
+    "srs": -50.7
   },
   "Weber State": {
     "league": "CFB",
@@ -28082,7 +28082,7 @@
     "awayPpg": 33.6,
     "awayPa": 40.0,
     "awayGames": 5,
-    "srs": -22.1
+    "srs": -21.8
   },
   "Western Carolina": {
     "league": "CFB",
@@ -28188,7 +28188,7 @@
     "awayPpg": 20.2,
     "awayPa": 38.2,
     "awayGames": 5,
-    "srs": -29.2
+    "srs": -28.1
   },
   "Western Illinois": {
     "league": "CFB",
@@ -28294,7 +28294,7 @@
     "awayPpg": 29.0,
     "awayPa": 31.4,
     "awayGames": 5,
-    "srs": -27.5
+    "srs": -25.4
   },
   "West Florida": {
     "league": "CFB",
@@ -28384,7 +28384,7 @@
     "awayPpg": 20.6,
     "awayPa": 22.0,
     "awayGames": 5,
-    "srs": -30.4
+    "srs": -29.6
   },
   "West Virginia State": {
     "league": "CFB",
@@ -28595,7 +28595,7 @@
     "awayPpg": 15.8,
     "awayPa": 37.8,
     "awayGames": 5,
-    "srs": -47.7
+    "srs": -47.6
   },
   "Winona State": {
     "league": "CFB",
@@ -28911,7 +28911,7 @@
     "awayPpg": 14.8,
     "awayPa": 23.0,
     "awayGames": 6,
-    "srs": -27.5
+    "srs": -29.5
   },
   "Bowie State": {
     "league": "CFB",
@@ -29324,10 +29324,10 @@
     "record": "6-4",
     "ppg": 38.5,
     "pa": 25.6,
-    "passOff": 304.3,
-    "rushOff": 163.3,
-    "passDef": 209.6,
-    "rushDef": 142.7,
+    "passOff": 303.3,
+    "rushOff": 172.2,
+    "passDef": 203.4,
+    "rushDef": 139.1,
     "to": 0,
     "ats": "",
     "wk1": true,
@@ -29421,7 +29421,7 @@
     "awayPpg": 26.8,
     "awayPa": 36.6,
     "awayGames": 5,
-    "srs": -21.8
+    "srs": -19.5
   },
   "Lincoln (PA)": {
     "league": "CFB",
@@ -29834,7 +29834,7 @@
     "awayPpg": 20.8,
     "awayPa": 27.6,
     "awayGames": 5,
-    "srs": -44.2
+    "srs": -43.7
   },
   "Virginia State": {
     "league": "CFB",
@@ -30029,7 +30029,7 @@
     "awayPpg": 15.2,
     "awayPa": 14.8,
     "awayGames": 4,
-    "srs": -28.0
+    "srs": -27.2
   },
   "Columbia": {
     "league": "CFB",
@@ -30119,7 +30119,7 @@
     "awayPpg": 22.2,
     "awayPa": 27.2,
     "awayGames": 4,
-    "srs": -43.3
+    "srs": -44.0
   },
   "Cornell": {
     "league": "CFB",
@@ -30209,7 +30209,7 @@
     "awayPpg": 23.2,
     "awayPa": 23.2,
     "awayGames": 4,
-    "srs": -26.8
+    "srs": -28.6
   },
   "Dartmouth": {
     "league": "CFB",
@@ -30299,7 +30299,7 @@
     "awayPpg": 19.8,
     "awayPa": 22.8,
     "awayGames": 4,
-    "srs": -31.8
+    "srs": -31.6
   },
   "Harvard": {
     "league": "CFB",
@@ -30479,7 +30479,7 @@
     "awayPpg": 21.0,
     "awayPa": 19.0,
     "awayGames": 4,
-    "srs": -27.7
+    "srs": -27.6
   },
   "American International": {
     "league": "CFB",
@@ -30957,7 +30957,7 @@
     "awayPpg": 15.2,
     "awayPa": 17.5,
     "awayGames": 4,
-    "srs": -38.9
+    "srs": -37.2
   },
   "Tuskegee": {
     "league": "CFB",
@@ -31152,7 +31152,7 @@
     "awayPpg": 27.5,
     "awayPa": 24.5,
     "awayGames": 4,
-    "srs": -31.4
+    "srs": -31.9
   },
   "West Alabama": {
     "league": "CFB",

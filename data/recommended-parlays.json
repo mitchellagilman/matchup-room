@@ -912,7 +912,7 @@
           "direction": null,
           "_away": "Houston Texans",
           "_home": "Los Angeles Chargers",
-          "status": "pending",
+          "status": "hit",
           "meta": {
             "league": "NFL",
             "type": "ml",
@@ -935,7 +935,7 @@
           "direction": null,
           "_away": "Green Bay Packers",
           "_home": "New England Patriots",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "ml",
@@ -958,7 +958,7 @@
           "direction": null,
           "_away": "Cincinnati Bengals",
           "_home": "Atlanta Falcons",
-          "status": "pending",
+          "status": "hit",
           "meta": {
             "league": "NFL",
             "type": "ml",
@@ -974,10 +974,11 @@
       "combined_odds": 300,
       "strength": "Strong",
       "date_logged": "2026-11-03",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-09",
       "rank": 1,
-      "id": "PAR|NFL|NFL Week 9|sides|Sides A"
+      "id": "PAR|NFL|NFL Week 9|sides|Sides A",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -998,7 +999,7 @@
           "direction": null,
           "_away": "Arizona Cardinals",
           "_home": "Seattle Seahawks",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "spread",
@@ -1021,7 +1022,7 @@
           "direction": null,
           "_away": "New York Giants",
           "_home": "Philadelphia Eagles",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "spread",
@@ -1044,7 +1045,7 @@
           "direction": null,
           "_away": "Las Vegas Raiders",
           "_home": "San Francisco 49ers",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "spread",
@@ -1060,10 +1061,11 @@
       "combined_odds": 576,
       "strength": "Medium",
       "date_logged": "2026-11-03",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-09",
       "rank": 2,
-      "id": "PAR|NFL|NFL Week 9|sides|Sides B"
+      "id": "PAR|NFL|NFL Week 9|sides|Sides B",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -1084,7 +1086,7 @@
           "direction": null,
           "_away": "Houston Texans",
           "_home": "Los Angeles Chargers",
-          "status": "pending",
+          "status": "hit",
           "meta": {
             "league": "NFL",
             "type": "ml",
@@ -1107,7 +1109,7 @@
           "direction": "under",
           "_away": "Tampa Bay Buccaneers",
           "_home": "Chicago Bears",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "total",
@@ -1130,7 +1132,7 @@
           "_player_name": "Omar Cooper Jr.",
           "_stat": "recYds",
           "_logged_recency_key": 202607,
-          "status": "pending",
+          "status": "hit",
           "meta": null,
           "edge": 59.5
         },
@@ -1147,7 +1149,7 @@
           "_player_name": "Jonathan Taylor",
           "_stat": "rushYds",
           "_logged_recency_key": 202608,
-          "status": "pending",
+          "status": "miss",
           "meta": null,
           "edge": 68.0
         }
@@ -1157,10 +1159,11 @@
       "combined_odds": 934,
       "strength": "Medium",
       "date_logged": "2026-11-03",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-09",
       "rank": 3,
-      "id": "PAR|NFL|NFL Week 9|mix|Mix + props"
+      "id": "PAR|NFL|NFL Week 9|mix|Mix + props",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -1181,7 +1184,7 @@
           "direction": "under",
           "_away": "Tampa Bay Buccaneers",
           "_home": "Chicago Bears",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "total",
@@ -1204,7 +1207,7 @@
           "direction": "under",
           "_away": "Green Bay Packers",
           "_home": "New England Patriots",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "total",
@@ -1227,7 +1230,7 @@
           "direction": "under",
           "_away": "Cleveland Browns",
           "_home": "New Orleans Saints",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "total",
@@ -1243,10 +1246,11 @@
       "combined_odds": 612,
       "strength": "Lean",
       "date_logged": "2026-11-03",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-09",
       "rank": 4,
-      "id": "PAR|NFL|NFL Week 9|totals|Totals A"
+      "id": "PAR|NFL|NFL Week 9|totals|Totals A",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -1267,7 +1271,7 @@
           "direction": "over",
           "_away": "Arizona Cardinals",
           "_home": "Seattle Seahawks",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "total",
@@ -1290,7 +1294,7 @@
           "direction": "under",
           "_away": "New York Jets",
           "_home": "Kansas City Chiefs",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "total",
@@ -1329,11 +1333,453 @@
       "combined_odds": 612,
       "strength": "Lean",
       "date_logged": "2026-11-03",
+      "status": "miss",
+      "graded_date": "2026-11-09",
+      "rank": 5,
+      "id": "PAR|NFL|NFL Week 9|totals|Totals B",
+      "profit_units": -1.0
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 12",
+      "kind": "sides",
+      "name": "Sides A",
+      "legs": [
+        {
+          "kind": "Moneyline",
+          "type": "ml",
+          "label": "Houston ML",
+          "matchup": "Houston vs Colorado",
+          "date": "2026-11-14",
+          "odds": -345,
+          "prob": 0.761,
+          "line": 0,
+          "favored_team": "Houston",
+          "direction": null,
+          "_away": "Houston",
+          "_home": "Colorado",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "ml",
+            "team": "Houston",
+            "opp": "Colorado",
+            "line": 0,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Moneyline",
+          "type": "ml",
+          "label": "South Carolina ML",
+          "matchup": "South Carolina vs Arkansas",
+          "date": "2026-11-15",
+          "odds": -285,
+          "prob": 0.712,
+          "line": 0,
+          "favored_team": "South Carolina",
+          "direction": null,
+          "_away": "South Carolina",
+          "_home": "Arkansas",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "ml",
+            "team": "South Carolina",
+            "opp": "Arkansas",
+            "line": 0,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Moneyline",
+          "type": "ml",
+          "label": "Indiana ML",
+          "matchup": "USC vs Indiana",
+          "date": "2026-11-14",
+          "odds": -265,
+          "prob": 0.706,
+          "line": 0,
+          "favored_team": "Indiana",
+          "direction": null,
+          "_away": "USC",
+          "_home": "Indiana",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "ml",
+            "team": "Indiana",
+            "opp": "USC",
+            "line": 0,
+            "dir": null
+          }
+        }
+      ],
+      "avg_prob": 0.726,
+      "combined_prob": 0.383,
+      "combined_odds": 140,
+      "strength": "Strong",
+      "date_logged": "2026-11-09",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 1,
+      "id": "PAR|CFB|CFB Week 12|sides|Sides A"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 12",
+      "kind": "mix",
+      "name": "Mix + props",
+      "legs": [
+        {
+          "kind": "Moneyline",
+          "type": "ml",
+          "label": "Houston ML",
+          "matchup": "Houston vs Colorado",
+          "date": "2026-11-14",
+          "odds": -345,
+          "prob": 0.761,
+          "line": 0,
+          "favored_team": "Houston",
+          "direction": null,
+          "_away": "Houston",
+          "_home": "Colorado",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "ml",
+            "team": "Houston",
+            "opp": "Colorado",
+            "line": 0,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 39.5",
+          "matchup": "Michigan vs Oregon",
+          "date": "2026-11-14",
+          "odds": 100,
+          "prob": 0.613,
+          "line": 39.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "Michigan",
+          "_home": "Oregon",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Michigan",
+            "opp": "Oregon",
+            "line": 39.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Player prop",
+          "type": "player_prop",
+          "matchup": "Missouri vs Georgia",
+          "label": "Zachariah Branch Over 8.5 receiving yards",
+          "date": "2026-11-14",
+          "odds": -106,
+          "prob": 0.58,
+          "line": 8.5,
+          "direction": "over",
+          "_player_name": "Zachariah Branch",
+          "_stat": "recYds",
+          "_logged_recency_key": 202515,
+          "status": "pending",
+          "meta": null,
+          "edge": 47.0
+        },
+        {
+          "kind": "Player prop",
+          "type": "player_prop",
+          "matchup": "Purdue vs Iowa",
+          "label": "Fame Ijeboi Under 98.5 rushing yards",
+          "date": "2026-11-15",
+          "odds": -115,
+          "prob": 0.58,
+          "line": 98.5,
+          "direction": "under",
+          "_player_name": "Fame Ijeboi",
+          "_stat": "rushYds",
+          "_logged_recency_key": 202610,
+          "status": "pending",
+          "meta": null,
+          "edge": 78.0
+        }
+      ],
+      "avg_prob": 0.633,
+      "combined_prob": 0.157,
+      "combined_odds": 837,
+      "strength": "Strong",
+      "date_logged": "2026-11-09",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 2,
+      "id": "PAR|CFB|CFB Week 12|mix|Mix + props"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 12",
+      "kind": "totals",
+      "name": "Totals A",
+      "legs": [
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 39.5",
+          "matchup": "Michigan vs Oregon",
+          "date": "2026-11-14",
+          "odds": 100,
+          "prob": 0.613,
+          "line": 39.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "Michigan",
+          "_home": "Oregon",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Michigan",
+            "opp": "Oregon",
+            "line": 39.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 46.5",
+          "matchup": "Illinois vs UCLA",
+          "date": "2026-11-14",
+          "odds": -108,
+          "prob": 0.59,
+          "line": 46.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "Illinois",
+          "_home": "UCLA",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Illinois",
+            "opp": "UCLA",
+            "line": 46.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 54.5",
+          "matchup": "Duke vs Miami",
+          "date": "2026-11-14",
+          "odds": -105,
+          "prob": 0.586,
+          "line": 54.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "Duke",
+          "_home": "Miami",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Duke",
+            "opp": "Miami",
+            "line": 54.5,
+            "dir": "over"
+          }
+        }
+      ],
+      "avg_prob": 0.596,
+      "combined_prob": 0.212,
+      "combined_odds": 652,
+      "strength": "Medium",
+      "date_logged": "2026-11-09",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 3,
+      "id": "PAR|CFB|CFB Week 12|totals|Totals A"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 12",
+      "kind": "sides",
+      "name": "Sides B",
+      "legs": [
+        {
+          "kind": "Spread",
+          "type": "spread",
+          "label": "New Mexico -14.5",
+          "matchup": "UNLV vs New Mexico",
+          "date": "2026-11-15",
+          "odds": -101,
+          "prob": 0.598,
+          "line": -14.5,
+          "favored_team": "New Mexico",
+          "direction": null,
+          "_away": "UNLV",
+          "_home": "New Mexico",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "spread",
+            "team": "New Mexico",
+            "opp": "UNLV",
+            "line": -14.5,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Spread",
+          "type": "spread",
+          "label": "Georgia -14.5",
+          "matchup": "Missouri vs Georgia",
+          "date": "2026-11-14",
+          "odds": -101,
+          "prob": 0.568,
+          "line": -14.5,
+          "favored_team": "Georgia",
+          "direction": null,
+          "_away": "Missouri",
+          "_home": "Georgia",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "spread",
+            "team": "Georgia",
+            "opp": "Missouri",
+            "line": -14.5,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Spread",
+          "type": "spread",
+          "label": "UCLA -10.0",
+          "matchup": "Illinois vs UCLA",
+          "date": "2026-11-14",
+          "odds": -106,
+          "prob": 0.566,
+          "line": -10.0,
+          "favored_team": "UCLA",
+          "direction": null,
+          "_away": "Illinois",
+          "_home": "UCLA",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "spread",
+            "team": "UCLA",
+            "opp": "Illinois",
+            "line": -10.0,
+            "dir": null
+          }
+        }
+      ],
+      "avg_prob": 0.577,
+      "combined_prob": 0.192,
+      "combined_odds": 670,
+      "strength": "Medium",
+      "date_logged": "2026-11-09",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 4,
+      "id": "PAR|CFB|CFB Week 12|sides|Sides B"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 12",
+      "kind": "totals",
+      "name": "Totals B",
+      "legs": [
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 45.5",
+          "matchup": "Texas vs LSU",
+          "date": "2026-11-15",
+          "odds": -108,
+          "prob": 0.568,
+          "line": 45.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "Texas",
+          "_home": "LSU",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Texas",
+            "opp": "LSU",
+            "line": 45.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 49.5",
+          "matchup": "Ole Miss vs Oklahoma",
+          "date": "2026-11-14",
+          "odds": -110,
+          "prob": 0.566,
+          "line": 49.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "Ole Miss",
+          "_home": "Oklahoma",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Ole Miss",
+            "opp": "Oklahoma",
+            "line": 49.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Under 66.5",
+          "matchup": "Oregon State vs Boise State",
+          "date": "2026-11-14",
+          "odds": -104,
+          "prob": 0.566,
+          "line": 66.5,
+          "favored_team": null,
+          "direction": "under",
+          "_away": "Oregon State",
+          "_home": "Boise State",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Oregon State",
+            "opp": "Boise State",
+            "line": 66.5,
+            "dir": "under"
+          }
+        }
+      ],
+      "avg_prob": 0.567,
+      "combined_prob": 0.182,
+      "combined_odds": 621,
+      "strength": "Lean",
+      "date_logged": "2026-11-09",
       "status": "pending",
       "graded_date": null,
       "rank": 5,
-      "id": "PAR|NFL|NFL Week 9|totals|Totals B"
+      "id": "PAR|CFB|CFB Week 12|totals|Totals B"
     }
   ],
-  "updated": "2026-11-08"
+  "updated": "2026-11-09"
 }
