@@ -289,14 +289,14 @@
   },
   "Buffalo Bills": {
     "league": "NFL",
-    "record": "6-1",
-    "ppg": 33.3,
-    "pa": 25.9,
-    "passOff": 256.1,
-    "rushOff": 148.4,
-    "passDef": 269.0,
-    "rushDef": 97.4,
-    "to": -0.29,
+    "record": "7-1",
+    "ppg": 32.0,
+    "pa": 23.4,
+    "passOff": 253.4,
+    "rushOff": 146.6,
+    "passDef": 252.8,
+    "rushDef": 91.6,
+    "to": 0.0,
     "ats": "",
     "wk1": true,
     "games": [
@@ -355,6 +355,14 @@
         "teamScore": 36.0,
         "oppScore": 10.0,
         "result": "W"
+      },
+      {
+        "week": "9",
+        "date": "2026-11-09",
+        "opp": "Minnesota Vikings",
+        "teamScore": 23.0,
+        "oppScore": 6.0,
+        "result": "W"
       }
     ],
     "prevPpg": 28.3,
@@ -363,9 +371,9 @@
     "homePpg": 31.8,
     "homePa": 21.5,
     "homeGames": 4,
-    "awayPpg": 35.3,
-    "awayPa": 31.7,
-    "awayGames": 3
+    "awayPpg": 32.2,
+    "awayPa": 25.2,
+    "awayGames": 4
   },
   "Detroit Lions": {
     "league": "NFL",
@@ -2473,14 +2481,14 @@
   },
   "Minnesota Vikings": {
     "league": "NFL",
-    "record": "6-1",
-    "ppg": 20.0,
-    "pa": 13.3,
-    "passOff": 185.4,
-    "rushOff": 113.9,
-    "passDef": 180.1,
-    "rushDef": 116.7,
-    "to": 1.0,
+    "record": "6-2",
+    "ppg": 18.2,
+    "pa": 14.5,
+    "passOff": 179.6,
+    "rushOff": 106.0,
+    "passDef": 186.9,
+    "rushDef": 118.9,
+    "to": 0.62,
     "ats": "",
     "wk1": true,
     "games": [
@@ -2539,14 +2547,22 @@
         "teamScore": 15.0,
         "oppScore": 19.0,
         "result": "L"
+      },
+      {
+        "week": "9",
+        "date": "2026-11-09",
+        "opp": "Buffalo Bills",
+        "teamScore": 6.0,
+        "oppScore": 23.0,
+        "result": "L"
       }
     ],
     "prevPpg": 20.2,
     "prevPa": 19.6,
     "prevTo": -0.35,
-    "homePpg": 23.3,
-    "homePa": 14.0,
-    "homeGames": 3,
+    "homePpg": 19.0,
+    "homePa": 16.2,
+    "homeGames": 4,
     "awayPpg": 17.5,
     "awayPa": 12.8,
     "awayGames": 4

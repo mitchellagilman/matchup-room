@@ -1,5 +1,72 @@
 {
-  "Minnesota Vikings": {
+  "New York Giants": {
+    "windMph": 13,
+    "tempF": 63,
+    "shortForecast": "Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Detroit Lions": {
     "dome": true
+  },
+  "Atlanta Falcons": {
+    "dome": true
+  },
+  "Cleveland Browns": {
+    "windMph": 13,
+    "tempF": 60,
+    "shortForecast": "Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Green Bay Packers": {
+    "windMph": 7,
+    "tempF": 58,
+    "shortForecast": "Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Indianapolis Colts": {
+    "dome": true
+  },
+  "New Orleans Saints": {
+    "dome": true
+  },
+  "New York Jets": {
+    "windMph": 13,
+    "tempF": 63,
+    "shortForecast": "Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Tennessee Titans": {
+    "windMph": 5,
+    "tempF": 70,
+    "shortForecast": "Patchy Fog then Mostly Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Arizona Cardinals": {
+    "dome": true
+  },
+  "Las Vegas Raiders": {
+    "dome": true
+  },
+  "Dallas Cowboys": {
+    "dome": true
+  },
+  "Cincinnati Bengals": {
+    "windMph": 7,
+    "tempF": 68,
+    "shortForecast": "Sunny",
+    "severe": false,
+    "dome": false
+  },
+  "Baltimore Ravens": {
+    "windMph": 13,
+    "tempF": 68,
+    "shortForecast": "Sunny",
+    "severe": false,
+    "dome": false
   }
 }
