@@ -6,7 +6,7 @@
     "pa": 20.1,
     "passOff": 265.2,
     "rushOff": 125.3,
-    "passDef": 209.0,
+    "passDef": 209.1,
     "rushDef": 103.8,
     "to": -0.44,
     "ats": "",
@@ -1113,13 +1113,13 @@
   },
   "New York Giants": {
     "league": "NFL",
-    "record": "5-2-1",
-    "ppg": 22.8,
-    "pa": 21.5,
-    "passOff": 237.5,
-    "rushOff": 112.1,
-    "passDef": 189.2,
-    "rushDef": 123.6,
+    "record": "5-3-1",
+    "ppg": 22.6,
+    "pa": 21.8,
+    "passOff": 243.7,
+    "rushOff": 112.6,
+    "passDef": 195.9,
+    "rushDef": 121.6,
     "to": 0.0,
     "ats": "",
     "wk1": true,
@@ -1187,14 +1187,22 @@
         "teamScore": 19.0,
         "oppScore": 11.0,
         "result": "W"
+      },
+      {
+        "week": "10",
+        "date": "2026-11-12",
+        "opp": "Washington Commanders",
+        "teamScore": 21.0,
+        "oppScore": 24.0,
+        "result": "L"
       }
     ],
     "prevPpg": 22.4,
     "prevPa": 25.8,
     "prevTo": -0.06,
-    "homePpg": 25.8,
-    "homePa": 21.2,
-    "homeGames": 4,
+    "homePpg": 24.8,
+    "homePa": 21.8,
+    "homeGames": 5,
     "awayPpg": 19.8,
     "awayPa": 21.8,
     "awayGames": 4
@@ -1945,14 +1953,14 @@
   },
   "Washington Commanders": {
     "league": "NFL",
-    "record": "2-5-1",
-    "ppg": 21.5,
-    "pa": 25.2,
-    "passOff": 221.9,
-    "rushOff": 118.2,
-    "passDef": 256.0,
-    "rushDef": 102.2,
-    "to": 1.0,
+    "record": "3-5-1",
+    "ppg": 21.8,
+    "pa": 24.8,
+    "passOff": 225.0,
+    "rushOff": 116.8,
+    "passDef": 260.1,
+    "rushDef": 103.8,
+    "to": 0.89,
     "ats": "",
     "wk1": true,
     "games": [
@@ -2019,6 +2027,14 @@
         "teamScore": 13.0,
         "oppScore": 20.0,
         "result": "L"
+      },
+      {
+        "week": "10",
+        "date": "2026-11-12",
+        "opp": "New York Giants",
+        "teamScore": 24.0,
+        "oppScore": 21.0,
+        "result": "W"
       }
     ],
     "prevPpg": 20.9,
@@ -2027,9 +2043,9 @@
     "homePpg": 22.6,
     "homePa": 23.6,
     "homeGames": 5,
-    "awayPpg": 19.7,
-    "awayPa": 28.0,
-    "awayGames": 3
+    "awayPpg": 20.8,
+    "awayPa": 26.2,
+    "awayGames": 4
   },
   "New Orleans Saints": {
     "league": "NFL",

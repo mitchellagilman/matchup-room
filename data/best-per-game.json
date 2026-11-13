@@ -3824,8 +3824,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202608,
       "date_logged": "2026-11-03",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-13"
     },
     {
       "id": "BPG|NFL|2026-11-08|Las Vegas Raiders vs San Francisco 49ers|prop",
@@ -4719,8 +4719,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202515,
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-13"
     },
     {
       "id": "BPG|CFB|2026-11-14|Houston vs Colorado|prop",
@@ -4911,8 +4911,8 @@
       "_away": "Washington Commanders",
       "_home": "New York Giants",
       "date_logged": "2026-11-10",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-13"
     },
     {
       "id": "BPG|NFL|2026-11-15|New England Patriots vs Detroit Lions|team",
@@ -5450,10 +5450,10 @@
       "_stat": "recYds",
       "_logged_recency_key": 202609,
       "date_logged": "2026-11-10",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-13"
     }
   ],
-  "updated": "2026-11-10",
+  "updated": "2026-11-13",
   "version": 2
 }
