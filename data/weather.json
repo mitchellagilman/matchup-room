@@ -6,16 +6,16 @@
     "dome": true
   },
   "Cleveland Browns": {
-    "windMph": 13,
-    "tempF": 44,
-    "shortForecast": "Mostly Cloudy then Chance Light Rain",
-    "severe": false,
+    "windMph": 17,
+    "tempF": 47,
+    "shortForecast": "Light Rain Likely",
+    "severe": true,
     "dome": false
   },
   "Green Bay Packers": {
-    "windMph": 8,
-    "tempF": 31,
-    "shortForecast": "Chance Snow Showers",
+    "windMph": 7,
+    "tempF": 30,
+    "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
   },
@@ -27,15 +27,15 @@
   },
   "New York Jets": {
     "windMph": 15,
-    "tempF": 45,
-    "shortForecast": "Light Rain",
-    "severe": true,
+    "tempF": 47,
+    "shortForecast": "Partly Sunny",
+    "severe": false,
     "dome": false
   },
   "Tennessee Titans": {
-    "windMph": 10,
-    "tempF": 51,
-    "shortForecast": "Widespread Frost then Partly Sunny",
+    "windMph": 5,
+    "tempF": 34,
+    "shortForecast": "Widespread Frost",
     "severe": false,
     "dome": false
   },
@@ -50,16 +50,16 @@
   },
   "Cincinnati Bengals": {
     "windMph": 9,
-    "tempF": 47,
-    "shortForecast": "Chance Light Rain",
+    "tempF": 48,
+    "shortForecast": "Mostly Sunny",
     "severe": false,
     "dome": false
   },
   "Baltimore Ravens": {
-    "windMph": 15,
-    "tempF": 48,
-    "shortForecast": "Slight Chance Light Rain then Cloudy",
-    "severe": true,
+    "windMph": 14,
+    "tempF": 52,
+    "shortForecast": "Partly Sunny",
+    "severe": false,
     "dome": false
   }
 }

@@ -23363,96 +23363,6 @@
     "_id": "00-0033699",
     "teamYear": 2026
   },
-  "Dare Ogunbowale": {
-    "pos": "RB",
-    "team": "Houston Texans",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk1",
-        "opp": "vs LA",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 2,
-        "recYds": 17.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk8",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 1,
-        "recYds": 8.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk9",
-        "opp": "vs DEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk11",
-        "opp": "vs TEN",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 9.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk14",
-        "opp": "vs KC",
-        "passYds": 0.0,
-        "rushYds": 5.0,
-        "receptions": 0,
-        "recYds": 0.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk15",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 2.0,
-        "receptions": 3,
-        "recYds": 32.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk16",
-        "opp": "vs LV",
-        "passYds": 0.0,
-        "rushYds": -3.0,
-        "receptions": 1,
-        "recYds": 2.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs IND",
-        "passYds": 0.0,
-        "rushYds": 3.0,
-        "receptions": 1,
-        "recYds": 6.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 1,
-        "recYds": 3.0,
-        "tds": 0.0
-      }
-    ],
-    "_id": "00-0033854",
-    "teamYear": 2026
-  },
   "Nico Collins": {
     "pos": "WR",
     "team": "Houston Texans",
@@ -23793,105 +23703,6 @@
       }
     ],
     "_id": "00-0038976",
-    "teamYear": 2026
-  },
-  "Puka Nacua": {
-    "pos": "WR",
-    "team": "Los Angeles Rams",
-    "league": "NFL",
-    "games": [
-      {
-        "date": "2025-wk16",
-        "opp": "vs SEA",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 12,
-        "recYds": 225.0,
-        "tds": 2.0
-      },
-      {
-        "date": "2025-wk17",
-        "opp": "vs ATL",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 47.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2025-wk18",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 24.0,
-        "receptions": 10,
-        "recYds": 76.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk1",
-        "opp": "vs SF",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 5,
-        "recYds": 74.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk4",
-        "opp": "vs PHI",
-        "passYds": 0.0,
-        "rushYds": 2.0,
-        "receptions": 9,
-        "recYds": 125.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk5",
-        "opp": "vs BUF",
-        "passYds": 0.0,
-        "rushYds": 9.0,
-        "receptions": 17,
-        "recYds": 138.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk6",
-        "opp": "vs ARI",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 6,
-        "recYds": 80.0,
-        "tds": 0.0
-      },
-      {
-        "date": "2026-wk7",
-        "opp": "vs LV",
-        "passYds": 0.0,
-        "rushYds": 10.0,
-        "receptions": 8,
-        "recYds": 68.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk8",
-        "opp": "vs LAC",
-        "passYds": 0.0,
-        "rushYds": 0.0,
-        "receptions": 11,
-        "recYds": 80.0,
-        "tds": 1.0
-      },
-      {
-        "date": "2026-wk9",
-        "opp": "vs WAS",
-        "passYds": 0.0,
-        "rushYds": 20.0,
-        "receptions": 14,
-        "recYds": 150.0,
-        "tds": 1.0
-      }
-    ],
-    "_id": "00-0039075",
     "teamYear": 2026
   },
   "J.J. McCarthy": {
@@ -35800,6 +35611,41 @@
     "league": "NFL",
     "games": [],
     "_id": "00-0041568",
+    "teamYear": 2026
+  },
+  "Nikko Remigio": {
+    "pos": "WR",
+    "team": "Houston Texans",
+    "league": "NFL",
+    "games": [
+      {
+        "date": "2025-wk2",
+        "opp": "vs PHI",
+        "passYds": 0.0,
+        "rushYds": 0.0,
+        "receptions": 1,
+        "recYds": 21.0,
+        "tds": 0.0
+      },
+      {
+        "date": "2025-wk3",
+        "opp": "vs NYG",
+        "passYds": 0.0,
+        "rushYds": 11.0,
+        "receptions": 0,
+        "recYds": 0.0,
+        "tds": 0.0
+      }
+    ],
+    "_id": "00-0038519",
+    "teamYear": 2026
+  },
+  "Brennan Presley": {
+    "pos": "WR",
+    "team": "Los Angeles Rams",
+    "league": "NFL",
+    "games": [],
+    "_id": "00-0040597",
     "teamYear": 2026
   }
 }

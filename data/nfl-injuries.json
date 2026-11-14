@@ -2,12 +2,372 @@
   "week": 10,
   "entries": [
     {
+      "team": "Arizona Cardinals",
+      "name": "Hjalte Froholdt",
+      "pos": "C",
+      "injury": "Concussion",
+      "status": "Out",
+      "_id": "00-0035258"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "name": "Andrew Wingard",
+      "pos": "S",
+      "injury": "Groin",
+      "status": "Questionable",
+      "_id": "00-0035378"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "name": "Roy Lopez",
+      "pos": "DT",
+      "injury": "Toe",
+      "status": "Questionable",
+      "_id": "00-0036568"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "name": "Hunter Long",
+      "pos": "TE",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0037004"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "name": "Zachary Carter",
+      "pos": "DT",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0037804"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "name": "Jon Gaines II",
+      "pos": "G",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0038571"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "name": "Max Melton",
+      "pos": "CB",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0039807"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "name": "Darius Robinson",
+      "pos": "DT",
+      "injury": "Wrist",
+      "status": "Questionable",
+      "_id": "00-0039854"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "name": "Jayden Williams",
+      "pos": "T",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0041113"
+    },
+    {
+      "team": "Atlanta Falcons",
+      "name": "Josh Woods",
+      "pos": "LB",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0034801"
+    },
+    {
+      "team": "Atlanta Falcons",
+      "name": "Divine Deablo",
+      "pos": "LB",
+      "injury": "Forearm",
+      "status": "Doubtful",
+      "_id": "00-0036990"
+    },
+    {
+      "team": "Atlanta Falcons",
+      "name": "Gervon Dexter Sr.",
+      "pos": "DT",
+      "injury": "Illness",
+      "status": "Questionable",
+      "_id": "00-0039070"
+    },
+    {
+      "team": "Atlanta Falcons",
+      "name": "James Pearce Jr.",
+      "pos": "DE",
+      "injury": "Back",
+      "status": "Questionable",
+      "_id": "00-0040578"
+    },
+    {
+      "team": "Atlanta Falcons",
+      "name": "Zachariah Branch",
+      "pos": "WR",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0041044"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Sam Franklin Jr.",
+      "pos": "S",
+      "injury": "Shoulder",
+      "status": "Questionable",
+      "_id": "00-0036037"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Spencer Brown",
+      "pos": "T",
+      "injury": "Ankle",
+      "status": "Doubtful",
+      "_id": "00-0036976"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Christian Benford",
+      "pos": "CB",
+      "injury": "Wrist",
+      "status": "Questionable",
+      "_id": "00-0037288"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Tyrell Shavers",
+      "pos": "WR",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0038679"
+    },
+    {
+      "team": "Buffalo Bills",
+      "name": "Jordan Hancock",
+      "pos": "CB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0040192"
+    },
+    {
+      "team": "Carolina Panthers",
+      "name": "Mike Jackson",
+      "pos": "CB",
+      "injury": "Groin",
+      "status": "Doubtful",
+      "_id": "00-0035277"
+    },
+    {
+      "team": "Carolina Panthers",
+      "name": "Bobby Okereke",
+      "pos": "LB",
+      "injury": "Foot",
+      "status": "Out",
+      "_id": "00-0035687"
+    },
+    {
+      "team": "Carolina Panthers",
+      "name": "Jaelan Phillips",
+      "pos": "LB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0036934"
+    },
+    {
+      "team": "Carolina Panthers",
+      "name": "Brady Christensen",
+      "pos": "G",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0036968"
+    },
+    {
+      "team": "Carolina Panthers",
+      "name": "Xavier Legette",
+      "pos": "WR",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0039342"
+    },
+    {
+      "team": "Carolina Panthers",
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "injury": "Groin",
+      "status": "Doubtful",
+      "_id": "00-0039344"
+    },
+    {
+      "team": "Carolina Panthers",
+      "name": "Will Lee III",
+      "pos": "CB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0041063"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Jalen Davis",
+      "pos": "CB",
+      "injury": "Hamstring",
+      "status": "Doubtful",
+      "_id": "00-0034446"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Kyle Dugger",
+      "pos": "S",
+      "injury": "Quadricep",
+      "status": "Out",
+      "_id": "00-0036231"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Andrei Iosivas",
+      "pos": "WR",
+      "injury": "Thumb",
+      "status": "Doubtful",
+      "_id": "00-0038619"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Brian Parker II",
+      "pos": "G",
+      "injury": "Knee",
+      "status": "Doubtful",
+      "_id": "00-0041098"
+    },
+    {
+      "team": "Cleveland Browns",
+      "name": "Michael Burton",
+      "pos": "FB",
+      "injury": "Calf",
+      "status": "Out",
+      "_id": "00-0031595"
+    },
+    {
+      "team": "Cleveland Browns",
+      "name": "Ronnie Hickman Jr.",
+      "pos": "S",
+      "injury": "Concussion",
+      "status": "Out",
+      "_id": "00-0038715"
+    },
+    {
+      "team": "Cleveland Browns",
+      "name": "Denzel Boston",
+      "pos": "WR",
+      "injury": "Toe",
+      "status": "Questionable",
+      "_id": "00-0041037"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Jonathan Bullard",
+      "pos": "DT",
+      "injury": "Calf",
+      "status": "Questionable",
+      "_id": "00-0033093"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "P.J. Locke",
+      "pos": "S",
+      "injury": "Concussion",
+      "status": "Out",
+      "_id": "00-0035227"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Tyler Goodson",
+      "pos": "RB",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0037120"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "DaRon Bland",
+      "pos": "CB",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0037275"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Juanyeh Thomas",
+      "pos": "S",
+      "injury": "Hamstring",
+      "status": "Doubtful",
+      "_id": "00-0037578"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Jake Ferguson",
+      "pos": "TE",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0038041"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Jonathan Mingo",
+      "pos": "WR",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0039062"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Joey Porter Jr.",
+      "pos": "CB",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0039167"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Alijah Clark",
+      "pos": "S",
+      "injury": "Illness",
+      "status": "Questionable",
+      "_id": "00-0040045"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Donovan Ezeiruaku",
+      "pos": "LB",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0040725"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "name": "Devin Moore",
+      "pos": "CB",
+      "injury": "Hip",
+      "status": "Questionable",
+      "_id": "00-0040875"
+    },
+    {
       "team": "Detroit Lions",
       "name": "D.J. Reed",
       "pos": "CB",
       "injury": "Hip",
       "status": "Out",
       "_id": "00-0034384"
+    },
+    {
+      "team": "Detroit Lions",
+      "name": "Amon-Ra St. Brown",
+      "pos": "WR",
+      "injury": "Rib",
+      "status": "Questionable",
+      "_id": "00-0036963"
     },
     {
       "team": "Detroit Lions",
@@ -26,12 +386,564 @@
       "_id": "00-0037667"
     },
     {
+      "team": "Detroit Lions",
+      "name": "Sione Vaki",
+      "pos": "RB",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0039364"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Kevin Zeitler",
+      "pos": "G",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0029592"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Zaire Franklin",
+      "pos": "LB",
+      "injury": "Shin",
+      "status": "Doubtful",
+      "_id": "00-0034431"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Josh Jacobs",
+      "pos": "RB",
+      "injury": "Finger",
+      "status": "Out",
+      "_id": "00-0035700"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Xavier McKinney",
+      "pos": "S",
+      "injury": "Foot",
+      "status": "Questionable",
+      "_id": "00-0036388"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Micah Parsons",
+      "pos": "LB",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0036932"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Sean Rhyan",
+      "pos": "C",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0037076"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Skyy Moore",
+      "pos": "WR",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0038090"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Josh Whyle",
+      "pos": "TE",
+      "injury": "Concussion",
+      "status": "Out",
+      "_id": "00-0038589"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Chris Brooks",
+      "pos": "RB",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0038685"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Lukas Van Ness",
+      "pos": "LB",
+      "injury": "Back",
+      "status": "Questionable",
+      "_id": "00-0039112"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Travis Glover",
+      "pos": "G",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0039819"
+    },
+    {
+      "team": "Green Bay Packers",
+      "name": "Javon Bullard",
+      "pos": "S",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0039867"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Danielle Hunter",
+      "pos": "DE",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0031565"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Trent Brown",
+      "pos": "T",
+      "injury": "Wrist",
+      "status": "Questionable",
+      "_id": "00-0032071"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Wyatt Teller",
+      "pos": "G",
+      "injury": "Illness",
+      "status": "Questionable",
+      "_id": "00-0034399"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Azeez Al-Shaair",
+      "pos": "LB",
+      "injury": "Groin",
+      "status": "Out",
+      "_id": "00-0035166"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "David Montgomery",
+      "pos": "RB",
+      "injury": "Groin",
+      "status": "Questionable",
+      "_id": "00-0035685"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Brevin Jordan",
+      "pos": "TE",
+      "injury": "Finger",
+      "status": "Out",
+      "_id": "00-0036556"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Jacob Hummel",
+      "pos": "LB",
+      "injury": "Groin",
+      "status": "Questionable",
+      "_id": "00-0037633"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Will Anderson Jr.",
+      "pos": "DE",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0039108"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Marvin Harrison Jr.",
+      "pos": "WR",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0039849"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Jaylin Smith",
+      "pos": "CB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0040149"
+    },
+    {
+      "team": "Houston Texans",
+      "name": "Keylan Rutledge",
+      "pos": "G",
+      "injury": "Neck",
+      "status": "Out",
+      "_id": "00-0041532"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "name": "Luke Rhodes",
+      "pos": "LS",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0032753"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "name": "Mo Alie-Cox",
+      "pos": "TE",
+      "injury": "Groin",
+      "status": "Out",
+      "_id": "00-0033217"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "name": "Arden Key",
+      "pos": "DE",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0034825"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "name": "Jerry Tillery",
+      "pos": "DT",
+      "injury": "Calf",
+      "status": "Out",
+      "_id": "00-0035674"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "name": "Akeem Davis-Gaither",
+      "pos": "LB",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0036298"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "name": "Will Mallory",
+      "pos": "TE",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0038394"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "name": "Jaylon Carlies",
+      "pos": "LB",
+      "injury": "Neck",
+      "status": "Out",
+      "_id": "00-0039377"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "name": "Jalen Travis",
+      "pos": "T",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0040163"
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "name": "Jessie Bates",
+      "pos": "S",
+      "injury": "Not injury related - resting player",
+      "status": "Out",
+      "_id": "00-0034675"
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "name": "Robert Hainsey",
+      "pos": "C",
+      "injury": "Concussion",
+      "status": "Questionable",
+      "_id": "00-0036985"
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "name": "Jordan Davis",
+      "pos": "DT",
+      "injury": "Not injury related - resting player",
+      "status": "Out",
+      "_id": "00-0037073"
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "name": "BJ Green II",
+      "pos": "DE",
+      "injury": "Forearm",
+      "status": "Out",
+      "_id": "00-0040329"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "name": "Jaylon Moore",
+      "pos": "T",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0036557"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "name": "Kenneth Walker III",
+      "pos": "RB",
+      "injury": "Groin",
+      "status": "Questionable",
+      "_id": "00-0038134"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "name": "Omarr Norman-Lott",
+      "pos": "DT",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0040748"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "name": "Jaydn Ott",
+      "pos": "RB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0040959"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "name": "Mansoor Delane",
+      "pos": "CB",
+      "injury": "Shoulder",
+      "status": "Questionable",
+      "_id": "00-0041543"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "name": "Peter Woods",
+      "pos": "DT",
+      "injury": "Neck",
+      "status": "Out",
+      "_id": "00-0041545"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Joe Cardona",
+      "pos": "LS",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0032228"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Myles Garrett",
+      "pos": "LB",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0033868"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Kam Curl",
+      "pos": "S",
+      "injury": "Toe",
+      "status": "Questionable",
+      "_id": "00-0036349"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Trent McDuffie",
+      "pos": "CB",
+      "injury": "Back",
+      "status": "Questionable",
+      "_id": "00-0037191"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Steve Avila",
+      "pos": "G",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0039058"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Davis Allen",
+      "pos": "TE",
+      "injury": "Oblique",
+      "status": "Questionable",
+      "_id": "00-0039074"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "name": "Terrance Ferguson",
+      "pos": "TE",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0040737"
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "name": "Thomas Booker",
+      "pos": "DT",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0037262"
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "name": "Dont'e Thornton Jr.",
+      "pos": "WR",
+      "injury": "Back",
+      "status": "Questionable",
+      "_id": "00-0040581"
+    },
+    {
+      "team": "Miami Dolphins",
+      "name": "Aaron Brewer",
+      "pos": "C",
+      "injury": "Concussion",
+      "status": "Out",
+      "_id": "00-0036171"
+    },
+    {
+      "team": "Miami Dolphins",
+      "name": "Darrell Baker Jr.",
+      "pos": "CB",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0037549"
+    },
+    {
+      "team": "Miami Dolphins",
+      "name": "Jared Wayne",
+      "pos": "WR",
+      "injury": "Quadricep",
+      "status": "Out",
+      "_id": "00-0038728"
+    },
+    {
+      "team": "Miami Dolphins",
+      "name": "Chris Bell",
+      "pos": "WR",
+      "injury": "Knee",
+      "status": "Doubtful",
+      "_id": "00-0041525"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Kyle Van Noy",
+      "pos": "LB",
+      "injury": "Calf",
+      "status": "Questionable",
+      "_id": "00-0031360"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Kyler Murray",
+      "pos": "QB",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0035228"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "T.J. Hockenson",
+      "pos": "TE",
+      "injury": "Wrist",
+      "status": "Out",
+      "_id": "00-0035229"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Blake Cashman",
+      "pos": "LB",
+      "injury": "Concussion",
+      "status": "Out",
+      "_id": "00-0035276"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Jauan Jennings",
+      "pos": "WR",
+      "injury": "Calf",
+      "status": "Out",
+      "_id": "00-0036259"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Josh Metellus",
+      "pos": "S",
+      "injury": "Shoulder",
+      "status": "Questionable",
+      "_id": "00-0036348"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Jordan Addison",
+      "pos": "WR",
+      "injury": "Thumb",
+      "status": "Questionable",
+      "_id": "00-0038994"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "name": "Tyrion Ingram-Dawkins",
+      "pos": "DT",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0040173"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "Greg Van Roten",
+      "pos": "G",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0029685"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "Kevin Byard",
+      "pos": "S",
+      "injury": "Chest",
+      "status": "Questionable",
+      "_id": "00-0033132"
+    },
+    {
       "team": "New England Patriots",
       "name": "Carlton Davis III",
       "pos": "CB",
       "injury": "Knee",
       "status": "Out",
       "_id": "00-0034778"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "A.J. Brown",
+      "pos": "WR",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0035676"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "Reggie Gilliam",
+      "pos": "FB",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0036187"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "Rhamondre Stevenson",
+      "pos": "RB",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0036875"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "Brenden Schooler",
+      "pos": "S",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0037205"
     },
     {
       "team": "New England Patriots",
@@ -43,11 +955,83 @@
     },
     {
       "team": "New England Patriots",
+      "name": "Cameron Latu",
+      "pos": "TE",
+      "injury": "Back",
+      "status": "Questionable",
+      "_id": "00-0038564"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "Charles Woods",
+      "pos": "CB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0039770"
+    },
+    {
+      "team": "New England Patriots",
+      "name": "Walter Rouse",
+      "pos": "T",
+      "injury": "Concussion",
+      "status": "Questionable",
+      "_id": "00-0039828"
+    },
+    {
+      "team": "New England Patriots",
       "name": "TreVeyon Henderson",
       "pos": "RB",
       "injury": "Illness",
       "status": "Out",
       "_id": "00-0040734"
+    },
+    {
+      "team": "New Orleans Saints",
+      "name": "Erik McCoy",
+      "pos": "C",
+      "injury": "Biceps",
+      "status": "Out",
+      "_id": "00-0035242"
+    },
+    {
+      "team": "New Orleans Saints",
+      "name": "Travis Etienne",
+      "pos": "RB",
+      "injury": "Hamstring",
+      "status": "Questionable",
+      "_id": "00-0036973"
+    },
+    {
+      "team": "New Orleans Saints",
+      "name": "Martin Emerson",
+      "pos": "CB",
+      "injury": "Shin",
+      "status": "Questionable",
+      "_id": "00-0037250"
+    },
+    {
+      "team": "New Orleans Saints",
+      "name": "Taliese Fuaga",
+      "pos": "T",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0039339"
+    },
+    {
+      "team": "New Orleans Saints",
+      "name": "CJ Donaldson",
+      "pos": "RB",
+      "injury": "Shoulder",
+      "status": "Out",
+      "_id": "00-0041326"
+    },
+    {
+      "team": "New Orleans Saints",
+      "name": "Christen Miller",
+      "pos": "DT",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0041390"
     },
     {
       "team": "New York Giants",
@@ -56,6 +1040,230 @@
       "injury": "Groin",
       "status": "Questionable",
       "_id": "00-0036280"
+    },
+    {
+      "team": "New York Jets",
+      "name": "Harrison Phillips",
+      "pos": "DT",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0034782"
+    },
+    {
+      "team": "New York Jets",
+      "name": "Joseph Ossai",
+      "pos": "DE",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0036902"
+    },
+    {
+      "team": "New York Jets",
+      "name": "Nahshon Wright",
+      "pos": "CB",
+      "injury": "Back",
+      "status": "Questionable",
+      "_id": "00-0036986"
+    },
+    {
+      "team": "New York Jets",
+      "name": "Garrett Wilson",
+      "pos": "WR",
+      "injury": "Concussion",
+      "status": "Questionable",
+      "_id": "00-0037740"
+    },
+    {
+      "team": "New York Jets",
+      "name": "Trevin Wallace",
+      "pos": "LB",
+      "injury": "Groin",
+      "status": "Out",
+      "_id": "00-0039347"
+    },
+    {
+      "team": "New York Jets",
+      "name": "Jarvis Brownlee Jr.",
+      "pos": "CB",
+      "injury": "Illness",
+      "status": "Questionable",
+      "_id": "00-0039372"
+    },
+    {
+      "team": "New York Jets",
+      "name": "Adonai Mitchell",
+      "pos": "WR",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0039890"
+    },
+    {
+      "team": "New York Jets",
+      "name": "VJ Payne",
+      "pos": "S",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0041120"
+    },
+    {
+      "team": "New York Jets",
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0041511"
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "name": "Derrick Harmon",
+      "pos": "DT",
+      "injury": "Foot",
+      "status": "Questionable",
+      "_id": "00-0040678"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "name": "Leonard Williams",
+      "pos": "DT",
+      "injury": "Stinger",
+      "status": "Out",
+      "_id": "00-0031933"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "name": "Quenton Nelson",
+      "pos": "G",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0034342"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "name": "Sam Darnold",
+      "pos": "QB",
+      "injury": "Ribs",
+      "status": "Out",
+      "_id": "00-0034869"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "name": "Charles Cross",
+      "pos": "T",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0037821"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Trent Williams",
+      "pos": "T",
+      "injury": "Shoulder",
+      "status": "Questionable",
+      "_id": "00-0027857"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Mike Evans",
+      "pos": "WR",
+      "injury": "Achilles",
+      "status": "Out",
+      "_id": "00-0031408"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Dre Greenlaw",
+      "pos": "LB",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0034982"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Deommodore Lenoir",
+      "pos": "CB",
+      "injury": "Foot",
+      "status": "Questionable",
+      "_id": "00-0036563"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Nate Hobbs",
+      "pos": "CB",
+      "injury": "Groin",
+      "status": "Questionable",
+      "_id": "00-0036871"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Renardo Green",
+      "pos": "CB",
+      "injury": "Back",
+      "status": "Questionable",
+      "_id": "00-0039345"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "Upton Stout",
+      "pos": "CB",
+      "injury": "Shoulder",
+      "status": "Questionable",
+      "_id": "00-0040152"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "name": "C.J. West",
+      "pos": "DT",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0040711"
+    },
+    {
+      "team": "Tennessee Titans",
+      "name": "Cody Barton",
+      "pos": "LB",
+      "injury": "Concussion",
+      "status": "Out",
+      "_id": "00-0035672"
+    },
+    {
+      "team": "Tennessee Titans",
+      "name": "Tommy Townsend",
+      "pos": "P",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0035889"
+    },
+    {
+      "team": "Tennessee Titans",
+      "name": "Tyjae Spears",
+      "pos": "RB",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0039032"
+    },
+    {
+      "team": "Tennessee Titans",
+      "name": "Peter Skoronski",
+      "pos": "G",
+      "injury": "Hamstring",
+      "status": "Out",
+      "_id": "00-0039034"
+    },
+    {
+      "team": "Tennessee Titans",
+      "name": "Carnell Tate",
+      "pos": "WR",
+      "injury": "Shoulder",
+      "status": "Out",
+      "_id": "00-0041438"
+    },
+    {
+      "team": "Tennessee Titans",
+      "name": "Anthony Hill Jr.",
+      "pos": "LB",
+      "injury": "Neck",
+      "status": "Out",
+      "_id": "00-0041479"
     },
     {
       "team": "Washington Commanders",

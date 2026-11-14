@@ -4111,8 +4111,8 @@
       "_away": "Illinois",
       "_home": "UCLA",
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-14"
     },
     {
       "id": "BPG|CFB|2026-11-14|Houston vs Colorado|team",
@@ -4132,8 +4132,8 @@
       "_away": "Houston",
       "_home": "Colorado",
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-14"
     },
     {
       "id": "BPG|CFB|2026-11-14|Duke vs Miami|team",
@@ -4738,8 +4738,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202610,
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-14"
     },
     {
       "id": "BPG|CFB|2026-11-14|Tennessee vs Texas A&M|prop",
@@ -4814,8 +4814,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202610,
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-14"
     },
     {
       "id": "BPG|CFB|2026-11-14|Duke vs Miami|prop",
@@ -5452,8 +5452,48 @@
       "date_logged": "2026-11-10",
       "status": "miss",
       "graded_date": "2026-11-13"
+    },
+    {
+      "id": "BPG|CFB|2026-11-15|Baylor vs BYU|team",
+      "league": "CFB",
+      "week": "CFB Week 12",
+      "date": "2026-11-15",
+      "matchup": "Baylor vs BYU",
+      "kind": "Spread",
+      "type": "spread",
+      "label": "Baylor +8.5",
+      "prob": 0.561,
+      "odds": 100,
+      "edge": 3.6,
+      "line": 8.5,
+      "favored_team": "Baylor",
+      "direction": null,
+      "_away": "Baylor",
+      "_home": "BYU",
+      "date_logged": "2026-11-14",
+      "status": "pending",
+      "graded_date": null
+    },
+    {
+      "id": "BPG|CFB|2026-11-15|Baylor vs BYU|prop",
+      "league": "CFB",
+      "week": "CFB Week 12",
+      "date": "2026-11-15",
+      "matchup": "Baylor vs BYU",
+      "kind": "Player prop",
+      "type": "player_prop",
+      "label": "Walker Lyons Over 31.5 receiving yards",
+      "edge": 20.0,
+      "line": 31.5,
+      "direction": "over",
+      "_player_name": "Walker Lyons",
+      "_stat": "recYds",
+      "_logged_recency_key": 202610,
+      "date_logged": "2026-11-14",
+      "status": "pending",
+      "graded_date": null
     }
   ],
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "version": 2
 }

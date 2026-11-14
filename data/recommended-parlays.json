@@ -1358,7 +1358,7 @@
           "direction": null,
           "_away": "Houston",
           "_home": "Colorado",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "CFB",
             "type": "ml",
@@ -1420,10 +1420,11 @@
       "combined_odds": 140,
       "strength": "Strong",
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-14",
       "rank": 1,
-      "id": "PAR|CFB|CFB Week 12|sides|Sides A"
+      "id": "PAR|CFB|CFB Week 12|sides|Sides A",
+      "profit_units": -1.0
     },
     {
       "league": "CFB",
@@ -1444,7 +1445,7 @@
           "direction": null,
           "_away": "Houston",
           "_home": "Colorado",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "CFB",
             "type": "ml",
@@ -1517,10 +1518,11 @@
       "combined_odds": 837,
       "strength": "Strong",
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-14",
       "rank": 2,
-      "id": "PAR|CFB|CFB Week 12|mix|Mix + props"
+      "id": "PAR|CFB|CFB Week 12|mix|Mix + props",
+      "profit_units": -1.0
     },
     {
       "league": "CFB",
@@ -1564,7 +1566,7 @@
           "direction": "over",
           "_away": "Illinois",
           "_home": "UCLA",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "CFB",
             "type": "total",
@@ -1603,10 +1605,11 @@
       "combined_odds": 652,
       "strength": "Medium",
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-14",
       "rank": 3,
-      "id": "PAR|CFB|CFB Week 12|totals|Totals A"
+      "id": "PAR|CFB|CFB Week 12|totals|Totals A",
+      "profit_units": -1.0
     },
     {
       "league": "CFB",
@@ -1673,7 +1676,7 @@
           "direction": null,
           "_away": "Illinois",
           "_home": "UCLA",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "CFB",
             "type": "spread",
@@ -1689,10 +1692,11 @@
       "combined_odds": 670,
       "strength": "Medium",
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-14",
       "rank": 4,
-      "id": "PAR|CFB|CFB Week 12|sides|Sides B"
+      "id": "PAR|CFB|CFB Week 12|sides|Sides B",
+      "profit_units": -1.0
     },
     {
       "league": "CFB",
@@ -2223,5 +2227,5 @@
       "id": "PAR|NFL|NFL Week 10|totals|Totals B"
     }
   ],
-  "updated": "2026-11-13"
+  "updated": "2026-11-14"
 }
