@@ -114,6 +114,22 @@
       "_id": "00-0041044"
     },
     {
+      "team": "Baltimore Ravens",
+      "name": "Jaylinn Hawkins",
+      "pos": "S",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0036302"
+    },
+    {
+      "team": "Baltimore Ravens",
+      "name": "Adam Randall",
+      "pos": "RB",
+      "injury": "Neck",
+      "status": "Questionable",
+      "_id": "00-0040888"
+    },
+    {
       "team": "Buffalo Bills",
       "name": "Sam Franklin Jr.",
       "pos": "S",
@@ -595,14 +611,6 @@
     },
     {
       "team": "Indianapolis Colts",
-      "name": "Arden Key",
-      "pos": "DE",
-      "injury": "Hamstring",
-      "status": "Questionable",
-      "_id": "00-0034825"
-    },
-    {
-      "team": "Indianapolis Colts",
       "name": "Jerry Tillery",
       "pos": "DT",
       "injury": "Calf",
@@ -776,6 +784,86 @@
       "injury": "Ankle",
       "status": "Out",
       "_id": "00-0040737"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Denzel Perryman",
+      "pos": "LB",
+      "injury": "Pectoral",
+      "status": "Questionable",
+      "_id": "00-0032103"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "David Njoku",
+      "pos": "TE",
+      "injury": "Fibula",
+      "status": "Questionable",
+      "_id": "00-0033885"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Trey Pipkins",
+      "pos": "T",
+      "injury": "Not injury related - personal matter",
+      "status": "Questionable",
+      "_id": "00-0035688"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Kayode Awosika",
+      "pos": "G",
+      "injury": "Fibula",
+      "status": "Questionable",
+      "_id": "00-0036736"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Kendall Williamson",
+      "pos": "S",
+      "injury": "Calf",
+      "status": "Out",
+      "_id": "00-0038414"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Justin Eboigbe",
+      "pos": "DE",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0039835"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Ladd McConkey",
+      "pos": "WR",
+      "injury": "Back",
+      "status": "Questionable",
+      "_id": "00-0039915"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Isas Waxter",
+      "pos": "CB",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0040065"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Branson Taylor",
+      "pos": "G",
+      "injury": "Ankle",
+      "status": "Out",
+      "_id": "00-0040212"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "name": "Brenen Thompson",
+      "pos": "WR",
+      "injury": "Hamstring",
+      "status": "Doubtful",
+      "_id": "00-0041550"
     },
     {
       "team": "Las Vegas Raiders",
