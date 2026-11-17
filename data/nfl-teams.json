@@ -1097,14 +1097,14 @@
   },
   "Los Angeles Chargers": {
     "league": "NFL",
-    "record": "0-8",
-    "ppg": 15.1,
-    "pa": 27.4,
-    "passOff": 201.9,
-    "rushOff": 114.5,
-    "passDef": 230.6,
-    "rushDef": 122.0,
-    "to": -0.75,
+    "record": "1-8",
+    "ppg": 16.0,
+    "pa": 26.6,
+    "passOff": 193.8,
+    "rushOff": 119.6,
+    "passDef": 242.8,
+    "rushDef": 110.2,
+    "to": -0.44,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1171,6 +1171,14 @@
         "teamScore": 22.0,
         "oppScore": 44.0,
         "result": "L"
+      },
+      {
+        "week": "10",
+        "date": "2026-11-16",
+        "opp": "Baltimore Ravens",
+        "teamScore": 23.0,
+        "oppScore": 20.0,
+        "result": "W"
       }
     ],
     "prevPpg": 21.6,
@@ -1179,9 +1187,9 @@
     "homePpg": 16.8,
     "homePa": 29.8,
     "homeGames": 4,
-    "awayPpg": 13.5,
-    "awayPa": 25.0,
-    "awayGames": 4
+    "awayPpg": 15.4,
+    "awayPa": 24.0,
+    "awayGames": 5
   },
   "New York Giants": {
     "league": "NFL",
@@ -1489,14 +1497,14 @@
   },
   "Baltimore Ravens": {
     "league": "NFL",
-    "record": "4-5",
-    "ppg": 21.0,
-    "pa": 26.2,
-    "passOff": 204.7,
-    "rushOff": 137.8,
-    "passDef": 241.9,
-    "rushDef": 99.9,
-    "to": -0.11,
+    "record": "4-6",
+    "ppg": 20.9,
+    "pa": 25.9,
+    "passOff": 218.2,
+    "rushOff": 125.6,
+    "passDef": 230.6,
+    "rushDef": 105.9,
+    "to": -0.3,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1571,14 +1579,22 @@
         "teamScore": 10.0,
         "oppScore": 33.0,
         "result": "L"
+      },
+      {
+        "week": "10",
+        "date": "2026-11-16",
+        "opp": "Los Angeles Chargers",
+        "teamScore": 20.0,
+        "oppScore": 23.0,
+        "result": "L"
       }
     ],
     "prevPpg": 24.9,
     "prevPa": 23.4,
     "prevTo": -0.12,
-    "homePpg": 16.0,
-    "homePa": 27.5,
-    "homeGames": 4,
+    "homePpg": 16.8,
+    "homePa": 26.6,
+    "homeGames": 5,
     "awayPpg": 25.0,
     "awayPa": 25.2,
     "awayGames": 5
