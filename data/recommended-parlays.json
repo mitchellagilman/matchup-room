@@ -2249,7 +2249,7 @@
           "direction": null,
           "_away": "Indianapolis Colts",
           "_home": "Houston Texans",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "spread",
@@ -2311,10 +2311,11 @@
       "combined_odds": 573,
       "strength": "Medium",
       "date_logged": "2026-11-17",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-20",
       "rank": 1,
-      "id": "PAR|NFL|NFL Week 11|sides|Sides A"
+      "id": "PAR|NFL|NFL Week 11|sides|Sides A",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -2335,7 +2336,7 @@
           "direction": null,
           "_away": "Indianapolis Colts",
           "_home": "Houston Texans",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "spread",
@@ -2408,10 +2409,11 @@
       "combined_odds": 1219,
       "strength": "Medium",
       "date_logged": "2026-11-17",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-20",
       "rank": 2,
-      "id": "PAR|NFL|NFL Week 11|mix|Mix + props"
+      "id": "PAR|NFL|NFL Week 11|mix|Mix + props",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -2478,7 +2480,7 @@
           "direction": "over",
           "_away": "Indianapolis Colts",
           "_home": "Houston Texans",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "total",
@@ -2494,10 +2496,11 @@
       "combined_odds": 622,
       "strength": "Medium",
       "date_logged": "2026-11-17",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-20",
       "rank": 3,
-      "id": "PAR|NFL|NFL Week 11|totals|Totals A"
+      "id": "PAR|NFL|NFL Week 11|totals|Totals A",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -2670,7 +2673,448 @@
       "graded_date": null,
       "rank": 5,
       "id": "PAR|NFL|NFL Week 11|totals|Totals B"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 13",
+      "kind": "sides",
+      "name": "Sides A",
+      "legs": [
+        {
+          "kind": "Moneyline",
+          "type": "ml",
+          "label": "UCLA ML",
+          "matchup": "UCLA vs Michigan",
+          "date": "2026-11-21",
+          "odds": -175,
+          "prob": 0.645,
+          "line": 0,
+          "favored_team": "UCLA",
+          "direction": null,
+          "_away": "UCLA",
+          "_home": "Michigan",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "ml",
+            "team": "UCLA",
+            "opp": "Michigan",
+            "line": 0,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Moneyline",
+          "type": "ml",
+          "label": "Missouri ML",
+          "matchup": "Kentucky vs Missouri",
+          "date": "2026-11-22",
+          "odds": -195,
+          "prob": 0.645,
+          "line": 0,
+          "favored_team": "Missouri",
+          "direction": null,
+          "_away": "Kentucky",
+          "_home": "Missouri",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "ml",
+            "team": "Missouri",
+            "opp": "Kentucky",
+            "line": 0,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Moneyline",
+          "type": "ml",
+          "label": "Memphis ML",
+          "matchup": "Memphis vs Navy",
+          "date": "2026-11-21",
+          "odds": -145,
+          "prob": 0.613,
+          "line": 0,
+          "favored_team": "Memphis",
+          "direction": null,
+          "_away": "Memphis",
+          "_home": "Navy",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "ml",
+            "team": "Memphis",
+            "opp": "Navy",
+            "line": 0,
+            "dir": null
+          }
+        }
+      ],
+      "avg_prob": 0.634,
+      "combined_prob": 0.255,
+      "combined_odds": 302,
+      "strength": "Strong",
+      "date_logged": "2026-11-20",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 1,
+      "id": "PAR|CFB|CFB Week 13|sides|Sides A"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 13",
+      "kind": "mix",
+      "name": "Mix + props",
+      "legs": [
+        {
+          "kind": "Moneyline",
+          "type": "ml",
+          "label": "UCLA ML",
+          "matchup": "UCLA vs Michigan",
+          "date": "2026-11-21",
+          "odds": -175,
+          "prob": 0.645,
+          "line": 0,
+          "favored_team": "UCLA",
+          "direction": null,
+          "_away": "UCLA",
+          "_home": "Michigan",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "ml",
+            "team": "UCLA",
+            "opp": "Michigan",
+            "line": 0,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 45.5",
+          "matchup": "LSU vs Tennessee",
+          "date": "2026-11-21",
+          "odds": -103,
+          "prob": 0.606,
+          "line": 45.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "LSU",
+          "_home": "Tennessee",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "LSU",
+            "opp": "Tennessee",
+            "line": 45.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Player prop",
+          "type": "player_prop",
+          "matchup": "Georgia vs South Carolina",
+          "label": "Zachariah Branch Over 8.5 receiving yards",
+          "date": "2026-11-22",
+          "odds": -106,
+          "prob": 0.58,
+          "line": 8.5,
+          "direction": "over",
+          "_player_name": "Zachariah Branch",
+          "_stat": "recYds",
+          "_logged_recency_key": 202515,
+          "status": "pending",
+          "meta": null,
+          "edge": 45.5
+        },
+        {
+          "kind": "Player prop",
+          "type": "player_prop",
+          "matchup": "Memphis vs Navy",
+          "label": "Jackson Gutierrez Over 84.5 rushing yards",
+          "date": "2026-11-21",
+          "odds": -114,
+          "prob": 0.58,
+          "line": 84.5,
+          "direction": "over",
+          "_player_name": "Jackson Gutierrez",
+          "_stat": "rushYds",
+          "_logged_recency_key": 202610,
+          "status": "pending",
+          "meta": null,
+          "edge": 129.0
+        }
+      ],
+      "avg_prob": 0.603,
+      "combined_prob": 0.131,
+      "combined_odds": 1030,
+      "strength": "Medium",
+      "date_logged": "2026-11-20",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 2,
+      "id": "PAR|CFB|CFB Week 13|mix|Mix + props"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 13",
+      "kind": "totals",
+      "name": "Totals A",
+      "legs": [
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 45.5",
+          "matchup": "LSU vs Tennessee",
+          "date": "2026-11-21",
+          "odds": -103,
+          "prob": 0.606,
+          "line": 45.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "LSU",
+          "_home": "Tennessee",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "LSU",
+            "opp": "Tennessee",
+            "line": 45.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 37.5",
+          "matchup": "UCLA vs Michigan",
+          "date": "2026-11-21",
+          "odds": 100,
+          "prob": 0.604,
+          "line": 37.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "UCLA",
+          "_home": "Michigan",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "UCLA",
+            "opp": "Michigan",
+            "line": 37.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 46.5",
+          "matchup": "BYU vs Kansas",
+          "date": "2026-11-21",
+          "odds": -105,
+          "prob": 0.596,
+          "line": 46.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "BYU",
+          "_home": "Kansas",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "BYU",
+            "opp": "Kansas",
+            "line": 46.5,
+            "dir": "over"
+          }
+        }
+      ],
+      "avg_prob": 0.602,
+      "combined_prob": 0.218,
+      "combined_odds": 670,
+      "strength": "Medium",
+      "date_logged": "2026-11-20",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 3,
+      "id": "PAR|CFB|CFB Week 13|totals|Totals A"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 13",
+      "kind": "totals",
+      "name": "Totals B",
+      "legs": [
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 60.5",
+          "matchup": "San Diego State vs Boise State",
+          "date": "2026-11-22",
+          "odds": -105,
+          "prob": 0.588,
+          "line": 60.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "San Diego State",
+          "_home": "Boise State",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "San Diego State",
+            "opp": "Boise State",
+            "line": 60.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 48.5",
+          "matchup": "Kentucky vs Missouri",
+          "date": "2026-11-22",
+          "odds": -108,
+          "prob": 0.576,
+          "line": 48.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "Kentucky",
+          "_home": "Missouri",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Kentucky",
+            "opp": "Missouri",
+            "line": 48.5,
+            "dir": "over"
+          }
+        },
+        {
+          "kind": "Total",
+          "type": "total",
+          "label": "Over 40.5",
+          "matchup": "Iowa vs Illinois",
+          "date": "2026-11-21",
+          "odds": -103,
+          "prob": 0.571,
+          "line": 40.5,
+          "favored_team": null,
+          "direction": "over",
+          "_away": "Iowa",
+          "_home": "Illinois",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "total",
+            "team": "Iowa",
+            "opp": "Illinois",
+            "line": 40.5,
+            "dir": "over"
+          }
+        }
+      ],
+      "avg_prob": 0.578,
+      "combined_prob": 0.193,
+      "combined_odds": 641,
+      "strength": "Medium",
+      "date_logged": "2026-11-20",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 4,
+      "id": "PAR|CFB|CFB Week 13|totals|Totals B"
+    },
+    {
+      "league": "CFB",
+      "week": "CFB Week 13",
+      "kind": "sides",
+      "name": "Sides B",
+      "legs": [
+        {
+          "kind": "Spread",
+          "type": "spread",
+          "label": "Tennessee +1.5",
+          "matchup": "LSU vs Tennessee",
+          "date": "2026-11-21",
+          "odds": -106,
+          "prob": 0.588,
+          "line": 1.5,
+          "favored_team": "Tennessee",
+          "direction": null,
+          "_away": "LSU",
+          "_home": "Tennessee",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "spread",
+            "team": "Tennessee",
+            "opp": "LSU",
+            "line": 1.5,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Spread",
+          "type": "spread",
+          "label": "SMU +20.5",
+          "matchup": "SMU vs Notre Dame",
+          "date": "2026-11-22",
+          "odds": -105,
+          "prob": 0.559,
+          "line": 20.5,
+          "favored_team": "SMU",
+          "direction": null,
+          "_away": "SMU",
+          "_home": "Notre Dame",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "spread",
+            "team": "SMU",
+            "opp": "Notre Dame",
+            "line": 20.5,
+            "dir": null
+          }
+        },
+        {
+          "kind": "Spread",
+          "type": "spread",
+          "label": "Michigan State +17.5",
+          "matchup": "Oregon vs Michigan State",
+          "date": "2026-11-21",
+          "odds": -106,
+          "prob": 0.549,
+          "line": 17.5,
+          "favored_team": "Michigan State",
+          "direction": null,
+          "_away": "Oregon",
+          "_home": "Michigan State",
+          "status": "pending",
+          "meta": {
+            "league": "CFB",
+            "type": "spread",
+            "team": "Michigan State",
+            "opp": "Oregon",
+            "line": 17.5,
+            "dir": null
+          }
+        }
+      ],
+      "avg_prob": 0.565,
+      "combined_prob": 0.18,
+      "combined_odds": 637,
+      "strength": "Lean",
+      "date_logged": "2026-11-20",
+      "status": "pending",
+      "graded_date": null,
+      "rank": 5,
+      "id": "PAR|CFB|CFB Week 13|sides|Sides B"
     }
   ],
-  "updated": "2026-11-17"
+  "updated": "2026-11-20"
 }

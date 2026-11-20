@@ -801,14 +801,14 @@
   },
   "Indianapolis Colts": {
     "league": "NFL",
-    "record": "3-7",
-    "ppg": 20.8,
-    "pa": 27.1,
-    "passOff": 183.8,
-    "rushOff": 120.9,
-    "passDef": 238.8,
-    "rushDef": 131.1,
-    "to": -1.2,
+    "record": "3-8",
+    "ppg": 19.2,
+    "pa": 27.0,
+    "passOff": 180.2,
+    "rushOff": 113.4,
+    "passDef": 234.7,
+    "rushDef": 134.4,
+    "to": -1.09,
     "ats": "",
     "wk1": true,
     "games": [
@@ -891,6 +891,14 @@
         "teamScore": 24.0,
         "oppScore": 22.0,
         "result": "W"
+      },
+      {
+        "week": "11",
+        "date": "2026-11-19",
+        "opp": "Houston Texans",
+        "teamScore": 3.0,
+        "oppScore": 26.0,
+        "result": "L"
       }
     ],
     "prevPpg": 27.4,
@@ -899,9 +907,9 @@
     "homePpg": 21.8,
     "homePa": 26.6,
     "homeGames": 5,
-    "awayPpg": 19.8,
-    "awayPa": 27.6,
-    "awayGames": 5
+    "awayPpg": 17.0,
+    "awayPa": 27.3,
+    "awayGames": 6
   },
   "Denver Broncos": {
     "league": "NFL",
@@ -1697,14 +1705,14 @@
   },
   "Houston Texans": {
     "league": "NFL",
-    "record": "3-6",
+    "record": "4-6",
     "ppg": 25.9,
-    "pa": 24.3,
-    "passOff": 274.3,
-    "rushOff": 87.2,
-    "passDef": 263.1,
-    "rushDef": 102.6,
-    "to": 0.44,
+    "pa": 22.2,
+    "passOff": 266.3,
+    "rushOff": 95.2,
+    "passDef": 251.2,
+    "rushDef": 96.1,
+    "to": 0.4,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1779,14 +1787,22 @@
         "teamScore": 24.0,
         "oppScore": 27.0,
         "result": "L"
+      },
+      {
+        "week": "11",
+        "date": "2026-11-19",
+        "opp": "Indianapolis Colts",
+        "teamScore": 26.0,
+        "oppScore": 3.0,
+        "result": "W"
       }
     ],
     "prevPpg": 23.8,
     "prevPa": 17.4,
     "prevTo": 0.79,
-    "homePpg": 22.0,
-    "homePa": 29.2,
-    "homeGames": 4,
+    "homePpg": 22.8,
+    "homePa": 24.0,
+    "homeGames": 5,
     "awayPpg": 29.0,
     "awayPa": 20.4,
     "awayGames": 5
