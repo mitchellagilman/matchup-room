@@ -3094,7 +3094,7 @@
           "direction": null,
           "_away": "Oregon",
           "_home": "Michigan State",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "CFB",
             "type": "spread",
@@ -3110,11 +3110,12 @@
       "combined_odds": 637,
       "strength": "Lean",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-21",
       "rank": 5,
-      "id": "PAR|CFB|CFB Week 13|sides|Sides B"
+      "id": "PAR|CFB|CFB Week 13|sides|Sides B",
+      "profit_units": -1.0
     }
   ],
-  "updated": "2026-11-20"
+  "updated": "2026-11-21"
 }

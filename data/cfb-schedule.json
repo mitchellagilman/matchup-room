@@ -2,11 +2,13 @@
   {
     "a": "Oregon",
     "b": "Michigan State",
-    "date": "2026-11-21"
+    "date": "2026-11-21",
+    "awayScore": 45,
+    "homeScore": 7
   },
   {
-    "a": "Vanderbilt",
-    "b": "Florida",
+    "a": "Memphis",
+    "b": "Navy",
     "date": "2026-11-21"
   },
   {
@@ -20,28 +22,28 @@
     "date": "2026-11-21"
   },
   {
-    "a": "BYU",
-    "b": "Kansas",
-    "date": "2026-11-21"
-  },
-  {
-    "a": "Memphis",
-    "b": "Navy",
-    "date": "2026-11-21"
-  },
-  {
     "a": "Wake Forest",
     "b": "Georgia Tech",
     "date": "2026-11-21"
   },
   {
-    "a": "Houston",
-    "b": "West Virginia",
+    "a": "BYU",
+    "b": "Kansas",
+    "date": "2026-11-21"
+  },
+  {
+    "a": "Vanderbilt",
+    "b": "Florida",
     "date": "2026-11-21"
   },
   {
     "a": "Western Kentucky",
     "b": "Liberty",
+    "date": "2026-11-21"
+  },
+  {
+    "a": "Houston",
+    "b": "West Virginia",
     "date": "2026-11-21"
   },
   {
@@ -55,8 +57,13 @@
     "date": "2026-11-21"
   },
   {
-    "a": "LSU",
-    "b": "Tennessee",
+    "a": "Texas Tech",
+    "b": "Baylor",
+    "date": "2026-11-21"
+  },
+  {
+    "a": "Arkansas",
+    "b": "Texas",
     "date": "2026-11-21"
   },
   {
@@ -65,18 +72,13 @@
     "date": "2026-11-21"
   },
   {
-    "a": "Texas Tech",
-    "b": "Baylor",
-    "date": "2026-11-21"
-  },
-  {
     "a": "Indiana",
     "b": "Washington",
     "date": "2026-11-21"
   },
   {
-    "a": "Arkansas",
-    "b": "Texas",
+    "a": "LSU",
+    "b": "Tennessee",
     "date": "2026-11-21"
   },
   {
@@ -95,8 +97,8 @@
     "date": "2026-11-22"
   },
   {
-    "a": "SMU",
-    "b": "Notre Dame",
+    "a": "Pittsburgh",
+    "b": "Louisville",
     "date": "2026-11-22"
   },
   {
@@ -105,8 +107,8 @@
     "date": "2026-11-22"
   },
   {
-    "a": "Pittsburgh",
-    "b": "Louisville",
+    "a": "SMU",
+    "b": "Notre Dame",
     "date": "2026-11-22"
   },
   {

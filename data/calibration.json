@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-21",
   "NFL": {
     "sample_size": 211,
     "min_sample_size": 30,
@@ -10,12 +10,12 @@
     "deviation_pct": -1.4
   },
   "CFB": {
-    "sample_size": 264,
+    "sample_size": 265,
     "min_sample_size": 30,
     "calibrated": true,
-    "strong_threshold": 7.12,
-    "moderate_threshold": 3.62,
-    "hit_rate": 0.527,
-    "deviation_pct": -2.3
+    "strong_threshold": 7.11,
+    "moderate_threshold": 3.61,
+    "hit_rate": 0.528,
+    "deviation_pct": -2.2
   }
 }
