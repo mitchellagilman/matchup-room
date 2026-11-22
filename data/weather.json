@@ -1,23 +1,23 @@
 {
   "Buffalo Bills": {
-    "windMph": 5,
+    "windMph": 7,
     "tempF": 66,
-    "shortForecast": "Sunny",
+    "shortForecast": "Partly Sunny",
     "severe": false,
     "dome": false
   },
   "Carolina Panthers": {
-    "windMph": 13,
+    "windMph": 10,
     "tempF": 62,
-    "shortForecast": "Cloudy then Chance Rain Showers",
+    "shortForecast": "Light Rain Likely",
     "severe": false,
     "dome": false
   },
   "Chicago Bears": {
-    "windMph": 15,
-    "tempF": 69,
-    "shortForecast": "Sunny",
-    "severe": false,
+    "windMph": 20,
+    "tempF": 57,
+    "shortForecast": "Rain",
+    "severe": true,
     "dome": false
   },
   "Dallas Cowboys": {
@@ -28,15 +28,15 @@
   },
   "Kansas City Chiefs": {
     "windMph": 16,
-    "tempF": 72,
+    "tempF": 50,
     "shortForecast": "Mostly Sunny",
     "severe": false,
     "dome": false
   },
   "New York Giants": {
-    "windMph": 5,
-    "tempF": 65,
-    "shortForecast": "Partly Sunny",
+    "windMph": 7,
+    "tempF": 63,
+    "shortForecast": "Light Rain Likely",
     "severe": false,
     "dome": false
   },
@@ -44,30 +44,30 @@
     "dome": true
   },
   "Denver Broncos": {
-    "windMph": 3,
-    "tempF": 32,
-    "shortForecast": "Mostly Cloudy then Slight Chance Light Snow",
+    "windMph": 2,
+    "tempF": 23,
+    "shortForecast": "Patchy Freezing Fog",
     "severe": false,
     "dome": false
   },
   "Philadelphia Eagles": {
-    "windMph": 0,
-    "tempF": 67,
-    "shortForecast": "Partly Sunny",
+    "windMph": 5,
+    "tempF": 66,
+    "shortForecast": "Mostly Cloudy then Chance Light Rain",
     "severe": false,
     "dome": false
   },
   "San Francisco 49ers": {
     "windMph": 3,
-    "tempF": 37,
-    "shortForecast": "Mostly Clear",
+    "tempF": 44,
+    "shortForecast": "Slight Chance Light Rain",
     "severe": false,
     "dome": false
   },
   "Washington Commanders": {
-    "windMph": 5,
+    "windMph": 7,
     "tempF": 66,
-    "shortForecast": "Partly Sunny",
+    "shortForecast": "Mostly Cloudy then Chance Light Rain",
     "severe": false,
     "dome": false
   }

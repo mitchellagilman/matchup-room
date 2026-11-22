@@ -4624,8 +4624,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202609,
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-14|Ole Miss vs Oklahoma|prop",
@@ -6092,8 +6092,8 @@
       "_away": "Vanderbilt",
       "_home": "Florida",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Ohio State vs Nebraska|team",
@@ -6113,8 +6113,8 @@
       "_away": "Ohio State",
       "_home": "Nebraska",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|BYU vs Kansas|team",
@@ -6134,8 +6134,8 @@
       "_away": "BYU",
       "_home": "Kansas",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Memphis vs Navy|team",
@@ -6155,8 +6155,8 @@
       "_away": "Memphis",
       "_home": "Navy",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Wake Forest vs Georgia Tech|team",
@@ -6176,8 +6176,8 @@
       "_away": "Wake Forest",
       "_home": "Georgia Tech",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Houston vs West Virginia|team",
@@ -6197,8 +6197,8 @@
       "_away": "Houston",
       "_home": "West Virginia",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Western Kentucky vs Liberty|team",
@@ -6218,8 +6218,8 @@
       "_away": "Western Kentucky",
       "_home": "Liberty",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Iowa vs Illinois|team",
@@ -6239,8 +6239,8 @@
       "_away": "Iowa",
       "_home": "Illinois",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|LSU vs Tennessee|team",
@@ -6260,8 +6260,8 @@
       "_away": "LSU",
       "_home": "Tennessee",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|UCLA vs Michigan|team",
@@ -6281,8 +6281,8 @@
       "_away": "UCLA",
       "_home": "Michigan",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Texas Tech vs Baylor|team",
@@ -6302,8 +6302,8 @@
       "_away": "Texas Tech",
       "_home": "Baylor",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Indiana vs Washington|team",
@@ -6323,8 +6323,8 @@
       "_away": "Indiana",
       "_home": "Washington",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Arkansas vs Texas|team",
@@ -6344,8 +6344,8 @@
       "_away": "Arkansas",
       "_home": "Texas",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Maryland vs USC|team",
@@ -6365,8 +6365,8 @@
       "_away": "Maryland",
       "_home": "USC",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Virginia Tech vs Miami|team",
@@ -6386,8 +6386,8 @@
       "_away": "Virginia Tech",
       "_home": "Miami",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Arizona vs Kansas State|team",
@@ -6407,8 +6407,8 @@
       "_away": "Arizona",
       "_home": "Kansas State",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|SMU vs Notre Dame|team",
@@ -6428,8 +6428,8 @@
       "_away": "SMU",
       "_home": "Notre Dame",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Georgia vs South Carolina|team",
@@ -6449,8 +6449,8 @@
       "_away": "Georgia",
       "_home": "South Carolina",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Pittsburgh vs Louisville|team",
@@ -6470,8 +6470,8 @@
       "_away": "Pittsburgh",
       "_home": "Louisville",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Kentucky vs Missouri|team",
@@ -6491,8 +6491,8 @@
       "_away": "Kentucky",
       "_home": "Missouri",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Utah vs TCU|team",
@@ -6512,8 +6512,8 @@
       "_away": "Utah",
       "_home": "TCU",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|San Diego State vs Boise State|team",
@@ -6533,8 +6533,8 @@
       "_away": "San Diego State",
       "_home": "Boise State",
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Utah vs TCU|prop",
@@ -6571,8 +6571,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Texas Tech vs Baylor|prop",
@@ -6609,8 +6609,8 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Oregon vs Michigan State|prop",
@@ -6647,8 +6647,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Iowa vs Illinois|prop",
@@ -6666,8 +6666,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Houston vs West Virginia|prop",
@@ -6685,8 +6685,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Arkansas vs Texas|prop",
@@ -6704,8 +6704,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Vanderbilt vs Florida|prop",
@@ -6723,8 +6723,8 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Kentucky vs Missouri|prop",
@@ -6742,8 +6742,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Indiana vs Washington|prop",
@@ -6780,8 +6780,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|UCLA vs Michigan|prop",
@@ -6818,8 +6818,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Wake Forest vs Georgia Tech|prop",
@@ -6837,8 +6837,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Ohio State vs Nebraska|prop",
@@ -6856,8 +6856,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Pittsburgh vs Louisville|prop",
@@ -6875,8 +6875,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|Georgia vs South Carolina|prop",
@@ -6913,8 +6913,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Memphis vs Navy|prop",
@@ -6932,8 +6932,8 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202610,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-21|Western Kentucky vs Liberty|prop",
@@ -6951,8 +6951,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     },
     {
       "id": "BPG|CFB|2026-11-22|San Diego State vs Boise State|prop",
@@ -6970,10 +6970,10 @@
       "_stat": "recYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-22"
     }
   ],
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "version": 2
 }

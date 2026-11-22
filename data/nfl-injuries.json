@@ -170,6 +170,78 @@
       "_id": "00-0041051"
     },
     {
+      "team": "Cincinnati Bengals",
+      "name": "Jalen Davis",
+      "pos": "CB",
+      "injury": "Hamstring",
+      "status": "Doubtful",
+      "_id": "00-0034446"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Oren Burks",
+      "pos": "LB",
+      "injury": "Groin",
+      "status": "Out",
+      "_id": "00-0034754"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Dalton Risner",
+      "pos": "G",
+      "injury": "Knee",
+      "status": "Out",
+      "_id": "00-0035702"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Kyle Dugger",
+      "pos": "S",
+      "injury": "Quadricep",
+      "status": "Questionable",
+      "_id": "00-0036231"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Daxton Hill",
+      "pos": "CB",
+      "injury": "Illness",
+      "status": "Questionable",
+      "_id": "00-0037743"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Andrei Iosivas",
+      "pos": "WR",
+      "injury": "Thumb",
+      "status": "Doubtful",
+      "_id": "00-0038619"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Swayze Bozeman",
+      "pos": "LB",
+      "injury": "Forearm",
+      "status": "Questionable",
+      "_id": "00-0039313"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Dylan Fairchild",
+      "pos": "G",
+      "injury": "Oblique",
+      "status": "Questionable",
+      "_id": "00-0040140"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "name": "Brian Parker II",
+      "pos": "G",
+      "injury": "Knee",
+      "status": "Questionable",
+      "_id": "00-0041098"
+    },
+    {
       "team": "Dallas Cowboys",
       "name": "P.J. Locke",
       "pos": "S",
@@ -1040,6 +1112,38 @@
       "injury": "Neck",
       "status": "Questionable",
       "_id": "00-0041479"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Lucas Patrick",
+      "pos": "C",
+      "injury": "Concussion",
+      "status": "Questionable",
+      "_id": "00-0033082"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Amik Robertson",
+      "pos": "CB",
+      "injury": "Ankle",
+      "status": "Questionable",
+      "_id": "00-0036375"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Rachaad White",
+      "pos": "RB",
+      "injury": "Heel",
+      "status": "Questionable",
+      "_id": "00-0037256"
+    },
+    {
+      "team": "Washington Commanders",
+      "name": "Jacory Croskey-Merritt",
+      "pos": "RB",
+      "injury": "Groin",
+      "status": "Questionable",
+      "_id": "00-0040242"
     }
   ]
 }
