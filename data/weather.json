@@ -1,73 +1,8 @@
 {
-  "Buffalo Bills": {
-    "windMph": 7,
-    "tempF": 66,
-    "shortForecast": "Partly Sunny",
-    "severe": false,
-    "dome": false
-  },
-  "Carolina Panthers": {
-    "windMph": 10,
-    "tempF": 62,
-    "shortForecast": "Light Rain Likely",
-    "severe": false,
-    "dome": false
-  },
-  "Chicago Bears": {
-    "windMph": 20,
-    "tempF": 57,
-    "shortForecast": "Rain",
-    "severe": true,
-    "dome": false
-  },
-  "Dallas Cowboys": {
-    "dome": true
-  },
-  "Detroit Lions": {
-    "dome": true
-  },
-  "Kansas City Chiefs": {
-    "windMph": 16,
-    "tempF": 50,
-    "shortForecast": "Mostly Sunny",
-    "severe": false,
-    "dome": false
-  },
-  "New York Giants": {
-    "windMph": 7,
-    "tempF": 63,
-    "shortForecast": "Light Rain Likely",
-    "severe": false,
-    "dome": false
-  },
-  "Los Angeles Chargers": {
-    "dome": true
-  },
-  "Denver Broncos": {
-    "windMph": 2,
-    "tempF": 23,
-    "shortForecast": "Patchy Freezing Fog",
-    "severe": false,
-    "dome": false
-  },
-  "Philadelphia Eagles": {
-    "windMph": 5,
-    "tempF": 66,
-    "shortForecast": "Mostly Cloudy then Chance Light Rain",
-    "severe": false,
-    "dome": false
-  },
-  "San Francisco 49ers": {
-    "windMph": 3,
-    "tempF": 44,
-    "shortForecast": "Slight Chance Light Rain",
-    "severe": false,
-    "dome": false
-  },
   "Washington Commanders": {
-    "windMph": 7,
-    "tempF": 66,
-    "shortForecast": "Mostly Cloudy then Chance Light Rain",
+    "windMph": 12,
+    "tempF": 70,
+    "shortForecast": "Mostly Sunny then Isolated Rain Showers",
     "severe": false,
     "dome": false
   }
