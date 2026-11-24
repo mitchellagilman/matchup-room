@@ -1689,14 +1689,14 @@
   },
   "Cincinnati Bengals": {
     "league": "NFL",
-    "record": "7-2",
-    "ppg": 30.9,
-    "pa": 21.4,
-    "passOff": 310.6,
-    "rushOff": 84.8,
-    "passDef": 237.1,
-    "rushDef": 123.9,
-    "to": 0.33,
+    "record": "7-3",
+    "ppg": 29.8,
+    "pa": 21.5,
+    "passOff": 309.5,
+    "rushOff": 79.4,
+    "passDef": 242.3,
+    "rushDef": 126.5,
+    "to": 0.3,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1771,6 +1771,14 @@
         "teamScore": 38.0,
         "oppScore": 18.0,
         "result": "W"
+      },
+      {
+        "week": "11",
+        "date": "2026-11-23",
+        "opp": "Washington Commanders",
+        "teamScore": 20.0,
+        "oppScore": 22.0,
+        "result": "L"
       }
     ],
     "prevPpg": 24.4,
@@ -1779,9 +1787,9 @@
     "homePpg": 32.8,
     "homePa": 25.8,
     "homeGames": 4,
-    "awayPpg": 29.4,
-    "awayPa": 18.0,
-    "awayGames": 5
+    "awayPpg": 27.8,
+    "awayPa": 18.7,
+    "awayGames": 6
   },
   "Houston Texans": {
     "league": "NFL",
@@ -2209,14 +2217,14 @@
   },
   "Washington Commanders": {
     "league": "NFL",
-    "record": "3-5-1",
+    "record": "4-5-1",
     "ppg": 21.8,
-    "pa": 24.8,
-    "passOff": 225.0,
-    "rushOff": 116.8,
-    "passDef": 260.1,
-    "rushDef": 103.8,
-    "to": 0.89,
+    "pa": 24.3,
+    "passOff": 231.4,
+    "rushOff": 120.1,
+    "passDef": 264.1,
+    "rushDef": 96.5,
+    "to": 0.8,
     "ats": "",
     "wk1": true,
     "games": [
@@ -2291,14 +2299,22 @@
         "teamScore": 24.0,
         "oppScore": 21.0,
         "result": "W"
+      },
+      {
+        "week": "11",
+        "date": "2026-11-23",
+        "opp": "Cincinnati Bengals",
+        "teamScore": 22.0,
+        "oppScore": 20.0,
+        "result": "W"
       }
     ],
     "prevPpg": 20.9,
     "prevPa": 26.5,
     "prevTo": -0.65,
-    "homePpg": 22.6,
-    "homePa": 23.6,
-    "homeGames": 5,
+    "homePpg": 22.5,
+    "homePa": 23.0,
+    "homeGames": 6,
     "awayPpg": 20.8,
     "awayPa": 26.2,
     "awayGames": 4

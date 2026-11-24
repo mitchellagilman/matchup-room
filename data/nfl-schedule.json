@@ -1,94 +1,85 @@
 {
-  "week": 11,
+  "week": 12,
   "games": [
     {
-      "a": "Indianapolis Colts",
-      "b": "Houston Texans",
-      "date": "2026-11-19 (Thursday)",
-      "awayScore": 3.0,
-      "homeScore": 26.0
+      "a": "Green Bay Packers",
+      "b": "Los Angeles Rams",
+      "date": "2026-11-25 (Wednesday)"
     },
     {
-      "a": "Miami Dolphins",
+      "a": "Chicago Bears",
+      "b": "Detroit Lions",
+      "date": "2026-11-26 (Thursday)"
+    },
+    {
+      "a": "Philadelphia Eagles",
+      "b": "Dallas Cowboys",
+      "date": "2026-11-26 (Thursday)"
+    },
+    {
+      "a": "Kansas City Chiefs",
       "b": "Buffalo Bills",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 9.0,
-      "homeScore": 26.0
+      "date": "2026-11-26 (Thursday)"
     },
     {
-      "a": "Baltimore Ravens",
-      "b": "Carolina Panthers",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 33.0,
-      "homeScore": 35.0
+      "a": "Denver Broncos",
+      "b": "Pittsburgh Steelers",
+      "date": "2026-11-27 (Friday)"
     },
     {
       "a": "New Orleans Saints",
-      "b": "Chicago Bears",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 13.0,
-      "homeScore": 21.0
+      "b": "Cincinnati Bengals",
+      "date": "2026-11-29 (Sunday)"
+    },
+    {
+      "a": "Baltimore Ravens",
+      "b": "Houston Texans",
+      "date": "2026-11-29 (Sunday)"
+    },
+    {
+      "a": "New York Giants",
+      "b": "Indianapolis Colts",
+      "date": "2026-11-29 (Sunday)"
     },
     {
       "a": "Tennessee Titans",
-      "b": "Dallas Cowboys",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 30.0,
-      "homeScore": 51.0
-    },
-    {
-      "a": "Tampa Bay Buccaneers",
-      "b": "Detroit Lions",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 21.0,
-      "homeScore": 31.0
-    },
-    {
-      "a": "Arizona Cardinals",
-      "b": "Kansas City Chiefs",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 7.0,
-      "homeScore": 34.0
-    },
-    {
-      "a": "Pittsburgh Steelers",
-      "b": "Philadelphia Eagles",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 16.0,
-      "homeScore": 19.0
+      "b": "Jacksonville Jaguars",
+      "date": "2026-11-29 (Sunday)"
     },
     {
       "a": "New York Jets",
+      "b": "Miami Dolphins",
+      "date": "2026-11-29 (Sunday)"
+    },
+    {
+      "a": "Atlanta Falcons",
+      "b": "Minnesota Vikings",
+      "date": "2026-11-29 (Sunday)"
+    },
+    {
+      "a": "New England Patriots",
       "b": "Los Angeles Chargers",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 27.0,
-      "homeScore": 24.0
+      "date": "2026-11-29 (Sunday)"
+    },
+    {
+      "a": "Washington Commanders",
+      "b": "Arizona Cardinals",
+      "date": "2026-11-29 (Sunday)"
+    },
+    {
+      "a": "Seattle Seahawks",
+      "b": "San Francisco 49ers",
+      "date": "2026-11-29 (Sunday)"
     },
     {
       "a": "Las Vegas Raiders",
-      "b": "Denver Broncos",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 24.0,
-      "homeScore": 38.0
+      "b": "Cleveland Browns",
+      "date": "2026-11-29 (Sunday)"
     },
     {
-      "a": "Jacksonville Jaguars",
-      "b": "New York Giants",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 18.0,
-      "homeScore": 23.0
-    },
-    {
-      "a": "Minnesota Vikings",
-      "b": "San Francisco 49ers",
-      "date": "2026-11-22 (Sunday)",
-      "awayScore": 10.0,
-      "homeScore": 35.0
-    },
-    {
-      "a": "Cincinnati Bengals",
-      "b": "Washington Commanders",
-      "date": "2026-11-23 (Monday)"
+      "a": "Carolina Panthers",
+      "b": "Tampa Bay Buccaneers",
+      "date": "2026-11-30 (Monday)"
     }
   ]
 }
