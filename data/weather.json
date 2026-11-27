@@ -1,32 +1,16 @@
 {
-  "Los Angeles Rams": {
-    "dome": true
-  },
-  "Detroit Lions": {
-    "dome": true
-  },
-  "Dallas Cowboys": {
-    "dome": true
-  },
-  "Buffalo Bills": {
-    "windMph": 6,
-    "tempF": 38,
-    "shortForecast": "Mostly Sunny",
-    "severe": false,
-    "dome": false
-  },
   "Pittsburgh Steelers": {
-    "windMph": 7,
-    "tempF": 42,
-    "shortForecast": "Mostly Sunny",
-    "severe": false,
+    "windMph": 18,
+    "tempF": 43,
+    "shortForecast": "Light Rain",
+    "severe": true,
     "dome": false
   },
   "Cincinnati Bengals": {
-    "windMph": 8,
+    "windMph": 15,
     "tempF": 45,
-    "shortForecast": "Sunny",
-    "severe": false,
+    "shortForecast": "Light Rain",
+    "severe": true,
     "dome": false
   },
   "Houston Texans": {
@@ -36,16 +20,16 @@
     "dome": true
   },
   "Jacksonville Jaguars": {
-    "windMph": 17,
-    "tempF": 71,
-    "shortForecast": "Cloudy then Slight Chance Rain Showers",
-    "severe": true,
+    "windMph": 18,
+    "tempF": 60,
+    "shortForecast": "Mostly Sunny",
+    "severe": false,
     "dome": false
   },
   "Miami Dolphins": {
-    "windMph": 8,
-    "tempF": 80,
-    "shortForecast": "Cloudy",
+    "windMph": 6,
+    "tempF": 73,
+    "shortForecast": "Partly Sunny",
     "severe": false,
     "dome": false
   },
@@ -59,23 +43,23 @@
     "dome": true
   },
   "San Francisco 49ers": {
-    "windMph": 12,
-    "tempF": 64,
-    "shortForecast": "Mostly Cloudy",
+    "windMph": 5,
+    "tempF": 66,
+    "shortForecast": "Partly Sunny",
     "severe": false,
     "dome": false
   },
   "Cleveland Browns": {
-    "windMph": 12,
-    "tempF": 41,
-    "shortForecast": "Mostly Sunny",
-    "severe": false,
+    "windMph": 16,
+    "tempF": 43,
+    "shortForecast": "Light Rain",
+    "severe": true,
     "dome": false
   },
   "Tampa Bay Buccaneers": {
-    "windMph": 7,
-    "tempF": 75,
-    "shortForecast": "Mostly Cloudy",
+    "windMph": 10,
+    "tempF": 67,
+    "shortForecast": "Partly Sunny",
     "severe": false,
     "dome": false
   }

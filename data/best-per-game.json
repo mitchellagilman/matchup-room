@@ -6590,8 +6590,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-20",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|CFB|2026-11-21|BYU vs Kansas|prop",
@@ -6991,8 +6991,8 @@
       "_away": "TCU",
       "_home": "Texas Tech",
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|CFB|2026-11-27|Nebraska vs Iowa|team",
@@ -7791,8 +7791,8 @@
       "_away": "Green Bay Packers",
       "_home": "Los Angeles Rams",
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|NFL|2026-11-26|Chicago Bears vs Detroit Lions|team",
@@ -7812,8 +7812,8 @@
       "_away": "Chicago Bears",
       "_home": "Detroit Lions",
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|NFL|2026-11-26|Philadelphia Eagles vs Dallas Cowboys|team",
@@ -7833,8 +7833,8 @@
       "_away": "Philadelphia Eagles",
       "_home": "Dallas Cowboys",
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|NFL|2026-11-26|Kansas City Chiefs vs Buffalo Bills|team",
@@ -7854,8 +7854,8 @@
       "_away": "Kansas City Chiefs",
       "_home": "Buffalo Bills",
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "push",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|NFL|2026-11-27|Denver Broncos vs Pittsburgh Steelers|team",
@@ -8144,8 +8144,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202610,
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|NFL|2026-11-29|Atlanta Falcons vs Minnesota Vikings|prop",
@@ -8182,8 +8182,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|NFL|2026-11-29|New York Jets vs Miami Dolphins|prop",
@@ -8277,8 +8277,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|NFL|2026-11-29|New England Patriots vs Los Angeles Chargers|prop",
@@ -8315,8 +8315,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-27"
     },
     {
       "id": "BPG|NFL|2026-11-29|Seattle Seahawks vs San Francisco 49ers|prop",
@@ -8414,6 +8414,6 @@
       "graded_date": null
     }
   ],
-  "updated": "2026-11-24",
+  "updated": "2026-11-27",
   "version": 2
 }

@@ -2,7 +2,9 @@
   {
     "a": "TCU",
     "b": "Texas Tech",
-    "date": "2026-11-27"
+    "date": "2026-11-27",
+    "awayScore": 27,
+    "homeScore": 48
   },
   {
     "a": "Mississippi State",
@@ -35,13 +37,13 @@
     "date": "2026-11-28"
   },
   {
-    "a": "Louisville",
-    "b": "Kentucky",
+    "a": "Michigan",
+    "b": "Ohio State",
     "date": "2026-11-28"
   },
   {
-    "a": "Michigan",
-    "b": "Ohio State",
+    "a": "Louisville",
+    "b": "Kentucky",
     "date": "2026-11-28"
   },
   {
@@ -60,6 +62,11 @@
     "date": "2026-11-28"
   },
   {
+    "a": "USC",
+    "b": "UCLA",
+    "date": "2026-11-28"
+  },
+  {
     "a": "Duke",
     "b": "Wake Forest",
     "date": "2026-11-28"
@@ -67,11 +74,6 @@
   {
     "a": "Georgia Tech",
     "b": "Georgia",
-    "date": "2026-11-28"
-  },
-  {
-    "a": "USC",
-    "b": "UCLA",
     "date": "2026-11-28"
   },
   {

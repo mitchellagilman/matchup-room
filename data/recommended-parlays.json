@@ -3165,7 +3165,7 @@
           "direction": null,
           "_away": "Chicago Bears",
           "_home": "Detroit Lions",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "spread",
@@ -3204,10 +3204,11 @@
       "combined_odds": 482,
       "strength": "Medium",
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-27",
       "rank": 1,
-      "id": "PAR|NFL|NFL Week 12|sides|Sides A"
+      "id": "PAR|NFL|NFL Week 12|sides|Sides A",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -3434,7 +3435,7 @@
           "direction": "under",
           "_away": "Chicago Bears",
           "_home": "Detroit Lions",
-          "status": "pending",
+          "status": "miss",
           "meta": {
             "league": "NFL",
             "type": "total",
@@ -3473,10 +3474,11 @@
       "combined_odds": 597,
       "strength": "Lean",
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null,
+      "status": "miss",
+      "graded_date": "2026-11-27",
       "rank": 4,
-      "id": "PAR|NFL|NFL Week 12|totals|Totals B"
+      "id": "PAR|NFL|NFL Week 12|totals|Totals B",
+      "profit_units": -1.0
     },
     {
       "league": "NFL",
@@ -3565,5 +3567,5 @@
       "id": "PAR|NFL|NFL Week 12|sides|Sides B"
     }
   ],
-  "updated": "2026-11-24"
+  "updated": "2026-11-27"
 }

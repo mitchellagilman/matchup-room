@@ -1,14 +1,14 @@
 {
   "Los Angeles Rams": {
     "league": "NFL",
-    "record": "6-4",
-    "ppg": 24.8,
-    "pa": 18.7,
-    "passOff": 263.6,
-    "rushOff": 133.0,
-    "passDef": 199.0,
-    "rushDef": 96.8,
-    "to": -0.3,
+    "record": "7-4",
+    "ppg": 24.9,
+    "pa": 18.2,
+    "passOff": 252.4,
+    "rushOff": 142.8,
+    "passDef": 198.9,
+    "rushDef": 93.0,
+    "to": -0.09,
     "ats": "",
     "wk1": true,
     "games": [
@@ -91,27 +91,35 @@
         "teamScore": 34.0,
         "oppScore": 6.0,
         "result": "W"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-25",
+        "opp": "Green Bay Packers",
+        "teamScore": 26.0,
+        "oppScore": 13.0,
+        "result": "W"
       }
     ],
     "prevPpg": 30.5,
     "prevPa": 20.4,
     "prevTo": 0.7,
-    "homePpg": 21.8,
-    "homePa": 19.4,
-    "homeGames": 5,
+    "homePpg": 22.5,
+    "homePa": 18.3,
+    "homeGames": 6,
     "awayPpg": 27.8,
     "awayPa": 18.0,
     "awayGames": 5
   },
   "Dallas Cowboys": {
     "league": "NFL",
-    "record": "5-6",
-    "ppg": 30.6,
-    "pa": 28.4,
-    "passOff": 277.2,
-    "rushOff": 107.5,
-    "passDef": 251.8,
-    "rushDef": 151.5,
+    "record": "5-7",
+    "ppg": 31.2,
+    "pa": 29.2,
+    "passOff": 278.3,
+    "rushOff": 111.2,
+    "passDef": 258.4,
+    "rushDef": 144.6,
     "to": 0.0,
     "ats": "",
     "wk1": true,
@@ -203,14 +211,22 @@
         "teamScore": 51.0,
         "oppScore": 30.0,
         "result": "W"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-26",
+        "opp": "Philadelphia Eagles",
+        "teamScore": 38.0,
+        "oppScore": 39.0,
+        "result": "L"
       }
     ],
     "prevPpg": 27.7,
     "prevPa": 30.1,
     "prevTo": -0.53,
-    "homePpg": 34.2,
-    "homePa": 31.2,
-    "homeGames": 6,
+    "homePpg": 34.7,
+    "homePa": 32.3,
+    "homeGames": 7,
     "awayPpg": 26.4,
     "awayPa": 25.0,
     "awayGames": 5
@@ -321,14 +337,14 @@
   },
   "Buffalo Bills": {
     "league": "NFL",
-    "record": "9-1",
-    "ppg": 31.3,
-    "pa": 20.8,
-    "passOff": 255.7,
-    "rushOff": 146.9,
-    "passDef": 240.9,
-    "rushDef": 94.1,
-    "to": 0.0,
+    "record": "10-1",
+    "ppg": 29.6,
+    "pa": 19.8,
+    "passOff": 239.8,
+    "rushOff": 148.6,
+    "passDef": 234.8,
+    "rushDef": 92.3,
+    "to": -0.18,
     "ats": "",
     "wk1": true,
     "games": [
@@ -411,28 +427,36 @@
         "teamScore": 26.0,
         "oppScore": 9.0,
         "result": "W"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-26",
+        "opp": "Kansas City Chiefs",
+        "teamScore": 13.0,
+        "oppScore": 10.0,
+        "result": "W"
       }
     ],
     "prevPpg": 28.3,
     "prevPa": 21.5,
     "prevTo": 0.0,
-    "homePpg": 30.6,
-    "homePa": 19.0,
-    "homeGames": 5,
+    "homePpg": 27.7,
+    "homePa": 17.5,
+    "homeGames": 6,
     "awayPpg": 32.0,
     "awayPa": 22.6,
     "awayGames": 5
   },
   "Detroit Lions": {
     "league": "NFL",
-    "record": "8-2",
-    "ppg": 28.8,
-    "pa": 22.0,
-    "passOff": 273.4,
-    "rushOff": 132.2,
-    "passDef": 258.1,
-    "rushDef": 93.4,
-    "to": 0.2,
+    "record": "8-3",
+    "ppg": 29.4,
+    "pa": 23.5,
+    "passOff": 277.0,
+    "rushOff": 142.5,
+    "passDef": 266.0,
+    "rushDef": 98.2,
+    "to": 0.18,
     "ats": "",
     "wk1": true,
     "games": [
@@ -515,28 +539,36 @@
         "teamScore": 31.0,
         "oppScore": 21.0,
         "result": "W"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-26",
+        "opp": "Chicago Bears",
+        "teamScore": 35.0,
+        "oppScore": 39.0,
+        "result": "L"
       }
     ],
     "prevPpg": 28.3,
     "prevPa": 24.3,
     "prevTo": 0.24,
-    "homePpg": 27.8,
-    "homePa": 19.5,
-    "homeGames": 6,
+    "homePpg": 28.9,
+    "homePa": 22.3,
+    "homeGames": 7,
     "awayPpg": 30.2,
     "awayPa": 25.8,
     "awayGames": 4
   },
   "Chicago Bears": {
     "league": "NFL",
-    "record": "8-2",
-    "ppg": 26.2,
-    "pa": 19.7,
-    "passOff": 249.1,
-    "rushOff": 142.4,
-    "passDef": 234.2,
-    "rushDef": 94.0,
-    "to": -0.4,
+    "record": "9-2",
+    "ppg": 27.4,
+    "pa": 21.1,
+    "passOff": 257.8,
+    "rushOff": 142.7,
+    "passDef": 241.4,
+    "rushDef": 107.8,
+    "to": -0.36,
     "ats": "",
     "wk1": true,
     "games": [
@@ -619,6 +651,14 @@
         "teamScore": 21.0,
         "oppScore": 13.0,
         "result": "W"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-26",
+        "opp": "Detroit Lions",
+        "teamScore": 39.0,
+        "oppScore": 35.0,
+        "result": "W"
       }
     ],
     "prevPpg": 25.9,
@@ -627,9 +667,9 @@
     "homePpg": 21.8,
     "homePa": 14.8,
     "homeGames": 6,
-    "awayPpg": 32.8,
-    "awayPa": 27.0,
-    "awayGames": 4
+    "awayPpg": 34.0,
+    "awayPa": 28.6,
+    "awayGames": 5
   },
   "San Francisco 49ers": {
     "league": "NFL",
@@ -1473,14 +1513,14 @@
   },
   "Green Bay Packers": {
     "league": "NFL",
-    "record": "6-4",
-    "ppg": 22.6,
-    "pa": 22.1,
-    "passOff": 284.1,
-    "rushOff": 67.0,
-    "passDef": 229.4,
-    "rushDef": 111.0,
-    "to": 0.8,
+    "record": "6-5",
+    "ppg": 21.7,
+    "pa": 22.5,
+    "passOff": 276.3,
+    "rushOff": 65.9,
+    "passDef": 221.3,
+    "rushDef": 122.8,
+    "to": 0.55,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1563,6 +1603,14 @@
         "teamScore": 10.0,
         "oppScore": 30.0,
         "result": "L"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-25",
+        "opp": "Los Angeles Rams",
+        "teamScore": 13.0,
+        "oppScore": 26.0,
+        "result": "L"
       }
     ],
     "prevPpg": 23.0,
@@ -1571,9 +1619,9 @@
     "homePpg": 21.0,
     "homePa": 20.8,
     "homeGames": 5,
-    "awayPpg": 24.2,
-    "awayPa": 23.4,
-    "awayGames": 5
+    "awayPpg": 22.3,
+    "awayPa": 23.8,
+    "awayGames": 6
   },
   "Baltimore Ravens": {
     "league": "NFL",
@@ -2009,14 +2057,14 @@
   },
   "Kansas City Chiefs": {
     "league": "NFL",
-    "record": "8-2",
-    "ppg": 27.1,
-    "pa": 16.3,
-    "passOff": 270.9,
-    "rushOff": 134.2,
-    "passDef": 220.5,
-    "rushDef": 95.5,
-    "to": 0.7,
+    "record": "8-3",
+    "ppg": 25.5,
+    "pa": 16.0,
+    "passOff": 262.1,
+    "rushOff": 128.7,
+    "passDef": 207.8,
+    "rushDef": 101.9,
+    "to": 0.82,
     "ats": "",
     "wk1": true,
     "games": [
@@ -2099,6 +2147,14 @@
         "teamScore": 34.0,
         "oppScore": 7.0,
         "result": "W"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-26",
+        "opp": "Buffalo Bills",
+        "teamScore": 10.0,
+        "oppScore": 13.0,
+        "result": "L"
       }
     ],
     "prevPpg": 21.3,
@@ -2107,9 +2163,9 @@
     "homePpg": 31.0,
     "homePa": 13.0,
     "homeGames": 5,
-    "awayPpg": 23.2,
-    "awayPa": 19.6,
-    "awayGames": 5
+    "awayPpg": 21.0,
+    "awayPa": 18.5,
+    "awayGames": 6
   },
   "Tampa Bay Buccaneers": {
     "league": "NFL",
@@ -2425,14 +2481,14 @@
   },
   "Philadelphia Eagles": {
     "league": "NFL",
-    "record": "3-7",
-    "ppg": 16.7,
-    "pa": 23.7,
-    "passOff": 188.1,
-    "rushOff": 88.8,
-    "passDef": 237.7,
-    "rushDef": 120.8,
-    "to": -0.4,
+    "record": "4-7",
+    "ppg": 18.7,
+    "pa": 25.0,
+    "passOff": 201.1,
+    "rushOff": 86.9,
+    "passDef": 242.5,
+    "rushDef": 123.5,
+    "to": -0.36,
     "ats": "",
     "wk1": true,
     "games": [
@@ -2515,6 +2571,14 @@
         "teamScore": 19.0,
         "oppScore": 16.0,
         "result": "W"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-26",
+        "opp": "Dallas Cowboys",
+        "teamScore": 39.0,
+        "oppScore": 38.0,
+        "result": "W"
       }
     ],
     "prevPpg": 22.3,
@@ -2523,9 +2587,9 @@
     "homePpg": 18.2,
     "homePa": 24.0,
     "homeGames": 6,
-    "awayPpg": 14.5,
-    "awayPa": 23.2,
-    "awayGames": 4
+    "awayPpg": 19.4,
+    "awayPa": 26.2,
+    "awayGames": 5
   },
   "Pittsburgh Steelers": {
     "league": "NFL",
