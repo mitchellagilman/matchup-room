@@ -993,14 +993,14 @@
   },
   "Denver Broncos": {
     "league": "NFL",
-    "record": "8-2",
-    "ppg": 23.6,
-    "pa": 21.0,
-    "passOff": 195.5,
-    "rushOff": 95.6,
-    "passDef": 251.6,
-    "rushDef": 126.2,
-    "to": 0.6,
+    "record": "8-3",
+    "ppg": 21.9,
+    "pa": 21.5,
+    "passOff": 193.1,
+    "rushOff": 93.5,
+    "passDef": 241.6,
+    "rushDef": 125.4,
+    "to": 0.36,
     "ats": "",
     "wk1": true,
     "games": [
@@ -1083,6 +1083,14 @@
         "teamScore": 38.0,
         "oppScore": 24.0,
         "result": "W"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-27",
+        "opp": "Pittsburgh Steelers",
+        "teamScore": 5.0,
+        "oppScore": 27.0,
+        "result": "L"
       }
     ],
     "prevPpg": 23.6,
@@ -1091,9 +1099,9 @@
     "homePpg": 26.6,
     "homePa": 20.2,
     "homeGames": 5,
-    "awayPpg": 20.6,
-    "awayPa": 21.8,
-    "awayGames": 5
+    "awayPpg": 18.0,
+    "awayPa": 22.7,
+    "awayGames": 6
   },
   "Jacksonville Jaguars": {
     "league": "NFL",
@@ -2593,14 +2601,14 @@
   },
   "Pittsburgh Steelers": {
     "league": "NFL",
-    "record": "6-4",
-    "ppg": 21.4,
-    "pa": 20.1,
-    "passOff": 224.3,
-    "rushOff": 111.8,
-    "passDef": 248.6,
-    "rushDef": 84.0,
-    "to": 0.6,
+    "record": "7-4",
+    "ppg": 21.9,
+    "pa": 18.7,
+    "passOff": 216.8,
+    "rushOff": 112.3,
+    "passDef": 241.4,
+    "rushDef": 83.0,
+    "to": 0.73,
     "ats": "",
     "wk1": true,
     "games": [
@@ -2683,14 +2691,22 @@
         "teamScore": 16.0,
         "oppScore": 19.0,
         "result": "L"
+      },
+      {
+        "week": "12",
+        "date": "2026-11-27",
+        "opp": "Denver Broncos",
+        "teamScore": 27.0,
+        "oppScore": 5.0,
+        "result": "W"
       }
     ],
     "prevPpg": 23.4,
     "prevPa": 22.8,
     "prevTo": 0.78,
-    "homePpg": 27.8,
-    "homePa": 17.0,
-    "homeGames": 4,
+    "homePpg": 27.6,
+    "homePa": 14.6,
+    "homeGames": 5,
     "awayPpg": 17.2,
     "awayPa": 22.2,
     "awayGames": 6

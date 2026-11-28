@@ -4776,8 +4776,8 @@
       "_stat": "passYds",
       "_logged_recency_key": 202610,
       "date_logged": "2026-11-09",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-14|Northwestern vs Ohio State|prop",
@@ -7012,8 +7012,8 @@
       "_away": "Nebraska",
       "_home": "Iowa",
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-27|Mississippi State vs Ole Miss|team",
@@ -7033,8 +7033,8 @@
       "_away": "Mississippi State",
       "_home": "Ole Miss",
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-27|Florida vs Florida State|team",
@@ -7054,8 +7054,8 @@
       "_away": "Florida",
       "_home": "Florida State",
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-28|Texas vs Texas A&M|team",
@@ -7075,8 +7075,8 @@
       "_away": "Texas",
       "_home": "Texas A&M",
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-28|West Virginia vs Utah|team",
@@ -7096,8 +7096,8 @@
       "_away": "West Virginia",
       "_home": "Utah",
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-28|Michigan vs Ohio State|team",
@@ -7504,8 +7504,8 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-28|Texas vs Texas A&M|prop",
@@ -7523,8 +7523,8 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202612,
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-28|Oklahoma vs Missouri|prop",
@@ -7618,8 +7618,8 @@
       "_stat": "recYds",
       "_logged_recency_key": 202612,
       "date_logged": "2026-11-23",
-      "status": "pending",
-      "graded_date": null
+      "status": "miss",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|CFB|2026-11-28|Louisville vs Kentucky|prop",
@@ -7875,8 +7875,8 @@
       "_away": "Denver Broncos",
       "_home": "Pittsburgh Steelers",
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|NFL|2026-11-29|New Orleans Saints vs Cincinnati Bengals|team",
@@ -8125,8 +8125,8 @@
       "_stat": "rushYds",
       "_logged_recency_key": 202611,
       "date_logged": "2026-11-24",
-      "status": "pending",
-      "graded_date": null
+      "status": "hit",
+      "graded_date": "2026-11-28"
     },
     {
       "id": "BPG|NFL|2026-11-25|Green Bay Packers vs Los Angeles Rams|prop",
@@ -8414,6 +8414,6 @@
       "graded_date": null
     }
   ],
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "version": 2
 }

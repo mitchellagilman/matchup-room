@@ -1,16 +1,9 @@
 {
-  "Pittsburgh Steelers": {
-    "windMph": 18,
-    "tempF": 43,
-    "shortForecast": "Light Rain",
-    "severe": true,
-    "dome": false
-  },
   "Cincinnati Bengals": {
-    "windMph": 15,
-    "tempF": 45,
-    "shortForecast": "Light Rain",
-    "severe": true,
+    "windMph": 9,
+    "tempF": 50,
+    "shortForecast": "Mostly Sunny",
+    "severe": false,
     "dome": false
   },
   "Houston Texans": {
@@ -20,16 +13,16 @@
     "dome": true
   },
   "Jacksonville Jaguars": {
-    "windMph": 18,
-    "tempF": 60,
-    "shortForecast": "Mostly Sunny",
+    "windMph": 9,
+    "tempF": 64,
+    "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
   },
   "Miami Dolphins": {
     "windMph": 6,
     "tempF": 73,
-    "shortForecast": "Partly Sunny",
+    "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
   },
@@ -43,23 +36,23 @@
     "dome": true
   },
   "San Francisco 49ers": {
-    "windMph": 5,
-    "tempF": 66,
-    "shortForecast": "Partly Sunny",
+    "windMph": 2,
+    "tempF": 49,
+    "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
   },
   "Cleveland Browns": {
-    "windMph": 16,
-    "tempF": 43,
-    "shortForecast": "Light Rain",
-    "severe": true,
+    "windMph": 15,
+    "tempF": 44,
+    "shortForecast": "Partly Sunny",
+    "severe": false,
     "dome": false
   },
   "Tampa Bay Buccaneers": {
-    "windMph": 10,
-    "tempF": 67,
-    "shortForecast": "Partly Sunny",
+    "windMph": 5,
+    "tempF": 66,
+    "shortForecast": "Mostly Cloudy",
     "severe": false,
     "dome": false
   }

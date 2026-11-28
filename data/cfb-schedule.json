@@ -9,32 +9,37 @@
   {
     "a": "Mississippi State",
     "b": "Ole Miss",
-    "date": "2026-11-27"
+    "date": "2026-11-27",
+    "awayScore": 17,
+    "homeScore": 41
   },
   {
     "a": "Nebraska",
     "b": "Iowa",
-    "date": "2026-11-27"
+    "date": "2026-11-27",
+    "awayScore": 7,
+    "homeScore": 31
   },
   {
     "a": "Florida",
     "b": "Florida State",
-    "date": "2026-11-27"
+    "date": "2026-11-27",
+    "awayScore": 26,
+    "homeScore": 10
   },
   {
     "a": "Texas",
     "b": "Texas A&M",
-    "date": "2026-11-28"
+    "date": "2026-11-28",
+    "awayScore": 16,
+    "homeScore": 6
   },
   {
     "a": "West Virginia",
     "b": "Utah",
-    "date": "2026-11-28"
-  },
-  {
-    "a": "Notre Dame",
-    "b": "Syracuse",
-    "date": "2026-11-28"
+    "date": "2026-11-28",
+    "awayScore": 28,
+    "homeScore": 52
   },
   {
     "a": "Michigan",
@@ -52,13 +57,13 @@
     "date": "2026-11-28"
   },
   {
-    "a": "Liberty",
-    "b": "Missouri State",
+    "a": "Notre Dame",
+    "b": "Syracuse",
     "date": "2026-11-28"
   },
   {
-    "a": "Cincinnati",
-    "b": "BYU",
+    "a": "Liberty",
+    "b": "Missouri State",
     "date": "2026-11-28"
   },
   {
@@ -77,6 +82,11 @@
     "date": "2026-11-28"
   },
   {
+    "a": "Cincinnati",
+    "b": "BYU",
+    "date": "2026-11-28"
+  },
+  {
     "a": "Oklahoma",
     "b": "Missouri",
     "date": "2026-11-28"
@@ -87,13 +97,13 @@
     "date": "2026-11-28"
   },
   {
-    "a": "Tennessee",
-    "b": "Vanderbilt",
+    "a": "Purdue",
+    "b": "Indiana",
     "date": "2026-11-29"
   },
   {
-    "a": "Purdue",
-    "b": "Indiana",
+    "a": "Tennessee",
+    "b": "Vanderbilt",
     "date": "2026-11-29"
   },
   {
